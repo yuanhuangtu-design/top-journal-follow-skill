@@ -244,4 +244,15 @@ def main():
         with open(path, "w", encoding="utf-8") as f:
             f.write(html)
         # 同步 latest（与 Web UI 兼容）
-        late
+        latest_path = os.path.join(args.output, "literature_dashboard.html")
+        with open(latest_path, "w", encoding="utf-8") as f:
+            f.write(html)
+        print(f"[SUCCESS] HTML 看板已生成: {path}")
+        print(f"[SUCCESS] 最新看板: {latest_path}")
+    except Exception as e:
+        print(f"[ERROR] 写入看板文件失败: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

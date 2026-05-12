@@ -374,4 +374,23 @@ function openProject(projectName) {
         .then(info => {
             if (!info.has_dashboard) {
                 frame.style.display = 'none';
-                container.innerHTML = `<div class=
+                container.innerHTML = `<div class="welcome"><h2>⏳ 项目处理中...</h2><p>请等待处理完成</p></div>`;
+            } else {
+                frame.style.display = 'block';
+                frame.src = info.dashboard_url;
+            }
+        });
+}
+
+// 打开当前项目
+function openCurrentProject() {
+    if (currentProject) {
+        openProject(currentProject);
+    }
+}
+
+// 页面加载
+document.addEventListener('DOMContentLoaded', refreshProjects);
+</script>
+</body>
+</html>

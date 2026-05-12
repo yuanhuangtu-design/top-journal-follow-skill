@@ -377,4 +377,9 @@ def main():
             print(f"      期刊: {paper['journal']}")
             print(f"      作者: {', '.join(paper['authors'][:3])}{'...' if len(paper['authors'])>3 else ''}")
             print(f"      摘要: {abs_preview}")
-   
+            print()
+    print(f"[DONE] 结果文件: {main_path}")
+
+
+if __name__ == "__main__":
+    main()

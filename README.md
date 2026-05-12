@@ -314,4 +314,5 @@ top-journal-follow-skill/
 ## 致谢
 
 - [PubMed E-utilities API](https://www.ncbi.nlm.nih.gov/home/develop/api/) — 提供文献数据
-- [Chart.js
+- [Chart.js](https://www.chartjs.org/) — 交互式图表渲染
+- [Flask](https://flask.palletsprojects.com/) — 轻量级 Web 框架
