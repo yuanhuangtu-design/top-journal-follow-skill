@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>顶刊文献追踪</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; color: #1a1a2e; }
+
+/* 顶部导航 */
+.navbar { background: linear-gradient(135deg, #1a1a2e, #0f3460); color: white; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+.navbar h1 { font-size: 1.3rem; }
+.navbar .subtitle { font-size: 0.8rem; opacity: 0.7; }
+
+/* 主布局 */
+.main { display: flex; min-height: calc(100vh - 56px); }
+
+/* 左侧：搜索面板 */
+.sidebar { width: 420px; min-width: 420px; background: white; border-right: 1px solid #e0e0e0; padding: 1.5rem; overflow-y: auto; }
+.sidebar h2 { font-size: 1.1rem; margin-bottom: 1rem; color: #1a1a2e; }
+
+/* 表单 */
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: #444; margin-bottom: 0.3rem; }
+.form-group textarea, .form-group input, .form-group select { width: 100%; padding: 0.6rem 0.8rem; border: 1px solid #ddd; border-radius: 8px; font-size: 0.9rem; font-family: inherit; }
+.form-group textarea { min-height: 80px; resize: vertical; }
+.form-group textarea:focus, .form-group input:focus { outline: none; border-color: #0f3460; box-shadow: 0 0 0 3px rgba(15,52,96,0.1); }
+
+/* 选项行 */
+.options-row { display: flex; gap: 0.8rem; }
+.options-row .form-group { flex: 1; }
+
+/* 按钮 */
+.btn { padding: 0.7rem 1.5rem; border: none; border-radius: 8px; font-size: 0.95rem; cursor: pointer; font-weight: 600; transition: all 0.2s; }
+.btn-primary { background: #0f3460; color: white; width: 100%; }
+.btn-primary:hover { background: #16213e; }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-sm { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+.btn-outline { background: transparent; border: 1px solid #0f3460; color: #0f3460; }
+.btn-outline:hover { background: #e8f0fe; }
+
+/* 搜索示例 */
+.examples { margin-bottom: 1rem; }
+.example-tag { display: inline-block; background: #e8f0fe; color: #0f3460; padding: 0.3rem 0.7rem; border-radius: 15px; font-size: 0.78rem; margin: 0.2rem; cursor: pointer; transition: background 0.2s; }
+.example-tag:hover { background: #d0e2ff; }
+
+/* 进度状态 */
+.status-box { margin-top: 1rem; padding: 1rem; border-radius: 8px; display: none; }
+.status-box.active { display: block; }
+.status-box.info { background: #e8f0fe; border-left: 4px solid #0f3460; }
+.status-box.success { background: #e6f7e6; border-left: 4px solid #27ae60; }
+.status-box.error { background: #fde8e8; border-left: 4px solid #e74c3c; }
+.status-box .status-title { font-weight: 600; margin-bottom: 0.3rem; }
+.status-box .status-detail { font-size: 0.85rem; color: #666; }
+.status-spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid #0f3460; border-top-color: transparent; border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 8px; vertical-align: middle; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* 右侧：内容区 */
+.content { flex: 1; padding: 1.5rem; overflow-y: auto; }
+
+/* 欢迎页面 */
+.welcome { text-align: center; padding: 3rem 2rem; }
+.welcome h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.welcome p { color: #888; margin-bottom: 0.3rem; }
+
+/* 项目列表 */
+.project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+.project-card { background: white; border-radius: 10px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); cursor: pointer; transition: all 0.2s; border: 2px solid transparent; }
+.project-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); border-color: #0f3460; }
+.project-card .project-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.3rem; }
+.project-card .project-meta { font-size: 0.8rem; color: #888; }
+.project-card .project-query { font-size: 0.83rem; color: #555; margin: 0.5rem 0; padding: 0.4rem; background: #f8f9ff; border-radius: 4px; }
+.project-card .status-badge { display: inline-block; padding: 0.2rem 0.5rem; border-radius: 10px; font-size: 0.7rem; }
+.status-badge.completed { background: #e6f7e6; color: #27ae60; }
+.status-badge.running { background: #e8f0fe; color: #0f3460; }
+.status-badge.failed { background: #fde8e8; color: #e74c3c; }
+
+/* Dashboard iframe */
+.dashboard-frame { width: 100%; min-height: calc(100vh - 80px); border: none; border-radius: 8px; background: white; }
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+
+/* 空状态 */
+.empty-state { text-align: center; padding: 3rem; color: #aaa; }
+.empty-state p { font-size: 0.95rem; }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div>
+        <h1>📄 顶刊文献追踪</h1>
+        <div class="subtitle">PubMed 文献检索 · 分析 · 可视化</div>
+    </div>
+    <div>
+        <button class="btn btn-sm btn-outline" onclick="refreshProjects()" style="color:white;border-color:rgba(255,255,255,0.4);">🔄 刷新</button>
+    </div>
+</div>
+
+<div class="main">
+
+<!-- 左侧搜索面板 -->
+<div class="sidebar">
+    <h2>🔍 检索文献</h2>
+
+    <div class="examples">
+        <span class="example-tag" onclick="useExample(this)">find papers by Gelinas JN</span>
+        <span class="example-tag" onclick="useExample(this)">CRISPR gene editing</span>
+        <span class="example-tag" onclick="useExample(this)">deep learning in Nature</span>
+        <span class="example-tag" onclick="useExample(this)">Gelinas JN[Author] AND epilepsy[Title]</span>
+    </div>
+
+    <form id="searchForm" onsubmit="return runSearch(event)">
+        <div class="form-group">
+            <label for="query">检索词</label>
+            <textarea id="query" placeholder="输入自然语言或 PubMed 检索式...
+
+示例:
+· find papers by Gelinas JN
+· CRISPR gene editing
+· Gelinas JN[Author] AND epilepsy[Title]"></textarea>
+        </div>
+
+        <div class="options-row">
+            <div class="form-group">
+                <label for="journals">期刊限定（可选）</label>
+                <input id="journals" placeholder="Nature,Science,Cell">
+            </div>
+            <div class="form-group">
+                <label for="years">年份范围</label>
+                <input id="years" placeholder="2020-2025">
+            </div>
+            <div class="form-group" style="max-width:80px;">
+                <label for="max_results">篇数</label>
+                <input id="max_results" type="number" value="20" min="5" max="100">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="searchBtn">
+            🚀 开始检索
+        </button>
+    </form>
+
+    <!-- 状态显示 -->
+    <div class="status-box" id="statusBox">
+        <div class="status-title" id="statusTitle">
+            <span class="status-spinner" id="statusSpinner"></span>
+            <span id="statusText">正在检索...</span>
+        </div>
+        <div class="status-detail" id="statusDetail"></div>
+        <div style="margin-top:0.8rem; display:none;" id="viewDashboard">
+            <button class="btn btn-sm btn-primary" onclick="openCurrentProject()" style="width:auto;">
+                📊 查看看板
+            </button>
+        </div>
+    </div>
+
+    <hr style="margin:1.5rem 0; border:none; border-top:1px solid #eee;">
+
+    <h2>📂 历史项目</h2>
+    <div id="projectList">
+        <div class="empty-state"><p>暂无检索记录</p></div>
+    </div>
+</div>
+
+<!-- 右侧内容区 -->
+<div class="content" id="mainContent">
+    <div class="welcome" id="welcome">
+        <h2>👋 欢迎使用顶刊文献追踪</h2>
+        <p>在左侧输入检索词开始搜索</p>
+        <p style="font-size:0.85rem; color:#aaa; margin-top:1rem;">
+            支持自然语言和 PubMed 检索式<br>
+            自动分析关键词、期刊分布、作者活跃度<br>
+            每次检索独立保存，随时回顾对比
+        </p>
+    </div>
+    <div id="dashboardContainer" style="display:none;">
+        <iframe class="dashboard-frame" id="dashboardFrame"></iframe>
+    </div>
+</div>
+
+</div>
+
+<script>
+let currentProject = null;
+
+// 示例点击
+function useExample(el) {
+    document.getElementById('query').value = el.textContent;
+    document.getElementById('query').focus();
+}
+
+// 刷新项目列表
+async function refreshProjects() {
+    try {
+        const resp = await fetch('/api/projects');
+        const projects = await resp.json();
+        const container = document.getElementById('projectList');
+
+        if (projects.length === 0) {
+            container.innerHTML = '<div class="empty-state"><p>暂无检索记录</p></div>';
+            return;
+        }
+
+        container.innerHTML = '<div class="project-grid">' + projects.map(p => {
+            const meta = p.meta || {};
+            const status = meta.status || 'unknown';
+            const statusClass = status === 'completed' ? 'completed' :
+                                status === 'searching' || status === 'analyzing' || status === 'generating_dashboard' ? 'running' :
+                                'failed';
+            const statusLabel = status === 'completed' ? '✅ 完成' :
+                                status === 'searching' ? '⏳ 检索中' :
+                                status === 'analyzing' ? '⏳ 分析中' :
+                                status === 'generating_dashboard' ? '⏳ 生成看板' :
+                                status === 'analyze_failed' || status === 'dashboard_failed' || status === 'search_failed' ? '❌ 失败' :
+                                '❌ 失败';
+            const query = (meta.query_raw || '').substring(0, 50);
+            const date = meta.created_at || '';
+
+            return `<div class="project-card" onclick="openProject('${p.name}')">
+                <div class="project-name">${query || '未命名'}</div>
+                <div><span class="status-badge ${statusClass}">${statusLabel}</span></div>
+                <div class="project-query">${query}</div>
+                <div class="project-meta">${date} · ${meta.max_results || '?'}篇</div>
+            </div>`;
+        }).join('') + '</div>';
+    } catch(e) {
+        console.error('Failed to load projects:', e);
+    }
+}
+
+// 执行搜索
+async function runSearch(event) {
+    event.preventDefault();
+    const query = document.getElementById('query').value.trim();
+    if (!query) {
+        alert('请输入检索词');
+        return false;
+    }
+
+    const btn = document.getElementById('searchBtn');
+    btn.disabled = true;
+    btn.textContent = '⏳ 处理中...';
+
+    const statusBox = document.getElementById('statusBox');
+    statusBox.className = 'status-box active info';
+    document.getElementById('statusText').textContent = '正在启动检索...';
+    document.getElementById('statusSpinner').style.display = 'inline-block';
+    document.getElementById('viewDashboard').style.display = 'none';
+    document.getElementById('statusDetail').textContent = '';
+
+    try {
+        const resp = await fetch('/api/run', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                query: query,
+                journals: document.getElementById('journals').value.trim(),
+                years: document.getElementById('years').value.trim(),
+                max_results: parseInt(document.getElementById('max_results').value) || 20,
+            }),
+        });
+        const data = await resp.json();
+
+        if (data.error) {
+            throw new Error(data.error);
+        }
+
+        currentProject = data.project_name;
+        document.getElementById('statusText').textContent = '⏳ 正在检索文献...';
+        document.getElementById('statusDetail').textContent = '正在连接PubMed获取数据...';
+
+        // 轮询状态
+        pollStatus(data.project_name);
+
+    } catch(e) {
+        statusBox.className = 'status-box active error';
+        document.getElementById('statusText').textContent = '❌ 错误';
+        document.getElementById('statusDetail').textContent = e.message;
+        btn.disabled = false;
+        btn.textContent = '🚀 开始检索';
+    }
+
+    return false;
+}
+
+// 轮询项目状态
+function pollStatus(projectName) {
+    let retries = 0;
+    const maxRetries = 300;  // 最多等5分钟 (300 * 1s)
+
+    function check() {
+        fetch(`/api/project/${projectName}/meta`)
+            .then(r => r.json())
+            .then(meta => {
+                const status = meta.status || '';
+                const statusBox = document.getElementById('statusBox');
+                const spinner = document.getElementById('statusSpinner');
+
+                if (status === 'completed') {
+                    statusBox.className = 'status-box active success';
+                    document.getElementById('statusText').textContent = '✅ 检索完成！';
+                    document.getElementById('statusDetail').textContent = '看板已生成，正在自动打开...';
+                    document.getElementById('viewDashboard').style.display = 'none';
+                    document.getElementById('searchBtn').disabled = false;
+                    document.getElementById('searchBtn').textContent = '🚀 开始检索';
+                    refreshProjects();
+                    // 自动打开看板
+                    setTimeout(() => openProject(projectName), 500);
+                    return;
+                }
+
+                if (status === 'failed' || status === 'search_failed' || status === 'analyze_failed' || status === 'dashboard_failed') {
+                    statusBox.className = 'status-box active error';
+                    const errMsg = meta.error || meta.search_log || meta.analyze_log || '请检查网络连接后重试';
+                    const statusLabels = {
+                        'search_failed': 'PubMed 检索失败',
+                        'analyze_failed': '文献分析失败',
+                        'dashboard_failed': '看板生成失败',
+                        'failed': '处理失败',
+                    };
+                    document.getElementById('statusText').textContent = '❌ ' + (statusLabels[status] || status);
+                    document.getElementById('statusDetail').innerHTML = '<pre style="font-size:0.75rem;white-space:pre-wrap;max-height:200px;overflow-y:auto;background:#fde8e8;padding:0.5rem;border-radius:4px;">' + errMsg + '</pre>';
+                    document.getElementById('searchBtn').disabled = false;
+                    document.getElementById('searchBtn').textContent = '🚀 开始检索';
+                    return;
+                }
+
+                // 更新进度文本
+                const statusTexts = {
+                    'searching': '⏳ 正在检索文献...',
+                    'analyzing': '📊 正在分析关键词...',
+                    'generating_dashboard': '🎨 正在生成看板...',
+                };
+                document.getElementById('statusText').textContent = statusTexts[status] || `⏳ ${status}...`;
+
+                retries++;
+                if (retries < maxRetries) {
+                    setTimeout(check, 1000);
+                } else {
+                    statusBox.className = 'status-box active error';
+                    document.getElementById('statusText').textContent = '⏰ 超时';
+                    document.getElementById('statusDetail').textContent = '处理时间过长，请检查网络';
+                    document.getElementById('searchBtn').disabled = false;
+                    document.getElementById('searchBtn').textContent = '🚀 开始检索';
+                }
+            })
+            .catch(e => {
+                retries++;
+                if (retries < maxRetries) {
+                    setTimeout(check, 1000);
+                }
+            });
+    }
+
+    setTimeout(check, 1500);
+}
+
+// 打开项目
+function openProject(projectName) {
+    const container = document.getElementById('dashboardContainer');
+    const welcome = document.getElementById('welcome');
+    const frame = document.getElementById('dashboardFrame');
+
+    container.style.display = 'block';
+    welcome.style.display = 'none';
+
+    // 如果没有dashboard，显示提示
+    fetch(`/api/project/${projectName}`)
+        .then(r => r.json())
+        .then(info => {
+            if (!info.has_dashboard) {
+                frame.style.display = 'none';
+                container.innerHTML = `<div class=
