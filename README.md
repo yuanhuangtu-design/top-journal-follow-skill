@@ -120,6 +120,13 @@ literature_dashboard.html  ← Web UI 指向的当前版本
 
 ## 快速开始
 
+### 克隆
+
+```bash
+git clone https://github.com/your-username/top-journal-follow-skill.git
+cd top-journal-follow-skill
+```
+
 ### 前置条件
 
 - Python 3.8+
@@ -307,5 +314,4 @@ top-journal-follow-skill/
 ## 致谢
 
 - [PubMed E-utilities API](https://www.ncbi.nlm.nih.gov/home/develop/api/) — 提供文献数据
-- [Chart.js](https://www.chartjs.org/) — 交互式图表渲染
-- [Flask](https://flask.palletsprojects.com/) — 轻量级 Web 框架
+- [Chart.js
