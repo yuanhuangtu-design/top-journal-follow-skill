@@ -1,0 +1,63 @@
+name: Daily Literature Report
+
+on:
+  schedule:
+    # 每天 00:00 UTC = 08:00 北京时间
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-literature-report
+  cancel-in-progress: false
+
+jobs:
+  daily-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install --quiet requests deep-translator
+
+      - name: Run daily literature pipeline
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_PARENT_PAGE_ID: ${{ secrets.NOTION_PARENT_PAGE_ID }}
+          NOTION_PARENT_TYPE: ${{ vars.NOTION_PARENT_TYPE }}
+        run: |
+          python scripts/run_daily.py
+
+      - name: Upload daily report (HTML + JSON)
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-literature-report
+          path: |
+            output/daily_report_*.html
+            output/daily_report_*.json
+          retention-days: 30
+
+      - name: Commit latest report back to repository
+        run: |
+          mkdir -p reports
+          cp -f output/daily_report_latest.html reports/latest.html 2>/dev/null || true
+          cp -f output/daily_report_latest.json reports/latest.json 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+          else
+            git commit -m "docs: update daily literature report"
+            git push
+          fi

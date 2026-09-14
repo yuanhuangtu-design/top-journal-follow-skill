@@ -1,0 +1,21 @@
+{
+  "query": "epilepsy",
+  "max_results": 100,
+  "translate": true,
+  "journals": {
+    "A": "Nature,Science,Cell,Nat Med,Nat Neurosci,Neuron,Brain,Lancet Neurol,JAMA Neurol,Ann Neurol,Neurology,J Neurol Neurosurg Psychiatry,Stroke,Mol Neurodegener,Acta Neuropathol",
+    "B": "Epilepsia,Epilepsy Behav,Seizure,Epilepsy Res,Epileptic Disord,Epilepsia Open,Brain Stimul,J Neurosci,Mol Psychiatry,Brain Behav Immun,J Neuroinflamm"
+  },
+  "group_labels": {
+    "A": "高影响力期刊 × Epilepsy",
+    "B": "癫痫专科与神经科学 × Epilepsy"
+  },
+  "relevance_boost_words": [
+    "epilepsy", "epileptic", "epileptiform", "seizure", "seizures",
+    "convulsion", "convulsive", "status epilepticus", "drug-resistant",
+    "refractory", "intractable", "antiepileptic", "anticonvulsant",
+    "ictal", "interictal", "electroencephalogr", "eeg", "sudep",
+    "temporal lobe", "focal", "generalized", "tonic-clonic", "absence",
+    "mesial", "hippocampal", "kindling", "antiseizure"
+  ]
+}
