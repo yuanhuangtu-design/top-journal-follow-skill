@@ -10,7 +10,8 @@
   4. 相关性打分 → 优先级分级（必读 / 推荐 / 浏览）
   5. 标题与摘要中英翻译（失败自动降级为原文）
   6. 生成结构化日报 JSON + 独立 HTML 日报
-  7. 写入 Notion 日历页（提供 NOTION_TOKEN / NOTION_PARENT_PAGE_ID 时）
+  7. 写入 Notion（提供 NOTION_TOKEN / NOTION_PARENT_PAGE_ID 时）
+  8. 写入飞书多维表格（提供 FEISHU_APP_ID / FEISHU_APP_SECRET / FEISHU_APP_TOKEN 时）
 
 用法:
     python scripts/run_daily.py
@@ -18,6 +19,10 @@
     NOTION_TOKEN             Notion 集成 token（可选，缺省则跳过 Notion 写入）
     NOTION_PARENT_PAGE_ID    目标父页面 ID（可选）
     NOTION_PARENT_TYPE       page 或 database（默认 page）
+    FEISHU_APP_ID            飞书自建应用 App ID（可选）
+    FEISHU_APP_SECRET        飞书自建应用 App Secret（可选）
+    FEISHU_APP_TOKEN         飞书多维表格 app_token（可选）
+    FEISHU_TABLE_ID          飞书多维表格 table_id（可选，缺省取第一个表）
 """
 
 import argparse
@@ -110,8 +115,6 @@ def refetch_missing_abstracts(papers):
                 time.sleep(1.5)
     return papers
 
-
-# ==================== 合并去重 ====================
 
 def merge_dedupe(groups):
     """合并多组检索结果，按 PMID 去重，记录每组命中情况。"""
@@ -337,7 +340,6 @@ def render_html(report, groups):
             f"<td>{count}</td><td style='font-size:.75rem;'>{esc(pmid_str) or '无'}</td></tr>"
         )
     sections = []
-    # 按组组织文献
     for gr in report["group_records"]:
         label = gr["label"]
         papers_in_group = [p for p in report["papers"] if gr["group"] in p["hit_groups"]]
@@ -528,6 +530,139 @@ def write_notion(report):
     return created.get("url", page_id)
 
 
+# ==================== 飞书多维表格 ====================
+
+FEISHU_API = "https://open.feishu.cn/open-apis"
+
+
+def feishu_request(method, path, token, payload=None):
+    url = FEISHU_API + path
+    data = json.dumps(payload).encode("utf-8") if payload is not None else None
+    headers = {"Content-Type": "application/json; charset=utf-8"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    req = urllib.request.Request(url, data=data, headers=headers, method=method)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        print(f"[FEISHU-ERROR] HTTP {e.code}: {body}", file=sys.stderr)
+        return None
+    except Exception as e:
+        print(f"[FEISHU-ERROR] {e}", file=sys.stderr)
+        return None
+
+
+def feishu_tenant_token(app_id, app_secret):
+    resp = feishu_request("POST", "/auth/v3/tenant_access_token/internal", None,
+                          {"app_id": app_id, "app_secret": app_secret})
+    if resp and resp.get("code") == 0:
+        return resp.get("tenant_access_token")
+    print(f"[FEISHU-ERROR] 获取 tenant_access_token 失败: {resp}", file=sys.stderr)
+    return None
+
+
+def feishu_list_fields(token, app_token, table_id):
+    resp = feishu_request("GET", f"/bitable/v1/apps/{app_token}/tables/{table_id}/fields", token)
+    if resp and resp.get("code") == 0:
+        return {item["field_name"]: item.get("type") for item in resp.get("data", {}).get("items", [])}
+    return {}
+
+
+def write_feishu(report):
+    """把日报文献逐条写入飞书多维表格。自动检测表中存在的字段，只写匹配列。"""
+    app_id = os.environ.get("FEISHU_APP_ID", "").strip()
+    app_secret = os.environ.get("FEISHU_APP_SECRET", "").strip()
+    app_token = os.environ.get("FEISHU_APP_TOKEN", "").strip()
+    table_id = os.environ.get("FEISHU_TABLE_ID", "").strip()
+    if not (app_id and app_secret and app_token):
+        print("[FEISHU-SKIP] 未配置 FEISHU_APP_ID / FEISHU_APP_SECRET / FEISHU_APP_TOKEN，跳过飞书写入。")
+        return None
+
+    token = feishu_tenant_token(app_id, app_secret)
+    if not token:
+        return None
+
+    if not table_id:
+        tables = feishu_request("GET", f"/bitable/v1/apps/{app_token}/tables", token)
+        if tables and tables.get("code") == 0:
+            items = tables.get("data", {}).get("items", [])
+            if items:
+                table_id = items[0]["table_id"]
+        if not table_id:
+            print("[FEISHU-ERROR] 无法确定 table_id，请设置 FEISHU_TABLE_ID", file=sys.stderr)
+            return None
+
+    fields_map = feishu_list_fields(token, app_token, table_id)
+    if not fields_map:
+        print("[FEISHU-ERROR] 无法获取表字段，请确认飞书应用已被添加为该多维表格的协作者（可编辑）", file=sys.stderr)
+        return None
+    print(f"[FEISHU] 检测到表字段 ({len(fields_map)}): {list(fields_map.keys())}")
+
+    try:
+        report_date_ts = int(datetime.strptime(report["meta"]["report_date"], "%Y-%m-%d").timestamp() * 1000)
+    except Exception:
+        report_date_ts = None
+
+    records = []
+    for p in report["papers"]:
+        f = {}
+        if "标题" in fields_map:
+            f["标题"] = (p.get("title") or "")[:1000]
+        if "中文标题" in fields_map and p.get("title_zh"):
+            f["中文标题"] = p["title_zh"][:1000]
+        if "PMID" in fields_map:
+            f["PMID"] = str(p.get("pmid", ""))
+        if "期刊" in fields_map:
+            f["期刊"] = p.get("journal", "") or ""
+        if "作者" in fields_map:
+            authors = p.get("authors", []) or []
+            f["作者"] = "；".join(authors[:8]) + (" 等" if len(authors) > 8 else "")
+        if "DOI" in fields_map and p.get("doi"):
+            f["DOI"] = p["doi"]
+        if "PubMed链接" in fields_map and p.get("url"):
+            if fields_map.get("PubMed链接") == 15:
+                f["PubMed链接"] = {"link": p["url"], "text": p["url"]}
+            else:
+                f["PubMed链接"] = p["url"]
+        if "优先级" in fields_map:
+            f["优先级"] = p.get("priority", "浏览")
+        if "命中检索" in fields_map:
+            labels = [gr["label"] for gr in report["group_records"] if gr["group"] in p.get("hit_groups", [])]
+            f["命中检索"] = "、".join(labels)
+        if "英文摘要" in fields_map and p.get("abstract"):
+            f["英文摘要"] = p["abstract"][:5000]
+        if "中文摘要" in fields_map and p.get("abstract_zh"):
+            f["中文摘要"] = p["abstract_zh"][:5000]
+        if "日报日期" in fields_map and report_date_ts:
+            f["日报日期"] = report_date_ts
+        if "相关度得分" in fields_map:
+            f["相关度得分"] = p.get("relevance_score", 0)
+        if "已读" in fields_map:
+            f["已读"] = False
+        records.append({"fields": f})
+
+    if not records:
+        print("[FEISHU] 无文献可写入")
+        return 0
+
+    created = 0
+    for i in range(0, len(records), 50):
+        chunk = records[i:i + 50]
+        resp = feishu_request(
+            "POST",
+            f"/bitable/v1/apps/{app_token}/tables/{table_id}/records/batch_create",
+            token, {"records": chunk},
+        )
+        if resp and resp.get("code") == 0:
+            created += len(resp.get("data", {}).get("records", []))
+        else:
+            print(f"[FEISHU-ERROR] 批量写入第 {i//50 + 1} 批失败: {resp}", file=sys.stderr)
+    print(f"[FEISHU-OK] 已写入 {created}/{len(records)} 条记录到飞书多维表格")
+    return created
+
+
 # ==================== 主流程 ====================
 
 def main():
@@ -579,7 +714,9 @@ def main():
     page_url = write_notion(report)
     print(f"[NOTION] 页面: {page_url or '未写入'}")
 
-    # 汇总输出（供 Actions 日志查看）
+    feishu_count = write_feishu(report)
+    print(f"[FEISHU] 写入记录: {feishu_count if feishu_count else '未写入'}")
+
     print("\n" + "=" * 60)
     print("  日报摘要")
     print("=" * 60)
