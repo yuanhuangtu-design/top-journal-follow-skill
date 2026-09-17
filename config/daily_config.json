@@ -4,11 +4,16 @@
   "translate": true,
   "journals": {
     "A": "Nature,Science,Cell,Nat Med,Nat Neurosci,Neuron,Brain,Lancet Neurol,JAMA Neurol,Ann Neurol,Neurology,J Neurol Neurosurg Psychiatry,Stroke,Mol Neurodegener,Acta Neuropathol,Nat Commun,Sci Adv,Cell Rep Med,Transl Neurodegener,eLife",
-    "B": "Epilepsia,Epilepsy Behav,Seizure,Epilepsy Res,Epileptic Disord,Epilepsia Open,Brain Stimul,J Neurosci,Mol Psychiatry,Brain Behav Immun,J Neuroinflamm"
+    "B": "Epilepsia,Epilepsy Behav,Seizure,Epilepsy Res,Epileptic Disord,Epilepsia Open,Brain Stimul,J Neurosci,Mol Psychiatry,Brain Behav Immun,J Neuroinflamm",
+    "C": "Clin Neurophysiol,J Neurophysiol,J Neural Eng,NeuroImage,Brain Topogr,J Clin Neurophysiol,Neuromodulation,J Neurosci Methods,J Neuroeng Rehabil,IEEE Trans Neural Syst Rehabil Eng"
+  },
+  "group_queries": {
+    "C": "(electroencephalograph*[Title/Abstract] OR intracranial EEG[Title/Abstract] OR intracranial eeg[Title/Abstract] OR SEEG[Title/Abstract] OR \"local field potential\"[Title/Abstract] OR LFP[Title/Abstract] OR electrocorticograph*[Title/Abstract] OR ECoG[Title/Abstract] OR \"high-frequency oscillation\"[Title/Abstract] OR \"high frequency oscillation\"[Title/Abstract] OR HFO[Title/Abstract] OR \"multi-unit activity\"[Title/Abstract] OR MUA[Title/Abstract] OR \"neural signal\"[Title/Abstract] OR \"signal processing\"[Title/Abstract] OR (\"deep learning\"[Title/Abstract] AND EEG[Title/Abstract]))"
   },
   "group_labels": {
     "A": "高影响力期刊 × Epilepsy",
-    "B": "癫痫专科与神经科学 × Epilepsy"
+    "B": "癫痫专科与神经科学 × Epilepsy",
+    "C": "脑电信号分析方法"
   },
   "relevance_boost_words": [
     "epilepsy", "epileptic", "epileptiform", "seizure", "seizures",
@@ -16,6 +21,9 @@
     "refractory", "intractable", "antiepileptic", "anticonvulsant",
     "ictal", "interictal", "electroencephalogr", "eeg", "sudep",
     "temporal lobe", "focal", "generalized", "tonic-clonic", "absence",
-    "mesial", "hippocampal", "kindling", "antiseizure"
+    "mesial", "hippocampal", "kindling", "antiseizure",
+    "seeg", "ecog", "lfp", "intracranial", "electrocorticography",
+    "high-frequency oscillation", "hfo", "multi-unit activity", "mua",
+    "deep learning", "machine learning", "neural network", "signal processing"
   ]
 }
