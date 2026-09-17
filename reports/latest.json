@@ -1,28 +1,72 @@
 {
   "meta": {
-    "report_date": "2026-09-16",
-    "target_edat": "2026-09-15",
+    "report_date": "2026-09-17",
+    "target_edat": "2026-09-16",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-09-17 02:17:46"
+    "generated_at": "2026-09-17 03:05:14"
   },
   "group_records": [
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 0,
-      "total": 0,
-      "pmids": [],
+      "count": 1,
+      "total": 1,
+      "pmids": [
+        "42746838"
+      ],
       "status": "ok"
     },
     {
       "group": "B",
       "label": "癫痫专科与神经科学 × Epilepsy",
       "count": 0,
+      "total": 0,
       "pmids": [],
-      "status": "failed"
+      "status": "ok"
     }
   ],
-  "dedup_total": 0,
-  "papers": []
+  "dedup_total": 1,
+  "papers": [
+    {
+      "index": 1,
+      "pmid": "42746838",
+      "title": "Larger language models better align with neural representations of natural language.",
+      "title_zh": "较大的语言模型更好地与自然语言的神经表示保持一致。",
+      "journal": "eLife",
+      "iso_journal": "Elife",
+      "authors": [
+        "Hong Z",
+        "Wang H",
+        "Zada Z",
+        "Gazula H",
+        "Turner D",
+        "Aubrey B",
+        "Niekerken L",
+        "Doyle W",
+        "Devore S",
+        "Dugan P",
+        "Friedman D",
+        "Devinsky O",
+        "Flinker A",
+        "Hasson U",
+        "Nastase S",
+        "Goldstein AY"
+      ],
+      "pubdate": "2026 Sep 16",
+      "doi": "10.7554/eLife.101204",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42746838/",
+      "abstract": "Recent research has used large language models (LLMs) to study the neural basis of naturalistic language processing in the human brain. LLMs have rapidly grown in complexity, leading to improved language processing capabilities. Here, we utilized several families of transformer-based LLMs to investigate the relationship between model size and their ability to capture linguistic information in the human brain. Crucially, a subset of LLMs were trained on a fixed training set, enabling us to dissociate model size from architecture and training set size. We used electrocorticography (ECoG) to measure neural activity in epilepsy patients while they listened to a 30 min naturalistic audio story. We fit electrode-wise encoding models using contextual embeddings extracted from each hidden layer of the LLMs to predict word-level neural signals. In line with prior work, we found that larger LLMs better capture the structure of natural language and better predict neural activity. We also found a logarithmic relationship where the encoding performance peaks in relatively earlier layers as model size increases. We also observed variations in the best-performing layer across different brain regions, corresponding to an organized language processing hierarchy.",
+      "abstract_zh": "最近的研究使用大型语言模型（ LLM ）研究人类大脑中自然语言处理的神经基础。LLM的复杂性迅速增长，从而提高了语言处理能力。在这里，我们利用几个基于变换器的LLM家族来研究模型大小与它们在人脑中捕获语言信息的能力之间的关系。至关重要的是， LLM的一个子集是TRAI\n在固定的训练集上，使我们能够将模型大小与架构和训练集大小分开。我们使用皮质电图（ ECoG ）测量癫痫患者在听30分钟自然音频故事时的神经活动。我们使用从LLM的每个隐藏层中提取的上下文嵌入来拟合电极编码模型，以预测单词级神经信号。与之前的工作一致，我们发现更大的LLMs b\netter捕捉自然语言的结构，更好地预测神经活动。我们还发现了一种对数关系，其中随着模型大小的增加，编码性能在相对较早的层中达到峰值。我们还观察到不同大脑区域中表现最佳的层的变化，对应于有组织的语言处理层次结构。",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 1,
+      "relevance_hits": [
+        "epilepsy"
+      ],
+      "priority": "浏览"
+    }
+  ]
 }
