@@ -3,7 +3,7 @@
   "max_results": 100,
   "translate": true,
   "journals": {
-    "A": "Nature,Science,Cell,Nat Med,Nat Neurosci,Neuron,Brain,Lancet Neurol,JAMA Neurol,Ann Neurol,Neurology,J Neurol Neurosurg Psychiatry,Stroke,Mol Neurodegener,Acta Neuropathol",
+    "A": "Nature,Science,Cell,Nat Med,Nat Neurosci,Neuron,Brain,Lancet Neurol,JAMA Neurol,Ann Neurol,Neurology,J Neurol Neurosurg Psychiatry,Stroke,Mol Neurodegener,Acta Neuropathol,Nat Commun,Sci Adv,Cell Rep Med,Transl Neurodegener,eLife",
     "B": "Epilepsia,Epilepsy Behav,Seizure,Epilepsy Res,Epileptic Disord,Epilepsia Open,Brain Stimul,J Neurosci,Mol Psychiatry,Brain Behav Immun,J Neuroinflamm"
   },
   "group_labels": {
