@@ -168,11 +168,7 @@ def translate_text(text, target="zh-CN"):
     """英文 → 中文，逐级降级：Google → MyMemory → 原文。"""
     if not text or len(text.strip()) < 15:
         return text
-    try:
-        from deep_translator import GoogleTranslator
-        return GoogleTranslator(source="en", target=target).translate(text[:4500])
-    except Exception:
-        pass
+    # Google 在中国直连被墙，直接跳过，用 MyMemory
     try:
         from deep_translator import MyMemoryTranslator
         chunks = [text[i:i + 450] for i in range(0, len(text), 450)]
@@ -679,13 +675,20 @@ def main():
     edat_date = report_date - timedelta(days=1)
     print(f"[INFO] 日报日期: {report_date}  目标 EDAT: {edat_date}")
 
-    query = f'{config["query"]}[Title/Abstract] AND ("{edat_date}"[EDAT] : "{edat_date}"[EDAT])'
-    print(f"[INFO] 基础检索式: {query}")
+    base_query = f'{config["query"]}[Title/Abstract] AND ("{edat_date}"[EDAT] : "{edat_date}"[EDAT])'
+    group_queries = config.get("group_queries", {})
+    print(f"[INFO] 默认检索式: {base_query}")
 
     groups = {}
     for gname, journals in config["journals"].items():
         print(f"\n{'='*60}\n[RUN] 组 {gname} 检索开始")
-        groups[gname] = run_search(query, journals, os.path.join(OUTPUT_DIR, f"group_{gname}"), config.get("max_results", 100))
+        gq = group_queries.get(gname)
+        if gq:
+            actual_query = f'({gq}) AND ("{edat_date}"[EDAT] : "{edat_date}"[EDAT])'
+            print(f"[INFO] 组 {gname} 专用检索式: {actual_query}")
+        else:
+            actual_query = base_query
+        groups[gname] = run_search(actual_query, journals, os.path.join(OUTPUT_DIR, f"group_{gname}"), config.get("max_results", 100))
 
     papers = merge_dedupe(groups)
     papers = refetch_missing_abstracts(papers)
