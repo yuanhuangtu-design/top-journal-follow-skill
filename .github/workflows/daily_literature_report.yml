@@ -5,6 +5,11 @@ on:
     # 每天 00:00 UTC = 08:00 北京时间
     - cron: "0 0 * * *"
   workflow_dispatch:
+    inputs:
+      report_date:
+        description: "指定报告日期 YYYY-MM-DD（留空=今天，检索前一天的文献）"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -40,7 +45,11 @@ jobs:
           FEISHU_APP_TOKEN: ${{ secrets.FEISHU_APP_TOKEN }}
           FEISHU_TABLE_ID: ${{ secrets.FEISHU_TABLE_ID }}
         run: |
-          python scripts/run_daily.py
+          DATE_ARG=""
+          if [ -n "${{ inputs.report_date }}" ]; then
+            DATE_ARG="--date ${{ inputs.report_date }}"
+          fi
+          python scripts/run_daily.py $DATE_ARG
 
       - name: Upload daily report (HTML + JSON)
         uses: actions/upload-artifact@v4
