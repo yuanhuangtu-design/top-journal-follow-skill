@@ -1,21 +1,18 @@
 {
   "meta": {
-    "report_date": "2026-09-18",
-    "target_edat": "2026-09-17",
+    "report_date": "2026-09-19",
+    "target_edat": "2026-09-18",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-09-18 02:53:28"
+    "generated_at": "2026-09-19 02:51:30"
   },
   "group_records": [
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 1,
-      "total": 1,
-      "pmids": [
-        "42750441"
-      ],
-      "status": "ok"
+      "count": 0,
+      "pmids": [],
+      "status": "failed"
     },
     {
       "group": "B",
@@ -30,96 +27,46 @@
       "count": 1,
       "total": 1,
       "pmids": [
-        "42750660"
+        "42758718"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 2,
+  "dedup_total": 1,
   "papers": [
     {
       "index": 1,
-      "pmid": "42750441",
-      "title": "EGR3 deletion attenuates developmental and epileptic encephalopathy in Kcna1-null mice.",
-      "title_zh": "EGR3缺失可减轻Kcna1空小鼠的发育和癫痫性脑病。",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
+      "pmid": "42758718",
+      "title": "Task-stage-specific modes of beta frequency coordination in the hippocampal-prefrontal network.",
+      "title_zh": "海马-前额神经网络中特定任务阶段的β频率协调模式。",
+      "journal": "Journal of neurophysiology",
+      "iso_journal": "J Neurophysiol",
       "authors": [
-        "Mazumder AG",
-        "Karedia S",
-        "Adhyapak N",
-        "Schirmer C",
-        "Bass JS",
-        "Kamen JL",
-        "Jankovic MJ",
-        "Miao Q",
-        "Gallitano AL",
-        "Saltzman AB",
-        "Jain A",
-        "Malovannaya A",
-        "Glasscock E",
-        "Aiba I",
-        "Noebels JL",
-        "Krishnan V"
+        "Toptas P",
+        "Lew K",
+        "Wang G",
+        "Kaye AE",
+        "Leveroni ZM",
+        "Proctor-Bonbright JW",
+        "Mani U",
+        "Gutierrez J",
+        "Garcia B",
+        "Yu JY"
       ],
       "pubdate": "2026 Sep 17",
-      "doi": "10.1093/brain/awag319",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42750441/",
-      "abstract": "KCNA1 encodes the α-subunit of the voltage-gated potassium channel KV1.1. Mutations in KV1.1's pore domain result in developmental and epileptic encephalopathy (DEE), where early life seizures and a culprit lesion synergistically disrupt neurodevelopmental trajectories, resulting in intellectual disability that often presents with disturbances in sleep, sociability and sensory processing. Abnormalities in the subcellular localization of Kv1.1, via mutations in/autoantibodies against LGI1 and CNTNAP2, also give rise to syndromes of epilepsy and neuropsychiatric impairment. Mice with deletions of Kcna1(\"-/-\") are known to display spontaneous seizures at 2-3 weeks of age and premature mortality. In this study, we applied instrumented home-cage monitoring to examine how aberrations in KCNA1 expression may result in pervasive alterations in spontaneous behavior. Compared to wildtype, Kcna1-/- mice displayed a robust multifaceted behavioral syndrome featuring marked nocturnal hyperactivity, reduced sleep and sheltering, fragmented feeding/drinking rhythms, abnormal sensory responsivity and diminished wheel-running. In similar recordings, Kcna1+/- mice only displayed increased sheltering, Lgi1+/- mice displayed mild sleep reductions and Cntnap2-/- mice showed home-cage hypoactivity. Kcna1 loss in parvalbumin-positive interneurons (PV-Cre) resulted in a subtle phenocopy, with mild reductions in sleep accompanied by reduced sheltering behavior, while Kcna1 deletions in forebrain pyramidal neurons (Emx1-Cre) or dopaminergic neurons (DAT-Cre) were asymptomatic. Adult-onset conditional deletions of Kcna1 also produced only mild sleep loss 6 weeks later. To survey the molecular landscape in Kcna1-/- mice, we conducted a mass spectrometry proteomic analysis of dissected hippocampal tissue (a predominant seizure onset zone and where astrogliosis is observed). This revealed significant upregulations in brain-derived neurotrophic factor (BDNF) and the immediate early transcription factor, early growth response-3 (EGR3), which is necessary for the induction of BDNF following electroconvulsive seizures. Heterozygous or homozygous deletions of Egr3 in Kcna1-/- mice resulted in significant survival prolongation, a partial suppression of neurobehavioral impairments, and a significant reduction in the frequency of spontaneous seizures and spreading depolarization events. These phenotypic corrections were associated with an amelioration of BDNF induction, hippocampal astrogliosis and proteomic disturbances. Together, these data demonstrate how disruptions to an ion channel that governs neuronal excitability at millisecond timescales can pleiotropically alter spontaneous behavior over much longer time scales. Our results provide a model and a set of precision endpoints to understand how ictal and interictal features of DEE may manifest through long-term transcriptional alterations imparted by early life seizures.",
-      "abstract_zh": "KCNA1编码电压门控钾通道KV1.1的α-亚基。KV1.1的孔域突变导致发育和癫痫性脑病（ DEE ） ，其中早期生命癫痫发作和罪魁祸首病变协同破坏神经发育轨迹，导致智力残疾，通常伴有睡眠、社交和感官处理障碍。Kv1.1亚细胞定位异常， vi\na针对LGI1和CNTNAP2的自身抗体突变也会导致癫痫和神经精神障碍综合征。已知缺失Kcna1 （ “-/-” ）的小鼠在2-3周龄时表现出自发性癫痫发作和过早死亡。在这项研究中，我们应用仪器化的家庭监控来检查KCNA1表达的畸变如何导致自发行为的普遍改变。与野生型相比， Kcna1-/-\n小鼠表现出强大的多方面行为综合征，表现为明显的夜间多动、睡眠和庇护减少、喂食/饮水节律分散、感觉反应异常和车轮奔跑减少。在类似的记录中， Kcna1 +/-小鼠仅显示增加的庇护， Lgi1 +/-小鼠显示轻度睡眠减少， Cntnap2-/-小鼠显示家庭笼子活动减退。Parvalbumin阳性中间神经元的Kcna1丢失（ PV-C\nre ）导致微妙的表型，伴有轻度睡眠减少，伴有遮蔽行为减少，而前脑锥体神经元（ Emx1-Cre ）或多巴胺能神经元（ DAT-Cre ）中的Kcna1缺失是无症状的。成人发病的Kcna1有条件缺失也仅在6周后产生轻度睡眠丧失。为了调查Kcna1-/-小鼠的分子景观，我们对解剖的海马进行了质谱蛋白质组学分析。\n问题（主要的癫痫发作区和观察到的星形胶质瘤）。这揭示了脑源性神经营养因子（ BDNF ）和即刻早期转录因子早期生长反应-3 （ EGR3 ）的显著上调，这是电休克性癫痫发作后诱导BDNF所必需的。Kcna1-/-小鼠中Egr3的杂合子或纯合子缺失导致显著的存活延长，部分抑制\n神经行为障碍，以及自发性癫痫发作和传播去极化事件的频率显着降低。这些表型校正与BDNF诱导、海马星形胶质细胞增多症和蛋白质组紊乱的改善有关。总之，这些数据表明，在毫秒时间尺度上控制神经元兴奋性的离子通道的破坏如何能够多热性地改变自发行为\n或者在更长的时间尺度上。我们的研究结果提供了一个模型和一组精确终点，以了解DEE的发作和发作间期特征如何通过早期生活癫痫发作带来的长期转录改变而表现出来。",
-      "hit_groups": [
-        "A"
-      ],
-      "group_count": 1,
-      "relevance_score": 25,
-      "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "seizure",
-        "seizures",
-        "convulsive",
-        "ictal",
-        "interictal",
-        "hippocampal"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 2,
-      "pmid": "42750660",
-      "title": "Measuring motor intent for BCI control-A comparative analysis of signal quality of simultaneously recorded vECoG and scalp EEG.",
-      "title_zh": "测量BCI控制的电机意图-同时记录的vECoG和头皮脑电图信号质量的比较分析。",
-      "journal": "Journal of neural engineering",
-      "iso_journal": "J Neural Eng",
-      "authors": [
-        "Chetty N",
-        "Bennett J",
-        "Schone HR",
-        "Fry A",
-        "Yoo PE",
-        "Lacomis D",
-        "Oxley TJ",
-        "Collinger JL",
-        "Putrino DF",
-        "Weber DJ"
-      ],
-      "pubdate": "2026 Sep 17",
-      "doi": "10.1088/1741-2552/ae9eef",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42750660/",
-      "abstract": "Objective. Stent-electrode arrays enable endovascular brain-computer interfaces (BCI) by recording cortical neural activity from within the superior sagittal sinus and have recently been evaluated in an early feasibility clinical trial in the United States (ClinicalTrials.gov: NCT05035823). For a BCI to be viable, the signals need to be high quality to enable accurate decoding of user intent. Compared to electrodes placed on the scalp for electroencephalography (EEG), stent-electrode arrays lie closer to the cortical surface and would presumably offer higher signal quality yet a direct comparison of intravascular and scalp-based neural recordings in humans has not yet been investigated. Approach. We directly compared the signal quality of vascular electrocorticography (vECoG) versus scalp EEG signals in one participant with severe upper limb paralysis due to ALS. During two experimental sessions, the participant underwent simultaneous recording with the stent-electrode array and a scalp EEG using a gel cap. The participant was visually cued to attempt motor tasks, such as repeated flexion and extension of the ankles. Signal quality was assessed by quantifying motor modulation strength, differentiation of movement effort, and spatial lateralization. Noise metrics evaluated the relative impact of artifacts including 60 Hz line noise, electrocardiogram contamination, eye blinks, jaw clenching, and vocalization. Main results. Both recording modalities exhibited significant modulation during attempted movement relative to rest, with vECoG generally demonstrating significantly stronger modulation per channel in some frequency bands and conditions. Motor modulation was significantly reduced during motor imagery compared to overt movement in both modalities. Spatial source localization between left and right ankle movement did not reach significance for either modality. Each modality was vulnerable to some artifacts while generally unaffected by others. Scalp EEG showed large susceptibility to ocular artifacts and cranial muscle activity due to its proximity to superficial physiological sources, whereas vECoG exhibited prominent cardiac activity. Significance. Within this participant, the large modulation during attempted movement recorded with vECoG, unaffected by the attenuating effects of the skull, coupled with fewer artifacts in the frequency bands of interest, provides preliminary evidence that the stent-electrode arrays can acquire high quality neural signals that could support BCI control.",
-      "abstract_zh": "目的.支架-电极阵列通过记录上矢状窦内的皮质神经活动实现血管内脑-计算机接口（ BCI ） ，最近在美国的一项早期可行性临床试验中进行了评估（ ClinicalTrials.gov ： NCT05035823 ）。为了使BCI可行，信号需要是高质量的，以便能够准确解码用户意图。与放置在头皮上的电极相比\n脑电图（ EEG ） ，支架-电极阵列更接近皮质表面，并且可能提供更高的信号质量，但尚未研究人类血管内和基于头皮的神经记录的直接比较。方法。我们直接比较了一名因ALS而导致严重上肢麻痹的参与者血管皮质电图（ vECoG ）与头皮脑电图信号的信号质量。\n会话，参与者使用支架-电极阵列和使用凝胶帽的头皮脑电图同时进行记录。参与者在视觉上被提示尝试运动任务，例如反复屈曲和伸展脚踝。通过量化运动调制强度、运动努力的差异和空间横向化来评估信号质量。噪声指标评估了伪影的相对影响，包括60 Hz线路噪声\nse、心电图污染、眨眼、下巴紧闭和发声。主要结果。两种记录模式在相对于REST的尝试运动期间都表现出显著的调制， vECoG在一些频段和条件下通常表现出明显更强的每通道调制。与两种模式的明显运动相比，运动成像期间的运动调制显著减少。空间源LOCA\n左右踝关节运动之间的融合对于任何一种形式都没有达到显著性。每种模态都容易受到某些人工制品的影响，而通常不受其他人工制品的影响。由于靠近浅表生理源，头皮脑电图显示出对眼部伪影和颅肌活动的较大易感性，而vECoG显示出突出的心脏活动。意义。在这个参与者中，尝试期间的大调制\n使用vECoG记录的ted运动，不受颅骨衰减效应的影响，加上感兴趣频带中的伪影较少，提供了支架-电极阵列可以获取支持BCI控制的高质量神经信号的初步证据。",
+      "doi": "10.1152/jn.00232.2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42758718/",
+      "abstract": "Cognitive tasks typically consist of multiple stages with distinct computations. Yet how oscillatory dynamics across distributed brain networks switch to support the computations required for each task stage remains poorly understood. The hippocampal-neocortical networks show prominent beta oscillations (15-30 Hz) which are hypothesized to facilitate long-range interactions required for a range of spatial, operant, and cue-based tasks. However, it is unknown how beta oscillations differentially modulate the hippocampal-neocortical networks to support specific cognitive processes for each task stage. To characterize beta oscillatory dynamics in hippocampal-neocortical networks, we recorded local field potential and single-unit activity in the CA1 region of the hippocampus and the prefrontal cortex (PFC) of the neocortex while rats performed an odor-guided two-alternative forced-choice task. We focused on two task stages requiring different cognitive processes: cue sampling and goal attainment. We found that these two stages showed unique patterns of beta-frequency coordination between the CA1 and PFC, including differences for subbands of beta. Furthermore, we found that ensemble spiking activity patterns in the CA1 and PFC distinguished between the two task stages, with the CA1 expressing spatial and the PFC expressing non-spatial task correlates. Beta oscillations also showed task-stage-specific phase modulation of subsets of the CA1 and PFC populations. Our findings demonstrate that beta-frequency coordination in hippocampal-neocortical networks switches between functional modes, reconfiguring these networks to support the computational requirements for distinct stages within a cognitive task.",
+      "abstract_zh": "认知任务通常由多个阶段组成，具有不同的计算。然而，人们对跨分布式大脑网络的振荡动力学如何切换以支持每个任务阶段所需的计算仍知之甚少。海马-新皮质网络显示出突出的β振荡（ 15-30 Hz ） ，假设这些振荡促进了一系列空间、操作和基于线索的任务所需的远程相互作用。然而，\n未知β振荡如何差异地调节海马-新皮质网络，以支持每个任务阶段的特定认知过程。为了表征海马-新皮质网络中的β振荡动力学，我们记录了海马CA1区和新皮质前额叶皮质（ PFC ）的局部场电位和单个单位活动，而大鼠进行了气味引导的双重强制选择TAS\nk.我们专注于需要不同认知过程的两个任务阶段：提示采样和目标实现。我们发现这两个阶段在CA1和PFC之间表现出独特的β频率协调模式，包括β子带的差异。此外，我们发现CA1和PFC中的集成峰值活动模式区分了两个任务阶段， CA1表示空间， PFC表示非spati\n所有任务相关。β振荡还显示CA1和PFC群体的子集的任务阶段特定相位调制。我们的研究结果表明，海马-大脑皮层网络中的β-频率协调在功能模式之间切换，重新配置这些网络以支持认知任务中不同阶段的计算要求。",
       "hit_groups": [
         "C"
       ],
       "group_count": 1,
-      "relevance_score": 12,
+      "relevance_score": 5,
       "relevance_hits": [
-        "electroencephalogr",
-        "eeg",
-        "ecog",
-        "electrocorticography"
+        "hippocampal"
       ],
-      "priority": "必读"
+      "priority": "推荐"
     }
   ]
 }
