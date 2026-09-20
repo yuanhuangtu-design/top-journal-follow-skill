@@ -1,72 +1,37 @@
 {
   "meta": {
-    "report_date": "2026-09-19",
-    "target_edat": "2026-09-18",
+    "report_date": "2026-09-20",
+    "target_edat": "2026-09-19",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-09-19 02:51:30"
+    "generated_at": "2026-09-20 03:03:09"
   },
   "group_records": [
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
       "count": 0,
+      "total": 0,
       "pmids": [],
-      "status": "failed"
+      "status": "ok"
     },
     {
       "group": "B",
       "label": "癫痫专科与神经科学 × Epilepsy",
       "count": 0,
+      "total": 0,
       "pmids": [],
-      "status": "failed"
+      "status": "ok"
     },
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 1,
-      "total": 1,
-      "pmids": [
-        "42758718"
-      ],
+      "count": 0,
+      "total": 0,
+      "pmids": [],
       "status": "ok"
     }
   ],
-  "dedup_total": 1,
-  "papers": [
-    {
-      "index": 1,
-      "pmid": "42758718",
-      "title": "Task-stage-specific modes of beta frequency coordination in the hippocampal-prefrontal network.",
-      "title_zh": "海马-前额神经网络中特定任务阶段的β频率协调模式。",
-      "journal": "Journal of neurophysiology",
-      "iso_journal": "J Neurophysiol",
-      "authors": [
-        "Toptas P",
-        "Lew K",
-        "Wang G",
-        "Kaye AE",
-        "Leveroni ZM",
-        "Proctor-Bonbright JW",
-        "Mani U",
-        "Gutierrez J",
-        "Garcia B",
-        "Yu JY"
-      ],
-      "pubdate": "2026 Sep 17",
-      "doi": "10.1152/jn.00232.2026",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42758718/",
-      "abstract": "Cognitive tasks typically consist of multiple stages with distinct computations. Yet how oscillatory dynamics across distributed brain networks switch to support the computations required for each task stage remains poorly understood. The hippocampal-neocortical networks show prominent beta oscillations (15-30 Hz) which are hypothesized to facilitate long-range interactions required for a range of spatial, operant, and cue-based tasks. However, it is unknown how beta oscillations differentially modulate the hippocampal-neocortical networks to support specific cognitive processes for each task stage. To characterize beta oscillatory dynamics in hippocampal-neocortical networks, we recorded local field potential and single-unit activity in the CA1 region of the hippocampus and the prefrontal cortex (PFC) of the neocortex while rats performed an odor-guided two-alternative forced-choice task. We focused on two task stages requiring different cognitive processes: cue sampling and goal attainment. We found that these two stages showed unique patterns of beta-frequency coordination between the CA1 and PFC, including differences for subbands of beta. Furthermore, we found that ensemble spiking activity patterns in the CA1 and PFC distinguished between the two task stages, with the CA1 expressing spatial and the PFC expressing non-spatial task correlates. Beta oscillations also showed task-stage-specific phase modulation of subsets of the CA1 and PFC populations. Our findings demonstrate that beta-frequency coordination in hippocampal-neocortical networks switches between functional modes, reconfiguring these networks to support the computational requirements for distinct stages within a cognitive task.",
-      "abstract_zh": "认知任务通常由多个阶段组成，具有不同的计算。然而，人们对跨分布式大脑网络的振荡动力学如何切换以支持每个任务阶段所需的计算仍知之甚少。海马-新皮质网络显示出突出的β振荡（ 15-30 Hz ） ，假设这些振荡促进了一系列空间、操作和基于线索的任务所需的远程相互作用。然而，\n未知β振荡如何差异地调节海马-新皮质网络，以支持每个任务阶段的特定认知过程。为了表征海马-新皮质网络中的β振荡动力学，我们记录了海马CA1区和新皮质前额叶皮质（ PFC ）的局部场电位和单个单位活动，而大鼠进行了气味引导的双重强制选择TAS\nk.我们专注于需要不同认知过程的两个任务阶段：提示采样和目标实现。我们发现这两个阶段在CA1和PFC之间表现出独特的β频率协调模式，包括β子带的差异。此外，我们发现CA1和PFC中的集成峰值活动模式区分了两个任务阶段， CA1表示空间， PFC表示非spati\n所有任务相关。β振荡还显示CA1和PFC群体的子集的任务阶段特定相位调制。我们的研究结果表明，海马-大脑皮层网络中的β-频率协调在功能模式之间切换，重新配置这些网络以支持认知任务中不同阶段的计算要求。",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 5,
-      "relevance_hits": [
-        "hippocampal"
-      ],
-      "priority": "推荐"
-    }
-  ]
+  "dedup_total": 0,
+  "papers": []
 }
