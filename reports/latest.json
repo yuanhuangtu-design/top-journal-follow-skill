@@ -1,10 +1,10 @@
 {
   "meta": {
-    "report_date": "2026-09-20",
-    "target_edat": "2026-09-19",
+    "report_date": "2026-09-21",
+    "target_edat": "2026-09-20",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-09-20 03:03:09"
+    "generated_at": "2026-09-21 02:59:59"
   },
   "group_records": [
     {
