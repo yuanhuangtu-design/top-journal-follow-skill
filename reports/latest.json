@@ -1,10 +1,10 @@
 {
   "meta": {
-    "report_date": "2026-09-21",
-    "target_edat": "2026-09-20",
+    "report_date": "2026-09-22",
+    "target_edat": "2026-09-21",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-09-21 02:59:59"
+    "generated_at": "2026-09-22 03:00:13"
   },
   "group_records": [
     {
@@ -19,9 +19,8 @@
       "group": "B",
       "label": "癫痫专科与神经科学 × Epilepsy",
       "count": 0,
-      "total": 0,
       "pmids": [],
-      "status": "ok"
+      "status": "failed"
     },
     {
       "group": "C",
