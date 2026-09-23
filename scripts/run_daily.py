@@ -53,7 +53,7 @@ def beijing_today():
 
 # ==================== 检索 ====================
 
-def run_search(query, journals, outdir, max_results, retries=2):
+def run_search(query, journals, outdir, max_results, retries=3):
     os.makedirs(outdir, exist_ok=True)
     cmd = [
         sys.executable,
@@ -79,8 +79,8 @@ def run_search(query, journals, outdir, max_results, retries=2):
                 print("[WARN] 检测到 PubMed API 请求异常（网络不稳定）", file=sys.stderr)
             print(proc.stderr, file=sys.stderr)
         if attempt < retries:
-            print(f"[RETRY] 检索失败，{attempt * 5} 秒后重试（第 {attempt + 1}/{retries} 次）...")
-            time.sleep(attempt * 5)
+            print(f"[RETRY] 检索失败，{attempt * 10} 秒后重试（第 {attempt + 1}/{retries} 次）...")
+            time.sleep(attempt * 10)
     return None
 
 
