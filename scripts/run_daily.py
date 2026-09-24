@@ -5,10 +5,10 @@
 ============================================
 流程：
   1. 计算北京日期：日报日期 = 今天，目标 PubMed EDAT = 昨天
-  2. 组A（高影响力期刊 × Epilepsy）+ 组B（癫痫专科与神经科学 × Epilepsy）检索
+  2. 组A（高影响力期刊 × Epilepsy）+ 组B1/B2（癫痫专科/神经科学 × Epilepsy）+ 组C（脑电方法学）检索
   3. 合并 → 按 PMID 全局去重
   4. 相关性打分 → 优先级分级（必读 / 推荐 / 浏览）
-  5. 标题与摘要中英翻译（失败自动降级为原文）
+  5. 标题与摘要中英翻译（失败自动重试，仍失败则降级为原文并告警）
   6. 生成结构化日报 JSON + 独立 HTML 日报
   7. 写入 Notion（提供 NOTION_TOKEN / NOTION_PARENT_PAGE_ID 时）
   8. 写入飞书多维表格（提供 FEISHU_APP_ID / FEISHU_APP_SECRET / FEISHU_APP_TOKEN 时）
@@ -164,27 +164,38 @@ def grade_paper(score):
 
 # ==================== 翻译 ====================
 
-def translate_text(text, target="zh-CN"):
-    """英文 → 中文，逐级降级：Google → MyMemory → 原文。"""
+def translate_text(text, target="zh-CN", retries=2):
+    """英文 → 中文，MyMemory 翻译，失败自动重试。"""
     if not text or len(text.strip()) < 15:
         return text
-    # Google 在中国直连被墙，直接跳过，用 MyMemory
-    try:
-        from deep_translator import MyMemoryTranslator
-        chunks = [text[i:i + 450] for i in range(0, len(text), 450)]
-        parts = []
-        for chunk in chunks:
-            try:
-                parts.append(MyMemoryTranslator(source="en-US", target="zh-CN").translate(chunk))
-            except Exception:
-                parts.append(chunk)
-            time.sleep(0.3)
-        return "\n".join(parts)
-    except Exception:
-        return text
+    from deep_translator import MyMemoryTranslator
+    for attempt in range(retries + 1):
+        try:
+            chunks = [text[i:i + 450] for i in range(0, len(text), 450)]
+            parts = []
+            for chunk in chunks:
+                try:
+                    translated = MyMemoryTranslator(source="en-US", target="zh-CN").translate(chunk)
+                    # MyMemory 限流时会返回原文或空，检测到则重试
+                    if not translated or (len(translated) < len(chunk) * 0.3 and attempt < retries):
+                        raise Exception("translation too short, possibly rate-limited")
+                    parts.append(translated)
+                except Exception:
+                    if attempt < retries:
+                        time.sleep(2)
+                        raise  # 触发外层重试
+                    parts.append(chunk)
+                time.sleep(0.5)
+            return "\n".join(parts)
+        except Exception:
+            if attempt < retries:
+                time.sleep(3)
+                continue
+            return text
+    return text
 
 
-def translate_with_timeout(text, timeout=20):
+def translate_with_timeout(text, timeout=30):
     """带超时保护的翻译：超时返回原文，防止网络阻塞拖垮每日任务。"""
     import concurrent.futures
     if not text or len(text.strip()) < 15:
@@ -695,12 +706,22 @@ def main():
     print(f"\n[INFO] 合并去重后文献数: {len(papers)}")
 
     if config.get("translate", True) and not args.no_translate:
-        print("[INFO] 开始中文翻译（标题 + 摘要，单篇限时 20 秒）...")
+        print("[INFO] 开始中文翻译（标题 + 摘要，单篇限时 30 秒，失败自动重试）...")
+        translate_failures = []
         for i, p in enumerate(papers, 1):
             print(f"  [{i}/{len(papers)}] PMID {p.get('pmid')} 翻译中...")
-            p["_title_zh"] = translate_with_timeout(p.get("title", ""))
-            p["_abstract_zh"] = translate_with_timeout(p.get("abstract", ""))
-            time.sleep(0.2)
+            title_zh = translate_with_timeout(p.get("title", ""))
+            abs_zh = translate_with_timeout(p.get("abstract", ""))
+            p["_title_zh"] = title_zh
+            p["_abstract_zh"] = abs_zh
+            # 检测翻译是否失败（返回原文）
+            if p.get("abstract") and abs_zh == p.get("abstract"):
+                translate_failures.append(p.get("pmid"))
+            time.sleep(0.5)
+        if translate_failures:
+            print(f"[WARN] 以下 PMID 翻译可能失败（返回原文）: {', '.join(translate_failures)}")
+        else:
+            print("[OK] 全部翻译成功")
     else:
         for p in papers:
             p["_title_zh"] = ""

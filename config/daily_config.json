@@ -4,7 +4,8 @@
   "translate": true,
   "journals": {
     "A": "Nature,Science,Cell,Nat Med,Nat Neurosci,Neuron,Brain,Lancet Neurol,JAMA Neurol,Ann Neurol,Neurology,J Neurol Neurosurg Psychiatry,Stroke,Mol Neurodegener,Acta Neuropathol,Nat Commun,Sci Adv,Cell Rep Med,Transl Neurodegener,eLife",
-    "B": "Epilepsia,Epilepsy Behav,Seizure,Epilepsy Res,Epileptic Disord,Epilepsia Open,Brain Stimul,J Neurosci,Mol Psychiatry,Brain Behav Immun,J Neuroinflamm",
+    "B1": "Epilepsia,Epilepsy Behav,Seizure,Epilepsy Res,Epileptic Disord,Epilepsia Open",
+    "B2": "Brain Stimul,J Neurosci,Mol Psychiatry,Brain Behav Immun,J Neuroinflamm",
     "C": "Clin Neurophysiol,J Neurophysiol,J Neural Eng,NeuroImage,Brain Topogr,J Clin Neurophysiol,Neuromodulation,J Neurosci Methods,J Neuroeng Rehabil,IEEE Trans Neural Syst Rehabil Eng"
   },
   "group_queries": {
@@ -12,7 +13,8 @@
   },
   "group_labels": {
     "A": "高影响力期刊 × Epilepsy",
-    "B": "癫痫专科与神经科学 × Epilepsy",
+    "B1": "癫痫专科刊 × Epilepsy",
+    "B2": "神经科学刊 × Epilepsy",
     "C": "脑电信号分析方法"
   },
   "relevance_boost_words": [
