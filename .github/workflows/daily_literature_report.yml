@@ -2,8 +2,8 @@ name: Daily Literature Report
 
 on:
   schedule:
-    # 每天 00:00 UTC = 08:00 北京时间
-    - cron: "0 0 * * *"
+    # 每天 21:00 UTC = 05:00 北京时间（GitHub免费账户cron延迟约3小时，预计08:00左右跑完）
+    - cron: "0 21 * * *"
   workflow_dispatch:
     inputs:
       report_date:
