@@ -8,7 +8,7 @@
   2. 组A（高影响力期刊 × Epilepsy）+ 组B1/B2（癫痫专科/神经科学 × Epilepsy）+ 组C（脑电方法学）检索
   3. 合并 → 按 PMID 全局去重
   4. 相关性打分 → 优先级分级（必读 / 推荐 / 浏览）
-  5. 标题与摘要中英翻译（失败自动重试，仍失败则降级为原文并告警）
+  5. 标题与摘要中英翻译（直接调用MyMemory API，失败自动重试，仍失败则降级为原文并告警）
   6. 生成结构化日报 JSON + 独立 HTML 日报
   7. 写入 Notion（提供 NOTION_TOKEN / NOTION_PARENT_PAGE_ID 时）
   8. 写入飞书多维表格（提供 FEISHU_APP_ID / FEISHU_APP_SECRET / FEISHU_APP_TOKEN 时）
@@ -165,28 +165,38 @@ def grade_paper(score):
 # ==================== 翻译 ====================
 
 def translate_text(text, target="zh-CN", retries=2):
-    """英文 → 中文，MyMemory 翻译，失败自动重试。"""
-    if not text or len(text.strip()) < 15:
+    """英文 → 中文，直接调用 MyMemory API（不经过 deep-translator 库，避免限流）。"""
+    if not text or len(text.strip()) < 5:
         return text
-    from deep_translator import MyMemoryTranslator
     for attempt in range(retries + 1):
         try:
             chunks = [text[i:i + 450] for i in range(0, len(text), 450)]
             parts = []
             for chunk in chunks:
-                try:
-                    translated = MyMemoryTranslator(source="en-US", target="zh-CN").translate(chunk)
-                    # MyMemory 限流时会返回原文或空，检测到则重试
-                    if not translated or (len(translated) < len(chunk) * 0.3 and attempt < retries):
-                        raise Exception("translation too short, possibly rate-limited")
-                    parts.append(translated)
-                except Exception:
-                    if attempt < retries:
-                        time.sleep(2)
-                        raise  # 触发外层重试
+                params = urllib.parse.urlencode({"q": chunk, "langpair": "en|zh-CN"})
+                url = f"https://api.mymemory.translated.net/get?{params}"
+                req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+                with urllib.request.urlopen(req, timeout=20) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                if data.get("responseStatus") == 200:
+                    translated = data["responseData"]["translatedText"]
+                    if translated and len(translated) > 5:
+                        parts.append(translated)
+                    else:
+                        parts.append(chunk)
+                else:
                     parts.append(chunk)
-                time.sleep(0.5)
-            return "\n".join(parts)
+                time.sleep(0.8)
+            result = "\n".join(parts)
+            # 验证是否真的翻译成中文（中文字符占比>10%）
+            chinese = len(re.findall(r"[\u4e00-\u9fff]", result))
+            if chinese / max(len(result), 1) > 0.1:
+                return result
+            elif attempt < retries:
+                time.sleep(3)
+                continue
+            else:
+                return text
         except Exception:
             if attempt < retries:
                 time.sleep(3)
@@ -195,10 +205,10 @@ def translate_text(text, target="zh-CN", retries=2):
     return text
 
 
-def translate_with_timeout(text, timeout=30):
+def translate_with_timeout(text, timeout=60):
     """带超时保护的翻译：超时返回原文，防止网络阻塞拖垮每日任务。"""
     import concurrent.futures
-    if not text or len(text.strip()) < 15:
+    if not text or len(text.strip()) < 5:
         return text
     with concurrent.futures.ThreadPoolExecutor(max_workers=1) as ex:
         future = ex.submit(translate_text, text)
@@ -706,7 +716,7 @@ def main():
     print(f"\n[INFO] 合并去重后文献数: {len(papers)}")
 
     if config.get("translate", True) and not args.no_translate:
-        print("[INFO] 开始中文翻译（标题 + 摘要，单篇限时 30 秒，失败自动重试）...")
+        print("[INFO] 开始中文翻译（标题 + 摘要，单篇限时 60 秒，失败自动重试）...")
         translate_failures = []
         for i, p in enumerate(papers, 1):
             print(f"  [{i}/{len(papers)}] PMID {p.get('pmid')} 翻译中...")
@@ -714,12 +724,14 @@ def main():
             abs_zh = translate_with_timeout(p.get("abstract", ""))
             p["_title_zh"] = title_zh
             p["_abstract_zh"] = abs_zh
-            # 检测翻译是否失败（返回原文）
-            if p.get("abstract") and abs_zh == p.get("abstract"):
-                translate_failures.append(p.get("pmid"))
-            time.sleep(0.5)
+            # 检测翻译是否失败（中文字符占比<10%说明仍是英文）
+            if p.get("abstract"):
+                zh_chars = len(re.findall(r"[\u4e00-\u9fff]", abs_zh))
+                if zh_chars / max(len(abs_zh), 1) < 0.1:
+                    translate_failures.append(p.get("pmid"))
+            time.sleep(0.8)
         if translate_failures:
-            print(f"[WARN] 以下 PMID 翻译可能失败（返回原文）: {', '.join(translate_failures)}")
+            print(f"[WARN] 以下 PMID 翻译可能失败（仍是英文）: {', '.join(translate_failures)}")
         else:
             print("[OK] 全部翻译成功")
     else:
