@@ -1,36 +1,116 @@
 {
   "meta": {
-    "report_date": "2026-09-24",
-    "target_edat": "2026-09-23",
+    "report_date": "2026-09-25",
+    "target_edat": "2026-09-24",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-09-24 02:51:45"
+    "generated_at": "2026-09-24 23:43:52"
   },
   "group_records": [
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 0,
-      "total": 0,
-      "pmids": [],
+      "count": 1,
+      "total": 1,
+      "pmids": [
+        "42778607"
+      ],
       "status": "ok"
     },
     {
-      "group": "B",
-      "label": "癫痫专科与神经科学 × Epilepsy",
+      "group": "B1",
+      "label": "癫痫专科刊 × Epilepsy",
       "count": 0,
       "pmids": [],
       "status": "failed"
     },
     {
+      "group": "B2",
+      "label": "神经科学刊 × Epilepsy",
+      "count": 1,
+      "total": 1,
+      "pmids": [
+        "42771895"
+      ],
+      "status": "ok"
+    },
+    {
       "group": "C",
       "label": "脑电信号分析方法",
       "count": 0,
-      "total": 0,
       "pmids": [],
-      "status": "ok"
+      "status": "failed"
     }
   ],
-  "dedup_total": 0,
-  "papers": []
+  "dedup_total": 2,
+  "papers": [
+    {
+      "index": 1,
+      "pmid": "42778607",
+      "title": "mTORC1 drives cell-autonomous astrocyte reactivity in tuberous sclerosis.",
+      "title_zh": "mTORC1在结节性硬化症中驱动细胞自主星形胶质细胞反应性。",
+      "journal": "Nature",
+      "iso_journal": "Nature",
+      "authors": [
+        "Li TL",
+        "Blair JD",
+        "Yoo T",
+        "Grant GA",
+        "Hockemeyer D",
+        "Porter BE",
+        "Bateup HS"
+      ],
+      "pubdate": "2026 Sep 23",
+      "doi": "10.1038/s41586-026-11054-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42778607/",
+      "abstract": "Tuberous sclerosis complex (TSC) is a genetic neurodevelopmental disorder characterized by focal brain malformations called cortical tubers, which are associated with severe, intractable epilepsy 1 . Tubers are thought to result from somatic second-hit mutations that disrupt the TSC1 or TSC2 genes in neural progenitor cells, driving hyperactive mTORC1 signalling 2 . Glial abnormalities are commonly observed in tubers 3 ; however, whether glia actively cause disease or merely result from chronic seizure activity has remained unclear. To address this question, we used human brain organoid models to track the developmental fate of mutated progenitor cells in the absence of seizures. Here we show, using single-cell transcriptomics and cyclic immunostaining across human brain organoids and resected tuber tissue from patients, that loss of TSC2 biases neural progenitors to differentiate into enlarged, pro-inflammatory reactive astrocytes in a cell autonomous manner. These mutant astrocytes show downregulated glutamate transporter expression, increased inflammatory cytokine secretion and elevated expression of neurodegenerative disease risk genes such as APOE and CLU. Our findings demonstrate that reactive astrocytes emerge as a primary consequence of TSC2 loss. These results implicate glial dysfunction as a driver of TSC pathogenesis and highlight reactive astrocytes as potential therapeutic targets for TSC-related neuropathology.",
+      "abstract_zh": "结节性硬化综合征（ TSC ）是一种遗传性神经发育障碍，其特征是称为皮质结节的局灶性脑畸形，其与严重的顽固性癫痫相关1。块茎被认为是由破坏神经祖细胞中TSC1或TSC2基因的体细胞二次击中突变引起的，从而驱动过度活跃的mTORC1信号传导2。在块茎3中通常观察到神经胶质异常；然而，神经胶质细胞是否起作用\n主要引起疾病或仅由慢性癫痫活动引起仍不清楚。为了解决这个问题，我们使用人脑类器官模型来跟踪突变祖细胞在没有癫痫发作的情况下的发育命运。在这里，我们使用单细胞转录组学和循环免疫染色跨越人脑类器官和切除患者结节组织，表明TSC2的丢失使神经祖细胞分化为\n以细胞自主的方式扩增的促炎性反应性星形胶质细胞。这些突变星形胶质细胞显示谷氨酸转运蛋白表达下调，炎症细胞因子分泌增加，神经退行性疾病风险基因如APOE和CLU的表达增加。我们的研究结果表明，反应性星形胶质细胞是TSC2丢失的主要结果。这些结果表明神经胶质功能障碍是TSC发病机制的驱动因素\n并强调反应性星形胶质细胞是TSC相关神经病理学的潜在治疗靶点。",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 7,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "intractable",
+        "focal",
+        "absence"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 2,
+      "pmid": "42771895",
+      "title": "Temporal EEG coupling during precuneus low-frequency rTMS in drug-resistant mesial temporal lobe epilepsy.",
+      "title_zh": "耐药性近侧颞叶癫痫患者楔前肌低频rTMS期间的颞脑电图耦合。",
+      "journal": "Brain stimulation",
+      "iso_journal": "Brain Stimul",
+      "authors": [
+        "So M",
+        "Kim H",
+        "Lee I",
+        "Kim JB"
+      ],
+      "pubdate": "2026 Sep 22",
+      "doi": "10.1016/j.brs.2026.103220",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42771895/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "B2"
+      ],
+      "group_count": 1,
+      "relevance_score": 10,
+      "relevance_hits": [
+        "epilepsy",
+        "drug-resistant",
+        "eeg",
+        "temporal lobe",
+        "mesial"
+      ],
+      "priority": "必读"
+    }
+  ]
 }
