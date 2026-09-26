@@ -1,10 +1,10 @@
 {
   "meta": {
-    "report_date": "2026-09-26",
-    "target_edat": "2026-09-25",
+    "report_date": "2026-09-27",
+    "target_edat": "2026-09-26",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-09-25 23:47:10"
+    "generated_at": "2026-09-26 23:19:31"
   },
   "group_records": [
     {
@@ -36,20 +36,19 @@
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 6,
-      "total": 6,
+      "count": 5,
+      "total": 5,
       "pmids": [
+        "42790612",
+        "42789980",
         "42785524",
         "42785051",
-        "42785050",
-        "42777850",
-        "42777778",
-        "42777772"
+        "42785050"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 8,
+  "dedup_total": 7,
   "papers": [
     {
       "index": 1,
@@ -114,6 +113,69 @@
     },
     {
       "index": 3,
+      "pmid": "42790612",
+      "title": "Perturbational signature of the somato-cognitive action network in human primary motor cortex.",
+      "title_zh": "人类初级运动皮层躯体认知行动网络的扰动特征。",
+      "journal": "NeuroImage",
+      "iso_journal": "Neuroimage",
+      "authors": [
+        "Mancuso M",
+        "Maccarrone D",
+        "Ruocco G",
+        "Collura A",
+        "Pellegrini S",
+        "Spampinato D",
+        "Belvisi D",
+        "Berardelli A",
+        "Conte A",
+        "Leodori G"
+      ],
+      "pubdate": "2026 Sep 25",
+      "doi": "10.1016/j.neuroimage.2026.122261",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42790612/",
+      "abstract": "INTRODUCTION: Functional-MRI evidence recently identified inter-effector regions in the primary motor cortex that show preferential connectivity with the action mode network (AMN), constituting the somato-cognitive action network (SCAN). Direct causal evidence for the functional engagement of these regions remains limited.\nAIM: Here, we investigated the perturbational neural response of one inter-effector region using transcranial magnetic stimulation combined with electroencephalography (TMS-EEG).\nMETHODS: Sixteen healthy participants underwent recording of transcranial evoked potentials from the first dorsal interosseus, tibialis anterior, and the inter-effector region between them, which was identified with TMS motor mapping.\nRESULTS: Differences between conditions were assessed using cluster-based permutation testing and generalized linear modeling. Inter-effector-specific TMS-EEG activity was observed at approximately 42 ms post-stimulation, partially involving regions of the AMN.\nDISCUSSION AND CONCLUSION: Our findings provide the first perturbational characterization of inter-effector regions in human M1 and identify TMS-EEG markers that enable probing of SCAN functional organization.",
+      "abstract_zh": "简介：功能性MRI证据最近确定了初级运动皮层中表现出与动作模式网络（ AMN ）的优先连接性，构成了躯体认知动作网络（ SCAN ）。 这些区域功能参与的直接因果证据仍然有限。\n目的：在这里，我们使用经颅磁刺激研究了一个相互作用区域的扰动神经反应\n结合脑电图（ TMS-EEG ）。\n方法： 16名健康受试者从第一背侧骨间肌、胫骨前肌及其间效应区记录经颅诱发电位，通过TMS运动定位进行识别。\n结果：使用基于聚类的置换检验和广义线性建模评估条件之间的差异。 因子间特异性TMS-EEG ac\n在刺激后约42 ms观察到活性，部分涉及AMN的区域。\n讨论和结论：我们的研究结果提供了人类M1中相互作用区域的首次扰动表征，并确定了能够探测扫描功能组织的TMS-EEG标志物。",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 5,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg",
+        "generalized"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 4,
+      "pmid": "42789980",
+      "title": "Task-Dependent Cortical Modulation for Stepping Movement Preparation.",
+      "title_zh": "用于步进运动准备的任务依赖性皮质调节。",
+      "journal": "Journal of neurophysiology",
+      "iso_journal": "J Neurophysiol",
+      "authors": [
+        "Doroodchi A",
+        "Lai S",
+        "Peters S"
+      ],
+      "pubdate": "2026 Sep 18",
+      "doi": "10.1152/jn.00578.2025",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42789980/",
+      "abstract": "The brain contributes to maintaining balance both while standing and during step initiation, where cortical preparatory activity and sensory modulation may be tuned to the task goal. Standing requires maintaining postural equilibrium, whereas stepping involves propelling the body toward a target while preserving stability. These demands change with the intended step direction, suggesting that cortical processing may be flexibly adjusted according to directional goals. Foot-sole cutaneous receptors are relevant to postural control, as they signal load distribution that supports upright posture and step initiation. This project aimed to investigate how sensory modulation, and preparatory cortical processes differ across stepping tasks with differing directional goals. Quiet standing, straight stepping, and diagonal stepping tasks were performed by 31 healthy participants, while EEG was recorded. Standing trials were conducted only with electrical stimulation, whereas stepping trials were performed both with and without stimulation (2 Hz at 125% perceptual threshold) delivered to the left (stance) foot sole to elicit somatosensory evoked potentials (SEPs). Trials without stimulation allowed examination of cortical preparatory activity. eLORETA source localization was applied across all conditions to identify cortical generators. SEP amplitudes were larger during both stepping tasks compared to standing, and diagonal stepping SEPs were larger compared to straight stepping. In non-stimulation trials, frontal, central, and parietal regions showed greater preparatory activity during diagonal compared with straight stepping, particularly in early preparation stages. These findings suggest that somatosensory processing and preparatory cortical activity are flexibly tuned to the directional goal of the task, consistent with optimal feedback control principles.",
+      "abstract_zh": "大脑在站立和步进开始时都有助于保持平衡，其中皮质准备活动和感觉调节可以调整到任务目标。站立需要保持姿势平衡，而步行则需要在保持稳定的同时将身体推向目标。这些需求随着预期的步进方向而变化，这表明皮层处理可以根据\n到定向目标。脚底皮肤受体与姿势控制相关，因为它们表示支持直立姿势和台阶起始的负载分布。该项目旨在研究具有不同方向目标的步进任务之间的感觉调节和预备皮层过程如何不同。31名健康参与者执行了安静的站立、直线步进和对角线步进任务，而脑电图被记录为\n有序。长期试验仅在电刺激下进行，而步进试验在有刺激和无刺激（ 125%感知阈值时为2 Hz ）的情况下均在左（站立）脚底进行，以引发体感诱发电位（ SEP ）。没有刺激的试验允许检查皮质准备活动。在所有条件下应用eLORETA源定位以确定皮质发生器。SE\n与站立相比，两种步进任务期间的P振幅较大，并且与直步相比，对角步进SEP较大。在非刺激试验中，额叶、中央和顶叶区域在对角线期间与直线步进相比表现出更大的准备活动，特别是在早期准备阶段。这些研究结果表明，躯体感觉处理和预备皮层活动可灵活地调整到\n任务的方向性目标，符合最佳反馈控制原则。",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 1,
+      "relevance_hits": [
+        "eeg"
+      ],
+      "priority": "浏览"
+    },
+    {
+      "index": 5,
       "pmid": "42785524",
       "title": "Exponent-based hypergraph centrality for identifying vital nodes in higher-order brain networks.",
       "title_zh": "基于指数的超图中心性，用于识别高阶脑网络中的重要节点。",
@@ -149,7 +211,7 @@
       "priority": "必读"
     },
     {
-      "index": 4,
+      "index": 6,
       "pmid": "42785051",
       "title": "Revealing hidden epileptic networks beyond SEEG sampling using simultaneous MEG and SEEG: a case study.",
       "title_zh": "使用同时MEG和SEEG揭示SEEG采样之外的隐藏癫痫网络：案例研究。",
@@ -179,7 +241,7 @@
       "priority": "必读"
     },
     {
-      "index": 5,
+      "index": 7,
       "pmid": "42785050",
       "title": "Artificial intelligence in clinical neurophysiology: IFCN handbook chapter.",
       "title_zh": "临床神经生理学中的人工智能： IFCN手册章节。",
@@ -214,97 +276,6 @@
         "machine learning"
       ],
       "priority": "推荐"
-    },
-    {
-      "index": 6,
-      "pmid": "42777850",
-      "title": "From normative values to pain assessment models: A large-scale study of laser-evoked brain responses.",
-      "title_zh": "从规范值到疼痛评估模型：激光诱发大脑反应的大规模研究。",
-      "journal": "NeuroImage",
-      "iso_journal": "Neuroimage",
-      "authors": [
-        "Zhuang Y",
-        "Zhang L",
-        "Yu Y",
-        "Liu X",
-        "Geng X",
-        "Hu L"
-      ],
-      "pubdate": "2026 Sep 23",
-      "doi": "10.1016/j.neuroimage.2026.122251",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42777850/",
-      "abstract": "Accurately assessing pain remains challenging due to its inherently subjective nature, highlighting the need for normative and objective neural indicators to support pain diagnosis. Using large-scale electroencephalography (EEG) datasets (N = 936), the present study establishes normative values for laser-evoked brain responses (LEP) and develops a predictive model of perceived pain intensity. Three major findings emerged. First, we characterized the typical EEG features elicited by nociceptive laser stimuli and constructed their normative reference ranges using normative modeling. Second, within a linear mixed-effects model framework, subjective pain ratings were reliably predicted by LEP features, each of which demonstrated distinct predictive contributions. Third, multilevel parallel mediation analyses demonstrated that N1, N2, and P2 amplitudes, N2 latency, as well as the magnitude of γ-band event-related synchronization (γ-ERS) serve as key neural mediators linking stimulus intensity to subjective pain perception. Collectively, these results elucidate how different EEG features encode variability in pain perception and provide a normative neurophysiological foundation for future pain research and clinical applications.",
-      "abstract_zh": "由于其固有的主观性，准确评估疼痛仍然具有挑战性，强调需要规范和客观的神经指标来支持疼痛诊断。使用大规模脑电图（ EEG ）数据集（ N = 936 ） ，本研究建立了激光诱发脑反应（ LEP ）的规范值，并开发了感知疼痛强度的预测模型。出现了三个主要发现。首先，我们描述了\n由伤害感受性激光刺激引发的典型脑电图特征，并使用规范建模构建其规范参考范围。其次，在线性混合效应模型框架内，主观疼痛评级由LEP特征可靠预测，每个特征都表现出不同的预测贡献。第三，多级平行介导分析表明， N1、N2和P2幅度、N2潜伏期以及\nγ波段事件相关同步（ γ-ERS ）是将刺激强度与主观疼痛感知联系起来的关键神经介质。总的来说，这些结果阐明了不同的脑电图特征如何编码疼痛感知的变异性，并为未来的疼痛研究和临床应用提供规范的神经生理学基础。",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 4,
-      "relevance_hits": [
-        "electroencephalogr",
-        "eeg"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 7,
-      "pmid": "42777778",
-      "title": "A hierarchical graph learning framework for VR-based motor imagery decoding driven by MVMD and feature optimization.",
-      "title_zh": "一种由MVMD和特征优化驱动的基于VR的运动图像解码的层次图学习框架。",
-      "journal": "Journal of neural engineering",
-      "iso_journal": "J Neural Eng",
-      "authors": [
-        "Du K",
-        "Chang W",
-        "Kong W",
-        "Huang H",
-        "Yan G",
-        "Sadiq MT"
-      ],
-      "pubdate": "2026 Sep 23",
-      "doi": "10.1088/1741-2552/aeabf5",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42777778/",
-      "abstract": "OBJECTIVE: While virtual reality (VR) combined with action observation (AO) provides enriched visual guidance for motor imagery (MI), the decoding stability of MI Brain-Computer Interface (BCI) remains a challenge due to the inherent non-stationarity and low signal-to-noise ratio of Electroencephalography (EEG) signals in dynamic environments. Enhancing decoding accuracy and understanding neural representations in VR-based AO+MI tasks remain important challenges in neural engineering.\nAPPROACH: This study proposes a hierarchical graph learning framework tailored for VR-based MI decoding, leveraging multivariate variational mode decomposition (MVMD) to decouple complex EEG signals into rhythmic components for enhanced multi-domain feature analysis, hybrid feature selection for compact representation, and functional brain network modeling based on phase locking value. Each EEG trial is represented as a sparsified graph, and a hierarchical graph convolutional network is designed to capture multi-scale spatial dependencies and high-order interactions for classification.\nMAIN RESULTS: Experimental evaluations on a lab-acquired VR-MI dataset demonstrate that the proposed framework achieves competitive three-class decoding accuracy. This performance surpasses baseline models such as EEGNet, as observed under VR-based motor imagery conditions. In addition to enhanced decoding performance, the study enables neurophysiological interpretation by characterizing VR-induced modulations in brain network organization.\nSIGNIFICANCE: VR-based AO+MI paradigm is found to enhance sensorimotor connectivity and promote large-scale network integration, indicating more coordinated neural dynamics during MI tasks. These findings suggest that the proposed framework effectively improves VR-based AO+MI decoding while providing interpretable insights into neural mechanisms, supporting its potential for advanced BCI applications.",
-      "abstract_zh": "目的：虽然虚拟现实（ VR ）与动作观察（ AO ）相结合为运动图像（ MI ）提供了丰富的视觉指导，但由于动态环境中脑电图（ EEG ）信号固有的非平稳性和低信噪比， MI脑机接口（ BCI ）的解码稳定性仍然是一个挑战。在基于VR的AO + MI任务中增强解码精度和理解神经表征仍然重要\n神经工程领域的挑战。\n方法：本研究提出了一种针对基于VR的MI解码的层次图学习框架，利用多变量变分模式分解（ MVMD ）将复杂的脑电信号解耦成节奏分量，以进行增强的多域特征分析，混合特征选择以进行紧凑表示，以及基于锁相值的功能性脑网络建模。 每个脑电图试验都是REP\n作为稀疏图，分层图卷积网络旨在捕获多尺度空间依赖关系和高阶交互以进行分类。\n主要结果：在实验室获取的VR-MI数据集上的实验评估表明，所提出的框架实现了具有竞争力的三类解码精度。 这种性能超过了基于VR的运动图像条件下观察到的EEGNet等基线模型\n除了增强解码性能外，该研究还通过表征大脑网络组织中VR诱导的调节来实现神经生理学解释。\n意义：发现基于VR的AO + MI范式可以增强感觉运动连接性，促进大规模网络集成，表明MI任务期间的神经动态更加协调。 这些发现表明，提出的框架有效地改善了基于VR的A\nO + MI解码，同时为神经机制提供可解释的见解，支持其高级BCI应用的潜力。",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 5,
-      "relevance_hits": [
-        "electroencephalogr",
-        "eeg"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 8,
-      "pmid": "42777772",
-      "title": "The effect of different observation modalities in motor imagery: Immersive virtual reality produces stronger desynchronization than video and real-world presentations.",
-      "title_zh": "运动图像中不同观察模式的效果：沉浸式虚拟现实比视频和真实世界演示产生更强的去同步。",
-      "journal": "Journal of neural engineering",
-      "iso_journal": "J Neural Eng",
-      "authors": [
-        "Carrillo D",
-        "Fortich M",
-        "Serrano JI",
-        "Del Castillo-Sobrino MD"
-      ],
-      "pubdate": "2026 Sep 23",
-      "doi": "10.1088/1741-2552/aeabf4",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42777772/",
-      "abstract": "OBJECTIVE: The combination of action observation and motor imagery (AO+MI) has emerged as a promising neurorehabilitation strategy to promote sensorimotor plasticity without real movement, making it particularly valuable for individuals whose motor capacity is limited or absent. Improving AO+MI protocols requires understanding whether different observation stimuli engage the sensorimotor system to varying degrees, as the quality of cortical activation during each training trial may directly influence cumulative neuroplastic outcomes. The present study aimed to determine how the observation modality influences the activation of the sensorimotor cortex during synchronous AO+MI.\nAPPROACH: Here, we investigated the effects of three observation modalities: immersive virtual reality (iVR), two-dimensional video and real-world observation of a robotic agent, on sensorimotor cortical engagement, using Event-Related Desynchronization (ERD) as a neurophysiological marker. Electroencephalographic (EEG) signals were recorded from fifteen healthy participants across three sessions, one per modality, while they observed a humanoid robot performing arm elevation movements and simultaneously engaged in motor imagery of the same movements. ERD was computed for alpha and beta frequency bands over eight electrodes covering frontocentral, central, and centroparietal regions.\nMAIN RESULTS: Statistical analyses revealed significant modality-dependent differences in sensorimotor cortical engagement across multiple frequency bands, electrode locations, and movement types. Immersive virtual reality consistently elicited the strongest desynchronization, with robust effects in the beta band over frontocentral and right centroparietal regions, and in the alpha band over the right central motor cortex.\nSIGNIFICANCE: These results demonstrate that the modality of action observation significantly shapes sensorimotor cortical engagement during AO+MI. Our findings also support the integration of immersive virtual reality as a neurophysiological grounded tool for optimizing AO+MI-based neurorehabilitation protocols and brain-computer interface applications.",
-      "abstract_zh": "目的：动作观察和运动成像（ AO + MI ）相结合已成为一种有前景的神经康复策略，可促进感觉运动的可塑性，而无需真正的运动，这对于运动能力受限或缺失的个体尤其有价值。改善AO + MI方案需要了解不同的观察刺激是否在不同程度上与感觉运动系统相关，因为皮质活动的质量\n可能直接影响累积的神经可塑性结果。 本研究旨在确定观察模式如何影响同步AO + MI期间感觉运动皮层的激活。\n方法：在这里，我们研究了三种观察模式：沉浸式虚拟现实（ iVR ） ，二维视频和机器人代理的真实世界观察，对感觉运动皮层参与的影响，\n使用事件相关反同步（ ERD ）作为神经生理标志物。在三个会话中记录了来自15名健康参与者的脑电图（ EEG ）信号，每个会话一个会话，同时他们观察到一个人形机器人进行手臂抬高运动并同时进行相同运动的运动图像。ERD是针对覆盖前中央、中央、中央和中央的八个电极的α和β频段计算的。\n和中央顶叶区域。\n主要结果：统计分析显示，多个频段、电极位置和运动类型之间的感觉运动皮层参与存在显著的形态依赖性差异。 沉浸式虚拟现实始终引发最强烈的去同步，在前中央和右顶心区域的β波段以及右中央运动心脏的α波段具有强大的影响\ntex.\n意义：这些结果表明，在AO +心肌梗死期间，动作观察的形态显著塑造了感觉运动皮层的啮合。 我们的研究结果还支持将沉浸式虚拟现实作为神经生理学基础工具进行集成，以优化基于AO + MI的神经康复方案和脑机接口应用。",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 2,
-      "relevance_hits": [
-        "electroencephalogr",
-        "eeg"
-      ],
-      "priority": "浏览"
     }
   ]
 }
