@@ -1,20 +1,19 @@
 {
   "meta": {
-    "report_date": "2026-09-27",
-    "target_edat": "2026-09-26",
+    "report_date": "2026-09-28",
+    "target_edat": "2026-09-27",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-09-26 23:19:31"
+    "generated_at": "2026-09-27 23:32:57"
   },
   "group_records": [
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 2,
-      "total": 2,
+      "count": 1,
+      "total": 1,
       "pmids": [
-        "42789732",
-        "42778607"
+        "42789732"
       ],
       "status": "ok"
     },
@@ -36,19 +35,12 @@
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 5,
-      "total": 5,
-      "pmids": [
-        "42790612",
-        "42789980",
-        "42785524",
-        "42785051",
-        "42785050"
-      ],
-      "status": "ok"
+      "count": 0,
+      "pmids": [],
+      "status": "failed"
     }
   ],
-  "dedup_total": 7,
+  "dedup_total": 1,
   "papers": [
     {
       "index": 1,
@@ -74,208 +66,6 @@
         "absence"
       ],
       "priority": "必读"
-    },
-    {
-      "index": 2,
-      "pmid": "42778607",
-      "title": "mTORC1 drives cell-autonomous astrocyte reactivity in tuberous sclerosis.",
-      "title_zh": "mTORC1在结节性硬化症中驱动细胞自主星形胶质细胞反应性。",
-      "journal": "Nature",
-      "iso_journal": "Nature",
-      "authors": [
-        "Li TL",
-        "Blair JD",
-        "Yoo T",
-        "Grant GA",
-        "Hockemeyer D",
-        "Porter BE",
-        "Bateup HS"
-      ],
-      "pubdate": "2026 Sep 23",
-      "doi": "10.1038/s41586-026-11054-w",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42778607/",
-      "abstract": "Tuberous sclerosis complex (TSC) is a genetic neurodevelopmental disorder characterized by focal brain malformations called cortical tubers, which are associated with severe, intractable epilepsy 1 . Tubers are thought to result from somatic second-hit mutations that disrupt the TSC1 or TSC2 genes in neural progenitor cells, driving hyperactive mTORC1 signalling 2 . Glial abnormalities are commonly observed in tubers 3 ; however, whether glia actively cause disease or merely result from chronic seizure activity has remained unclear. To address this question, we used human brain organoid models to track the developmental fate of mutated progenitor cells in the absence of seizures. Here we show, using single-cell transcriptomics and cyclic immunostaining across human brain organoids and resected tuber tissue from patients, that loss of TSC2 biases neural progenitors to differentiate into enlarged, pro-inflammatory reactive astrocytes in a cell autonomous manner. These mutant astrocytes show downregulated glutamate transporter expression, increased inflammatory cytokine secretion and elevated expression of neurodegenerative disease risk genes such as APOE and CLU. Our findings demonstrate that reactive astrocytes emerge as a primary consequence of TSC2 loss. These results implicate glial dysfunction as a driver of TSC pathogenesis and highlight reactive astrocytes as potential therapeutic targets for TSC-related neuropathology.",
-      "abstract_zh": "结节性硬化综合征（ TSC ）是一种遗传性神经发育障碍，其特征是称为皮质结节的局灶性脑畸形，其与严重的顽固性癫痫相关1。块茎被认为是由破坏神经祖细胞中TSC1或TSC2基因的体细胞二次击中突变引起的，从而驱动过度活跃的mTORC1信号传导2。在块茎3中通常观察到神经胶质异常；然而，神经胶质细胞是否起作用\n主要引起疾病或仅由慢性癫痫活动引起仍不清楚。为了解决这个问题，我们使用人脑类器官模型来跟踪突变祖细胞在没有癫痫发作的情况下的发育命运。在这里，我们使用单细胞转录组学和循环免疫染色跨越人脑类器官和切除患者结节组织，表明TSC2的丢失使神经祖细胞分化为\n以细胞自主的方式扩增的促炎性反应性星形胶质细胞。这些突变星形胶质细胞显示谷氨酸转运蛋白表达下调，炎症细胞因子分泌增加，神经退行性疾病风险基因如APOE和CLU的表达增加。我们的研究结果表明，反应性星形胶质细胞是TSC2丢失的主要结果。这些结果表明神经胶质功能障碍是TSC发病机制的驱动因素\n并强调反应性星形胶质细胞是TSC相关神经病理学的潜在治疗靶点。",
-      "hit_groups": [
-        "A"
-      ],
-      "group_count": 1,
-      "relevance_score": 7,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures",
-        "intractable",
-        "focal",
-        "absence"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 3,
-      "pmid": "42790612",
-      "title": "Perturbational signature of the somato-cognitive action network in human primary motor cortex.",
-      "title_zh": "人类初级运动皮层躯体认知行动网络的扰动特征。",
-      "journal": "NeuroImage",
-      "iso_journal": "Neuroimage",
-      "authors": [
-        "Mancuso M",
-        "Maccarrone D",
-        "Ruocco G",
-        "Collura A",
-        "Pellegrini S",
-        "Spampinato D",
-        "Belvisi D",
-        "Berardelli A",
-        "Conte A",
-        "Leodori G"
-      ],
-      "pubdate": "2026 Sep 25",
-      "doi": "10.1016/j.neuroimage.2026.122261",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42790612/",
-      "abstract": "INTRODUCTION: Functional-MRI evidence recently identified inter-effector regions in the primary motor cortex that show preferential connectivity with the action mode network (AMN), constituting the somato-cognitive action network (SCAN). Direct causal evidence for the functional engagement of these regions remains limited.\nAIM: Here, we investigated the perturbational neural response of one inter-effector region using transcranial magnetic stimulation combined with electroencephalography (TMS-EEG).\nMETHODS: Sixteen healthy participants underwent recording of transcranial evoked potentials from the first dorsal interosseus, tibialis anterior, and the inter-effector region between them, which was identified with TMS motor mapping.\nRESULTS: Differences between conditions were assessed using cluster-based permutation testing and generalized linear modeling. Inter-effector-specific TMS-EEG activity was observed at approximately 42 ms post-stimulation, partially involving regions of the AMN.\nDISCUSSION AND CONCLUSION: Our findings provide the first perturbational characterization of inter-effector regions in human M1 and identify TMS-EEG markers that enable probing of SCAN functional organization.",
-      "abstract_zh": "简介：功能性MRI证据最近确定了初级运动皮层中表现出与动作模式网络（ AMN ）的优先连接性，构成了躯体认知动作网络（ SCAN ）。 这些区域功能参与的直接因果证据仍然有限。\n目的：在这里，我们使用经颅磁刺激研究了一个相互作用区域的扰动神经反应\n结合脑电图（ TMS-EEG ）。\n方法： 16名健康受试者从第一背侧骨间肌、胫骨前肌及其间效应区记录经颅诱发电位，通过TMS运动定位进行识别。\n结果：使用基于聚类的置换检验和广义线性建模评估条件之间的差异。 因子间特异性TMS-EEG ac\n在刺激后约42 ms观察到活性，部分涉及AMN的区域。\n讨论和结论：我们的研究结果提供了人类M1中相互作用区域的首次扰动表征，并确定了能够探测扫描功能组织的TMS-EEG标志物。",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 5,
-      "relevance_hits": [
-        "electroencephalogr",
-        "eeg",
-        "generalized"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 4,
-      "pmid": "42789980",
-      "title": "Task-Dependent Cortical Modulation for Stepping Movement Preparation.",
-      "title_zh": "用于步进运动准备的任务依赖性皮质调节。",
-      "journal": "Journal of neurophysiology",
-      "iso_journal": "J Neurophysiol",
-      "authors": [
-        "Doroodchi A",
-        "Lai S",
-        "Peters S"
-      ],
-      "pubdate": "2026 Sep 18",
-      "doi": "10.1152/jn.00578.2025",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42789980/",
-      "abstract": "The brain contributes to maintaining balance both while standing and during step initiation, where cortical preparatory activity and sensory modulation may be tuned to the task goal. Standing requires maintaining postural equilibrium, whereas stepping involves propelling the body toward a target while preserving stability. These demands change with the intended step direction, suggesting that cortical processing may be flexibly adjusted according to directional goals. Foot-sole cutaneous receptors are relevant to postural control, as they signal load distribution that supports upright posture and step initiation. This project aimed to investigate how sensory modulation, and preparatory cortical processes differ across stepping tasks with differing directional goals. Quiet standing, straight stepping, and diagonal stepping tasks were performed by 31 healthy participants, while EEG was recorded. Standing trials were conducted only with electrical stimulation, whereas stepping trials were performed both with and without stimulation (2 Hz at 125% perceptual threshold) delivered to the left (stance) foot sole to elicit somatosensory evoked potentials (SEPs). Trials without stimulation allowed examination of cortical preparatory activity. eLORETA source localization was applied across all conditions to identify cortical generators. SEP amplitudes were larger during both stepping tasks compared to standing, and diagonal stepping SEPs were larger compared to straight stepping. In non-stimulation trials, frontal, central, and parietal regions showed greater preparatory activity during diagonal compared with straight stepping, particularly in early preparation stages. These findings suggest that somatosensory processing and preparatory cortical activity are flexibly tuned to the directional goal of the task, consistent with optimal feedback control principles.",
-      "abstract_zh": "大脑在站立和步进开始时都有助于保持平衡，其中皮质准备活动和感觉调节可以调整到任务目标。站立需要保持姿势平衡，而步行则需要在保持稳定的同时将身体推向目标。这些需求随着预期的步进方向而变化，这表明皮层处理可以根据\n到定向目标。脚底皮肤受体与姿势控制相关，因为它们表示支持直立姿势和台阶起始的负载分布。该项目旨在研究具有不同方向目标的步进任务之间的感觉调节和预备皮层过程如何不同。31名健康参与者执行了安静的站立、直线步进和对角线步进任务，而脑电图被记录为\n有序。长期试验仅在电刺激下进行，而步进试验在有刺激和无刺激（ 125%感知阈值时为2 Hz ）的情况下均在左（站立）脚底进行，以引发体感诱发电位（ SEP ）。没有刺激的试验允许检查皮质准备活动。在所有条件下应用eLORETA源定位以确定皮质发生器。SE\n与站立相比，两种步进任务期间的P振幅较大，并且与直步相比，对角步进SEP较大。在非刺激试验中，额叶、中央和顶叶区域在对角线期间与直线步进相比表现出更大的准备活动，特别是在早期准备阶段。这些研究结果表明，躯体感觉处理和预备皮层活动可灵活地调整到\n任务的方向性目标，符合最佳反馈控制原则。",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 1,
-      "relevance_hits": [
-        "eeg"
-      ],
-      "priority": "浏览"
-    },
-    {
-      "index": 5,
-      "pmid": "42785524",
-      "title": "Exponent-based hypergraph centrality for identifying vital nodes in higher-order brain networks.",
-      "title_zh": "基于指数的超图中心性，用于识别高阶脑网络中的重要节点。",
-      "journal": "Journal of neuroscience methods",
-      "iso_journal": "J Neurosci Methods",
-      "authors": [
-        "Wang C",
-        "Yan J",
-        "Cai W",
-        "Li X",
-        "Cai Y",
-        "Zhang X",
-        "Li Z"
-      ],
-      "pubdate": "2026 Sep 24",
-      "doi": "10.1016/j.jneumeth.2026.110914",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42785524/",
-      "abstract": "BACKGROUND: Higher-order brain interactions cannot be fully represented by ordinary pairwise graphs. Hypergraphs provide a natural framework for modeling multi-region interactions, but centrality measures for ranking clinically relevant nodes in higher-order brain networks remain incompletely evaluated.\nNEW METHOD: We propose exponent-based hypergraph centrality (HEC), which transforms a hypergraph into a hyperedge adjacency graph and combines third Laplacian energy centrality with shortest-path distance in an exponential weighting model. Hyperedge scores are then mapped back to nodes. Patient-specific stereo-electroencephalography (SEEG) hypergraphs were constructed from thresholded phase-locking value (PLV) functional connectivity networks.\nRESULTS: HEC was evaluated on real-world hypergraphs using complex contagion simulations and on SEEG-derived hypergraphs from 10 patients with refractory focal epilepsy. Across real-world datasets, HEC showed competitive and often leading spreading influence, although performance varied. In the SEEG cohort, HEC scores were higher in clinically defined epileptogenic zone (EZ) contacts than in non-epileptogenic zone (NEZ) contacts.\nCOMPARISON WITH EXISTING METHODS: Compared with HDC, HCC, VC, HGC, and HVC, HEC produced the largest percentage contrast between EZ and NEZ contacts. Sensitivity analyses showed stable rankings and EZ/NEZ discrimination under perturbations of the distance-decay parameter and PLV threshold.\nCONCLUSION: HEC provides a higher-order centrality measure for ranking vital nodes in hypergraphs and a quantitative tool for retrospective SEEG-based EZ-related network analysis. The results support offline feasibility at the studied SEEG scale, but prospective validation in larger cohorts is required before use in clinical decision-making.",
-      "abstract_zh": "背景：高阶大脑相互作用不能完全用普通成对图表示。 超图为多区域相互作用建模提供了一个自然框架，但用于对高阶脑网络中临床相关节点进行排名的中心性度量仍未得到完整评估。\n新方法：我们提出基于指数的超图中心性（ HEC ） ，它将超图转换为炒作邻接图，并结合\nird指数加权模型中具有最短路径距离的拉普拉斯能量中心性。 然后将Hyperedge分数映射回节点。 患者特异性立体脑电图（ SEEG ）超图由阈值锁相值（ PLV ）功能连接网络构建。\n结果：使用复杂的传染模拟在真实世界的超图上评估HEC ，并在10名REFR患者的SEEG衍生超图上评估HEC。\n活动性局灶性癫痫。在现实数据集中， HEC表现出竞争性且通常领先的传播影响，尽管性能各不相同。 在SEEG队列中，临床定义的致痫区（ EZ ）接触者的HEC评分高于非致痫区（ NEZ ）接触者。\n与现有方法相比：与HDC、HCC、VC、HGC和HVC相比， HEC在EZ和NEZ触点之间产生最大的百分比对比。灵敏度a\n分析表明，在距离衰减参数和PLV阈值的扰动下，排名稳定， EZ/NEZ区分。\n结论： HEC为超图中的重要节点排名提供了更高阶的中心性度量，并为回顾性基于SEEG的EZ相关网络分析提供了定量工具。 结果支持在所研究的SEEG量表上离线可行性，但在临床使用之前，需要在较大的队列中进行前瞻性验证\n做决定",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 14,
-      "relevance_hits": [
-        "epilepsy",
-        "refractory",
-        "electroencephalogr",
-        "eeg",
-        "focal",
-        "seeg"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 6,
-      "pmid": "42785051",
-      "title": "Revealing hidden epileptic networks beyond SEEG sampling using simultaneous MEG and SEEG: a case study.",
-      "title_zh": "使用同时MEG和SEEG揭示SEEG采样之外的隐藏癫痫网络：案例研究。",
-      "journal": "Clinical neurophysiology : official journal of the International Federation of Clinical Neurophysiology",
-      "iso_journal": "Clin Neurophysiol",
-      "authors": [
-        "Villalon SM",
-        "Bénar CG",
-        "Bartolomei F",
-        "Bonini F"
-      ],
-      "pubdate": "2026 Sep 19",
-      "doi": "10.1016/j.clinph.2026.2112409",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42785051/",
-      "abstract": "",
-      "abstract_zh": "",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 10,
-      "relevance_hits": [
-        "epileptic",
-        "eeg",
-        "seeg"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 7,
-      "pmid": "42785050",
-      "title": "Artificial intelligence in clinical neurophysiology: IFCN handbook chapter.",
-      "title_zh": "临床神经生理学中的人工智能： IFCN手册章节。",
-      "journal": "Clinical neurophysiology : official journal of the International Federation of Clinical Neurophysiology",
-      "iso_journal": "Clin Neurophysiol",
-      "authors": [
-        "Tannemaat MR",
-        "Luijten JAM",
-        "Frauscher B",
-        "Alvarado-Rojas C",
-        "Aurlien H",
-        "Nilsen KB",
-        "van Alfen N",
-        "Kwan P",
-        "Beniczky S"
-      ],
-      "pubdate": "2026 Sep 20",
-      "doi": "10.1016/j.clinph.2026.2112407",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42785050/",
-      "abstract": "Artificial intelligence (AI) has the potential to transform clinical neurophysiology by enabling the automated analysis of complex physiological signals and large amounts of data. While traditional clinical interpretation relies heavily on expert visual inspection, which is vulnerable to subjectivity and inter-rater variability, AI models excel at identifying patterns in complex time series. This chapter provides an overview of current and emerging clinical applications of AI across various modalities in clinical neurophysiology, including EEG, EMG, NCS, and ultrasound. In EEG, AI demonstrates value in spike and seizure detection, comprehensive interpretation for routine and long-term monitoring, and automated classification in ICU and neonatal settings. In neuromuscular medicine, machine learning and deep learning are used to classify motor unit potentials, recognize specific disease patterns in NCS, and aid in automated segmentation and quantification for nerve and muscle ultrasound. Despite these promising results, multiple barriers must be overcome to reach clinical implementation. Key challenges include data heterogeneity, label noise, limited generalizability, and the lack of explainability in \"black-box\" deep learning approaches. Furthermore, regulatory and legal challenges, along with ethical concerns like algorithmic bias and clinical accountability, complicate widespread adoption. The use of large international datasets combined with robust validation approaches may enable the development of AI models that reduce diagnostic subjectivity. Ultimately, AI will likely serve as an augmentation and triage tool, allowing clinical neurophysiologists to focus on clinical reasoning while also supporting the training of future residents.",
-      "abstract_zh": "人工智能（ AI ）有可能通过自动分析复杂的生理信号和大量数据来改变临床神经生理学。虽然传统的临床解释在很大程度上依赖于专家目视检查，而专家目视检查容易受到主观性和评估者间差异的影响，但人工智能模型擅长识别复杂时间序列中的模式。本章概述了当前和紧急情况\n人工智能在临床神经生理学中各种模式的临床应用，包括脑电图、肌电图、NCS和超声。在脑电图中，人工智能在尖峰和癫痫发作检测、常规和长期监测的全面解释以及ICU和新生儿环境中的自动分类方面展示了价值。在神经肌肉医学中，机器学习和深度学习用于对运动单位电位进行分类，识别特定疾病pa\ntterns ，并有助于神经和肌肉超声的自动分割和定量。尽管取得了这些有希望的结果，但必须克服多重障碍才能实现临床实施。主要挑战包括数据异构性、标签噪声、有限的可推广性以及“黑盒子”深度学习方法缺乏可解释性。此外，监管和法律挑战，以及算法等伦理问题\n和临床问责制，使广泛采用复杂化。使用大型国际数据集与强大的验证方法相结合，可以开发降低诊断主观性的人工智能模型。最终，人工智能可能会成为一种增强和分类工具，使临床神经生理学家能够专注于临床推理，同时也支持对未来住院医师的培训。",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 7,
-      "relevance_hits": [
-        "seizure",
-        "eeg",
-        "ecog",
-        "deep learning",
-        "machine learning"
-      ],
-      "priority": "推荐"
     }
   ]
 }
