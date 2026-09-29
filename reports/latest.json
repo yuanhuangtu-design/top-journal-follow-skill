@@ -1,20 +1,18 @@
 {
   "meta": {
-    "report_date": "2026-09-28",
-    "target_edat": "2026-09-27",
+    "report_date": "2026-09-29",
+    "target_edat": "2026-09-28",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-09-27 23:32:57"
+    "generated_at": "2026-09-29 00:46:30"
   },
   "group_records": [
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 1,
-      "total": 1,
-      "pmids": [
-        "42789732"
-      ],
+      "count": 0,
+      "total": 0,
+      "pmids": [],
       "status": "ok"
     },
     {
@@ -36,36 +34,11 @@
       "group": "C",
       "label": "脑电信号分析方法",
       "count": 0,
+      "total": 0,
       "pmids": [],
-      "status": "failed"
+      "status": "ok"
     }
   ],
-  "dedup_total": 1,
-  "papers": [
-    {
-      "index": 1,
-      "pmid": "42789732",
-      "title": "Erratum for the Research Article \"Beyond seizure control: Identifying deficits in cognitive networks in absence epilepsy\" by G. Vantomme et al.",
-      "title_zh": "G. Vantomme等人的研究文章“超越癫痫控制：识别缺失性癫痫中认知网络的缺陷”的勘误。",
-      "journal": "Science advances",
-      "iso_journal": "Sci Adv",
-      "authors": [],
-      "pubdate": "2026 Sep 25",
-      "doi": "10.1126/sciadv.ael7024",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42789732/",
-      "abstract": "",
-      "abstract_zh": "",
-      "hit_groups": [
-        "A"
-      ],
-      "group_count": 1,
-      "relevance_score": 13,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "absence"
-      ],
-      "priority": "必读"
-    }
-  ]
+  "dedup_total": 0,
+  "papers": []
 }
