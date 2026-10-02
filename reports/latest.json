@@ -1,18 +1,22 @@
 {
   "meta": {
-    "report_date": "2026-10-01",
-    "target_edat": "2026-09-30",
+    "report_date": "2026-10-02",
+    "target_edat": "2026-10-01",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-10-01 00:19:18"
+    "generated_at": "2026-10-02 00:24:33"
   },
   "group_records": [
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 0,
-      "pmids": [],
-      "status": "failed"
+      "count": 2,
+      "total": 2,
+      "pmids": [
+        "42814911",
+        "42814608"
+      ],
+      "status": "ok"
     },
     {
       "group": "B1",
@@ -40,10 +44,78 @@
       "status": "ok"
     }
   ],
-  "dedup_total": 1,
+  "dedup_total": 3,
   "papers": [
     {
       "index": 1,
+      "pmid": "42814911",
+      "title": "Teaching NeuroImage: Disseminated Paracoccidioidomycosis Presenting With Psychiatric Symptoms and Focal Epilepsy.",
+      "title_zh": "教学神经影像：呈现精神症状和局灶性癫痫的传播性副球孢霉菌病。",
+      "journal": "Neurology",
+      "iso_journal": "Neurology",
+      "authors": [
+        "Muller VFC",
+        "de Oliveira DS",
+        "Costa LGME",
+        "Vale TC"
+      ],
+      "pubdate": "2026 Oct 27",
+      "doi": "10.1212/WNL.0000000000218570",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42814911/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 7,
+      "relevance_hits": [
+        "epilepsy",
+        "focal"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 2,
+      "pmid": "42814608",
+      "title": "Biophysically inspired mean-field model of neuronal populations driven by ion-exchange mechanisms.",
+      "title_zh": "由离子交换机制驱动的神经元群体的生物物理启发平均场模型。",
+      "journal": "eLife",
+      "iso_journal": "Elife",
+      "authors": [
+        "Rabuffo G",
+        "Bandyopadhyay A",
+        "Calabrese C",
+        "Gudibanda K",
+        "Depannemaecker D",
+        "Takarabe LM",
+        "Chatterjee S",
+        "Saggio ML",
+        "Desroches M",
+        "Ivanov A",
+        "Linne ML",
+        "Bernard C",
+        "Petkoski S",
+        "Jirsa V"
+      ],
+      "pubdate": "2026 Sep 30",
+      "doi": "10.7554/eLife.104249",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42814608/",
+      "abstract": "Whole-brain simulations are a valuable tool for gaining insight into the multiscale processes that regulate brain activity. Due to the complexity of the brain, it is impractical to include all microscopic details in a simulation. Hence, researchers often simulate the brain as a network of coupled neural masses, each described by a mean-field model. These models capture the essential features of neuronal populations while approximating most biophysical details. However, it may be important to include certain parameters that significantly impact brain function. The concentration of ions in the extracellular space is one key factor to consider, as its fluctuations can be associated with healthy and pathological brain states. In this paper, we develop a new mean-field model of a population of Hodgkin-Huxley-type neurons, retaining a microscopic perspective on the ion-exchange mechanisms driving neuronal activity. This allows us to maintain biophysical interpretability while bridging the gap between micro- and macro-scale mechanisms. Our model is able to reproduce a wide range of activity patterns, also observed in large neural network simulations. Specifically, slow-changing ion concentrations modulate the fast neuroelectric activity, a feature of our model that we validated through in vitro experiments. By studying how changes in extracellular ionic conditions can affect whole-brain dynamics, this model serves as a foundation to measure biomarkers of pathological activity and provide potential therapeutic targets in cases of brain dysfunctions like epilepsy.",
+      "abstract_zh": "全脑模拟是深入了解调节大脑活动的多尺度过程的宝贵工具。由于大脑的复杂性，在模拟中包含所有微观细节是不切实际的。因此，研究人员通常将大脑模拟为耦合神经质量的网络，每个神经质量都由均值场模型描述。这些模型捕获了神经元群体的基本特征，同时接近大多数生物学\n然而，重要的是要包括显著影响大脑功能的某些参数。细胞外空间中离子的浓度是需要考虑的一个关键因素，因为其波动可能与健康和病理性大脑状态有关。在本文中，我们开发了一种新的霍奇金-赫胥黎型神经元群体的均值场模型，保留了对离子交换机制的微观视角。\n神经元活动。这使我们能够保持生物物理可解释性，同时弥合微观和宏观机制之间的差距。我们的模型能够重现大范围的活动模式，也在大型神经网络模拟中观察到。具体来说，缓慢变化的离子浓度会调节快速的神经电活动，这是我们模型的一个特征，我们通过体外实验进行了验证。通过研究e的变化如何\n细胞外离子条件会影响全脑动力学，该模型可作为测量病理活动生物标志物的基础，并在癫痫等脑功能障碍的情况下提供潜在的治疗靶点。",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 2,
+      "relevance_hits": [
+        "epilepsy",
+        "neural network"
+      ],
+      "priority": "浏览"
+    },
+    {
+      "index": 3,
       "pmid": "42814972",
       "title": "Evaluation of the Recognition Performance for Four-class Fine Hand Movement Intention under a hybrid Action Observation and Motor Imagery Task.",
       "title_zh": "混合动作观察和运动成像任务下四级精细手部运动意图的识别性能评估。",
