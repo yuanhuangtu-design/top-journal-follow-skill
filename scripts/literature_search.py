@@ -149,160 +149,33 @@ def build_query_from_parsed(parsed, journals=None, years=None):
     return " AND ".join(parts)
 
 
-# ============ API 调用 ============
+# The daily pipeline and CLI share one reliable client and rate limiter.
+from pubmed_client import CLIENT
 
-def call_pubmed_api(url):
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except Exception as e:
-        print(f"[WARNING] API 请求失败: {e}", file=sys.stderr)
-        return None
-
-
-def call_pubmed_xml(url):
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return resp.read().decode("utf-8")
-    except Exception as e:
-        print(f"[WARNING] XML 请求失败: {e}", file=sys.stderr)
-        return None
-
-
-def extract_abstract(pmid):
-    url = f"{BASE_EFETCH}?db=pubmed&id={pmid}&retmode=xml&rettype=abstract"
-    xml_text = call_pubmed_xml(url)
-    if not xml_text:
-        return ""
-    try:
-        root = ET.fromstring(xml_text)
-        abstract_parts = []
-        for abstract_text in root.iter("AbstractText"):
-            label = abstract_text.get("Label", "")
-            text = (abstract_text.text or "")
-            for child in abstract_text:
-                if child.text:
-                    text += " " + child.text
-                if child.tail:
-                    text += " " + child.tail
-            if label:
-                abstract_parts.append(f"{label}: {text.strip()}")
-            else:
-                abstract_parts.append(text.strip())
-        return "\n".join(abstract_parts)
-    except ET.ParseError:
-        return ""
-
-
-# ============ 搜索功能 ============
 
 def search_pubmed(query, retmax=20):
-    params = {
-        "db": "pubmed",
-        "term": query,
-        "retmax": min(retmax, 100),
-        "retmode": "json",
-        "sort": "date",
-    }
-    url = f"{BASE_ESEARCH}?{urllib.parse.urlencode(params)}"
-    print(f"[INFO] 搜索 URL: {url}", file=sys.stderr)
-
-    data = call_pubmed_api(url)
-    if not data or "esearchresult" not in data:
-        return [], 0
-
-    result = data["esearchresult"]
-    id_list = result.get("idlist", [])
-    total = int(result.get("count", 0))
-    return id_list, total
+    return CLIENT.ids(query, retmax)
 
 
 def fetch_summaries(pmids):
-    if not pmids:
-        return []
+    return CLIENT.fetch(pmids)[0]
 
-    params = {"db": "pubmed", "id": ",".join(pmids), "retmode": "json"}
-    url = f"{BASE_ESUMMARY}?{urllib.parse.urlencode(params)}"
-    data = call_pubmed_api(url)
-    if not data or "result" not in data:
-        return []
 
-    results = []
-    result_data = data["result"]
-    for pmid in pmids:
-        if pmid not in result_data:
-            continue
-        item = result_data[pmid]
-        authors = []
-        for author in item.get("authors", []):
-            name = author.get("name", "")
-            if name:
-                authors.append(name)
-        doi = ""
-        for aid in item.get("articleids", []):
-            if aid.get("idtype") == "doi":
-                doi = aid.get("value", "")
-                break
-        results.append({
-            "pmid": pmid,
-            "title": item.get("title", "").replace("&quot;", '"').replace("&amp;", "&"),
-            "authors": authors,
-            "journal": item.get("fulljournalname", ""),
-            "iso_journal": item.get("source", ""),
-            "pubdate": item.get("pubdate", ""),
-            "doi": doi,
-            "abstract": "",
-            "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
-        })
-
-    # 批量获取摘要
-    for i in range(0, len(results), 10):
-        batch = results[i:i + 10]
-        for r in batch:
-            r["abstract"] = extract_abstract(r["pmid"])
-        time.sleep(REQUEST_INTERVAL)
-
-    return results
+def extract_abstract(pmid):
+    papers, _ = CLIENT.fetch([pmid])
+    return papers[0]["abstract"] if papers else ""
 
 
 def search(query_text, journals=None, years=None, max_results=20):
-    """主搜索函数：解析 → 构建 → 搜索 → 获取详情"""
-    # 1. 解析自然语言
     parsed = parse_natural_query(query_text)
-
-    # 2. 构建 PubMed 检索式
-    pubmed_query = build_query_from_parsed(parsed, journals, years)
-
-    print(f"[INFO] 解析结果: {parsed['type']}", file=sys.stderr)
-    print(f"[INFO] 原始输入: {query_text}", file=sys.stderr)
-    print(f"[INFO] 检索式: {pubmed_query}", file=sys.stderr)
-
-    # 3. 搜索
-    pmids, total = search_pubmed(pubmed_query, max_results)
-    print(f"[INFO] 共找到 {total} 篇文献，获取 {len(pmids)} 篇", file=sys.stderr)
-
-    # 4. 获取详情
-    papers = fetch_summaries(pmids) if pmids else []
-
-    # 5. 生成时间戳
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
-    return {
-        "meta": {
-            "timestamp": timestamp,
-            "query_raw": query_text,
-            "query_type": parsed["type"],
-            "query_pubmed": pubmed_query,
-            "search_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        },
-        "total_results": total,
-        "retrieved": len(papers),
-        "journals_searched": [j.strip() for j in journals.split(",")] if journals else [],
-        "years_range": years or "all",
-        "papers": papers,
-    }
+    query = build_query_from_parsed(parsed, journals, years)
+    result = CLIENT.search(query, max_results)
+    result["meta"] = {"timestamp": datetime.now().strftime("%Y%m%d_%H%M%S"),
+                      "query_raw": query_text, "query_type": parsed["type"], "query_pubmed": query,
+                      "search_time": datetime.now().isoformat()}
+    result["journals_searched"] = journals.split(",") if journals else []
+    result["years_range"] = years or "all"
+    return result
 
 
 def save_results(results, output_dir="output"):
@@ -379,7 +252,8 @@ def main():
             print(f"      摘要: {abs_preview}")
             print()
     print(f"[DONE] 结果文件: {main_path}")
+    return 0 if results.get("status") == "ok" else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
