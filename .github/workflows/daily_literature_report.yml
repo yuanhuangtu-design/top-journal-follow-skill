@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       report_date:
-        description: "指定报告日期 YYYY-MM-DD（留空=今天，检索前一天的文献）"
+        description: "报告日期 YYYY-MM-DD（默认今天，自动补抓缺口）"
         required: false
         default: ""
 
@@ -31,12 +31,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: |
-          pip install --quiet requests deep-translator
+      - name: Test reliability
+        run: python -m unittest discover -s tests -v
 
       - name: Run daily literature pipeline
         env:
+          REPORT_DATE: ${{ inputs.report_date }}
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_PARENT_PAGE_ID: ${{ secrets.NOTION_PARENT_PAGE_ID }}
           NOTION_PARENT_TYPE: ${{ vars.NOTION_PARENT_TYPE }}
@@ -45,22 +46,25 @@ jobs:
           FEISHU_APP_TOKEN: ${{ secrets.FEISHU_APP_TOKEN }}
           FEISHU_TABLE_ID: ${{ secrets.FEISHU_TABLE_ID }}
         run: |
-          DATE_ARG=""
-          if [ -n "${{ inputs.report_date }}" ]; then
-            DATE_ARG="--date ${{ inputs.report_date }}"
+          args=()
+          if [ -n "$REPORT_DATE" ]; then
+            args+=(--date "$REPORT_DATE")
           fi
-          python scripts/run_daily.py $DATE_ARG
+          python scripts/run_daily.py "${args[@]}"
 
       - name: Upload daily report (HTML + JSON)
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: daily-literature-report
           path: |
             output/daily_report_*.html
             output/daily_report_*.json
+            reports/pipeline_state.json
           retention-days: 30
 
       - name: Commit latest report back to repository
+        if: always()
         run: |
           mkdir -p reports
           cp -f output/daily_report_latest.html reports/latest.html 2>/dev/null || true
