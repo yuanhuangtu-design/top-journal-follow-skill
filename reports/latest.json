@@ -1,19 +1,18 @@
 {
   "meta": {
-    "report_date": "2026-10-05",
-    "target_edat": "2026-10-04",
+    "report_date": "2026-10-06",
+    "target_edat": "2026-10-05",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-10-04 23:46:38"
+    "generated_at": "2026-10-06 01:38:37"
   },
   "group_records": [
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
       "count": 0,
-      "total": 0,
       "pmids": [],
-      "status": "ok"
+      "status": "failed"
     },
     {
       "group": "B1",
@@ -33,11 +32,58 @@
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 0,
-      "pmids": [],
-      "status": "failed"
+      "count": 1,
+      "total": 1,
+      "pmids": [
+        "42829016"
+      ],
+      "status": "ok"
     }
   ],
-  "dedup_total": 0,
-  "papers": []
+  "dedup_total": 1,
+  "papers": [
+    {
+      "index": 1,
+      "pmid": "42829016",
+      "title": "HD-tACS at 40 Hz Improves Consciousness and Brain Connectivity in Prolonged Disorders of Consciousness: A Randomized Sham-Controlled Clinical Trial.",
+      "title_zh": "40 Hz HD-tACS改善长期意识障碍中的意识和脑连接性：一项随机假对照临床试验。",
+      "journal": "NeuroImage",
+      "iso_journal": "Neuroimage",
+      "authors": [
+        "Hu J",
+        "Mou C",
+        "Jiang X",
+        "Zhang L",
+        "Ling Y",
+        "Zhao J",
+        "Meng F",
+        "He F",
+        "Wang H",
+        "Peng F",
+        "Ning J",
+        "Gao J",
+        "Xu C",
+        "Xiao J",
+        "Zhao S",
+        "Yu J",
+        "Pan G",
+        "Luo B"
+      ],
+      "pubdate": "2026 Oct 3",
+      "doi": "10.1016/j.neuroimage.2026.122274",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42829016/",
+      "abstract": "BACKGROUND: Frequency-specific high-definition transcranial alternating current stimulation (HD-tACS) may facilitate recovery in patients with prolonged disorders of consciousness (pDoC), but predictive biomarkers and mechanistic insights are limited.\nOBJECTIVE: To investigate the therapeutic efficacy of 40 Hz or 4 Hz HD-tACS in pDoC.\nMETHODS: Sixty pDoC patients were randomized into four groups receiving 40 Hz or 4 Hz HD-tACS, each with a corresponding sham condition. Behavioral recovery was assessed via Coma Recovery Scale-Revised (CRS-R), network connectivity was analyzed with electroencephalography (EEG), and baseline 40 Hz auditory steady-state response (ASSR) was explored as a predictive biomarker.\nRESULTS: Five days of 40 Hz HD-tACS yielded greater improvements of total CRS-R scores than 4 Hz or sham, particularly in visual and arousal subscales. EEG revealed strengthened short- and long-range connectivity quantified by phase-locking value (PLV), correlating with behavioral gains. At six months, 37.5% of 40 Hz patients got a good outcome with Glasgow Outcome Scale-Extended (GOS-E) score ≥ 4, which was significantly higher than that observed in the sham group (P = 0.019). Higher baseline ASSR predicted stronger network enhancement and clinical improvement.\nCONCLUSIONS: 40 Hz HD-tACS promotes recovery and network reorganization in pDoC. Baseline ASSR may provide complementary information for understanding individual variability in responses to frequency-specific neuromodulation.",
+      "abstract_zh": "背景：频率特异性高清经颅交流电刺激（ HD-tACS ）可促进长期意识障碍（ pDoC ）患者的恢复，但预测性生物标志物和机制见解有限。\n目的:探讨40 Hz或4 Hz HD-tACS在pDoC中的疗效。\n方法：将60名pDoC患者随机分为四组，每组接受40 Hz或4 Hz HD-tACS ，每组\n通过昏迷恢复量表（ CRS-R ）评估行为恢复，使用脑电图（ EEG ）分析网络连接性，并探索基线40 Hz听觉稳态反应（ ASSR ）作为预测性生物标志物。\n结果： 5天40 Hz HD-tACS的总CRS-R评分改善大于4 Hz或假评分，特别是在视觉和觉醒子量表中。 脑电图显示强化短路- a\nnd通过锁相值（ PLV ）量化的远程连通性，与行为增益相关。 6个月时， 37.5%的40 Hz患者结局良好，格拉斯哥结局量表扩展（ GOS-E ）评分≥ 4 ，显著高于假手术组（ P = 0.019 ）。 较高的基线ASSR预测更强的网络增强和临床改善。\n结论： 40 Hz HD-tACS促进恢复和网络重组\npDoC中的变异。基线ASSR可能为理解个体对频率特异性神经调节反应的变异性提供补充信息。",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 3,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg"
+      ],
+      "priority": "推荐"
+    }
+  ]
 }
