@@ -22,6 +22,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime
 
@@ -30,7 +31,9 @@ BASE_ESEARCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 BASE_ESUMMARY = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
 BASE_EFETCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 USER_AGENT = "TopJournalSkill/2.0 (research tool)"
-REQUEST_INTERVAL = 0.35
+REQUEST_INTERVAL = 1.5  # 增加到1.5秒，避免PubMed限流
+MAX_RETRIES = 6  # 最大重试次数
+RETRY_BACKOFF = 2.0  # 指数退避基数
 
 # 期刊名映射
 JOURNAL_MAP = {
@@ -73,7 +76,6 @@ def parse_natural_query(raw_query):
         return {"type": "bool", "query": raw}
 
     # 尝试提取 author:xxx 和 topic:xxx
-    # 注意：所有关键词必须加 \b 词边界，防止"find"里的"in"被误匹配
     author_match = re.search(r'\b(?:author|by|from)\s*[:]?\s*["\']?([A-Za-zÀ-ÿ\s\.\,\-]+?)["\']?(?:\s+(?:about|on\b|topic:|\bin\b)\s+|$)', raw, re.IGNORECASE)
     topic_match = re.search(r'\b(?:about|on|topic:|\bin\b|regarding)\s*[:]?\s*["\']?(.+?)["\']?$', raw, re.IGNORECASE)
 
@@ -85,24 +87,17 @@ def parse_natural_query(raw_query):
     if topic_match:
         topic = topic_match.group(1).strip().rstrip(".,;")
 
-    # 如果同时有 author 和 topic
     if author and topic:
         return {"type": "combined", "author": author, "topic": topic}
-
-    # 只有 author
     if author:
         return {"type": "author", "author": author}
 
-    # 尝试检测人名模式 (两个词，首字母大写，可以带中间名缩写)
     person_pattern = re.match(r'^["\']?([A-Z][a-zÀ-ÿ]+(?:\s+[A-Z]\.?)?\s+[A-Z][a-zÀ-ÿ]+)["\']?$', raw)
     if person_pattern:
         return {"type": "author", "author": person_pattern.group(1)}
-
-    # 只有 topic
     if topic:
         return {"type": "topic", "topic": topic}
 
-    # 默认作为主题搜索
     return {"type": "topic", "topic": raw}
 
 
@@ -115,10 +110,7 @@ def build_query_from_parsed(parsed, journals=None, years=None):
     elif parsed["type"] == "bool":
         parts.append(f"({parsed['query']})")
     elif parsed["type"] == "author":
-        # 自动处理作者名格式
-        author = parsed["author"]
-        # 标准化：去除多余空格和标点
-        author = re.sub(r'[\.\s]+', ' ', author).strip()
+        author = re.sub(r'[\.\s]+', ' ', parsed["author"]).strip()
         parts.append(f'"{author}"[Author]')
     elif parsed["type"] == "topic":
         topic = parsed["topic"]
@@ -128,7 +120,6 @@ def build_query_from_parsed(parsed, journals=None, years=None):
         topic = parsed["topic"]
         parts.append(f'("{author}"[Author]) AND ("{topic}"[Title/Abstract])')
 
-    # 期刊筛选
     if journals:
         j_list = [j.strip() for j in journals.split(",") if j.strip()]
         j_terms = []
@@ -139,7 +130,6 @@ def build_query_from_parsed(parsed, journals=None, years=None):
         if j_terms:
             parts.append("(" + " OR ".join(j_terms) + ")")
 
-    # 时间范围
     if years:
         year_match = re.match(r"(\d{4})-(\d{4})", str(years))
         if year_match:
@@ -152,23 +142,55 @@ def build_query_from_parsed(parsed, journals=None, years=None):
 # ============ API 调用 ============
 
 def call_pubmed_api(url):
+    """调用PubMed JSON API，带指数退避重试（处理429限流和5xx错误）"""
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except Exception as e:
-        print(f"[WARNING] API 请求失败: {e}", file=sys.stderr)
-        return None
+    for attempt in range(MAX_RETRIES):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 504):
+                wait = RETRY_BACKOFF ** attempt
+                print(f"[WARNING] PubMed HTTP {e.code}，第{attempt+1}次重试，等待{wait:.1f}秒...", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            else:
+                print(f"[WARNING] API 请求失败 (HTTP {e.code}): {e}", file=sys.stderr)
+                return None
+        except Exception as e:
+            print(f"[WARNING] API 请求异常: {e}", file=sys.stderr)
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_BACKOFF ** attempt)
+                continue
+            return None
+    print(f"[ERROR] API 请求重试{MAX_RETRIES}次后仍失败", file=sys.stderr)
+    return None
 
 
 def call_pubmed_xml(url):
+    """调用PubMed XML API，带指数退避重试（处理429限流和5xx错误）"""
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return resp.read().decode("utf-8")
-    except Exception as e:
-        print(f"[WARNING] XML 请求失败: {e}", file=sys.stderr)
-        return None
+    for attempt in range(MAX_RETRIES):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return resp.read().decode("utf-8")
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 504):
+                wait = RETRY_BACKOFF ** attempt
+                print(f"[WARNING] PubMed HTTP {e.code}，第{attempt+1}次重试，等待{wait:.1f}秒...", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            else:
+                print(f"[WARNING] XML 请求失败 (HTTP {e.code}): {e}", file=sys.stderr)
+                return None
+        except Exception as e:
+            print(f"[WARNING] XML 请求异常: {e}", file=sys.stderr)
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RETRY_BACKOFF ** attempt)
+                continue
+            return None
+    print(f"[ERROR] XML 请求重试{MAX_RETRIES}次后仍失败", file=sys.stderr)
+    return None
 
 
 def extract_abstract(pmid):
@@ -223,45 +245,50 @@ def fetch_summaries(pmids):
     if not pmids:
         return []
 
-    params = {"db": "pubmed", "id": ",".join(pmids), "retmode": "json"}
-    url = f"{BASE_ESUMMARY}?{urllib.parse.urlencode(params)}"
-    data = call_pubmed_api(url)
-    if not data or "result" not in data:
-        return []
-
+    # 分批获取summary，每批最多20个，避免URL过长和限流
     results = []
-    result_data = data["result"]
-    for pmid in pmids:
-        if pmid not in result_data:
+    batch_size = 20
+    for batch_start in range(0, len(pmids), batch_size):
+        batch_pmids = pmids[batch_start:batch_start + batch_size]
+        params = {"db": "pubmed", "id": ",".join(batch_pmids), "retmode": "json"}
+        url = f"{BASE_ESUMMARY}?{urllib.parse.urlencode(params)}"
+        data = call_pubmed_api(url)
+        if not data or "result" not in data:
+            print(f"[WARNING] 第{batch_start//batch_size+1}批summary获取失败，跳过", file=sys.stderr)
+            time.sleep(REQUEST_INTERVAL)
             continue
-        item = result_data[pmid]
-        authors = []
-        for author in item.get("authors", []):
-            name = author.get("name", "")
-            if name:
-                authors.append(name)
-        doi = ""
-        for aid in item.get("articleids", []):
-            if aid.get("idtype") == "doi":
-                doi = aid.get("value", "")
-                break
-        results.append({
-            "pmid": pmid,
-            "title": item.get("title", "").replace("&quot;", '"').replace("&amp;", "&"),
-            "authors": authors,
-            "journal": item.get("fulljournalname", ""),
-            "iso_journal": item.get("source", ""),
-            "pubdate": item.get("pubdate", ""),
-            "doi": doi,
-            "abstract": "",
-            "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
-        })
 
-    # 批量获取摘要
-    for i in range(0, len(results), 10):
-        batch = results[i:i + 10]
-        for r in batch:
-            r["abstract"] = extract_abstract(r["pmid"])
+        result_data = data["result"]
+        for pmid in batch_pmids:
+            if pmid not in result_data:
+                continue
+            item = result_data[pmid]
+            authors = []
+            for author in item.get("authors", []):
+                name = author.get("name", "")
+                if name:
+                    authors.append(name)
+            doi = ""
+            for aid in item.get("articleids", []):
+                if aid.get("idtype") == "doi":
+                    doi = aid.get("value", "")
+                    break
+            results.append({
+                "pmid": pmid,
+                "title": item.get("title", "").replace("&quot;", '"').replace("&amp;", "&"),
+                "authors": authors,
+                "journal": item.get("fulljournalname", ""),
+                "iso_journal": item.get("source", ""),
+                "pubdate": item.get("pubdate", ""),
+                "doi": doi,
+                "abstract": "",
+                "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
+            })
+        time.sleep(REQUEST_INTERVAL)
+
+    # 逐篇获取摘要，每篇之间间隔避免限流
+    for r in results:
+        r["abstract"] = extract_abstract(r["pmid"])
         time.sleep(REQUEST_INTERVAL)
 
     return results
@@ -269,24 +296,17 @@ def fetch_summaries(pmids):
 
 def search(query_text, journals=None, years=None, max_results=20):
     """主搜索函数：解析 → 构建 → 搜索 → 获取详情"""
-    # 1. 解析自然语言
     parsed = parse_natural_query(query_text)
-
-    # 2. 构建 PubMed 检索式
     pubmed_query = build_query_from_parsed(parsed, journals, years)
 
     print(f"[INFO] 解析结果: {parsed['type']}", file=sys.stderr)
     print(f"[INFO] 原始输入: {query_text}", file=sys.stderr)
     print(f"[INFO] 检索式: {pubmed_query}", file=sys.stderr)
 
-    # 3. 搜索
     pmids, total = search_pubmed(pubmed_query, max_results)
     print(f"[INFO] 共找到 {total} 篇文献，获取 {len(pmids)} 篇", file=sys.stderr)
 
-    # 4. 获取详情
     papers = fetch_summaries(pmids) if pmids else []
-
-    # 5. 生成时间戳
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     return {
@@ -314,7 +334,6 @@ def save_results(results, output_dir="output"):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print(f"[SUCCESS] 结果已保存: {output_path}")
-    # 同时保存一份 latest 链接
     latest_path = os.path.join(output_dir, "search_results_latest.json")
     with open(latest_path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
@@ -330,17 +349,11 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 示例:
-    # 自然语言检索
     python literature_search.py --query "find papers by Gelinas JN"
     python literature_search.py --query "papers by Jennifer Gelinas about epilepsy"
     python literature_search.py --query "CRISPR gene editing in Nature"
-
-    # 精确检索
     python literature_search.py --query "Gelinas JN"[Author] --years 2020-2025
     python literature_search.py --query "deep learning" --journals "Nature,Science" --max 30
-
-    # 不含期刊和时间限制
-    python literature_search.py --query "Gelinas JN"[Author] --journals "" --years ""
         """
     )
     parser.add_argument("--query", "-q", required=True, help="检索关键词（支持自然语言）")
@@ -350,11 +363,9 @@ def main():
     parser.add_argument("--output", "-o", default="output", help="输出目录")
 
     args = parser.parse_args()
-
     results = search(args.query, args.journals, args.years, args.max)
     main_path, _ = save_results(results, args.output)
 
-    # 摘要
     print(f"\n{'='*50}")
     print(f"  检索摘要")
     print(f"{'='*50}")
