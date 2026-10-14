@@ -6,16 +6,19 @@
     "A": "Nature,Science,Cell,Nat Med,Nat Neurosci,Neuron,Brain,Lancet Neurol,JAMA Neurol,Ann Neurol,Neurology,J Neurol Neurosurg Psychiatry,Stroke,Mol Neurodegener,Acta Neuropathol,Nat Commun,Sci Adv,Cell Rep Med,Transl Neurodegener,eLife",
     "B1": "Epilepsia,Epilepsy Behav,Seizure,Epilepsy Res,Epileptic Disord,Epilepsia Open",
     "B2": "Brain Stimul,J Neurosci,Mol Psychiatry,Brain Behav Immun,J Neuroinflamm",
-    "C": "Clin Neurophysiol,J Neurophysiol,J Neural Eng,NeuroImage,Brain Topogr,J Clin Neurophysiol,Neuromodulation,J Neurosci Methods,J Neuroeng Rehabil,IEEE Trans Neural Syst Rehabil Eng"
+    "C": "Clin Neurophysiol,J Neurophysiol,J Neural Eng,NeuroImage,Brain Topogr,J Clin Neurophysiol,Neuromodulation,J Neurosci Methods,J Neuroeng Rehabil,IEEE Trans Neural Syst Rehabil Eng",
+    "D": ""
   },
   "group_queries": {
-    "C": "(electroencephalograph*[Title/Abstract] OR intracranial EEG[Title/Abstract] OR intracranial eeg[Title/Abstract] OR SEEG[Title/Abstract] OR \"local field potential\"[Title/Abstract] OR LFP[Title/Abstract] OR electrocorticograph*[Title/Abstract] OR ECoG[Title/Abstract] OR \"high-frequency oscillation\"[Title/Abstract] OR \"high frequency oscillation\"[Title/Abstract] OR HFO[Title/Abstract] OR \"multi-unit activity\"[Title/Abstract] OR MUA[Title/Abstract] OR \"neural signal\"[Title/Abstract] OR \"signal processing\"[Title/Abstract] OR (\"deep learning\"[Title/Abstract] AND EEG[Title/Abstract]))"
+    "C": "(electroencephalograph*[Title/Abstract] OR intracranial EEG[Title/Abstract] OR intracranial eeg[Title/Abstract] OR SEEG[Title/Abstract] OR \"local field potential\"[Title/Abstract] OR LFP[Title/Abstract] OR electrocorticograph*[Title/Abstract] OR ECoG[Title/Abstract] OR \"high-frequency oscillation\"[Title/Abstract] OR \"high frequency oscillation\"[Title/Abstract] OR HFO[Title/Abstract] OR \"multi-unit activity\"[Title/Abstract] OR MUA[Title/Abstract] OR \"neural signal\"[Title/Abstract] OR \"signal processing\"[Title/Abstract] OR (\"deep learning\"[Title/Abstract] AND EEG[Title/Abstract]))",
+    "D": "(\"closed-loop\"[Title/Abstract] OR \"closed loop\"[Title/Abstract] OR \"close-loop\"[Title/Abstract] OR \"responsive neurostimulation\"[Title/Abstract] OR \"adaptive deep brain stimulation\"[Title/Abstract] OR \"adaptive neurostimulation\"[Title/Abstract] OR \"adaptive stimulation\"[Title/Abstract] OR \"feedback-controlled\"[Title/Abstract] OR \"feedback controlled\"[Title/Abstract] OR \"EEG-triggered\"[Title/Abstract] OR \"biomarker-driven\"[Title/Abstract] OR \"seizure-triggered\"[Title/Abstract] OR \"ictal-triggered\"[Title/Abstract] OR \"state-dependent\"[Title/Abstract]) AND (\"neuromodulation\"[Title/Abstract] OR \"neurostimulation\"[Title/Abstract] OR \"brain stimulation\"[Title/Abstract] OR \"deep brain stimulation\"[Title/Abstract] OR \"vagus nerve stimulation\"[Title/Abstract] OR \"vagal nerve stimulation\"[Title/Abstract] OR \"responsive neurostimulation\"[Title/Abstract] OR \"transcranial magnetic stimulation\"[Title/Abstract] OR \"transcranial electrical stimulation\"[Title/Abstract] OR \"transcranial direct current stimulation\"[Title/Abstract] OR \"focused ultrasound stimulation\"[Title/Abstract] OR \"ultrasound neuromodulation\"[Title/Abstract] OR \"low-intensity focused ultrasound\"[Title/Abstract] OR \"low intensity focused ultrasound\"[Title/Abstract] OR \"transcranial ultrasound\"[Title/Abstract] OR \"cortical stimulation\"[Title/Abstract] OR \"thalamic stimulation\"[Title/Abstract] OR \"hippocampal stimulation\"[Title/Abstract])"
   },
   "group_labels": {
     "A": "高影响力期刊 × Epilepsy",
     "B1": "癫痫专科刊 × Epilepsy",
     "B2": "神经科学刊 × Epilepsy",
-    "C": "脑电信号分析方法"
+    "C": "脑电信号分析方法",
+    "D": "闭环神经调控 · Closed-loop Neuromodulation"
   },
   "relevance_boost_words": [
     "epilepsy", "epileptic", "epileptiform", "seizure", "seizures",
@@ -26,6 +29,12 @@
     "mesial", "hippocampal", "kindling", "antiseizure",
     "seeg", "ecog", "lfp", "intracranial", "electrocorticography",
     "high-frequency oscillation", "hfo", "multi-unit activity", "mua",
-    "deep learning", "machine learning", "neural network", "signal processing"
+    "deep learning", "machine learning", "neural network", "signal processing",
+    "closed-loop", "closed loop", "responsive", "adaptive", "neuromodulation",
+    "neurostimulation", "brain stimulation", "deep brain stimulation",
+    "responsive neurostimulation", "vagus nerve", "vagal", "transcranial",
+    "focused ultrasound", "phase-locked", "seizure detection", "seizure prediction",
+    "biomarker", "stimulation", "thalamic", "centromedian", "optogenetic",
+    "cortical stimulation", "subthalamic", "aDBS"
   ]
 }
