@@ -1,10 +1,10 @@
 {
   "meta": {
-    "report_date": "2026-10-13",
-    "target_edat": "2026-10-12",
+    "report_date": "2026-10-14",
+    "target_edat": "2026-10-13",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-10-13 02:23:46"
+    "generated_at": "2026-10-14 00:11:45"
   },
   "group_records": [
     {
@@ -18,9 +18,10 @@
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 9,
-      "total": 9,
+      "count": 10,
+      "total": 10,
       "pmids": [
+        "42867458",
         "42862712",
         "42862659",
         "42862657",
@@ -44,19 +45,50 @@
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 2,
-      "total": 2,
+      "count": 8,
+      "total": 8,
       "pmids": [
+        "42865312",
+        "42865307",
+        "42863491",
+        "42863489",
+        "42863487",
+        "42863383",
         "42863091",
         "42862408"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 11,
+  "dedup_total": 18,
   "papers": [
     {
       "index": 1,
+      "pmid": "42867458",
+      "title": "Response to \"Electrocardiography in epilepsy: Insights on preemptive sudden death detection\".",
+      "title_zh": "对“癫痫中的心电图：先发制人猝死检测的见解”的回应。",
+      "journal": "Epilepsia",
+      "iso_journal": "Epilepsia",
+      "authors": [
+        "Ge Y"
+      ],
+      "pubdate": "2026 Oct 13",
+      "doi": "10.1002/epi.70539",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42867458/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 6,
+      "relevance_hits": [
+        "epilepsy"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 2,
       "pmid": "42862712",
       "title": "Selective γ8 transmembrane α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptor regulatory protein negative allosteric modulators: Efficacy in preclinical antiseizure models.",
       "title_zh": "选择性γ8跨膜α-氨基-3-羟基-5-甲基-4-异恶唑丙酸受体调节蛋白阴性变构调节剂：临床前抗癫痫模型中的疗效。",
@@ -93,7 +125,7 @@
       "priority": "必读"
     },
     {
-      "index": 2,
+      "index": 3,
       "pmid": "42862659",
       "title": "Self- and other-directed harmful behavior following deep brain stimulation of the anterior nucleus of the thalamus for drug-resistant epilepsy.",
       "title_zh": "丘脑前核深部脑刺激治疗耐药性癫痫后的自我和其他定向有害行为。",
@@ -129,7 +161,7 @@
       "priority": "必读"
     },
     {
-      "index": 3,
+      "index": 4,
       "pmid": "42862657",
       "title": "Longitudinal developmental trajectories after epilepsy surgery in early childhood: A biphasic developmental hypothesis.",
       "title_zh": "儿童早期癫痫手术后的纵向发展轨迹：一种双向发展假说。",
@@ -165,7 +197,7 @@
       "priority": "必读"
     },
     {
-      "index": 4,
+      "index": 5,
       "pmid": "42862603",
       "title": "Characterizing sleep disturbances in developmental and epileptic encephalopathies through natural language processing: A retrospective monocentric study.",
       "title_zh": "通过自然语言处理表征发育性脑病和癫痫性脑病中的睡眠障碍：一项回顾性单中心研究。",
@@ -200,7 +232,7 @@
       "priority": "必读"
     },
     {
-      "index": 5,
+      "index": 6,
       "pmid": "42862573",
       "title": "Comprehensive transcriptomic and proteomic profiling of mTOR-related epilepsy.",
       "title_zh": "MTOR相关癫痫的综合转录组和蛋白质组分析。",
@@ -250,7 +282,7 @@
       "priority": "必读"
     },
     {
-      "index": 6,
+      "index": 7,
       "pmid": "42862154",
       "title": "Transcriptomic analysis reveals distinct expression patterns in focal cortical dysplasia.",
       "title_zh": "转录组分析揭示了局灶性皮质发育不良中不同的表达模式。",
@@ -297,7 +329,7 @@
       "priority": "推荐"
     },
     {
-      "index": 7,
+      "index": 8,
       "pmid": "42858247",
       "title": "Severe skeletal fragility in SCN8A-related developmental and epileptic encephalopathy.",
       "title_zh": "SCN8A相关发育性脑病和癫痫性脑病的严重骨骼脆弱性。",
@@ -324,7 +356,7 @@
       "priority": "必读"
     },
     {
-      "index": 8,
+      "index": 9,
       "pmid": "42858238",
       "title": "Household-level health and economic spillover effects associated with adult epilepsy in the United States.",
       "title_zh": "与美国成人癫痫相关的家庭级健康和经济溢出效应。",
@@ -350,7 +382,7 @@
       "priority": "必读"
     },
     {
-      "index": 9,
+      "index": 10,
       "pmid": "42858167",
       "title": "Taking a clinical history in adolescents and adults presenting with seizures or epilepsy.",
       "title_zh": "Taking a clinical history in adolescents and adults presenting with seizures or epilepsy.",
@@ -383,7 +415,225 @@
       "priority": "必读"
     },
     {
-      "index": 10,
+      "index": 11,
+      "pmid": "42865312",
+      "title": "Understanding MEG Source Profiles in Tuberous Sclerosis.",
+      "title_zh": "Understanding MEG Source Profiles in Tuberous Sclerosis.",
+      "journal": "Journal of clinical neurophysiology : official publication of the American Electroencephalographic Society",
+      "iso_journal": "J Clin Neurophysiol",
+      "authors": [
+        "Greve K",
+        "Ihnen S",
+        "Arya R",
+        "Fujiwara H",
+        "Greiner HM",
+        "Holland KD",
+        "Horn PS",
+        "Kremer KM",
+        "Krueger DA",
+        "Mangano FT",
+        "Skoch J",
+        "Tenney JR"
+      ],
+      "pubdate": "2026 Oct 12",
+      "doi": "10.1097/WNP.0000000000001304",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42865312/",
+      "abstract": "PURPOSE: Patients with tuberous sclerosis complex (TSC) and medically refractory epilepsy are increasingly referred for epilepsy surgery, but presurgical evaluation is challenging due to multiple tubers and complex seizure onset zones. The aim of this retrospective study was to correlate key characteristics of magnetoencephalography (MEG) sources with intracranial EEG and surgical outcomes in patients with TSC.\nMETHODS: Patients with TSC and MRE who underwent MEG, stereo-EEG (sEEG) monitoring, and have at least 1-year postsurgical follow-up were included. MEG source number, laterality, location, and type (interictal or ictal) were compared with the seizure onset zones, defined by sEEG and postoperative seizure outcomes.\nRESULTS: Thirty-three patients (15 female patients and 18 male patients) (mean age 8.0 ± 8.2 years) were included. No significant correlation between the laterality of MEG sources (unilateral or bilateral) and surgical outcomes (χ2(1, n = 33) = 0.11, P = 0.75) was found, and there was no significant correlation between the number of MEG sources and surgical outcomes (P = 0.68). MEG-sEEG concordance scores showed a high specificity (86.7%) and positive predictive value (75%) as a predictor of postoperative seizure outcomes, and the concordance score was significantly higher in patients with an ictal MEG (4.4 (ictal) versus 3.0 [interictal]) (P = 0.04).\nCONCLUSIONS: This study demonstrates a localization concordance between MEG and sEEG that is related to postsurgical seizure outcomes in patients with TSC. However, no correlation between MEG source number, laterality (unilateral vs. bilateral), and surgical outcomes was found, supporting the continued use of MEG as a presurgical epilepsy tool in this patient population, no matter the number of potential source locations.",
+      "abstract_zh": "PURPOSE: Patients with tuberous sclerosis complex (TSC) and medically refractory epilepsy are increasingly referred for epilepsy surgery, but presurgical evaluation is challenging due to multiple tubers and complex seizure onset zones. The aim of this retrospective study was to correlate key characteristics of magnetoencephalography (MEG) sources with intracranial EEG and surgical outcomes in patients with TSC.\nMETHODS: Patients with TSC and MRE who underwent MEG, stereo-EEG (sEEG) monitoring, and have at least 1-year postsurgical follow-up were included. MEG source number, laterality, location, and type (interictal or ictal) were compared with the seizure onset zones, defined by sEEG and postoperative seizure outcomes.\nRESULTS: Thirty-three patients (15 female patients and 18 male patients) (mean age 8.0 ± 8.2 years) were included. No significant correlation between the laterality of MEG sources (unilateral or bilateral) and surgical outcomes (χ2(1, n = 33) = 0.11, P = 0.75) was found, and there was no significant correlation between the number of MEG sources and surgical outcomes (P = 0.68). MEG-sEEG concordance scores showed a high specificity (86.7%) and positive predictive value (75%) as a predictor of postoperative seizure outcomes, and the concordance score was significantly higher in patients with an ictal MEG (4.4 (ictal) versus 3.0 [interictal]) (P = 0.04).\nCONCLUSIONS: This study demonstrates a localization concordance between MEG and sEEG that is related to postsurgical seizure outcomes in patients with TSC. However, no correlation between MEG source number, laterality (unilateral vs. bilateral), and surgical outcomes was found, supporting the continued use of MEG as a presurgical epilepsy tool in this patient population, no matter the number of potential source locations.",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 27,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "refractory",
+        "ictal",
+        "interictal",
+        "eeg",
+        "seeg",
+        "intracranial"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 12,
+      "pmid": "42865307",
+      "title": "Sustained Seizure Freedom After Stereo-Electroencephalography Without Definitive Intervention: Evidence for Network Modulation by Invasive EEG.",
+      "title_zh": "Sustained Seizure Freedom After Stereo-Electroencephalography Without Definitive Intervention: Evidence for Network Modulation by Invasive EEG.",
+      "journal": "Journal of clinical neurophysiology : official publication of the American Electroencephalographic Society",
+      "iso_journal": "J Clin Neurophysiol",
+      "authors": [
+        "Harland TA",
+        "Farmer S",
+        "Ferrari C",
+        "Terry M",
+        "Cullen M",
+        "Bunch M",
+        "Adamo MA"
+      ],
+      "pubdate": "2026 Oct 12",
+      "doi": "10.1097/WNP.0000000000001309",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42865307/",
+      "abstract": "Stereo-electroencephalography (sEEG) is a diagnostic technique used to localize seizure-onset networks in drug-resistant epilepsy, typically guiding resection, ablation, or neuromodulation. Sustained seizure freedom after diagnostic implantation alone is rarely described. We describe two patients who achieved long-term remission after sEEG monitoring without definitive surgical intervention. A 39-year-old man with posttraumatic right hemispheric epilepsy underwent implantation of 11 depth electrodes, during which no habitual seizures were captured despite medication withdrawal and provocation. After electrode explantation, he discontinued all antiseizure medications and has remained seizure-free for 71 months. A 63-year-old woman with left temporal epilepsy underwent implantation of 12 depth electrodes; monitoring again failed to capture habitual seizures, although abundant mesial temporal interictal discharges were recorded. After explantation, which was complicated by a small tract hemorrhage, she has remained seizure-free for 20 months on stable cenobamate therapy. These cases add to a limited body of evidence suggesting that sEEG implantation may induce microlesional or network-modulatory effects capable of interrupting seizure propagation, analogous to remission reported after intracranial electrode placement in prior series. Recognition of this phenomenon is clinically important. When no habitual seizures are recorded and early postoperative improvement is observed, a period of extended follow-up may be warranted before pursuing resection, ablation, or neuromodulation. Further study is needed to define predictors of remission, clarify underlying mechanisms, and guide patient counseling regarding this uncommon but meaningful effect of invasive EEG.",
+      "abstract_zh": "Stereo-electroencephalography (sEEG) is a diagnostic technique used to localize seizure-onset networks in drug-resistant epilepsy, typically guiding resection, ablation, or neuromodulation. Sustained seizure freedom after diagnostic implantation alone is rarely described. We describe two patients who achieved long-term remission after sEEG monitoring without definitive surgical intervention. A 39-year-old man with posttraumatic right hemispheric epilepsy underwent implantation of 11 depth electrodes, during which no habitual seizures were captured despite medication withdrawal and provocation. After electrode explantation, he discontinued all antiseizure medications and has remained seizure-free for 71 months. A 63-year-old woman with left temporal epilepsy underwent implantation of 12 depth electrodes; monitoring again failed to capture habitual seizures, although abundant mesial temporal interictal discharges were recorded. After explantation, which was complicated by a small tract hemorrhage, she has remained seizure-free for 20 months on stable cenobamate therapy. These cases add to a limited body of evidence suggesting that sEEG implantation may induce microlesional or network-modulatory effects capable of interrupting seizure propagation, analogous to remission reported after intracranial electrode placement in prior series. Recognition of this phenomenon is clinically important. When no habitual seizures are recorded and early postoperative improvement is observed, a period of extended follow-up may be warranted before pursuing resection, ablation, or neuromodulation. Further study is needed to define predictors of remission, clarify underlying mechanisms, and guide patient counseling regarding this uncommon but meaningful effect of invasive EEG.",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 38,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "drug-resistant",
+        "ictal",
+        "interictal",
+        "electroencephalogr",
+        "eeg"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 13,
+      "pmid": "42863491",
+      "title": "MTDANet: lightweight multi-scale temporal hierarchy and distance-regularized linear attention network for motor imagery brain-computer interfaces.",
+      "title_zh": "MTDANet: lightweight multi-scale temporal hierarchy and distance-regularized linear attention network for motor imagery brain-computer interfaces.",
+      "journal": "Journal of neural engineering",
+      "iso_journal": "J Neural Eng",
+      "authors": [
+        "Chen B",
+        "Deng C",
+        "Ge H",
+        "Su X",
+        "Shen Y"
+      ],
+      "pubdate": "2026 Oct 12",
+      "doi": "10.1088/1741-2552/aeb330",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42863491/",
+      "abstract": "OBJECTIVE: Motor-imagery (MI) electroencephalography (EEG) offers a non-invasive route to brain-computer interaction, yet reliable single-trial decoding remains difficult because task-related patterns are weak, nonstationary, and distributed over multiple temporal scales. This study investigates whether a staged local-to-global model can integrate fine temporal-spatial structure with longer-range context without relying on unrestricted self-attention.\nAPPROACH: We propose MTDANet, an architecture that combines multi-scale temporal-spatial feature extraction, factorized temporal consolidation, and distance-regularized recurrent attention. The model was evaluated on three public MI datasets under subject-specific and leave-one-subject-out (LOSO) protocols. Separately initialized models were also trained on P300 and steady-state visual evoked potential (SSVEP) datasets to examine broader architectural applicability. Participant-level paired analyses used two-sided paired t tests with within-setting Holm correction.\nMAIN RESULTS: MTDANet achieved subject-specific accuracies of 85.61 ± 8.32%, 90.85 ± 7.62%, and 87.79 ± 13.93% on BCI Competition IV 2a, BCI Competition IV 2b, and BNCI2014_002, respectively. Relative to the highest-mean baseline, the paired improvements were supported after within-setting Holm correction on BCI Competition IV 2a (3.56 percentage points, adjusted p = 0.0097) and 2b (1.62 points, adjusted p = 0.0168). Under LOSO evaluation, the corresponding accuracies were 63.31 ± 15.74%, 79.77 ± 7.57%, and 79.96 ± 11.95%. The 2.08-point BNCI2014_002 difference had a 95% confidence interval of 0.42-3.73 points and an adjusted p value of 0.0387. These three comparisons did not remain significant in a broader 56-comparison Holm sensitivity analysis. The P300 and SSVEP models attained the highest observed mean accuracies.\nSIGNIFICANCE: The results provide within-setting evidence for staged local-to-global temporal modeling in offline MI-EEG evaluations.",
+      "abstract_zh": "OBJECTIVE: Motor-imagery (MI) electroencephalography (EEG) offers a non-invasive route to brain-computer interaction, yet reliable single-trial decoding remains difficult because task-related patterns are weak, nonstationary, and distributed over multiple temporal scales. This study investigates whether a staged local-to-global model can integrate fine temporal-spatial structure with longer-range context without relying on unrestricted self-attention.\nAPPROACH: We propose MTDANet, an architecture that combines multi-scale temporal-spatial feature extraction, factorized temporal consolidation, and distance-regularized recurrent attention. The model was evaluated on three public MI datasets under subject-specific and leave-one-subject-out (LOSO) protocols. Separately initialized models were also trained on P300 and steady-state visual evoked potential (SSVEP) datasets to examine broader architectural applicability. Participant-level paired analyses used two-sided paired t tests with within-setting Holm correction.\nMAIN RESULTS: MTDANet achieved subject-specific accuracies of 85.61 ± 8.32%, 90.85 ± 7.62%, and 87.79 ± 13.93% on BCI Competition IV 2a, BCI Competition IV 2b, and BNCI2014_002, respectively. Relative to the highest-mean baseline, the paired improvements were supported after within-setting Holm correction on BCI Competition IV 2a (3.56 percentage points, adjusted p = 0.0097) and 2b (1.62 points, adjusted p = 0.0168). Under LOSO evaluation, the corresponding accuracies were 63.31 ± 15.74%, 79.77 ± 7.57%, and 79.96 ± 11.95%. The 2.08-point BNCI2014_002 difference had a 95% confidence interval of 0.42-3.73 points and an adjusted p value of 0.0387. These three comparisons did not remain significant in a broader 56-comparison Holm sensitivity analysis. The P300 and SSVEP models attained the highest observed mean accuracies.\nSIGNIFICANCE: The results provide within-setting evidence for staged local-to-global temporal modeling in offline MI-EEG evaluations.",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 3,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 14,
+      "pmid": "42863489",
+      "title": "AOR: adaptive orthogonal regression for depression feature selection with incomplete EEG channels.",
+      "title_zh": "AOR: adaptive orthogonal regression for depression feature selection with incomplete EEG channels.",
+      "journal": "Journal of neural engineering",
+      "iso_journal": "J Neural Eng",
+      "authors": [
+        "Dong W",
+        "Gong Z",
+        "Xu X",
+        "Liu K",
+        "Wei F",
+        "Zhuo L"
+      ],
+      "pubdate": "2026 Oct 12",
+      "doi": "10.1088/1741-2552/aeb32f",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42863489/",
+      "abstract": "OBJECTIVE: Depression induces severe mental and physical impairments, highlighting the&#xD;clinical need for rapid and reliable detection. Electroencephalography (EEG) directly reflects&#xD;neural electrical activity and serves as a promising tool for depression investigation. However,&#xD;the inherent non-stationarity, redundancy, and noise susceptibility of EEG signals, together&#xD;with the common issue of incomplete channel data due to electrode loss or severe noise during&#xD;acquisition, compromise the reliability of diagnostic models. Existing EEG feature selection&#xD;methods lack adaptability to such incomplete data, leading to distorted feature evaluation and&#xD;degraded performance.\nAPPROACH: To address this limitation, an adaptive orthogonal regression&#xD;(AOR) method is proposed for EEG feature selection for depression detection under incomplete&#xD;channel conditions. The method integrates three core innovations: embedding missing channel&#xD;information into the orthogonal regression formulation to mitigate the impact of incomplete&#xD;channels, incorporating adaptive channel-weighted learning to automatically quantify the&#xD;relative importance of different channels, and applying global redundancy minimization&#xD;to eliminate inter-feature redundancy while enhancing discriminability. The optimization&#xD;problem is solved via Generalized Power Iteration and Augmented Lagrangian Multiplier&#xD;methods.\nMAIN RESULTS: AOR was validated on the MODMA and PRED-d003 datasets across&#xD;3-channel, 64-channel, and 128-channel configurations under single-modal and multi-modal&#xD;scenarios. Experimental results demonstrate that AOR consistently outperforms state-of-the art methods across various missing ratios and channel configurations. The average cross-subject&#xD;depression recognition accuracy reaches 92.25 % and 95.12 % across different missing ratios on&#xD;the two datasets. Additionally, feature weight analysis reveals that EEG kurtosis consistently&#xD;exhibits high discriminative power across different configurations.\nSIGNIFICANCE: The proposed&#xD;AOR method provides a robust and efficient solution for depression feature selection under&#xD;incomplete EEG channel conditions, offering reliable diagnostic performance in real-world&#xD;clinical scenarios.",
+      "abstract_zh": "OBJECTIVE: Depression induces severe mental and physical impairments, highlighting the&#xD;clinical need for rapid and reliable detection. Electroencephalography (EEG) directly reflects&#xD;neural electrical activity and serves as a promising tool for depression investigation. However,&#xD;the inherent non-stationarity, redundancy, and noise susceptibility of EEG signals, together&#xD;with the common issue of incomplete channel data due to electrode loss or severe noise during&#xD;acquisition, compromise the reliability of diagnostic models. Existing EEG feature selection&#xD;methods lack adaptability to such incomplete data, leading to distorted feature evaluation and&#xD;degraded performance.\nAPPROACH: To address this limitation, an adaptive orthogonal regression&#xD;(AOR) method is proposed for EEG feature selection for depression detection under incomplete&#xD;channel conditions. The method integrates three core innovations: embedding missing channel&#xD;information into the orthogonal regression formulation to mitigate the impact of incomplete&#xD;channels, incorporating adaptive channel-weighted learning to automatically quantify the&#xD;relative importance of different channels, and applying global redundancy minimization&#xD;to eliminate inter-feature redundancy while enhancing discriminability. The optimization&#xD;problem is solved via Generalized Power Iteration and Augmented Lagrangian Multiplier&#xD;methods.\nMAIN RESULTS: AOR was validated on the MODMA and PRED-d003 datasets across&#xD;3-channel, 64-channel, and 128-channel configurations under single-modal and multi-modal&#xD;scenarios. Experimental results demonstrate that AOR consistently outperforms state-of-the art methods across various missing ratios and channel configurations. The average cross-subject&#xD;depression recognition accuracy reaches 92.25 % and 95.12 % across different missing ratios on&#xD;the two datasets. Additionally, feature weight analysis reveals that EEG kurtosis consistently&#xD;exhibits high discriminative power across different configurations.\nSIGNIFICANCE: The proposed&#xD;AOR method provides a robust and efficient solution for depression feature selection under&#xD;incomplete EEG channel conditions, offering reliable diagnostic performance in real-world&#xD;clinical scenarios.",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 10,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg",
+        "generalized",
+        "ecog"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 15,
+      "pmid": "42863487",
+      "title": "GROND: Automated characterization of periodic and rhythmic EEG patterns.",
+      "title_zh": "GROND: Automated characterization of periodic and rhythmic EEG patterns.",
+      "journal": "Journal of neural engineering",
+      "iso_journal": "J Neural Eng",
+      "authors": [
+        "Jing J",
+        "Sun C",
+        "Zhang T",
+        "Byrd M",
+        "Tăuțan AM",
+        "Basovic L",
+        "Hadar PN",
+        "Fernandes MP",
+        "Goldenholz DM",
+        "Kim J",
+        "Struck AF",
+        "Zafar SF",
+        "Westover B"
+      ],
+      "pubdate": "2026 Oct 12",
+      "doi": "10.1088/1741-2552/aeb331",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42863487/",
+      "abstract": "Periodic discharges (PDs) and rhythmic delta activity (RDA) are common EEG patterns in critically ill patients that require characterization of lateralization, spatial localization, and frequency. Manual characterization is subjective and time-consuming. We present an automated system for all four major subtypes: lateralized and generalized PDs (LPD, GPD) and lateralized and generalized RDA (LRDA, GRDA).&#xD;&#xD;Approach. The PD-Profiler combines a per-channel convolutional neural network, hemisphere-specific learned evidence traces, dynamic programming with an approximately periodic prior, and discharge-locked topographic localization. The RDA-Profiler uses iterative narrowband Hilbert refinement for frequency and lateralization, with phase-locking-value analysis for spatial extent. Both pipelines were trained and evaluated on 12,425 EEG segments from 11,729 patients.&#xD;&#xD;Main results. Four electroencephalographers independently scored 200 stratified segments per subtype. The algorithm exceeded expert-expert (EE) agreement on LPD frequency (expert-algorithm (EA) ICC 0.931 versus EE 0.897; p<0.001) and was statistically indistinguishable from EE on GPD frequency (EA 0.980 versus EE 0.973; p=0.061), GRDA frequency (p=0.056), LRDA frequency (p=0.435), LPD laterality (EA kappa 0.945 versus EE 0.974; p=0.079), and LRDA laterality (EA kappa 0.961 versus EE 0.993; p=0.269). No attribute fell significantly below the EE ceiling. PD discharge timing achieved an F1 of 0.817 at single-sample precision (mean absolute timing error 3.1 ms). PD spatial localization reached 97.3% of expert inter-rater Jaccard agreement, and RDA spatial extent matched EE agreement.&#xD;&#xD;Significance. GROND reaches expert-level reliability across lateralization, spatial localization, discharge timing, and frequency for PDs and RDA. In discordant cases, experts judged its frequency estimates more accurate than the original labels in 94% of cases, supporting reproducible characterization at scale.",
+      "abstract_zh": "Periodic discharges (PDs) and rhythmic delta activity (RDA) are common EEG patterns in critically ill patients that require characterization of lateralization, spatial localization, and frequency. Manual characterization is subjective and time-consuming. We present an automated system for all four major subtypes: lateralized and generalized PDs (LPD, GPD) and lateralized and generalized RDA (LRDA, GRDA).&#xD;&#xD;Approach. The PD-Profiler combines a per-channel convolutional neural network, hemisphere-specific learned evidence traces, dynamic programming with an approximately periodic prior, and discharge-locked topographic localization. The RDA-Profiler uses iterative narrowband Hilbert refinement for frequency and lateralization, with phase-locking-value analysis for spatial extent. Both pipelines were trained and evaluated on 12,425 EEG segments from 11,729 patients.&#xD;&#xD;Main results. Four electroencephalographers independently scored 200 stratified segments per subtype. The algorithm exceeded expert-expert (EE) agreement on LPD frequency (expert-algorithm (EA) ICC 0.931 versus EE 0.897; p<0.001) and was statistically indistinguishable from EE on GPD frequency (EA 0.980 versus EE 0.973; p=0.061), GRDA frequency (p=0.056), LRDA frequency (p=0.435), LPD laterality (EA kappa 0.945 versus EE 0.974; p=0.079), and LRDA laterality (EA kappa 0.961 versus EE 0.993; p=0.269). No attribute fell significantly below the EE ceiling. PD discharge timing achieved an F1 of 0.817 at single-sample precision (mean absolute timing error 3.1 ms). PD spatial localization reached 97.3% of expert inter-rater Jaccard agreement, and RDA spatial extent matched EE agreement.&#xD;&#xD;Significance. GROND reaches expert-level reliability across lateralization, spatial localization, discharge timing, and frequency for PDs and RDA. In discordant cases, experts judged its frequency estimates more accurate than the original labels in 94% of cases, supporting reproducible characterization at scale.",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 7,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg",
+        "generalized",
+        "neural network"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 16,
+      "pmid": "42863383",
+      "title": "Long-term functional outcome after post-anoxic brain injury: model development and internal validation from a multicentre cohort.",
+      "title_zh": "Long-term functional outcome after post-anoxic brain injury: model development and internal validation from a multicentre cohort.",
+      "journal": "Clinical neurophysiology : official journal of the International Federation of Clinical Neurophysiology",
+      "iso_journal": "Clin Neurophysiol",
+      "authors": [
+        "Paolo Z",
+        "Manuela C",
+        "Lucia F",
+        "Valentino M",
+        "Federico L",
+        "Ernesto G",
+        "Stefano M",
+        "Elena R",
+        "Alessandra DF"
+      ],
+      "pubdate": "2026 Sep 29",
+      "doi": "10.1016/j.clinph.2026.2112411",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42863383/",
+      "abstract": "BACKGROUND AND OBJECTIVES: To identify biomarkers of long-term functional recovery after cardiac arrest (CA).\nMETHODS: This is a prospective longitudinal cohort study based on the Veneto Registry of CA (July 2021- June 2023). We collected demographic, clinical, biochemical, and electroencephalography and short- and middle-latencysomatosensory-evoked-potentials (S-SSEP and ML-SSEP) within 72 hours. Functional scales were collected at discharge, 3, 6, and 12 months after the event. Multiple imputation was used to avoid statistical loss. Calibration was verified. A penalised logistic regression and a penalised continuation ratio were fitted to model the effect of covariates. The quality of prediction or fitting was verified computing the rank probability score for ordinal outcomes, the Brier score, and area under the ROC curve for binary outcomes. Decision curve analysis confirmed clinical utility.\nRESULTS: We included 160 persons (mean 62.80 ± SD 14.36 years; 123 males) out of 186. The interaction between continuous/nearly continuous EEG and N20/P25 predictor of survival (β = 0.840) and recovery (β = 1.160) of consciousness at 12 months after CA. ML-SSEP was a predictor of good outcome on all scales at 12 months after CA (0.739<β <1.708).\nCONCLUSION: ML-SSEPs associated with standard neurophysiological assessments are robust predictors of long-term functional outcomes after CA.\nSIGNIFICANCE: ML-SSEPs associated with EEG and standard SSEP might be incorporated in routine clinical practice in ICU post-anoxic coma assessment.",
+      "abstract_zh": "BACKGROUND AND OBJECTIVES: To identify biomarkers of long-term functional recovery after cardiac arrest (CA).\nMETHODS: This is a prospective longitudinal cohort study based on the Veneto Registry of CA (July 2021- June 2023). We collected demographic, clinical, biochemical, and electroencephalography and short- and middle-latencysomatosensory-evoked-potentials (S-SSEP and ML-SSEP) within 72 hours. Functional scales were collected at discharge, 3, 6, and 12 months after the event. Multiple imputation was used to avoid statistical loss. Calibration was verified. A penalised logistic regression and a penalised continuation ratio were fitted to model the effect of covariates. The quality of prediction or fitting was verified computing the rank probability score for ordinal outcomes, the Brier score, and area under the ROC curve for binary outcomes. Decision curve analysis confirmed clinical utility.\nRESULTS: We included 160 persons (mean 62.80 ± SD 14.36 years; 123 males) out of 186. The interaction between continuous/nearly continuous EEG and N20/P25 predictor of survival (β = 0.840) and recovery (β = 1.160) of consciousness at 12 months after CA. ML-SSEP was a predictor of good outcome on all scales at 12 months after CA (0.739<β <1.708).\nCONCLUSION: ML-SSEPs associated with standard neurophysiological assessments are robust predictors of long-term functional outcomes after CA.\nSIGNIFICANCE: ML-SSEPs associated with EEG and standard SSEP might be incorporated in routine clinical practice in ICU post-anoxic coma assessment.",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 3,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 17,
       "pmid": "42863091",
       "title": "Predicting ICU Seizures Using 1 hour of cEEG.",
       "title_zh": "Predicting ICU Seizures Using 1 hour of cEEG.",
@@ -424,7 +674,7 @@
       "priority": "必读"
     },
     {
-      "index": 11,
+      "index": 18,
       "pmid": "42862408",
       "title": "Fixed-Sequence OFF-to-ON Differences in Low-Beta State Dynamics in Parkinson's Disease: A Paired Source-Space Resting-State EEG Study.",
       "title_zh": "Fixed-Sequence OFF-to-ON Differences in Low-Beta State Dynamics in Parkinson's Disease: A Paired Source-Space Resting-State EEG Study.",
