@@ -339,20 +339,34 @@ def feishu_list_fields(token, app_token, table_id):
     return {}
 
 def write_feishu(report):
+    """写入飞书多维表格，返回 (created, expected, diag)。
+    diag 为诊断字典，会被写入报告 meta，便于在不登录 GitHub 的情况下从 latest.json 定位飞书问题。"""
+    diag = {"status": "unknown", "env": {}, "steps": {}}
     app_id = os.environ.get("FEISHU_APP_ID", "").strip(); app_secret = os.environ.get("FEISHU_APP_SECRET", "").strip()
     app_token = os.environ.get("FEISHU_APP_TOKEN", "").strip(); table_id = os.environ.get("FEISHU_TABLE_ID", "").strip()
-    if not (app_id and app_secret and app_token): print("[FEISHU-SKIP] 未配置飞书，跳过"); return None
+    diag["env"] = {
+        "app_id_set": bool(app_id), "app_id_len": len(app_id),
+        "app_secret_set": bool(app_secret), "app_secret_len": len(app_secret),
+        "app_token_set": bool(app_token), "app_token": app_token,
+        "table_id_set": bool(table_id), "table_id": table_id,
+    }
+    if not (app_id and app_secret and app_token):
+        print("[FEISHU-SKIP] 未配置飞书，跳过"); diag["status"] = "skipped"; return None, 0, diag
     token = feishu_tenant_token(app_id, app_secret)
-    if not token: return None
+    diag["steps"]["tenant_token"] = "ok" if token else "failed"
+    if not token: diag["status"] = "failed"; return 0, 0, diag
     if not table_id:
         tables = feishu_request("GET", f"/bitable/v1/apps/{app_token}/tables", token)
         if tables and tables.get("code") == 0:
             items = tables.get("data", {}).get("items", [])
             if items: table_id = items[0]["table_id"]
-        if not table_id: print("[FEISHU-ERROR] 无法确定table_id", file=sys.stderr); return None
+        diag["steps"]["resolve_table"] = table_id or "failed"
+        if not table_id: print("[FEISHU-ERROR] 无法确定table_id", file=sys.stderr); diag["status"] = "failed"; return 0, 0, diag
     fields_map = feishu_list_fields(token, app_token, table_id)
-    if not fields_map: print("[FEISHU-ERROR] 无法获取表字段", file=sys.stderr); return None
+    diag["steps"]["list_fields"] = f"ok({len(fields_map)})" if fields_map else "failed"
+    if not fields_map: print("[FEISHU-ERROR] 无法获取表字段", file=sys.stderr); diag["status"] = "failed"; return 0, 0, diag
     print(f"[FEISHU] 检测到表字段 ({len(fields_map)})")
+    # 查询已有PMID用于去重
     existing_pmids = set()
     if "PMID" in fields_map:
         page_token = None
@@ -396,28 +410,35 @@ def write_feishu(report):
         if "相关度得分" in fields_map: f["相关度得分"] = p.get("relevance_score", 0)
         if "已读" in fields_map: f["已读"] = False
         records.append({"fields": f})
-    if not records: print(f"[FEISHU] 无新文献（检索{len(report['papers'])}篇，去重跳过{skipped}篇）"); return 0
-    created = 0; failed_chunks = 0
+    if not records:
+        print(f"[FEISHU] 无新文献（检索{len(report['papers'])}篇，去重跳过{skipped}篇）")
+        diag["status"] = "empty"; diag["dedup_skipped"] = skipped; diag["searched"] = len(report["papers"])
+        return 0, 0, diag
+    created = 0; failed_chunks = 0; batch_errors = []
     for i in range(0, len(records), 50):
         chunk = records[i:i+50]
         chunk_ok = False
-        for attempt in range(4):
+        for attempt in range(4):  # 每批最多重试4次，指数退避，规避偶发网络/限流导致的整批静默丢失
             resp = feishu_request("POST", f"/bitable/v1/apps/{app_token}/tables/{table_id}/records/batch_create", token, {"records": chunk})
             if resp and resp.get("code") == 0:
                 created += len(resp.get("data", {}).get("records", [])); chunk_ok = True; break
             else:
-                detail = ""
-                if isinstance(resp, dict): detail = f" code={resp.get('code')} msg={resp.get('msg')}"
-                print(f"[FEISHU-ERROR] 第{i//50+1}批写入失败(第{attempt+1}次).{detail}", file=sys.stderr)
-                if attempt < 3: time.sleep(2 ** (attempt + 1))
+                code = resp.get("code") if isinstance(resp, dict) else None
+                msg = resp.get("msg") if isinstance(resp, dict) else str(resp)[:200]
+                if attempt == 3: batch_errors.append({"batch": i // 50 + 1, "code": code, "msg": msg})
+                print(f"[FEISHU-ERROR] 第{i//50+1}批写入失败(第{attempt+1}次). code={code} msg={msg}", file=sys.stderr)
+                if attempt < 3: time.sleep(2 ** (attempt + 1))  # 2s,4s,8s
         if not chunk_ok:
             failed_chunks += 1
             failed_pmids = [str(r.get("fields", {}).get("PMID", "")) for r in chunk]
             print(f"[FEISHU-ERROR] 第{i//50+1}批 {len(chunk)} 条重试4次仍失败，PMID: {failed_pmids}", file=sys.stderr)
     print(f"[FEISHU-OK] 已写入 {created}/{len(records)} 条新记录（检索{len(report['papers'])}篇，去重跳过{skipped}篇）")
+    diag["batch_create"] = {"created": created, "expected": len(records), "failed_chunks": failed_chunks, "errors": batch_errors}
+    diag["dedup_skipped"] = skipped; diag["searched"] = len(report["papers"])
+    diag["status"] = "ok" if created == len(records) else ("failed" if created == 0 else "partial")
     if created < len(records):
         print(f"[FEISHU-CRITICAL] 有 {len(records)-created} 条新文献未能写入飞书，请人工核对补录！", file=sys.stderr)
-    return created
+    return created, len(records), diag
 
 def main():
     parser = argparse.ArgumentParser(description="顶刊文献日报生成器")
@@ -429,6 +450,7 @@ def main():
     report_date = datetime.strptime(args.date, "%Y-%m-%d").date() if args.date else beijing_today()
     edat_date = report_date - timedelta(days=1)
     print(f"[INFO] 日报日期: {report_date}  目标 EDAT: {edat_date}")
+    # 检索口径：最近3天EDAT，避免PubMed某天断更导致漏文献
     edat_start = edat_date - timedelta(days=2)
     base_query = f'{config["query"]}[Title/Abstract] AND ("{edat_start}"[EDAT] : "{edat_date}"[EDAT])'
     group_queries = config.get("group_queries", {})
@@ -449,8 +471,8 @@ def main():
             print(f"  [{i}/{len(papers)}] PMID {p.get('pmid')} 翻译中...")
             title_zh = translate_with_timeout(p.get("title", "")); abs_zh = translate_with_timeout(p.get("abstract", ""))
             p["_title_zh"] = title_zh; p["_abstract_zh"] = abs_zh
-            abs_bad = p.get("abstract") and not is_translation_good(p["abstract"], abs_zh)
-            title_bad = p.get("title") and not is_translation_good(p["title"], title_zh)
+            abs_bad = p.get("abstract") and not is_translation_good(p.get("abstract"), abs_zh)
+            title_bad = p.get("title") and not is_translation_good(p.get("title"), title_zh)
             if abs_bad or title_bad: translate_failures.append(p)
             time.sleep(0.8)
         if translate_failures:
@@ -458,11 +480,11 @@ def main():
             still_failed = []
             for p in translate_failures:
                 print(f"  补翻 PMID {p.get('pmid')}...")
-                if p.get("title") and not is_translation_good(p["title"], p["_title_zh"]): p["_title_zh"] = translate_with_timeout(p["title"])
-                if p.get("abstract") and not is_translation_good(p["abstract"], p["_abstract_zh"]): p["_abstract_zh"] = translate_with_timeout(p["abstract"])
+                if p.get("title") and not is_translation_good(p.get("title"), p["_title_zh"]): p["_title_zh"] = translate_with_timeout(p.get("title"))
+                if p.get("abstract") and not is_translation_good(p.get("abstract"), p["_abstract_zh"]): p["_abstract_zh"] = translate_with_timeout(p.get("abstract"))
                 time.sleep(1.0)
-                abs_bad = p.get("abstract") and not is_translation_good(p["abstract"], p["_abstract_zh"])
-                title_bad = p.get("title") and not is_translation_good(p["title"], p["_title_zh"])
+                abs_bad = p.get("abstract") and not is_translation_good(p.get("abstract"), p["_abstract_zh"])
+                title_bad = p.get("title") and not is_translation_good(p.get("title"), p["_title_zh"])
                 if abs_bad or title_bad: still_failed.append(p.get("pmid"))
             if still_failed: print(f"[WARN] 以下PMID翻译仍失败: {', '.join(still_failed)}")
             else: print("[OK] 二次补翻全部成功")
@@ -470,13 +492,20 @@ def main():
     else:
         for p in papers: p["_title_zh"] = ""; p["_abstract_zh"] = ""
     report = build_report(groups, papers, config, report_date, edat_date)
-    json_path = save_json(report, report_date); print(f"[SUCCESS] JSON: {json_path}")
     html = render_html(report, groups); html_path = save_html(html, report_date); print(f"[SUCCESS] HTML: {html_path}")
     page_url = write_notion(report); print(f"[NOTION] 页面: {page_url or '未写入'}")
-    feishu_count = write_feishu(report); print(f"[FEISHU] 写入记录: {feishu_count if feishu_count else '未写入'}")
+    feishu_created, feishu_expected, feishu_diag = write_feishu(report)
+    report["meta"]["feishu_diag"] = feishu_diag  # 诊断写入报告，随 latest.json 提交回仓库，免登录即可排查
+    print(f"[FEISHU] 写入记录: {feishu_created} / 期望 {feishu_expected}（状态: {feishu_diag.get('status')}）")
+    json_path = save_json(report, report_date); print(f"[SUCCESS] JSON: {json_path}")
     print("\n" + "="*60 + "\n  日报摘要\n" + "="*60)
     print(f"  日期: {report_date} | EDAT: {edat_date} | 去重后: {report['dedup_total']} 篇")
     for gr in report["group_records"]: print(f"  {gr['label']}: {gr.get('count', 0)} 篇 ({gr['status']})")
     for p in report["papers"]: print(f"  · [{p['priority']}] PMID {p['pmid']} — {p['title'][:60]}")
+    # 飞书异常（获取token失败/字段失败/批次写入失败/部分失败）-> 非0退出，让 GitHub Actions 标红，
+    # 避免"假成功"掩盖问题。未配置（skipped）或确无新文献（empty）不算失败。
+    if feishu_diag.get("status") in ("failed", "partial"):
+        print(f"[FEISHU-CRITICAL] 飞书写入异常（状态 {feishu_diag.get('status')}，写入 {feishu_created}/{feishu_expected}），本次任务标记失败。", file=sys.stderr)
+        sys.exit(1)
 
 if __name__ == "__main__": main()
