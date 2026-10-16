@@ -1,6 +1,11 @@
 {
-  "run_at_utc": "2026-10-16T02:12:41.563936Z",
+  "run_at_utc": "2026-10-16T02:35:20.895955Z",
   "steps": {
+    "fake_secret_probe": {
+      "code": 10014,
+      "msg": "app secret invalid",
+      "interpret": "10014=来源可达网关未拦(IP正常)；21001=来源IP被网关访问控制拦截"
+    },
     "tenant_token": {
       "code": 21001,
       "msg": "Access denied by access control policy. Contact the administrator for assistance.",
@@ -16,5 +21,6 @@
     "FEISHU_APP_TOKEN": "DWh0bt8gyaNAcos9HNEcBQV9nqc",
     "FEISHU_TABLE_ID_set": true,
     "FEISHU_TABLE_ID": "tblRegWvkknu1MnT"
-  }
+  },
+  "egress_ip": "40.124.36.177"
 }
