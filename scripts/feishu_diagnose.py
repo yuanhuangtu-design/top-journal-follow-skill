@@ -33,13 +33,6 @@ def req(method, path, token, payload=None):
         return {"_exception": str(e)}
 
 
-def finish(diag):
-    print(json.dumps(diag, ensure_ascii=False, indent=2))
-    os.makedirs("reports", exist_ok=True)
-    with open("reports/feishu_diag.json", "w", encoding="utf-8") as fh:
-        json.dump(diag, fh, ensure_ascii=False, indent=2)
-
-
 def main():
     diag = {"run_at_utc": datetime.datetime.utcnow().isoformat() + "Z", "steps": {}}
     app_id = os.environ.get("FEISHU_APP_ID", "").strip()
@@ -59,7 +52,26 @@ def main():
         "FEISHU_TABLE_ID": table_id,
     }
 
-    # 1) tenant_access_token
+    # 0a) 记录 GitHub Actions 出口 IP
+    try:
+        with urllib.request.urlopen("https://api.ipify.org", timeout=15) as r:
+            diag["egress_ip"] = r.read().decode()
+    except Exception as e:
+        diag["egress_ip"] = f"ERR:{e}"
+
+    # 0b) 假 secret 探测（判定 21001 是否为来源 IP 网关拦截）：
+    #     真实 app_id + 假 secret，正常（网关放行）应返回 10014 app secret invalid；
+    #     若返回 21001 Access denied by access control policy，说明请求在到达
+    #     secret 校验前就被“来源访问控制（IP/网关策略）”拦截，与凭证对错无关。
+    fake = req("POST", "/auth/v3/tenant_access_token/internal", None,
+               {"app_id": app_id, "app_secret": "0" * 32})
+    diag["steps"]["fake_secret_probe"] = {
+        "code": fake.get("code") if isinstance(fake, dict) else None,
+        "msg": fake.get("msg") if isinstance(fake, dict) else str(fake)[:300],
+        "interpret": "10014=来源可达网关未拦(IP正常)；21001=来源IP被网关访问控制拦截",
+    }
+
+    # 1) tenant_access_token（真实凭证）
     tok = req("POST", "/auth/v3/tenant_access_token/internal", None,
               {"app_id": app_id, "app_secret": app_secret})
     token = tok.get("tenant_access_token") if isinstance(tok, dict) and tok.get("code") == 0 else None
@@ -69,8 +81,7 @@ def main():
         "token_ok": bool(token),
     }
     if not token:
-        finish(diag)
-        return
+        return finish(diag)
 
     # 2) 列出该 base 下的数据表
     t = req("GET", f"/bitable/v1/apps/{app_token}/tables", token)
@@ -112,6 +123,13 @@ def main():
         diag["steps"]["write_perm_probe"] = {"code": probe.get("code"), "msg": probe.get("msg")}
 
     finish(diag)
+
+
+def finish(diag):
+    print(json.dumps(diag, ensure_ascii=False, indent=2))
+    os.makedirs("reports", exist_ok=True)
+    with open("reports/feishu_diag.json", "w", encoding="utf-8") as fh:
+        json.dump(diag, fh, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
