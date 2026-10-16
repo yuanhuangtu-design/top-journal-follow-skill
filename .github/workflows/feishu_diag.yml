@@ -1,0 +1,44 @@
+name: Feishu Diagnose
+
+on:
+  push:
+    paths:
+      - '.github/workflows/feishu_diag.yml'
+      - 'scripts/feishu_diagnose.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Diagnose Feishu connection
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_APP_TOKEN: ${{ secrets.FEISHU_APP_TOKEN }}
+          FEISHU_TABLE_ID: ${{ secrets.FEISHU_TABLE_ID }}
+        run: python scripts/feishu_diagnose.py
+
+      - name: Commit diagnostic result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions@users.noreply.github.com"
+          git add reports/feishu_diag.json
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+          else
+            git commit -m "diag: feishu connection check"
+            git push
+          fi
