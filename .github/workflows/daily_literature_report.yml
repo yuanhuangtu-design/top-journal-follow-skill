@@ -52,6 +52,7 @@ jobs:
           python scripts/run_daily.py $DATE_ARG
 
       - name: Upload daily report (HTML + JSON)
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: daily-literature-report
@@ -61,6 +62,9 @@ jobs:
           retention-days: 30
 
       - name: Commit latest report back to repository
+        # 即使飞书写入失败（上一步 exit 1），也要把 PubMed 检索报告留档，便于事后补录；
+        # job 仍会因 pipeline 步骤失败而标红，不会掩盖问题。
+        if: always()
         run: |
           mkdir -p reports
           cp -f output/daily_report_latest.html reports/latest.html 2>/dev/null || true
