@@ -1,10 +1,10 @@
 {
   "meta": {
-    "report_date": "2026-10-17",
-    "target_edat": "2026-10-16",
+    "report_date": "2026-10-18",
+    "target_edat": "2026-10-17",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-10-17 08:24:16",
+    "generated_at": "2026-10-17 22:56:25",
     "feishu_diag": {
       "status": "failed",
       "env": {
@@ -26,22 +26,19 @@
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 5,
-      "total": 5,
+      "count": 2,
+      "total": 2,
       "pmids": [
-        "42886870",
-        "42874606",
-        "42874605",
-        "42874008",
-        "42869994"
+        "42888250",
+        "42886870"
       ],
       "status": "ok"
     },
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 13,
-      "total": 13,
+      "count": 9,
+      "total": 9,
       "pmids": [
         "42887466",
         "42885896",
@@ -51,35 +48,27 @@
         "42879242",
         "42878728",
         "42878718",
-        "42878432",
-        "42873626",
-        "42873623",
-        "42873566",
-        "42873555"
+        "42878432"
       ],
       "status": "ok"
     },
     {
       "group": "B2",
       "label": "神经科学刊 × Epilepsy",
-      "count": 1,
-      "total": 1,
-      "pmids": [
-        "42875184"
-      ],
+      "count": 0,
+      "total": 0,
+      "pmids": [],
       "status": "ok"
     },
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 5,
-      "total": 5,
+      "count": 3,
+      "total": 3,
       "pmids": [
         "42887838",
         "42887654",
-        "42880669",
-        "42873989",
-        "42873392"
+        "42880669"
       ],
       "status": "ok"
     },
@@ -89,17 +78,44 @@
       "count": 3,
       "total": 3,
       "pmids": [
+        "42888254",
         "42887034",
-        "42876682",
-        "42873957"
+        "42876682"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 27,
+  "dedup_total": 17,
   "papers": [
     {
       "index": 1,
+      "pmid": "42888250",
+      "title": "Conversational brain AI for adaptive epilepsy care.",
+      "title_zh": "用于适应性癫痫护理的对话式大脑人工智能。",
+      "journal": "Nature medicine",
+      "iso_journal": "Nat Med",
+      "authors": [
+        "Lhatoo S",
+        "Vashin V"
+      ],
+      "pubdate": "2026 Oct 16",
+      "doi": "10.1038/s41591-026-04719-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42888250/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 7,
+      "relevance_hits": [
+        "epilepsy",
+        "adaptive"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 2,
       "pmid": "42886870",
       "title": "More Than a Daughter: Margaret A. Lennox-Buchthal (1913-2001), Epileptologist.",
       "title_zh": "不仅仅是一个女儿： Margaret A. Lennox-Buchthal （ 1913-2001 ） ，癫痫学家。",
@@ -126,181 +142,7 @@
       "priority": "推荐"
     },
     {
-      "index": 2,
-      "pmid": "42874606",
-      "title": "Antibody-mediated encephalitides: distinct diseases with transdisciplinary implications.",
-      "title_zh": "抗体介导的脑炎：具有跨学科意义的不同疾病。",
-      "journal": "The Lancet. Neurology",
-      "iso_journal": "Lancet Neurol",
-      "authors": [
-        "Dalmau J",
-        "Guasp M",
-        "Muñoz-Lopetegi A",
-        "Spatola M",
-        "Martinez-Hernandez E",
-        "Planagumà J",
-        "Armangué T",
-        "Gaig C",
-        "Sabater L",
-        "Saiz A",
-        "Graus F"
-      ],
-      "pubdate": "2026 Nov",
-      "doi": "10.1016/S1474-4422(26)00290-5",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42874606/",
-      "abstract": "The discovery of antibody-mediated glial and neuronal disorders has transformed the diagnosis and treatment of neurological diseases previously considered idiopathic or not recognised as immune-mediated. Antibody-mediated disorders targeting glial aquaporin-4 and myelin oligodendrocyte glycoprotein are distinct nosological entities, defined by specific targets, mechanisms, syndromes, and therapeutic implications. By contrast, antibody-mediated disorders targeting neuronal antigens (ie, autoimmune encephalitides) are still frequently analysed collectively, with data from different disorders pooled as if they represent a single disease rather than distinct entities. Evidence from anti-NMDA receptor encephalitis, anti-LGI1 encephalitis, and anti-IgLON5 disease (used here as exemplars of autoimmune encephalitides) indicates that individual autoimmune encephalitides differ in demographics, triggers, mechanisms, clinical manifestations, post-acute trajectories, and treatment requirements. The broad, heterogeneous presentations of autoimmune encephalitides require coordinated multidisciplinary care within and beyond neurology, involving specialists in paediatrics, infectious diseases, epilepsy, movement disorders, sleep medicine, intensive care, cognitive rehabilitation, and other relevant disciplines. Such interdisciplinary collaboration facilitates the recognition of new diseases and elucidation of the causes of previously unclassified disorders. Improving patient care requires not only aetiological and mechanistic insight to enable development of targeted therapies but also strengthened cross-specialty expertise to optimise diagnosis and management.",
-      "abstract_zh": "抗体介导的神经胶质细胞和神经元疾病的发现改变了以前被认为是特发性或不被认为是免疫介导的神经系统疾病的诊断和治疗。靶向神经胶质水通道蛋白-4和髓鞘少突胶质细胞糖蛋白的抗体介导的疾病是不同的鼻科实体，由特定靶点、机制、综合征和治疗影响定义。相比之下，抗体介导的\n靶向神经元抗原的疾病（即自身免疫性脑炎）仍然经常被集体分析，来自不同疾病的数据被汇总，就好像它们代表单一疾病而不是不同的实体一样。来自抗NMDA受体脑炎、抗LGI1脑炎和抗IgLON5疾病（此处用作自身免疫性脑炎的示例）的证据表明，个体自身免疫性脑炎在人口统计学、\niggers、机制、临床表现、急性后轨迹和治疗要求。自身免疫性脑炎的广泛、异质性表现需要神经病学内外协调的多学科护理，涉及儿科、传染病、癫痫、运动障碍、睡眠医学、重症监护、认知康复等相关学科的专家。\niON有助于识别新疾病和阐明先前未分类疾病的原因。改善患者护理不仅需要病因和机制上的洞察力来开发靶向疗法，还需要加强跨专业的专业知识来优化诊断和管理。",
-      "hit_groups": [
-        "A"
-      ],
-      "group_count": 1,
-      "relevance_score": 3,
-      "relevance_hits": [
-        "epilepsy",
-        "ecog"
-      ],
-      "priority": "推荐"
-    },
-    {
       "index": 3,
-      "pmid": "42874605",
-      "title": "Reframing traumatic brain injury and spinal cord injury as chronic multisystem disorders: toward integrated, long-term care.",
-      "title_zh": "将创伤性脑损伤和脊髓损伤重新定义为慢性多系统疾病：面向综合性长期护理。",
-      "journal": "The Lancet. Neurology",
-      "iso_journal": "Lancet Neurol",
-      "authors": [
-        "Marini S",
-        "Schneider ALC",
-        "Alshaya A",
-        "Bragge P",
-        "Corrigan JD",
-        "Dams-O'Connor K",
-        "Giacino JT",
-        "Halabi C",
-        "Hendrick K",
-        "Hutchinson PJA",
-        "Khan T",
-        "Khattak AF",
-        "Kirshblum S",
-        "Lala T",
-        "Løvstad M",
-        "Manley GT",
-        "Mediratta S",
-        "Nagayama M",
-        "Newcombe VFJ",
-        "Pugh MJ",
-        "Rosseau G",
-        "Tenovuo O",
-        "Venturini S",
-        "Wilson F",
-        "Wilson L",
-        "Menon DK",
-        "Hammond FM",
-        "Zafonte R",
-        "Izzy S",
-        "Global Coalition for TBI as a Notifiable and Chronic Condition"
-      ],
-      "pubdate": "2026 Nov",
-      "doi": "10.1016/S1474-4422(26)00297-8",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42874605/",
-      "abstract": "Traumatic brain injury (TBI) and spinal cord injury (SCI) affect more than 220 million people worldwide and are associated with cardiometabolic, endocrine, neurological, and psychiatric sequelae for years to decades after an acute injury. However, most health systems still treat neurotrauma (TBI and SCI, collectively) as a time-limited event, leaving long-term surveillance of these patients fragmented or absent, which leads to preventable mortality and avoidable readmissions. TBI and SCI in adults should be reclassified as acute-onset multisystem chronic-risk conditions. Existing cardiovascular, endocrine, and psychiatric services do not capture neurotrauma-specific risks, including trauma-induced hypopituitarism, autonomic dysregulation, accelerated ageing, and cognitive-behavioural impairment, so neurotrauma care is best framed as a missing node in chronic neurological care. We propose a risk-stratified pathway of care navigation, multisystem screening, and telehealth; convergence with adjacent stroke, cardiometabolic, memory, psychiatric, pain, and epilepsy services; and the financing, workforce, and registry reforms needed to deliver measurable reductions in 5-year mortality, avoidable rehospitalisation, and long-term disability.",
-      "abstract_zh": "创伤性脑损伤（ TBI ）和脊髓损伤（ SCI ）影响全球超过2.2亿人，并且在急性损伤后数年到数十年内与心脏代谢、内分泌、神经系统和精神病学后遗症相关。然而，大多数卫生系统仍然将神经损伤（ TBI和SCI共同）视为有时间限制的事件，使得对这些患者的长期监测支离破碎或缺失，从而导致可预防的死亡\ntY和可避免的再入院。成人TBI和SCI应重新分类为急性发作多系统慢性风险疾病。现有的心血管、内分泌和精神科服务并不能捕捉到神经创伤特异性风险，包括创伤引起的垂体功能减退、自主神经失调、加速衰老和认知行为障碍，因此神经创伤护理最好被视为慢性神经系统护理中缺失的节点。\n护理导航、多系统筛查和远程医疗的风险分层路径；与相邻中风、心脏代谢、记忆、精神病、疼痛和癫痫服务的融合；以及实现5年死亡率、可避免的再住院和长期残疾的可测量降低所需的融资、劳动力和登记改革。",
-      "hit_groups": [
-        "A"
-      ],
-      "group_count": 1,
-      "relevance_score": 1,
-      "relevance_hits": [
-        "epilepsy"
-      ],
-      "priority": "浏览"
-    },
-    {
-      "index": 4,
-      "pmid": "42874008",
-      "title": "Association Between Epilepsy and Young-Onset Dementia: Nationwide Data From France and Sweden.",
-      "title_zh": "癫痫和年轻型痴呆之间的关联：来自法国和瑞典的全国数据。",
-      "journal": "Neurology",
-      "iso_journal": "Neurology",
-      "authors": [
-        "Calonge Q",
-        "Geraudie A",
-        "Wei D",
-        "Guinebretiere O",
-        "Ye W",
-        "Aguilhon L",
-        "Belloir A",
-        "Januel E",
-        "Fang F",
-        "Nedelec T",
-        "Navarro V"
-      ],
-      "pubdate": "2026 Nov 24",
-      "doi": "10.1212/WNL.0000000000218700",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42874008/",
-      "abstract": "BACKGROUND AND OBJECTIVES: Epilepsy is linked to late-onset dementia, but evidence for young-onset dementia (YOD; <65 years) is limited. We assessed the epilepsy-YOD association in France and Sweden and YOD risk after midlife epilepsy.\nMETHODS: We conducted 3 nationwide analyses. A French nested case-control analysis included patients with incident YOD aged 40-64 years, diagnosed between January 1, 2016, and December 31, 2018. Index date was the first YOD-related health care event; controls were risk-set matched on age, sex, and region. A Swedish nested case-control replication included patients with YOD diagnosed between January 1, 1987, and December 31, 2016, with matched controls. In both studies, epilepsy-related diagnoses and antiseizure medication (ASM) dispensations were assessed up to 10 years before index date. Odds ratios (ORs) were estimated with conditional logistic regression. A French retrospective cohort included adults aged 30-55 years with incident epilepsy in 2008, matched to individuals with prevalent epilepsy before 2008 or no epilepsy. The cohort index was the first ASM reimbursement in the incident epilepsy group or the matched date for comparators. Follow-up ended at YOD, death, or 10 years. We estimated 10-year cumulative incidence and adjusted (comorbidities, deprivation) hazard ratios (HRs), treating death as a competing event. Sensitivity analyses included lagged entry up to 5 years.\nRESULTS: Case-control studies included 11,360 cases and 113,600 controls in France and 16,433 cases and 164,330 controls in Sweden. In France, 12.5% of YOD cases vs 1.2% of controls had previous epilepsy-related codes (adjusted OR 3.76, 95% CI 3.42-4.14), and 27.3% vs 10.3% had ASM dispensations (adjusted OR 1.44, 95% CI 1.36-1.52). The French cohort included 12,901 individuals with incident epilepsy, 64,083 with prevalent epilepsy, and 129,010 without epilepsy (mean age 44.0 years; 55.5% female participants). Ten-year cumulative YOD incidence was 2.20% (95% CI 1.94-2.48) with incident epilepsy (adjusted HR compared with individuals without epilepsy 6.02, 95% CI 4.98-7.26), 1.74% (1.64-1.85) with prevalent epilepsy (adjusted HR 5.38, 95% CI 4.64-6.25), and 0.21% (0.19-0.24) without epilepsy. Associations attenuated with longer lags but persisted beyond 5 years.\nDISCUSSION: Across 2 countries and complementary designs, epilepsy was strongly associated with YOD. Epilepsy conferred higher YOD risk in midlife, especially with multimorbidity, supporting epilepsy inclusion in YOD risk stratification and prevention.",
-      "abstract_zh": "背景和目标：癫痫与迟发性痴呆有关，但年轻型痴呆（ YOD ； < 65岁）的证据有限。 我们评估了法国和瑞典的癫痫-YOD相关性以及中年癫痫后YOD风险。\n方法：我们进行了3项全国性分析。 法国嵌套病例对照分析包括年龄在40-64岁之间的YOD事件患者，诊断时间为2016年1月1日至2018年12月31日。 索引日期是\n首次与YOD相关的医疗保健事件；对照组在年龄、性别和地区上进行风险集匹配。瑞典嵌套病例对照复制包括1987年1月1日至2016年12月31日诊断为YOD的患者，并使用匹配的对照。在这两项研究中，癫痫相关的诊断和抗癫痫药物（ ASM ）分配在指数日期前10年进行评估。比值比（ ORs ）采用条件logistic回归法估算\nn.法国回顾性队列包括2008年发生癫痫的30-55岁成年人，与2008年之前患有癫痫或无癫痫的人相匹配。队列指数是癫痫发作组中首次ASM报销或对照组的匹配日期。随访结束于YOD、死亡或10年。我们估计了10年的累计发病率和调整（合并症，剥夺）风险比（ HRs ） ，治疗\n作为一项竞赛活动。 敏感性分析包括长达5年的滞后条目。\n结果：病例对照研究包括法国的11,360例病例和113,600例对照，瑞典的16,433例病例和164,330例对照。 在法国， 12.5%的YOD病例与1.2%的对照组有既往癫痫相关的编码（校正OR 3.76 ， 95% CI 3.42-4.14 ） ， 27.3%与10.3%有ASM分配（校正OR 1.44 ， 95% CI 1.36-1.52 ）。 法国队列包括12,9\n01例发生性癫痫， 64,083例患有流行性癫痫， 129,010例无癫痫（平均年龄44.0岁； 55.5%女性受试者）。10年累积YOD发病率为2.20% （ 95% CI 1.94-2.48 ） ，伴发癫痫（与无癫痫的个体相比，校正后的HR为6.02 ， 95% CI为4.98-7.26 ） ， 1.74% （ 1.64-1.85 ）伴发癫痫（校正后的HR为5.38 ， 95% CI为4.64-6.25 ） ， 0.21% （ 0.19-0.24 ）无癫痫。\n有较长的滞后衰减，但持续时间超过5年。\n讨论：在2个国家和互补设计中，癫痫与YOD密切相关。 癫痫在中年时期具有较高的YOD风险，尤其是多重疾病，支持将癫痫纳入YOD风险分层和预防。",
-      "hit_groups": [
-        "A"
-      ],
-      "group_count": 1,
-      "relevance_score": 27,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "antiseizure"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 5,
-      "pmid": "42869994",
-      "title": "Human-artificial intelligence collaboration for comanaging epilepsy in real time.",
-      "title_zh": "实时管理癫痫的人工智能协作。",
-      "journal": "Nature medicine",
-      "iso_journal": "Nat Med",
-      "authors": [
-        "Goldblum Z",
-        "Shi H",
-        "Xu Z",
-        "Ojemann WKS",
-        "Aguila CA",
-        "Long K",
-        "Xie K",
-        "Nix KC",
-        "Walsh KG",
-        "Chang E",
-        "Lavelle SB",
-        "Bach B",
-        "Davis KA",
-        "Sinha N",
-        "Hammer LH",
-        "Conrad EC",
-        "Litt B"
-      ],
-      "pubdate": "2026 Oct 13",
-      "doi": "10.1038/s41591-026-04680-4",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42869994/",
-      "abstract": "One-third of the world's 70 million people with epilepsy have seizures uncontrolled by medication, and implantable devices are a promising treatment. These devices can detect impending seizures, missed medication and impaired cognition, but, like most medical devices, they cannot share this information with patients in real time. This is a missed opportunity for devices to learn from clinical events and teach patients how their behaviors affect their health. Here we present a device platform that converses with patients to help them manage their epilepsy. The inpatient prototype links scalp and intracranial electroencephalography (EEG) to a secure, large language model-based artificial intelligence (AI) that communicates bidirectionally through a smartphone app. The AI processes biomarkers of sleep, medication, cognition and seizure probability, notifies patients of clinical events and trends, records symptoms and responses, and uses their feedback to retrain its seizure detector, reducing false alarms. We validated this platform in 13 patients who are undergoing video-EEG monitoring for epilepsy (scalp, n = 11; intracranial, n = 2). In a pseudoprospective simulation, seizure detectors improved precision from patient feedback alone, without expert intervention. We propose this system as a scalable, safeguarded platform for medical devices that can rapidly adapt to patient and provider needs across epilepsy and other medical conditions.",
-      "abstract_zh": "世界上7000万癫痫患者中有三分之一的癫痫发作不受药物控制，植入式设备是一种有前途的治疗方法。这些设备可以检测即将发生的癫痫发作、漏服药物和认知障碍，但与大多数医疗设备一样，它们无法实时与患者共享这些信息。这是一个错失的机会，设备可以从临床事件中学习，并教会患者他们的行为如何影响\n继承人健康。在这里，我们展示了一个与患者交谈的设备平台，以帮助他们管理癫痫。住院原型将头皮和颅内脑电图（ EEG ）连接到安全的基于大型语言模型的人工智能（ AI ） ，该人工智能通过智能手机应用程序进行双向通信。人工智能处理睡眠、药物、认知和癫痫发作概率的生物标志物，通知患者临床事件和\n渲染，记录症状和反应，并利用他们的反馈重新训练其癫痫发作检测器，减少误报。我们在13名正在接受癫痫视频EEG监测的患者（头皮， n = 11 ；颅内， n = 2 ）中验证了该平台。在伪前瞻性模拟中，癫痫发作检测器仅通过患者反馈提高了精确度，而无需专家干预。我们建议将这个系统作为一个可扩展、安全的医疗平台，\n能够快速适应癫痫和其他医疗条件的患者和提供者需求的所有设备。",
-      "hit_groups": [
-        "A"
-      ],
-      "group_count": 1,
-      "relevance_score": 23,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures",
-        "electroencephalogr",
-        "eeg",
-        "intracranial",
-        "biomarker"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 6,
       "pmid": "42887466",
       "title": "Efficacy of Lactobacillus reuteri as an adjunctive therapy for seizure control and quality of life in pediatric drug-resistant epilepsy: A prospective interventional study.",
       "title_zh": "罗伊乳杆菌作为儿童耐药性癫痫发作控制和生活质量的辅助治疗的有效性：一项前瞻性介入研究。",
@@ -331,7 +173,7 @@
       "priority": "必读"
     },
     {
-      "index": 7,
+      "index": 4,
       "pmid": "42885896",
       "title": "Reversal of refractory epilepsy in an adult with GAMT deficiency: A case report and comparative literature review.",
       "title_zh": "GAMT缺乏的成年人难治性癫痫的逆转：病例报告和比较文献综述。",
@@ -366,7 +208,7 @@
       "priority": "必读"
     },
     {
-      "index": 8,
+      "index": 5,
       "pmid": "42885880",
       "title": "Frequent involvement of cingulate and insulo-opercular regions in sleep-related hypermotor epilepsy: A multimodal presurgical study.",
       "title_zh": "扣带区和胰岛-丘脑区频繁受累于睡眠相关的高运动性癫痫：一项多模式术前研究。",
@@ -389,7 +231,7 @@
       "doi": "10.1002/epi.70548",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42885880/",
       "abstract": "OBJECTIVE: Sleep-related hypermotor epilepsy (SHE) is classically considered a frontal lobe epilepsy; however, accumulating evidence suggests that hypermotor seizures may arise from multiple frontal and extrafrontal regions. We characterized the anatomical distribution of best available localizations in patients with SHE using multimodal presurgical data.\nMETHODS: We retrospectively analyzed 17 patients with clinically diagnosed SHE who underwent comprehensive evaluation, including long-term video-electroencephalographic (EEG) monitoring, 3-T high-resolution magnetic resonance imaging (MRI), 18F-fluorodeoxyglucose positron emission tomography, and, where indicated, magnetoencephalography, stereo-EEG (SEEG), and surgical assessment. Best available anatomical localizations were assigned using a hierarchical multimodal framework incorporating surgical, SEEG, and concordant noninvasive findings. Their anatomical distribution was subsequently assessed at the cohort level.\nRESULTS: Sixteen patients (94.1%) had an assigned best available localization. Cingulate or insulo-opercular regions were involved in 11 of 16 patients (68.8%), whereas the remaining cases were localized to other frontal regions. In a sensitivity analysis restricted to 10 patients with SEEG-defined and/or surgically supported localizations, six involved cingulate or insulo-opercular regions. All patients were MRI-negative. In contrast, MRI-positron emission tomography fusion provided regionally informative anatomical findings in 16 of 17 cases and contributed to multimodal localization. Interictal epileptiform discharges were identified in 15 patients, whereas regionally informative ictal scalp EEG patterns were observed in eight; ictal interpretation was frequently limited by rapid propagation, movement-related artifacts, and delayed EEG onset. Focal cortical dysplasia-related histopathological findings were identified in five of seven resected specimens, whereas interpretation in two was limited by prior thermocoagulation.\nSIGNIFICANCE: These descriptive findings indicate that cingulate and insulo-opercular regions were frequently represented among the identified localizations in this presurgical cohort. Multimodal evaluation integrating electroclinical, imaging, and invasive findings may support presurgical localization in MRI-negative SHE.",
-      "abstract_zh": "",
+      "abstract_zh": "目的：睡眠相关性高运动性癫痫（ SHE ）通常被认为是额叶癫痫；然而，积累的证据表明，高运动性癫痫发作可能来自多个额叶和额外区域。 我们使用多模式手术前数据表征了SHE患者中最佳可用定位的解剖学分布。\n方法：我们回顾性分析了17名临床诊断为SHE的患者，他们接受了\n综合评估，包括长期视频脑电图（ EEG ）监测、3-T高分辨率磁共振成像（ MRI ）、18F-氟脱氧葡萄糖正电子发射断层扫描，以及（如有指示）脑磁图、立体脑电图（见G ）和外科评估。使用分层多模式框架分配最佳可用解剖定位，该框架包括手术、参见G和协调非侵入性发现\nngs.随后在队列水平上评估其解剖学分布。\n结果： 16名患者（ 94.1% ）被指定为最佳可用定位。 16名患者中有11名（ 68.8 ％ ）受累于扣带区或胰岛-睾丸区，而其余病例则局限于其他额叶区。 在一项仅限于10名具有SEEG定义和/或手术支持的局限性的患者的敏感性分析中， 6名患者受累于扣带或\n胰岛丘疹区。所有患者均为MRI阴性。相比之下， MRI-正电子发射断层扫描融合提供了17例病例中16例的区域信息解剖学发现，并有助于多峰定位。在15名患者中发现了发作性癫痫样放电，而在8名患者中观察到区域信息性发作性头皮脑电图模式;发作性解释经常受到快速传播，运动\n伪影和延迟的脑电图发作。 在7个切除标本中的5个标本中发现了局灶性皮质发育不良相关的组织病理学发现，而2个标本的解释受到既往热凝治疗的限制。\n意义：这些描述性发现表明，扣带区和胰岛-丘脑区经常出现在这个术前队列中确定的局部区域中。 多模态评估集成电气\n临床、影像学和侵入性发现可能支持MRI阴性SHE术前定位。",
       "hit_groups": [
         "B1"
       ],
@@ -408,10 +250,10 @@
       "priority": "必读"
     },
     {
-      "index": 9,
+      "index": 6,
       "pmid": "42885669",
       "title": "Empagliflozin in Lafora disease: A first-in-human 6-month pilot study with electroclinical and FDG-PET findings.",
-      "title_zh": "",
+      "title_zh": "恩格列净在拉福拉病中的应用：一项为期6个月的首次人体试点研究，包括电临床和FDG-PET结果。",
       "journal": "Epileptic disorders : international epilepsy journal with videotape",
       "iso_journal": "Epileptic Disord",
       "authors": [
@@ -433,7 +275,7 @@
       "doi": "10.1002/epd2.70442",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42885669/",
       "abstract": "OBJECTIVE: Lafora disease (LD) is a rare, fatal neurodegenerative epilepsy with no approved treatments. Empagliflozin, a sodium-glucose cotransporter-2 (SGLT2) inhibitor, has shown neuroprotective actions in preclinical models through modulation of glycogen metabolism, induction of a pseudo-ketogenic state, improved mitochondrial efficiency, and reduction of excitatory neurotransmission. Based on this rationale, we conducted a first-in-human pilot study of empagliflozin in two genetically confirmed LD patients.\nMETHODS: Two patients with genetically confirmed LD received empagliflozin 10 mg/day for 6 months. Serial assessments included safety and tolerability, seizure frequency, myoclonus severity, electroencephalographic findings, neuropsychological and motor evaluations, brain MRI, and quantitative FDG-PET with regional Z-score analysis.\nRESULTS: Empagliflozin was safe and well tolerated, with no serious adverse events. Seizure frequency, myoclonus, and overall clinical status remained largely stable over 6 months, although some neuropsychological and motor measures showed variable changes between patients. EEG background activity and spike index were largely unchanged. Brain MRI showed stable mild cortical atrophy in both patients. In contrast, FDG-PET revealed progressive and spatially expanding cerebral hypometabolism in both patients, with worsening regional Z-scores, particularly in the parietal and precuneus regions.\nSIGNIFICANCE: In this first-in-human, 6-month pilot study, empagliflozin showed acceptable short-term safety and feasibility in LD, but no definitive conclusions on efficacy can be drawn. The dissociation between relative electroclinical stability and progressive metabolic impairment suggests that quantitative FDG-PET may represent a sensitive biomarker for monitoring disease trajectory in this ultra-rare epilepsy.",
-      "abstract_zh": "",
+      "abstract_zh": "目的：拉福拉病（ LD ）是一种罕见的致命性神经退行性癫痫，未经批准的治疗方法。恩格列净是一种钠葡萄糖协同转运蛋白-2 （ SGLT2 ）抑制剂，通过调节糖原代谢、诱导假生酮状态、提高线粒体效率和减少兴奋性神经传递，在临床前模型中显示出神经保护作用。基于这一原理，我们进行了首次人体试验\n在两名基因证实的LD患者中进行恩格列净的研究。\n方法：两名基因证实LD的患者接受恩格列净10 mg/天，持续6个月。 系列评估包括安全性和耐受性、癫痫发作频率、肌阵挛严重程度、脑电图检查结果、神经心理学和运动评估、脑MRI以及使用区域Z评分分析的定量FDG-PET。\n结果：恩格列净安全且耐受性良好\ned ，无严重不良事件。癫痫发作频率、肌阵挛和整体临床状态在6个月内基本保持稳定，尽管一些神经心理学和运动测量显示患者之间的变化是可变的。脑电图背景活性和峰值指数基本不变。脑MRI显示两名患者均有稳定的轻度皮质萎缩。相比之下， FDG-PET显示博士后期进行性和空间扩张性脑代谢低下。\n患者，区域Z评分恶化，特别是在顶叶和楔前肌区域。\n意义：在这项为期6个月的首次人体试验性研究中，恩格列净在LD中显示出可接受的短期安全性和可行性，但无法得出关于疗效的明确结论。 相对电临床稳定性和进行性代谢障碍之间的分离表明，定量FDG-PET可能代表敏感的生物瘤\nrker ，用于监测这种超罕见癫痫的疾病轨迹。",
       "hit_groups": [
         "B1"
       ],
@@ -449,10 +291,10 @@
       "priority": "推荐"
     },
     {
-      "index": 10,
+      "index": 7,
       "pmid": "42879939",
       "title": "Does delayed removal of stereo-EEG electrodes following radiofrequency thermocoagulation increase haemorrhage?",
-      "title_zh": "",
+      "title_zh": "射频热凝术后延迟去除立体EEG电极是否会增加出血？",
       "journal": "Epilepsy research",
       "iso_journal": "Epilepsy Res",
       "authors": [
@@ -466,7 +308,7 @@
       "doi": "10.1016/j.eplepsyres.2026.107932",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42879939/",
       "abstract": "BACKGROUND: Stereo-electroencephalography (SEEG) guided radiofrequency thermocoagulation (RF-TC) is used in the assessment and treatment of medically refractory epilepsy, typically with electrode removal immediately following ablation. Our SEEG-guided RF-TC protocol includes the option of three further days of recording following thermocoagulation, prior to electrode removal. It is not known whether delayed removal of electrodes following RF-TC may increase the risk of haemorrhage.\nOBJECTIVE: To compare the rate and volume of intracranial haemorrhage with immediate versus delayed electrode removal following RF-TC.\nMETHODS: 217 SEEG electrodes from 16 consecutive patients were retrospectively reviewed for haemorrhage. 3D T1-weighted (T1w) and Susceptibility Weighted (SWI) imaging were reviewed for haemorrhage along the electrode tract and at the site of RF-TC. The primary outcome measure was the per-electrode volume of T1w detectable haemorrhage at the site of RF-TC in electrodes removed immediately after RF-TC, compared to electrodes removed 3-days after RF-TC. Secondary outcomes compared the incidence and volume of T1w haemorrhage along the electrode tract in thermocoagulated versus non-thermocoagulated electrodes, presumed due to reflect haemorrhage from electrode insertion/removal. We also describe the temporal evolution of the MRI appearance of haemorrhage following SEEG-guided RF-TC.\nRESULTS: No clinically significant haemorrhages occurred. At the site of RF-TC a small amount of blood product is universally present but there was no significant difference in per-electrode haemorrhage volume following delayed (93.8 ± 39.8 mm 3 ; ~diameter 5.6 mm) and immediate (80.0 ± 37.5 mm 3 ; ~ diameter 5.3 mm) removal of electrodes (Mann-Whitney U test, p = 0.10). At the cortical surface there was no significant difference in the rate of T1w haemorrhage between thermocoagulated and non-thermocoagulated electrodes (63.1% vs 52.5%, p = 0.12, chi-squared).\nCONCLUSION: Delayed removal of electrodes post-RF-TC allows assessment of response to RFA and the opportunity for further thermocoagulation if necessary. This exploratory study found no significant increase in haemorrhage volume with delayed electrode removal following RF-TC but a larger study would be required to definitively estimate haemorrhage risk.",
-      "abstract_zh": "",
+      "abstract_zh": "背景：立体脑电图（见G ）引导射频热凝术（ RF-TC ）用于评估和治疗医学难治性癫痫，通常在消融后立即切除电极。我们的SEEG引导RF-TC方案包括在移除电极之前，在热凝术后再进行三天的记录。目前尚不清楚RF-TC m后电极的延迟移除是否\nay增加出血的风险。\n目的：比较RF-TC术后颅内出血的发生率和体积与立即切除和延迟切除电极的情况。\n方法：回顾性分析16例连续入选患者217条SEEG电极的出血情况。 回顾了三维T1加权（ T1w ）和敏感性加权（ SWI ）成像在电极束和RF-TC部位的出血情况。 主要疗效指标\n是RF-TC后立即移除的电极中RF-TC部位T1w可检测出血的每电极体积，而RF-TC后3天移除的电极体积。次要结局比较了热凝电极和非热凝电极中沿电极束的T1w出血的发生率和体积，推测是由于电极插入/移除引起的反射性出血。我们还描述了t的时间进化\nsEEG引导的RF-TC后出血的MRI表现。\n结果：未发生有临床意义的出血。 在RF-TC部位，少量血液制品普遍存在，但在延迟（ 93.8 ± 39.8 mm 3 ； ~直径5.6 mm ）和立即（ 80.0 ± 37.5 mm 3 ； ~直径5.3 mm ）去除电极后，每电极出血量没有显著差异（ Mann-Whitney U检验， p = 0.10 ）。\nl表面热凝和非热凝电极之间T1w出血率无显著差异（ 63.1% vs 52.5% ， p = 0.12 ，卡方）。\n结论： RF-TC后电极的延迟移除允许评估对RFA的反应以及必要时进一步热凝的机会。 这项探索性研究发现， R后电极移除延迟，出血量没有显著增加。\nF-TC ，但需要更大规模的研究来明确估计出血风险。",
       "hit_groups": [
         "B1"
       ],
@@ -483,10 +325,10 @@
       "priority": "必读"
     },
     {
-      "index": 11,
+      "index": 8,
       "pmid": "42879242",
       "title": "Beyond seizure control: Non-seizure-related outcomes in focal-onset epilepsy treated with adjunctive cenobamate. Third interim results from the BLESS study.",
-      "title_zh": "",
+      "title_zh": "癫痫发作控制之外：局灶性癫痫的非癫痫发作相关结局BLESS研究的第三个中期结果。",
       "journal": "Epilepsia",
       "iso_journal": "Epilepsia",
       "authors": [
@@ -572,7 +414,7 @@
       "priority": "必读"
     },
     {
-      "index": 12,
+      "index": 9,
       "pmid": "42878728",
       "title": "Resective epilepsy surgery in an adult with ARID1B-related disorder and focal cortical dysplasia type IIb.",
       "title_zh": "",
@@ -603,7 +445,7 @@
       "priority": "推荐"
     },
     {
-      "index": 13,
+      "index": 10,
       "pmid": "42878718",
       "title": "Impact of sedation on the reliability of magnetoencephalographic language mapping in pediatric epilepsy.",
       "title_zh": "",
@@ -635,7 +477,7 @@
       "priority": "必读"
     },
     {
-      "index": 14,
+      "index": 11,
       "pmid": "42878432",
       "title": "Change in clobazam pharmacokinetics after introduction of cenobamate.",
       "title_zh": "",
@@ -666,245 +508,7 @@
       "priority": "必读"
     },
     {
-      "index": 15,
-      "pmid": "42873626",
-      "title": "Limited sex-specific structural alterations across common epilepsies: A worldwide ENIGMA study.",
-      "title_zh": "",
-      "journal": "Epilepsia",
-      "iso_journal": "Epilepsia",
-      "authors": [
-        "Wen H",
-        "Wan B",
-        "Gholipour T",
-        "Xie K",
-        "Chen J",
-        "Serio B",
-        "Hettwer MD",
-        "Alvim MKM",
-        "Arienzo D",
-        "João RB",
-        "Bauer T",
-        "Bernasconi A",
-        "Bernasconi N",
-        "Bonanni P",
-        "Caligiuri ME",
-        "Cendes F",
-        "Christin R",
-        "Concha L",
-        "Dascal A",
-        "Boyd ED",
-        "Devinsky O",
-        "Focke NKN",
-        "Fortunato F",
-        "Galovic M",
-        "Gambardella A",
-        "Guerrini R",
-        "Hatton SN",
-        "Iliza M",
-        "Inati S",
-        "Ives-Deliperi V",
-        "Juster RP",
-        "Kleen JK",
-        "Koubeissi MZ",
-        "Labate A",
-        "Larivière S",
-        "Law M",
-        "Lenge M",
-        "Meletti S",
-        "Moloney PB",
-        "Naish M",
-        "Ngo A",
-        "O'Brien TJ",
-        "Pana R",
-        "Panzeri S",
-        "Pardoe H",
-        "Rauf EHU",
-        "Riva A",
-        "Rodríguez-Cruces R",
-        "Royer J",
-        "Rüber T",
-        "Sahlas E",
-        "Scárdua-Silva L",
-        "Schubert KM",
-        "Sepeta LN",
-        "Severino M",
-        "Sinclair B",
-        "Soltanian-Zadeh H",
-        "Stoub T",
-        "Striano P",
-        "Thomopoulos SI",
-        "Valientes NV",
-        "Vaudano AE",
-        "Vivash L",
-        "Yasuda CL",
-        "Thompson PM",
-        "Sisodiya SM",
-        "McDonald CR",
-        "Bernhardt BC",
-        "Valk SL"
-      ],
-      "pubdate": "2026 Oct 14",
-      "doi": "10.1002/epi.70515",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42873626/",
-      "abstract": "OBJECTIVE: Epilepsy is characterized by widespread cortical and subcortical structural alterations beyond the epileptic zone. Importantly, the clinical manifestation of epilepsy, including seizure types, psychiatric comorbidities, and treatment responses, has been shown to differ between sexes. However, sex differences in structural alterations in epilepsy are seldomly reported in neuroimaging studies, partly due to limited sample sizes and single-center designs. We therefore tested whether epilepsy-related structural alterations differ between males and females, and whether the associations between structural measures and clinical characteristics vary by sex.\nMETHODS: We analyzed clinician-assigned biological sex differences in common epilepsies and their related clinical variables using structural neuroimaging biomarkers in an international multicenter cohort of 1253 epilepsy patients and 1077 healthy controls. We studied cortical thickness and subcortical volume in temporal lobe epilepsy (TLE) and genetic generalized epilepsy (GGE).\nRESULTS: Both male and female patients with TLE showed widespread cortical and subcortical alterations in sex-stratified analyses, whereas GGE showed more extensive alterations in female patients and only subtle alterations in male patients. However, no significant sex-by-diagnosis interactions were identified in either the TLE (t = -2.153 to 1.705, all p FDR  >.05) or GGE (t = -1.797 to 2.774, all p FDR  >.05) cohort. Likewise, no significant interactions were found between sex and age at onset (t TLE  = -1.835 to 1.092, t GGE  = -2.394 to 1.392, all p FDR  >.05) or disease duration (t TLE  = -2.643 to 2.048, t GGE  = -1.234 to 2.017, all p FDR  >.05) in either patient group.\nSIGNIFICANCE: Overall, although sex differences in behavioral and clinical outcomes of epilepsy have been consistently reported in previous studies, our results indicate that sex-related clinical differences in epilepsy are not strongly captured by macroscale structural magnetic resonance imaging measures, and may instead arise from hormonal, neurochemical, or functional-network mechanisms.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 14,
-      "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "seizure",
-        "temporal lobe",
-        "generalized",
-        "biomarker"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 16,
-      "pmid": "42873623",
-      "title": "Affective symptoms in focal epilepsy: A scoping review of localization and lateralizing findings.",
-      "title_zh": "",
-      "journal": "Epileptic disorders : international epilepsy journal with videotape",
-      "iso_journal": "Epileptic Disord",
-      "authors": [
-        "Sanchez-Boluarte SS",
-        "Lagunas A",
-        "Acton E",
-        "Guevara-Lazo S",
-        "Carrazana E",
-        "Freund B",
-        "Nascimento FA",
-        "Beniczky S",
-        "Tatum WO"
-      ],
-      "pubdate": "2026 Oct 14",
-      "doi": "10.1002/epd2.70438",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42873623/",
-      "abstract": "Emotional experiences during focal seizures are often misinterpreted as psychiatric disorders. We aimed to evaluate symptoms involving affective symptoms at seizure onset. We aimed to identify the most prevalent affective symptoms at seizure onset and characterize their localizing and lateralizing value. We performed a scoping review based on Preferred Reporting Items for Systematic reviews and Meta-Analyses-extension for Scoping Reviews guidelines. A systematic search identified records from 4 databases: PubMed, Embase, CINAHL (via EBSCOhost), and Web of Science. Two reviewers independently screened titles/abstracts and full texts; discrepancies were resolved by consensus. This review focused on patients with focal seizures, as affective symptoms may occur in generalized epilepsies. The affective symptoms: fear, anxiety, panic, sadness, mystic, ecstatic, sexual, and mirth were identified, and semiology was evaluated in accordance with ILAE guidelines. Symptom onset, frequency, brain localization, and video-EEG monitoring technique were evaluated to assess localization and lateralization of regional networks. Scalp EEG, invasive EEG recordings, and electrical stimulation were analyzed. A total of 1276 documents were identified, with 98 studies included for review. Fear was the most frequently reported ictal emotion, identified in 274 patients (66%), predominantly in temporal lobe epilepsy. Sadness and sexual, ecstatic symptoms were also consistently associated with temporal networks. Mirth was more frequently reported with frontal onset seizures. Evidence, primarily from Class IV studies, reported right hemispheric predominance for ecstasy, mystic, and sexual symptoms at seizure onset. Ictal affective symptoms at seizure onset yield localizing information. The limbic system, especially the temporal lobe, followed by the frontal lobe, was the most common site of origin. Fear was the most common spontaneous and electrically elicited symptom, followed by anxiety. While bi-hemispheric lateralization occurred, right lateralization predominated. Recognizing paroxysmal affective symptoms as ictal phenomena may reduce misdiagnosis and aid presurgical evaluation in drug-resistant focal epilepsy.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 34,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures",
-        "drug-resistant",
-        "ictal",
-        "eeg",
-        "temporal lobe",
-        "focal"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 17,
-      "pmid": "42873566",
-      "title": "The basal ganglia and the epilepsies.",
-      "title_zh": "",
-      "journal": "Epilepsia open",
-      "iso_journal": "Epilepsia Open",
-      "authors": [
-        "Lazarini-Lopes W",
-        "Perry L",
-        "Forcelli PA"
-      ],
-      "pubdate": "2026 Oct 14",
-      "doi": "10.1002/epi4.70361",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42873566/",
-      "abstract": "The basal ganglia are an evolutionarily conserved neural circuit best known for the selection and sequencing of voluntary movement. Increasing evidence, however, indicates that these structures also play an important role in regulating pathological brain states, including seizures. Early pharmacological and lesion studies demonstrated that manipulation of basal ganglia output nuclei, particularly the substantia nigra pars reticulata, profoundly alters seizure susceptibility across multiple experimental models. Subsequent work expanded this view, revealing that several basal ganglia structures, including the striatum, subthalamic nucleus, globus pallidus, and superior colliculus, participate in a distributed network capable of modulating seizure initiation, propagation, and generalization. Modern systems neuroscience approaches have begun to define the specific cell types and projection-defined pathways through which these effects are mediated. Together, these findings support the concept that the basal ganglia function as a \"seizure-gating\" network that interacts with thalamocortical and brainstem arousal systems to regulate cortical synchronization. Understanding how these circuits influence seizure dynamics may enable new therapeutic strategies that strengthen endogenous seizure-suppressing networks rather than targeting the seizure focus alone. PLAIN LANGUAGE SUMMARY: The basal ganglia are a group of deep brain structures best known for helping to start and stop movements. Over the past 40 years, research has shown that they also act as a brake on seizures. Studies across species demonstrate that \"turning off\" one of the main output structures of the basal ganglia, the substantia nigra pars reticulata, can stop many types of seizures. This review presents the \"wiring diagram\" of this brain circuit, including the effects of \"turning on\" and \"turning off\" individual brain regions and their connections on seizure initiation, propagation, and termination.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 15,
-      "relevance_hits": [
-        "seizure",
-        "seizures",
-        "thalamic",
-        "subthalamic"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 18,
-      "pmid": "42873555",
-      "title": "Genetic developmental and epileptic encephalopathies in adulthood: Gaps in evidence and care.",
-      "title_zh": "",
-      "journal": "Epilepsia open",
-      "iso_journal": "Epilepsia Open",
-      "authors": [
-        "Dudley AM",
-        "Widdess-Walsh P",
-        "Linehan C",
-        "Andrade DM",
-        "Delanty N",
-        "Moloney PB"
-      ],
-      "pubdate": "2026 Oct 14",
-      "doi": "10.1002/epi4.70359",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42873555/",
-      "abstract": "Developmental and epileptic encephalopathies (DEEs) are a heterogeneous group of the most severe epilepsies, characterized by seizure onset and neurodevelopmental delay in infancy or childhood, often with additional neurological and systemic comorbidities. Up to 50% of cases have an identifiable genetic cause, with structural etiologies representing a small minority. Although associated with early mortality, many individuals now live into adulthood. Over the past 15 years, advances in genetic diagnosis and understanding of disease mechanisms have created realistic prospects of precision therapies, including gene and RNA therapies. The adult phase of DEEs remains poorly characterized, with limited observational evidence. Adults with DEEs are underrepresented in the literature and often excluded from clinical trials, despite ongoing drug-resistant epilepsy, evolving neurodevelopmental disability, and an increasing burden of comorbidities with age. In this narrative review, we discuss important aspects of care for adults with genetic DEEs, including genetic testing, comorbidities and treatment. We also review available natural history studies, recent clinical trials, and consider how emerging disease-modifying therapies may reshape adult phenotypes and redefine priorities for lifelong care. PLAIN LANGUAGE SUMMARY: Developmental and epileptic encephalopathies (DEEs) are a group of rare diseases that are often caused by genetic changes. They usually begin in childhood with severe epilepsy but can also affect learning, development, and overall health throughout life. This review examines the healthcare needs of adults with DEEs, highlights areas where more research is needed, and explores how new treatments may improve health and quality of life across the lifespan.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 12,
-      "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "seizure",
-        "drug-resistant"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 19,
-      "pmid": "42875184",
-      "title": "Machine Learning Framework for Integration of Video and EEG Reveals Distinct Seizure Phenotypes in Mouse Models of Epilepsy.",
-      "title_zh": "",
-      "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
-      "iso_journal": "J Neurosci",
-      "authors": [
-        "Liu CJ",
-        "Martin C",
-        "Lee AC",
-        "Sands TT",
-        "Frankel WN",
-        "Makinson CD"
-      ],
-      "pubdate": "2026 Oct 14",
-      "doi": "10.1523/JNEUROSCI.0280-26.2026",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42875184/",
-      "abstract": "Video-electrocorticogram (VEEG) recordings are the gold-standard diagnostic tool for detecting and characterizing seizures in rodent models of seizure and epilepsy. Manual/visual scoring remains the prevailing strategy despite significant limitations. Alternatively, automated and semi-automated analyses have been applied to either EEG or video features alone but integrating these disparate data forms presents a challenge that has not been sufficiently addressed. Here, we introduce an integrated machine learning pipeline that jointly leverages EEG and behavioral video data to enable scalable and objective event classification. Integrated video-EEG analysis was initially validated using a well-established pharmacologically induced seizure paradigm in male mice, where overt generalized motor seizures provide a clear benchmark. We then tested the pipeline on a genetic mouse model of developmental and epileptic encephalopathy (DEE) that displays a complex spike-wave discharge (SWD) seizure phenotype that poses significant challenges for traditional scoring methods. Machine learning-powered integrated analysis of video-EEG recordings outperformed unimodal EEG- or video-based approaches and performed favorably to experienced rodent EEG electrophysiologists while also uncovering distinct phenotypic relationships, including classes of atypical behavioral and typical non-behavioral SWD events. This framework provides a flexible tool for high-throughput, precise analysis of VEEG data, with potential to accelerate discovery in epilepsy and seizure research. Furthermore, this approach represents a generalizable strategy for the integration of diverse neurobehavioral time series data types. Significance Statement  Seizure detection in animal models of epilepsy has relied heavily on manual analysis of video-EEG recordings, a process that is slow and subjective. We present a machine learning pipeline that integrates EEG and video data from mice to classify seizures with high accuracy. This work was validated across two models, first a pharmacologically induced generalized seizure model, and second, a spontaneous spike-wave discharge (SWD) model in genetic epilepsy. Our approach detected events missed by human reviewers and revealed previously uncharacterized SWD subtypes distinguished by their behavior. By combining open-source tools in a flexible framework, this work lowers the barrier to high-throughput, unbiased seizure phenotyping, and also offers a broadly applicable strategy for linking neural activity to behavior in neuroscience research.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B2"
-      ],
-      "group_count": 1,
-      "relevance_score": 48,
-      "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "seizure",
-        "seizures",
-        "eeg",
-        "generalized",
-        "machine learning",
-        "seizure detection"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 20,
+      "index": 12,
       "pmid": "42887838",
       "title": "Neurovascular coupling in simultaneous EEG-fNIRS studies: A scoping review of analytical frameworks and clinical applications.",
       "title_zh": "",
@@ -935,7 +539,7 @@
       "priority": "必读"
     },
     {
-      "index": 21,
+      "index": 13,
       "pmid": "42887654",
       "title": "An Efficient Convolutional Neural Network Model for Classifying Positive Affective States from EEG Data Considering Sleep Condition.",
       "title_zh": "",
@@ -964,7 +568,7 @@
       "priority": "必读"
     },
     {
-      "index": 22,
+      "index": 14,
       "pmid": "42880669",
       "title": "A GRAPH CONVOLUTION BASED DUAL-BRANCH NETWORK FOR DECODING OF UPPER-LIMB MOTOR IMAGERY EEG SIGNALS.",
       "title_zh": "",
@@ -991,66 +595,31 @@
       "priority": "推荐"
     },
     {
-      "index": 23,
-      "pmid": "42873989",
-      "title": "Passive Language Mapping With High-Gamma Modulations.",
+      "index": 15,
+      "pmid": "42888254",
+      "title": "Circuit-constrained molecular neuroethology in the medicinal leech Hirudo verbana.",
       "title_zh": "",
-      "journal": "Journal of clinical neurophysiology : official publication of the American Electroencephalographic Society",
-      "iso_journal": "J Clin Neurophysiol",
+      "journal": "Journal of comparative physiology. A, Neuroethology, sensory, neural, and behavioral physiology",
+      "iso_journal": "J Comp Physiol A Neuroethol Sens Neural Behav Physiol",
       "authors": [
-        "Ervin B",
-        "Asano E",
-        "Crone NE"
+        "Tomina Y",
+        "Watanabe T"
       ],
-      "pubdate": "2026 Oct 14",
-      "doi": "10.1097/WNP.0000000000001296",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42873989/",
-      "abstract": "Passive language mapping using high-gamma modulation (HGM) has emerged as a valuable tool in both presurgical evaluation for epilepsy and neuroscientific discovery. HGM mapping leverages task-related synchronization in high-gamma frequencies to identify language areas without the risks associated with electrical stimulation mapping. This review outlines the principles and techniques used in the field of HGM-based mapping, including electrode types, referencing schemes, power analysis, and localization techniques. We survey a range of cognitive tasks-speech production, auditory processing, reading, and memory-that elicit language-related HGM responses and discuss their relevance to comprehensive language mapping. We examine perspectives on methodologic challenges, including artifact management, variability across patients, and spatial sampling. We assess validation studies comparing HGM with electrical stimulation mapping and neuropsychological outcomes, noting HGM's unique role in identifying language cortex in pediatric and cognitively impaired populations. Finally, we speculate on the future directions of the field, including integration with corticocortical evoked potentials and the potential for HGM-informed speech synthesis. As the field matures, HGM mapping is poised to contribute to improved clinical outcomes and enhance our understanding of the dynamics and development of the human language network.",
+      "pubdate": "2026 Oct 16",
+      "doi": "10.1007/s00359-026-01850-0",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42888254/",
+      "abstract": "Medicinal leeches have long served as classic systems in comparative neuroethology because individual neurons can be identified across animals and linked to well-defined behaviors. This review argues that Hirudo verbana is now positioned for a new phase in which this identified-cell framework can be connected directly to molecular mechanisms. We first outline the organization and experimental accessibility of the leech nervous system, then evaluate genomic and transcriptomic resources as tools for testing physiologically constrained hypotheses rather than as endpoints in themselves. We focus on selected problems in which behavior, identified neurons, and molecular candidates can be brought into close alignment: sensory encoding, serotonergic state-dependent gating, multifunctional behavioral circuits, heartbeat rhythm generation, and endocannabinoid-dependent plasticity. Across these examples, the comparative value of Hirudo verbana lies not in nervous-system simplicity alone, but in interpretability: receptors, ion channels, pumps, peptides, gap-junction proteins, and metabolic enzymes can be examined in relation to cellular and circuit operations already defined by physiology. Future progress will require tighter integration of circuit-defined phenotypes with cell-resolved transcriptomics, spatial localization, targeted perturbation, and quantitative modeling. This circuit-constrained strategy positions Hirudo verbana as a valuable bridge between classical identified-cell neuroethology and molecular tests of circuit physiology.",
       "abstract_zh": "",
       "hit_groups": [
-        "C"
+        "D"
       ],
       "group_count": 1,
-      "relevance_score": 3,
-      "relevance_hits": [
-        "epilepsy",
-        "stimulation"
-      ],
-      "priority": "推荐"
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览"
     },
     {
-      "index": 24,
-      "pmid": "42873392",
-      "title": "Resting-State EEG Microstate Dynamics and their Associations with Acclimatization Index and Serum Albumin in Healthy Adults with Chronic High-Altitude Exposure.",
-      "title_zh": "",
-      "journal": "Brain topography",
-      "iso_journal": "Brain Topogr",
-      "authors": [
-        "Yong Y",
-        "Cheng J",
-        "Xu J",
-        "Li H",
-        "Ma H",
-        "Wang N"
-      ],
-      "pubdate": "2026 Oct 14",
-      "doi": "10.1007/s10548-026-01261-z",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42873392/",
-      "abstract": "High-altitude hypoxia has been examined with conventional electroencephalography (EEG), event-related potentials, and neuroimaging, but its association with millisecond-scale resting-state EEG microstate dynamics and peripheral physiology remains unclear. We studied healthy adults including 124 low-altitude (LA) participants (50 men, 74 women) and 174 high-altitude (HA) participants (42 men, 132 women; age 28.05 ± 8.59 years; age unavailable for LA). Coverage, duration, global explained variance (GEV), occurrence, and transition probabilities were extracted for four canonical microstates. LA-HA differences were tested using unadjusted linear models; within-HA associations among the high-altitude acclimatization index (AAI), serum albumin, and Microstate A-related indicators were examined using covariate-adjusted regressions and exploratory bootstrapped mediation analyses. Compared with LA participants, HA participants showed increased Microstate A duration and GEV, decreased occurrence, and unchanged coverage, together with reduced Microstate B-related indicators, enhanced Microstate C-related indicators, and increased A→B and A→C transitions. Within HA participants, AAI was negatively associated with serum albumin, and exploratory mediation analyses indicated indirect associations between AAI and Coverage A, Occurrence A, GEV A, and Microstate A-originating transitions through serum albumin. These findings suggest that chronic high-altitude exposure is associated with resting-state EEG microstate reorganization in healthy adults and that acclimatization-related individual differences may be linked to Microstate A dynamics through serum albumin-related peripheral status.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 5,
-      "relevance_hits": [
-        "electroencephalogr",
-        "eeg"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 25,
+      "index": 16,
       "pmid": "42887034",
       "title": "Combining responsive neurostimulation with resection or ablation for treatment of epilepsy: a multicenter experience.",
       "title_zh": "",
@@ -1107,7 +676,7 @@
       "priority": "必读"
     },
     {
-      "index": 26,
+      "index": 17,
       "pmid": "42876682",
       "title": "CLSP-REQA: a real-time quality-aware closed-loop seizure prediction framework with Mamba-BiLSTM and confidence-gated intervention.",
       "title_zh": "",
@@ -1140,42 +709,6 @@
         "neurostimulation",
         "seizure prediction",
         "stimulation"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 27,
-      "pmid": "42873957",
-      "title": "Open-Loop Deep Brain Stimulation Versus Closed-Loop Responsive Neurostimulation in Drug-Resistant Bitemporal Epilepsy: A Narrative Review.",
-      "title_zh": "",
-      "journal": "Annals of Indian Academy of Neurology",
-      "iso_journal": "Ann Indian Acad Neurol",
-      "authors": [
-        "Zehra SF",
-        "Hassan MA",
-        "Baliga P",
-        "Khatib AS",
-        "Ullah F"
-      ],
-      "pubdate": "2026 Oct 14",
-      "doi": "10.4103/aian.aian_226_26",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42873957/",
-      "abstract": "Drug-resistant bitemporal epilepsy presents a therapeutic challenge when resective surgery is not feasible due to bilateral seizure onset or eloquent cortex involvement. Neuromodulation has emerged as an alternative, with open-loop deep brain stimulation (DBS) and closed-loop responsive neurostimulation (RNS) as implantable strategies. Comparative indications for modality selection remain unclear. A narrative review of articles published from January 2007 to January 2026 was performed in PubMed/MEDLINE. Approximately 120 articles were screened, and 39 studies were included. Due to heterogeneity in study design, findings were synthesized qualitatively. Both DBS and RNS significantly reduce seizure frequency in drug-resistant bitemporal epilepsy, with a median seizure reduction of approximately 60% to 75%. Seizure freedom, however, remained limited, reflecting the palliative nature of these treatments. Open-loop anterior nucleus of the thalamus (ANT) DBS provides network-level modulation with low maintenance, while hippocampal DBS offers localized temporal inhibition. Conversely, closed-loop RNS delivers adaptive focal stimulation via real-time sensing and yields chronic intracranial electroencephalogram data. While both modalities show comparable efficacy, RNS may be advantageous in focal or asymmetric bitemporal epilepsy. Cognitive outcomes were favorable for both techniques, with RNS demonstrating the prevention of memory and language decline. Both DBS and RNS are palliative neuromodulatory options for patients in whom resective surgery is not feasible. Treatment selection should be individualized based on seizure network characteristics, laterality, monitoring needs, participation capacity, and cognitive considerations. The primary goal is to reduce seizure frequency and improve quality of life rather than to achieve seizure freedom. Future multicenter studies and biomarker-driven strategies are needed to refine selection and improve long-term outcomes.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 45,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "drug-resistant",
-        "electroencephalogr",
-        "focal",
-        "hippocampal",
-        "intracranial",
-        "closed-loop"
       ],
       "priority": "必读"
     }
