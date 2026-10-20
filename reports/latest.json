@@ -1,10 +1,10 @@
 {
   "meta": {
-    "report_date": "2026-10-19",
-    "target_edat": "2026-10-18",
+    "report_date": "2026-10-20",
+    "target_edat": "2026-10-19",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-10-18 22:51:57",
+    "generated_at": "2026-10-20 00:08:30",
     "feishu_diag": {
       "status": "failed",
       "env": {
@@ -29,25 +29,21 @@
       "count": 2,
       "total": 2,
       "pmids": [
-        "42888250",
-        "42886870"
+        "42895730",
+        "42888250"
       ],
       "status": "ok"
     },
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 8,
-      "total": 8,
+      "count": 4,
+      "total": 4,
       "pmids": [
         "42892148",
         "42892089",
         "42888950",
-        "42888948",
-        "42887466",
-        "42885896",
-        "42885880",
-        "42885669"
+        "42888948"
       ],
       "status": "ok"
     },
@@ -62,12 +58,10 @@
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 3,
-      "total": 3,
+      "count": 1,
+      "total": 1,
       "pmids": [
-        "42892501",
-        "42887838",
-        "42887654"
+        "42892501"
       ],
       "status": "ok"
     },
@@ -77,19 +71,81 @@
       "count": 5,
       "total": 5,
       "pmids": [
+        "42894014",
         "42893423",
         "42891881",
         "42889040",
-        "42888254",
-        "42887034"
+        "42888254"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 18,
+  "dedup_total": 12,
   "papers": [
     {
       "index": 1,
+      "pmid": "42895730",
+      "title": "Vascular Risk Factors and Late-Onset Epilepsy.",
+      "title_zh": "血管危险因素和晚发性癫痫。",
+      "journal": "JAMA neurology",
+      "iso_journal": "JAMA Neurol",
+      "authors": [
+        "Choi H",
+        "Gutierrez J",
+        "Wang T",
+        "Liu M",
+        "Leu CS",
+        "Misiewicz S",
+        "Han J",
+        "Bello NA",
+        "Biggs ML",
+        "Briceño EM",
+        "Brickman AM",
+        "Burke JF",
+        "Chen L",
+        "Colantonio LD",
+        "Diaz Andino SP",
+        "Elkind MSV",
+        "Fitzpatrick AL",
+        "Gonzalez Corona C",
+        "Gottesman RF",
+        "Gross AL",
+        "Huang L",
+        "Johnson EL",
+        "Johnson WC",
+        "Levine DA",
+        "Longstreth WT Jr",
+        "Pelagalli Maia S",
+        "Mayeux RP",
+        "Petersen BC",
+        "Obalana O",
+        "Reyes-Dumeyer D",
+        "Rundek T",
+        "Sanchez D",
+        "Shea SJ",
+        "Strobino K",
+        "Tom SE",
+        "Zhu CW",
+        "Thacker EL"
+      ],
+      "pubdate": "2026 Oct 19",
+      "doi": "10.1001/jamaneurol.2026.3708",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42895730/",
+      "abstract": "IMPORTANCE: Late-onset epilepsy (LOE; onset at age ≥65 years) is increasingly recognized in older adults and may be associated with vascular risk.\nOBJECTIVE: To identify vascular risk factors (VRFs) associated with incident LOE in older adults.\nDESIGN, SETTING, AND PARTICIPANTS: This study is an individual participant data meta-analysis of 6 US population-based prospective cohort studies (the Epilepsy-Cog Study). In 5 cohorts linked to Medicare for epilepsy case ascertainment, follow-up for LOE began when a participant had accrued 2 years of continuous fee-for-service enrollment and was 65 years of age or older and extended to the end of continuous enrollment. Claims linkage covered 1991-2018 in the Atherosclerosis Risk in Communities Study (ARIC), 1992-2019 in the Cardiovascular Health Study (CHS), 2000-2019 in the Multi-Ethnic Study of Atherosclerosis (MESA), 2000-2020 in the Reasons for Geographic and Racial Differences in Stroke Study (REGARDS), and 1999-2019 in the Washington Heights/Inwood Columbia Aging Project (WHICAP). In the Northern Manhattan Study (NOMAS), which was not Medicare linked and used cohort-based epilepsy case ascertainment, follow-up for LOE began at cohort entry in 1993-2008 and extended to 2024. Data analysis was completed in January 2026.\nEXPOSURES: Sociodemographic characteristics and VRFs assessed by self-report, examinations, laboratory measures, and medication use.\nMAIN OUTCOME AND MEASURES: The primary outcome was incident LOE. Associations between risk factors and incident LOE were evaluated using multivariable Cox proportional hazards models to estimate hazard ratios.\nRESULTS: From 43 753 participants in Epilepsy-Cog, 551 participants with prevalent epilepsy and 945 with no follow-up after Epilepsy-Cog baseline were excluded. Among 42 257 participants (mean [SD] age, 71.4 [6.9] years; 23 383 [56.0%] female) followed up for a mean (SD) of 9.3 (6.2) years, 1500 participants (3.5%) developed LOE (3.8 per 1000 person-years). In fully adjusted models, LOE risk was higher with current smoking (HR = 1.39; 95% CI, 1.18-1.64), hypertension (HR = 1.17; 95% CI, 1.04-1.31), diabetes (HR = 1.42; 95% CI, 1.25-1.62), chronic kidney disease (HR = 1.29; 95% CI, 1.13-1.48), history of stroke (HR = 1.99; 95% CI, 1.63-2.43), and apolipoprotein E ε4 allele (1 ε4 allele: HR = 1.22; 95% CI, 1.07-1.39; 2 ε4 alleles: HR = 1.84; 95% CI, 1.36-2.50). Associations of VRFs with LOE were similar across age, sex, and race and ethnicity subgroups.\nCONCLUSIONS AND RELEVANCE: In this pooled analysis of 6 US cohorts, multiple VRFs and a history of stroke were associated with incident LOE. These findings suggest that LOE may reflect the underlying burden of brain vascular disease.",
+      "abstract_zh": "重要性：晚发性癫痫（ LOE ；发病年龄≥ 65岁）在老年人中日益得到认可，并可能与血管风险相关。\n目的：识别与老年人LOE事件相关的血管危险因素（ VRF ）。\n设计、设置和参与者：本研究是对6项基于美国人群的前瞻性队列研究的个体参与者数据荟萃分析（癫痫-齿轮研究）。 在与Medicare相关的5个队列中f\n或癫痫病例确定时， LOE的随访始于参与者累计连续2年的收费服务招募，年龄为65岁或以上，并延长至连续招募结束。1991-2018年社区动脉粥样硬化风险研究（ ARIC ） ， 1992-2019年心血管健康研究（ CHS ） ， 2000-2019年多民族动脉粥样硬化研究（ MESA ） ， 2000-2020年\n或中风研究的地理和种族差异（ REGARDS ） ，以及华盛顿高地/英伍德哥伦比亚老龄化项目（ WHICAP ）中的1999-2019。 在北曼哈顿研究（ NOMAS ）中，该研究与Medicare无关，并使用基于队列的癫痫病例确定， LOE的随访始于1993-2008年的队列入组，并延长至2024年。 数据分析于2026年1月完成。\n暴露：社会人口学特征和VRF的评估依据为\n自我报告、检查、实验室措施和药物使用。\n主要结局和措施：主要结局是事件LOE。 使用多变量Cox比例风险模型评估风险因素与事件LOE之间的关联，以估计风险比。\n结果：在癫痫-Cog的43 753名参与者中，排除了551名流行性癫痫参与者和945名癫痫-Cog基线后无随访的参与者。其中42 2\n57名受试者（平均[SD]年龄， 71.4 [6.9]岁； 23 383 [56.0%]女性）的平均随访（ SD ）为9.3 （ 6.2 ）岁， 1500名受试者（ 3.5% ）出现LOE （每1000人年3.8 ）。在完全调整的模型中， LOE风险更高，包括当前吸烟（ HR = 1.39 ； 95% CI ， 1.18-1.64 ）、高血压（ HR = 1.17 ； 95% CI ， 1.04-1.31 ）、糖尿病（ HR = 1.42 ； 95% CI ， 1.25-1.62 ）、慢性肾脏疾病（ HR = 1.29 ； 95% CI ， 1.13-1.48 ）、卒中史（ HR =\n = 1.99 ； 95% CI ， 1.63-2.43 ）和载脂蛋白E ε4等位基因（ 1 ε4等位基因： HR = 1.22 ； 95% CI ， 1.07-1.39 ； 2 ε4等位基因： HR = 1.84 ； 95% CI ， 1.36-2.50 ）。 VRF与LOE的关联在年龄、性别、种族和族裔亚组中相似。\n结论和相关性：在这项对6个美国队列的汇总分析中，多个VRF和卒中病史与LOE事件相关。 这些调查结果表明， LOE可能反映了潜在的负担\n脑血管疾病。",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 14,
+      "relevance_hits": [
+        "epilepsy",
+        "ecog"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 2,
       "pmid": "42888250",
       "title": "Conversational brain AI for adaptive epilepsy care.",
       "title_zh": "用于适应性癫痫护理的对话式大脑人工智能。",
@@ -112,33 +168,6 @@
       "relevance_hits": [
         "epilepsy",
         "adaptive"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 2,
-      "pmid": "42886870",
-      "title": "More Than a Daughter: Margaret A. Lennox-Buchthal (1913-2001), Epileptologist.",
-      "title_zh": "不仅仅是一个女儿： Margaret A. Lennox-Buchthal （ 1913-2001 ） ，癫痫学家。",
-      "journal": "Neurology",
-      "iso_journal": "Neurology",
-      "authors": [
-        "Christy A"
-      ],
-      "pubdate": "2026 Nov 10",
-      "doi": "10.1212/WNL.0000000000218630",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42886870/",
-      "abstract": "In a 2010 book chapter on the pioneering encephalographer Mary A.B. Brazier, PhD (1904-1995), a photo of a smiling woman is labeled \"Margaret Lennox-Buchthal, wife of Fritz, daughter of William Lennox.\" Yet, like most women, Margaret Lennox-Buchthal, MD (1913-2001), was more than a wife and a daughter. She was an assistant professor at the Yale School of Medicine and associate professor at the University of Copenhagen Institute of Neurophysiology, and she was editor-in-chief of the journal  Epilepsia  (1969-1975). Her work had a lasting impact on our current concept of and approach to febrile seizures. She advocated for people with epilepsy and challenged stigmas as an educated divorced woman with a diagnosis of epilepsy. The story of Lennox-Buchthal's life illustrates the unsung roles women played in medicine and research in the mid-1900s, and how their achievements continue to be eclipsed by the men in their lives.",
-      "abstract_zh": "在2010年一本关于开创性脑造影学家Mary A.B. Brazier博士（ 1904-1995 ）的书籍章节中，一张微笑的女人的照片被标记为“Margaret Lennox-Buchthal ， Fritz的妻子， William Lennox的女儿。“然而，像大多数女性一样， Margaret Lennox-Buchthal医学博士（ 1913-2001 ）不仅仅是一个妻子和一个女儿。她是耶鲁大学医学院的助理教授和哥本哈根大学神经生理学研究所的副教授\n，她是《癫痫》杂志的主编（ 1969-1975 ）。她的工作对我们目前的发热性癫痫的概念和方法产生了持久的影响。作为一名受过教育的离婚妇女，她倡导癫痫患者并挑战耻辱感，并诊断出癫痫。Lennox-Buchthal一生的故事说明了20世纪中期女性在医学和研究中扮演的无名角色，以及她们的成就如何继续黯然失色\n被他们生活中的男人所吸引。",
-      "hit_groups": [
-        "A"
-      ],
-      "group_count": 1,
-      "relevance_score": 4,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures"
       ],
       "priority": "推荐"
     },
@@ -297,158 +326,9 @@
     },
     {
       "index": 7,
-      "pmid": "42887466",
-      "title": "Efficacy of Lactobacillus reuteri as an adjunctive therapy for seizure control and quality of life in pediatric drug-resistant epilepsy: A prospective interventional study.",
-      "title_zh": "罗伊乳杆菌作为儿童耐药性癫痫发作控制和生活质量的辅助治疗的有效性：一项前瞻性介入研究。",
-      "journal": "Epilepsy research",
-      "iso_journal": "Epilepsy Res",
-      "authors": [
-        "Abbasi E",
-        "Ghazavi A",
-        "Alaie P",
-        "Rasouli J"
-      ],
-      "pubdate": "2026 Oct 15",
-      "doi": "10.1016/j.eplepsyres.2026.107936",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42887466/",
-      "abstract": "BACKGROUND: Drug-resistant epilepsy (DRE) remains a critical challenge in pediatric neurology, profoundly impacting cognitive development and health-related quality of life (HRQOL). Given the role of the gut-microbiota-brain axis in neuromodulation, probiotics have emerged as a potential adjunctive therapy. This study assessed changes in seizure frequency and HRQOL and evaluated the safety of Lactobacillus reuteri supplementation on seizure frequency and HRQOL in children with DRE.\nMETHODS: In this prospective, single-arm, before-after interventional trial, 75 children (aged 3-18 years) with confirmed DRE were enrolled. Participants received daily oral L. reuteri (1 ×10 9  CFU) for 12 weeks alongside their stable anti-seizure medication (ASM) regimens. The primary outcome was HRQOL measured by the Persian-validated QOLCE-55 questionnaire. Secondary outcomes included seizure frequency, recorded prospectively using standardized caregiver seizure diaries. Statistical analyses utilized paired-sample t-tests and Wilcoxon signed-rank tests, with effect sizes calculated to quantify the magnitude of within-participant changes.\nRESULTS: Seventy-one patients completed the study (mean age 7.26 ± 3.33 years; 53.5% male). The cohort showed heterogeneous seizure phenotypes and underlying etiologies. Total HRQOL scores increased from 33.75 ± 4.92 at baseline to 34.23 ± 4.97 after the intervention (absolute change, 0.48 points; p < 0.001), with a small-to-moderate standardized effect size (d = 0.40). However, this change was substantially below the 10-13-point MCID range used in the sample-size rationale. Median seizure frequency changed from 32 (IQR: 15-84) to 30 (IQR: 14-80) episodes per 3 months (p = 0.001; r = 0.39). Four patients (5.6%; 95% CI, 1.6-13.8%) experienced a reduction of more than 50% in seizure frequency. Adverse events were reported in 11.3% of participants and were mild and transient, with no treatment discontinuations.\nCONCLUSIONS: In this single-arm before-after study, statistically significant within-participant changes in HRQOL and seizure frequency were observed during the 12-week period following adjunctive L. reuteri supplementation. However, the absolute magnitude of these changes was modest and their clinical significance remains uncertain. Because there was no concurrent placebo control group, the observed changes cannot be attributed specifically to L. reuteri supplementation. Larger, adequately powered placebo-controlled randomized trials are needed to determine whether L. reuteri provides a clinically meaningful benefit in pediatric drug-resistant epilepsy.",
-      "abstract_zh": "背景：耐药性癫痫（ DRE ）仍然是儿科神经病学中的一个关键挑战，对认知发展和健康相关的生活质量（ HRQOL ）产生深远影响。鉴于肠道-微生物-脑轴在神经调节中的作用，益生菌已成为一种潜在的辅助疗法。本研究评估了癫痫发作频率和HRQOL的变化，并评估了补充罗伊氏乳杆菌对癫痫发作频率的安全性。\n患有DRE的儿童的ency和HRQOL。\n方法：在这项前瞻性、单组、介入前后试验中，招募了75名DRE确诊的儿童（ 3-18岁）。 参与者在接受稳定的抗癫痫药物（ ASM ）方案的同时，每天口服罗伊氏乳杆菌（ 1 × 10 9 CFU ） 12周。 主要结局是通过波斯验证的QOLCE-55问卷测量的HRQOL。 次要结局包括癫痫发作频率、\n使用标准化的护理人员癫痫发作日记进行前瞻性编码。 统计分析采用成对样本t检验和Wilcoxon符号秩检验，计算效应大小以量化参与者内变化的幅度。\n结果： 71名患者完成了研究（平均年龄7.26 ± 3.33岁； 53.5%男性）。 队列显示异质性癫痫表型和潜在病因。 总HRQOL评分从33.75 ± 4增加\n.92至干预后34.23 ± 4.97 （绝对变化， 0.48分； p < 0.001 ） ，具有小至中等标准化效应大小（ d = 0.40 ）。然而，这种变化远低于样本量原理中使用的10-13点MCID范围。癫痫发作频率中位数从每3个月32次（ IQR ： 15-84 ）变为30次（ IQR ： 14-80 ） （ p = 0.001 ； r = 0.39 ）。4名患者（ 5.6% ； 95% CI ， 1.6-13.8% ）经历了\nf癫痫发作频率超过50%。 11.3%的参与者报告了不良事件，不良事件轻微且短暂，未停止治疗。\n结论：在这项单组前后研究中，在补充路氏乳杆菌后12周内观察到HRQOL和癫痫发作频率的统计学显著变化。 然而，这些变化的绝对规模是适度的，\nr临床意义仍不确定。由于没有同时使用安慰剂的对照组，观察到的变化不能专门归因于补充罗伊氏乳杆菌。需要更大、动力充足的安慰剂对照随机试验来确定罗伊氏乳杆菌是否对儿童耐药性癫痫有临床意义。",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 27,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "drug-resistant",
-        "neuromodulation"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 8,
-      "pmid": "42885896",
-      "title": "Reversal of refractory epilepsy in an adult with GAMT deficiency: A case report and comparative literature review.",
-      "title_zh": "GAMT缺乏的成年人难治性癫痫的逆转：病例报告和比较文献综述。",
-      "journal": "Epilepsia open",
-      "iso_journal": "Epilepsia Open",
-      "authors": [
-        "Sung WH",
-        "Chen H",
-        "Hsu CW",
-        "Tsai MH"
-      ],
-      "pubdate": "2026 Oct 16",
-      "doi": "10.1002/epi4.70370",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42885896/",
-      "abstract": "OBJECTIVE: Guanidinoacetate methyltransferase (GAMT) deficiency is a rare autosomal recessive creatine biosynthesis disorder. Reports specifically focusing on adult patients remain scarce.\nMETHODS: We report a 52-year-old female (the oldest documented case of GAMT deficiency to date) presenting with severe intellectual disability, refractory epilepsy, and adult-onset disease progression. Whole-exome sequencing identified novel compound heterozygous GAMT variants (c.265_267del and c.253G>T), and magnetic resonance spectroscopy confirmed cerebral creatine depletion. Remarkably, initiating oral creatine supplementation at age 52 achieved complete seizure freedom, normalization of the electroencephalogram (EEG), and significant motor function recovery.\nRESULTS: A comprehensive review revealed that untreated adult patients face a high risk of progressive neurological deterioration. Compared to the pediatric cohort, adults exhibited a significantly higher prevalence of movement disorders (69.2% vs. 33.1%, p < 0.001) and a trend toward a higher prevalence of epilepsy (92.3% vs. 74.2%). Especially, atonic seizures (drop attacks) are particularly characteristic of adult GAMT deficiency, with EEGs frequently demonstrating background slowing, multifocal epileptiform discharges, and electrodecremental patterns.\nSIGNIFICANCE: This study underscores that continuous disease progression and prolonged neurotoxicity still could compromise the well-being of adult GAMT deficiency patients. Accurate diagnosis is essential for adults presenting with developmental and epileptic encephalopathy (DEE) phenotype, as even late treatment for GAMT deficiency can still dramatically alleviate the epileptic burden and reverse motor decline.\nPLAIN LANGUAGE SUMMARY: We report the oldest known adult diagnosed with GAMT deficiency. Our case demonstrates that starting creatine treatment even at age 52 can dramatically reduce seizures and restore motor function. Literature shows that untreated adults suffer from more severe epilepsy and movement disorders than children, with symptoms worsening over time. These findings highlight the critical need for genetic testing in adults with unexplained severe epilepsy; timely creatine supplementation can halt cognitive decline and significantly restore quality of life.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 24,
-      "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "epileptiform",
-        "seizure",
-        "seizures",
-        "refractory",
-        "electroencephalogr",
-        "eeg"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 9,
-      "pmid": "42885880",
-      "title": "Frequent involvement of cingulate and insulo-opercular regions in sleep-related hypermotor epilepsy: A multimodal presurgical study.",
-      "title_zh": "",
-      "journal": "Epilepsia",
-      "iso_journal": "Epilepsia",
-      "authors": [
-        "Zhu F",
-        "Shi XR",
-        "Weng SW",
-        "Delazer L",
-        "Fearns N",
-        "Arafat T",
-        "Lv RJ",
-        "Hu WH",
-        "Zhang C",
-        "Koepp M",
-        "Wang Q"
-      ],
-      "pubdate": "2026 Oct 16",
-      "doi": "10.1002/epi.70548",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42885880/",
-      "abstract": "OBJECTIVE: Sleep-related hypermotor epilepsy (SHE) is classically considered a frontal lobe epilepsy; however, accumulating evidence suggests that hypermotor seizures may arise from multiple frontal and extrafrontal regions. We characterized the anatomical distribution of best available localizations in patients with SHE using multimodal presurgical data.\nMETHODS: We retrospectively analyzed 17 patients with clinically diagnosed SHE who underwent comprehensive evaluation, including long-term video-electroencephalographic (EEG) monitoring, 3-T high-resolution magnetic resonance imaging (MRI), 18F-fluorodeoxyglucose positron emission tomography, and, where indicated, magnetoencephalography, stereo-EEG (SEEG), and surgical assessment. Best available anatomical localizations were assigned using a hierarchical multimodal framework incorporating surgical, SEEG, and concordant noninvasive findings. Their anatomical distribution was subsequently assessed at the cohort level.\nRESULTS: Sixteen patients (94.1%) had an assigned best available localization. Cingulate or insulo-opercular regions were involved in 11 of 16 patients (68.8%), whereas the remaining cases were localized to other frontal regions. In a sensitivity analysis restricted to 10 patients with SEEG-defined and/or surgically supported localizations, six involved cingulate or insulo-opercular regions. All patients were MRI-negative. In contrast, MRI-positron emission tomography fusion provided regionally informative anatomical findings in 16 of 17 cases and contributed to multimodal localization. Interictal epileptiform discharges were identified in 15 patients, whereas regionally informative ictal scalp EEG patterns were observed in eight; ictal interpretation was frequently limited by rapid propagation, movement-related artifacts, and delayed EEG onset. Focal cortical dysplasia-related histopathological findings were identified in five of seven resected specimens, whereas interpretation in two was limited by prior thermocoagulation.\nSIGNIFICANCE: These descriptive findings indicate that cingulate and insulo-opercular regions were frequently represented among the identified localizations in this presurgical cohort. Multimodal evaluation integrating electroclinical, imaging, and invasive findings may support presurgical localization in MRI-negative SHE.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 27,
-      "relevance_hits": [
-        "epilepsy",
-        "epileptiform",
-        "seizure",
-        "seizures",
-        "ictal",
-        "interictal",
-        "electroencephalogr",
-        "eeg"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 10,
-      "pmid": "42885669",
-      "title": "Empagliflozin in Lafora disease: A first-in-human 6-month pilot study with electroclinical and FDG-PET findings.",
-      "title_zh": "",
-      "journal": "Epileptic disorders : international epilepsy journal with videotape",
-      "iso_journal": "Epileptic Disord",
-      "authors": [
-        "d'Orsi G",
-        "Liantonio A",
-        "Imbrici P",
-        "Lolli G",
-        "Dinoi G",
-        "Conte E",
-        "Altomare CD",
-        "Ciccone F",
-        "Calò E",
-        "Perrone E",
-        "Cazzanelli G",
-        "DEFEAT‐LD Study Group",
-        "Carella M"
-      ],
-      "pubdate": "2026 Oct 16",
-      "doi": "10.1002/epd2.70442",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42885669/",
-      "abstract": "OBJECTIVE: Lafora disease (LD) is a rare, fatal neurodegenerative epilepsy with no approved treatments. Empagliflozin, a sodium-glucose cotransporter-2 (SGLT2) inhibitor, has shown neuroprotective actions in preclinical models through modulation of glycogen metabolism, induction of a pseudo-ketogenic state, improved mitochondrial efficiency, and reduction of excitatory neurotransmission. Based on this rationale, we conducted a first-in-human pilot study of empagliflozin in two genetically confirmed LD patients.\nMETHODS: Two patients with genetically confirmed LD received empagliflozin 10 mg/day for 6 months. Serial assessments included safety and tolerability, seizure frequency, myoclonus severity, electroencephalographic findings, neuropsychological and motor evaluations, brain MRI, and quantitative FDG-PET with regional Z-score analysis.\nRESULTS: Empagliflozin was safe and well tolerated, with no serious adverse events. Seizure frequency, myoclonus, and overall clinical status remained largely stable over 6 months, although some neuropsychological and motor measures showed variable changes between patients. EEG background activity and spike index were largely unchanged. Brain MRI showed stable mild cortical atrophy in both patients. In contrast, FDG-PET revealed progressive and spatially expanding cerebral hypometabolism in both patients, with worsening regional Z-scores, particularly in the parietal and precuneus regions.\nSIGNIFICANCE: In this first-in-human, 6-month pilot study, empagliflozin showed acceptable short-term safety and feasibility in LD, but no definitive conclusions on efficacy can be drawn. The dissociation between relative electroclinical stability and progressive metabolic impairment suggests that quantitative FDG-PET may represent a sensitive biomarker for monitoring disease trajectory in this ultra-rare epilepsy.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 7,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "electroencephalogr",
-        "eeg",
-        "biomarker"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 11,
       "pmid": "42892501",
       "title": "Interplay of action-based prediction and top-down attention: EEG evidence for joint modulation of late perceptual processing.",
-      "title_zh": "",
+      "title_zh": "基于行动的预测和自上而下的注意的相互作用：后期感知处理联合调节的脑电图证据。",
       "journal": "NeuroImage",
       "iso_journal": "Neuroimage",
       "authors": [
@@ -461,7 +341,7 @@
       "doi": "10.1016/j.neuroimage.2026.122293",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42892501/",
       "abstract": "Voluntary action shapes our perception through sensory predictions of its consequences. These predictions are thought to inhibit perceptual processing of predicted outcomes, leading to sensory attenuation. However, some studies have reported findings that contrast with this effect, suggesting that the influence of predictions may reflect, or interact with, attentional processes. Here, we investigated the interplay of action-based prediction and top-down attention on early and late perceptual processing, with prediction and attention referring to the likelihood of a sensory event and its behavioral relevance, respectively. Electroencephalography (EEG) was recorded while participants viewed two sequential gratings. The orientation of the first was either predicted and self-generated or unpredicted and externally generated. Participants judged the tilt direction of the second grating relative to the first but responded only when the grating appeared in a task-relevant color. EEG analyses revealed no modulation of early visual potentials (N1a), but modulations at later processing stages. Specifically, the P3b exhibited reduced amplitude for predicted compared to unpredicted stimuli, but only when they were task-relevant, whereas task-relevance enhanced the P3b only for unpredicted stimuli. Interestingly, multivariate pattern analysis showed significant temporal clusters for decoding the grating's orientation exclusively for predicted and task-relevant stimuli, although decoding performance did not significantly differ between conditions. Furthermore, predicted and task-relevant stimuli elicited faster behavioral responses, with prediction-related P3b latency differences correlating with reaction-time differences. Overall, converging findings from the P3b, multivariate, time-frequency and behavioral analyses provide suggestive evidence that top-down attention and action-based prediction may jointly facilitate late perceptual and decision-related processing.",
-      "abstract_zh": "",
+      "abstract_zh": "自愿行动通过对其后果的感官预测来塑造我们的感知。这些预测被认为会抑制预测结果的感知处理，导致感觉衰减。然而，一些研究报告了与这种效应形成对比的发现，表明预测的影响可能反映或与注意力过程相互作用。在这里，我们研究了基于行动的预测与\n对早期和晚期感知处理的关注，预测和注意力分别指感官事件的可能性及其行为相关性。记录脑电图（ EEG ） ，同时参与者观看两个顺序光栅。第一个方向要么是预测和自我生成的，要么是不可预测和外部生成的。参与者判断第二个光栅相对的倾斜方向\n到第一个，但只有当光栅以与任务相关的颜色出现时才响应。脑电图分析显示，早期视电位（ N1a ）没有调制，而是在后期的处理阶段进行调制。具体而言，与不可预测的刺激相比， P3b的预测幅度降低，但仅当它们与任务相关时，而任务相关性仅对不可预测的刺激增强了P3b。有趣的是，多变量模式分析\ns显示了显著的时间簇，用于解码光栅的方向，专门用于预测和任务相关的刺激，尽管解码性能在条件之间没有显着差异。此外，预测和任务相关的刺激引发了更快的行为反应，预测相关的P3b潜伏期差异与反应时间差异相关。总体而言， P3b、多变量、时间\n-频率和行为分析提供了暗示性证据，表明自上而下的注意力和基于行动的预测可能共同促进后期感知和决策相关的处理。",
       "hit_groups": [
         "C"
       ],
@@ -474,67 +354,42 @@
       "priority": "推荐"
     },
     {
-      "index": 12,
-      "pmid": "42887838",
-      "title": "Neurovascular coupling in simultaneous EEG-fNIRS studies: A scoping review of analytical frameworks and clinical applications.",
-      "title_zh": "",
-      "journal": "NeuroImage",
-      "iso_journal": "Neuroimage",
+      "index": 8,
+      "pmid": "42894014",
+      "title": "Repetitive transcranial magnetic stimulation (rTMS) combined with antidepressant pharmacotherapy for depression: state-dependent mechanisms, clinical evidence, and translational challenges.",
+      "title_zh": "重复性经颅磁刺激（ rTMS ）联合抗抑郁药物治疗抑郁症：状态依赖性机制、临床证据和转化挑战。",
+      "journal": "Molecular psychiatry",
+      "iso_journal": "Mol Psychiatry",
       "authors": [
-        "Yu W",
-        "Yuvaraj R",
-        "Perrey S",
-        "Ayaz H",
-        "Teo WP"
+        "Deng J",
+        "Shao Y",
+        "Jiang L",
+        "Wu B",
+        "Roberts N",
+        "Wang Q",
+        "Jia Z"
       ],
-      "pubdate": "2026 Oct 16",
-      "doi": "10.1016/j.neuroimage.2026.122298",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42887838/",
-      "abstract": "Simultaneous electroencephalography (EEG) and functional near-infrared spectroscopy (fNIRS) have been used across cognitive and physiological states and in diverse clinical populations. However, the interpretation of cross-modal coupling remains difficult because findings from different analytical frameworks, populations, and experimental conditions have not been systematically mapped. This scoping review followed the Arksey and O'Malley framework and the Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for Scoping Reviews (PRISMA-ScR). PubMed, Scopus, Web of Science, EBSCO, and IEEE Xplore were searched through February 10, 2026, for studies that quantitatively related simultaneously recorded EEG and fNIRS signals. Two reviewers independently screened the records. Findings were synthesized narratively, and analytical pipelines were mapped across the signal domain, feature extraction, coupling metric, and temporal lag handling. Fifty-seven studies were included. Amplitude-based studies related event-related potentials and oscillatory EEG features to focal hemodynamic responses, with associations varying across electrophysiological features, cortical regions, and task conditions. Frequency- and scale-specific analyses identified band-dependent relationships, while coupling at ultra-slow scales showed sensitivity to vascular and systemic physiological influences. Studies that explicitly modeled timing identified several-second offsets in some paradigms, while directional estimates varied across tasks and recording states. Network analyses showed partial and context-dependent correspondence between EEG- and fNIRS-derived measures, while model-based approaches characterized multivariate and predictive cross-modal relationships. Across frameworks, observed coupling differed with recording state, frequency band, cortical region, and temporal lag handling rather than representing a single quantity. Clinical findings were heterogeneous, and most condition-specific patterns were supported by small and methodologically diverse evidence bases. These findings support framework-matched analysis and pipeline-explicit reporting when interpreting EEG-fNIRS coupling.",
+      "pubdate": "2026 Oct 18",
+      "doi": "10.1038/s41380-026-03930-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42894014/",
+      "abstract": "Depression is a highly prevalent and debilitating mental disorder. Pharmacotherapy remains the primary treatment modality; however, its efficacy is often limited by a delayed onset of action, suboptimal response in some patients, and a high risk of recurrence. Treatment-resistant depression, characterized by poor response to conventional therapies, poses a major clinical challenge and highlights the need for improved treatment strategies. Repetitive transcranial magnetic stimulation (rTMS), a noninvasive neuromodulation technique, has shown promise for depression, particularly when combined with antidepressant pharmacotherapy. Advances in neuroimaging, neurochemistry, and network neuroscience have clarified how high-frequency rTMS may modulate cortical excitability, monoaminergic transmission, synaptic plasticity, and distributed brain networks. Clinical evidence suggests that combined treatment may accelerate early improvement, increase response and remission, and reduce relapse risk; however, these benefits are heterogeneous across patients and symptom domains and should be interpreted in light of expectancy effects and limitations of sham blinding. Neuroimaging studies have identified treatment-associated functional and structural changes, including hippocampal volume changes, but the causal links among molecular signaling, circuit reorganization, structural findings, and symptom improvement remain unresolved. The interaction between rTMS and antidepressants should therefore not be viewed as uniformly additive or synergistic, but as a state-dependent process shaped by medication class, stimulation protocol and timing, cortical excitability, metaplasticity, and individual neurobiological context. This review integrates mechanistic, neuroimaging, and clinical evidence and discusses how biomarker-, state-, and symptom-informed targeting, optimized treatment sequencing, and pragmatic implementation strategies could improve the precision and accessibility of combined treatment for depression.",
       "abstract_zh": "",
       "hit_groups": [
-        "C"
+        "D"
       ],
       "group_count": 1,
       "relevance_score": 8,
       "relevance_hits": [
-        "electroencephalogr",
-        "eeg",
-        "focal"
+        "hippocampal",
+        "neuromodulation",
+        "transcranial",
+        "biomarker",
+        "stimulation"
       ],
       "priority": "必读"
     },
     {
-      "index": 13,
-      "pmid": "42887654",
-      "title": "An efficient convolutional neural network model for classifying positive affective states from EEG data considering sleep condition.",
-      "title_zh": "",
-      "journal": "Journal of neuroscience methods",
-      "iso_journal": "J Neurosci Methods",
-      "authors": [
-        "Gazan MK",
-        "Moghaddamnia S",
-        "Habiboglu MG"
-      ],
-      "pubdate": "2026 Oct 16",
-      "doi": "10.1016/j.jneumeth.2026.110937",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42887654/",
-      "abstract": "BACKGROUND: The recognition of affective states from EEG recordings considering the sleep condition can be an important supporting tool in therapy and in the treatment of psychological or psychiatric disorders.\nNEW METHOD: Since sleep deprivation changes EEG characteristics, a two-stage framework is developed for affective state classification. First, a classification between \"Normal Sleep\" (NS) and \"Sleep-Deprived\" (SD) is conducted using resting-state EEG data. The data are then fed into one of two newly proposed, lightweight Convolutional Neural Networks (CNNs) to recognize four affective states.\nRESULTS: In the first stage, CNN-BiLSTM achieves 95.96% accuracy under window-level splitting and 70.46% under subject-independent 5-fold cross-validation, while in the second stage the proposed models achieve 93.40% (NS) and 90.95% (SD) under window-level splitting, and 38.98% (NS) and 38.97% (SD) under cross-validation. The lower subject-independent accuracies reflect the class imbalance and the clustering of scores near the class boundaries, which make cross-subject four-class generalization challenging.\nCOMPARISON WITH EXISTING METHODS: As existing studies mostly classify momentary emotions without addressing sleep conditions, direct comparison with prior work is difficult; we therefore benchmarked our framework against several established baseline models, including SqueezeNet, EEGNet, ShallowConvNet, Support Vector Machine, and Random Forest.\nCONCLUSIONS: This study suggests that considering physiological states can improve multi-class classification of affective states from time-varying neurophysiological signals such as EEG. The framework performs strongly under window-level evaluation, whereas its performance under the stricter subject-independent setting is more limited and should be interpreted accordingly. It can nonetheless contribute to more comprehensive research in affective neuroscience.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 10,
-      "relevance_hits": [
-        "eeg",
-        "ecog",
-        "neural network"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 14,
+      "index": 9,
       "pmid": "42893423",
       "title": "Artificial Intelligence and Connected Technologies in Chronic Pain Management: A Scoping Review.",
       "title_zh": "",
@@ -565,7 +420,7 @@
       "priority": "推荐"
     },
     {
-      "index": 15,
+      "index": 10,
       "pmid": "42891881",
       "title": "Network-guided Thalamic Neuromodulation for Epilepsy.",
       "title_zh": "",
@@ -598,7 +453,7 @@
       "priority": "必读"
     },
     {
-      "index": 16,
+      "index": 11,
       "pmid": "42889040",
       "title": "What happens in vagus.",
       "title_zh": "",
@@ -629,7 +484,7 @@
       "priority": "必读"
     },
     {
-      "index": 17,
+      "index": 12,
       "pmid": "42888254",
       "title": "Circuit-constrained molecular neuroethology in the medicinal leech Hirudo verbana.",
       "title_zh": "",
@@ -651,63 +506,6 @@
       "relevance_score": 0,
       "relevance_hits": [],
       "priority": "浏览"
-    },
-    {
-      "index": 18,
-      "pmid": "42887034",
-      "title": "Combining responsive neurostimulation with resection or ablation for treatment of epilepsy: a multicenter experience.",
-      "title_zh": "",
-      "journal": "Journal of neurosurgery",
-      "iso_journal": "J Neurosurg",
-      "authors": [
-        "Lopez Ramos CG",
-        "Raslan AM",
-        "Rao VR",
-        "Chang EF",
-        "Liu M",
-        "Krishnan V",
-        "Sheth SA",
-        "Paulo DL",
-        "Patra SE",
-        "Burdette DE",
-        "McCarthy PM",
-        "Skidmore C",
-        "Wu C",
-        "Ziechmann R",
-        "Mnatsakanyan L",
-        "Vadera S",
-        "Eliashiv D",
-        "Fried I",
-        "Alzuabi M",
-        "Quraishi IH",
-        "Gerrard J",
-        "Bui T",
-        "Uysal U",
-        "Kinsman M",
-        "McCandless M",
-        "Ernst LD"
-      ],
-      "pubdate": "2026 Oct 16",
-      "doi": "10.3171/2026.5.JNS252911",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42887034/",
-      "abstract": "OBJECTIVE: Despite advances in surgical and neuromodulatory treatments, a substantial proportion of patients with drug-resistant epilepsy remain ineligible for standalone resection or ablation. Combining resection or laser interstitial thermal therapy (LITT) with responsive neurostimulation (RNS) has emerged as a promising approach for patients with multifocal seizure onset or eloquent cortex involvement. However, the clinical impact of combination surgery remains poorly characterized. The aim of this study was to characterize the clinical rationale and surgical decision-making used across multiple high-volume epilepsy centers performing combination surgeries, and to evaluate the seizure outcomes and safety profile associated with this approach.\nMETHODS: This retrospective study included patients with drug-resistant epilepsy who underwent RNS implantation in combination with resection or LITT at 9 epilepsy centers and had ≥ 1 year of follow-up. Demographic, clinical, surgical, and seizure outcome data were collected. The primary outcome was seizure reduction at 1 year. Secondary outcomes included the Clinical Global Impression and adverse events.\nRESULTS: Overall, 73 patients (40 male, mean age 34 years) with a mean epilepsy duration of 21 years were included in this analysis. The most common etiology was unknown (37%), followed by cortical malformation (16%). Most patients experienced focal impaired consciousness (FIC, 78%) and focal to bilateral tonic-clonic (FBTC, 70%) seizures. Prior resection was performed in 23%. Combination procedures were performed on the same day in 89% of patients. RNS implantation was concurrent with resection in 92% and with LITT in 8.2% of patients. Neocortical and mesial temporal regions accounted for 61% of resection/ablation targets. More than two-thirds of RNS leads were subdural strips, most commonly in the left hemisphere (73%). Indications for the combined approach included eloquent cortex involvement (67%) and multifocal seizure onset (33%) or both (9.6%). At 1 year, mean seizure reductions were 53% for focal impaired, 69% for FIC, and 67% for FBTC seizures. Overall, 48% of patients had at least a 6-month period of seizure freedom, and 4 patients had no seizures after surgery. Significant global clinical improvement (much or very much improved) was observed in 79% of patients. Three patients experienced infection, and 1 patient died due to causes unrelated to surgical treatment (sudden unexpected death in epilepsy).\nCONCLUSIONS: Combined RNS with resection or ablation might provide meaningful seizure control in complex drug-resistant epilepsy with acceptable safety profiles. These findings describe current practice and support further investigation of hybrid surgical strategies in patients with challenging seizure networks as a potential treatment strategy.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 46,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures",
-        "drug-resistant",
-        "focal",
-        "tonic-clonic",
-        "mesial",
-        "responsive"
-      ],
-      "priority": "必读"
     }
   ]
 }
