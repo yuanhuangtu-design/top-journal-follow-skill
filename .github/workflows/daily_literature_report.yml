@@ -2,14 +2,19 @@ name: Daily Literature Report
 
 on:
   schedule:
-    # 每天 21:00 UTC = 05:00 北京时间（GitHub免费账户cron延迟约3小时，预计08:00左右跑完）
+    # 北京时间05:00触发；GitHub实际启动可能延迟。
     - cron: "0 21 * * *"
   workflow_dispatch:
     inputs:
       report_date:
-        description: "指定报告日期 YYYY-MM-DD（留空=今天，检索前一天的文献）"
+        description: "指定报告日期 YYYY-MM-DD（留空=今天）"
         required: false
         default: ""
+      run_mode:
+        description: "运行方式：正常日报、只读连接检查、仅补录已保存候选"
+        type: choice
+        options: [daily, check_connection, sync_pending]
+        default: daily
 
 permissions:
   contents: write
@@ -22,6 +27,14 @@ jobs:
   daily-report:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      RUN_MODE: ${{ inputs.run_mode || 'daily' }}
+      FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+      FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+      FEISHU_APP_TOKEN: ${{ secrets.FEISHU_APP_TOKEN }}
+      FEISHU_TABLE_ID: ${{ secrets.FEISHU_TABLE_ID }}
+      FEISHU_EXPECTED_APP_ID: cli_aa5219a0e079dbf6
+      FEISHU_REQUIRED: "true"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,27 +44,36 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Test Feishu synchronization
+        run: python -m unittest discover -s tests -v
+
+      - name: Check imported Feishu table
+        if: env.RUN_MODE == 'check_connection'
+        run: python scripts/feishu_sync.py --check
+
+      - name: Sync saved candidates only
+        if: env.RUN_MODE == 'sync_pending'
+        run: python scripts/feishu_sync.py --flush-pending
+
       - name: Install dependencies
-        run: |
-          pip install --quiet requests deep-translator
+        if: env.RUN_MODE == 'daily'
+        run: pip install --quiet requests deep-translator
 
       - name: Run daily literature pipeline
+        if: env.RUN_MODE == 'daily'
         env:
+          REPORT_DATE: ${{ inputs.report_date }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_PARENT_PAGE_ID: ${{ secrets.NOTION_PARENT_PAGE_ID }}
           NOTION_PARENT_TYPE: ${{ vars.NOTION_PARENT_TYPE }}
-          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
-          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
-          FEISHU_APP_TOKEN: ${{ secrets.FEISHU_APP_TOKEN }}
-          FEISHU_TABLE_ID: ${{ secrets.FEISHU_TABLE_ID }}
         run: |
-          DATE_ARG=""
-          if [ -n "${{ inputs.report_date }}" ]; then
-            DATE_ARG="--date ${{ inputs.report_date }}"
+          args=()
+          if [ -n "$REPORT_DATE" ]; then
+            args+=(--date "$REPORT_DATE")
           fi
-          python scripts/run_daily.py $DATE_ARG
+          python scripts/run_daily.py "${args[@]}"
 
-      - name: Upload daily report (HTML + JSON)
+      - name: Upload daily report and pending records
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -59,12 +81,12 @@ jobs:
           path: |
             output/daily_report_*.html
             output/daily_report_*.json
+            output/feishu_*.json
+            reports/feishu_pending.json
           retention-days: 30
 
-      - name: Commit latest report back to repository
-        # 即使飞书写入失败（上一步 exit 1），也要把 PubMed 检索报告留档，便于事后补录；
-        # job 仍会因 pipeline 步骤失败而标红，不会掩盖问题。
-        if: always()
+      - name: Commit latest report and pending queue
+        if: ${{ always() && env.RUN_MODE != 'check_connection' }}
         run: |
           mkdir -p reports
           cp -f output/daily_report_latest.html reports/latest.html 2>/dev/null || true
@@ -75,6 +97,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "no changes to commit"
           else
-            git commit -m "docs: update daily literature report"
+            git commit -m "docs: update literature report and pending queue"
             git push
           fi
