@@ -1,19 +1,19 @@
 {
   "meta": {
-    "report_date": "2026-10-22",
-    "target_edat": "2026-10-21",
+    "report_date": "2026-10-23",
+    "target_edat": "2026-10-22",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-10-22 00:01:33",
+    "generated_at": "2026-10-22 23:59:24",
     "feishu_diag": {
       "status": "ok",
       "stage": "complete",
       "searched": 20,
-      "created": 8,
-      "expected": 8,
+      "created": 2,
+      "expected": 2,
       "verified": true,
       "candidates": 20,
-      "dedup_skipped": 12,
+      "dedup_skipped": 18,
       "pending": 0
     }
   },
@@ -21,20 +21,21 @@
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 2,
-      "total": 2,
+      "count": 1,
+      "total": 1,
       "pmids": [
-        "42897303",
-        "42895730"
+        "42897303"
       ],
       "status": "ok"
     },
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 13,
-      "total": 13,
+      "count": 15,
+      "total": 15,
       "pmids": [
+        "42904588",
+        "42904568",
         "42901121",
         "42901120",
         "42901119",
@@ -75,12 +76,11 @@
     {
       "group": "D",
       "label": "闭环神经调控 · Closed-loop Neuromodulation",
-      "count": 3,
-      "total": 3,
+      "count": 2,
+      "total": 2,
       "pmids": [
         "42902320",
-        "42900250",
-        "42894014"
+        "42900250"
       ],
       "status": "ok"
     }
@@ -127,68 +127,76 @@
     },
     {
       "index": 2,
-      "pmid": "42895730",
-      "title": "Vascular Risk Factors and Late-Onset Epilepsy.",
-      "title_zh": "血管危险因素和晚发性癫痫。",
-      "journal": "JAMA neurology",
-      "iso_journal": "JAMA Neurol",
+      "pmid": "42904588",
+      "title": "Reasons for not reoperating and outcomes of reoperation after seizure recurrence in pediatric epilepsy surgery: A population-based study.",
+      "title_zh": "小儿癫痫手术中癫痫复发后不再手术的原因和再手术的结果：一项基于人群的研究。",
+      "journal": "Epilepsia",
+      "iso_journal": "Epilepsia",
       "authors": [
-        "Choi H",
-        "Gutierrez J",
-        "Wang T",
-        "Liu M",
-        "Leu CS",
-        "Misiewicz S",
-        "Han J",
-        "Bello NA",
-        "Biggs ML",
-        "Briceño EM",
-        "Brickman AM",
-        "Burke JF",
-        "Chen L",
-        "Colantonio LD",
-        "Diaz Andino SP",
-        "Elkind MSV",
-        "Fitzpatrick AL",
-        "Gonzalez Corona C",
-        "Gottesman RF",
-        "Gross AL",
-        "Huang L",
-        "Johnson EL",
-        "Johnson WC",
-        "Levine DA",
-        "Longstreth WT Jr",
-        "Pelagalli Maia S",
-        "Mayeux RP",
-        "Petersen BC",
-        "Obalana O",
-        "Reyes-Dumeyer D",
-        "Rundek T",
-        "Sanchez D",
-        "Shea SJ",
-        "Strobino K",
-        "Tom SE",
-        "Zhu CW",
-        "Thacker EL"
+        "Zheng V",
+        "Karppinen A",
+        "Gaily E",
+        "Koroknay-Pál P",
+        "Lehtinen H",
+        "Metsähonkala EL"
       ],
-      "pubdate": "2026 Oct 19",
-      "doi": "10.1001/jamaneurol.2026.3708",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42895730/",
-      "abstract": "IMPORTANCE: Late-onset epilepsy (LOE; onset at age ≥65 years) is increasingly recognized in older adults and may be associated with vascular risk.\nOBJECTIVE: To identify vascular risk factors (VRFs) associated with incident LOE in older adults.\nDESIGN, SETTING, AND PARTICIPANTS: This study is an individual participant data meta-analysis of 6 US population-based prospective cohort studies (the Epilepsy-Cog Study). In 5 cohorts linked to Medicare for epilepsy case ascertainment, follow-up for LOE began when a participant had accrued 2 years of continuous fee-for-service enrollment and was 65 years of age or older and extended to the end of continuous enrollment. Claims linkage covered 1991-2018 in the Atherosclerosis Risk in Communities Study (ARIC), 1992-2019 in the Cardiovascular Health Study (CHS), 2000-2019 in the Multi-Ethnic Study of Atherosclerosis (MESA), 2000-2020 in the Reasons for Geographic and Racial Differences in Stroke Study (REGARDS), and 1999-2019 in the Washington Heights/Inwood Columbia Aging Project (WHICAP). In the Northern Manhattan Study (NOMAS), which was not Medicare linked and used cohort-based epilepsy case ascertainment, follow-up for LOE began at cohort entry in 1993-2008 and extended to 2024. Data analysis was completed in January 2026.\nEXPOSURES: Sociodemographic characteristics and VRFs assessed by self-report, examinations, laboratory measures, and medication use.\nMAIN OUTCOME AND MEASURES: The primary outcome was incident LOE. Associations between risk factors and incident LOE were evaluated using multivariable Cox proportional hazards models to estimate hazard ratios.\nRESULTS: From 43 753 participants in Epilepsy-Cog, 551 participants with prevalent epilepsy and 945 with no follow-up after Epilepsy-Cog baseline were excluded. Among 42 257 participants (mean [SD] age, 71.4 [6.9] years; 23 383 [56.0%] female) followed up for a mean (SD) of 9.3 (6.2) years, 1500 participants (3.5%) developed LOE (3.8 per 1000 person-years). In fully adjusted models, LOE risk was higher with current smoking (HR = 1.39; 95% CI, 1.18-1.64), hypertension (HR = 1.17; 95% CI, 1.04-1.31), diabetes (HR = 1.42; 95% CI, 1.25-1.62), chronic kidney disease (HR = 1.29; 95% CI, 1.13-1.48), history of stroke (HR = 1.99; 95% CI, 1.63-2.43), and apolipoprotein E ε4 allele (1 ε4 allele: HR = 1.22; 95% CI, 1.07-1.39; 2 ε4 alleles: HR = 1.84; 95% CI, 1.36-2.50). Associations of VRFs with LOE were similar across age, sex, and race and ethnicity subgroups.\nCONCLUSIONS AND RELEVANCE: In this pooled analysis of 6 US cohorts, multiple VRFs and a history of stroke were associated with incident LOE. These findings suggest that LOE may reflect the underlying burden of brain vascular disease.",
-      "abstract_zh": "重要性：晚发性癫痫（ LOE ；发病年龄≥ 65岁）在老年人中日益得到认可，并可能与血管风险相关。\n目的：识别与老年人LOE事件相关的血管危险因素（ VRF ）。\n设计、设置和参与者：本研究是对6项基于美国人群的前瞻性队列研究的个体参与者数据荟萃分析（癫痫-齿轮研究）。 在与Medicare相关的5个队列中f\n或癫痫病例确定时， LOE的随访始于参与者累计连续2年的收费服务招募，年龄为65岁或以上，并延长至连续招募结束。1991-2018年社区动脉粥样硬化风险研究（ ARIC ） ， 1992-2019年心血管健康研究（ CHS ） ， 2000-2019年多民族动脉粥样硬化研究（ MESA ） ， 2000-2020年\n或中风研究的地理和种族差异（ REGARDS ） ，以及华盛顿高地/英伍德哥伦比亚老龄化项目（ WHICAP ）中的1999-2019。 在北曼哈顿研究（ NOMAS ）中，该研究与Medicare无关，并使用基于队列的癫痫病例确定， LOE的随访始于1993-2008年的队列入组，并延长至2024年。 数据分析于2026年1月完成。\n暴露：社会人口学特征和VRF的评估依据为\n自我报告、检查、实验室措施和药物使用。\n主要结局和措施：主要结局是事件LOE。 使用多变量Cox比例风险模型评估风险因素与事件LOE之间的关联，以估计风险比。\n结果：在癫痫-Cog的43 753名参与者中，排除了551名流行性癫痫参与者和945名癫痫-Cog基线后无随访的参与者。其中42 2\n57名受试者（平均[SD]年龄， 71.4 [6.9]岁； 23 383 [56.0%]女性）的平均随访（ SD ）为9.3 （ 6.2 ）岁， 1500名受试者（ 3.5% ）出现LOE （每1000人年3.8 ）。在完全调整的模型中， LOE风险更高，包括当前吸烟（ HR = 1.39 ； 95% CI ， 1.18-1.64 ）、高血压（ HR = 1.17 ； 95% CI ， 1.04-1.31 ）、糖尿病（ HR = 1.42 ； 95% CI ， 1.25-1.62 ）、慢性肾脏疾病（ HR = 1.29 ； 95% CI ， 1.13-1.48 ）、卒中史（ HR =\n = 1.99 ； 95% CI ， 1.63-2.43 ）和载脂蛋白E ε4等位基因（ 1 ε4等位基因： HR = 1.22 ； 95% CI ， 1.07-1.39 ； 2 ε4等位基因： HR = 1.84 ； 95% CI ， 1.36-2.50 ）。 VRF与LOE的关联在年龄、性别、种族和族裔亚组中相似。\n结论和相关性：在这项对6个美国队列的汇总分析中，多个VRF和卒中病史与LOE事件相关。 这些调查结果表明， LOE可能反映了潜在的负担\n脑血管疾病。",
+      "pubdate": "2026 Oct 21",
+      "doi": "10.1002/epi.70561",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42904588/",
+      "abstract": "OBJECTIVE: Epilepsy surgery is an established and effective treatment for children with drug-resistant epilepsy. Although the majority of patients become seizure-free postoperatively, 20%-40% experience seizure recurrence. Although repeat surgery can achieve seizure freedom in selected cases, the reasons children with seizure recurrence do not undergo reoperation remain poorly understood. We aimed to characterize the reasons for not pursuing reoperation and to evaluate the outcomes of repeat epilepsy surgery in a nationwide pediatric cohort.\nMETHODS: We conducted a retrospective study of all patients <19 years old who underwent resective epilepsy surgery at the national pediatric epilepsy surgery center in Finland between 2002 and 2023. Patients with postoperative seizure recurrence were included. Clinical characteristics, reasons for not undergoing reoperation, and surgical outcomes were analyzed.\nRESULTS: Of 245 children who underwent resective epilepsy surgery, 104 experienced postoperative seizure recurrence. After exclusion of four patients who died during follow-up, nine who had undergone hemispherotomy, and 12 undergoing palliative primary surgery, 79 patients were included in the study cohort. Of these, 35 (44.3%) underwent reoperation, accounting for 45 reoperations in total. The most common reason for not pursuing reoperation was low seizure burden (59.1%). Patient or family refusal was rare. After the final surgery, 14 of 35 patients (40.0%) achieved Engel class I outcome. Unexpected complications occurred in two of 35 patients after the first reoperation (5.7%) and in six of 45 of all reoperation procedures (13.3%).\nSIGNIFICANCE: Reoperation is a meaningful treatment option in children with seizure recurrence after \"failed\" initial epilepsy surgery. Clinical factors, particularly seizure burden, predominantly determine reoperation candidacy. These findings support systematic reevaluation at specialized epilepsy surgery centers following seizure recurrence after initial surgery in pediatric patients.",
+      "abstract_zh": "目的：癫痫手术是儿童耐药性癫痫的既定有效治疗方法。尽管大多数患者术后无癫痫发作，但仍有20% -40%的患者出现癫痫复发。尽管在选定的病例中重复手术可以实现癫痫发作的自由度，但对癫痫复发儿童不再手术的原因仍然知之甚少。我们的目标是描述不寻求重开的原因\n并评估全国儿科队列中重复癫痫手术的结果。\n方法：我们对2002年至2023年期间在芬兰国家儿科癫痫手术中心接受切除性癫痫手术的所有19岁以下患者进行了回顾性研究。 纳入了术后癫痫复发的患者。 临床特征、未接受再手术的原因以及手术结局\ne已分析。\n结果： 245例行癫痫切除术的儿童中， 104例术后癫痫复发。 在排除4名随访期间死亡的患者、9名接受半球切开术的患者和12名接受姑息性原发手术的患者后， 79名患者被纳入研究队列。 其中， 35例（ 44.3% ）接受了再手术，共计45例再手术。 不进行再手术的最常见原因\n癫痫发作负担低（ 59.1 ％ ）。 患者或家属拒绝治疗的情况很少见。 最后一次手术后， 35名患者中有14名（ 40.0% ）达到ENGEL I级结局。 首次手术后35例患者中有2例发生意外并发症（ 5.7% ） ， 45例手术中有6例发生意外并发症（ 13.3% ）。\n意义：再手术是初始癫痫手术“失败”后癫痫复发的儿童有意义的治疗选择。临床\n因素，特别是癫痫发作负担，主要决定再次手术的候选资格。这些发现支持在儿科患者初始手术后癫痫复发后在专门的癫痫手术中心进行系统的重新评估。",
       "hit_groups": [
-        "A"
+        "B1"
       ],
       "group_count": 1,
-      "relevance_score": 14,
+      "relevance_score": 31,
       "relevance_hits": [
         "epilepsy",
-        "ecog"
+        "seizure",
+        "drug-resistant"
       ],
       "priority": "必读"
     },
     {
       "index": 3,
+      "pmid": "42904568",
+      "title": "Artificial intelligence applications in intracranial electroencephalography for epilepsy management: Insights from AI in Epilepsy 2025.",
+      "title_zh": "人工智能在颅内脑电图治疗癫痫中的应用： 2025年人工智能在癫痫中的见解。",
+      "journal": "Epilepsia",
+      "iso_journal": "Epilepsia",
+      "authors": [
+        "Frauscher B",
+        "Afzal MF",
+        "Davis KA",
+        "Provenza N",
+        "Sheth SA",
+        "Smith RJ",
+        "Thomas J"
+      ],
+      "pubdate": "2026 Oct 21",
+      "doi": "10.1002/epi.70461",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42904568/",
+      "abstract": "Intracranial electroencephalography (iEEG) provides direct recordings of cortical activity and remains central to the presurgical evaluation of drug-resistant focal epilepsy. However, the high dimensionality and complexity of iEEG data increasingly challenge conventional visual interpretation. Artificial intelligence (AI) methods have accelerated quantitative analyses in electrophysiology, supporting localization, outcome prediction, and therapeutic decision-making in epilepsy. This article reviews recent advances in the application of AI to iEEG in epilepsy and in particular stereo-EEG, although the concepts discussed are broadly relevant across iEEG modalities. Although many of these approaches have shown encouraging results, the current evidence remains largely preliminary, with most studies being retrospective, single-center investigations that lack independent external validation. AI-based integration of iEEG with multimodal magnetic resonance imaging shows promise for improving surgical planning in drug-resistant focal epilepsy. Concurrently, early studies suggest that AI-driven iEEG analysis may enhance epileptogenic zone identification by detecting subtle electrophysiological signatures, network interactions, and temporal dynamics. These multimodal frameworks emphasize distributed epileptic networks rather than isolated focal abnormalities. AI is also reshaping how iEEG-guided stimulation is designed and interpreted. Data-driven approaches have the potential to optimize stimulation parameters, predict network responses, and clarify mechanisms underlying diagnostic and therapeutic stimulation, laying the groundwork for adaptive, patient-specific neuromodulation. Beyond short-term epilepsy monitoring, AI applications increasingly incorporate continuous sensing, longitudinal network modeling, and integration with implantable neurotechnology platforms. Although these developments require prospective multicenter studies with external validation before widespread clinical implementation, advances in multimodal data integration, interpretable modeling, and continuous sensing position AI-enhanced iEEG as an emerging platform for precision brain network medicine for epilepsy.",
+      "abstract_zh": "颅内脑电图（ iEEG ）提供皮质活动的直接记录，并且仍然是耐药性局灶性癫痫术前评估的核心。然而， iEEG数据的高维度和复杂性越来越挑战传统的视觉解释。人工智能（ AI ）方法加速了电生理学的定量分析，支持定位、结果预测和治疗\n癫痫的抽动决策。本文回顾了人工智能在癫痫中应用iEEG的最新进展，特别是立体EEG ，尽管所讨论的概念在iEEG模式中具有广泛的相关性。尽管其中许多方法已显示出令人鼓舞的结果，但目前的证据在很大程度上仍是初步的，大多数研究是回顾性的、单中心的研究，缺乏独立的外部验证。A\n基于I的iEEG与多峰磁共振成像的集成显示出改善耐药性局灶性癫痫手术规划的希望。同时，早期的研究表明，人工智能驱动的iEEG分析可以通过检测微妙的电生理特征、网络相互作用和时间动态来增强癫痫发作区的识别。这些多模式框架强调分布式癫痫网络，而不是孤立的\n局灶性异常。AI也在重塑iEEG引导刺激的设计和解释方式。数据驱动的方法有可能优化刺激参数，预测网络反应，并阐明诊断和治疗刺激的基本机制，为适应性、患者特异性神经调节奠定基础。除了短期癫痫监测之外，人工智能应用越来越多地采用连续感应，\n纵向网络建模，以及与植入式神经技术平台的集成。尽管这些发展需要在广泛临床实施之前进行具有外部验证的前瞻性多中心研究，但多模态数据集成、可解释建模和连续传感方面的进步将AI增强的iEEG定位为癫痫精准脑网络医学的新兴平台。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 37,
+      "relevance_hits": [
+        "epilepsy",
+        "epileptic",
+        "drug-resistant",
+        "electroencephalogr",
+        "eeg",
+        "focal",
+        "intracranial",
+        "adaptive"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 4,
       "pmid": "42901121",
       "title": "The spatial extent of fast ripples is associated with cognitive and language deficits in children with focal epilepsy: An exploratory SEEG study.",
       "title_zh": "快速涟漪的空间范围与局灶性癫痫儿童的认知和语言缺陷有关：一项探索性SEEG研究。",
@@ -228,7 +236,7 @@
       "priority": "必读"
     },
     {
-      "index": 4,
+      "index": 5,
       "pmid": "42901120",
       "title": "Caregiver experience of diazepam nasal spray treatment in children aged 2-5 years.",
       "title_zh": "地西泮鼻喷雾剂治疗2-5岁儿童的护理经验。",
@@ -263,7 +271,7 @@
       "priority": "必读"
     },
     {
-      "index": 5,
+      "index": 6,
       "pmid": "42901119",
       "title": "Physical exercise as an adjunct to the pharmacological treatment of epilepsy: a priority for future research.",
       "title_zh": "体育锻炼作为癫痫药理治疗的辅助手段：未来研究的优先事项。",
@@ -295,7 +303,7 @@
       "priority": "必读"
     },
     {
-      "index": 6,
+      "index": 7,
       "pmid": "42901118",
       "title": "Generalized Spike-Wave discharges and myoclonic features in a subgroup of children with Self-Limited epilepsy with centrotemporal spikes.",
       "title_zh": "自限性癫痫伴中心颞叶尖峰儿童亚组中的广义尖峰波放电和肌阵挛特征。",
@@ -316,7 +324,7 @@
       "doi": "10.1016/j.yebeh.2026.111336",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42901118/",
       "abstract": "OBJECTIVE: Generalized spike-wave discharges (GSWD) are occasionally observed in patients with self-limited epilepsy with centrotemporal spikes (SeLECTS), but their clinical significance remains unclear. This study aimed to characterize the electroclinical features of these patients and to explore their potential clinical implications.\nMETHODS: We retrospectively reviewed the clinical data of 148 children diagnosed with SeLECTS at Xuanwu Hospital from June 2015 to October 2025. Patients with GSWD on electroencephalography were identified and compared with those without GSWD regarding demographic characteristics, seizure semiology, auxiliary examination findings, treatment response, and outcomes.\nRESULTS: GSWD were identified in 9 of 148 patients (6.1 %) with SeLECTS. These 9 patients included 4 males and 5 females, with a median onset age of 8 (IQR: 5-10) years. Compared with those without GSWD, they more frequently showed wakefulness seizures (44.4 % vs 5.8 %, p < 0.05), generalized tonic-clonic seizures during sleep (44.4 %), and myoclonic manifestations (77.8 %). Other clinical variables were similar between groups. All 9 patients achieved freedom from focal and generalized tonic-clonic seizures, though one required prolonged combination therapy. Two patients with follow-up exceeding 10 years showed electroclinical evolution toward juvenile myoclonic epilepsy, characterized by the absence of centrotemporal spikes, with generalized spike-wave bursts recurring on later EEGs.\nCONCLUSION: We identified a subgroup of patients with SeLECTS characterized by the coexistence of GSWD and myoclonic features, showing partial electroclinical overlap with juvenile myoclonic epilepsy. These findings broaden the electroclinical spectrum of SeLECTS, though the relationship between focal and generalized network dysfunction in this subgroup requires confirmation in larger, prospectively followed cohorts.",
-      "abstract_zh": "目的：在中颞尖峰型自限性癫痫（ SeLECTS ）患者中偶尔观察到全身性尖峰波放电（ GSWD ） ，但其临床意义尚不清楚。 本研究旨在表征这些患者的电临床特征并探索其潜在的临床意义。\n方法：回顾性分析宣武医院148例SeLECTS患儿的临床资料。\n从2015年6月到2025年10月。 对接受脑电图检查的GSWD患者进行了识别，并在人口统计学特征、癫痫发作特征、辅助检查结果、治疗反应和结局方面与未接受GSWD的患者进行了比较。\n结果： 148例SeLECTS患者中有9例（ 6.1% ）鉴定出GSWD。 这9名患者包括4名男性和5名女性，中位发病年龄为8岁（ IQR ： 5-10 ）。 与witho相比\nuT GSWD ，他们更频繁地表现出清醒癫痫发作（ 44.4 ％ vs 5.8 ％ ， p < 0.05 ） ，睡眠期间全身强直-阵挛性癫痫发作（ 44.4 ％ ）和肌阵挛表现（ 77.8 ％ ）。两组之间的其他临床变量相似。所有9名患者均未发生局灶性和全身性强直-阵挛性癫痫发作，但1名患者需要长期联合治疗。两名随访超过10年的患者显示出电临床进展\n青少年肌阵挛性癫痫，其特征是没有中心颞叶尖峰，在后来的脑电图上反复出现广义尖峰波爆发。\n结论：我们确定了一个以GSWD和肌阵挛特征共存为特征的SeLECTS患者亚组，显示出与青少年肌阵挛性癫痫的部分电临床重叠。 这些发现拓宽了SeLECTS的电临床范围，尽管\n该亚组中的cal和广义网络功能障碍需要在更大、前瞻性随访的队列中得到确认。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -335,10 +343,10 @@
       "priority": "必读"
     },
     {
-      "index": 7,
+      "index": 8,
       "pmid": "42901117",
       "title": "Age-related differences in quality of life among people with epilepsy: an exploratory cross-sectional analysis of an Australian community sample.",
-      "title_zh": "癫痫患者中与年龄相关的生活质量差异：澳大利亚社区样本的探索性横断面分析。",
+      "title_zh": "",
       "journal": "Epilepsy & behavior : E&B",
       "iso_journal": "Epilepsy Behav",
       "authors": [
@@ -349,7 +357,7 @@
       "doi": "10.1016/j.yebeh.2026.111341",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42901117/",
       "abstract": "BACKGROUND: Epilepsy and ageing is an under-researched area particularly the Quality of Life (QoL) of older people with epilepsy (PWE). The effects of age on QoL needs an appreciation of the social and material context (Australia).\nMETHOD: The Australian Epilepsy Longitudinal Study (AELS) into the Social Impact of Epilepsy is repeated every three years. Wave 6 of the AELS analysed the extent to which age differences explain QoL and particularly QoL outcomes for older PWE. For this the QOLIE-31 was used.\nRESULTS: Older age led significantly to increasing QoL compared to younger adults. The dimension of QOLIE-31 Energy/fatigue and 3 other dimensions had the greatest difference between older and younger PWE. These were Social Function, Cognition and Emotional Well-being. Seizures led to lower QoL for older PWE and those 39-59 years compared to the youngest adults (aged 18-38 years) where seizures did not have a significant effect on QoL. Tangible supports of older people were significantly lower in their effect on QoL than for younger adults. For older PWE only, increased anti-seizure medication (ASM) use led significantly to lower QoL Living in the City benefitted 39-59 year olds in terms of affectionate support. This was not the case for younger or older PWE.\nCONCLUSION: For older PWE certain issues need to be addressed such as comorbidities, depression and recognizing the value of social support. These should be in the context of the social impact of epilepsy.",
-      "abstract_zh": "背景：癫痫和衰老是一个研究不足的领域，尤其是老年癫痫患者（ PWE ）的生活质量（ QOL ）。 年龄对生活质量的影响需要了解社会和物质背景（澳大利亚）。\n方法：澳大利亚癫痫纵向研究（ AELS ）对癫痫的社会影响每三年重复一次。 AELS的第6波分析了年龄差异在多大程度上解释了QOL ，特别是Q\no老年PWE的L结局。 为此使用了QOLIE-31。\n结果：与年轻人相比，年龄越大，生活质量越高。 QOLIE-31能量/疲劳维度和其他3个维度在老年和年轻PWE之间的差异最大。 这些是社交功能、认知和情感幸福感。 与最年轻的成年人（ 18-38岁）相比，癫痫发作导致年龄较大的PWE和39-59岁的人的生活质量较低，其中\nizures对QOL没有显著影响。 老年人的有形支持对生活质量的影响明显低于年轻人。 仅对于年龄较大的PWE ，抗癫痫药物（ ASM ）使用的增加导致城市生活质量降低，在深情支持方面使39-59岁的人受益。 对于年龄较小或较大的PWE ，情况并非如此。\n结论：对于较旧的PWE ，某些问题需要解决，例如c\n患病、抑郁和认识到社会支持的价值。这些应该在癫痫的社会影响的背景下进行。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -364,10 +372,10 @@
       "priority": "必读"
     },
     {
-      "index": 8,
+      "index": 9,
       "pmid": "42901116",
       "title": "Real-world effectiveness and safety of cenobamate in children and adolescents with drug-resistant epilepsy: a systematic review, meta-analysis, and meta-regression.",
-      "title_zh": "西诺氨酸在儿童和青少年耐药性癫痫中的实际有效性和安全性：系统评价、荟萃分析和荟萃消退。",
+      "title_zh": "",
       "journal": "Epilepsy & behavior : E&B",
       "iso_journal": "Epilepsy Behav",
       "authors": [
@@ -397,7 +405,7 @@
       "priority": "必读"
     },
     {
-      "index": 9,
+      "index": 10,
       "pmid": "42897864",
       "title": "A Bayesian framework for a sudden unexpected death in epilepsy risk-reduction indication.",
       "title_zh": "",
@@ -423,7 +431,7 @@
       "priority": "推荐"
     },
     {
-      "index": 10,
+      "index": 11,
       "pmid": "42897859",
       "title": "Progressive Hippocampal Volume Reduction Beyond Normal Aging in Temporal Lobe Epilepsy: A Longitudinal MRI Study.",
       "title_zh": "",
@@ -455,7 +463,7 @@
       "priority": "必读"
     },
     {
-      "index": 11,
+      "index": 12,
       "pmid": "42897841",
       "title": "Early neurocognitive outcomes following SEEG with radiofrequency thermocoagulation.",
       "title_zh": "",
@@ -502,7 +510,7 @@
       "priority": "必读"
     },
     {
-      "index": 12,
+      "index": 13,
       "pmid": "42897828",
       "title": "Validation of the diagnosis of Lennox-Gastaut syndrome: Challenges and lessons learned.",
       "title_zh": "",
@@ -543,7 +551,7 @@
       "priority": "必读"
     },
     {
-      "index": 13,
+      "index": 14,
       "pmid": "42897771",
       "title": "Beyond neuroprotection: Context-dependent effects of GLP-1 receptor agonists on seizure susceptibility.",
       "title_zh": "",
@@ -573,7 +581,7 @@
       "priority": "必读"
     },
     {
-      "index": 14,
+      "index": 15,
       "pmid": "42897767",
       "title": "The translational asymmetry of corpus callosotomy: Two literatures that answered different questions.",
       "title_zh": "",
@@ -606,7 +614,7 @@
       "priority": "必读"
     },
     {
-      "index": 15,
+      "index": 16,
       "pmid": "42897757",
       "title": "Symptom-related damage patterns in mesial temporal lobe epilepsy with hippocampal sclerosis.",
       "title_zh": "",
@@ -651,7 +659,7 @@
       "priority": "必读"
     },
     {
-      "index": 16,
+      "index": 17,
       "pmid": "42901375",
       "title": "Intrinsic and extrinsic connectivity of the seizure onset zone at rest and during stimulation.",
       "title_zh": "",
@@ -696,7 +704,7 @@
       "priority": "必读"
     },
     {
-      "index": 17,
+      "index": 18,
       "pmid": "42902320",
       "title": "EEG-defined differences in functional networks following beta-band transcranial alternating current stimulation in patients with disorders of consciousness: a pilot study.",
       "title_zh": "",
@@ -731,7 +739,7 @@
       "priority": "必读"
     },
     {
-      "index": 18,
+      "index": 19,
       "pmid": "42899673",
       "title": "Delineating neural contributions to electroencephalogram-based speech decoding.",
       "title_zh": "",
@@ -769,7 +777,7 @@
       "priority": "必读"
     },
     {
-      "index": 19,
+      "index": 20,
       "pmid": "42900250",
       "title": "Sleep Spindles and Slow Oscillations as Potential Biomarkers and Therapeutic Targets in Mild-to-Moderate Alzheimer's Disease.",
       "title_zh": "",
@@ -793,41 +801,6 @@
       "relevance_score": 12,
       "relevance_hits": [
         "closed-loop",
-        "transcranial",
-        "biomarker",
-        "stimulation"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 20,
-      "pmid": "42894014",
-      "title": "Repetitive transcranial magnetic stimulation (rTMS) combined with antidepressant pharmacotherapy for depression: state-dependent mechanisms, clinical evidence, and translational challenges.",
-      "title_zh": "",
-      "journal": "Molecular psychiatry",
-      "iso_journal": "Mol Psychiatry",
-      "authors": [
-        "Deng J",
-        "Shao Y",
-        "Jiang L",
-        "Wu B",
-        "Roberts N",
-        "Wang Q",
-        "Jia Z"
-      ],
-      "pubdate": "2026 Oct 18",
-      "doi": "10.1038/s41380-026-03930-8",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42894014/",
-      "abstract": "Depression is a highly prevalent and debilitating mental disorder. Pharmacotherapy remains the primary treatment modality; however, its efficacy is often limited by a delayed onset of action, suboptimal response in some patients, and a high risk of recurrence. Treatment-resistant depression, characterized by poor response to conventional therapies, poses a major clinical challenge and highlights the need for improved treatment strategies. Repetitive transcranial magnetic stimulation (rTMS), a noninvasive neuromodulation technique, has shown promise for depression, particularly when combined with antidepressant pharmacotherapy. Advances in neuroimaging, neurochemistry, and network neuroscience have clarified how high-frequency rTMS may modulate cortical excitability, monoaminergic transmission, synaptic plasticity, and distributed brain networks. Clinical evidence suggests that combined treatment may accelerate early improvement, increase response and remission, and reduce relapse risk; however, these benefits are heterogeneous across patients and symptom domains and should be interpreted in light of expectancy effects and limitations of sham blinding. Neuroimaging studies have identified treatment-associated functional and structural changes, including hippocampal volume changes, but the causal links among molecular signaling, circuit reorganization, structural findings, and symptom improvement remain unresolved. The interaction between rTMS and antidepressants should therefore not be viewed as uniformly additive or synergistic, but as a state-dependent process shaped by medication class, stimulation protocol and timing, cortical excitability, metaplasticity, and individual neurobiological context. This review integrates mechanistic, neuroimaging, and clinical evidence and discusses how biomarker-, state-, and symptom-informed targeting, optimized treatment sequencing, and pragmatic implementation strategies could improve the precision and accessibility of combined treatment for depression.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 8,
-      "relevance_hits": [
-        "hippocampal",
-        "neuromodulation",
         "transcranial",
         "biomarker",
         "stimulation"
