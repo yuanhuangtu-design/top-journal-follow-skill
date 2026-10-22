@@ -1,25 +1,20 @@
 {
   "meta": {
-    "report_date": "2026-10-21",
-    "target_edat": "2026-10-20",
+    "report_date": "2026-10-22",
+    "target_edat": "2026-10-21",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-10-20 23:42:46",
+    "generated_at": "2026-10-22 00:01:33",
     "feishu_diag": {
-      "status": "failed",
-      "env": {
-        "app_id_set": true,
-        "app_id_len": 20,
-        "app_secret_set": true,
-        "app_secret_len": 32,
-        "app_token_set": true,
-        "app_token": "DWh0bt8gyaNAcos9HNEcBQV9nqc",
-        "table_id_set": true,
-        "table_id": "tblRegWvkknu1MnT"
-      },
-      "steps": {
-        "tenant_token": "failed"
-      }
+      "status": "ok",
+      "stage": "complete",
+      "searched": 20,
+      "created": 8,
+      "expected": 8,
+      "verified": true,
+      "candidates": 20,
+      "dedup_skipped": 12,
+      "pending": 0
     }
   },
   "group_records": [
@@ -37,27 +32,33 @@
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 9,
-      "total": 9,
+      "count": 13,
+      "total": 13,
       "pmids": [
+        "42901121",
+        "42901120",
+        "42901119",
+        "42901118",
+        "42901117",
+        "42901116",
         "42897864",
         "42897859",
         "42897841",
         "42897828",
         "42897771",
         "42897767",
-        "42897757",
-        "42892148",
-        "42892089"
+        "42897757"
       ],
       "status": "ok"
     },
     {
       "group": "B2",
       "label": "神经科学刊 × Epilepsy",
-      "count": 0,
-      "total": 0,
-      "pmids": [],
+      "count": 1,
+      "total": 1,
+      "pmids": [
+        "42901375"
+      ],
       "status": "ok"
     },
     {
@@ -66,26 +67,25 @@
       "count": 2,
       "total": 2,
       "pmids": [
-        "42899673",
-        "42892501"
+        "42902320",
+        "42899673"
       ],
       "status": "ok"
     },
     {
       "group": "D",
       "label": "闭环神经调控 · Closed-loop Neuromodulation",
-      "count": 4,
-      "total": 4,
+      "count": 3,
+      "total": 3,
       "pmids": [
+        "42902320",
         "42900250",
-        "42894014",
-        "42893423",
-        "42891881"
+        "42894014"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 17,
+  "dedup_total": 20,
   "papers": [
     {
       "index": 1,
@@ -189,9 +189,218 @@
     },
     {
       "index": 3,
+      "pmid": "42901121",
+      "title": "The spatial extent of fast ripples is associated with cognitive and language deficits in children with focal epilepsy: An exploratory SEEG study.",
+      "title_zh": "快速涟漪的空间范围与局灶性癫痫儿童的认知和语言缺陷有关：一项探索性SEEG研究。",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Dallavalle M",
+        "von Ellenreider N",
+        "Bellerose J",
+        "Fiorino A",
+        "Hooker M",
+        "Sylvain-Roy S",
+        "Myers K",
+        "Osterman B",
+        "Simard-Tremblay E",
+        "Gotman J",
+        "Dudley RWR"
+      ],
+      "pubdate": "2026 Oct 20",
+      "doi": "10.1016/j.yebeh.2026.111339",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901121/",
+      "abstract": "OBJECTIVE: To determine if the spatial extent of interictal fast ripples in focal epilepsy patients is associated with brain dysfunction.\nMETHODS: Thirty pediatric focal epilepsy patients who underwent SEEG investigation had their cognitive and language deficits assessed in scales of 0 to 4. Fast ripples (250-500 Hz), ripples (80-250 Hz), and IEDs were automatically detected in 10 min during NREM sleep. We fitted linear models to the relationship between the cognitive deficit scale and the spatial spread of the interictal neurophysiologic events (number of channels with rate of events > 10 % of maximum rate). For the language deficit, we computed the Spearman correlation between the median rate of events in all brain regions and the deficit scale.\nRESULTS: Cognitive deficit scale was significantly associated with the number of channels with fast ripples (p = 0.049), not so with ripples (p = 0.31), IEDs (p = 0.31). The potential confound of number of explored channels did not improve the fitting of the models. Language deficits were not correlated with the number of channels showing interictal events. However, from all brain regions the most statistically significant correlations (p < 0.01) were between median fast ripple rates in the left and right pars opercularis and triangularis of the inferior frontal gyrus (Broca's area and its contralateral counterpart) with r = 0.66, p = 0.003 (18 patients), in the superior temporal gyrus in the language dominant hemisphere with r = 0.72, p = 0.005 (13 patients), and the dominant basal temporal region with r = 0.79, p = 0.006 (10 patients). Median rates of IEDs and ripples exhibited lower correlation with language deficits in these regions.\nCONCLUSION: Widespread fast ripples are associated with increased cognitive deficits, and language deficiencies are correlated with fast ripple rates in brain regions associated with language. The extent of fast-ripple activity was associated with cognitive deficit severity in this cohort, whereas the corresponding associations for ripples and IEDs did not reach statistical significance.",
+      "abstract_zh": "目的：确定局灶性癫痫患者发作间期快速涟漪的空间范围是否与脑功能障碍有关。\n方法： 30名接受seeG检查的儿科局灶性癫痫患者，他们的认知和语言缺陷在0到4的范围内进行评估。 在NREM睡眠期间，在10分钟内自动检测到快速波纹（ 250-500 Hz ）、波纹（ 80-250 Hz ）和IED。 我们将线性模型拟合到关系中\n认知缺陷量表和发作间期神经生理事件的空间传播（事件发生率>最大发生率的10 ％的通道数）。 对于语言缺陷，我们计算了所有大脑区域中位事件发生率与缺陷量表之间的斯皮尔曼相关性。\n结果：认知缺陷量表与快速涟漪通道数显著相关（ p = 0.049 ） ，而与涟漪通道数显著相关（\np = 0.31 ）、IED （ p = 0.31 ）。探索通道数量的潜在混淆并没有改善模型的拟合。语言缺陷与显示发作间期事件的通道数量无关。然而，在所有大脑区域中，统计学上最显著的相关性（ p < 0.01 ）是额下回（ Broca面积和\n其对侧对应物） ， r = 0.66 ， p = 0.003 （ 18名患者） ，在语言显性半球的上颞回中， r = 0.72 ， p = 0.005 （ 13名患者） ，以及显性基底颞区， r = 0.79 ， p = 0.006 （ 10名患者）。 简易爆炸装置和涟漪的中位数与这些地区的语言缺陷相关性较低。\n结论：广泛的快速涟漪与认知缺陷增加有关，并且\n语言缺陷与语言相关的大脑区域的快速涟漪率相关。快速涟漪活动的程度与该队列的认知缺陷严重程度相关，而涟漪和IED的相应关联性没有达到统计学意义。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 21,
+      "relevance_hits": [
+        "epilepsy",
+        "ictal",
+        "interictal",
+        "eeg",
+        "focal",
+        "seeg"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 4,
+      "pmid": "42901120",
+      "title": "Caregiver experience of diazepam nasal spray treatment in children aged 2-5 years.",
+      "title_zh": "地西泮鼻喷雾剂治疗2-5岁儿童的护理经验。",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Cramer JA",
+        "Segal EB",
+        "Wheless JW",
+        "Peters JM",
+        "Wolf SM",
+        "Lopez-Toledano MA",
+        "Ngo LY",
+        "Carrazana E",
+        "Rabinowicz AL"
+      ],
+      "pubdate": "2026 Oct 20",
+      "doi": "10.1016/j.yebeh.2026.111337",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901120/",
+      "abstract": "OBJECTIVE: Caregiving for young children with epilepsy (CWE) may have a large impact on families that extends beyond medical care (e.g., psychological conditions and financial concerns). Epilepsy requires long-term treatment, which may include medications both for daily and urgent use. Diazepam nasal spray was used for acute seizure episodes in CWE aged 2-5 years and was evaluated in a Phase 1/2a pharmacokinetics (PK) and safety study. Caregivers provided assessments of changes in their children's responses to treatment and their own experience of treatment usefulness.\nMETHODS: CWE aged 2-5 y were enrolled in an open-label PK study of diazepam nasal spray with a 180-day open-label safety period and an optional extension period. Data from a seizure severity questionnaire and a caregiver survey at baseline and at safety period follow-up visits (days 30, 90, and 180) were included.\nRESULTS: Of 36 enrolled patients, 35 entered, and 31 completed the safety period; 27 entered and completed the optional extension period. Caregivers reported improvement in seizure recovery (61.5% at day 180 vs 38.5% at baseline), indicating it did not take a while for patients to recover after seizures. Similarly, caregivers reported improvements at day 180, compared with baseline, with reductions in caregiver worry (51.9%) and sleep disturbance (57.7%). Caregivers reported much milder and fewer seizure clusters at day 180 vs baseline (50.0%), and family improvement with treatment (69.2%).\nCONCLUSION: Caregivers of CWE aged 2-5 years treated with diazepam nasal spray reported improvement in seizure episodes and daily function, reinforcing the value of appropriate treatment.",
+      "abstract_zh": "目标：对癫痫幼儿（ CWE ）的护理可能对超出医疗护理范围的家庭产生重大影响（例如，心理状况和经济问题）。癫痫需要长期治疗，其中可能包括日常和紧急使用的药物。地西泮鼻喷雾剂用于2-5岁CWE的急性癫痫发作，并在1/2a期药代动力学（ PK ）和安全性研究中进行了评估。\n评估了他们孩子对治疗的反应的变化以及他们自己的治疗实用性经验。\n方法： 2-5岁的CWE参加了一项地西泮鼻喷雾剂的开放标签PK研究，该研究具有180天的开放标签安全性期和可选的延长期。 纳入了基线和安全期随访访视（第30天、第90天和第180天）的癫痫发作严重程度问卷和护理人员调查数据。\n结果：\n在36例入组患者中， 35例进入安全期， 31例完成安全期； 27例进入并完成可选延长期。护理人员报告了癫痫发作恢复的改善（ 180天时为61.5% ，基线时为38.5% ） ，这表明患者在癫痫发作后恢复并不需要一段时间。同样，与基线相比，护理人员在第180天报告了改善，护理人员的担忧（ 51.9 ％ ）和睡眠障碍（ 57.7 ％ ）减少\n.护理人员报告第180天的癫痫发作簇比基线（ 50.0 ％ ）轻微得多，癫痫发作簇较少，并且通过治疗改善家庭（ 69.2 ％ ）。\n结论：地西泮鼻喷雾剂治疗的2-5岁CWE的护理人员报告了癫痫发作和日常功能的改善，加强了适当治疗的价值。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 9,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 5,
+      "pmid": "42901119",
+      "title": "Physical exercise as an adjunct to the pharmacological treatment of epilepsy: a priority for future research.",
+      "title_zh": "体育锻炼作为癫痫药理治疗的辅助手段：未来研究的优先事项。",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Vancini RL",
+        "Barbosa de Lira CA",
+        "Andrade MS",
+        "Knechtle B",
+        "Arida RM"
+      ],
+      "pubdate": "2026 Oct 20",
+      "doi": "10.1016/j.yebeh.2026.111340",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901119/",
+      "abstract": "Medication adherence is a major determinant of seizure control in people with epilepsy, yet nonadherence remains frequent and is associated with breakthrough seizures, increased healthcare utilization, and higher mortality. Despite the central role of antiseizure medications (ASMs), adherence is a multifactorial behavior shaped by routine stability, health beliefs, self-efficacy, mood, and social support, and it cannot be improved by prescription alone. Physical exercise has emerged as a promising complementary strategy in the management of chronic diseases, with benefits that extend beyond general health. This short communication examines the potential of regular physical exercise to act as an adjunct to the pharmacological treatment of epilepsy, with particular emphasis on how it may favor medication adherence. At the behavioral level, physical exercise may stabilize daily routines, improve mood and self-efficacy, and reinforce treatment engagement factors that plausibly support consistent medication taking. At the physiological level, physical exercise modulates hemodynamic, metabolic, and neurobiological pathways, although direct evidence of clinically relevant effects on ASM disposition remains scarce. Nonetheless, exercise-induced pharmacokinetic alterations depend on the type, intensity, and duration of exertion-ranging from sustained aerobic exercise to high-intensity resistance training-which differentially modulate hemodynamics, metabolic pathways, and plasma protein binding, with the greatest potential relevance for antiseizure medications with a narrow therapeutic index. Barriers to physical exercise participation, including fear of seizures, stigma, and limited professional counseling, parallel those that compromise adherence and deserve systematic attention. We conclude that physical exercise should be regarded as a safe, low-cost, complementary component of epilepsy care, and that prospective studies examining its effects on medication adherence and pharmacological outcomes represent a research priority.",
+      "abstract_zh": "药物依从性是癫痫患者癫痫发作控制的主要决定因素，但不依从性仍然很常见，并与突破性癫痫发作、医疗保健利用率提高和死亡率升高相关。尽管抗癫痫药物（ ASM ）起着核心作用，但依从性是由常规稳定性、健康信念、自我效能、情绪和社会支持形成的多因素行为，无法通过处方来改善\n体育锻炼已成为慢性病管理中的一种有前途的补充策略，其益处超出了一般健康。这个简短的沟通探讨了定期体育锻炼作为癫痫药物治疗的辅助手段的潜力，特别强调它如何有利于药物依从性。在行为层面，体育锻炼可以稳定日常生活，\n证明情绪和自我效能，并加强可能支持持续服药的治疗参与因素。在生理水平上，体育锻炼调节血液动力学、代谢和神经生物学途径，尽管对ASM处置的临床相关影响的直接证据仍然很少。尽管如此，运动诱导的药代动力学改变取决于运动范围的类型、强度和持续时间。\n持续的有氧运动与高强度耐力训练之间存在差异，后者可对血流动力学、代谢途径和血浆蛋白结合进行差异调节，与治疗指数狭窄的抗癫痫药物具有最大的潜在相关性。体育锻炼参与的障碍，包括对癫痫发作的恐惧、耻辱感和有限的专业咨询，与那些损害依从性和值得系统关注的障碍并行\nn.我们的结论是，体育锻炼应被视为癫痫护理的一个安全、低成本、互补的组成部分，而检查其对药物依从性和药理学结果影响的前瞻性研究是一项研究重点。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 18,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "antiseizure"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 6,
+      "pmid": "42901118",
+      "title": "Generalized Spike-Wave discharges and myoclonic features in a subgroup of children with Self-Limited epilepsy with centrotemporal spikes.",
+      "title_zh": "自限性癫痫伴中心颞叶尖峰儿童亚组中的广义尖峰波放电和肌阵挛特征。",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Guo B",
+        "Jia Y",
+        "Duan Y",
+        "Han J",
+        "Zhang X",
+        "Gao L",
+        "Zhao X",
+        "Zhang L",
+        "Wang Y"
+      ],
+      "pubdate": "2026 Oct 20",
+      "doi": "10.1016/j.yebeh.2026.111336",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901118/",
+      "abstract": "OBJECTIVE: Generalized spike-wave discharges (GSWD) are occasionally observed in patients with self-limited epilepsy with centrotemporal spikes (SeLECTS), but their clinical significance remains unclear. This study aimed to characterize the electroclinical features of these patients and to explore their potential clinical implications.\nMETHODS: We retrospectively reviewed the clinical data of 148 children diagnosed with SeLECTS at Xuanwu Hospital from June 2015 to October 2025. Patients with GSWD on electroencephalography were identified and compared with those without GSWD regarding demographic characteristics, seizure semiology, auxiliary examination findings, treatment response, and outcomes.\nRESULTS: GSWD were identified in 9 of 148 patients (6.1 %) with SeLECTS. These 9 patients included 4 males and 5 females, with a median onset age of 8 (IQR: 5-10) years. Compared with those without GSWD, they more frequently showed wakefulness seizures (44.4 % vs 5.8 %, p < 0.05), generalized tonic-clonic seizures during sleep (44.4 %), and myoclonic manifestations (77.8 %). Other clinical variables were similar between groups. All 9 patients achieved freedom from focal and generalized tonic-clonic seizures, though one required prolonged combination therapy. Two patients with follow-up exceeding 10 years showed electroclinical evolution toward juvenile myoclonic epilepsy, characterized by the absence of centrotemporal spikes, with generalized spike-wave bursts recurring on later EEGs.\nCONCLUSION: We identified a subgroup of patients with SeLECTS characterized by the coexistence of GSWD and myoclonic features, showing partial electroclinical overlap with juvenile myoclonic epilepsy. These findings broaden the electroclinical spectrum of SeLECTS, though the relationship between focal and generalized network dysfunction in this subgroup requires confirmation in larger, prospectively followed cohorts.",
+      "abstract_zh": "目的：在中颞尖峰型自限性癫痫（ SeLECTS ）患者中偶尔观察到全身性尖峰波放电（ GSWD ） ，但其临床意义尚不清楚。 本研究旨在表征这些患者的电临床特征并探索其潜在的临床意义。\n方法：回顾性分析宣武医院148例SeLECTS患儿的临床资料。\n从2015年6月到2025年10月。 对接受脑电图检查的GSWD患者进行了识别，并在人口统计学特征、癫痫发作特征、辅助检查结果、治疗反应和结局方面与未接受GSWD的患者进行了比较。\n结果： 148例SeLECTS患者中有9例（ 6.1% ）鉴定出GSWD。 这9名患者包括4名男性和5名女性，中位发病年龄为8岁（ IQR ： 5-10 ）。 与witho相比\nuT GSWD ，他们更频繁地表现出清醒癫痫发作（ 44.4 ％ vs 5.8 ％ ， p < 0.05 ） ，睡眠期间全身强直-阵挛性癫痫发作（ 44.4 ％ ）和肌阵挛表现（ 77.8 ％ ）。两组之间的其他临床变量相似。所有9名患者均未发生局灶性和全身性强直-阵挛性癫痫发作，但1名患者需要长期联合治疗。两名随访超过10年的患者显示出电临床进展\n青少年肌阵挛性癫痫，其特征是没有中心颞叶尖峰，在后来的脑电图上反复出现广义尖峰波爆发。\n结论：我们确定了一个以GSWD和肌阵挛特征共存为特征的SeLECTS患者亚组，显示出与青少年肌阵挛性癫痫的部分电临床重叠。 这些发现拓宽了SeLECTS的电临床范围，尽管\n该亚组中的cal和广义网络功能障碍需要在更大、前瞻性随访的队列中得到确认。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 29,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "electroencephalogr",
+        "eeg",
+        "focal",
+        "generalized",
+        "tonic-clonic"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 7,
+      "pmid": "42901117",
+      "title": "Age-related differences in quality of life among people with epilepsy: an exploratory cross-sectional analysis of an Australian community sample.",
+      "title_zh": "癫痫患者中与年龄相关的生活质量差异：澳大利亚社区样本的探索性横断面分析。",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Peterson CL",
+        "Walker C"
+      ],
+      "pubdate": "2026 Oct 20",
+      "doi": "10.1016/j.yebeh.2026.111341",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901117/",
+      "abstract": "BACKGROUND: Epilepsy and ageing is an under-researched area particularly the Quality of Life (QoL) of older people with epilepsy (PWE). The effects of age on QoL needs an appreciation of the social and material context (Australia).\nMETHOD: The Australian Epilepsy Longitudinal Study (AELS) into the Social Impact of Epilepsy is repeated every three years. Wave 6 of the AELS analysed the extent to which age differences explain QoL and particularly QoL outcomes for older PWE. For this the QOLIE-31 was used.\nRESULTS: Older age led significantly to increasing QoL compared to younger adults. The dimension of QOLIE-31 Energy/fatigue and 3 other dimensions had the greatest difference between older and younger PWE. These were Social Function, Cognition and Emotional Well-being. Seizures led to lower QoL for older PWE and those 39-59 years compared to the youngest adults (aged 18-38 years) where seizures did not have a significant effect on QoL. Tangible supports of older people were significantly lower in their effect on QoL than for younger adults. For older PWE only, increased anti-seizure medication (ASM) use led significantly to lower QoL Living in the City benefitted 39-59 year olds in terms of affectionate support. This was not the case for younger or older PWE.\nCONCLUSION: For older PWE certain issues need to be addressed such as comorbidities, depression and recognizing the value of social support. These should be in the context of the social impact of epilepsy.",
+      "abstract_zh": "背景：癫痫和衰老是一个研究不足的领域，尤其是老年癫痫患者（ PWE ）的生活质量（ QOL ）。 年龄对生活质量的影响需要了解社会和物质背景（澳大利亚）。\n方法：澳大利亚癫痫纵向研究（ AELS ）对癫痫的社会影响每三年重复一次。 AELS的第6波分析了年龄差异在多大程度上解释了QOL ，特别是Q\no老年PWE的L结局。 为此使用了QOLIE-31。\n结果：与年轻人相比，年龄越大，生活质量越高。 QOLIE-31能量/疲劳维度和其他3个维度在老年和年轻PWE之间的差异最大。 这些是社交功能、认知和情感幸福感。 与最年轻的成年人（ 18-38岁）相比，癫痫发作导致年龄较大的PWE和39-59岁的人的生活质量较低，其中\nizures对QOL没有显著影响。 老年人的有形支持对生活质量的影响明显低于年轻人。 仅对于年龄较大的PWE ，抗癫痫药物（ ASM ）使用的增加导致城市生活质量降低，在深情支持方面使39-59岁的人受益。 对于年龄较小或较大的PWE ，情况并非如此。\n结论：对于较旧的PWE ，某些问题需要解决，例如c\n患病、抑郁和认识到社会支持的价值。这些应该在癫痫的社会影响的背景下进行。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 17,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "ecog"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 8,
+      "pmid": "42901116",
+      "title": "Real-world effectiveness and safety of cenobamate in children and adolescents with drug-resistant epilepsy: a systematic review, meta-analysis, and meta-regression.",
+      "title_zh": "西诺氨酸在儿童和青少年耐药性癫痫中的实际有效性和安全性：系统评价、荟萃分析和荟萃消退。",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Samanta D",
+        "Ramani PK",
+        "Jain P"
+      ],
+      "pubdate": "2026 Oct 20",
+      "doi": "10.1016/j.yebeh.2026.111348",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901116/",
+      "abstract": "BACKGROUND AND OBJECTIVES: Cenobamate is a third-generation antiseizure medication (ASM) approved for focal-onset seizures in adults; pediatric use remains off-label and supported primarily by retrospective studies. We conducted a systematic review, meta-analysis, and meta-regression to evaluate the real-world effectiveness and safety of adjunctive cenobamate in pediatric drug-resistant epilepsy (DRE).\nMETHODS: We conducted a PRISMA 2020-compliant systematic review and meta-analysis (PROSPERO: CRD420261475361) of real-world studies including patients ≤18 years with DRE. Single-arm proportions were pooled using random-effects generalized linear mixed models. Heterogeneity was assessed using I 2  and τ 2 . Pre-specified random-effects meta-regression explored study-level moderators of ≥50 % seizure reduction. Risk of bias was assessed using the JBI Critical Appraisal Checklist for Case Series.\nRESULTS: Sixteen retrospective cohorts comprising 720 pediatric patients from 10 countries were included. The pooled proportion achieving ≥50 % seizure reduction was 59.9 % (95 % CI, 51.4 %-67.9 %; 95 % prediction interval, 30.2 %-83.8 %; I 2  = 68.2 %). Pooled estimates were 41.9 % (95 % CI, 26.4-59.2 %) for >75 % seizure reduction, 18.6 % (95 % CI, 12.3-27.1 %) for seizure freedom, and 49.9 % (95 % CI, 44.1-55.7 %) for any adverse effect. Leave-one-out analysis showed that no individual study disproportionately influenced the pooled ≥50 % seizure-response proportion (58.3-61.9 %). Visual and regression-based assessments did not detect marked funnel-plot asymmetry or an association between study size and effect estimates. No pre-specified moderator, including age, prior ASM burden, cenobamate dose, follow-up duration, focal epilepsy, clobazam exposure, or etiology, was significantly associated with response.\nCONCLUSIONS: Approximately six in ten pediatric patients with DRE achieved ≥50 % seizure reduction with cenobamate. However, persistent unexplained heterogeneity and exclusively retrospective evidence limit subgroup-level inference. Prospective individual-patient-data registries with standardized outcome and dosing measures are needed to better define effectiveness, safety, and predictors of response in pediatric populations.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 23,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "drug-resistant",
+        "focal",
+        "generalized",
+        "antiseizure"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 9,
       "pmid": "42897864",
       "title": "A Bayesian framework for a sudden unexpected death in epilepsy risk-reduction indication.",
-      "title_zh": "癫痫风险降低指征中突然意外死亡的贝叶斯框架。",
+      "title_zh": "",
       "journal": "Epilepsia",
       "iso_journal": "Epilepsia",
       "authors": [
@@ -214,10 +423,10 @@
       "priority": "推荐"
     },
     {
-      "index": 4,
+      "index": 10,
       "pmid": "42897859",
       "title": "Progressive Hippocampal Volume Reduction Beyond Normal Aging in Temporal Lobe Epilepsy: A Longitudinal MRI Study.",
-      "title_zh": "颞叶癫痫中超出正常衰老的进行性海马体体积缩小：一项纵向MRI研究。",
+      "title_zh": "",
       "journal": "Epilepsia open",
       "iso_journal": "Epilepsia Open",
       "authors": [
@@ -232,7 +441,7 @@
       "doi": "10.1002/epi4.70373",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42897859/",
       "abstract": "Recent neuroimaging studies have suggested that epilepsy may show progressive brain structural changes over time. However, longitudinal hippocampal volume changes in temporal lobe epilepsy (TLE) have not been adequately compared with those observed in normal aging. In this study, we enrolled 46 patients with unilateral TLE and 25 healthy controls with longitudinal structural MRI scans using the same scanner. Hippocampal volumes were quantified using the Hipposeg software, and the annual percentage volume reduction relative to baseline (%Reduction/year) was calculated for each hippocampus. Compared to healthy hippocampi (median -0.37% per year, IQR = 3.97), both ipsilateral (median -1.04% per year, IQR = 3.65) and contralateral (median -1.08% per year, IQR = 3.17) hippocampi in TLE showed significantly greater volume reduction over time (both p < 0.05). Furthermore, annual ipsilateral hippocampal volume reduction was significantly correlated with disease duration (Spearman's rs = 0.366, FDR-corrected p = 0.036), suggesting that hippocampal atrophy progresses more rapidly during the early stage after epilepsy onset. These findings indicate that hippocampal volume loss in TLE exceeds that expected from normal aging and provide further evidence supporting progressive structural alterations during the course of the disease. PLAIN LANGUAGE SUMMARY: Temporal lobe epilepsy may cause progressive changes in the brain beyond those expected from normal aging. Using repeated MRI scans, we found that the hippocampus showed greater volume loss over time in people with temporal lobe epilepsy than in healthy individuals. This volume loss occurred bilaterally and appeared to be greater during the earlier stages of the disease. These results provide further evidence supporting progressive structural brain changes in TLE and contribute to a better understanding of disease progression and abnormal brain aging in epilepsy.",
-      "abstract_zh": "最近的神经影像学研究表明，随着时间的推移，癫痫可能表现出进行性的大脑结构变化。然而，颞叶癫痫（ TLE ）的纵向海马体积变化尚未与正常衰老中观察到的体积变化进行充分比较。在这项研究中，我们招募了46名单侧TLE患者和25名健康对照者，他们使用相同的扫描仪进行纵向结构MRI扫描。我们量化了海马体体积，\n使用Hipposeg软件，计算每个海马体相对于基线的年度体积减少百分比（ %减少/年）。与健康海马体（每年中位数-0.37% ， IQR = 3.97 ）相比， TLE中的同侧（每年中位数-1.04% ， IQR = 3.65 ）和对侧（每年中位数-1.08% ， IQR = 3.17 ）海马体随着时间的推移体积显著减小（两者均p < 0.05 ）。此外，每年同侧髋关节\npocampal体积减少与疾病持续时间显著相关（ Spearman's rs = 0.366 ， FDR校正p = 0.036 ） ，这表明海马萎缩在癫痫发作后的早期阶段进展更快。这些发现表明， TLE中的海马体体积损失超过了正常衰老的预期，并提供了支持疾病过程中进行性结构改变的进一步证据。普通局域网\n测量总结：颞叶癫痫可能会导致大脑发生超出正常衰老预期的进行性变化。使用重复的MRI扫描，我们发现颞叶癫痫患者的海马体随着时间的推移表现出比健康人更大的体积损失。这种体积损失发生在双侧，并且在疾病的早期阶段似乎更大。这些结果提供了进一步的证据支持进行性\n并有助于更好地了解癫痫的疾病进展和异常脑衰老。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -246,10 +455,10 @@
       "priority": "必读"
     },
     {
-      "index": 5,
+      "index": 11,
       "pmid": "42897841",
       "title": "Early neurocognitive outcomes following SEEG with radiofrequency thermocoagulation.",
-      "title_zh": "射频热凝术后早期神经认知结局见G。",
+      "title_zh": "",
       "journal": "Epilepsia open",
       "iso_journal": "Epilepsia Open",
       "authors": [
@@ -277,7 +486,7 @@
       "doi": "10.1002/epi4.70368",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42897841/",
       "abstract": "OBJECTIVE: Characterization of early neuropsychological outcomes following SEEG with radiofrequency thermocoagulation (RFTHC) is essential to guide patient expectations around return to work, study, and caregiving. The current study aimed to describe the early neurocognitive sequelae of SEEG.\nMETHODS: Consecutive patients undergoing SEEG were prospectively recruited from two tertiary epilepsy centers in Melbourne, Australia. Patients were administered the Repeatable Battery for the Assessment of Neuropsychological Status (RBANS) via telehealth before and 3 weeks after SEEG (M = 19.69 days, SD = 4.41). Given the telehealth platform, the coding subtest was substituted for the Symbol Digit Modalities Test, and a modified score of global cognitive function was calculated. To evaluate group changes, paired sample t-tests were performed. Reliable change indices were computed to explore individual-level changes. Pearson's correlation coefficients evaluated relationships between change in global cognitive function and SEEG admission variables. SEEG patients were invited to complete a semi-structured interview canvassing the recovery following SEEG.\nRESULTS: Twenty-eight patients completed the neuropsychological examination (M = 37.89 years, SD = 9.72, range = 17-56 years, 54% female). All patients underwent RFTHC with a mean of 11.43 (SD = 6.87, range = 2-28) coagulation sites. At a whole group level, 3-weeks post SEEG there was no evidence for global nor domain-specific cognitive change. Reliable change indices with 90% confidence revealed only 4% (1/28) declined on at least two measures and 10% (3/28) showed psychometric improvement. Pearson's correlational coefficients showed no evidence for association between change in global cognitive function with SEEG factors including admission length, number of spontaneous or stimulated seizures, number of electrodes, or number of RFTHC sites. Subjective reports of language change tended to be accompanied by a decline on the RBANS language index that did not meet reliable change criteria. Most patients reported returning to work around 4 weeks post SEEG.\nSIGNIFICANCE: By 3 weeks, gross cognitive functioning tends to be in keeping with pre-SEEG performances for most patients. These findings have direct clinical implications for SEEG neuropsychological counseling.\nPLAIN LANGUAGE STATEMENT: SEEG is increasingly used to guide epilepsy surgery. Despite this, little is known about the cognitive recovery in the weeks following the procedure. We found that for most patients, broad cognitive functioning 3 weeks after SEEG with coagulation was consistent with function before SEEG, with only a small minority showing significant changes. Some people who reported language difficulties also showed a decline on language testing, although this was often small. Of those patients working before SEEG, most returned to work by 4 weeks. These results provide important evidence to guide patient counseling, recovery planning, and management after SEEG.",
-      "abstract_zh": "目的：使用射频热凝术（ RFTHC ）对SeeG术后早期神经心理结局的表征对于指导患者对重返工作岗位、学习和护理的期望至关重要。 目前的研究旨在描述seeG的早期神经认知后遗症。\n方法：从澳大利亚墨尔本的两个三级癫痫中心前瞻性招募连续接受seeG的患者。\n在SEEG （ M = 19.69天， SD = 4.41 ）之前和之后3周，通过远程医疗进行神经心理状态评估（ RBANS ）的可重复电池。给定远程医疗平台，用编码子测试代替符号数字模态测试，并计算全局认知功能的修正分数。为了评估组变化，进行了配对样本t检验。计算可靠的变化指数以探索个体\nual-level changes. Pearson's correlation coefficient评估全局认知功能变化与seeG入院变量之间的关系。 SEEG患者被邀请完成半结构化访谈，详细了解SeeG后的恢复情况。\n结果： 28名患者完成了神经心理学检查（ M = 37.89岁， SD = 9.72 ，范围= 17-56岁， 54%为女性）。 所有患者均接受了RFTHC ，平均值为11.43 （ S\nD = 6.87 ，范围= 2-28 ）凝血部位。在整个组水平上， SEEG后3周，没有证据表明整体或特定领域的认知变化。具有90 ％置信度的可靠变化指数显示，至少两项指标仅下降了4 ％ （ 1/28 ） ， 10 ％ （ 3/28 ）显示心理测量改善。Pearson的相关系数显示没有证据表明全球认知功能变化与SEEG因子之间存在关联，包括\n入院长度、自发或刺激性癫痫发作次数、电极数量或RFTHC部位数量。 语言变化的主观报告往往伴随着不符合可靠变化标准的RBANS语言指数的下降。 大多数患者报告在见G后约4周返回工作岗位。\n意义：到3周时，大多数患者的总体认知功能往往与SEEG前表现保持一致。\n这些发现对SEEG神经心理咨询具有直接的临床意义。\n简单的语言陈述： seeG越来越多地用于指导癫痫手术。 尽管如此，人们对手术后几周内的认知恢复知之甚少。 我们发现，对于大多数患者， SeeG伴凝血术后3周的广泛认知功能与SeeG之前的功能一致，只有少数患者表现出显著的\n变化。一些报告语言困难的人也表现出语言测试的下降，尽管这通常很小。在SEEG之前工作的患者中，大多数患者在4周后恢复工作。这些结果为指导SeeG后的患者咨询、康复计划和管理提供了重要证据。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -293,10 +502,10 @@
       "priority": "必读"
     },
     {
-      "index": 6,
+      "index": 12,
       "pmid": "42897828",
       "title": "Validation of the diagnosis of Lennox-Gastaut syndrome: Challenges and lessons learned.",
-      "title_zh": "Lennox-Gastaut综合征诊断的验证：挑战和经验教训。",
+      "title_zh": "",
       "journal": "Epilepsia",
       "iso_journal": "Epilepsia",
       "authors": [
@@ -317,7 +526,7 @@
       "doi": "10.1002/epi.70551",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42897828/",
       "abstract": "OBJECTIVE: Lennox-Gastaut Syndrome (LGS) is a severe developmental and epileptic encephalopathy characterized by multiple seizure types, cognitive impairment, and distinct electroencephalographic (EEG) findings. However, evolving diagnostic criteria, heterogeneous clinical features, and inconsistent electronic health record (EHR) documentation complicate accurate diagnosis and cohort identification. As part of a Patient-Centered Outcomes Research Institute-sponsored study developing EHR-based computable phenotypes for LGS, we established a reference standard through retrospective chart review and epileptologist classification.\nMETHODS: A multicenter retrospective chart review was conducted across seven pediatric epilepsy centers. Stratified sampling using PCORnet data selected patients based on the International Classification of Diseases, 10th Revision diagnosis code for LGS or other intractable epilepsy diagnoses between 2016 and 2022. Clinical teams abstracted seizure history, EEG findings, developmental status, and treatment history. Two epileptologists independently reviewed each case as classic LGS, pragmatic LGS, or not LGS. Discordant cases underwent adjudication by a senior epileptologist. Cases with incomplete or unclear data underwent repeat abstraction and review.\nRESULTS: Of 997 identified patients, 935 underwent classification after exclusions. Initial epileptologist disagreement occurred in 105 cases (11%, unweighted Cohen kappa = 82%). Following adjudication, 130 cases underwent reabstraction to retrieve additional EEG reports and clinical details. Rereview reclassified 67 cases initially considered \"not LGS\": 33 classic LGS, 12 pragmatic LGS, and 22 excluded for insufficient data. Key EHR challenges included inconsistent EEG reporting, incomplete seizure type characterization, fragmented documentation of cognitive impairment, unclear age at onset, and variable terminology across institutions and providers. Slow spike-and-wave EEG findings were the most frequently missing diagnostic element.\nSIGNIFICANCE: Validating LGS diagnoses using EHR data is complex and resource intensive. Standardized terminology, structured documentation, and rigorous multicenter validation may improve diagnostic accuracy, research cohort identification, computable phenotype development, and longitudinal care for individuals with LGS. Our results highlight important operational lessons for multicenter rare epilepsy studies and underscore the need for improved diagnosis pathways and longitudinal care systems for those with LGS and their families.",
-      "abstract_zh": "目的： Lennox-Gastaut综合征（ LGS ）是一种严重的发育和癫痫性脑病，其特征是多种癫痫类型、认知障碍和不同的脑电图（ EEG ）表现。然而，不断发展的诊断标准、异质性临床特征以及不一致的电子健康记录（ EHR ）文档使准确的诊断和队列识别变得复杂。作为以患者为中心的结果研究的一部分\n研究所赞助的研究开发基于EHR的LGS可计算表型，我们通过回顾性图表回顾和癫痫学家分类建立了参考标准。\n方法：在七个儿科癫痫中心进行多中心回顾性图表回顾。 使用PCORnet数据进行分层抽样，根据国际疾病分类，第10次修订LGS诊断代码或其他\n2016年至2022年间诊断出的可处理癫痫。 临床小组提取了癫痫发作史、脑电图结果、发育状况和治疗史。 两位癫痫学家分别将每例病例评为经典LGS、实用LGS或非LGS。 不和谐的病例由资深癫痫学家裁定。 数据不完整或不明确的病例进行了重复抽象和审查。\n结果：在997名确定的患者中， 935名患者接受了\n排除后的鉴定。105例（ 11% ，未加权Cohen kappa = 82% ）出现初始癫痫学家异议。裁定后， 130例患者接受了重新提取，以检索其他脑电图报告和临床细节。复审重新分类了67例最初认为“非LGS”的病例： 33例经典LGS ， 12例实用LGS ， 22例因数据不足而排除。EHR的主要挑战包括脑电图报告不一致、癫痫发作不完整\ne类型表征、认知障碍的碎片化记录、发病年龄不明确以及各机构和提供者的不同术语。 慢刺波脑电图发现是最常缺失的诊断元件。\n意义：使用EHR数据验证LGS诊断是复杂且资源密集型的。 标准化术语、结构化文档和严格的多中心验证可以提高诊断准确性\ny、研究队列鉴定、可计算表型发展和LGS个体的纵向护理。我们的结果突出了多中心罕见癫痫研究的重要操作经验教训，并强调了改善LGS患者及其家属的诊断途径和纵向护理系统的必要性。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -334,10 +543,10 @@
       "priority": "必读"
     },
     {
-      "index": 7,
+      "index": 13,
       "pmid": "42897771",
       "title": "Beyond neuroprotection: Context-dependent effects of GLP-1 receptor agonists on seizure susceptibility.",
-      "title_zh": "超越神经保护： GLP-1受体激动剂对癫痫易感性的上下文依赖性影响。",
+      "title_zh": "",
       "journal": "Epilepsia",
       "iso_journal": "Epilepsia",
       "authors": [
@@ -349,7 +558,7 @@
       "doi": "10.1002/epi.70527",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42897771/",
       "abstract": "Glucagon-like peptide-1 receptor agonists (GLP-1 RAs) are widely used in type 2 diabetes mellitus and obesity and are increasingly considered to exert neuroprotective effects. Recent large-scale clinical and real-world studies report a predominantly neutral to protective association between GLP-1 RA use and seizure- or epilepsy-related diagnoses. However, how these agents affect neuronal excitability in patients with established epileptogenic networks remains insufficiently understood. This narrative review critically examines the experimental and clinical evidence from GLP-1 RA effects on neuronal excitability and seizure susceptibility, with a focus on possible discrepancies between population-level outcomes and individual network-level vulnerability. Preclinical studies demonstrate heterogeneous, network-dependent effects of GLP-1 RAs. Although anticonvulsant and neuroprotective properties are observed in chemically induced seizure models, paradoxical pro-seizure effects occur in genetic absence epilepsy models. In contrast, population-level analyses report neutral to reduced rates of incident epilepsy or seizure-related outcomes under GLP-1 RA therapy. However, these findings are based largely on administrative diagnostic codes, lack epileptological phenotyping, and are not designed to capture transient, exposure-dependent alterations in neuronal excitability or short-term seizure dynamics. Additional factors, including delayed gastric emptying affecting anti-seizure medication absorption, rapid metabolic shifts during titration, blood-brain barrier dysfunction, and agent-specific pharmacokinetics, may further modulate individual susceptibility. We propose that GLP-1 RA effects on neuronal excitability are context dependent, shaped by epilepsy subtype, network vulnerability, exposure dynamics, and treatment phase. Targeted prospective studies incorporating clinical phenotyping, therapeutic drug monitoring, and temporal seizure assessment are required to ensure neurological safety in patients with epilepsy.",
-      "abstract_zh": "胰高血糖素样肽-1受体激动剂（ GLP-1 RA ）广泛用于2型糖尿病和肥胖，并且越来越被认为具有神经保护作用。最近的大规模临床和真实世界研究报告称， GLP-1类风湿关节炎与癫痫或癫痫相关诊断之间的保护性关联主要为中性。然而，这些药物如何影响已建立致癫痫网络的患者的神经元兴奋性\n作品仍未得到充分理解。本叙述性综述批判性地研究了GLP-1类风湿关节炎对神经元兴奋性和癫痫发作易感性的影响的实验和临床证据，重点关注人群水平结果与个体网络水平脆弱性之间可能存在的差异。临床前研究表明GLP-1类风湿关节炎具有异质性、网络依赖性的作用。虽然抗惊厥和神经保护支柱\n在化学诱导癫痫模型中观察到rties ，在遗传性缺失癫痫模型中发生自相矛盾的促癫痫发作效应。相比之下，人群水平分析报告，在GLP-1类风湿性关节炎治疗下，癫痫或癫痫发作相关结局的发生率较低。然而，这些发现主要是基于管理诊断代码，缺乏癫痫表型，并不是为了捕捉短暂的，暴露依赖性的\n神经元兴奋性或短期癫痫发作动态的变化。其他因素，包括影响抗癫痫药物吸收的胃排空延迟、滴定过程中的快速代谢变化、血脑屏障功能障碍和药物特异性药代动力学，可能进一步调节个体易感性。我们提出GLP-1 RA对神经元兴奋性的影响是上下文相关的，由癫痫亚型、网络性创伤\n狂犬病、暴露动态和治疗阶段。需要结合临床表型、治疗药物监测和颞叶癫痫发作评估的有针对性的前瞻性研究，以确保癫痫患者的神经学安全性。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -364,10 +573,10 @@
       "priority": "必读"
     },
     {
-      "index": 8,
+      "index": 14,
       "pmid": "42897767",
       "title": "The translational asymmetry of corpus callosotomy: Two literatures that answered different questions.",
-      "title_zh": "痂体切开术的翻译不对称性：两篇回答不同问题的文献。",
+      "title_zh": "",
       "journal": "Epilepsia open",
       "iso_journal": "Epilepsia Open",
       "authors": [
@@ -397,7 +606,7 @@
       "priority": "必读"
     },
     {
-      "index": 9,
+      "index": 15,
       "pmid": "42897757",
       "title": "Symptom-related damage patterns in mesial temporal lobe epilepsy with hippocampal sclerosis.",
       "title_zh": "",
@@ -442,72 +651,87 @@
       "priority": "必读"
     },
     {
-      "index": 10,
-      "pmid": "42892148",
-      "title": "Contralateral piriform cortex alterations after surgery for temporal lobe epilepsy: A pilot MRI volumetry study.",
+      "index": 16,
+      "pmid": "42901375",
+      "title": "Intrinsic and extrinsic connectivity of the seizure onset zone at rest and during stimulation.",
       "title_zh": "",
-      "journal": "Epilepsy research",
-      "iso_journal": "Epilepsy Res",
+      "journal": "Brain stimulation",
+      "iso_journal": "Brain Stimul",
       "authors": [
-        "Pek G",
-        "Ünal S",
-        "Doğan İ",
-        "Erdoğan S"
+        "LaRocque JJ",
+        "Ojemann WKS",
+        "Xu J",
+        "Lucas A",
+        "Sinha N",
+        "Cornblath EJ",
+        "Armstrong C",
+        "Tomlinson S",
+        "Marsh ED",
+        "Sinha SR",
+        "Litt B",
+        "Davis K",
+        "Cao Q",
+        "Conrad EC"
       ],
-      "pubdate": "2026 Oct 17",
-      "doi": "10.1016/j.eplepsyres.2026.107937",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42892148/",
-      "abstract": "PURPOSE: Temporal lobe epilepsy (TLE) is increasingly conceptualized as a network disorder, with the piriform cortex as an implicated region. We characterized postoperative contralateral piriform cortex-cortical amygdala (PCA) structural and perfusion-related changes in a small seizure-free TLE cohort.\nMETHODS: Nine patients with drug-resistant TLE who underwent epilepsy surgery and achieved postoperative seizure freedom were included in this single-center pre-post pilot study. Bilateral PCA was manually delineated on 3D T1-weighted MRI using ITK-SNAP, and volumes were normalized to total intracranial volume derived from CAT12 segmentation. Eight atlas-derived contralateral temporal lobe regions were examined as exploratory regional-specificity comparisons. In patients with available pulsed arterial spin labeling (PASL), piriform and putaminal signal intensities were measured by region-of-interest analysis. Non-parametric paired tests were used; secondary and exploratory analyses were corrected using the Benjamini-Hochberg false discovery rate (FDR) procedure.\nRESULTS: Normalized to total intracranial volume (TIV) contralateral PCA volume decreased postoperatively (Wilcoxon Z = -2.073, exact two-tailed p = 0.039; r = 0.69). None of the eight atlas-derived contralateral temporal regions showed a significant pre-post volume change. Contralateral putamen-normalized piriform signal intensity did not change significantly (Z = -0.105, p = 0.917), and no secondary or exploratory analysis remained significant after FDR correction.\nCONCLUSIONS: In this hypothesis-generating pilot cohort, contralateral PCA volume decreased after epilepsy surgery, whereas the PASL-derived signal-intensity measure did not show a corresponding group-level change. These observations do not establish a surgery-induced network mechanism and require confirmation in larger controlled longitudinal cohorts.",
+      "pubdate": "2026 Oct 20",
+      "doi": "10.1016/j.brs.2026.103240",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42901375/",
+      "abstract": "BACKGROUND: About half of patients who undergo epilepsy surgery for drug-resistant epilepsy have seizure recurrence, supporting the need for approaches that more accurately identify the epileptogenic zone, defined as the brain areas whose removal causes cessation of seizures. Altered network connectivity has emerged as a candidate biomarker of the epileptogenic zone, but how connectivity is altered in the epileptogenic zone remains uncertain, with prior studies reporting inconsistent results.\nHYPOTHESIS: We hypothesized that a difference in intrinsic versus extrinsic connectivity of the epileptogenic zone may explain prior discrepant findings.\nMETHODS: We retrospectively studied a multicenter cohort of 37 adult and 42 pediatric patients who underwent intracranial EEG recording and brain stimulation as part of epilepsy surgery planning. We measured spontaneous connectivity using Pearson correlation and perturbational connectivity using stimulation evoked potentials, modeling the connectivity according to the location of contacts in relation to the seizure onset zone while controlling for inter-electrode distance.\nRESULTS: For both adult and pediatric patients, resting connectivity was higher within compared to outside the seizure onset zone. However, resting connectivity between channels within and outside seizure onset zone was reduced. Stimulation connectivity followed a similar pattern, with elevated connectivity within the seizure onset zone but reduced connectivity from within to outside seizure onset zone.\nSIGNIFICANCE: These results support the hypothesis that the seizure onset zone is disconnected from the rest of the brain but intrinsically hyperconnected. This result helps reconcile prior inconsistencies across studies, aligns with basic science studies, and suggests an approach for future translational work aiming to localize the epileptogenic zone.",
       "abstract_zh": "",
       "hit_groups": [
-        "B1"
+        "B2"
       ],
       "group_count": 1,
-      "relevance_score": 17,
+      "relevance_score": 27,
       "relevance_hits": [
         "epilepsy",
         "seizure",
+        "seizures",
         "drug-resistant",
-        "temporal lobe",
-        "intracranial"
+        "eeg",
+        "intracranial",
+        "brain stimulation",
+        "biomarker"
       ],
       "priority": "必读"
     },
     {
-      "index": 11,
-      "pmid": "42892089",
-      "title": "Acetazolamide in drug-resistant epilepsy: a systematic review with meta-analysis.",
+      "index": 17,
+      "pmid": "42902320",
+      "title": "EEG-defined differences in functional networks following beta-band transcranial alternating current stimulation in patients with disorders of consciousness: a pilot study.",
       "title_zh": "",
-      "journal": "Seizure",
-      "iso_journal": "Seizure",
+      "journal": "Journal of neuroengineering and rehabilitation",
+      "iso_journal": "J Neuroeng Rehabil",
       "authors": [
-        "Mehta AA",
-        "Arasu SA",
-        "Lasker BR"
+        "Qu S",
+        "Huang L",
+        "Shang J",
+        "Qiao Y",
+        "Sun Q",
+        "Zeng F"
       ],
-      "pubdate": "2026 Oct 8",
-      "doi": "10.1016/j.seizure.2026.10.005",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42892089/",
-      "abstract": "BACKGROUND: Drug-resistant epilepsy (DRE) remains a high-morbidity condition despite expanding antiseizure medications. Acetazolamide (ACZ), a carbonic anhydrase inhibitor introduced for epilepsy in the 1950s, has been largely displaced by newer agents and concerns about tolerance, but its low cost and pH-mediated mechanism support reassessment in select DRE contexts.\nMETHODS: We conducted a PROSPERO-registered, PRISMA-S-informed systematic review of clinical studies evaluating ACZ as mono- or adjunctive therapy for drug-resistant or refractory epilepsy through May 11, 2026. Risk of bias was assessed using Newcastle-Ottawa and ROBINS-I frameworks. To quantify treatment efficacy random-effects generalized linear mixed-model meta-analyses estimated seizure freedom and ≥50% responder rate.\nRESULTS: Twenty-six studies were included. The pooled seizure-freedom proportion was 25.7% (95% CI, 15.8%-38.9%; k = 20; I² = 89.5%) and ≥50% responder proportion 67.5% (95% CI, 48.2%-82.2%; k = 26; I² = 96.7%). Leave-one-out analysis did not identify a single influential study nor did exploratory meta-regression show a significant age-response correlation. Phenotype-specific and narrative findings demonstrated more consistent response in certain catamenial, spike-wave, photosensitive, genetic, and metabolic epilepsy contexts. Metabolic acidosis, nephrolithiasis, and treatment discontinuation were comparatively uncommon, whereas adverse effects were predominantly tolerability-related.\nCONCLUSION: ACZ retains a measurable but selective antiseizure signal in DRE. However, limitations in decades-old reporting, considerable between-study heterogeneity, limited controlled clinical evidence, and modest sample sizes in phenotype-specific cohorts require researchers to interpret the evidence with caution. Nevertheless, ACZ's observed clinical activity, low cost, and distinct mechanism of action make it a promising candidate for prospective studies to identify responsive epilepsy types, assess the durability of benefit, and redefine its place in modern epilepsy care.",
+      "pubdate": "2026 Jul 25",
+      "doi": "10.1186/s12984-026-02102-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42902320/",
+      "abstract": "BACKGROUND: Severe disruption of cortico-thalamocortical circuits underlies disorders of consciousness (DOC). Beta-band (20 Hz) transcranial alternating current stimulation (tACS) can be used to probe frontal oscillatory synchrony, yet its potential to acutely modulate large-scale network dynamics in DOC is unknown.\nMETHODS: We applied 20 Hz tACS (1 mA) for 30 min over the frontal cortex (F3 and F4, International 10-20 system) in 28 patients with DOC. Offline functional near-infrared spectroscopy (fNIRS) was used to quantify hemoglobin (HbO)-based functional connectivity (FC) and graph-theoretical network properties, including small-world properties (clustering coefficient, C p ; path length, L p ) and global efficiency (global efficiency, E g ; local efficiency, E loc ) at pre-stimulation resting-state measurement for 5 min (pre-stim), the first post-stimulation resting-state measurement for 5 min (post-stim1), and the second post-stimulation resting-state measurement for 5 min (post-stim2). Subgroups were defined by baseline video-electroencephalography (vEEG) pathology as moderately abnormal (n = 11) and diffuse slowing (n = 14); 3 patients excluded (incomplete vEEG).\nRESULTS: Frontal 20 Hz tACS was associated with transient enhancement of FC across the measured cortical network at post-stim1 (pFDR < 0.05), selectively strengthening intra-and interhemispheric and intra-nodal connectivity before resolving by post-stim2. Crucially, the effects were pathology-dependent, and visual-motor integration pathways (right occipital lobe to left motor cortex; right primary somatosensory cortex to left occipital lobe) emerged exclusively in DOC patients with moderately abnormal background but not in those with diffuse slowing. Concurrent acute network reorganization at post-stim1 (all p < 0.05) featured increased C p , E g , and E loc , along with decreased L p , all normalizing by post-stim2. Clinically, Coma Recovery Scale-Revised scores correlated positively with average FC of HbO (pre-stim: r = 0.47; post-stim2: r = 0.41) and Area Under the Curve (AUC) of E g  (pre-stim: r = 0.44), and negatively with AUC of L p  (pre-stim: r = - 0.41; all p < 0.05).\nCONCLUSIONS: Frontal beta-tACS was associated with state-dependent changes in functional network organization in DOC, with dynamic fNIRS measures that may be useful for tracking these changes. These findings provide preliminary descriptive evidence of short-term network changes associated with beta-tACS and may help guide future controlled studies of targeted neuromodulation in patients with DOC.",
       "abstract_zh": "",
       "hit_groups": [
-        "B1"
+        "C",
+        "D"
       ],
-      "group_count": 1,
-      "relevance_score": 24,
+      "group_count": 2,
+      "relevance_score": 12,
       "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "drug-resistant",
-        "refractory",
-        "generalized",
-        "antiseizure",
-        "responsive"
+        "electroencephalogr",
+        "eeg",
+        "neuromodulation",
+        "transcranial",
+        "stimulation"
       ],
       "priority": "必读"
     },
     {
-      "index": 12,
+      "index": 18,
       "pmid": "42899673",
       "title": "Delineating neural contributions to electroencephalogram-based speech decoding.",
       "title_zh": "",
@@ -545,36 +769,7 @@
       "priority": "必读"
     },
     {
-      "index": 13,
-      "pmid": "42892501",
-      "title": "Interplay of action-based prediction and top-down attention: EEG evidence for joint modulation of late perceptual processing.",
-      "title_zh": "",
-      "journal": "NeuroImage",
-      "iso_journal": "Neuroimage",
-      "authors": [
-        "Holstein T",
-        "Sarrazin JC",
-        "Berberian B",
-        "Desantis A"
-      ],
-      "pubdate": "2026 Oct 17",
-      "doi": "10.1016/j.neuroimage.2026.122293",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42892501/",
-      "abstract": "Voluntary action shapes our perception through sensory predictions of its consequences. These predictions are thought to inhibit perceptual processing of predicted outcomes, leading to sensory attenuation. However, some studies have reported findings that contrast with this effect, suggesting that the influence of predictions may reflect, or interact with, attentional processes. Here, we investigated the interplay of action-based prediction and top-down attention on early and late perceptual processing, with prediction and attention referring to the likelihood of a sensory event and its behavioral relevance, respectively. Electroencephalography (EEG) was recorded while participants viewed two sequential gratings. The orientation of the first was either predicted and self-generated or unpredicted and externally generated. Participants judged the tilt direction of the second grating relative to the first but responded only when the grating appeared in a task-relevant color. EEG analyses revealed no modulation of early visual potentials (N1a), but modulations at later processing stages. Specifically, the P3b exhibited reduced amplitude for predicted compared to unpredicted stimuli, but only when they were task-relevant, whereas task-relevance enhanced the P3b only for unpredicted stimuli. Interestingly, multivariate pattern analysis showed significant temporal clusters for decoding the grating's orientation exclusively for predicted and task-relevant stimuli, although decoding performance did not significantly differ between conditions. Furthermore, predicted and task-relevant stimuli elicited faster behavioral responses, with prediction-related P3b latency differences correlating with reaction-time differences. Overall, converging findings from the P3b, multivariate, time-frequency and behavioral analyses provide suggestive evidence that top-down attention and action-based prediction may jointly facilitate late perceptual and decision-related processing.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 4,
-      "relevance_hits": [
-        "electroencephalogr",
-        "eeg"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 14,
+      "index": 19,
       "pmid": "42900250",
       "title": "Sleep Spindles and Slow Oscillations as Potential Biomarkers and Therapeutic Targets in Mild-to-Moderate Alzheimer's Disease.",
       "title_zh": "",
@@ -605,7 +800,7 @@
       "priority": "必读"
     },
     {
-      "index": 15,
+      "index": 20,
       "pmid": "42894014",
       "title": "Repetitive transcranial magnetic stimulation (rTMS) combined with antidepressant pharmacotherapy for depression: state-dependent mechanisms, clinical evidence, and translational challenges.",
       "title_zh": "",
@@ -634,70 +829,6 @@
         "hippocampal",
         "neuromodulation",
         "transcranial",
-        "biomarker",
-        "stimulation"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 16,
-      "pmid": "42893423",
-      "title": "Artificial Intelligence and Connected Technologies in Chronic Pain Management: A Scoping Review.",
-      "title_zh": "",
-      "journal": "Pain research & management",
-      "iso_journal": "Pain Res Manag",
-      "authors": [
-        "Elhomsy P",
-        "Reliquet B",
-        "Sudria F"
-      ],
-      "pubdate": "2026",
-      "doi": "10.1155/prm/5521331",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42893423/",
-      "abstract": "BACKGROUND: Chronic pain affects over 1.5 billion people worldwide, facing persistent challenges in assessment subjectivity, treatment variability, and scalability (i.e., the limited ability to deliver individualized care to large populations within current clinical systems). Artificial intelligence (AI) and connected health technologies have transitioned from experimental tools to clinical reality in pain management.\nOBJECTIVE: This scoping review maps current AI applications, identifies implementation gaps, and demonstrates the need for systematic technology integration in pain medicine.\nMETHODS: We conducted a targeted literature search across PubMed, Scopus, MEDLINE, Web of Science, and Google Scholar. From 487 identified articles, 23 met inclusion criteria for a detailed analysis. A scoping review approach, following the Arksey and O'Malley framework, provided an integrative perspective on these rapidly evolving applications.\nRESULTS: AI implementations span four domains: (1) objective pain assessment via multimodal analysis (facial recognition, neurophysiology, and imaging); (2) personalized treatment strategies using machine learning to optimize therapeutic responses; (3) predictive analytics for risk stratification (postoperative pain and opioid misuse); and (4) real-time monitoring through connected devices and closed-loop neuromodulation. Notable applications include AI-guided spinal cord stimulation and wearable-integrated pain profiling. Despite demonstrable clinical benefits across these domains, integration remains fragmented due to data governance challenges and educational gaps among practitioners.\nCONCLUSIONS: AI is demonstrably improving chronic pain outcomes, yet integration remains fragmented due to data governance issues and educational gaps. Professional societies must establish specialized AI committees, clinical guidelines, and structured training. As this transformation occurs, pain specialists must lead this evolution rather than adapt reactively to external changes.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 5,
-      "relevance_hits": [
-        "ecog",
-        "machine learning",
-        "closed-loop",
-        "neuromodulation",
-        "stimulation"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 17,
-      "pmid": "42891881",
-      "title": "Network-guided Thalamic Neuromodulation for Epilepsy.",
-      "title_zh": "",
-      "journal": "Current neurology and neuroscience reports",
-      "iso_journal": "Curr Neurol Neurosci Rep",
-      "authors": [
-        "Park S",
-        "Gregg NM"
-      ],
-      "pubdate": "2026 Oct 17",
-      "doi": "10.1007/s11910-026-01526-x",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42891881/",
-      "abstract": "PURPOSE OF REVIEW: This review takes a network-based perspective on thalamic neuromodulation for epilepsy, examining how each target (e.g., anterior (ANT), centromedian (CM), and pulvinar (PUL) thalamic nuclei) engage distinct seizure networks, what evidence supports each, and how stimulation/electrophysiologic mapping can guide individualized targeting rather than a fixed, syndrome-based approach.\nRECENT FINDINGS: Randomized and prospective trials have expanded the evidence for ANT and CM stimulation, while emerging data support the pulvinar as a target for posterior quadrant and temporal lobe epilepsies. Syndrome-specific sweet-spot analyses reveal distinct optimal sites within the CM for LGS and IGE. Thalamic sEEG with single-pulse stimulation and trials of DBS-style stimulation now enables characterization of seizure network engagement and identification of acute biomarkers that may inform target and parameter selection. Multi-target strategies combining thalamic nuclei, or thalamic and cortical leads, show preliminary promise for broadly distributed seizure networks. No single thalamic target is uniformly effective across epilepsy types; optimal targeting requires individualized, network-informed characterization. This supports a shift toward connectomic and individualized approaches, with future work needed to refine target selection, stimulation paradigms, and individualized optimization using clinical outcomes and electrophysiological biomarkers.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 31,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "eeg",
-        "temporal lobe",
-        "seeg",
-        "neuromodulation",
         "biomarker",
         "stimulation"
       ],
