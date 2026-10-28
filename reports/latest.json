@@ -1,19 +1,19 @@
 {
   "meta": {
-    "report_date": "2026-10-27",
-    "target_edat": "2026-10-26",
+    "report_date": "2026-10-28",
+    "target_edat": "2026-10-27",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-10-27 00:17:49",
+    "generated_at": "2026-10-28 00:30:11",
     "feishu_diag": {
       "status": "ok",
       "stage": "complete",
-      "searched": 16,
-      "created": 6,
-      "expected": 6,
+      "searched": 31,
+      "created": 15,
+      "expected": 15,
       "verified": true,
-      "candidates": 16,
-      "dedup_skipped": 10,
+      "candidates": 31,
+      "dedup_skipped": 16,
       "pending": 0
     }
   },
@@ -21,9 +21,10 @@
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 3,
-      "total": 3,
+      "count": 4,
+      "total": 4,
       "pmids": [
+        "42945476",
         "42932853",
         "42932852",
         "42931745"
@@ -33,9 +34,16 @@
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 8,
-      "total": 8,
+      "count": 15,
+      "total": 15,
       "pmids": [
+        "42944634",
+        "42944628",
+        "42944538",
+        "42933320",
+        "42933319",
+        "42933318",
+        "42933317",
         "42927711",
         "42927710",
         "42927709",
@@ -58,17 +66,25 @@
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 0,
-      "total": 0,
-      "pmids": [],
+      "count": 2,
+      "total": 2,
+      "pmids": [
+        "42933128",
+        "42933029"
+      ],
       "status": "ok"
     },
     {
       "group": "D",
       "label": "闭环神经调控 · Closed-loop Neuromodulation",
-      "count": 5,
-      "total": 5,
+      "count": 10,
+      "total": 10,
       "pmids": [
+        "42944391",
+        "42939144",
+        "42939006",
+        "42934145",
+        "42934130",
         "42926499",
         "42923644",
         "42923510",
@@ -78,10 +94,46 @@
       "status": "ok"
     }
   ],
-  "dedup_total": 16,
+  "dedup_total": 31,
   "papers": [
     {
       "index": 1,
+      "pmid": "42945476",
+      "title": "KCNH1 variants associated with neurodevelopmental disorders exhibit prominent gain of function.",
+      "title_zh": "与神经发育障碍相关的KCNH1变异体表现出显著的功能增益。",
+      "journal": "Brain : a journal of neurology",
+      "iso_journal": "Brain",
+      "authors": [
+        "Thompson CH",
+        "Simmons CQ",
+        "He IK",
+        "Jairam NP",
+        "Desai RR",
+        "Cha E",
+        "Hong AE",
+        "DeKeyser JM",
+        "Laux LC",
+        "Jinnette M",
+        "Vanoye CG",
+        "George AL Jr"
+      ],
+      "pubdate": "2026 Oct 27",
+      "doi": "10.1093/brain/awag373",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42945476/",
+      "abstract": "Pathogenic variants in KCNH1, encoding the human ether-á-go-go voltage-gated potassium channel (EAG1, KV10.1), are associated with the neurodevelopmental disorders Temple-Baraitser syndrome (TBS), Zimmermann-Laband syndrome (ZLS), epileptic encephalopathy, and other undefined neurodevelopmental disorders. Investigating the functional consequences of KCNH1 variants can provide information about molecular and cellular pathophysiological mechanisms and help guide therapeutic directions. In this study, we determined the functional properties of 26 disease-associated KCNH1 variants including three recurrent and six that were previously unpublished. Findings were compared to the wildtype (WT) channel along with six rare population variants. Our approach used automated patch clamp recording of heterologously expressed KCNH1 variants in both the homozygous state (variant alone) and the clinically-relevant heterozygous state (variant co-expressed with WT channels). We also examined the impact of alternative splice isoforms on functional consequences of specific variants. We demonstrated that the majority of disease-associated KCNH1 variants exhibit features consistent with gain-of-function including hyperpolarized voltage-dependence of activation, accelerated activation kinetics, or both that promote hyperpolarization of the resting membrane potential. By contrast, one unique variant discovered previously in an autism cohort had a depolarized voltage-dependence of activation and was associated with a depolarized resting potential in cells. Pharmacological testing of KCNH1 variants demonstrated differences in potency for channel block by imipramine and an investigational non-selective potassium channel blocker (LY97241) for specific variants. Collectively, our findings support gain-of-function as the most common, albeit not exclusive, molecular mechanism underlying KCNH1-related disorders and suggest opportunities for potential therapeutic drug repurposing strategies for these conditions.",
+      "abstract_zh": "KCNH1中编码人ether-á-go-go电压门控钾通道（ EAG1 ， KV10.1 ）的致病变异与神经发育障碍Temple-Baraitser综合征（ TBS ）、Zimmermann-Laband综合征（ ZLS ）、癫痫性脑病和其他未定义的神经发育障碍相关。研究KCNH1变异体的功能后果可以提供有关分子和细胞病理生理机制的信息\n并帮助指导治疗方向。在这项研究中，我们确定了26个与疾病相关的KCNH1变异体的功能特性，包括3个复发变异体和6个以前未发表的变异体。将发现与野生型（ WT ）通道以及六种罕见的群体变异进行比较。我们的方法使用纯合子状态（单独的变异）和临床状态下异源表达的KCNH1变异的自动膜片钳记录\ny相关杂合状态（与野生型通道共表达的变体）。我们还研究了替代剪接亚型对特定变异的功能后果的影响。我们证明，大多数疾病相关的KCNH1变异体表现出与功能增益一致的特征，包括激活的超极化电压依赖性，加速激活动力学，或两者都促进静息成员的超极化\n相反，先前在自闭症队列中发现的一种独特变异具有去极化的激活电压依赖性，并且与细胞中的去极化静息电位相关。KCNH1变异体的药理学测试表明，对于特定变异体，丙咪嗪和研究性非选择性钾通道阻滞剂（ LY97241 ）在通道阻滞的效力方面存在差异。总的来说，我们的调查结果支持ga\n作为KCNH1相关疾病最常见但并非唯一的分子机制，并提出了针对这些疾病的潜在治疗药物再利用策略的机会。",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 1,
+      "relevance_hits": [
+        "epileptic"
+      ],
+      "priority": "浏览"
+    },
+    {
+      "index": 2,
       "pmid": "42932853",
       "title": "Groundbreaking Study Identifies Excess Epilepsy Burden and Inequity in Māori Children: Confirms WHO-IGAP Targets.",
       "title_zh": "开创性研究识别毛利儿童的过度癫痫负担和不平等：确认WHO-IGAP目标。",
@@ -107,7 +159,7 @@
       "priority": "推荐"
     },
     {
-      "index": 2,
+      "index": 3,
       "pmid": "42932852",
       "title": "Differences in Epilepsy Etiology, Type, Syndrome, and Severity Between Māori and Non-Māori-Non-Pasifika Children With Epilepsy in New Zealand.",
       "title_zh": "新西兰癫痫儿童中毛利人和非毛利人的癫痫病因、类型、综合征和严重程度的差异。",
@@ -141,7 +193,7 @@
       "priority": "必读"
     },
     {
-      "index": 3,
+      "index": 4,
       "pmid": "42931745",
       "title": "Internet Intervention for Functional Seizures: A Randomized Clinical Trial.",
       "title_zh": "功能性癫痫发作的互联网干预：一项随机临床试验。",
@@ -175,10 +227,226 @@
       "priority": "必读"
     },
     {
-      "index": 4,
+      "index": 5,
+      "pmid": "42944634",
+      "title": "Rethinking pediatric epilepsy management: From household environment to a family-centered Mediterranean lifestyle intervention.",
+      "title_zh": "重新思考儿科癫痫管理：从家庭环境到以家庭为中心的地中海生活方式干预。",
+      "journal": "Epileptic disorders : international epilepsy journal with videotape",
+      "iso_journal": "Epileptic Disord",
+      "authors": [
+        "Yücel G"
+      ],
+      "pubdate": "2026 Oct 27",
+      "doi": "10.1002/epd2.70453",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42944634/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 6,
+      "relevance_hits": [
+        "epilepsy"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 6,
+      "pmid": "42944628",
+      "title": "The ongoing dilemma of immunotherapy in antibody-negative suspected autoimmune encephalitis-associated epilepsy: A retrospective cohort study.",
+      "title_zh": "抗体阴性疑似自身免疫性脑炎相关癫痫的免疫治疗的持续困境：一项回顾性队列研究。",
+      "journal": "Epileptic disorders : international epilepsy journal with videotape",
+      "iso_journal": "Epileptic Disord",
+      "authors": [
+        "ALKhaldi NA",
+        "Kreinter H",
+        "Burneo JG",
+        "Jones ML",
+        "Budhram A",
+        "Suller Marti A"
+      ],
+      "pubdate": "2026 Oct 27",
+      "doi": "10.1002/epd2.70445",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42944628/",
+      "abstract": "OBJECTIVES: This study evaluates immunotherapy in drug-resistant epilepsy (DRE) patients with concern for autoimmune encephalitis-associated epilepsy (AEAE) but negative neural antibody testing (-Ab).\nMETHODS: A retrospective cohort study, focusing on patients treated at our Epilepsy Monitoring Unit (EMU) from January 2018 to May 2022. Of 39 patients with DRE who received immunotherapy, 27 had clinical concern for AEAE. After excluding patients with absent or incomplete neural antibody testing (n = 7) or positive neural antibodies (n = 8), 12 antibody-negative patients constituted the final study cohort.\nRESULTS: Among the final 12 patients, 41.7% were female (median age 43.5 years, IQR = 28.8-63.3). The median age of epilepsy onset was 39.5 years (IQR = 23.8-60.3), and patients began immunomodulatory treatment (IMT) at a median of 15.5 months after seizure onset (IQR = 12.8-21.8). Distribution of treatments was 41.6% both intravenous immunoglobulin (IVIg) and methylprednisolone (IVMP), 33.3% IVIG alone, 16.6% IVIG, IVMP, and plasma exchanges (PLEX), and 8.3% IVIG, IVMP, and rituximab. After a median follow-up of 25 months (IQR = 24-31.3), the majority (10/12) had non-sustained responses beyond 6 months, with only 2/12 showing sustained (>50% reduction in seizures) responses. Confounding factors (e.g., concomitant ASM addition/change, lack of temporal relationship to immunotherapy) were identified in both cases.\nSIGNIFICANCE: The study reveals IMT has limited success in patients with DRE and concern for AEAE but Ab-. Critical evaluation of IMT is essential in suspected AEAE cases with Ab- to avoid unnecessary administration of potentially hazardous immunotherapy in patients who are unlikely to benefit.",
+      "abstract_zh": "目的：本研究评估关注自身免疫性脑炎相关癫痫（ AEAE ）但神经抗体检测阴性（ -Ab ）的耐药性癫痫（ DRE ）患者的免疫治疗。\n方法：一项回顾性队列研究，侧重于2018年1月至2022年5月在我们的癫痫监测单位（ EMU ）接受治疗的患者。 在接受免疫治疗的39例DRE患者中， 27例有AEAE的临床问题。 排除患者后w\n如果没有或未完成神经抗体检测（ n = 7 ）或神经抗体阳性（ n = 8 ） ， 12名抗体阴性患者构成最终研究队列。\n结果：在最终12例患者中， 41.7%为女性（中位年龄43.5岁， IQR = 28.8-63.3 ）。 癫痫发作的中位年龄为39.5岁（ IQR = 23.8-60.3 ） ，患者在癫痫发作后中位15.5个月开始免疫调节治疗（ IMT ） （ IQR = 12.8-21.8 ）。Distr\n静脉注射免疫球蛋白（ IVIg ）和甲基强的松龙（ IVMP ）的治疗药物占41.6% ，单用IVIG占33.3% ， IVIG、IVMP和血浆交换（ PLEX ）占16.6% ， IVIG、IVMP和利妥昔单抗占8.3%。中位随访25个月（ IQR = 24-31.3 ）后，大多数（ 10/12 ）在6个月后无持续缓解，只有2/12显示持续缓解（癫痫发作减少> 50% ）。混杂因素（例如，伴随的ASM添加/c\nhANGE ，与免疫治疗缺乏时间关系）。\n意义：该研究显示， IMT在DRE患者和对AEAE但Ab-的担忧方面取得的成功有限。 对于疑似AEAE的Ab-患者， IMT的关键评估是必不可少的，以避免在不太可能受益的患者中进行不必要的潜在危险的免疫治疗。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 14,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "drug-resistant"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 7,
+      "pmid": "42944538",
+      "title": "Mediterranean dietary patterns and epilepsy: Distinguishing nutritional benefits from antiseizure efficacy.",
+      "title_zh": "地中海饮食模式与癫痫：从抗癫痫功效中区分营养益处。",
+      "journal": "Epileptic disorders : international epilepsy journal with videotape",
+      "iso_journal": "Epileptic Disord",
+      "authors": [
+        "Oliveira ACC",
+        "Coan AC"
+      ],
+      "pubdate": "2026 Oct 27",
+      "doi": "10.1002/epd2.70454",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42944538/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 13,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "antiseizure"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 8,
+      "pmid": "42933320",
+      "title": "Pilot testing an epilepsy self-management and resilience smartphone application for adolescents and young adults in Uganda.",
+      "title_zh": "针对乌干达青少年和年轻人的癫痫自我管理和弹性智能手机应用程序试点测试。",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Njeru PN",
+        "Kakooza-Mwesige A",
+        "Muwonge K",
+        "Kebirungi G",
+        "Nsubuga M",
+        "Mutegeki H",
+        "Mason A",
+        "Jjingo D",
+        "Koltai D"
+      ],
+      "pubdate": "2026 Oct 26",
+      "doi": "10.1016/j.yebeh.2026.111334",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933320/",
+      "abstract": "OBJECTIVE: People with epilepsy in Uganda face substantial barriers to accessing culturally relevant self-management support. We developed the Self-Management and Resilience Tracking Application (SMART App) to address this gap in existing epilepsy self-management tools by integrating routine epilepsy self-management support with resilience tracking and resilience promoting activities. The application was designed within Uganda's local cultural, social, and healthcare context. Pilot testing examined user engagement, usability, and participant feedback to inform refinement of the app in preparation for a future trial to demonstrate effectiveness.\nMETHODS: We conducted a 45-day mixed-methods pilot test of the SMART App among 60 adolescents and young adults with epilepsy in Uganda. The app is available in English, Luganda and Runyankore, two major local Ugandan languages. Engagement analyses were restricted to the first 30 days due to unreliable phone data availability for the final 15 days. Quantitative engagement measures were assessed using in-app usage logs. Usability was assessed using an adapted version of the Adapted Usability Scale. Pre- to post- changes in reported coping strategies, social support use, seizure-tracking habits, medication adherence, and stress-management were explored. Qualitative data were collected through individual interviews and focus group discussions (n = 56).\nRESULTS: App uptake was 100 %, and no attrition due to non-use was observed. Over 30 days, the median number of unique login days was 20.5 (IQR, 8-25), and the median time from onboarding to last recorded use was 26 days (IQR, 22-28). Thirteen participants (21.7 %) had minimal use, 21 (35.0 %) moderate use, and 26 (43.3 %) high use. Feature uptake was highest for resilience tracking (91.7 %), followed by medication tracking (81.7 %) and seizure tracking (70.0 %). Usability responses were most favorable for ease of use, information retrieval, and user confidence, but were more mixed for learnability, organization, and intended frequency of use. Mean self-reported seizure-tracking scores were higher at follow-up than baseline (2.71 vs 3.32; mean difference 0.61, 95 % CI 0.15-1.07; P = 0.010), as were stress-management scores (2.98 vs 3.63; mean difference 0.65, 95 % CI 0.30-1.00; P= 0<.001). Participants shared how the app influenced their understanding of epilepsy, their evaluation of resilience features, and recommended additional tracking options, visual summaries, and expanded content. Participants illustrated the app's potential effects on epilepsy literacy and stress management, and to generate a more hopeful, contextualized understanding of epilepsy.\nCONCLUSION: The SMART App demonstrated feasibility and high user acceptability with a particularly strong uptake of its resilience tracking feature. By integrating epilepsy self-management with resilience building support, the app offers a promising approach to addressing symptoms of distress, social isolation, and stigma among people with epilepsy. Findings support targeted refinement of app content and functionality, followed by prospective evaluation.",
+      "abstract_zh": "目标：乌干达的癫痫患者在获得与文化相关的自我管理支持方面面临重大障碍。我们开发了自我管理和弹性跟踪应用程序（ SMART App ） ，通过将常规癫痫自我管理支持与弹性跟踪和弹性促进活动相结合，来解决现有癫痫自我管理工具中的这一差距。该应用程序是根据乌干达当地文化设计的，\n和医疗保健背景。 试点测试检查了用户参与度、可用性和参与者反馈，为应用程序的改进提供信息，为未来的试验做准备，以证明有效性。\n方法：我们在乌干达60名患有癫痫的青少年和年轻人中进行了为期45天的SMART应用程序混合方法试点测试。 该应用程序提供英语、卢干达语和Runyankore两种主要的乌干达当地语言。参与度分析\n由于最后15天的电话数据不可靠，因此仅限于前30天。使用应用内使用日志评估定量参与度指标。使用改编版的适用性量表评估可用性。探讨了报告的应对策略、社会支持使用、癫痫发作跟踪习惯、药物依从性和压力管理方面的前后变化。通过以下步骤收集定性数据：\nh个人访谈和焦点小组讨论（ n = 56 ）。\n结果： APP吸收率为100% ，未观察到因不使用而导致的磨损。 在30天内，唯一登录天数的中位数为20.5 （ IQR ， 8-25 ） ，从入职到最后记录使用的中位数时间为26天（ IQR ， 22-28 ）。 13名参与者（ 21.7 ％ ）使用最少， 21名（ 35.0 ％ ）中度使用， 26名（ 43.3 ％ ）高使用。 弹性跟踪的功能采用率最高（ 9\n1.7 ％ ） ，其次是药物跟踪（ 81.7 ％ ）和癫痫发作跟踪（ 70.0 ％ ）。可用性响应在易用性、信息检索和用户信心方面最为有利，但在可学习性、组织和预期使用频率方面则更加复杂。随访时平均自我报告的癫痫发作跟踪评分高于基线（ 2.71对3.32 ；平均差异0.61 ， 95% CI 0.15-1.07 ； P = 0.010 ） ，压力管理评分也高于基线（ 2.\n98 vs 3.63 ；平均差异0.65 ， 95% CI 0.30-1.00 ； P = 0 < 0.001 ）。 参与者分享了该应用程序如何影响他们对癫痫的理解、他们对韧性特征的评估，并推荐了其他跟踪选项、视觉摘要和扩展内容。 参与者展示了该应用程序对癫痫识字和压力管理的潜在影响，并产生了对癫痫的更有希望、更符合背景的理解。\n结论：\nSMART应用程序展示了可行性和高用户可接受性，其弹性跟踪功能的吸收尤为强劲。通过将癫痫自我管理与韧性建设支持相结合，该应用程序为解决癫痫患者的痛苦、社交孤立和耻辱症状提供了一种有前途的方法。调查结果支持有针对性地改进应用程序内容和功能，然后进行前瞻性评估。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 18,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 9,
+      "pmid": "42933319",
+      "title": "Patient-reported adverse effects of selected newer-generation antiseizure medications: comparison of monotherapy and dual therapy in patients with epilepsy.",
+      "title_zh": "选定新一代抗癫痫药物的患者报告不良反应：癫痫患者单药治疗和双药治疗的比较。",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Janusz M",
+        "Strehlau S",
+        "Habermehl L",
+        "Menzler K",
+        "Timmermann L",
+        "Knake S",
+        "Möller L"
+      ],
+      "pubdate": "2026 Sep 22",
+      "doi": "10.1016/j.yebeh.2026.111309",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933319/",
+      "abstract": "BACKGROUND: Epilepsy is a common chronic neurological disorder primarily treated with antiseizure medications (ASMs), which may cause adverse effects that negatively affect quality of life. Using the validated Adverse Event Profile (AEP), a patient-reported measure of subjective treatment-associated side effects, this study aimed to compare the burden of subjective adverse effects in patients receiving monotherapy versus dual therapy.\nMETHODS: We analysed data from 259 patients treated at a German tertiary epilepsy center who completed the AEP questionnaire. Adverse effects under monotherapy were compared with those under dual therapy by evaluating individual AEP items, subscale scores, and total scores. Common monotherapies - levetiracetam (LEV), lamotrigine (LTG), brivaracetam (BRV), and lacosamide (LCM) - were compared with frequent dual therapy combinations (BRV + LCM, BRV + LTG, LCM + LEV, and LEV + LTG).\nRESULTS: Overall, no significant differences in adverse effect burden were observed between monotherapy and dual therapy. Within the LEV subgroup, patients receiving LEV + LTG (n = 32) reported significantly higher scores for unsteadiness (p = 0.023), weight gain (p = 0.021), and memory problems (p = 0.009) compared with LEV monotherapy; no significant differences were observed for LTG monotherapy.\nCONCLUSION: In this cohort, dual therapy with newer-generation ASMs was not associated with a higher overall burden of adverse effects. Given the retrospective, cross-sectional design and small subgroup sizes, these findings should be considered exploratory and require confirmation in larger prospective studies. Unnecessary polytherapy should be avoided, and ASM treatment should remain individualised.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 17,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "antiseizure"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 10,
+      "pmid": "42933318",
+      "title": "Assessment of caregiver knowledge and attitudes toward pediatric epilepsy during an epilepsy monitoring unit admission.",
+      "title_zh": "",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Holmstrom A",
+        "Gedela S"
+      ],
+      "pubdate": "2026 Oct 26",
+      "doi": "10.1016/j.yebeh.2026.111347",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933318/",
+      "abstract": "BACKGROUND: Caregiver knowledge and attitudes are critical to effective pediatric epilepsy management, yet misconceptions about seizure safety, treatment options, and long-term outcomes remain common. The Epilepsy Monitoring Unit (EMU) provides a unique opportunity for real-time education during diagnostic evaluation and clinical care.\nOBJECTIVE: To assess changes in epilepsy-related knowledge and attitudes among caregivers of pediatric patients during a short-term EMU admission.\nMETHODS: This prospective pre-post observational study enrolled caregivers of children aged 2-18 years admitted to the EMU at Nemours Children's Hospital for epilepsy-related diagnostic evaluation or management. Caregivers completed the 16-item Epilepsy Knowledge Scale (EKS) and 14-item Epilepsy Attitude Scale (EAS) shortly after admission and again prior to discharge in English or professionally translated Spanish. Routine education occurred during bedside rounds without a structured study intervention. Paired analyses were used to compare pre- and post-stay scores, and item-level changes were assessed using exact McNemar tests, with Benjamini-Hochberg false discovery rate correction as a sensitivity analysis.\nRESULTS: Of 63 caregivers approached, 57 completed both pre- and post-surveys, yielding a response rate of 90.5 %. The mean EMU length of stay was 1.74 ± 1.29 days. Mean EKS scores increased from 7.33 ± 2.02 at baseline to 10.07 ± 1.83 at discharge, representing a mean increase of 2.74 points (95 % CI: 2.03-3.44p < 0.001) and an effect size of Cohen's d z  = 1.03. Median EAS scores increased from 39 (IQR: 35, 41) to 40 (IQR: 37, 42; p < 0.001; r = 0.48). Item-level results were mixed, and four of 16 EKS items remained significant after false discovery rate correction; no individual EAS item remained significant after correction.\nCONCLUSIONS: Caregiver knowledge and overall attitude scores improved during a brief pediatric EMU admission. Because this was an uncontrolled observational study without a standardized educational intervention, the observed changes cannot be attributed specifically to routine education. Test-retest effects and language-related measurement differences are also possible. These findings support prospective evaluation of structured, standardized caregiver education integrated into EMU care.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 14,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 11,
+      "pmid": "42933317",
+      "title": "Cognitive effects of deep brain stimulation across targets in epilepsy: a systematic review and meta-analysis.",
+      "title_zh": "",
+      "journal": "Epilepsy & behavior : E&B",
+      "iso_journal": "Epilepsy Behav",
+      "authors": [
+        "Halphen J Jr",
+        "Chen H",
+        "Julca MM",
+        "Haneef Z",
+        "Modiano YA"
+      ],
+      "pubdate": "2026 Sep 22",
+      "doi": "10.1016/j.yebeh.2026.111312",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933317/",
+      "abstract": "OBJECTIVE: Drug-resistant epilepsy (DRE) affects one-third of individuals with epilepsy and increases cognitive decline. Resective surgery carries focal cognitive risks and contraindications. Deep-brain stimulation (DBS) represents a promising alternative, although its cognitive effects remain understudied.\nMETHODS: We searched PubMed, MEDLINE, EMBASE, Web of Science, and Cochrane for pre- and post-DBS neuropsychological scores in DRE with ≥ 3 months follow-up. Fifteen studies (16 cohorts, n = 270) were reviewed; 12 (13 cohorts, n = 209) were meta-analyzed. Targets were the anterior nucleus of the thalamus (ANT, k = 7), amygdalohippocampal region (AH, k = 6), centromedian nucleus of the thalamus (k = 2), and subthalamic nucleus of the thalamus (k = 1). Robust variance estimation computed Hedges' g by domain. Bias assessed with ROBINS-I and RoB 2; certainty with GRADE.\nRESULTS: No cognitive domain declined significantly. Executive functioning was the only domain approaching improvement (g = 0.12, 95% CI -0.08 to 0.33), most apparent with ANT (g = 0.15, CI -0.16 to 0.46). Anxiety declined significantly (g = -0.36, 95% CI -0.68 to -0.04). Memory, language, processing speed, visuospatial functions, and global intellect remained stable. Cognitive adverse events occurred in 15.8% of patients, highest with ANT (20.1%) and lowest with AH (9.24%).\nSIGNIFICANCE: Chronic DBS for DRE is cognitively well tolerated, with no decline across domains and emerging evidence of executive functioning and mood benefit, especially with ANT stimulation. Verbal memory and naming were preserved after AH stimulation, unlike dominant temporal resection. Plausible mechanisms exist for both cognitive improvement and decline, yet neither appears consistently on assessments. Whether this reflects true stability or insensitivity of current methods is unclear. A revised framework for assessment timing, domains, and metrics is recommended.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 21,
+      "relevance_hits": [
+        "epilepsy",
+        "drug-resistant",
+        "focal",
+        "hippocampal",
+        "brain stimulation",
+        "deep brain stimulation",
+        "stimulation",
+        "thalamic"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 12,
       "pmid": "42927711",
       "title": "Resting-state functional brain changes in temporal lobe epilepsy with comorbid depression: A meta-analysis.",
-      "title_zh": "颞叶癫痫合并抑郁症的静息状态功能性脑改变：一项荟萃分析",
+      "title_zh": "",
       "journal": "Epilepsy & behavior : E&B",
       "iso_journal": "Epilepsy Behav",
       "authors": [
@@ -192,7 +460,7 @@
       "doi": "10.1016/j.yebeh.2026.111322",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42927711/",
       "abstract": "OBJECTIVE: To compare the differences in functional brain activity between patients with temporal lobe epilepsy comorbid with depressive disorder (TLE-D) and those with temporal lobe epilepsy without depressive disorder (TLE-ND) via a meta‑analysis of resting‑state functional magnetic resonance imaging (rs-fMRI) studies, and to explore the functional brain activity features associated with depressive symptoms.\nMETHODS: Systematic searches were conducted in PubMed, Embase, Web of Science, Cochrane Library, China National Knowledge Infrastructure (CNKI), and Wanfang Data from database inception to September 2026 to identify cross-sectional studies comparing rs-fMRI-derived differences in functional brain activity between patients with temporal lobe epilepsy comorbid with depressive disorder (TLE-D) and those without depressive disorder (TLE-ND). Eligible rs-fMRI metrics included regional brain activity indices and functional connectivity indices. A meta-analysis of studies reporting regional brain activity indices was performed using anisotropic effect-size signed differential mapping (AES-SDM). Due to their limited number, studies reporting functional connectivity indices were only described narratively. Study selection and data extraction were then completed, and a voxel-based meta-analysis of the included studies was performed with AES-SDM.\nRESULTS: A total of six studies yielding nine datasets met the inclusion criteria, involving 100 patients with TLE-D and 108 patients with TLE-ND. Meta-analysis showed that, compared with the TLE-ND group, the TLE-D group had significantly increased spontaneous brain activity in the right precuneus, right angular gyrus, right superior frontal gyrus, left middle frontal gyrus, and left cerebellum (analyzed via AES-SDM with an initial exploratory threshold of uncorrected voxel-level P < 0.005 and cluster size ≥10 voxels, and validated by leave-one-out sensitivity analysis). No brain regions with significantly decreased spontaneous brain activity were detected.\nCONCLUSION: These exploratory findings suggest that, compared with patients with TLE-ND, patients with TLE-D show distinct patterns of functional brain activity in multiple key nodes of the default mode network, including the precuneus and angular gyrus, as well as in prefrontal-related regions. These differences may provide preliminary neuroimaging evidence for understanding the neural mechanisms underlying depressive symptoms associated with temporal lobe epilepsy.",
-      "abstract_zh": "目的：通过静息状态功能磁共振成像（ rs-fMRI ）研究的荟萃分析，比较颞叶癫痫合并抑郁症（ TLE-D ）患者和颞叶癫痫无抑郁症（ TLE-ND ）患者功能性脑活动的差异，并探索与抑郁症状相关的功能性脑活动特征。\n方法：系统检索共同\n在PubMed、Embase、Web of Science、Cochrane图书馆、中国国家知识基础设施（ CNKI ）和万方数据中，从数据库成立到2026年9月，对颞叶癫痫合并抑郁症患者（ TLE-D ）和非抑郁症患者（ TLE-ND ）的功能性大脑活动进行了横断面研究，比较了rs-fMRI衍生的差异。符合条件的rs-fMRI指标包括区域b\nrAIN活动指数和功能连接指数。使用各向异性效应大小符号微分映射（ AES-SDM ）对报告区域脑活动指数的研究进行荟萃分析。由于其数量有限，仅叙述性地描述了报告功能连接指数的研究。然后完成研究选择和数据提取，并对纳入的研究进行基于体素的荟萃分析\n使用AES-SDM。\n结果：共有6项研究产生了9个符合纳入标准的数据集，涉及100名TLE-D患者和108名TLE-ND患者。 Meta分析显示，与TLE-ND组相比， TLE-D组在右楔前肌、右角回、右额上回、左额中回和左小脑中自发性脑活动显著增加（通过AES-SDM分析，\n未校正体素水平P < 0.005和簇大小≥ 10个体素的探索性阈值，并通过遗漏敏感性分析验证）。 未检测到自发性脑活动显著减少的大脑区域。\n结论：这些探索性发现表明，与TLE-ND患者相比， TLE-D患者在默认模式网络的多个关键节点中显示出不同的功能性大脑活动模式，\n例如楔前肌和角回，以及前额相关区域。这些差异可能为理解与颞叶癫痫相关的抑郁症状的神经机制提供初步的神经影像学证据。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -205,10 +473,10 @@
       "priority": "必读"
     },
     {
-      "index": 5,
+      "index": 13,
       "pmid": "42927710",
       "title": "Understanding the perceived impact of a peer-led epilepsy self-management intervention in Uganda: a qualitative study.",
-      "title_zh": "了解乌干达同伴主导的癫痫自我管理干预的感知影响：一项定性研究。",
+      "title_zh": "",
       "journal": "Epilepsy & behavior : E&B",
       "iso_journal": "Epilepsy Behav",
       "authors": [
@@ -229,7 +497,7 @@
       "doi": "10.1016/j.yebeh.2026.111355",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42927710/",
       "abstract": "OBJECTIVE: To examine how adults with epilepsy in Uganda experienced epilepsy self-management, stigma, and care following participation in a peer-led intervention (SMART-U) compared to enhanced treatment as usual (ETAU).\nMETHODS: This qualitative study was embedded within an ongoing randomized controlled trial at two university neurology clinics. A purposive subsample from both study arms completed semi-structured interviews at 13 (n = 16) and 24 weeks post-intervention (n = 16). Interviews explored perceived benefits and challenges of care, self-management behaviors, stigma and recommendations for improvement. Transcripts were analyzed using thematic analysis.\nRESULTS: Four themes emerged: barriers to self-management, self-management behaviors and attitudes, participant perspectives on care, and facilitators of self-management. Participants in both groups described significant structural and social barriers, including stigma, limited support, and challenges accessing care. However, SMART-U participants more frequently reported increased confidence, engagement in proactive self-management (e.g., stress management, planning around seizures), improved communication with providers, and greater ability to cope with stigma. In contrast, ETAU participants more often characterized epilepsy care as provider-driven, with fewer changes in attitudes or behaviors. Over time, SMART-U participants demonstrated clearer shifts toward self-efficacy and a more reflective understanding of epilepsy.\nCONCLUSIONS: Peer-led self-management support may enhance engagement, coping, and self-efficacy among people with epilepsy in resource-limited settings. Addressing stigma and strengthening social and healthcare support may be critical for improving outcomes in low-middle income countries.",
-      "abstract_zh": "目的：与常规强化治疗（ ETAU ）相比，研究乌干达成年癫痫患者在参与同伴主导干预（ SMART-U ）后如何经历癫痫自我管理、污名化和护理。\n方法：这项定性研究嵌入在两个大学神经病学诊所正在进行的随机对照试验中。 来自两个研究组的有目的的子样本在13 （ n = 16 ）和24完成了半结构化访谈\n 干预后周（ n = 16 ）。 访谈探讨了护理的感知益处和挑战、自我管理行为、污名化和改进建议。 使用主题分析对成绩单进行分析。\n结果：出现了四个主题：自我管理的障碍、自我管理行为和态度、参与者对护理的看法以及自我管理的促进者。 两组的参与者都描述了显著的结构\nl和社会障碍，包括耻辱、有限的支持和获得护理的挑战。然而， SMART-U参与者更频繁地报告增加了信心，参与了积极的自我管理（例如，压力管理，围绕癫痫发作的规划） ，改善了与提供者的沟通，并提高了应对耻辱感的能力。相比之下， ETAU参与者更经常将癫痫护理描述为提供者驱动的，\n态度或行为。随着时间的推移， SMART-U参与者表现出更清晰的自我效能转变和对癫痫的更深刻理解。\n结论：同伴主导的自我管理支持可以在资源有限的环境中增强癫痫患者的参与度、应对能力和自我效能感。 解决污名化问题并加强社会和医疗保健支持对于改善低中等收入国家的成果可能至关重要。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -243,10 +511,10 @@
       "priority": "必读"
     },
     {
-      "index": 6,
+      "index": 14,
       "pmid": "42927709",
       "title": "Psychosocial difficulties in children of parents with epilepsy: A pilot case-control study.",
-      "title_zh": "父母患有癫痫的儿童的社会心理困难：一项试点病例对照研究。",
+      "title_zh": "",
       "journal": "Epilepsy & behavior : E&B",
       "iso_journal": "Epilepsy Behav",
       "authors": [
@@ -260,7 +528,7 @@
       "doi": "10.1016/j.yebeh.2026.111343",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42927709/",
       "abstract": "BACKGROUND/AIM: Epilepsy is a chronic neurological disorder that may affect family functioning. Although the psychosocial impact on children of parents with several chronic medical and neurological disorders has been studied, a notable gap remains regarding epilepsy. This pilot study aimed to examine psychosocial outcomes in children aged 6-17 years whose parents have epilepsy and to explore emotional and behavioral difficulties within a multifactorial framework.\nMETHODOLOGY: This observational pilot case-control study was conducted between 2023 and 2025 at neurology departments in Giresun and Erzurum. The epilepsy group (n = 45) was compared with a control group (n = 48) recruited from the same hospitals for non neurological reasons. Assessments included the Conners Parent Rating Scale (CPRS), Strengths and Difficulties Questionnaire (SDQ), and Perceived Stress Scale (PSS), analyzed as continuous measures. Small sample size and risk of model overfitting precluded multivariable covariate adjustment; the Benjamini-Hochberg False Discovery Rate procedure was applied to account for multiple testing.\nRESULTS: Children of parents with epilepsy had higher rates of chronic medical conditions and ADHD diagnoses than controls. They also had higher SDQ emotional symptoms and hyperactivity/inattention scores, as well as higher CPRS total and problem related subscale scores. No significant between group differences were observed in total SDQ or PSS scores. In exploratory analyses by parental gender, children of fathers with epilepsy had higher SDQ total, emotional, and hyperactivity/inattention scores, as well as higher CPRS total and executive functioning scores. Fathers with epilepsy also reported higher PSS scores than mothers with epilepsy. Longer breastfeeding duration was inversely associated with CPRS total, hyperactivity/impulsivity, conduct, and peer relationship scores.\nCONCLUSION: Children of parents with epilepsy showed differences in selected emotional and behavioral domains rather than global psychosocial impairment. Exploratory findings related to parental gender and breastfeeding duration should be interpreted cautiously. The small, non probability sample, baseline group differences, inability to control for key epilepsy specific clinical characteristics because of sample size constraints, limited assessment of epilepsy related factors, and potential residual confounding limit causal interpretation and generalizability. These preliminary, hypothesis generating findings warrant confirmation in larger longitudinal studies incorporating multiple informants and family related factors.",
-      "abstract_zh": "背景/目的：癫痫是一种可能影响家庭功能的慢性神经系统疾病。尽管已经研究了患有几种慢性医学和神经系统疾病的父母对儿童的心理社会影响，但在癫痫方面仍然存在显著的差距。这项试点研究旨在研究父母患有癫痫的6-17岁儿童的心理社会结局，并探索多方面的情绪和行为困难\ntorial framework.\n方法：本观察性试点病例对照研究于2023年至2025年在Giresun和Erzurum的神经内科进行。 将癫痫组（ n = 45 ）与出于非神经系统原因从同一医院招募的对照组（ n = 48 ）进行比较。 评估包括Conners父母评定量表（ CPRS ） ，优势和困难问卷（ SDQ ）和感知压力量表（ PSS ） ，分析为\n连续测量。小样本量和模型过拟合风险排除了多变量协变量调整；应用Benjamini-Hochberg假发现率程序来考虑多重测试。\n结果：父母患有癫痫的儿童患慢性疾病和ADHD诊断率高于对照组。 他们还有更高的SDQ情绪症状和多动/注意力不集中评分，以及更高的CPR总分a\nnd问题相关的子量表分数。在总SDQ或PSS评分中未观察到组间显著差异。在按父母性别进行的探索性分析中，父亲患有癫痫的儿童具有较高的SDQ总分、情绪总分、多动/注意力不集中评分，以及较高的CPR总分和执行功能评分。患有癫痫的父亲报告的PSS评分也高于患有癫痫的母亲。发病时母乳喂养持续时间较长\n与心肺复苏总分、多动/冲动、行为和同伴关系评分密切相关。\n结论：父母患有癫痫的儿童在选定的情绪和行为领域表现出差异，而不是整体社会心理障碍。 应谨慎解释与父母性别和母乳喂养持续时间相关的探索性发现。 小的，非概率样本，基线组差异，无法控制fo\nr由于样本量限制、癫痫相关因素评估有限以及潜在的残余混杂极限因果解释和普遍性，癫痫的关键临床特征。这些初步的假设产生的结果值得在包含多个线人和家庭相关因素的大型纵向研究中得到证实。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -272,10 +540,10 @@
       "priority": "必读"
     },
     {
-      "index": 7,
+      "index": 15,
       "pmid": "42925812",
       "title": "Temporal evolution of EEG hallmarks in childhood Lennox-Gastaut syndrome.",
-      "title_zh": "儿童期Lennox-Gastaut综合征脑电图标志的时间演变",
+      "title_zh": "",
       "journal": "Seizure",
       "iso_journal": "Seizure",
       "authors": [
@@ -289,7 +557,7 @@
       "doi": "10.1016/j.seizure.2026.10.010",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42925812/",
       "abstract": "PURPOSE: The temporal development of generalized paroxysmal fast activity (GPFA) and slow spike-and-wave complexes in childhood Lennox-Gastaut syndrome (LGS) remains poorly characterized. This study mapped the emergence and longitudinal evolution of these EEG hallmarks in a real-world LGS cohort.\nMETHODS: This retrospective observational cohort study was conducted at a tertiary pediatric neurophysiology and neurology center. Patients aged 1-18 years fulfilling current International League Against Epilepsy criteria for LGS were identified through local databases. All available sleep video-EEG recordings before November 2024 were reviewed; clinical features, EEG findings, and comorbidities were collected at each recording. Statistical significance was set at p < 0.05.\nRESULTS: We reviewed 234 EEGs from 51 patients (75% male). Median age at first EEG was 5 years. GPFA emerged later than slow spike-and-wave (mean age: 9.6 vs 8.3 years, p = 0.002), with non-parametric analysis confirming a significant difference in age at first detection (p = 0.004). Median age at epilepsy onset was 1.1 years, while all clinical and EEG criteria for LGS were met at a median age of 10.9 years.\nCONCLUSION: EEG hallmarks of LGS emerged progressively during childhood, with slow spike-and-wave preceding GPFA during sleep. Following early clinical manifestations, a prolonged developmental phase may precede full electroclinical expression of LGS, with implications for early diagnosis and longitudinal EEG surveillance.",
-      "abstract_zh": "目的：儿童期Lennox-Gastaut综合征（ LGS ）中广泛性阵发性快速活动（ GPFA ）和慢性棘波复合征的暂时性发展仍然表征不佳。 本研究在真实世界的LGS队列中绘制了这些脑电图特征的出现和纵向演变。\n方法：这项回顾性观察队列研究是在三级儿科神经生理学和神经病学中心进行的。 年龄在1-18岁的患者\n通过当地数据库确定了符合当前国际抗癫痫联盟LGS标准的ARS。 审查了2024年11月之前所有可用的睡眠视频-脑电图记录；在每次记录时收集了临床特征、脑电图发现和合并症。 统计学显著性设定为p < 0.05。\n结果：我们回顾了来自51名患者（ 75%为男性）的234例脑电图。 第一次脑电图的中位年龄为5岁。 GPFA出现的时间晚于SLO\nw峰值和波长（平均年龄： 9.6 vs 8.3岁， p = 0.002 ） ，非参数分析证实首次检测时年龄存在显著差异（ p = 0.004 ）。 癫痫发作的中位年龄为1.1岁，而LGS的所有临床和脑电图标准的中位年龄为10.9岁。\n结论： LGS的脑电图特征在儿童时期逐渐出现，在睡眠期间GPFA之前出现缓慢的尖峰和波动。 遵循早期临床清单\n长期发育阶段可能先于LGS的完全电临床表达，这对早期诊断和纵向脑电图监测具有重要意义。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -303,7 +571,7 @@
       "priority": "必读"
     },
     {
-      "index": 8,
+      "index": 16,
       "pmid": "42925493",
       "title": "Absence of familial adult myoclonic epilepsy-associated intronic repeat expansions in SAMD12, STARD7, and MARCHF6 genes in juvenile myoclonic epilepsy with tremor.",
       "title_zh": "",
@@ -338,7 +606,7 @@
       "priority": "必读"
     },
     {
-      "index": 9,
+      "index": 17,
       "pmid": "42925131",
       "title": "Transition of spike to seizure networks in the rat somatosensory and motor cortex requires mitogen-activated protein kinase signaling.",
       "title_zh": "",
@@ -375,7 +643,7 @@
       "priority": "必读"
     },
     {
-      "index": 10,
+      "index": 18,
       "pmid": "42924597",
       "title": "Stability of the Epileptogenic Index across seizures and the effects of sleep and withdrawal of anti-seizure medications.",
       "title_zh": "",
@@ -413,7 +681,7 @@
       "priority": "必读"
     },
     {
-      "index": 11,
+      "index": 19,
       "pmid": "42921723",
       "title": "Etiology-specific spectrum of epilepsy syndromes (ESSES): Widening the concept of etiology-specific epilepsies-Report from the ILAE 2021-2025 Terminology Commission.",
       "title_zh": "",
@@ -455,7 +723,230 @@
       "priority": "必读"
     },
     {
-      "index": 12,
+      "index": 20,
+      "pmid": "42933128",
+      "title": "REFS: Robust EEG feature selection with incomplete labels for multi-dimensional emotion recognition.",
+      "title_zh": "",
+      "journal": "Journal of neural engineering",
+      "iso_journal": "J Neural Eng",
+      "authors": [
+        "Xu X",
+        "Dong W",
+        "Wei F",
+        "Zhuo L"
+      ],
+      "pubdate": "2026 Oct 26",
+      "doi": "10.1088/1741-2552/aeb97e",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933128/",
+      "abstract": "OBJECTIVE: Compared to single-type features, multi-type electroencephalography (EEG) features provide a multi-level representation for analyzing multi-dimensional emotions. However, the high dimensionality of multi-type EEG features, combined with the relatively small number of high-quality EEG samples, poses challenges such as classifier overfitting and suboptimal real-time performance in the multi-dimensional emotion recognition task. As the number of EEG channels increases, the issue will become increasingly severe. Moreover, practical applications of affective brain-computer interface frequently encounters partial absence of multi-dimensional emotional label data due to diverse emotional self-assessment models, and ambiguity and variability in individual emotion perception.\nAPPROACH: To address these challenges, this study proposes a novel robust EEG feature selection method for incomplete multi-dimensional emotion recognition. The method leverages adaptive orthogonal latent semantic indexing to reconstruct the multi-dimensional emotional label space through second-order and higher-order relations, which could reduce the negative impact of missing values and outliers on label reconstruction. Simultaneously, it employs least squares regression with graph-based manifold learning regularization and global feature redundancy minimization regularization to enable EEG feature subset selection despite missing information, ultimately achieving robust and fast EEG-based multi-dimensional emotion recognition.\nMAIN RESULTS: The proposed method was validated on three multi-dimensional emotional datasets with varying channel configurations, namely DREAMER, DEAP and HDED, under different label missing ratios. Experimental results show that the proposed method consistently outperforms thirteen state-of-the-art feature selection methods in terms of robustness for EEG emotional feature selection across various missing ratios.\nSIGNIFICANCE: The proposed method provides a robust and efficient solution for feature selection in multi-dimensional emotion recognition under incomplete EEG label scenarios, delivering reliable performance for practical affective brain-computer interface applications.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 18,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg",
+        "absence",
+        "ecog",
+        "adaptive"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 21,
+      "pmid": "42933029",
+      "title": "Accurate EEG-based linear state-space model of cortical dynamics during a passive motor task with exogenous input.",
+      "title_zh": "",
+      "journal": "Journal of neural engineering",
+      "iso_journal": "J Neural Eng",
+      "authors": [
+        "Bakels S",
+        "van de Ruit M",
+        "Jafarian M"
+      ],
+      "pubdate": "2026 Oct 26",
+      "doi": "10.1088/1741-2552/aeb97c",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42933029/",
+      "abstract": "OBJECTIVE: Revealing the dynamics of the brain in the presence of exogenous inputs is&#xD;crucial for mechanistic understanding, interventions and regulations. We study state-space&#xD;mathematical modeling of brain's cortical dynamics using electroencephalography (EEG)&#xD;data in an experiment with continuous exogenous input.\nAPPROACH: We use subspace&#xD;identification techniques to model the brain dynamics in a passive motor task experiment.&#xD;The EEG data were recorded while participants were seated with their wrist strapped to a&#xD;haptic manipulator. The manipulator imposed a continuous multisine angular&#xD;perturbation to the wrist as the exogenous input to the brain.\nMAIN RESULT: Using two&#xD;subspace identification algorithms, we show that linear time-invariant state-space models&#xD;accurately represent the measurements, in a latent space, assuming that the EEG data are&#xD;the models' output. The model is verified and validated using data from seven&#xD;participants. Moreover, we construct linear maps to relate the latent space dynamics to&#xD;the neural source space. We verify that the findings of our model align with those&#xD;identified in previous studies.\nSIGNIFICANCE: Accurate linear model in the presence of&#xD;exogenous input provides a pathway for designing parsimonious and simple controllers. In&#xD;addition, it enables development of online monitoring, connectivity analysis and control&#xD;relevant to neurorehabilitation, motor learning, and brain-computer interfacing.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 5,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 22,
+      "pmid": "42944391",
+      "title": "Closed-Loop Acoustic Stimulation of Slow Oscillations Using a Wireless EEG Headband: A Polysomnography-Validated Feasibility Study.",
+      "title_zh": "",
+      "journal": "Sensors (Basel, Switzerland)",
+      "iso_journal": "Sensors (Basel)",
+      "authors": [
+        "Jongejan SL",
+        "van der Heijden AC",
+        "Talamini LM"
+      ],
+      "pubdate": "2026 Oct 15",
+      "doi": "10.3390/s26206528",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42944391/",
+      "abstract": "Acoustic stimulation precisely timed during sleep can enhance slow oscillations (SOs), a hallmark of deep sleep that is critical for restorative sleep. To date, this approach has largely been restricted to laboratory settings using high-density electroencephalography (EEG). Wearable EEG systems featuring closed-loop acoustic stimulation could enable scalable, home-based approaches to modulating slow-wave sleep. Here, we tested whether a real-time modeling approach (M-CLNS) could be implemented using a wireless EEG headband with forehead electrodes in healthy participants. Acoustic stimulation was delivered during a single night of sleep in alternating stimulation and sham conditions. We evaluated the accuracy of SO phase targeting utilizing the EEG headband and assessed whether it could be used to detect stimulation-induced changes in oscillatory dynamics. The findings were validated against simultaneous polysomnographic (PSG) recordings as an independent reference. We found that SO phase was targeted consistently near the intended phase using the headband, despite reduced amplitude and signal quality compared with simultaneous PSG. Acoustic stimulation produced an immediate enhancement of SO dynamics, as well as sustained increases in SO density and power spectral density within the SO and delta frequency range (0.75-5 Hz) during deep sleep. These effects were apparent both in the EEG headband and PSG signals. These results demonstrate the feasibility of closed-loop acoustic stimulation using a wireless EEG headband, providing a foundation for future home-based and clinical applications.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 19,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg",
+        "closed-loop",
+        "stimulation"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 23,
+      "pmid": "42939144",
+      "title": "Locomotor-State Dependence of Neuromodulation During Avian Free Flight.",
+      "title_zh": "",
+      "journal": "Animals : an open access journal from MDPI",
+      "iso_journal": "Animals (Basel)",
+      "authors": [
+        "Tang Z",
+        "Li S",
+        "Li M",
+        "Shang Z"
+      ],
+      "pubdate": "2026 Oct 13",
+      "doi": "10.3390/ani16203213",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42939144/",
+      "abstract": "Complex avian locomotor behaviors depend on the coordinated operation of neural processes involved in sensory perception, decision-making, and motor execution. Exogenous neural stimulation can alter motor output by intervening in neural processes, but its effects may depend on the current locomotor state. Here, we investigated the locomotor-state dependence of formatio reticularis medialis mesencephali (FRM) microstimulation in freely flying pigeons. Individualized stimulation parameters were screened under stable laboratory conditions and kept constant during free-flight experiments. Flight-state features before and during stimulation were extracted, and state-response models were constructed to quantify their associations with stimulation-evoked turning responses. Results showed that flight state during stimulation was more closely associated with turning responses than pre-stimulation state, with acceleration during stimulation making the largest contribution. When acceleration during stimulation was above the individual mean, turning-response dispersion decreased by 32.92%. In addition, pre-stimulation angular velocity was positively associated with acceleration during stimulation, indicating that the pre-stimulation locomotor state contains information related to the consistency of subsequent stimulation-evoked responses. These findings demonstrate that the effects of FRM microstimulation are locomotor-state dependent and provide a basis for identifying appropriate neuromodulation timing and improving response stability under complex locomotor conditions.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 16,
+      "relevance_hits": [
+        "neuromodulation",
+        "stimulation"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 24,
+      "pmid": "42939006",
+      "title": "Beyond Local Gating: Toward Network-State-Dependent Neuromodulation.",
+      "title_zh": "",
+      "journal": "Bioengineering (Basel, Switzerland)",
+      "iso_journal": "Bioengineering (Basel)",
+      "authors": [
+        "Belardinelli P",
+        "Mongiardini E",
+        "Turrini S",
+        "Avenanti A"
+      ],
+      "pubdate": "2026 Oct 2",
+      "doi": "10.3390/bioengineering13101151",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42939006/",
+      "abstract": "Brain stimulation is progressively evolving from anatomically targeted interventions toward individualized, adaptive, and network-oriented approaches. Recent developments in brain-state-dependent stimulation have demonstrated that neuromodulation can be optimized by synchronizing stimulation with ongoing neural activity, while adaptive cortico-cortical paired associative stimulation (ccPAS) has extended this principle to distributed cortical networks. However, current approaches continue to define brain state primarily through local electrophysiological features, such as oscillatory phase or power, even though ccPAS is specifically designed to modify communication between interconnected cortical regions. In this opinion paper, we argue that the endogenous variable guiding ccPAS should instead describe the instantaneous physiological state of the targeted cortico-cortical pathway. We propose that online source-space functional connectivity provides a biologically meaningful and technically feasible estimate of this pathway state, thereby enabling a new framework of network-state-dependent neuromodulation. As illustrative applications, we consider pathways spanning different levels of experimental characterization, from established sensorimotor interactions to the less-characterized ventral premotor cortex (PMv)-posterior superior temporal sulcus (pSTS) pathway within the action-observation network (AON). This distinction highlights that the proposed framework is pathway-general, while its experimental implementation requires pathway-specific characterization of stimulation parameters and appropriate physiological readouts. In this framework, resting-state EEG is rapidly reconstructed in source space to estimate pathway connectivity, which is subsequently used to personalize stimulation targets and guide state-dependent ccPAS of a functionally defined cortico-cortical circuit. Finally, we discuss the technological prerequisites, methodological challenges, biological rationale, and open scientific questions that must be addressed before pathway-state-guided neuromodulation can be experimentally validated. We argue that redefining brain state as the instantaneous physiological state of the communication pathway targeted by stimulation may represent the next conceptual step in brain stimulation.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 17,
+      "relevance_hits": [
+        "eeg",
+        "adaptive",
+        "neuromodulation",
+        "brain stimulation",
+        "stimulation"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 25,
+      "pmid": "42934145",
+      "title": "[Mechanisms and outcome evaluation of neurofeedback in post-traumatic stress disorder intervention].",
+      "title_zh": "",
+      "journal": "Sheng wu yi xue gong cheng xue za zhi = Journal of biomedical engineering = Shengwu yixue gongchengxue zazhi",
+      "iso_journal": "Sheng Wu Yi Xue Gong Cheng Xue Za Zhi",
+      "authors": [
+        "Huang K",
+        "Ding P",
+        "Luo R",
+        "Li T",
+        "Zhao L",
+        "Su L",
+        "Xu J",
+        "Fu Y"
+      ],
+      "pubdate": "2026 Oct 25",
+      "doi": "10.7507/1001-5515.202601036",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42934145/",
+      "abstract": "Patients with post-traumatic stress disorder (PTSD) still face challenges such as limited treatment response in some cases and substantial inter-individual variability when receiving existing interventions. Neurofeedback (NFB), as a closed-loop neuromodulation approach based on brain-computer interface (BCI), can guide patients to regulate abnormal neural activity patterns by providing real-time feedback on brain activity features, and therefore shows potential for PTSD rehabilitation. This paper reviews the regulatory mechanisms of NFB on the prefrontal-limbic emotion regulation circuit and the dysregulated states of the default mode network, salience network, and central executive network. It compares three major modalities, including electroencephalography, real-time functional magnetic resonance imaging, and functional near-infrared spectroscopy, in terms of feedback targets, spatiotemporal resolution, and clinical applicability. Based on a multidimensional evaluation framework composed of clinical scales, neurophysiological indicators, and functional recovery indicators, this paper further discusses the clinical positioning of NFB relative to first-line treatments and the potential synergistic mechanisms of its combined application with psychological interventions. Current studies still face limitations such as insufficient control design and a lack of standardized training parameters. Future research should integrate individualized target selection and machine learning-based modeling to promote the standardized application of NFB.\n创伤后应激障碍（PTSD）患者在接受现有干预时仍存在部分患者疗效有限、个体反应差异较大等问题。神经反馈（NFB）作为一种基于脑机接口（BCI）的闭环神经调控方法，可通过实时反馈脑活动特征，引导患者调节异常神经活动模式，在PTSD康复中具有应用潜力。本文综述了NFB对前额叶—边缘系统情绪调节环路，以及默认模式网络、显著性网络和中央执行网络失衡状态的调控机制；比较了脑电、实时功能磁共振成像和功能近红外光谱三类模态在反馈靶标、时空分辨率和临床适配性方面的差异；并基于由临床量表、神经生理指标和功能恢复指标构成的多维评价框架，讨论了NFB相对于一线治疗的临床定位及其与心理干预联合应用的潜在协同机制。当前研究仍面临对照设计不足、训练参数缺乏统一标准等问题，未来需结合个体化靶点选择和机器学习建模推动其规范化应用。.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 4,
+      "relevance_hits": [
+        "electroencephalogr",
+        "machine learning",
+        "closed-loop",
+        "neuromodulation"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 26,
+      "pmid": "42934130",
+      "title": "[Parkinson's disease state recognition based on local field potentials: An ensemble model with feature division].",
+      "title_zh": "",
+      "journal": "Sheng wu yi xue gong cheng xue za zhi = Journal of biomedical engineering = Shengwu yixue gongchengxue zazhi",
+      "iso_journal": "Sheng Wu Yi Xue Gong Cheng Xue Za Zhi",
+      "authors": [
+        "Zhao D",
+        "Yang T",
+        "Shen Y",
+        "Chen Y",
+        "Zhang Y",
+        "Lyu Y",
+        "Chen S"
+      ],
+      "pubdate": "2026 Oct 25",
+      "doi": "10.7507/1001-5515.202601005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42934130/",
+      "abstract": "Patients with Parkinson's disease exhibit differential local field potential (LFP) activities under different deep brain stimulation (DBS) conditions. To achieve a balance between the discriminative performance and computational complexity for the identification of DBS stimulation-related neural states, this paper proposes a feature-division ensemble learning framework. First, multi-objective feature selection was conducted based on stability, discriminability and parsimony to derive a compact feature subset from time-domain, frequency-domain and nonlinear features. Then, the three categories of features were assigned to their respective advantageous base classifiers and fused via hard voting. Window-level 10-fold cross-validation results on the public STN-LFP dataset from the University of Oxford demonstrated that the proposed model reached an accuracy of 97.18%, outperforming the support vector machine (88.85%) and eXtreme Gradient Boosting (92.84%). SHAP analysis revealed that β-related frequency-domain features and partial nonlinear features had relatively high contribution. The feature division strategy reduced the cumulative input dimension of the three base classifiers from 96 to 32 and eliminated redundant feature processing. This method can provide a reference for analyzing DBS stimulation-related LFP patterns and further research on closed-loop feedback biomarkers.\n帕金森病患者在不同深部脑刺激（DBS）条件下表现出差异性局部场电位（LFP）活动。为兼顾DBS刺激相关神经状态判别的判别性能与计算复杂度，本文提出特征分工集成学习框架。首先基于稳定性、判别力和简约性进行多目标特征筛选，从时域、频域和非线性特征中获得紧凑子集；随后将三类特征分别分配给优势基分类器，并通过硬投票融合。基于牛津大学公开STN-LFP数据集的窗口级10折交叉验证结果显示，所提模型准确率为97.18%，高于支持向量机（88.85%）和极端梯度提升（92.84%）。SHAP分析表明β相关频域特征及部分非线性特征具有较高贡献。特征分工使三个基分类器的累计输入维度由96降至32，减少重复特征处理。该方法可为DBS刺激相关LFP模式分析及后续闭环反馈标志物研究提供参考。.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 14,
+      "relevance_hits": [
+        "ecog",
+        "lfp",
+        "closed-loop",
+        "brain stimulation",
+        "deep brain stimulation",
+        "biomarker",
+        "stimulation"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 27,
       "pmid": "42926499",
       "title": "Brief Trains of Closed-loop TMS Induce Controllable Power in FM-theta Oscillations.",
       "title_zh": "",
@@ -489,7 +980,7 @@
       "priority": "推荐"
     },
     {
-      "index": 13,
+      "index": 28,
       "pmid": "42923644",
       "title": "Neuromodulatory interventions for Alzheimer's disease.",
       "title_zh": "",
@@ -524,7 +1015,7 @@
       "priority": "必读"
     },
     {
-      "index": 14,
+      "index": 29,
       "pmid": "42923510",
       "title": "Digital health meets Parkinson's disease: a bibliometric exploration of wearable sensors research and emerging frontiers (2005-2026).",
       "title_zh": "",
@@ -551,7 +1042,7 @@
       "priority": "推荐"
     },
     {
-      "index": 15,
+      "index": 30,
       "pmid": "42921395",
       "title": "Effect of epidural spinal cord stimulation combined with personalized neurorehabilitation in chronic motor-complete spinal cord injury: study protocol for the phase II single-arm feasibility RESTORES (RESToration Of Rehabilitative function with Epidural spinal Stimulation) trial.",
       "title_zh": "",
@@ -600,7 +1091,7 @@
       "priority": "必读"
     },
     {
-      "index": 16,
+      "index": 31,
       "pmid": "42920766",
       "title": "Case Report: An MDT-guided multimodal protocol for large-area stroke plateau - integrating neuromodulation with multimodal assessment.",
       "title_zh": "",
