@@ -1,19 +1,19 @@
 {
   "meta": {
-    "report_date": "2026-11-02",
-    "target_edat": "2026-11-01",
+    "report_date": "2026-11-03",
+    "target_edat": "2026-11-02",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-11-02 00:13:48",
+    "generated_at": "2026-11-03 02:48:15",
     "feishu_diag": {
       "status": "ok",
       "stage": "complete",
-      "searched": 17,
-      "created": 6,
-      "expected": 6,
+      "searched": 10,
+      "created": 3,
+      "expected": 3,
       "verified": true,
-      "candidates": 17,
-      "dedup_skipped": 11,
+      "candidates": 10,
+      "dedup_skipped": 7,
       "pending": 0
     }
   },
@@ -21,28 +21,25 @@
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 3,
-      "total": 3,
+      "count": 2,
+      "total": 2,
       "pmids": [
-        "42957703",
-        "42957696",
-        "42957689"
+        "42970749",
+        "42970304"
       ],
       "status": "ok"
     },
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 7,
-      "total": 7,
+      "count": 5,
+      "total": 5,
       "pmids": [
+        "42969794",
         "42966131",
         "42965418",
         "42965312",
-        "42965310",
-        "42962594",
-        "42962593",
-        "42962474"
+        "42965310"
       ],
       "status": "ok"
     },
@@ -59,150 +56,167 @@
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 2,
-      "total": 2,
-      "pmids": [
-        "42962828",
-        "42961511"
-      ],
+      "count": 0,
+      "total": 0,
+      "pmids": [],
       "status": "ok"
     },
     {
       "group": "D",
       "label": "闭环神经调控 · Closed-loop Neuromodulation",
-      "count": 4,
-      "total": 4,
+      "count": 2,
+      "total": 2,
       "pmids": [
         "42966748",
-        "42966552",
-        "42962808",
-        "42959781"
+        "42966552"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 17,
+  "dedup_total": 10,
   "papers": [
     {
       "index": 1,
-      "pmid": "42957703",
-      "title": "Amygdala beta bursts modulate hippocampal neuronal dynamics during human emotional processing.",
-      "title_zh": "杏仁核β爆发在人类情绪处理过程中调节海马神经元动态。",
-      "journal": "Nature communications",
-      "iso_journal": "Nat Commun",
+      "pmid": "42970749",
+      "title": "Germline Genetic Variants and Epilepsy Surgery Response: Individual Participant Pooled Analysis of 272 Patients.",
+      "title_zh": "种系遗传变异和癫痫手术反应： 272名患者的个体参与者汇总分析。",
+      "journal": "Neurology",
+      "iso_journal": "Neurology",
       "authors": [
-        "Zhou Y",
-        "Huang Y",
-        "Pittaro GF",
-        "Zareian B",
-        "Aljishi A",
-        "Toro AP",
-        "Zibly Z",
-        "Obaid S",
-        "Sivaraju A",
-        "Harpaz-Rotem I",
-        "Kaye A",
-        "Krystal J",
-        "Sheth K",
-        "Gu X",
-        "Pittenger C",
-        "Damisah EC"
+        "Ivaniuk A",
+        "Bajaj S",
+        "Boßelmann CM",
+        "Koh HY",
+        "Pestana Knight EM",
+        "Zhang XX",
+        "Bingaman W",
+        "Najm IM",
+        "Shah MN",
+        "Tandon N",
+        "Von Allmen G",
+        "Lhatoo S",
+        "Tatum WO",
+        "Freund B",
+        "Miller K",
+        "Wirrell EC",
+        "Fine AL",
+        "Coryell J",
+        "Schreiber JM",
+        "Perry MS",
+        "Lal D",
+        "Pediatric Epilepsy Research Consortium (PERC) Surgery Workgroup, and the Pediatric Epilepsy Research Consortium (PERC) Genetics Workgroup"
       ],
-      "pubdate": "2026 Oct 1",
-      "doi": "10.1038/s41467-026-77952-9",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42957703/",
-      "abstract": "The amygdala and hippocampus are key structures in emotional processing, yet the transient neural dynamics coordinating their interaction remain poorly understood. We simultaneously recorded single-neuron activity and local field potentials from these regions in epilepsy patients performing an emotional image-rating task. Neurons in both regions exhibited firing rate changes predictive of subjective emotional valence. While conventional spectral analysis revealed no valence-specific patterns, beta bursts (13-30 Hz)-transient, high-power events-were selectively modified by task features. In both regions, beta bursts were associated with increased gamma amplitude and enhanced phase coherence, with beta-gamma phase-amplitude coupling capturing emotion-related dynamics. Critically, amygdala beta bursts were associated with valence-dependent, bidirectional modulation of hippocampal interneuron firing - decreased during very unpleasant/highest arousal processing and increased during high-arousal very pleasant processing - while putative pyramidal-cell firing did not change significantly. Hippocampal bursts showed no reciprocal influence. These findings suggest that beta bursts may represent a temporally precise neural correlate of emotional appraisal and a potential target for neuromodulation in mood disorders.",
-      "abstract_zh": "杏仁核和海马体是情绪处理的关键结构，但协调它们相互作用的短暂神经动力学仍然知之甚少。我们同时记录了执行情绪图像评级任务的癫痫患者这些区域的单个神经元活动和局部场电位。两个区域的神经元都表现出预测主观情绪价的放电速率变化。而传统的光谱\n分析显示没有价特异性模式， β突发（ 13-30 Hz ） -瞬态，高功率事件-被任务特征选择性地修改。在这两个区域中， β突发与增加的伽马振幅和增强的相位相干性相关， β-伽马相位振幅耦合捕获情绪相关的动态。关键的是，杏仁核β爆发与海马神经间核的化合价依赖性双向调节有关。\nn激发-在非常不愉快/最高唤醒处理期间减少，在高唤醒非常愉快处理期间增加-而假定的锥体细胞激发没有显着变化。海马突发未显示出相互影响。这些发现表明， β突发可能代表情绪评估的时间精确的神经相关性，以及情绪障碍中神经调节的潜在目标。",
+      "pubdate": "2026 Nov 24",
+      "doi": "10.1212/WNL.0000000000218687",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970749/",
+      "abstract": "BACKGROUND AND OBJECTIVES: Genetic testing is increasingly used in presurgical evaluation, but the yield of resection and ablation across germline genetic epilepsies remains uncertain.\nMETHODS: We conducted a systematic review of MEDLINE (PubMed) and Scopus and added cases from 3 institutional cohorts and the Pediatric Epilepsy Research Consortium (PERC) databases, including individuals with pathogenic/likely pathogenic germline variants besides tuberous sclerosis who underwent resection or laser ablation. Etiologies were grouped into biologically informed categories (GATORopathies, vascular, overgrowth, copy number variants (CNVs), channelopathies, synaptopathies, and other). Primary outcome was seizure freedom (Engel I) at the last follow-up. Group comparisons used Fisher exact and Kruskal-Wallis tests (α = 0.05; Bonferroni when applicable). Prespecified sensitivity analyses stratified by lesional status, excluded GATORopathies, and restricted to literature-only cases.\nRESULTS: We included 224 literature cases (65 studies), 36 institutional cases, and 12 PERC cases (n = 272). The median follow-up was 24 months (interquartile range 12-48.0). Seizure freedom was achieved in vascular disorders 14/19 (73.6%), GATORopathies 79/120 (65.8%), CNVs 18/31 (58.0%), overgrowth 9/16 (56.6%), channelopathies 13/43 (30.0%), synaptopathies 4/18 (22.2%), and other 11/25 (44.0%) (overall  p  < 0.001). Among cases with available imaging results, 208/253 (82.2%) had epileptogenic MRI lesions, including 64% of channelopathies and 80% of the synaptopathies. In univariate contrasts (each category vs all others), odds of seizure freedom were higher for vascular disorders (2.64-fold, 95% CI 0.87-9.65) and GATORopathies (2.41-fold, 95% CI 1.44-4.09), and lower for synaptopathies (∼4.2-fold lower, OR 0.23, 95% CI 0.05-0.77) and channelopathies (∼4.5-fold lower, OR 0.22, 95% CI 0.09-0.48). Direction and magnitude were consistent across prespecified sensitivity analyses (lesional only, literature only, exclusion of GATORopathies).\nDISCUSSION: Resective surgeries can be effective in germline genetic epilepsies, but outcomes vary by pathway. Disorders with discrete, lesional substrates (GATORopathies, vascular) show the highest likelihood of seizure freedom, whereas channelopathies and synaptopathies, despite the presence of MRI lesions, have substantially lower yields even in lesional cases. Prospective, genotype-aware surgical registries with standardized reporting (EEG, imaging, and pathology) and time-to-event outcomes are needed to refine the selection of surgical candidates and quantify seizure and non-seizure-related outcomes.",
+      "abstract_zh": "背景和目标：基因检测越来越多地用于术前评估，但种系遗传性癫痫的切除和消融产量仍不确定。\n方法：我们对MEDLINE （ PubMed ）和Scopus进行了系统评价，并添加了来自3个机构队列和儿科癫痫研究联盟（ PERC ）数据库的病例，其中包括具有致病性/可能致病性种系变异的个体，以及\n接受切除或激光消融的结节性硬化症。病因被分为生物学上知情的类别（ GATORopathies、血管、过度生长、拷贝数变异（ CNV ）、通道病变、突触病变等）。主要转归为末次随访时的癫痫发作自由度（ Engel I ）。组比较使用Fisher精确检验和Kruskal-Wallis检验（ α = 0.05 ； Bonferroni ，如适用）。预先指定的敏感性分析已分层\n病变状态，排除GATORopathies ，仅限于文献病例。\n结果：我们纳入了224个文献病例（ 65项研究）、36个机构病例和12个PERC病例（ n = 272 ）。 中位随访时间为24个月（四分位数间距12-48.0 ）。 血管疾病14/19 (73.6%)、GATORopathies 79/120 (65.8%)、CNVS 18/31 (58.0%)、过度生长9/16 (56.6%)、通道病变13/43 (30.0%)、突触病变4/\n18 （ 22.2% ） ，以及其他11/25 （ 44.0% ） （总体p < 0.001 ）。在有可用影像学结果的病例中， 208/253 （ 82.2% ）有癫痫性MRI病变，包括64%的通道病变和80%的突触病变。在单变量对比中（每个类别与所有其他类别相比） ，血管疾病（ 2.64倍， 95 ％ CI 0.87-9.65 ）和GATORopathies （ 2.41倍， 95 ％ CI 1.44-4.09 ）的癫痫发作自由度几率较高，突触病变（ ∼ 4.2倍低\ner ， OR 0.23 ， 95% CI 0.05-0.77 ）和通道病变（降低约4.5倍， OR 0.22 ， 95% CI 0.09-0.48 ）。 在预先指定的敏感性分析（仅病灶、仅文献、排除GATORopathies ）中，方向和幅度是一致的。\n讨论：切除手术在生殖系遗传性癫痫中可能是有效的，但结果因途径而异。 具有离散的病变底物（ GATORopathies ，血管）的疾病显示出最高的可能性\n癫痫发作自由，而尽管存在MRI病变，但即使在病变情况下，通道病变和突触病变的产量也要低得多。需要具有标准化报告（脑电图、成像和病理学）和事件发生时间结果的前瞻性基因型感知手术登记，以改进手术候选者的选择并量化癫痫发作和非癫痫发作相关结果。",
       "hit_groups": [
         "A"
       ],
       "group_count": 1,
-      "relevance_score": 5,
-      "relevance_hits": [
-        "epilepsy",
-        "hippocampal",
-        "neuromodulation"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 2,
-      "pmid": "42957696",
-      "title": "Clock neurons modulate seizure timing through a diurnal switch.",
-      "title_zh": "时钟神经元通过昼夜开关调节癫痫发作时间。",
-      "journal": "Nature communications",
-      "iso_journal": "Nat Commun",
-      "authors": [
-        "Cuddapah VA",
-        "Hsu CT",
-        "Pant C",
-        "Guevara C",
-        "Yang J",
-        "Killiany S",
-        "Shah HM",
-        "Putt ME",
-        "Sehgal A"
-      ],
-      "pubdate": "2026 Sep 30",
-      "doi": "10.1038/s41467-026-77884-4",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42957696/",
-      "abstract": "People with epilepsy experience daily oscillations in seizure risk. Using a video-tracking model to automate detection, we explored mechanisms underlying spontaneous seizures in Drosophila and find that flies, like people, exhibit daily oscillations in seizure risk. These rhythms are absent in flies lacking a molecular circadian clock and are independent of sleep. Thermogenetic screening and cell-specific clock perturbations reveal that the ventrolateral neurons, including \"morning cells\", and dorsolateral neurons, comprising the \"evening cells\", modulate diurnal oscillations in seizure risk. Pigment-dispersing factor and short neuropeptide F from morning cells increase seizure risk during the day. During this time, morning cell activity increases whole-brain activity. At night, morning cells switch to glycine signaling likely acting on evening cells to decrease seizure risk. Optogenetic inhibition of clock neurons suppresses seizure risk. Our findings reveal an unexpected role for brain clock neurons in modulating daily seizure risk.",
-      "abstract_zh": "癫痫患者每天都会经历癫痫发作风险的振荡。使用视频跟踪模型来自动检测，我们探索了果蝇自发性癫痫发作的机制，并发现果蝇与人类一样，在癫痫发作风险方面表现出日常振荡。这些节律在缺乏分子生物钟的苍蝇中不存在，并且与睡眠无关。热生成筛查和细胞特异性时钟扰动表明，\n包括“晨细胞”在内的外侧神经元和包括“晚细胞”在内的背外侧神经元调节癫痫发作风险中的昼夜振荡。来自早晨细胞的色素分散因子和短神经肽F会增加白天的癫痫发作风险。在此期间，早晨细胞活动会增加全脑活动。在夜间，早晨细胞切换到甘氨酸信号传导，可能作用于晚间细胞以降低癫痫发作的风险。光遗传学\n抑制时钟神经元可抑制癫痫发作的风险。我们的研究结果揭示了大脑时钟神经元在调节每日癫痫发作风险方面的意外作用。",
-      "hit_groups": [
-        "A"
-      ],
-      "group_count": 1,
-      "relevance_score": 17,
+      "relevance_score": 14,
       "relevance_hits": [
         "epilepsy",
         "seizure",
-        "seizures",
-        "optogenetic"
+        "eeg"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 2,
+      "pmid": "42970304",
+      "title": "Global Epidemiology of Neonatal and Infantile-Onset Epilepsies and Epilepsy Syndromes (GENIE): A Systematic Review and Meta-Analysis.",
+      "title_zh": "新生儿和婴儿发病癫痫和癫痫综合征（ GENIE ）的全球流行病学：系统评价和荟萃分析。",
+      "journal": "JAMA neurology",
+      "iso_journal": "JAMA Neurol",
+      "authors": [
+        "Safeer V S M",
+        "Singh A",
+        "Nahan N",
+        "Madaan P",
+        "Winter SF",
+        "Prasad M",
+        "Wirrell EC",
+        "Arya R",
+        "Albaradie R",
+        "Baker GA",
+        "Chan D",
+        "Guekht A",
+        "Hirose S",
+        "Jiang Y",
+        "Lee WT",
+        "Lim KS",
+        "Muramatsu K",
+        "Nagai K",
+        "Sakpichaisakul K",
+        "Samia P",
+        "Specchio N",
+        "Tekgul H",
+        "Triki CC",
+        "Ramos Valente KD",
+        "Wanigasinghe J",
+        "Wilmshurst J",
+        "Scheffer IE",
+        "Cross JH",
+        "Feigin V",
+        "Sahu JK",
+        "Bansal D"
+      ],
+      "pubdate": "2026 Nov 2",
+      "doi": "10.1001/jamaneurol.2026.3906",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970304/",
+      "abstract": "IMPORTANCE: Despite the profound impact of neonatal and infantile-onset epilepsies on neurodevelopmental outcomes and mortality, consolidated global epidemiological evidence remains lacking.\nOBJECTIVES: To estimate the global incidence and prevalence of neonatal and infantile-onset epilepsies and epilepsy syndromes and to characterize their associated etiological profiles.\nDATA SOURCES: PubMed, Embase, Web of Science, and Scopus were searched from inception through December 18, 2025.\nSTUDY SELECTION: Population-based observational studies reporting the incidence or prevalence of neonatal and infantile-onset epilepsies or epilepsy syndromes were eligible for inclusion.\nDATA EXTRACTION AND SYNTHESIS: Two authors independently and in duplicate performed study selection, data extraction, and quality assessment of included studies using the Joanna Briggs Institute Critical Appraisal checklist for prevalence studies. Generalized linear mixed-model random-effects meta-analysis was used to pool the estimates of incidence, prevalence, and etiology. Subgroup meta-analyses were conducted by country, World Health Organization (WHO) region, World Bank income, and diagnostic criteria. Metaregression was used to investigate the association between study-level covariates and pooled incidence estimates of infantile-onset epilepsy syndromes.\nMAIN OUTCOMES AND MEASURES: Cumulative incidence and prevalence of neonatal and infantile-onset epilepsies and epilepsy syndromes.\nRESULTS: A total of 86 population-based studies from 30 countries across 4 WHO regions were included. The pooled cumulative incidence of infantile-onset epilepsies within the first 2 years of life was 236.0 cases (95% CI, 164.7-338.2; 95% prediction interval [PI], 53.0-1044.3) per 100 000 live births. Among epilepsy syndrome subgroups, developmental and epileptic encephalopathies (DEEs) had the highest incidence at 67.7 cases (95% CI, 42.1-108.9; 95% PI, 7.1-636.1) per 100 000 live births. Infantile epileptic spasms syndrome (IESS) was the most incident DEE, with 31.6 cases (95% CI, 27.5-36.2; 95% PI, 13.7-72.6) per 100 000 live births. Among self-limited epilepsies, self-limited infantile epilepsy had the highest incidence at 13.0 cases (95% CI, 9.2-18.2; 95% PI, 6.4-26.4) per 100 000 live births. Subgroup analyses revealed limited geographical representativeness, with the majority of studies from high-income countries in the European Region.\nCONCLUSIONS AND RELEVANCE: The findings underscore a significant global burden of neonatal and infantile-onset epilepsies, primarily driven by DEEs, specifically IESS. Given substantial between-study heterogeneity, the pooled estimates should be interpreted as broad indicators rather than precise, generalizable rates. Geographic disparities, with a lack of data from the African and Eastern Mediterranean Regions, underscore the need for population-based studies in underrepresented regions and longitudinal research on survival, remission, and functional outcomes.",
+      "abstract_zh": "重要性：尽管新生儿和婴儿发病癫痫对神经发育结局和死亡率产生了深远影响，但仍缺乏综合的全球流行病学证据。\n目的：估计新生儿和婴儿发病癫痫和癫痫综合征的全球发病率和患病率，并表征其相关的病因特征。\n数据来源：搜索了PubMed、Embase、Web of Science和Scopus\n直至2025年12月18日。\n研究选择：报告新生儿和婴儿发病癫痫或癫痫综合征的发生率或患病率的基于人群的观察性研究符合纳入标准。\n数据提取和合成：两名作者使用Joanna Briggs Institute Critical Appraisal （乔安娜·布里格斯研究所批判性评估）检查表独立进行研究选择、数据提取和纳入研究的质量评估，一式两份\n用于患病率研究。使用广义线性混合模型随机效应荟萃分析来汇总发病率、患病率和病因学的估计。 按国家、世界卫生组织（ WHO ）地区、世界银行收入和诊断标准进行亚组荟萃分析。 Metaregression用于研究婴儿发病性癫痫综合征的研究水平协变量与汇总发病率估计之间的关联。\n主要\n结局和措施：新生儿和婴儿发病癫痫和癫痫综合征的累积发病率和患病率。\n结果：共纳入了来自4个世卫组织区域30个国家的86项基于人群的研究。 出生后2年内婴儿发病癫痫的累计发病率为每10万例活产236.0例（ 95% CI ， 164.7-338.2 ； 95%预测间隔[PI] ， 53.0-1044.3 ）。在癫痫综合征中\n发育性脑病和癫痫性脑病（ DEEs ）的发生率最高，为每10万例活产67.7例（ 95% CI ， 42.1-108.9 ； 95% PI ， 7.1-636.1 ）。婴儿癫痫痉挛综合征（ IESS ）是发生率最高的DEE ，每10万例活产中有31.6例（ 95% CI ， 27.5-36.2 ； 95% PI ， 13.7-72.6 ）。在自限性癫痫中，自限性婴幼儿癫痫的发病率最高，为13.0例（ 95% CI ， 9.2-18.2 ； 95% PI\n， 6.4-26.4 ）每10万例活产。 亚组分析显示地域代表性有限，大多数研究来自欧洲地区的高收入国家。\n结论和相关性：研究结果强调了新生儿和婴儿发病癫痫的重大全球负担，主要由DEE驱动，特别是IESS。 鉴于研究之间存在显著的异质性，汇总的估计应解释为\nd指标，而不是精确的、可概括的比率。地理差异，缺乏来自非洲和东地中海地区的数据，强调需要在代表性不足的地区进行基于人群的研究，并对生存、缓解和功能结局进行纵向研究。",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 15,
+      "relevance_hits": [
+        "epilepsy",
+        "epileptic",
+        "generalized"
       ],
       "priority": "必读"
     },
     {
       "index": 3,
-      "pmid": "42957689",
-      "title": "Zona incerta somatostatin(+) neurons modulate seizure progression through hypothalamic circuits.",
-      "title_zh": "生长抑素带（ + ）神经元通过下丘脑回路调节癫痫发作进展。",
-      "journal": "Nature communications",
-      "iso_journal": "Nat Commun",
+      "pmid": "42969794",
+      "title": "Diagnostic value of extending outpatient EEG to record sleep - A retrospective study.",
+      "title_zh": "扩展门诊脑电图以记录睡眠的诊断价值-一项回顾性研究。",
+      "journal": "Epileptic disorders : international epilepsy journal with videotape",
+      "iso_journal": "Epileptic Disord",
       "authors": [
-        "Zhang M",
-        "Yang L",
-        "Zhou Y",
-        "Ruan Y",
-        "Jiang D",
-        "Yu L",
-        "Ying J",
-        "Wang W",
-        "Tang T",
-        "Li M",
-        "Chen Z",
-        "Fei F",
-        "Xu C",
-        "Wang Y"
+        "Dirks EHM",
+        "Amrutha PC",
+        "Pukkayil G",
+        "Villery A",
+        "Xavier D",
+        "Samuel N",
+        "Abdul Khader AP",
+        "Sona TV",
+        "Krishnaswamy S",
+        "Sureshbabu S"
       ],
-      "pubdate": "2026 Sep 29",
-      "doi": "10.1038/s41467-026-78174-9",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42957689/",
-      "abstract": "GABAergic neurons critically regulate epileptic seizures, yet circuit mechanisms mediated by subtype-specific GABAergic neurons in the zona incerta (ZI) remain unclear. Here we reveal the essential role of ZI somatostatin +  GABAergic neurons in seizure modulation in the mouse hippocampal kindling model. In vivo Ca 2+  fiber photometry and optogenetics show that ZI GABAergic neurons are gradually activated during seizure progression. Opto-activation inhibits seizure progression, especially the spread of generalized seizures at the later phase, whereas opto-inhibition accelerates it. Although both somatostatin +  and parvalbumin +  neurons are dynamically recruited during seizure progression, only somatostatin +  neurons exert bidirectional seizure modulation. Circuitry mapping and functional modulation demonstrate that ZI somatostatin +  neurons projecting to the ventromedial hypothalamus (VMH) glutamatergic neurons suppress the spread of generalized seizures by inhibiting the excitability of VMH-related downstream seizure-spread regions. These findings uncover a cell-type-specific circuit mechanism for seizure regulation by ZI somatostatin +  neurons, highlighting these neurons as a potential therapeutic target for epilepsy.",
-      "abstract_zh": "GABA能神经元严格调节癫痫发作，但由未知带（ ZI ）中亚型特异性GABA能神经元介导的电路机制仍不清楚。在这里，我们揭示了ZI生长抑素+ GABA能神经元在小鼠海马点燃模型中癫痫发作调节中的重要作用。体内Ca 2 +纤维光度测定和光遗传学表明， ZI GABA能神经元在癫痫发作过程中逐渐活化。\n离子抑制癫痫发作进展，特别是后期全身性癫痫发作的蔓延，而光抑制加速癫痫发作。虽然生长抑素+和小白蛋白+神经元在癫痫发作过程中都是动态募集的，但只有生长抑素+神经元发挥双向癫痫发作调节作用。电路定位和功能调节表明， ZI生长抑素+神经元投射到下丘脑腹内侧\ns (VMH)谷氨酸神经元通过抑制与VMH相关的下游癫痫扩散区域的兴奋性来抑制全身性癫痫发作的扩散。这些发现揭示了ZI生长抑素+神经元癫痫发作调节的细胞类型特异性电路机制，突出了这些神经元作为癫痫的潜在治疗靶点。",
+      "pubdate": "2026 Nov 2",
+      "doi": "10.1002/epd2.70446",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42969794/",
+      "abstract": "OBJECTIVE: Evidence for the utility of sleep electroencephalography (EEG) in the diagnosis of epilepsy is inconsistent, often necessitating repeat visits and sleep deprivation (SD), which increases patient and resource burden. In our setting in India, patients are often referred for EEG immediately following consultation (single visit) and EEG sessions are extended to allow for spontaneous sleep acquisition without prior SD. We aimed to evaluate the success rate of achieving sleep during these extended outpatient recordings and its incremental diagnostic yield for interictal epileptiform discharges (IEDs).\nMETHODS: We retrospectively analyzed 1762 outpatient EEGs from patients (45% female) with suspected or known epilepsy. All patients underwent an extended routine EEG (~40-50 min), incorporating standard activation procedures and aiming to capture spontaneous sleep where possible. Successful sleep acquisition was defined as the attainment of at least NREM stage N2. IED detection rates were compared between wakefulness and sleep across different epilepsy types.\nRESULTS: Sleep was achieved in 70.5% of patients (median age, 28 years; IQR: 16-55; range, 0.3-90). The proportion attaining sleep increased with recording duration, from 36.7% at 20 min to 55.6% at 30 min and 66.7% at 50 min, with a median time to sleep onset of 20 min. Among 1199 patients with both awake and sleep states captured, wakefulness identified IEDs in 29% (n = 350), while sleep captured unique IEDs in an additional 12% (n = 141), increasing the total yield significantly. In a sub-analysis of confirmed epilepsy cases (n = 751), wakefulness showed IEDs in 42% (n = 315), with sleep adding another 16% (n = 123). The diagnostic yield of sleep recordings was significantly higher than that of wakefulness alone (OR: 1.31; 95% CI: 1.02-1.68; p = 0.043), particularly among adults with idiopathic generalized epilepsy (IGE) (OR: 2.20; 95% CI: 1.30-3.73; p = 0.004) and children with self-limited epilepsy (OR: ∞; p = 0.031).\nSIGNIFICANCE: Despite a busy outpatient setting, 70.5% of patients attained N2 sleep during an extended EEG recording without SD. Sleep capture increased progressively with recording duration, with the greatest incremental gain between 20 and 30 min, suggesting that a modest extension beyond 20 min substantially increases the likelihood of capturing sleep. Sleep recording increased IED detection over wakefulness alone, particularly in children, in adults with IGE, and in self-limited epilepsies. Whether this approach can substitute for a sleep-deprived EEG requires prospective, head-to-head evaluation.",
+      "abstract_zh": "目的：睡眠脑电图（ EEG ）在癫痫诊断中的应用证据不一致，通常需要重复就诊和睡眠剥夺（ SD ） ，这增加了患者和资源负担。在我们位于印度的环境中，患者通常在会诊（单次访视）后立即转诊进行脑电图检查，并延长脑电图会话，以允许自发睡眠采集，而无需事先进行SD。我们的目的是评估\n在这些扩展门诊记录期间实现睡眠的成功率及其对发作性癫痫间期出院（ IED ）的增量诊断率。\n方法：我们回顾性分析了1762例疑似或已知癫痫患者（ 45%为女性）的门诊脑电图。 所有患者均接受了延长的常规脑电图（约40-50分钟） ，包括标准激活程序，旨在尽可能捕捉自发睡眠。Succe\nssful睡眠采集被定义为至少达到NREM N2期。 比较了不同类型癫痫患者的清醒和睡眠IED检出率。\n结果： 70.5%的患者实现了睡眠（中位年龄为28岁； IQR ： 16-55 ；范围为0.3-90 ）。 实现睡眠的比例随着记录持续时间的增加而增加，从20分钟时的36.7%增加到30分钟时的55.6%和50分钟时的66.7% ，中位睡眠时间为20分钟。\n在捕获的1199名具有清醒和睡眠状态的患者中，清醒识别出29% （ n = 350 ）的简易爆炸装置，而睡眠识别出另外12% （ n = 141 ）的独特简易爆炸装置，显著增加了总产量。在对确诊癫痫病例（ n = 751 ）的子分析中，清醒显示IED占42% （ n = 315 ） ，睡眠增加了16% （ n = 123 ）。睡眠记录的诊断率明显高于清醒记录的诊断率。\nne （ OR ： 1.31 ； 95% CI ： 1.02-1.68 ； p = 0.043 ） ，尤其是特发性全身性癫痫（ IGE ）成人（ OR ： 2.20 ； 95% CI ： 1.30-3.73 ； p = 0.004 ）和自限性癫痫儿童（ OR ： ∞ ； p = 0.031 ）。\n意义：尽管门诊环境繁忙， 70.5%的患者在没有SD的扩展脑电图记录期间达到N2睡眠。 睡眠捕获随着记录持续时间逐渐增加，最大的增量增益介于\n20和30分钟，表明适度延长超过20分钟大大增加了捕获睡眠的可能性。与单纯清醒相比，睡眠记录增加了IED检测，特别是在儿童、IGE成人和自限性癫痫中。这种方法是否可以替代睡眠不足的脑电图需要前瞻性的直接评估。",
       "hit_groups": [
-        "A"
+        "B1"
       ],
       "group_count": 1,
-      "relevance_score": 27,
+      "relevance_score": 19,
       "relevance_hits": [
         "epilepsy",
-        "epileptic",
-        "seizure",
-        "seizures",
-        "generalized",
-        "hippocampal",
-        "kindling",
-        "thalamic"
+        "epileptiform",
+        "ictal",
+        "interictal",
+        "electroencephalogr",
+        "eeg",
+        "generalized"
       ],
       "priority": "必读"
     },
@@ -301,7 +315,7 @@
       "doi": "10.1002/epi.70572",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42965312/",
       "abstract": "OBJECTIVE: Peri-ictal magnetic resonance imaging (MRI) abnormalities (PMA) are increasingly recognized in patients with status epilepticus (SE), but the clinical factors influencing their occurrence and extent remain incompletely understood. We aimed to quantify PMA and investigate the associations of PMA occurrence and volume with SE duration, etiology, and mortality.\nMETHODS: In this multicenter cohort study, comprising a retrospectively identified cohort and a prospectively recruited cohort, adult patients with SE who underwent brain MRI within 48 h of SE onset were included. PMA were identified on diffusion-weighted imaging (DWI) and quantified using an automated postprocessing pipeline to calculate total PMA volume. Multivariable regression analyses were used to examine factors associated with PMA occurrence, extent, and mortality.\nRESULTS: Of 260 patients, 91 (35%) had PMA on DWI. In multivariable analyses, SE duration and etiology were independently associated with PMA occurrence and volume. SE lasting >60 min had higher odds of PMA (odds ratio [OR] = 3.90, 95% confidence interval [CI] = 1.79-8.82, p < .001) and significantly greater PMA volume, whereas acute triggering factors in patients with epilepsy were linked with lower odds (OR = .15, 95% CI = .05-.44, p < .001). PMA occurrence was associated with more than threefold higher odds of mortality (adjusted OR = 3.85, 95% CI = 1.55-10.24, p = .005). Each 10-fold increase in PMA volume was associated with 43% higher odds of mortality (adjusted OR = 1.43, 95% CI = 1.14-1.80, p = .002). In a sensitivity analysis restricted to in-hospital mortality, each 10-fold increase in PMA volume was associated with 47% higher odds of mortality (adjusted OR = 1.47, 95% CI = 1.15-1.89, p = .002).\nSIGNIFICANCE: PMA extent is determined by SE duration and underlying etiology. Although MRI timing relative to SE termination could not always be determined, quantitative PMA assessment provides prognostic information beyond PMA presence alone, as increasing PMA volume is associated with progressively higher mortality. These findings support quantitative PMA burden as a potential imaging biomarker of SE severity and adverse outcome.",
-      "abstract_zh": "目的：围发期磁共振成像（ MRI ）异常（ PMA ）在癫痫持续状态（ SE ）患者中越来越多地被识别，但影响其发生和程度的临床因素仍未完全了解。 我们旨在量化PMA ，并研究PMA发生率和体积与SE持续时间、病因和死亡率的关系。\n方法：在这项多中心队列研究中，包括回顾性鉴定\nfIED队列和前瞻性招募队列，纳入了在SE发作后48小时内接受脑MRI检查的成年SE患者。 在弥散加权成像（ DWI ）上鉴定PMA ，并使用自动后处理管线进行定量，以计算总PMA体积。 使用多变量回归分析检查与PMA发生、程度和死亡率相关的因素。\n结果： 260例患者中， 91例（ 35% ） DWI出现PMA。\n在多变量分析中， SE持续时间和病因与PMA发生率和体积独立相关。持续> 60 min的SE具有较高的PMA几率（比值比[OR] = 3.90 ， 95 ％置信区间[CI] = 1.79-8.82 ， p < 0.001 ）和显著较大的PMA体积，而癫痫患者的急性触发因素与较低的几率相关（ OR = 0.15 ， 95 ％ CI = 0.05-.44 ， p < 0.001 ）。PMA的发生与超过3fo的\nld较高的死亡率（调整后OR = 3.85 ， 95% CI = 1.55-10.24 ， p = 0.005 ）。 PMA体积每增加10倍，死亡率就增加43% （校正OR = 1.43 ， 95% CI = 1.14-1.80 ， p = 0.002 ）。 在一项局限于院内死亡率的敏感性分析中， PMA体积每增加10倍，死亡率几率增加47% （校正OR = 1.47 ， 95% CI = 1.15-1.89 ， p = 0.002 ）。\n意义： PMA程度确定\n受SE持续时间和潜在病因的影响。尽管不能总是确定与SE终止相关的MRI时间，但定量PMA评估提供了PMA存在之外的预后信息，因为PMA体积增加与死亡率逐渐升高相关。这些研究结果支持将定量PMA负荷作为SE严重程度和不良结局的潜在影像学生物标志物。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -321,7 +335,7 @@
       "index": 7,
       "pmid": "42965310",
       "title": "Exploratory prediction of surgical outcomes in MRI-negative epilepsy using preoperative individualized morphometric networks.",
-      "title_zh": "使用术前个体化形态计量网络探索性预测MRI阴性癫痫的手术结局。",
+      "title_zh": "",
       "journal": "Epileptic disorders : international epilepsy journal with videotape",
       "iso_journal": "Epileptic Disord",
       "authors": [
@@ -336,7 +350,7 @@
       "doi": "10.1002/epd2.70440",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42965310/",
       "abstract": "OBJECTIVE: To explore whether preoperative individualized morphometric networks derived from structural MRI may provide discriminative information for predicting surgical outcomes in magnetic resonance imaging (MRI)-negative epilepsy.\nMETHODS: Thirty-one MRI-negative epilepsy patients who underwent epilepsy surgery were retrospectively included (17 seizure-free and 14 with seizure-recurrence) in this exploratory study. Individualized gray matter morphometric networks were constructed from preoperative T1-weighted MRI based on cortical thickness distribution features. Network-based statistics were used to identify outcome-related subnetworks. Graph-theoretical features extracted from these subnetworks were classified using a random vector functional link (RVFL) network. Model performance was evaluated using the area under the receiver operating characteristic curve (AUC).\nRESULTS: Graph-theoretical analysis revealed differences in network properties between seizure-free and seizure-recurrence groups, particularly in degree centrality and nodal clustering coefficient of the right orbital middle frontal gyrus, left inferior occipital gyrus, and left fusiform gyrus (p < .05). The combined graph-theoretical model demonstrated the highest discriminative performance among the evaluated imaging models (AUC = .876) and outperformed the clinical-only benchmark model (AUC = .504), although performance estimates showed variability across repeated splits.\nSIGNIFICANCE: This exploratory study suggests that individualized morphometric network features may contain information related to postoperative outcomes in MRI-negative epilepsy. However, these findings should be interpreted as preliminary and require confirmation in larger multicenter studies.",
-      "abstract_zh": "目的：探讨从结构MRI衍生的术前个体化形态测量网络是否可以为预测磁共振成像（ MRI ）阴性癫痫的手术结局提供鉴别信息。\n方法：回顾性分析31例行癫痫手术的MRI阴性癫痫患者（ 17例无癫痫发作， 14例癫痫复发）。\n根据皮层厚度分布特征，从术前T1加权MRI构建形态测量网络。 使用基于网络的统计数据来识别与结果相关的子网。 使用随机向量函数链接（ RVFL ）网络对从这些子网中提取的图理论特征进行分类。 使用接收器工作特性曲线（ AUC ）下的面积评估模型性能。\n结果： Graph-t\n理论分析揭示了无癫痫发作组和癫痫复发组之间的网络特性差异，特别是右侧眶额中回、左侧枕下回和左侧梭状回的中心度和淋巴结聚集系数（ p < .05 ）。组合图论模型在评估的成像模型中表现出最高的判别性能（ AUC = 0.876 ） ，并优于\n纯线性基准模型（ AUC = .504 ） ，尽管性能估计显示重复分裂的可变性。\n意义：这项探索性研究表明，个体化形态学网络特征可能包含与MRI阴性癫痫术后结局相关的信息。 然而，这些发现应被解释为初步的，需要在更大规模的多中心研究中得到证实。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -350,111 +364,6 @@
     },
     {
       "index": 8,
-      "pmid": "42962594",
-      "title": "Outcomes of patients with functional/dissociative seizures after neurobehavioral therapy.",
-      "title_zh": "神经行为治疗后功能性/解离性癫痫发作患者的转归。",
-      "journal": "Epilepsy & behavior : E&B",
-      "iso_journal": "Epilepsy Behav",
-      "authors": [
-        "Zhang J",
-        "Garrett R",
-        "Bates J",
-        "Quazi N",
-        "Talkad H",
-        "Hu C",
-        "Wang A"
-      ],
-      "pubdate": "2026 Oct 30",
-      "doi": "10.1016/j.yebeh.2026.111333",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42962594/",
-      "abstract": "OBJECTIVE: Neurobehavioral therapy (NBT) is a multi-modal treatment that combines elements of interpersonal, dialectical, and cognitive behavioral therapy. This study aims to describe the efficacy and patient-centered outcomes of manualized NBT for patients with functional/dissociative seizures (FDS).\nMETHODS: We conducted a retrospective chart review of 43 patients who received NBT for FDS. Patients completed the Beck Depression Inventory (BDI), Beck Anxiety Inventory (BAI), and Quality of Life in Epilepsy (QOLIE) questionnaires at the first and last sessions and a treatment outcome response grid at the final session assessing changes in social functioning, depression, anxiety, and sleep quality. FDS event frequency was ascertained at the end of treatment from self-reported seizure logs.\nRESULTS: The frequency of FDS events decreased significantly from baseline to post-treatment (p < 0.01). There was also significant improvement in BDI (p < 0.01), BAI (p = 0.01), QOL (p < 0.01), and the QOLIE seizure worry subscale (p < 0.01). The most common psychiatric comorbidities were anxiety (94.0%), depression (62.0%), and post-traumatic stress disorder (32.0%). 90.0% of patients with depression reported improvement in depression, while 73.3% of those with anxiety reported improvement in anxiety. Among those who experienced impaired social functioning as a comorbid symptom, 89.5% reported improved functioning upon completion of NBT.\nCONCLUSIONS: The results of this study suggest that manualized NBT effectively reduces seizure frequency and improves symptom comorbidities and quality of life for patients with FDS. This study supports the value of psychotherapy as a primary or adjunct treatment modality for patients with FDS.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 18,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 9,
-      "pmid": "42962593",
-      "title": "Understanding the lived experience of epilepsy through creative engagement workshops: Insights beyond patient-generated questions.",
-      "title_zh": "",
-      "journal": "Epilepsy & behavior : E&B",
-      "iso_journal": "Epilepsy Behav",
-      "authors": [
-        "Angus-Leppan H",
-        "Mbarushimana A",
-        "Hutchinson A",
-        "Marinelli I",
-        "Jones S"
-      ],
-      "pubdate": "2026 Oct 30",
-      "doi": "10.1016/j.yebeh.2026.111367",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42962593/",
-      "abstract": "OBJECTIVES: Questions tell us what people with epilepsy want to know, but not what they live through. Building on previous analyses of patient-generated questions about epilepsy, this study explored whether creative engagement workshops illuminate the lived experiences that underlie information-seeking. We explored whether this approach could provide insights to guide the design of digital and other support resources that better meet patients' needs.\nMETHODS: Twenty-two participants (12 adults with epilepsy and 10 carers/family members) attended two co-facilitated creative engagement workshops. Qualitative data from creative outputs, facilitated discussions, field notes and evaluation feedback were analysed using reflexive thematic analysis. Findings were interpreted alongside a previous analysis of 2,752 epilepsy-related questions submitted to online forums.\nRESULTS: Two lived-experience themes emerged: living with uncertainty and adaptation and identity. Participants described uncertainty about seizures as a pervasive influence on daily life, while many discussed adapting to epilepsy and maintaining independence and identity. Family members highlighted the broader impact on carers and family life. Peer connection and shared discussion during the workshops were consistently valued, with many describing reduced isolation and increased validation through contact with others affected by epilepsy.\nCONCLUSIONS: Patient-generated questions identify information needs, whereas creative engagement methods illuminate the emotional and social experiences in daily life underlying those needs. This richer understanding can guide the development of more authentic and patient-centred care. The development of online versions of the creative workshops is now underway, aiming to extend access to the benefits observed in this pilot study.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 14,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 10,
-      "pmid": "42962474",
-      "title": "Concordance between magnetoencephalography and intracranial EEG and association with surgical outcomes in MRI-negative epilepsy.",
-      "title_zh": "",
-      "journal": "Epilepsy research",
-      "iso_journal": "Epilepsy Res",
-      "authors": [
-        "Pandya V",
-        "LaRocque JJ",
-        "Bauer P",
-        "Vuppala A",
-        "Heinrich T",
-        "Gupta K",
-        "Lew S",
-        "Mueller W",
-        "Ustine C",
-        "Youssofzadeh V",
-        "Carlson C",
-        "Raghavan M"
-      ],
-      "pubdate": "2026 Oct 28",
-      "doi": "10.1016/j.eplepsyres.2026.107952",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42962474/",
-      "abstract": "PURPOSE: Magnetoencephalography (MEG) is increasingly used in the presurgical evaluation of drug-resistant epilepsy (DRE), particularly in MRI-negative cases. However, the relationship between MEG localization, intracranial EEG (iEEG) concordance, underlying pathology, and surgical outcomes remains incompletely defined.\nMETHODS: We performed a retrospective cohort study of 51 patients with MRI-negative DRE who underwent MEG and iEEG evaluation at our center from 2009 to 2025. MEG spike source localization was categorized as complete, partial, or discordant relative to the iEEG-defined SOZ using a lobar-level concordance framework. Surgical outcomes were assessed in 29 patients who underwent resective surgery using the Engel classification at 6 months, 1 year, 2 years, and last follow-up. Associations between concordance, pathology, and outcomes were evaluated using chi-square or Fisher's exact tests as appropriate, with Monte-Carlo exact inference used for sparse contingency tables.\nRESULTS: MEG identified localizing interictal abnormalities in 33 of 51 patients (65%), while 18 (35%) had no MEG spikes. Among 32 patients with both localizing MEG and an iEEG-defined SOZ, complete lobar-level concordance was observed in 23 (72%), partial concordance in 7 (22%), and discordance in 2 (6%). At 1 year after resection, Engel class I outcomes were observed in 10 of 11 patients (91%) with complete concordance, 5 of 5 (100%) with partial concordance, and 5 of 8 patients (63%) with MEG-negative studies. Exploratory Monte-Carlo exact analysis demonstrated a significant impact of histopathology on the distribution of MEG-iEEG concordance (p = 0.004). Histopathology was not a significant predictor of study MEG positivity.\nCONCLUSIONS: MEG identified localizing interictal abnormalities in approximately two-thirds of this selected cohort of patients with MRI-negative DRE. When MEG was localizing and an iEEG-defined SOZ was identified, lobar-level concordance was common. Because MEG could inform invasive evaluation, these findings reflect concordance within an MEG-informed clinical workflow rather than independent validation against iEEG. Surgical outcome and histopathology associations were exploratory and will need to be validated in larger cohorts.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 23,
-      "relevance_hits": [
-        "epilepsy",
-        "drug-resistant",
-        "ictal",
-        "interictal",
-        "eeg",
-        "intracranial"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 11,
       "pmid": "42963370",
       "title": "Genotype and phenotype analyses of 689 individuals with PCDH19-clustering epilepsy.",
       "title_zh": "",
@@ -484,61 +393,7 @@
       "priority": "必读"
     },
     {
-      "index": 12,
-      "pmid": "42962828",
-      "title": "EEG Feature-level integration for robust command generation in SSVEP-based brain-computer interfaces.",
-      "title_zh": "",
-      "journal": "Journal of neuroscience methods",
-      "iso_journal": "J Neurosci Methods",
-      "authors": [
-        "Yuan X",
-        "Zhang L",
-        "Zhou A"
-      ],
-      "pubdate": "2026 Oct 30",
-      "doi": "10.1016/j.jneumeth.2026.110938",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42962828/",
-      "abstract": "BACKGROUND: Steady-state visual evoked potential (SSVEP)-based brain-computer interfaces (BCIs) have been widely studied for efficient command generation via spatiotemporal information integration and advanced stimulation paradigms. However, users may intentionally or unintentionally suppress SSVEP responses, leading to the SSVEP Blocking Response (SSVEP-BR). This phenomenon, characterized by attenuation or disappearance of SSVEP, has been largely overlooked despite its potential for command generation without additional stimuli.\nNEW METHOD: This study aimed to exploit SSVEP-BR to enhance command generation under limited visual stimulation. A novel detection method was proposed based on alpha rhythm sensitivity during transitions between SSVEP and SSVEP-BR states. An EEG feature-level integration strategy was further developed to integrate correlation and alpha rhythm features, enabling effective characterization of their temporal evolution. An asynchronous BCI system was implemented for real-time robotic arm control.\nRESULTS: Experiments on 11 offline subjects demonstrated that the proposed method improved SSVEP-BR detection performance. Compared with the previous SSVEP-BR detection framework, average improvements of 17.11%, 8.50%, and 5.44% were achieved in precision, recall, and specificity, respectively. Furthermore, an online robotic grasping experiment was conducted with 5 subjects, where the proposed asynchronous BCI system achieved 8-command generation using two stimulation frequencies.\nCOMPARISON WITH EXISTING METHODS: Unlike prior studies focusing on algorithmic optimization or stimulation design, this work introduced SSVEP-BR as an additional controllable neural response and demonstrated its effectiveness in improving command generation without increasing stimulus complexity.\nCONCLUSIONS: Incorporating SSVEP-BR into SSVEP-based BCI frameworks improved flexibility and robustness, enhancing the practicality of asynchronous brain computer interaction systems.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 6,
-      "relevance_hits": [
-        "eeg",
-        "stimulation"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 13,
-      "pmid": "42961511",
-      "title": "Outcome-Blind EEG Microstate Topography After Cardiac Arrest: Spatial Expression of a Lateralized Microstate and Association with Neurological Outcome.",
-      "title_zh": "",
-      "journal": "Brain topography",
-      "iso_journal": "Brain Topogr",
-      "authors": [
-        "Machado C"
-      ],
-      "pubdate": "2026 Oct 29",
-      "doi": "10.1007/s10548-026-01267-7",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42961511/",
-      "abstract": "Electroencephalography (EEG) is central to neurological assessment after cardiac arrest, yet conventional approaches predominantly characterize amplitude, frequency content, continuity, suppression, reactivity, or predefined pathological patterns. EEG microstates provide a complementary framework by describing quasi-stable configurations of the global scalp electric field. We investigated whether an outcome-blind microstate decomposition of EEG from comatose survivors of cardiac arrest identifies reproducible spatial states associated with neurological outcome. We performed a secondary analysis of the multicenter I-CARE/PhysioNet database. Following prespecified EEG screening requiring continuous 19-channel recordings of at least 300 s, 567 subjects were included (34 excluded at preflight). Microstate reconstruction was performed outcome-blind using a fixed 300-s continuous baseline analysis window, GFP-peak sampling capped at 500 peaks per patient, and polarity-invariant clustering across K = 2-10. After model-order evaluation, the K = 4 solution was frozen and backfitted at the patient level. Associations between microstate metrics and neurological outcome were evaluated using unadjusted, multivariable, dose-response, ROC discrimination, and extensive resampling analyses. The primary outcome analysis included 567 patients: 209 with favorable (CPC 1-2) and 358 with unfavorable (CPC 3-5) neurological outcomes. M2 global explained variance (GEV) was higher in patients with favorable outcome (median 0.0852 vs. 0.0564; rank-biserial correlation = 0.185; p = 0.000243; false-discovery-rate [FDR]-adjusted p = 0.000568 within the four-state GEV family). M2 GEV was inversely associated with CPC severity (Spearman rho = -0.144; p = 0.000583; FDR-adjusted p = 0.001419). Standalone ROC analysis yielded an AUC of 0.59 (95% CI 0.54-0.64). After adjustment for age, sex, and shockable rhythm in the extended cohort without return-of-spontaneous-circulation (ROSC) time (N = 535), each 1-SD increase in M2 GEV was associated with greater odds of favorable outcome (OR 1.30, 95% CI 1.07-1.58; p = 0.0092). In the complete-case model additionally adjusted for ROSC time (N = 292), the association remained significant (OR 1.47, 95% CI 1.10-1.97; p = 0.0087). A graded association was observed across M2 GEV quartiles without evidence of nonlinearity. Results remained directionally stable under winsorization, exclusion of distributional extremes, heteroscedasticity-consistent standard errors, bootstrap resampling, leave-one-out analysis, repeated leave-five-out perturbations, and accounting for recording-center clustering. By contrast, M2 coverage, mean duration, and occurrence were not significantly associated with outcome after multiplicity correction. An outcome-blind decomposition of EEG after cardiac arrest identified a frozen microstate, M2, whose GEV was reproducibly associated with neurological outcome. The prognostic information associated with M2 was related primarily to the degree to which this spatial configuration explained the global EEG field rather than to its conventional temporal parameters. EEG microstate architecture may provide a complementary description of residual large-scale electrophysiological organization after hypoxic-ischemic brain injury. Rather than functioning as a standalone prognostic test, M2 GEV reflects residual spatial organization that complements established clinical and background EEG markers.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "C"
-      ],
-      "group_count": 1,
-      "relevance_score": 10,
-      "relevance_hits": [
-        "electroencephalogr",
-        "eeg"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 14,
+      "index": 9,
       "pmid": "42966748",
       "title": "State-dependent effects of rTMS on cognitive function in bipolar II disorder: A randomized, double-blind, sham-controlled trial.",
       "title_zh": "",
@@ -575,7 +430,7 @@
       "priority": "必读"
     },
     {
-      "index": 15,
+      "index": 10,
       "pmid": "42966552",
       "title": "Limited Evidence for Non-Invasive Brain Stimulation as a Cognitive Enhancer in Neurodevelopmental Disorders: A Multilevel Meta-Analysis of Sham-Controlled Trials.",
       "title_zh": "",
@@ -608,84 +463,6 @@
         "stimulation"
       ],
       "priority": "推荐"
-    },
-    {
-      "index": 16,
-      "pmid": "42962808",
-      "title": "Differential effects of γ-state-triggered thalamic stimulation on mechanical sensitivity in neuropathic rats.",
-      "title_zh": "",
-      "journal": "Brain stimulation",
-      "iso_journal": "Brain Stimul",
-      "authors": [
-        "Niu Q",
-        "Nie Y",
-        "Li X",
-        "Li Y",
-        "Quan Z",
-        "Luo H",
-        "Xiao X",
-        "Wang S"
-      ],
-      "pubdate": "2026 Oct 30",
-      "doi": "10.1016/j.brs.2026.103250",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42962808/",
-      "abstract": "OBJECTIVE: To develop and evaluate a thalamic γ-state-triggered closed-loop (CL) deep brain stimulation (DBS) strategy for modulation of neuropathic pain.\nMETHODS: Neuropathic pain was induced with chronic constriction injury (CCI) in rats. Thalamic local field potentials (LFPs) were used to identify wavelet-packet (WP)-defined gamma (γ)-band states, γ 0  and γ 1 , using coefficient magnitudes relative to an adaptive threshold and temporal confirmation. A CL DBS paradigm triggered stimulation contingent on either γ 0  or γ 1  states and was compared with conventional open-loop (OL) 40 Hz and 130 Hz stimulation using behavioral and neurophysiological outcomes.\nRESULTS: CCI increased thalamic γ power on days 3, 7 and 14 (raw p = 0.0004, 0.0078 and 0.0162; FDR-adjusted p = 0.0077, 0.0703 and 0.0731) and prolonged γ 1 -state duration (raw p = 0.0283; adjusted p = 0.1417). In the CCI model, γ power was negatively associated with mechanical withdrawal threshold (MWT; raw p = 0.0159; adjusted p = 0.0956). At 130 Hz, mean MWT changes were opposite under the two CL protocols: γ 0  CL increased MWT by 47.07% and γ 1  CL decreased it by 12.06% (raw p = 0.0234 and 0.0391; adjusted p = 0.0469 and 0.0586). The 40 Hz γ 0  CL protocol produced the largest observed mean MWT increase of 81.91% (raw p = 0.0078; adjusted p = 0.0469), 46.02 percentage points above 40 Hz OL. Electrophysiological analyses also showed protocol-associated changes in γ-state dynamics and nominal spectral-power changes.\nCONCLUSION: The tested WP-defined γ-state-triggered CL protocols were associated with differing changes in mechanical sensitivity in neuropathic rats. These findings support further evaluation of this approach as a candidate framework for adaptive neuromodulation of neuropathic pain.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 15,
-      "relevance_hits": [
-        "lfp",
-        "closed-loop",
-        "adaptive",
-        "neuromodulation",
-        "brain stimulation",
-        "deep brain stimulation",
-        "stimulation",
-        "thalamic"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 17,
-      "pmid": "42959781",
-      "title": "A Care-Level-Stratified Algorithm for Neuromodulation in Persistent Spinal Pain Syndrome Type 2: Critical Appraisal of Contemporary Evidence Adapted to Latin American Health Systems.",
-      "title_zh": "",
-      "journal": "Cureus",
-      "iso_journal": "Cureus",
-      "authors": [
-        "Valero Quintero JJ",
-        "Aceituno H",
-        "Rico-Fernández F",
-        "Vásconez-Fabre J",
-        "Lopéz-Urdaneta J",
-        "Cerezo-Prado E",
-        "Villamediana-Rodríguez J",
-        "Vela-Poveda J",
-        "Maldonado-De Santiago L",
-        "Hazkour A"
-      ],
-      "pubdate": "2026 Sep",
-      "doi": "10.7759/cureus.117149",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42959781/",
-      "abstract": "Persistent spinal pain syndrome type 2 (PSPS-T2), the mechanism-based successor to failed back surgery syndrome (FBSS) and a recognized International Classification of Diseases 11th Revision (ICD-11) entity, affects 10%-40% of patients after spinal surgery and is among the most refractory conditions in pain medicine. The past decade has produced a technological expansion in neuromodulation, with next-generation modalities (10-kHz high-frequency stimulation (HF10; Nevro Corp., Redwood City, CA), burst stimulation (Abbott, Plano, TX), differential target multiplexed (DTM) stimulation (Medtronic, Minneapolis, MN), evoked compound action potential-controlled closed-loop stimulation (ECAP-CL; Saluda Medical, Artarmon, Australia), dorsal root ganglion stimulation (DRG-S; Abbott, Plano, TX), and restorative neurostimulation (ReActiv8; Mainstay Medical, Dublin, Ireland)) each supported by randomized controlled trials (RCTs). We conducted a narrative review designed to meet the Scale for the Assessment of Narrative Review Articles (SANRA) quality criteria, searching five databases (January 2020 to April 2026) to critically appraise this evidence, including negative results and methodological controversies, and to propose a mechanism-directed treatment algorithm stratified by level of care and adapted to the heterogeneous resource landscape of Latin American health systems. Pivotal trials report responder rates of approximately 74%-78% at 12-36 months, with superiority over conventional stimulation; however, these estimates derive from trials that differ in population, comparator, and follow-up, and several enrolled populations only partially overlapping with PSPS-T2 (e.g., complex regional pain syndrome or non-surgical mechanical low back pain). The single independent, placebo-controlled crossover trial (of burst stimulation) found no benefit on its primary disability outcome, underscoring the field's near-total reliance on manufacturer-sponsored studies. On this basis, we propose a three-tier algorithm (primary, secondary, and tertiary care) that rests on Oxford Centre for Evidence-Based Medicine (OCEBM) level 1-2 evidence for individual modality efficacy and on expert consensus (OCEBM level 5) for the stratification itself. The algorithm is intended as a pragmatic, resource-sensitive decision-support scaffold requiring local adaptation and prospective regional validation. Equitable access to neuromodulation across Latin America remains a first-order ethical and health-policy priority.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 15,
-      "relevance_hits": [
-        "refractory",
-        "ecog",
-        "closed-loop",
-        "neuromodulation",
-        "neurostimulation",
-        "stimulation"
-      ],
-      "priority": "必读"
     }
   ]
 }
