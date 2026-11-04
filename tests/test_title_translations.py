@@ -11,7 +11,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from title_translations import load_state, prepare_titles, save_state
-from feishu_sync import fill_blank_titles
+from feishu_sync import Feishu, SyncError, fill_blank_titles
 import run_daily
 
 
@@ -128,6 +128,42 @@ class TitleRepairTests(unittest.TestCase):
         client = self.client()
         self.assertEqual(fill_blank_titles(client, {'1': self.record}, self.entry), {})
         self.assertFalse(client.writes)
+
+    def test_timeout_after_saved_title_reads_back_without_second_write(self):
+        client = self.client()
+        original = client.request
+        def timeout_after_save(method, path, payload=None):
+            result = original(method, path, payload)
+            if method == 'PUT':
+                raise SyncError('network_or_invalid_response')
+            return result
+        client.request = timeout_after_save
+        with patch('feishu_sync.time.sleep'):
+            result = fill_blank_titles(client, {'1': self.record}, self.entry)
+        self.assertEqual(result, {'1': '补齐后的中文标题'})
+        self.assertEqual(len(client.writes), 1)
+
+    def test_failed_write_rechecks_manual_title_before_retry(self):
+        client = self.client()
+        original = client.request
+        def timeout_then_manual_edit(method, path, payload=None):
+            if method == 'PUT':
+                client.record['fields']['中文标题'] = '刚刚人工填写的标题'
+                raise SyncError('network_or_invalid_response')
+            return original(method, path, payload)
+        client.request = timeout_then_manual_edit
+        with patch('feishu_sync.time.sleep'):
+            self.assertEqual(fill_blank_titles(client, {'1': self.record}, self.entry), {})
+        self.assertEqual(client.record['fields']['中文标题'], '刚刚人工填写的标题')
+        self.assertFalse(client.writes)
+
+    def test_reads_retry_but_create_does_not_retry(self):
+        client = object.__new__(Feishu)
+        for method, path, calls in [('GET', '/records/row', 3), ('POST', '/records/search?page_size=100', 3), ('POST', '/records/batch_create', 1)]:
+            with patch.object(client, '_request_once', side_effect=SyncError('network_or_invalid_response')) as once, patch('feishu_sync.time.sleep'):
+                with self.assertRaises(SyncError):
+                    client.request(method, path)
+                self.assertEqual(once.call_count, calls)
 
 
 if __name__ == '__main__':
