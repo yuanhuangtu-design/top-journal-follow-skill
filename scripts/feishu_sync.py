@@ -3,6 +3,7 @@ import argparse
 import json
 import os
 import re
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -51,6 +52,17 @@ class Feishu:
             raise SyncError('missing_token')
 
     def request(self, method, path, payload=None):
+        safe_read = method == 'GET' or path.split('?')[0].endswith('/records/search') or path == '/auth/v3/tenant_access_token/internal'
+        attempts = 3 if safe_read else 1
+        for attempt in range(attempts):
+            try:
+                return self._request_once(method, path, payload)
+            except SyncError as exc:
+                if not transient_error(exc) or attempt + 1 == attempts:
+                    raise
+                time.sleep(2 * (attempt + 1))
+
+    def _request_once(self, method, path, payload=None):
         headers = {'Content-Type': 'application/json; charset=utf-8'}
         if self.token:
             headers['Authorization'] = 'Bearer ' + self.token
@@ -149,23 +161,41 @@ def merge_pending(previous, report):
     return merged
 
 
-def fill_blank_titles(client, records, translations):
+def transient_error(exc):
+    return exc.code in ('network_or_invalid_response', 429, 500, 502, 503, 504)
+
+
+def fill_blank_titles(client, records, translations, updated=None):
     """Update only an empty Chinese title after re-reading its current record."""
-    updated = {}
+    updated = {} if updated is None else updated
     for pmid, entry in translations.items():
         record = records.get(pmid)
         if not record or text(record['fields'].get('中文标题')).strip() or not is_chinese(entry.get('title_zh')):
             continue
         if text(record['fields'].get('标题')) != entry.get('title'):
             continue
-        fresh = client.request('GET', client.base + '/records/' + record['record_id'])['data']['record']
-        fields = fresh['fields']
-        if (text(fields.get('PMID')).strip() != pmid or text(fields.get('标题')) != entry['title']
-                or text(fields.get('中文标题')).strip()):
-            continue
-        client.request('PUT', client.base + '/records/' + record['record_id'],
-            {'fields': {'中文标题': entry['title_zh']}})
-        updated[pmid] = entry['title_zh']
+        for attempt in range(2):
+            fresh = client.request('GET', client.base + '/records/' + record['record_id'])['data']['record']
+            fields = fresh['fields']
+            if text(fields.get('PMID')).strip() != pmid or text(fields.get('标题')) != entry['title']:
+                break
+            chinese = text(fields.get('中文标题')).strip()
+            if attempt and chinese == entry['title_zh']:
+                # A timeout may occur after the first PUT was already saved.
+                updated[pmid] = entry['title_zh']
+                break
+            if chinese:
+                break
+            try:
+                client.request('PUT', client.base + '/records/' + record['record_id'],
+                    {'fields': {'中文标题': entry['title_zh']}})
+                updated[pmid] = entry['title_zh']
+                break
+            except SyncError as exc:
+                if not transient_error(exc) or attempt:
+                    raise
+                # Never blindly retry PUT: re-read the title and identity first.
+                time.sleep(2)
     return updated
 
 
@@ -210,7 +240,11 @@ def sync(report, pending_path=None, client_factory=Feishu):
             translations = load_state()['translations']
             translations.update({p['pmid']: {'title': p.get('title'), 'title_zh': p.get('title_zh')}
                 for p in pending.values() if is_chinese(p.get('title_zh'))})
-            updated = fill_blank_titles(client, after, translations)
+            updated = {}
+            try:
+                fill_blank_titles(client, after, translations, updated)
+            finally:
+                diag['titles_updated'] = len(updated)
             if updated:
                 _, after = client.snapshot()
                 if any(text(after.get(p, {}).get('fields', {}).get('中文标题')) != zh for p, zh in updated.items()):
@@ -235,18 +269,19 @@ def main():
     args = parser.parse_args()
     if args.fill_titles:
         result = {'status': 'failed', 'titles_updated': 0}
+        updates = {}
         try:
             if os.environ.get('FEISHU_FILL_MISSING_TITLES', '').lower() != 'true':
                 raise SyncError('title_updates_not_enabled')
             client = Feishu()
             _, before = client.snapshot()
-            updates = fill_blank_titles(client, before, load_state()['translations'])
+            fill_blank_titles(client, before, load_state()['translations'], updates)
             _, after = client.snapshot()
             if any(text(after.get(p, {}).get('fields', {}).get('中文标题')) != zh for p, zh in updates.items()):
                 raise SyncError('title_readback_mismatch')
             result.update(status='ok', titles_updated=len(updates), verified=True, **title_health(after))
         except SyncError as exc:
-            result.update(code=exc.code)
+            result.update(code=exc.code, titles_updated=len(updates))
         save(ROOT / 'output' / 'feishu_titles.json', result)
         print(json.dumps(result, ensure_ascii=False))
         return 0 if result['status'] == 'ok' else 1
