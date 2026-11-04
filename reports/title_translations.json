@@ -1,0 +1,332 @@
+{
+  "translations": {
+    "42862113": {
+      "title": "Cathodal transcranial direct current stimulation in pediatric epileptic syndromes: mechanisms, limitations, and future research horizons.",
+      "title_zh": "阴极经颅直流电刺激治疗儿童癫痫综合征：机制、局限与未来研究方向"
+    },
+    "42865329": {
+      "title": "Recent Advances in Wearable Ultrasound Patches for Healthcare Applications.",
+      "title_zh": "用于医疗保健的可穿戴超声贴片研究新进展"
+    },
+    "42867124": {
+      "title": "Current and emerging neuromodulation techniques for motor recovery after ischemic stroke: a 2026 update.",
+      "title_zh": "缺血性卒中后运动恢复的现有及新兴神经调控技术：2026 年更新"
+    },
+    "42867973": {
+      "title": "EMG-Driven Phase-Locked Spinal Cord Stimulation Physiologically Modulates Essential Tremor.",
+      "title_zh": "肌电驱动的锁相脊髓刺激对特发性震颤的生理性调节"
+    },
+    "42869226": {
+      "title": "Responsive Neurostimulation of the Centromedian Nucleus of the Thalamus for the Treatment of Drug-Resistant Idiopathic Generalized Epilepsy: A Retrospective Analysis of Efficacy and Exploratory Role of Different Stimulation Frequency Paradigms.",
+      "title_zh": "丘脑中央中核响应性神经刺激治疗药物难治性特发性全面性癫痫：疗效回顾性分析及不同刺激频率范式作用的探索"
+    },
+    "42873957": {
+      "title": "Open-Loop Deep Brain Stimulation Versus Closed-Loop Responsive Neurostimulation in Drug-Resistant Bitemporal Epilepsy: A Narrative Review.",
+      "title_zh": "开放环路脑深部刺激与闭环响应性神经刺激治疗药物难治性双颞叶癫痫：叙述性综述"
+    },
+    "42876682": {
+      "title": "CLSP-REQA: a real-time quality-aware closed-loop seizure prediction framework with Mamba-BiLSTM and confidence-gated intervention.",
+      "title_zh": "CLSP-REQA：融合 Mamba-BiLSTM 与置信度门控干预的实时质量感知闭环癫痫发作预测框架"
+    },
+    "42887034": {
+      "title": "Combining responsive neurostimulation with resection or ablation for treatment of epilepsy: a multicenter experience.",
+      "title_zh": "响应性神经刺激联合切除或消融治疗癫痫：多中心经验"
+    },
+    "42888254": {
+      "title": "Circuit-constrained molecular neuroethology in the medicinal leech Hirudo verbana.",
+      "title_zh": "药用水蛭 Hirudo verbana 中受神经环路约束的分子神经行为学"
+    },
+    "42889040": {
+      "title": "What happens in vagus.",
+      "title_zh": "迷走神经中发生了什么"
+    },
+    "42891881": {
+      "title": "Network-guided Thalamic Neuromodulation for Epilepsy.",
+      "title_zh": "网络引导的丘脑神经调控治疗癫痫"
+    },
+    "42893423": {
+      "title": "Artificial Intelligence and Connected Technologies in Chronic Pain Management: A Scoping Review.",
+      "title_zh": "慢性疼痛管理中的人工智能与互联技术：范围综述"
+    },
+    "42894014": {
+      "title": "Repetitive transcranial magnetic stimulation (rTMS) combined with antidepressant pharmacotherapy for depression: state-dependent mechanisms, clinical evidence, and translational challenges.",
+      "title_zh": "重复经颅磁刺激（rTMS）联合抗抑郁药物治疗抑郁症：状态依赖机制、临床证据与转化挑战"
+    },
+    "42900250": {
+      "title": "Sleep Spindles and Slow Oscillations as Potential Biomarkers and Therapeutic Targets in Mild-to-Moderate Alzheimer's Disease.",
+      "title_zh": "睡眠纺锤波和慢振荡作为轻至中度阿尔茨海默病潜在生物标志物与治疗靶点"
+    },
+    "42902320": {
+      "title": "EEG-defined differences in functional networks following beta-band transcranial alternating current stimulation in patients with disorders of consciousness: a pilot study.",
+      "title_zh": "意识障碍患者接受 β 频段经颅交流电刺激后的脑电功能网络差异：初步研究"
+    },
+    "42908514": {
+      "title": "Elevated local field potential power characterizes choreic storms identified by deep brain stimulator event capture.",
+      "title_zh": "脑深部刺激器事件捕获识别出的舞蹈症风暴以局部场电位功率升高为特征"
+    },
+    "42909074": {
+      "title": "Case Report: Beyond chronicity: sustained multidimensional response to spinal cord stimulation three decades after traumatic spinal cord injury.",
+      "title_zh": "病例报告：超越慢性病程——创伤性脊髓损伤三十年后接受脊髓刺激的持续多维度反应"
+    },
+    "42909857": {
+      "title": "Conductive hydrogel bioelectronics for chronic neuromodulation: From biomimetic design and bioactive interfaces to integrated neural platforms.",
+      "title_zh": "用于慢性神经调控的导电水凝胶生物电子技术：从仿生设计和生物活性界面到集成神经平台"
+    },
+    "42910633": {
+      "title": "Engineering Bidirectional Neuromodulation: A Review of Neural Excitation and Inhibition Technologies.",
+      "title_zh": "双向神经调控工程：神经兴奋与抑制技术综述"
+    },
+    "42913699": {
+      "title": "NeuroTest: a benchtop testbed for evaluating sensing-capable electrophysiology and neurostimulation systems.",
+      "title_zh": "NeuroTest：用于评估具备感知功能的电生理与神经刺激系统的台架测试平台"
+    },
+    "42918495": {
+      "title": "Brain-State-Resolved Consistency of Corticospinal Responses to TMS.",
+      "title_zh": "不同脑状态下经颅磁刺激诱发皮质脊髓反应的一致性"
+    },
+    "42920766": {
+      "title": "Case Report: An MDT-guided multimodal protocol for large-area stroke plateau - integrating neuromodulation with multimodal assessment.",
+      "title_zh": "病例报告：多学科团队指导的大面积卒中平台期多模态方案——整合神经调控与多模态评估"
+    },
+    "42921395": {
+      "title": "Effect of epidural spinal cord stimulation combined with personalized neurorehabilitation in chronic motor-complete spinal cord injury: study protocol for the phase II single-arm feasibility RESTORES (RESToration Of Rehabilitative function with Epidural spinal Stimulation) trial.",
+      "title_zh": "硬膜外脊髓刺激联合个体化神经康复治疗慢性运动完全性脊髓损伤的效果：RESTORES Ⅱ期单臂可行性试验研究方案"
+    },
+    "42923510": {
+      "title": "Digital health meets Parkinson's disease: a bibliometric exploration of wearable sensors research and emerging frontiers (2005-2026).",
+      "title_zh": "数字健康与帕金森病：可穿戴传感器研究及新兴前沿的文献计量探索（2005—2026 年）"
+    },
+    "42923644": {
+      "title": "Neuromodulatory interventions for Alzheimer's disease.",
+      "title_zh": "阿尔茨海默病的神经调控干预"
+    },
+    "42926499": {
+      "title": "Brief Trains of Closed-loop TMS Induce Controllable Power in FM-theta Oscillations.",
+      "title_zh": "短串闭环经颅磁刺激可诱导可控的 FM-θ 振荡功率"
+    },
+    "42934130": {
+      "title": "[Parkinson's disease state recognition based on local field potentials: An ensemble model with feature division].",
+      "title_zh": "基于局部场电位的帕金森病状态识别：一种特征划分集成模型"
+    },
+    "42934145": {
+      "title": "[Mechanisms and outcome evaluation of neurofeedback in post-traumatic stress disorder intervention].",
+      "title_zh": "神经反馈干预创伤后应激障碍的机制与疗效评价"
+    },
+    "42939006": {
+      "title": "Beyond Local Gating: Toward Network-State-Dependent Neuromodulation.",
+      "title_zh": "超越局部门控：走向依赖网络状态的神经调控"
+    },
+    "42939144": {
+      "title": "Locomotor-State Dependence of Neuromodulation During Avian Free Flight.",
+      "title_zh": "鸟类自由飞行期间神经调控的运动状态依赖性"
+    },
+    "42944391": {
+      "title": "Closed-Loop Acoustic Stimulation of Slow Oscillations Using a Wireless EEG Headband: A Polysomnography-Validated Feasibility Study.",
+      "title_zh": "使用无线脑电头带对慢振荡实施闭环声刺激：经多导睡眠监测验证的可行性研究"
+    },
+    "42947961": {
+      "title": "Applications of functional ultrasound brain-computer interfaces in neurological diseases: research progress based on neurovascular coupling.",
+      "title_zh": "功能超声脑机接口在神经系统疾病中的应用：基于神经血管耦合的研究进展"
+    },
+    "42952610": {
+      "title": "Integrating polyspikes and excitability markers for epileptic network identification.",
+      "title_zh": "整合多棘波与兴奋性标志物以识别癫痫性网络"
+    },
+    "42953141": {
+      "title": "Traumatic brain injury, neurobiology of aggression and antisocial behavior: from large-scale brain networks to anatomical and molecular substrates.",
+      "title_zh": "创伤性脑损伤、攻击性及反社会行为的神经生物学：从大尺度脑网络到解剖与分子基础"
+    },
+    "42954022": {
+      "title": "Brain-computer interface technology for chronic pain management.",
+      "title_zh": "用于慢性疼痛管理的脑机接口技术"
+    },
+    "42955759": {
+      "title": "A Flexible Multimodal Framework for Ecologically Valid Pain Research and Closed-Loop Clinical Translation.",
+      "title_zh": "面向具备生态效度的疼痛研究及闭环临床转化的灵活多模态框架"
+    },
+    "42955869": {
+      "title": "Arousal-related neural circuits in consciousness disorders: Updated model integrating ascending reticular activating system and mesocircuit.",
+      "title_zh": "意识障碍中与觉醒相关的神经环路：整合上行网状激活系统与中间环路的更新模型"
+    },
+    "42957320": {
+      "title": "State-Dependent Modulation of Corticospinal and Cortical Responses by Closed-Loop Paired-pulse TMS.",
+      "title_zh": "闭环配对脉冲经颅磁刺激对皮质脊髓和皮质反应的状态依赖性调节"
+    },
+    "42959781": {
+      "title": "A Care-Level-Stratified Algorithm for Neuromodulation in Persistent Spinal Pain Syndrome Type 2: Critical Appraisal of Contemporary Evidence Adapted to Latin American Health Systems.",
+      "title_zh": "2 型持续性脊柱疼痛综合征神经调控的分层诊疗算法：结合拉丁美洲卫生系统特点对当代证据进行批判性评价"
+    },
+    "42962808": {
+      "title": "Differential effects of γ-state-triggered thalamic stimulation on mechanical sensitivity in neuropathic rats.",
+      "title_zh": "γ 状态触发的丘脑刺激对神经病理性疼痛大鼠机械敏感性的差异性影响"
+    },
+    "42966552": {
+      "title": "Limited Evidence for Non-Invasive Brain Stimulation as a Cognitive Enhancer in Neurodevelopmental Disorders: A Multilevel Meta-Analysis of Sham-Controlled Trials.",
+      "title_zh": "非侵入性脑刺激改善神经发育障碍认知功能的证据有限：假刺激对照试验的多层次荟萃分析"
+    },
+    "42966748": {
+      "title": "State-dependent effects of rTMS on cognitive function in bipolar II disorder: A randomized, double-blind, sham-controlled trial.",
+      "title_zh": "重复经颅磁刺激对双相Ⅱ型障碍认知功能的状态依赖性影响：随机、双盲、假刺激对照试验"
+    },
+    "42971363": {
+      "title": "Individualized Transcranial Temporal Interference Stimulation (TIS): Research Advancements and Clinical Translation Pathways.",
+      "title_zh": "个体化经颅时间干涉刺激（TIS）：研究进展与临床转化路径"
+    },
+    "42971375": {
+      "title": "State-Dependent EEG Markers of Excitation/Inhibition and Hemodynamic State Are Associated with Random Noise Stimulation Effects.",
+      "title_zh": "兴奋/抑制及血流动力学状态的状态依赖性脑电标志物与随机噪声刺激效应相关"
+    },
+    "42971862": {
+      "title": "Focused Ultrasound in Parkinson's Disease: From Mechanisms to Precision Therapy.",
+      "title_zh": "帕金森病的聚焦超声治疗：从机制到精准治疗"
+    },
+    "42973902": {
+      "title": "Stimulation parameters of epidural spinal cord stimulation for functional recovery after spinal cord injury: a narrative review.",
+      "title_zh": "用于脊髓损伤后功能恢复的硬膜外脊髓刺激参数：叙述性综述"
+    },
+    "42975430": {
+      "title": "Pediatric Epilepsy Surgery: Global Survey of Surgical Approaches.",
+      "title_zh": "儿童癫痫外科：手术方式的全球调查"
+    }
+  },
+  "pending": {
+    "42867471": {
+      "title": "ECG in epilepsy - Insights on preemptive sudden death detection."
+    },
+    "42869197": {
+      "title": "Default mode network mechanisms of trait rumination in treatment-resistant depression and rTMS: evidence from source-localized EEG."
+    },
+    "42873392": {
+      "title": "Resting-State EEG Microstate Dynamics and their Associations with Acclimatization Index and Serum Albumin in Healthy Adults with Chronic High-Altitude Exposure."
+    },
+    "42873989": {
+      "title": "Passive Language Mapping With High-Gamma Modulations."
+    },
+    "42875184": {
+      "title": "Machine Learning Framework for Integration of Video and EEG Reveals Distinct Seizure Phenotypes in Mouse Models of Epilepsy."
+    },
+    "42878432": {
+      "title": "Change in clobazam pharmacokinetics after introduction of cenobamate."
+    },
+    "42878718": {
+      "title": "Impact of sedation on the reliability of magnetoencephalographic language mapping in pediatric epilepsy."
+    },
+    "42878728": {
+      "title": "Resective epilepsy surgery in an adult with ARID1B-related disorder and focal cortical dysplasia type IIb."
+    },
+    "42880669": {
+      "title": "A GRAPH CONVOLUTION BASED DUAL-BRANCH NETWORK FOR DECODING OF UPPER-LIMB MOTOR IMAGERY EEG SIGNALS."
+    },
+    "42887654": {
+      "title": "An efficient convolutional neural network model for classifying positive affective states from EEG data considering sleep condition."
+    },
+    "42887838": {
+      "title": "Neurovascular coupling in simultaneous EEG-fNIRS studies: A scoping review of analytical frameworks and clinical applications."
+    },
+    "42892501": {
+      "title": "Interplay of action-based prediction and top-down attention: EEG evidence for joint modulation of late perceptual processing."
+    },
+    "42897757": {
+      "title": "Symptom-related damage patterns in mesial temporal lobe epilepsy with hippocampal sclerosis."
+    },
+    "42899673": {
+      "title": "Delineating neural contributions to electroencephalogram-based speech decoding."
+    },
+    "42901375": {
+      "title": "Intrinsic and extrinsic connectivity of the seizure onset zone at rest and during stimulation."
+    },
+    "42906340": {
+      "title": "ADHD symptom positivity and its association with medication adherence and psychiatric burden in adults with epilepsy."
+    },
+    "42906341": {
+      "title": "Tribal ethnicity also identifies particularly vulnerable persons with epilepsy: A cross-sectional study from Central India."
+    },
+    "42906342": {
+      "title": "Whole person health in epilepsy: prioritizing care-partner wellbeing."
+    },
+    "42906584": {
+      "title": "ACF-Net: Design of an adaptive cross-modal fusion network for cross-subject wearable EEG-EMG gesture recognition."
+    },
+    "42906586": {
+      "title": "Towards semantic brain-computer interfacing: The graded inventory of semantic triggers (GIST) paradigm."
+    },
+    "42910489": {
+      "title": "Atmospheric pressure, temperature, and online search activity for epilepsy: A daily time-series study."
+    },
+    "42910536": {
+      "title": "Migraine comorbidity in epilepsy subtypes: Association with focal versus generalized epilepsy and seizure control-A systematic review and meta-analysis."
+    },
+    "42913687": {
+      "title": "Decoding attempted handwritten characters based on temporal endovascular neural features."
+    },
+    "42913696": {
+      "title": "Transformer networks are robust learners of source localization for EEG measurements."
+    },
+    "42914581": {
+      "title": "Addressing stigma in epilepsy care: a systematic review of personalized anti-stigma interventions."
+    },
+    "42914761": {
+      "title": "Cannabidiol in pediatric drug-resistant epilepsies: A systematic review and meta-analysis of seizure responder rates and neurobehavioral outcome reporting."
+    },
+    "42914762": {
+      "title": "Knowledge, self-management, and health-related quality of life among Omani adults with generalized epilepsy: A cross-sectional study."
+    },
+    "42918434": {
+      "title": "Coarse motor-state structure across paired preoperative fMRI and intraoperative ECoG in patients with brain tumors."
+    },
+    "42918435": {
+      "title": "Do neuroimaging data have higher-order interactions?"
+    },
+    "42919255": {
+      "title": "Neural mechanisms underlying loss of functional independence after stroke: EEG evidence of impaired motor-to-sensory directed connectivity on the affected side."
+    },
+    "42933029": {
+      "title": "Accurate EEG-based linear state-space model of cortical dynamics during a passive motor task with exogenous input."
+    },
+    "42933128": {
+      "title": "REFS: Robust EEG feature selection with incomplete labels for multi-dimensional emotion recognition."
+    },
+    "42933317": {
+      "title": "Cognitive effects of deep brain stimulation across targets in epilepsy: a systematic review and meta-analysis."
+    },
+    "42933318": {
+      "title": "Assessment of caregiver knowledge and attitudes toward pediatric epilepsy during an epilepsy monitoring unit admission."
+    },
+    "42945750": {
+      "title": "Caution with self-reported ADHD symptoms in adults with epilepsy: discrepancy between subjective perception and objective cognitive performance."
+    },
+    "42946273": {
+      "title": "Visuospatial attention modulates audiovisual temporal perception: Context-dependent associations between prestimulus alpha lateralization and perceptual reports."
+    },
+    "42949433": {
+      "title": "Neonatal-onset developmental and epileptic encephalopathy: High genetic yield and long-term outcomes in a multicenter southern European cohort."
+    },
+    "42949443": {
+      "title": "Reply to: Considerations for tracking cognitive trajectories after epilepsy surgery using the international classification of cognitive disorders in epilepsy (IC-CoDE)."
+    },
+    "42951224": {
+      "title": "Impact of hearing loss on visual selective attention: Evidence from N2pc and resting-state networks."
+    },
+    "42955756": {
+      "title": "AEGS-HI: An adaptively Enhanced Filtering Algorithm for Removing FES Artifacts and M-waves in Surface EMG under Non-Integer Sampling Ratios."
+    },
+    "42955757": {
+      "title": "Cross-Domain Slow Wave Sleep Detection from Single-Lead EEG in Pediatric Congenital Heart Disease Recovery."
+    },
+    "42956410": {
+      "title": "Motor cortex-based intracortical BCI performance is robust to changes in attentional load during dual-tasking."
+    },
+    "42957065": {
+      "title": "Serum proteomic correlates of arts and cultural engagement and their associations with health outcomes: cross-sectional and longitudinal analyses in the UK Household Longitudinal Study."
+    },
+    "42961511": {
+      "title": "Outcome-Blind EEG Microstate Topography After Cardiac Arrest: Spatial Expression of a Lateralized Microstate and Association with Neurological Outcome."
+    },
+    "42962828": {
+      "title": "EEG Feature-level integration for robust command generation in SSVEP-based brain-computer interfaces."
+    },
+    "42963370": {
+      "title": "Genotype and phenotype analyses of 689 individuals with PCDH19-clustering epilepsy."
+    }
+  }
+}

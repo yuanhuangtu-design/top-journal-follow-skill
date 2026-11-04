@@ -34,7 +34,11 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import urllib.error
 from datetime import datetime, timedelta
+from title_translations import prepare_titles
+
+TRANSLATION_QUOTA_EXHAUSTED = False
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(BASE_DIR, "config", "daily_config.json")
@@ -123,6 +127,8 @@ def grade_paper(score):
 
 
 def translate_text(text, target="zh-CN", retries=3):
+    global TRANSLATION_QUOTA_EXHAUSTED
+    if TRANSLATION_QUOTA_EXHAUSTED: return ""
     if not text or len(text.strip()) < 5: return text
     for attempt in range(retries + 1):
         try:
@@ -134,6 +140,10 @@ def translate_text(text, target="zh-CN", retries=3):
                 req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
                 with urllib.request.urlopen(req, timeout=20) as resp:
                     data = json.loads(resp.read().decode("utf-8"))
+                if data.get('quotaFinished') or data.get('responseStatus') in (403, 429) or 'USED ALL AVAILABLE FREE TRANSLATIONS' in str(data.get('responseDetails', '')).upper():
+                    TRANSLATION_QUOTA_EXHAUSTED = True
+                    print('[TRANSLATION-QUOTA] 翻译额度已耗尽，缺失标题保留到下次重试。')
+                    return ''
                 if data.get("responseStatus") == 200:
                     translated = data["responseData"]["translatedText"]
                     if translated and len(translated) > 2: parts.append(translated)
@@ -145,6 +155,12 @@ def translate_text(text, target="zh-CN", retries=3):
             if chinese / max(len(result), 1) > 0.15: return result
             elif attempt < retries: time.sleep(3); continue
             else: return ""  # 重试耗尽仍不合格：返回空，避免把英文原文写进中文字段
+        except urllib.error.HTTPError as exc:
+            if exc.code == 429:
+                TRANSLATION_QUOTA_EXHAUSTED = True
+                return ''
+            if attempt < retries: time.sleep(3); continue
+            return ''
         except Exception:
             if attempt < retries: time.sleep(3); continue
             return ""  # 异常重试耗尽：返回空，避免污染中文字段
@@ -347,33 +363,33 @@ def main():
     papers = merge_dedupe(groups); papers = refetch_missing_abstracts(papers)
     print(f"\n[INFO] 合并去重后文献数: {len(papers)}")
     if config.get("translate", True) and not args.no_translate:
-        print("[INFO] 开始中文翻译（失败自动重试+二次补翻）...")
+        print("[INFO] 优先翻译全部标题，再处理摘要；复用已保存的标题译文。")
+        title_diag = prepare_titles(papers, translate_with_timeout)
         translate_failures = []
         for i, p in enumerate(papers, 1):
             print(f"  [{i}/{len(papers)}] PMID {p.get('pmid')} 翻译中...")
-            title_zh = translate_with_timeout(p.get("title", "")); abs_zh = translate_with_timeout(p.get("abstract", ""))
-            p["_title_zh"] = title_zh; p["_abstract_zh"] = abs_zh
+            abs_zh = translate_with_timeout(p.get("abstract", ""))
+            p["_abstract_zh"] = abs_zh
             abs_bad = p.get("abstract") and not is_translation_good(p.get("abstract"), abs_zh)
-            title_bad = p.get("title") and not is_translation_good(p.get("title"), title_zh)
-            if abs_bad or title_bad: translate_failures.append(p)
+            if abs_bad: translate_failures.append(p)
             time.sleep(0.8)
         if translate_failures:
             print(f"[INFO] 第一轮有 {len(translate_failures)} 篇质量不达标，二次补翻...")
             still_failed = []
             for p in translate_failures:
                 print(f"  补翻 PMID {p.get('pmid')}...")
-                if p.get("title") and not is_translation_good(p.get("title"), p["_title_zh"]): p["_title_zh"] = translate_with_timeout(p.get("title"))
                 if p.get("abstract") and not is_translation_good(p.get("abstract"), p["_abstract_zh"]): p["_abstract_zh"] = translate_with_timeout(p.get("abstract"))
                 time.sleep(1.0)
                 abs_bad = p.get("abstract") and not is_translation_good(p.get("abstract"), p["_abstract_zh"])
-                title_bad = p.get("title") and not is_translation_good(p.get("title"), p["_title_zh"])
-                if abs_bad or title_bad: still_failed.append(p.get("pmid"))
+                if abs_bad: still_failed.append(p.get("pmid"))
             if still_failed: print(f"[WARN] 以下PMID翻译仍失败: {', '.join(still_failed)}")
             else: print("[OK] 二次补翻全部成功")
         else: print("[OK] 第一轮全部翻译成功")
     else:
         for p in papers: p["_title_zh"] = ""; p["_abstract_zh"] = ""
     report = build_report(groups, papers, config, report_date, edat_date)
+    if config.get('translate', True) and not args.no_translate:
+        report['meta']['title_translation_diag'] = title_diag
     html = render_html(report, groups); html_path = save_html(html, report_date); print(f"[SUCCESS] HTML: {html_path}")
     page_url = write_notion(report); print(f"[NOTION] 页面: {page_url or '未写入'}")
     feishu_created, feishu_expected, feishu_diag = write_feishu(report)
@@ -388,6 +404,9 @@ def main():
     # 避免"假成功"掩盖问题。未配置（skipped）或确无新文献（empty）不算失败。
     if feishu_diag.get("status") in ("failed", "partial"):
         print(f"[FEISHU-CRITICAL] 飞书写入异常（状态 {feishu_diag.get('status')}，写入 {feishu_created}/{feishu_expected}），本次任务标记失败。", file=sys.stderr)
+        sys.exit(1)
+    if report['meta'].get('title_translation_diag', {}).get('missing_title_pmids'):
+        print('[TRANSLATION-PENDING] 中文标题未齐，已保留重试队列，本次任务标记失败。', file=sys.stderr)
         sys.exit(1)
 
 if __name__ == "__main__": main()
