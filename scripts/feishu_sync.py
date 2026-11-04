@@ -8,6 +8,7 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from title_translations import is_chinese, load_state
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_KEYS = ('FEISHU_APP_ID', 'FEISHU_APP_SECRET', 'FEISHU_APP_TOKEN', 'FEISHU_TABLE_ID')
@@ -148,6 +149,34 @@ def merge_pending(previous, report):
     return merged
 
 
+def fill_blank_titles(client, records, translations):
+    """Update only an empty Chinese title after re-reading its current record."""
+    updated = {}
+    for pmid, entry in translations.items():
+        record = records.get(pmid)
+        if not record or text(record['fields'].get('中文标题')).strip() or not is_chinese(entry.get('title_zh')):
+            continue
+        if text(record['fields'].get('标题')) != entry.get('title'):
+            continue
+        fresh = client.request('GET', client.base + '/records/' + record['record_id'])['data']['record']
+        fields = fresh['fields']
+        if (text(fields.get('PMID')).strip() != pmid or text(fields.get('标题')) != entry['title']
+                or text(fields.get('中文标题')).strip()):
+            continue
+        client.request('PUT', client.base + '/records/' + record['record_id'],
+            {'fields': {'中文标题': entry['title_zh']}})
+        updated[pmid] = entry['title_zh']
+    return updated
+
+
+def title_health(records):
+    missing = [pmid for pmid, r in records.items() if not text(r['fields'].get('中文标题')).strip()]
+    closed = [pmid for pmid, r in records.items() if 'Closed-loop' in text(r['fields'].get('命中检索'))
+        or '闭环' in text(r['fields'].get('命中检索'))]
+    return {'missing_titles': len(missing), 'closed_loop_papers': len(closed),
+        'closed_loop_missing_titles': sum(pmid in missing for pmid in closed)}
+
+
 def sync(report, pending_path=None, client_factory=Feishu):
     path = Path(pending_path or os.environ.get('FEISHU_PENDING_PATH', ROOT / 'reports' / 'feishu_pending.json'))
     diag = {'status': 'unknown', 'stage': 'queue', 'searched': len(report.get('papers', [])),
@@ -176,6 +205,17 @@ def sync(report, pending_path=None, client_factory=Feishu):
                 {'records': [{'fields': paper_fields(paper, fields)} for paper in batch]})
         diag['stage'] = 'verify'
         _, after = client.snapshot() if needed else (fields, existing)
+        if os.environ.get('FEISHU_FILL_MISSING_TITLES', '').lower() == 'true':
+            diag['stage'] = 'fill_titles'
+            translations = load_state()['translations']
+            translations.update({p['pmid']: {'title': p.get('title'), 'title_zh': p.get('title_zh')}
+                for p in pending.values() if is_chinese(p.get('title_zh'))})
+            updated = fill_blank_titles(client, after, translations)
+            if updated:
+                _, after = client.snapshot()
+                if any(text(after.get(p, {}).get('fields', {}).get('中文标题')) != zh for p, zh in updated.items()):
+                    raise SyncError('title_readback_mismatch')
+            diag.update(titles_updated=len(updated), **title_health(after))
         remaining = [paper for paper in needed if paper['pmid'] not in after]
         save(path, {'papers': remaining})
         diag.pop('attempting_pmids', None)
@@ -191,7 +231,25 @@ def main():
     modes = parser.add_mutually_exclusive_group(required=True)
     modes.add_argument('--check', action='store_true')
     modes.add_argument('--flush-pending', action='store_true')
+    modes.add_argument('--fill-titles', action='store_true')
     args = parser.parse_args()
+    if args.fill_titles:
+        result = {'status': 'failed', 'titles_updated': 0}
+        try:
+            if os.environ.get('FEISHU_FILL_MISSING_TITLES', '').lower() != 'true':
+                raise SyncError('title_updates_not_enabled')
+            client = Feishu()
+            _, before = client.snapshot()
+            updates = fill_blank_titles(client, before, load_state()['translations'])
+            _, after = client.snapshot()
+            if any(text(after.get(p, {}).get('fields', {}).get('中文标题')) != zh for p, zh in updates.items()):
+                raise SyncError('title_readback_mismatch')
+            result.update(status='ok', titles_updated=len(updates), verified=True, **title_health(after))
+        except SyncError as exc:
+            result.update(code=exc.code)
+        save(ROOT / 'output' / 'feishu_titles.json', result)
+        print(json.dumps(result, ensure_ascii=False))
+        return 0 if result['status'] == 'ok' else 1
     if args.flush_pending:
         today = datetime.now(timezone(timedelta(hours=8))).date().isoformat()
         _, _, result = sync({'meta': {'report_date': today}, 'papers': []})
@@ -201,7 +259,8 @@ def main():
     try:
         fields, records = Feishu().snapshot()
         result = {'status': 'ok', 'records': len(records), 'fields': len(fields),
-            'read_count': sum(record['fields'].get('已读') is True for record in records.values()), 'writes': 0}
+            'read_count': sum(record['fields'].get('已读') is True for record in records.values()), 'writes': 0,
+            **title_health(records)}
     except SyncError as exc:
         result = {'status': 'failed', 'code': exc.code, 'writes': 0}
     save(ROOT / 'output' / 'feishu_check.json', result)
