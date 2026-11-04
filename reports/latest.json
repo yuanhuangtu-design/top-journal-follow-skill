@@ -1,19 +1,19 @@
 {
   "meta": {
-    "report_date": "2026-11-03",
-    "target_edat": "2026-11-02",
+    "report_date": "2026-11-04",
+    "target_edat": "2026-11-03",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-11-03 02:48:15",
+    "generated_at": "2026-11-04 01:06:13",
     "feishu_diag": {
       "status": "ok",
       "stage": "complete",
-      "searched": 10,
-      "created": 3,
-      "expected": 3,
+      "searched": 13,
+      "created": 9,
+      "expected": 9,
       "verified": true,
-      "candidates": 10,
-      "dedup_skipped": 7,
+      "candidates": 13,
+      "dedup_skipped": 4,
       "pending": 0
     }
   },
@@ -35,45 +35,49 @@
       "count": 5,
       "total": 5,
       "pmids": [
-        "42969794",
-        "42966131",
-        "42965418",
-        "42965312",
-        "42965310"
+        "42975879",
+        "42975788",
+        "42975562",
+        "42970886",
+        "42969794"
       ],
       "status": "ok"
     },
     {
       "group": "B2",
       "label": "神经科学刊 × Epilepsy",
-      "count": 1,
-      "total": 1,
-      "pmids": [
-        "42963370"
-      ],
-      "status": "ok"
-    },
-    {
-      "group": "C",
-      "label": "脑电信号分析方法",
       "count": 0,
       "total": 0,
       "pmids": [],
       "status": "ok"
     },
     {
+      "group": "C",
+      "label": "脑电信号分析方法",
+      "count": 1,
+      "total": 1,
+      "pmids": [
+        "42971375"
+      ],
+      "status": "ok"
+    },
+    {
       "group": "D",
       "label": "闭环神经调控 · Closed-loop Neuromodulation",
-      "count": 2,
-      "total": 2,
+      "count": 6,
+      "total": 6,
       "pmids": [
-        "42966748",
-        "42966552"
+        "42975430",
+        "42973902",
+        "42971862",
+        "42971375",
+        "42971363",
+        "42966748"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 10,
+  "dedup_total": 13,
   "papers": [
     {
       "index": 1,
@@ -182,6 +186,153 @@
     },
     {
       "index": 3,
+      "pmid": "42975879",
+      "title": "Late electroencephalographic seizure-risk findings and restricted diffusion on magnetic resonance imaging as seizure-burden markers associated with neurological deficits after status epilepticus in a remote or chronic cohort.",
+      "title_zh": "在远程或慢性队列中，脑电图晚期癫痫发作风险发现和磁共振成像作为与癫痫持续状态后神经系统缺陷相关的癫痫发作负担标志物的扩散受限。",
+      "journal": "Epilepsia",
+      "iso_journal": "Epilepsia",
+      "authors": [
+        "Ohno N",
+        "Neshige S",
+        "Okada R",
+        "Abe T",
+        "Ishihara K",
+        "Nonaka M",
+        "Ishibashi H",
+        "Toko M",
+        "Shishido T",
+        "Agari D",
+        "Yamazaki Y",
+        "Iida K",
+        "Maruyama H"
+      ],
+      "pubdate": "2026 Nov 3",
+      "doi": "10.1002/epi.70565",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42975879/",
+      "abstract": "OBJECTIVE: To evaluate whether time-dependent electroencephalographic (EEG) seizure risk findings and restricted diffusion on magnetic resonance imaging (MRI) are associated with neurological outcomes after status epilepticus (SE), beyond seizure duration.\nMETHODS: This two-center observational study included consecutive SE patients from 2017 to 2025. We examined three seizure-related markers: seizure duration ≥ 30 min, a 2HELPS2B score ≥ 2 on a late EEG (performed the following day or later after SE onset), and SE-related restricted diffusion on MRI (peri-ictal diffusion-weighted imaging hyperintensity with reduced apparent diffusion coefficient values). Outcomes were overall neurological worsening and SE-attributable focal neurological deficits at discharge. Multivariable models included the three markers and age> 65 years, with further adjustment for stupor or coma at admission and third-line therapy.\nRESULTS: Of 440 patients with suspected SE, 297 had confirmed SE; 221 with an identified seizure focus formed the overall cohort; 127 with remote symptomatic SE or preexisting chronic focal epilepsy formed the remote or chronic cohort. Overall neurological worsening occurred in 96 patients (43.4%) and SE-attributable focal neurological deficits in 68 (30.8%). In univariable analyses, seizure duration ≥ 30 min was associated with both outcomes in the overall cohort. A 2HELPS2B score ≥ 2 on late EEG was associated with both outcomes in both cohorts, whereas high-risk findings on early EEG were not. In multivariable models including seizure duration, restricted diffusion was independently associated with both outcomes in both cohorts, most strongly with focal neurological deficits in the remote or chronic cohort (adjusted odds ratio [OR] = 28.59, 95% confidence interval [CI] = 7.23-154.99). A 2HELPS2B score ≥ 2 on late EEG was independently associated with focal neurological deficits in the remote or chronic cohort (adjusted OR = 4.26, 95% CI = 1.35-14.24), whereas seizure duration ≥ 30 min was not independently associated with either outcome.\nSIGNIFICANCE: High-risk late-EEG findings and restricted diffusion were associated with neurological deficits. These markers may complement seizure duration in estimating cumulative seizure burden and focal brain injury.",
+      "abstract_zh": "目的：评估时间依赖性脑电图（ EEG ）癫痫发作风险发现和磁共振成像（ MRI ）的限制性扩散是否与癫痫持续状态（ SE ）后超过癫痫发作持续时间的神经系统结局相关。\n方法：这项双中心观察性研究包括2017年至2025年的连续SE患者。 我们检查了三个与癫痫发作相关的标志物：癫痫发作持续时间≥ 30分钟， 2HELPS2B评分≥ 2\n晚期脑电图（ SE发作后第二天或之后进行） ，以及MRI上SE相关的限制性弥散（表观弥散系数值降低的围发作弥散加权成像超强度）。结局为出院时整体神经系统恶化和SE引起的局灶性神经系统缺陷。多变量模型包括三个标志物和年龄> 65岁，入院时昏迷或昏迷进一步调整，\nird-line疗法。\n结果： 440例疑似SE患者中， 297例确诊为SE ； 221例癫痫发作灶形成整体队列； 127例远程症状性SE或预先存在慢性局灶性癫痫形成远程或慢性队列。 96名患者（ 43.4% ）发生整体神经系统恶化， 68名患者（ 30.8% ）出现SE归因的局灶性神经系统缺陷。 在不变量分析中，癫痫发作持续时间≥ 30分钟与\n这两个结果在整个队列中。在两个队列中，晚期脑电图的2HELPS2B评分≥ 2与两种结局相关，而早期脑电图的高风险发现则不相关。在包括癫痫发作持续时间的多变量模型中，限制性弥散与两个队列的两种结局独立相关，与远程或慢性队列的局灶性神经系统缺陷最为相关（调整后的比值比[OR] = 28.59 ， 95%置信区间[C\nI] = 7.23-154.99 ）。 晚期脑电图的2HELPS2B评分≥ 2与远程或慢性队列的局灶性神经系统缺陷独立相关（校正后OR = 4.26 ， 95% CI = 1.35-14.24 ） ，而癫痫发作持续时间≥ 30分钟与两种结果均无独立相关性。\n意义：高风险晚期EEG发现和弥散受限与神经系统缺陷相关。 这些标志物可以补充估计cu的癫痫发作持续时间\n癫痫发作负担和局灶性脑损伤。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 42,
+      "relevance_hits": [
+        "epilepsy",
+        "epileptic",
+        "seizure",
+        "status epilepticus",
+        "ictal",
+        "electroencephalogr",
+        "eeg",
+        "focal"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 4,
+      "pmid": "42975788",
+      "title": "The risk of seizure-affected pregnancy in Australian women with epilepsy.",
+      "title_zh": "澳大利亚女性癫痫患者癫痫发作妊娠的风险。",
+      "journal": "Epileptic disorders : international epilepsy journal with videotape",
+      "iso_journal": "Epileptic Disord",
+      "authors": [
+        "Vajda FJE",
+        "O'Brien TJ",
+        "Graham JE",
+        "Hitchcock AE",
+        "Perucca P",
+        "Lander CM",
+        "Vajda SRL",
+        "Eadie MJ"
+      ],
+      "pubdate": "2026 Nov 3",
+      "doi": "10.1002/epd2.70455",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42975788/",
+      "abstract": "OBJECTIVE: We reported earlier that the occurrence of seizures in the pre-pregnancy year was the main determinant of the following pregnancy being seizure-affected. Additional risk factors were assessed in this study.\nMETHODS: The pregnancies involved first pregnancies of women with epilepsy. Two categories were compared. One category comprised 711 pregnancies in which seizures had occurred during the pre-pregnancy year and where seizures might reasonably be expected to continue to occur during the 9 months involved in any following pregnancy. The other category contained 634 pregnancies that were seizure-free in the pre-pregnancy year. Multivariate logistic regressions were fitted for 1345 subjects for seizure occurrence during pregnancy for co-variates listed to identify statistically seizure-related co-variates.\nRESULTS: Seizure-affected pregnancy rates in the 1345 pregnancies studied remained stable over the consecutive 5-year intervals from 1999 onwards, viz. 50.5%, 53.9%, 50.3%, 52.8% and 48.2%. Seizure-affected pregnancy was more likely in WWE, who had: (1) Shorter durations of pre-pregnancy freedom from seizures. (2) Focal epilepsy. (3) Not taken ASMs while pregnant. (4) Not used pre-pregnancy folate supplementation. (5) Longer durations of epilepsy. (6) Earlier age onset of epilepsy. The hazard of a seizure-affected next pregnancy was over threefold higher when the pre-pregnancy year was seizure-affected than when it had been seizure-free.\nSIGNIFICANCE: The finding that a year's pre-pregnancy seizure freedom was associated with a reduced risk of seizures in the next pregnancy was expected. The magnitude of the greater than threefold higher seizure risk in the next pregnancy if seizures had occurred in the pre-pregnancy year was not. It identifies a group of women with epilepsy whose medical management during pregnancy warrants particular care.",
+      "abstract_zh": "目的：我们早些时候报告说，妊娠前一年的癫痫发作是以下妊娠受癫痫影响的主要决定因素。 本研究评估了其他风险因素。\n方法：妊娠涉及癫痫妇女的首次妊娠。 比较了两个类别。 一类包括711次怀孕，其中在怀孕前一年发生癫痫发作，并且癫痫发作可能\n合理地预期在妊娠后的9个月内继续发生。 另一个类别包含634例在怀孕前一年无癫痫发作的妊娠。 对1345例妊娠期癫痫发作受试者进行多变量逻辑回归拟合，以识别统计学上癫痫发作相关的共变量。\n结果：所研究的1345例妊娠中受癫痫影响的妊娠率\n从1999年起连续5年保持稳定，即50.5%、53.9%、50.3%、52.8%和48.2%。受癫痫影响的妊娠在WWE中更可能发生， WWE患者： （ 1 ）孕前无癫痫发作的持续时间较短。（ 2 ）局灶性癫痫。（ 3 ）怀孕期间未服用ASM。（ 4 ）未使用孕前叶酸补充剂。（ 5 ）癫痫持续时间较长。（ 6 ）癫痫发作较早。癫痫发作影响的NEX的危险\n孕前癫痫发作时，妊娠率比无癫痫发作时高出三倍以上。\n意义：预期怀孕前一年的癫痫发作自由度与下次怀孕时癫痫发作的风险降低相关。 如果癫痫发作发生在妊娠前一年，则在下一次妊娠中癫痫发作风险增加三倍以上的幅度不是。 它标识了一群女性\n与怀孕期间的医疗管理需要特别关注的癫痫有关。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 41,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "focal"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 5,
+      "pmid": "42975562",
+      "title": "Do preclinical seizure models predict success or failure in anti-seizure drug development? A retrospective analysis of 89 compounds with divergent clinical outcomes for epilepsy.",
+      "title_zh": "临床前癫痫模型是否预测抗癫痫药物开发的成功或失败？一项对89种具有不同临床结局的癫痫化合物的回顾性分析。",
+      "journal": "Epilepsia",
+      "iso_journal": "Epilepsia",
+      "authors": [
+        "Löscher W",
+        "Barker-Haliski M"
+      ],
+      "pubdate": "2026 Nov 3",
+      "doi": "10.1002/epi.70541",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42975562/",
+      "abstract": "Anti-seizure medication (ASM) discovery remains a major challenge despite over 30 commercially available options. One persistent obstacle for any promising candidate compound to successfully move from preclinical study to clinical approval has been the ambiguity in preclinical model selection. Which models are most predictive of clinical response and failure? For decades, the maximal electroshock seizure (MES), subcutaneous pentylenetetrazole (s.c. PTZ) seizure, 6-Hz psychomotor seizure, and audiogenic seizure tests in rodents have served as foundational ASM screening models. These tests are generally regarded as suitable models of generalized tonic-clonic seizures (MES), non-convulsive (absence) seizures (PTZ), pharmacoresistant focal seizures (6-Hz test), and brain penetrance and generalized convulsive seizures (audiogenic seizures). Together, these assays have supported high-throughput ASM discovery for decades; however, they primarily measure acute anti-seizure response. Furthermore, they do not model the pathophysiology of epilepsy as a chronic human brain disorder. Critically, as shown here, these models do not accurately predict human treatment-resistant focal epilepsy success potential. The amygdala-kindled rat model (AKM) is a relevant human temporal lobe epilepsy model that is well suited to investigational ASM discovery and has been implemented for such use for decades. We hypothesized that AKM would be the most predictive of clinical success and failure among the widely implemented rodent screening models. Our present analysis of 89 ASMs and investigational new drugs (INDs) thus aimed to define which preclinical signals, if any, in the standard rodent seizure models would best predict clinical outcomes. The primary efficacy endpoint in AKM has traditionally been convulsive seizure suppression or electrographic outcomes (afterdischarge duration), with few groups reporting IND effects on focal seizures. In our retrospective analysis of 89 compounds, we find that the AKM focal seizure endpoint was the most predictive of clinical success. This structured retrospective comparative analysis of ASM and IND responses demonstrates the exceptional predictive validity of the AKM for early ASM discovery for treatment-resistant human focal epilepsy.",
+      "abstract_zh": "尽管有30多种商业上可用的选择，但抗癫痫药物（ ASM ）的发现仍然是一个重大挑战。任何有希望的候选化合物从临床前研究成功转向临床批准的一个持续障碍是临床前模型选择的模糊性。哪些模型最能预测临床缓解和失败？几十年来，最大电击癫痫发作（ MES ） ，皮下戊四氮（ s.\nc. PTZ ）癫痫发作、6-Hz精神运动癫痫发作和啮齿动物听觉癫痫发作测试已成为基础ASM筛查模型。这些测试通常被认为是全身强直阵挛性癫痫发作（ MES ）、非惊厥性（缺失）癫痫发作（ PTZ ）、耐药性局灶性癫痫发作（ 6-Hz测试）、脑穿透和全身惊厥性癫痫发作（听觉性癫痫发作）的适合模型。这些测定一起支持了高通量\n几十年来ASM的发现；然而，他们主要测量急性抗癫痫发作反应。此外，他们没有将癫痫的病理生理学建模为慢性人脑疾病。至关重要的是，如这里所示，这些模型不能准确预测人类治疗抵抗性局灶性癫痫的成功潜力。杏仁核点燃大鼠模型（ AKM ）是一种相关的人类颞叶癫痫模型，非常适合研究性ASM发现\n并已为此类用途实施了数十年。我们假设，在广泛实施的啮齿动物筛选模型中， AKM最能预测临床成功和失败。因此，我们目前对89种ASM和研究性新药（ IND ）的分析旨在确定标准啮齿动物癫痫发作模型中哪些临床前信号（如果有）最能预测临床结果。AKM的主要疗效终点传统上\n痉挛性癫痫发作抑制或电图结果（出院后持续时间） ，很少有组报告IND对局灶性癫痫发作的影响。在我们对89种化合物的回顾性分析中，我们发现AKM局灶性癫痫发作终点最能预测临床成功。这种对ASM和IND反应的结构化回顾性比较分析表明， AKM对TRE的早期ASM发现具有卓越的预测有效性。\n耐药的人类局灶性癫痫。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 51,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "convulsive",
+        "temporal lobe",
+        "focal",
+        "generalized",
+        "tonic-clonic"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 6,
+      "pmid": "42970886",
+      "title": "Development and validation of a multimodal data-based scale for predicting epilepsy surgery outcomes.",
+      "title_zh": "开发和验证用于预测癫痫手术结局的基于多模态数据的量表。",
+      "journal": "Epilepsy research",
+      "iso_journal": "Epilepsy Res",
+      "authors": [
+        "Yuan C",
+        "Huang F",
+        "Sun Y",
+        "Ge S",
+        "Wang X",
+        "Shao X",
+        "Wang Q"
+      ],
+      "pubdate": "2026 Oct 31",
+      "doi": "10.1016/j.eplepsyres.2026.107950",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970886/",
+      "abstract": "BACKGROUND: Seizure outcomes after drug-resistant epilepsy surgery are hard to predict, and existing models lack rigorous validation. We developed and internally validated a multimodal scale predicting seizure freedom.\nMETHODS: Retrospectively, 157 of 816 screened patients with complete data and ≥ 1 year follow-up were analyzed (116 seizure-free [SF], 41 non-seizure-free [NSF]). Predictors came from clinical variables, MRI, FDG-PET, video-EEG, and MEG. From 56 variables, eight predictors were fixed by screening, clinical judgment, four machine-learning algorithms, and minimum-AIC logistic regression, then re-estimated in all 157 patients by Firth's bias-corrected logistic regression without repeat selection. Internal validation used 2000 bootstrap resamples. A cutoff maximizing 0.4 ×sensitivity + 0.6 ×specificity was selected once in the full cohort and applied unchanged to the ≥ 24 months subgroup.\nRESULTS: The model retained disease duration, age at surgery, four EEG patterns, temporal MRI lesion, and unilateral unifocal PET hypometabolism. Development-phase AUCs (0.864 training, 0.810 test) were descriptive. Firth re-estimation gave an apparent AUC of 0.771 and an optimism-corrected AUC of 0.724 (Brier 0.156/0.176). At the 79.64-point cutoff, sensitivity was 61.2% and specificity 85.4%; all 95% confidence intervals included the null. Among 101 patients followed ≥ 24 months, the locked model gave AUC 0.770 (95% CI 0.664-0.865), Brier 0.158, sensitivity 53.9%, specificity 96.0%.\nCONCLUSIONS: Multimodal data integration yielded a fully specified, reproducible eight-variable scale with stable discrimination in longer-term follow-up, supporting exploratory use for preoperative risk stratification and counseling alongside presurgical evaluation. Prospective multicenter validation is the next step toward clinical implementation.",
+      "abstract_zh": "背景：耐药性癫痫手术后癫痫结局难以预测，现有模型缺乏严格的验证。 我们开发并内部验证了预测癫痫发作自由度的多模式量表。\n方法：回顾性分析816例筛查的完全数据和≥ 1年随访患者中的157例（ 116例无癫痫发作[SF] ， 41例无癫痫发作[NSF] ）。 预测指标来自临床变量、MRI、FDG-PET、视频EEG、\nd MEG.从56个变量中，通过筛选、临床判断、四种机器学习算法和最小-AIC逻辑回归确定了8个预测指标，然后通过Firth的偏差校正逻辑回归（无重复选择）对所有157名患者进行了重新估计。内部验证使用了2000个引导重采样。在整个队列中选择一次最大化0.4 ×灵敏度+ 0.6 ×特异性的截止值，并应用于≥ 24个月\nhs subgroup.\n结果：模型保留了疾病持续时间、手术年龄、4种脑电图模式、颞叶MRI病变和单侧单灶PET代谢低下。 发展阶段AUC （ 0.864训练， 0.810测试）是描述性的。 Firth重新估计的明显AUC为0.771 ，乐观修正的AUC为0.724 （ Brier 0.156/0 .176 ）。 在79.64点临界值时，敏感性为61.2% ，特异性为85.4% ；所有95%置信区间均包括\n无效，在随访≥ 24个月的101例患者中，锁定模型给出AUC 0.770 （ 95% CI 0.664-0.865 ） ， Brier 0.158 ，灵敏度53.9% ，特异性96.0%。\n结论：多模式数据集成产生了一个完全指定、可重复的八变量量表，在长期随访中具有稳定的判别，支持探索性地用于术前风险分层和术前评估的咨询。\niDATION是临床实施的下一步。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 15,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "drug-resistant",
+        "eeg",
+        "focal"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 7,
       "pmid": "42969794",
       "title": "Diagnostic value of extending outpatient EEG to record sleep - A retrospective study.",
       "title_zh": "扩展门诊脑电图以记录睡眠的诊断价值-一项回顾性研究。",
@@ -203,7 +354,7 @@
       "doi": "10.1002/epd2.70446",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42969794/",
       "abstract": "OBJECTIVE: Evidence for the utility of sleep electroencephalography (EEG) in the diagnosis of epilepsy is inconsistent, often necessitating repeat visits and sleep deprivation (SD), which increases patient and resource burden. In our setting in India, patients are often referred for EEG immediately following consultation (single visit) and EEG sessions are extended to allow for spontaneous sleep acquisition without prior SD. We aimed to evaluate the success rate of achieving sleep during these extended outpatient recordings and its incremental diagnostic yield for interictal epileptiform discharges (IEDs).\nMETHODS: We retrospectively analyzed 1762 outpatient EEGs from patients (45% female) with suspected or known epilepsy. All patients underwent an extended routine EEG (~40-50 min), incorporating standard activation procedures and aiming to capture spontaneous sleep where possible. Successful sleep acquisition was defined as the attainment of at least NREM stage N2. IED detection rates were compared between wakefulness and sleep across different epilepsy types.\nRESULTS: Sleep was achieved in 70.5% of patients (median age, 28 years; IQR: 16-55; range, 0.3-90). The proportion attaining sleep increased with recording duration, from 36.7% at 20 min to 55.6% at 30 min and 66.7% at 50 min, with a median time to sleep onset of 20 min. Among 1199 patients with both awake and sleep states captured, wakefulness identified IEDs in 29% (n = 350), while sleep captured unique IEDs in an additional 12% (n = 141), increasing the total yield significantly. In a sub-analysis of confirmed epilepsy cases (n = 751), wakefulness showed IEDs in 42% (n = 315), with sleep adding another 16% (n = 123). The diagnostic yield of sleep recordings was significantly higher than that of wakefulness alone (OR: 1.31; 95% CI: 1.02-1.68; p = 0.043), particularly among adults with idiopathic generalized epilepsy (IGE) (OR: 2.20; 95% CI: 1.30-3.73; p = 0.004) and children with self-limited epilepsy (OR: ∞; p = 0.031).\nSIGNIFICANCE: Despite a busy outpatient setting, 70.5% of patients attained N2 sleep during an extended EEG recording without SD. Sleep capture increased progressively with recording duration, with the greatest incremental gain between 20 and 30 min, suggesting that a modest extension beyond 20 min substantially increases the likelihood of capturing sleep. Sleep recording increased IED detection over wakefulness alone, particularly in children, in adults with IGE, and in self-limited epilepsies. Whether this approach can substitute for a sleep-deprived EEG requires prospective, head-to-head evaluation.",
-      "abstract_zh": "目的：睡眠脑电图（ EEG ）在癫痫诊断中的应用证据不一致，通常需要重复就诊和睡眠剥夺（ SD ） ，这增加了患者和资源负担。在我们位于印度的环境中，患者通常在会诊（单次访视）后立即转诊进行脑电图检查，并延长脑电图会话，以允许自发睡眠采集，而无需事先进行SD。我们的目的是评估\n在这些扩展门诊记录期间实现睡眠的成功率及其对发作性癫痫间期出院（ IED ）的增量诊断率。\n方法：我们回顾性分析了1762例疑似或已知癫痫患者（ 45%为女性）的门诊脑电图。 所有患者均接受了延长的常规脑电图（约40-50分钟） ，包括标准激活程序，旨在尽可能捕捉自发睡眠。Succe\nssful睡眠采集被定义为至少达到NREM N2期。 比较了不同类型癫痫患者的清醒和睡眠IED检出率。\n结果： 70.5%的患者实现了睡眠（中位年龄为28岁； IQR ： 16-55 ；范围为0.3-90 ）。 实现睡眠的比例随着记录持续时间的增加而增加，从20分钟时的36.7%增加到30分钟时的55.6%和50分钟时的66.7% ，中位睡眠时间为20分钟。\n在捕获的1199名具有清醒和睡眠状态的患者中，清醒识别出29% （ n = 350 ）的简易爆炸装置，而睡眠识别出另外12% （ n = 141 ）的独特简易爆炸装置，显著增加了总产量。在对确诊癫痫病例（ n = 751 ）的子分析中，清醒显示IED占42% （ n = 315 ） ，睡眠增加了16% （ n = 123 ）。睡眠记录的诊断率明显高于清醒记录的诊断率。\nne （ OR ： 1.31 ； 95% CI ： 1.02-1.68 ； p = 0.043 ） ，尤其是特发性全身性癫痫（ IGE ）成人（ OR ： 2.20 ； 95% CI ： 1.30-3.73 ； p = 0.004 ）和自限性癫痫儿童（ OR ： ∞ ； p = 0.031 ）。\n意义：尽管门诊环境繁忙， 70.5%的患者在没有SD的扩展脑电图记录期间达到N2睡眠。 睡眠捕获随着记录持续时间逐渐增加，最大的增量增益介于\n20和30分钟，表明适度延长超过20分钟大大增加了捕获睡眠的可能性。与单纯清醒相比，睡眠记录增加了IED检测，特别是在儿童、IGE成人和自限性癫痫中。这种方法是否可以替代睡眠不足的脑电图需要前瞻性的直接评估。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -221,179 +372,228 @@
       "priority": "必读"
     },
     {
-      "index": 4,
-      "pmid": "42966131",
-      "title": "Utilizing wearable activity trackers to promote physical activity in people with epilepsy: a randomized controlled trial.",
-      "title_zh": "利用可穿戴活动跟踪器促进癫痫患者的身体活动：一项随机对照试验。",
-      "journal": "Epilepsy & behavior : E&B",
-      "iso_journal": "Epilepsy Behav",
-      "authors": [
-        "Harris KMJ",
-        "Skalomenos L",
-        "Tran AK",
-        "Chang J",
-        "Massie A",
-        "Harris KT",
-        "Hope OA"
-      ],
-      "pubdate": "2026 Oct 31",
-      "doi": "10.1016/j.yebeh.2026.111344",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42966131/",
-      "abstract": "OBJECTIVE: To evaluate exercise education alone versus exercise education in combination with a wearable physical activity tracker in people with epilepsy (PWE) to determine the effect on physical activity and measure potential impact on depression, anxiety, sleep, and quality of life (QoL).\nMETHODS: In an open parallel group prospective randomized controlled trial, PWE between 18 and 64 years old were recruited from a single US epilepsy center. Eligible participants were randomized into two groups (control and intervention arms). Both arms received standard-of-care exercise education for PWE. The intervention arm also received a Fitbit for data monitoring and smartphone-application-based physical activity challenge opportunities. Both arms provided self-reported physical activity metrics at enrollment and study completion. Fitbit data were collected from each participant in the intervention arm continuously for three months. Secondary outcome measures for depression, anxiety, sleep, and QoL were also assessed at baseline and post-intervention. Seizure frequency was monitored as an adverse event.\nRESULTS: Eighty participants were recruited (40 intervention, 40 control). There was a significant increase in aerobic physical activity level after three months within the intervention arm and a nonsignificant positive trend within the control arm. There was a nonsignificant improvement in depression and anxiety scores in both arms. There was no significant change in sleep or QoL and no adverse impact on seizure frequency.\nSIGNIFICANCE: The use of wearable physical activity trackers in conjunction with smartphone-application-based physical activity challenges and exercise education resulted in a within-intervention-arm improvement in aerobic physical activity in PWE with no change in seizure frequency.",
-      "abstract_zh": "目的：评估癫痫患者（ PWE ）单纯运动教育与运动教育联合可穿戴式身体活动追踪器，以确定对身体活动的影响，并衡量对抑郁、焦虑、睡眠和生活质量（ QOL ）的潜在影响。\n方法：在一项开放式平行组前瞻性随机对照试验中，从单个美国癫痫中心招募18至64岁的PWE。\n符合条件的参与者被随机分为两组（对照组和干预组）。两组均接受了PWE的标准护理运动教育。干预部门还获得了Fitbit的数据监控和基于智能手机应用程序的体育活动挑战机会。两组均在入组和研究完成时提供自我报告的身体活动指标。从干预中的每个参与者收集了Fitbit数据\n手臂连续三个月。 在基线和干预后还评估了抑郁、焦虑、睡眠和生活质量的次要结局指标。 将癫痫发作频率作为不良事件进行监测。\n结果：招募了80名参与者（ 40名干预人员， 40名对照人员）。 干预组内有氧体力活动水平在三个月后显著增加，\n对照组，两组抑郁和焦虑评分均无明显改善。 睡眠或生活质量无显著变化，对癫痫发作频率无不良影响。\n意义：使用可穿戴式体育活动跟踪器与基于智能手机应用程序的体育活动挑战和运动教育相结合，导致PWE中有氧体育活动的干预内改善，\n癫痫发作频率的激怒。",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 11,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 5,
-      "pmid": "42965418",
-      "title": "Prescriptions for seizure cluster rescue therapy are not associated with decreased pediatric ED utilization.",
-      "title_zh": "癫痫丛集抢救治疗处方与儿科ED利用率降低无关。",
-      "journal": "Epilepsia open",
-      "iso_journal": "Epilepsia Open",
-      "authors": [
-        "Mangold SA",
-        "Eisner M",
-        "Brown-Mitchell G",
-        "Beatty CW",
-        "Ahrens SM",
-        "Twanow JE",
-        "Ostendorf AP"
-      ],
-      "pubdate": "2026 Oct 31",
-      "doi": "10.1002/epi4.70377",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42965418/",
-      "abstract": "OBJECTIVE: Seizure clusters, or acute repetitive seizures, are a phenomenon often experienced by patients with epilepsy and pose a significant treatment challenge for clinicians. Several rescue medications have been approved by the Food and Drug Administration for the treatment of seizure clusters - including diazepam rectal gel, intranasal midazolam, and intranasal diazepam - which are commonly prescribed for prolonged seizures or status epilepticus (SE). Conflicting evidence exists relating to the impact of seizure cluster treatment on hospital care utilization and health-related quality of life (HRQoL). We hypothesized that children prescribed rescue medication specifically including an indication for seizure clusters would have fewer seizure-related Emergency Department (ED) visits compared to those prescribed rescue medications only for SE.\nMETHODS: This study was a cross-sectional cohort study from a single pediatric center. A total of 3216 children with epilepsy and rescue medications were included. Measured characteristics included sociodemographic factors, epilepsy features, HRQoL, and healthcare utilization. We modeled the probability of having ED visits for seizures in the 12 months following prescriptions of rescue medication for either SE only or both SE and seizure clusters.\nRESULTS: There was no difference in ED utilization between patients receiving a rescue prescription for SE only (n = 48, 3.1%) or both SE and seizure clusters (n = 64, 3.8%) (OR 1.12; 95% CI 0.74-1.71; p = 0.6). A multivariable model was created to evaluate factors associated with ED utilization. The acute social needs score was the only measured variable associated with increased odds of having a subsequent ED visit (OR 1.37; 95% CI 1.22-1.53; p < 0.001).\nSIGNIFICANCE: There was no difference in ED utilization between patients receiving a rescue medication prescription including seizure clusters and those only for SE. The social needs score was the only measured variable in this study associated with increased ED visits. These results highlight that prescribing rescue medications for cluster seizures may have less impact on healthcare utilization than acute social needs.\nPLAIN LANGUAGE SUMMARY: Seizure clusters are repetitive seizures that are poorly defined, and the consequences of treating them are unclear. While some providers prescribe benzodiazepines for use during these episodes, others do not. Using a large single-center database of over 3000 children, we found that having a prescription for a benzodiazepine to use during cluster seizures did not reduce emergency department (ED) use compared to patients with prescriptions for treating only life-threatening prolonged seizures. In this dataset, the only patient characteristic associated with ED utilization was the presence of an acute social need, such as food insecurity, suggesting that interventions targeting social needs may be more effective in reducing healthcare utilization in children with epilepsy.",
-      "abstract_zh": "目的：癫痫发作簇或急性重复性癫痫发作是癫痫患者经常经历的现象，对临床医生构成重大治疗挑战。几种救援药物已被美国食品和药物管理局批准用于治疗癫痫发作簇-包括地西泮直肠凝胶，鼻内咪达唑仑和鼻内地西泮-这些药物通常用于长期癫痫发作或癫痫持续状态\niCUS (SE).关于癫痫发作集群治疗对医院护理利用率和健康相关生活质量(HRQoL)的影响存在相互矛盾的证据。 我们假设，与仅用于SE的处方救援药物相比，专门用于癫痫发作集群的处方救援药物的儿童与癫痫发作相关的急诊科（ ED ）就诊次数较少。\n方法：本研究为横断面\n来自单个儿科中心的队列研究。 共纳入3216名患有癫痫和抢救药物的儿童。 测量的特征包括社会人口统计学因素、癫痫特征、HRQoL和医疗保健利用率。 我们模拟了仅SE或SE和癫痫发作簇的抢救药物处方后12个月内癫痫发作的ED访视的概率。\n结果： ED u无差异\n仅接受SE抢救处方的患者（ n = 48 ， 3.1% ）或同时接受SE和癫痫发作组（ n = 64 ， 3.8% ） （ OR 1.12 ； 95% CI 0.74-1.71 ； p = 0.6 ）。 创建了一个多变量模型来评估与ED利用率相关的因素。 急性社会需求评分是与随后ED访视几率增加相关的唯一测量变量（ OR 1.37 ； 95% CI 1.22-1.53 ； p < 0.001 ）。\n意义：没有di\n接受救援药物处方（包括癫痫发作组）的患者与仅用于SE的患者之间的ED利用率差异。 社交需求评分是本研究中与ED访视增加相关的唯一测量变量。 这些结果突出表明，与急性社会需求相比，为丛集性癫痫发作开具抢救药物对医疗保健利用的影响可能较小。\n简单的语言摘要：癫痫发作群集是重复的\n定义不清的癫痫发作，以及治疗它们的后果尚不清楚。虽然一些提供者规定在这些发作期间使用苯二氮卓类药物，但其他提供者则没有。使用3000多名儿童的大型单中心数据库，我们发现，与仅治疗危及生命的患者相比，在丛集性癫痫发作期间使用苯二氮卓类药物的处方并不能减少急诊科（ ED ）的使用。\n癫痫发作。在此数据集中，与ED利用相关的唯一患者特征是存在急性社会需求，例如粮食不安全，这表明针对社会需求的干预措施可能更有效地降低癫痫儿童的医疗保健利用率。",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 35,
-      "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "seizure",
-        "seizures",
-        "status epilepticus"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 6,
-      "pmid": "42965312",
-      "title": "Quantification of peri-ictal magnetic resonance imaging abnormalities (PMA) in status epilepticus: Clinical and prognostic significance of PMA volume.",
-      "title_zh": "癫痫持续状态下围发作期磁共振成像异常（ PMA ）的定量： PMA体积的临床和预后意义。",
-      "journal": "Epilepsia",
-      "iso_journal": "Epilepsia",
-      "authors": [
-        "Jünemann C",
-        "Belke M",
-        "Falk E",
-        "Bosque-Varela P",
-        "Wieacker A",
-        "Tabaee Damavandi P",
-        "Möller L",
-        "Hahn W",
-        "Kemmling A",
-        "Timmermann L",
-        "Machegger L",
-        "Trinka E",
-        "Kuchukhidze G",
-        "Knake S",
-        "Tsalouchidou PE"
-      ],
-      "pubdate": "2026 Oct 31",
-      "doi": "10.1002/epi.70572",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42965312/",
-      "abstract": "OBJECTIVE: Peri-ictal magnetic resonance imaging (MRI) abnormalities (PMA) are increasingly recognized in patients with status epilepticus (SE), but the clinical factors influencing their occurrence and extent remain incompletely understood. We aimed to quantify PMA and investigate the associations of PMA occurrence and volume with SE duration, etiology, and mortality.\nMETHODS: In this multicenter cohort study, comprising a retrospectively identified cohort and a prospectively recruited cohort, adult patients with SE who underwent brain MRI within 48 h of SE onset were included. PMA were identified on diffusion-weighted imaging (DWI) and quantified using an automated postprocessing pipeline to calculate total PMA volume. Multivariable regression analyses were used to examine factors associated with PMA occurrence, extent, and mortality.\nRESULTS: Of 260 patients, 91 (35%) had PMA on DWI. In multivariable analyses, SE duration and etiology were independently associated with PMA occurrence and volume. SE lasting >60 min had higher odds of PMA (odds ratio [OR] = 3.90, 95% confidence interval [CI] = 1.79-8.82, p < .001) and significantly greater PMA volume, whereas acute triggering factors in patients with epilepsy were linked with lower odds (OR = .15, 95% CI = .05-.44, p < .001). PMA occurrence was associated with more than threefold higher odds of mortality (adjusted OR = 3.85, 95% CI = 1.55-10.24, p = .005). Each 10-fold increase in PMA volume was associated with 43% higher odds of mortality (adjusted OR = 1.43, 95% CI = 1.14-1.80, p = .002). In a sensitivity analysis restricted to in-hospital mortality, each 10-fold increase in PMA volume was associated with 47% higher odds of mortality (adjusted OR = 1.47, 95% CI = 1.15-1.89, p = .002).\nSIGNIFICANCE: PMA extent is determined by SE duration and underlying etiology. Although MRI timing relative to SE termination could not always be determined, quantitative PMA assessment provides prognostic information beyond PMA presence alone, as increasing PMA volume is associated with progressively higher mortality. These findings support quantitative PMA burden as a potential imaging biomarker of SE severity and adverse outcome.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 14,
-      "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "status epilepticus",
-        "ictal",
-        "ecog",
-        "biomarker"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 7,
-      "pmid": "42965310",
-      "title": "Exploratory prediction of surgical outcomes in MRI-negative epilepsy using preoperative individualized morphometric networks.",
-      "title_zh": "",
-      "journal": "Epileptic disorders : international epilepsy journal with videotape",
-      "iso_journal": "Epileptic Disord",
-      "authors": [
-        "Yang L",
-        "Yang F",
-        "Gao W",
-        "Zhu M",
-        "Lu Z",
-        "Sun Y"
-      ],
-      "pubdate": "2026 Oct 31",
-      "doi": "10.1002/epd2.70440",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42965310/",
-      "abstract": "OBJECTIVE: To explore whether preoperative individualized morphometric networks derived from structural MRI may provide discriminative information for predicting surgical outcomes in magnetic resonance imaging (MRI)-negative epilepsy.\nMETHODS: Thirty-one MRI-negative epilepsy patients who underwent epilepsy surgery were retrospectively included (17 seizure-free and 14 with seizure-recurrence) in this exploratory study. Individualized gray matter morphometric networks were constructed from preoperative T1-weighted MRI based on cortical thickness distribution features. Network-based statistics were used to identify outcome-related subnetworks. Graph-theoretical features extracted from these subnetworks were classified using a random vector functional link (RVFL) network. Model performance was evaluated using the area under the receiver operating characteristic curve (AUC).\nRESULTS: Graph-theoretical analysis revealed differences in network properties between seizure-free and seizure-recurrence groups, particularly in degree centrality and nodal clustering coefficient of the right orbital middle frontal gyrus, left inferior occipital gyrus, and left fusiform gyrus (p < .05). The combined graph-theoretical model demonstrated the highest discriminative performance among the evaluated imaging models (AUC = .876) and outperformed the clinical-only benchmark model (AUC = .504), although performance estimates showed variability across repeated splits.\nSIGNIFICANCE: This exploratory study suggests that individualized morphometric network features may contain information related to postoperative outcomes in MRI-negative epilepsy. However, these findings should be interpreted as preliminary and require confirmation in larger multicenter studies.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 14,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure"
-      ],
-      "priority": "必读"
-    },
-    {
       "index": 8,
-      "pmid": "42963370",
-      "title": "Genotype and phenotype analyses of 689 individuals with PCDH19-clustering epilepsy.",
+      "pmid": "42971375",
+      "title": "State-Dependent EEG Markers of Excitation/Inhibition and Hemodynamic State Are Associated with Random Noise Stimulation Effects.",
       "title_zh": "",
-      "journal": "Molecular psychiatry",
-      "iso_journal": "Mol Psychiatry",
+      "journal": "NeuroImage",
+      "iso_journal": "Neuroimage",
       "authors": [
-        "Grasso KM",
-        "Corbett MA",
-        "Scheffer IE",
-        "Gecz J"
+        "van Bueren NER",
+        "Muthalib M",
+        "Soltanlou M",
+        "Hochman S",
+        "Kadosh RC"
       ],
-      "pubdate": "2026 Oct 30",
-      "doi": "10.1038/s41380-026-03955-z",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42963370/",
-      "abstract": "PCDH19-clustering epilepsy (PCDH19-CE) is an infantile-onset neurodevelopmental disorder characterised by clusters of seizures, typically triggered by fever. PCDH19-CE follows an unusual X-linked inheritance pattern whereby heterozygous females, and males with X-chromosome disomy or pathogenic postzygotic mosaic PCDH19 variants, are affected, while hemizygous males are spared. We aggregate published PCDH19 variants and their corresponding PCDH19-CE phenotypes to analyse phenotype-genotype correlations. Data extracted from 110 publications identified 689/735 (94%) individuals with PCDH19 variants and the typical PCDH19-CE phenotype. Three hundred seventy-three unique PCDH19 variants were identified; 195 were not recorded in ClinVar. Seizure onset prior to 12 months of age was associated with more severe intellectual disability (p < 0.001) and the presence of psychiatric morbidity (p = 0.001). There were no phenotypic differences between missense, nonsense, and frameshift variants or between individuals of different geographical backgrounds, which was assessed as a proxy for ancestry. Twenty-nine hemizygous males with constitutive PCDH19 variants did not exhibit the typical PCDH19-CE phenotype, suggesting that the identification of variants in these individuals likely results from chance or ascertainment bias. The correlation between earlier seizure onset and poorer neurodevelopmental outcomes emphasises a critical window for therapeutic intervention. The lack of phenotypic difference between variant types demonstrates that loss of PCDH19 function underpins PCDH19-CE. Moreover, the identification of PCDH19 cytoplasmic domain variants in 78 affected individuals challenges the traditional view that PCDH19-CE is caused primarily by defects in cell-cell adhesion, as variants in this domain are expected to disrupt the nuclear function(s) of PCDH19.",
+      "pubdate": "2026 Nov 2",
+      "doi": "10.1016/j.neuroimage.2026.122329",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971375/",
+      "abstract": "BACKGROUND: Non-invasive brain stimulation effects vary substantially across individuals, yet the physiological factors associated with this variability remain unclear.\nOBJECTIVE: We tested whether baseline and task-related EEG markers of excitation/inhibition (E/I) and hemodynamic state are associated with the effects of transcranial random noise stimulation (tRNS) on learning.\nMETHODS: Participants completed a mathematical learning task during active or sham tRNS. We indexed E/I-related population dynamics using the EEG aperiodic exponent, for which lower values have been linked to relatively greater excitation than inhibition, and assessed hemodynamic state using fNIRS-derived oxygenated hemoglobin (HbO). Behavioral learning was modeled using generalized linear mixed-effects models.\nRESULTS: tRNS accelerated learning relative to sham stimulation but did not reliably induce pre-post changes in resting-state aperiodic exponent or HbO. Instead, stimulation effects were state-dependent. Higher resting-state aperiodic exponent and lower resting-state HbO were associated with greater behavioral gains under tRNS, while task-related aperiodic exponent was associated with stimulation-related differences in learning. Task-evoked HbO was associated with learning rate but did not significantly differentiate stimulation effects. Across modalities, the findings identify complementary electrophysiological and hemodynamic correlates of variability in learning under stimulation. However, statistical support for the EEG moderation effects was attenuated in models including participant-specific learning slopes, indicating sensitivity to random-effects specification and the need for replication.\nCONCLUSIONS: The findings argue against a simple tonic-shift account of tRNS and support a state-dependent framework in which stimulation effects depend on ongoing electrophysiological and hemodynamic context. EEG and fNIRS provided complementary information about variability in learning and stimulation response, supporting multimodal approaches to understanding and individualizing neuromodulation.",
       "abstract_zh": "",
       "hit_groups": [
-        "B2"
+        "C",
+        "D"
       ],
-      "group_count": 1,
-      "relevance_score": 11,
+      "group_count": 2,
+      "relevance_score": 19,
       "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures"
+        "eeg",
+        "generalized",
+        "neuromodulation",
+        "brain stimulation",
+        "transcranial",
+        "stimulation"
       ],
       "priority": "必读"
     },
     {
       "index": 9,
+      "pmid": "42975430",
+      "title": "Pediatric Epilepsy Surgery: Global Survey of Surgical Approaches.",
+      "title_zh": "",
+      "journal": "Neurosurgery",
+      "iso_journal": "Neurosurgery",
+      "authors": [
+        "Ramantani G",
+        "Englot D",
+        "Cserpan D",
+        "Aparicio J",
+        "Arzimanoglou A",
+        "Bingaman W",
+        "Braun K",
+        "Burman RJ",
+        "Cai L",
+        "Cao D",
+        "Caraballo R",
+        "Cross JH",
+        "Cukiert CM",
+        "Curry D",
+        "De Palma L",
+        "Dorfmüller G",
+        "Enslin JMN",
+        "Fallah A",
+        "Ferrand Sorbets S",
+        "Feucht M",
+        "Gill D",
+        "Hallbook T",
+        "Harvey AS",
+        "Holthausen H",
+        "Iwasaki M",
+        "Jiang Y",
+        "Kalbhenn T",
+        "Kannan L",
+        "Kawai K",
+        "Kikuchi T",
+        "Krayenbühl N",
+        "Kunihiro N",
+        "Lallas M",
+        "Munoz Castro C",
+        "Patil SB",
+        "Pieper T",
+        "Roth J",
+        "Smith ML",
+        "Tahir MZ",
+        "Tisdall M",
+        "Tripathi M",
+        "Uda T",
+        "Usui N",
+        "Naduvil Valappil AM",
+        "Wirrell E",
+        "Zorro Guio O",
+        "Cukiert A",
+        "Weiner HL",
+        "ILAE Pediatric Epilepsy Surgery Taskforce and Study Group"
+      ],
+      "pubdate": "2026 Nov 3",
+      "doi": "10.1227/neu.0000000000004282",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42975430/",
+      "abstract": "BACKGROUND AND OBJECTIVES: Pediatric epilepsy surgery is an established treatment, but current global data on surgical practices are limited. This study, conducted by the International League Against Epilepsy Pediatric Epilepsy Surgery Taskforce, provides an updated international overview of surgical approaches and their regional variation.\nMETHODS: Group-level data were collected from 61 epilepsy surgery programs (49 pediatric-only) across 29 countries on 6 continents. All children and adolescents who underwent epilepsy surgery in 2023 were included. The study was designed to enable direct comparison with the similar survey conducted by the International League Against Epilepsy in 2004.\nRESULTS: The cohort comprised 2427 patients. Resections accounted for 50.6% and disconnections for 23.0% of procedures. Resection rates were highest in Oceania (87.3%) and lowest in North America (40.3%). Resections were 43.0% unilobar-most commonly temporal (39.6%) and frontal (32.7%)-and 9.7% multilobar, with 61.9% involving the posterior quadrant. Hemispheric surgeries comprised 12.9% of all cases (highest in South America: 18.1%). Subcortical procedures (eg, for hypothalamic hamartomas or deep-seated lesions) represented 2.7% (highest in South America: 12.1%). Intraoperative electrocorticography was used in 38.3% of cases, most commonly in Oceania (84.1%) and Asia (85.5%). Minimally invasive techniques were used in 7.7% of cases, with the highest rate in North America (16.9%). Laser interstitial thermal therapy was most common (4.9%), followed by radiofrequency ablation (2.1%), endoscopic surgery (0.7%), and radiosurgery (0.1%). Corpus callosotomy was performed in 5.9% of all cases, and no multiple subpial transections were reported. Neurostimulation was used in 14.7% of patients, highest in North America (35.6%), and included vagal nerve stimulation (11.8%), deep brain stimulation (1.5%), and responsive neurostimulation (1.4%).\nCONCLUSION: Resections and disconnections, including extensive multilobar and hemispheric procedures, remain the core procedures of pediatric epilepsy surgery. Although minimally invasive and neuromodulatory techniques are increasingly used in selected regions-particularly North America-their global adoption remains limited.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 26,
+      "relevance_hits": [
+        "epilepsy",
+        "electrocorticography",
+        "responsive",
+        "neurostimulation",
+        "brain stimulation",
+        "deep brain stimulation",
+        "responsive neurostimulation",
+        "vagal"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 10,
+      "pmid": "42973902",
+      "title": "Stimulation parameters of epidural spinal cord stimulation for functional recovery after spinal cord injury: a narrative review.",
+      "title_zh": "",
+      "journal": "Frontiers in neurology",
+      "iso_journal": "Front Neurol",
+      "authors": [
+        "Wang J",
+        "Bieshanbieke Y",
+        "Wang H",
+        "Yang J",
+        "Ji S",
+        "Li Y",
+        "Gu H",
+        "Lou Y"
+      ],
+      "pubdate": "2026",
+      "doi": "10.3389/fneur.2026.1952514",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973902/",
+      "abstract": "Spinal cord injury (SCI) causes persistent motor, sensory, and autonomic deficits that conventional rehabilitation only partly mitigates. Epidural spinal cord stimulation (EES) can re-enable standing, walking, upper-limb control, and autonomic regulation, yet clinical translation is constrained by pronounced heterogeneity in stimulation parameters and by a weakly controlled evidence base. This narrative review maps stimulation parameters-electrode placement, frequency, intensity, pulse width, waveform, and stimulation mode-onto functional targets after SCI, critically appraises the supporting evidence, and maps scenario-specific parameter considerations onto a descriptive evidence hierarchy. Evidence was identified through targeted, non-systematic searches of PubMed/MEDLINE and citation tracking of key primary studies and reviews through 30 June 2026; human epidural-stimulation studies in SCI reporting parameters or functional outcomes were prioritized, with preclinical studies retained for mechanistic synthesis, transcutaneous trials used only as contextual evidence, and preprints labeled as such. Because no systematic search was performed, the review is presented as a narrative review: evidence is appraised using a design-based hierarchy, human, animal, and preprint findings are explicitly distinguished, and all parameter-level considerations are offered as preliminary observations rather than graded recommendations. Two reproducible motor parameter philosophies emerge-tonic, individually titrated lumbosacral stimulation embedded in intensive activity-based training, and programmed biomimetic (spatiotemporal, dual-mode, closed-loop) approaches-whereas hemodynamic management now has the most standardized parameter set. Evidence for upper-limb, bladder, spasticity, and pain indications remains case-level, and for neuropathic pain no SCI-specific parameter evidence exists. Mechanistic evidence derives predominantly from animal models, and clinical reports are dominated by small uncontrolled series in which stimulation is delivered as one component of a combined stimulation-plus-training intervention. Parameter-level conclusions are therefore preliminary and hypothesis-generating rather than practice-defining; standardized parameter reporting, physiology-based stratification, and adequately powered controlled trials are the priorities for converting EES from individualized experimentation into evidence-based neurorehabilitation.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 11,
+      "relevance_hits": [
+        "closed-loop",
+        "stimulation"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 11,
+      "pmid": "42971862",
+      "title": "Focused Ultrasound in Parkinson's Disease: From Mechanisms to Precision Therapy.",
+      "title_zh": "",
+      "journal": "Ultrasound in medicine & biology",
+      "iso_journal": "Ultrasound Med Biol",
+      "authors": [
+        "Tong J",
+        "Chen Z",
+        "Lyu W",
+        "Li T"
+      ],
+      "pubdate": "2026 Nov 2",
+      "doi": "10.1016/j.ultrasmedbio.2026.10.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971862/",
+      "abstract": "Parkinson's disease (PD) is a progressive neurodegenerative disorder that markedly impairs motor function and quality of life. As conventional pharmacotherapy and deep brain stimulation are increasingly limited by waning efficacy, treatment-related complications or surgical ineligibility, focused ultrasound (FUS) has emerged as a versatile, non-invasive platform that delivers acoustic energy with high spatiotemporal precision. Prior investigations of FUS for PD have often remained fragmented within two largely disconnected domains: clinical application and laboratory-based mechanistic validation. To bridge the gap between these two disconnected domains, a narrative and translational review was conducted that integrates the latest advances from both fields into a unified framework. A structured literature search of PubMed and Web of Science for articles published between January 2004 and November 2025 was conducted. After applying pre-defined inclusion criteria and exclusion criteria, a total of 114 articles were identified and constitute the evidence base for this review. Reference lists of included articles were manually screened to identify additional relevant publications. Our findings critically benchmark thermal ablation, transcranial ultrasound stimulation and BBB opening against established therapies, while appraising their key technical limitations. Looking forward, this review highlights three engineering trajectories poised to propel the field from empirical trial-and-error toward precision medicine: predictive numerical simulations for individualized treatment planning, standardization of sonication protocols and regulatory frameworks, and the evolution from open-loop to real-time closed-loop intelligent control for personalized adaptive therapy. By integrating mechanistic insights, clinical evidence and emerging technologies, this review provides a comprehensive roadmap for advancing FUS-based precision management of PD.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 9,
+      "relevance_hits": [
+        "closed-loop",
+        "adaptive",
+        "brain stimulation",
+        "deep brain stimulation",
+        "transcranial",
+        "focused ultrasound",
+        "stimulation"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 12,
+      "pmid": "42971363",
+      "title": "Individualized Transcranial Temporal Interference Stimulation (TIS): Research Advancements and Clinical Translation Pathways.",
+      "title_zh": "",
+      "journal": "Journal of neuroscience methods",
+      "iso_journal": "J Neurosci Methods",
+      "authors": [
+        "Shi Y",
+        "Feng S",
+        "Wu Y",
+        "Wang Y",
+        "Wuzhati M",
+        "Liu X",
+        "Yin S",
+        "Zheng C",
+        "Cheng Y",
+        "Feng K"
+      ],
+      "pubdate": "2026 Nov 2",
+      "doi": "10.1016/j.jneumeth.2026.110945",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971363/",
+      "abstract": "BACKGROUND: Transcranial temporal interference stimulation (TIS) is a promising tool for non-invasive deep brain modulation, yet inter-individual anatomical differences cause substantial electric field (E-field) variability under identical parameters, hindering clinical translation.\nOBJECTIVE: We review recent progress (2017-2026) in individualized TIS, focusing on why inter-individual variability occurs and how to address it for clinical applications.\nMETHODS: We searched PubMed/MEDLINE, Web of Science, Scopus, IEEE Xplore, preprint repositories (bioRxiv, medRxiv, arXiv), and clinical trial registries from June 2017 through August 2026, synthesizing studies across quantitative E-field variability, biophysical mediation mechanisms, computational optimization frameworks, and human trials.\nRESULTS: Even with individualized optimization, the focal spot can shift by up to 1.2cm between subjects. Target modulation depth varies with age and sex, largely due to variations in skull thickness and cerebrospinal fluid volume. For E-field optimization, individualized finite element method (FEM) modeling remains the most accurate approach, whereas faster population-based optimization (17% error margin) is viable only for superficial brain areas. In human translational studies, a clear distinction must be maintained across levels of evidence: while individualized montages targeting the striatum and subthalamic nucleus demonstrate physiological target engagement, behavioral modulation in healthy cohorts, and preliminary acute symptom relief in pilot patient trials, definitive clinical efficacy in large-scale randomized trials (e.g., ongoing nucleus accumbens protocols) and effective active sham protocols remain ongoing challenges.\nCONCLUSION: Individualized planning is essential for deep TIS. Future studies should focus on multi-center trials and standardized in vivo closed-loop validation using functional neuroimaging and electrophysiology.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 8,
+      "relevance_hits": [
+        "focal",
+        "closed-loop",
+        "transcranial",
+        "stimulation",
+        "thalamic",
+        "subthalamic"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 13,
       "pmid": "42966748",
       "title": "State-dependent effects of rTMS on cognitive function in bipolar II disorder: A randomized, double-blind, sham-controlled trial.",
       "title_zh": "",
@@ -428,41 +628,6 @@
         "stimulation"
       ],
       "priority": "必读"
-    },
-    {
-      "index": 10,
-      "pmid": "42966552",
-      "title": "Limited Evidence for Non-Invasive Brain Stimulation as a Cognitive Enhancer in Neurodevelopmental Disorders: A Multilevel Meta-Analysis of Sham-Controlled Trials.",
-      "title_zh": "",
-      "journal": "Neuroscience and biobehavioral reviews",
-      "iso_journal": "Neurosci Biobehav Rev",
-      "authors": [
-        "Ying J",
-        "Desarkar P",
-        "Rodak T",
-        "Yu VYK",
-        "Liang V",
-        "Sie J",
-        "Ameis SH",
-        "Rajji TK",
-        "Ni HC",
-        "Lin HY"
-      ],
-      "pubdate": "2026 Oct 31",
-      "doi": "10.1016/j.neubiorev.2026.107066",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42966552/",
-      "abstract": "Non-invasive brain stimulation (NIBS) is increasingly applied to ameliorate cognitive deficits in neurodevelopmental disorders (NDDs), including autism spectrum disorder (ASD), attention-deficit/hyperactivity disorder (ADHD), and intellectual disability, yet whether standardized scalp-based protocols produce reliable cognitive enhancement remains untested at scale. This study evaluates the transdiagnostic efficacy of NIBS on shared, non-core cognitive domains across NDDs, searching MEDLINE, PsycINFO, Embase, Web of Science, and the Cochrane Library from inception to January 2026. A three-level multivariate random-effects meta-analysis synthesized effect sizes while accounting for dependency among multiple outcomes contributed by the same study. From 9191 identified records (5237 after deduplication), 30 randomized sham-controlled trials yielding 178 effect sizes across seven cognitive domains were synthesized. NIBS did not significantly outperform sham for any domain: working memory (k=24; g=-0.16, 95% CI [-0.37, 0.05]), cognitive flexibility (k=11; g=-0.12 [-0.38, 0.13]), global executive function (k=8; g=-0.14 [-0.46, 0.18]), processing speed (k=8; g=-0.27 [-0.77, 0.23]), inhibitory control (k=4; g=-0.08 [-0.62, 0.46]), verbal fluency (k=5; g=-0.11 [-0.59, 0.38]), or self-monitoring/behavioral metacognition (k=4; g=0.13 [-0.60, 0.86]). The pooled cross-domain estimate reached nominal significance (g=-0.18, p=0.035) but fell below the small-effect threshold, and its wide prediction interval (95% PI [-1.01, 0.66]) spanned benefit and harm. Exploratory diagnosis-stratified analyses were likewise null in both ADHD and ASD (all p>0.10). Current unstandardized, \"one-size-fits-all\" NIBS protocols do not yield reliable cognitive enhancement across NDDs, exposing a translational bottleneck driven by methodological heterogeneity. Realizing NIBS therapeutic potential for cognition in NDDs will require a shift toward precision psychiatry, utilizing individualized neuro-navigation and state-dependent stimulation.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 5,
-      "relevance_hits": [
-        "brain stimulation",
-        "stimulation"
-      ],
-      "priority": "推荐"
     }
   ]
 }
