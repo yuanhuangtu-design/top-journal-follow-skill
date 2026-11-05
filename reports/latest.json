@@ -1,19 +1,29 @@
 {
   "meta": {
-    "report_date": "2026-11-04",
-    "target_edat": "2026-11-03",
+    "report_date": "2026-11-05",
+    "target_edat": "2026-11-04",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-11-04 01:06:13",
+    "generated_at": "2026-11-05 01:15:27",
+    "title_translation_diag": {
+      "status": "ok",
+      "missing_title_pmids": [],
+      "pending_titles": 36,
+      "cached_titles": 71
+    },
     "feishu_diag": {
       "status": "ok",
       "stage": "complete",
-      "searched": 13,
-      "created": 9,
-      "expected": 9,
+      "searched": 19,
+      "created": 7,
+      "expected": 7,
       "verified": true,
-      "candidates": 13,
-      "dedup_skipped": 4,
+      "candidates": 19,
+      "dedup_skipped": 12,
+      "titles_updated": 10,
+      "missing_titles": 36,
+      "closed_loop_papers": 49,
+      "closed_loop_missing_titles": 0,
       "pending": 0
     }
   },
@@ -32,9 +42,12 @@
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 5,
-      "total": 5,
+      "count": 8,
+      "total": 8,
       "pmids": [
+        "42976532",
+        "42976531",
+        "42976516",
         "42975879",
         "42975788",
         "42975562",
@@ -54,9 +67,11 @@
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 1,
-      "total": 1,
+      "count": 3,
+      "total": 3,
       "pmids": [
+        "42976384",
+        "42976382",
         "42971375"
       ],
       "status": "ok"
@@ -64,20 +79,21 @@
     {
       "group": "D",
       "label": "闭环神经调控 · Closed-loop Neuromodulation",
-      "count": 6,
-      "total": 6,
+      "count": 7,
+      "total": 7,
       "pmids": [
+        "42978792",
+        "42977372",
         "42975430",
         "42973902",
         "42971862",
         "42971375",
-        "42971363",
-        "42966748"
+        "42971363"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 13,
+  "dedup_total": 19,
   "papers": [
     {
       "index": 1,
@@ -186,6 +202,101 @@
     },
     {
       "index": 3,
+      "pmid": "42976532",
+      "title": "Temporal trends in GBD idiopathic epilepsy burden across 43 European countries, 1990-2023.",
+      "title_zh": "1990-2023年43个欧洲国家GBD特发性癫痫负担的时间趋势。",
+      "journal": "Seizure",
+      "iso_journal": "Seizure",
+      "authors": [
+        "Brigo F",
+        "Brigiari G",
+        "Lattanzi S",
+        "Zelano J",
+        "Trinka E"
+      ],
+      "pubdate": "2026 Oct 27",
+      "doi": "10.1016/j.seizure.2026.10.015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976532/",
+      "abstract": "AIM: To quantify long-term trends in Global Burden of Disease (GBD) idiopathic epilepsy (genetic/unknown-cause epilepsy) across European countries from 1990-2023, examining overall burden, disability, and burden from premature mortality.\nMETHODS: We analyzed age-standardized Disability-Adjusted Life Years (DALY), Years of Life Lost (YLL), and Years Lived with Disability (YLD) in 43 European countries using GBD 2023 data. Country-specific Estimated Annual Percentage Changes (EAPCs) summarized average long-term trends from 1990 to 2023, and longitudinal models estimated the average European trend. Additional analyses tested whether the main findings were sensitive to the shape of the time trend, correlation between nearby years, or the influence of individual and small countries.\nRESULTS: The burden declined on average across Europe, but national trajectories differed substantially. The estimated average annual changes were -0.59% for DALY (95% CI -0.89 to -0.28), -0.60% for YLL (-1.08 to -0.13), and -0.54% for YLD (-0.73 to -0.35). Some of the largest reductions occurred in selected Eastern European and former Soviet countries, particularly for YLL, but this pattern was not uniform across Eastern Europe. Declines were greater in males than females for all three burden measures. The overall European decline remained consistent across the additional analyses.\nCONCLUSIONS: Age-standardized DALY, YLL, and YLD rates for GBD idiopathic epilepsy declined on average across 43 European countries from 1990 to 2023. This overall improvement masked major national differences, particularly in burden from premature mortality. Country-specific monitoring remains important because the European average does not describe all national trajectories.",
+      "abstract_zh": "目的：量化1990-2023年欧洲国家全球疾病负担（ GBD ）特发性癫痫（遗传/未知原因癫痫）的长期趋势，检查过早死亡的总体负担、残疾和负担。\n方法：我们使用GBD 2023数据分析了43个欧洲国家的年龄标准化残疾调整生命年（ DALY ）、寿命损失年数（ YLL ）和残疾寿命年数（ YLD ）。\nd年度百分比变化（ EAPC ）总结了1990年至2023年的平均长期趋势，纵向模型估计了欧洲的平均趋势。 其他分析测试了主要发现是否对时间趋势的形状、附近年份之间的相关性或个体和小国的影响敏感。\n结果：整个欧洲的负担平均下降，但各国的轨迹大不相同。\ndALY的定时平均年度变化为-0.59% （ 95% CI -0.89至-0.28 ） ， YLL为-0.60% （ -1.08至-0.13 ） ， YLD为-0.54% （ -0.73至-0.35 ）。一些最大的减少发生在选定的东欧和前苏联国家，特别是YLL ，但这种模式在东欧并不一致。在所有三项负担指标中，男性的下降幅度均大于女性。欧洲整体下滑幅度保持不变\noss附加分析。\n结论：从1990年到2023年， 43个欧洲国家的GBD特发性癫痫的年龄标准化DALY、YLL和YLD率平均下降。 这种整体改善掩盖了主要的国家差异，特别是过早死亡的负担。 具体国家的监测仍然很重要，因为欧洲平均水平并不能描述所有的国家轨迹。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 9,
+      "relevance_hits": [
+        "epilepsy"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 4,
+      "pmid": "42976531",
+      "title": "Predicting the risk of seizure recurrence after antiseizure medication withdrawal in children with epilepsy: An individualized and web-based clinical decision support model.",
+      "title_zh": "预测癫痫儿童停用抗癫痫药物后癫痫复发的风险：一个个性化和基于网络的临床决策支持模型。",
+      "journal": "Seizure",
+      "iso_journal": "Seizure",
+      "authors": [
+        "Yücel G",
+        "Arslan AK",
+        "Bıçakcıoğlu I",
+        "Özgör B"
+      ],
+      "pubdate": "2026 Nov 1",
+      "doi": "10.1016/j.seizure.2026.11.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976531/",
+      "abstract": "BACKGROUND: To determine seizure recurrence rates and independent risk factors following antiseizure medication (ASM) withdrawal in pediatric epilepsy, and integrate these findings into a personalized web-based clinical decision support system (CDSS).\nMETHODS: In this prospective cohort study, 318 pediatric epilepsy patients with ≥24 months of clinical seizure freedom and completely normal pre-withdrawal EEGs were evaluated during ASM withdrawal. Independent risk factors were identified using a multivariable Cox proportional hazards model and embedded into a dynamic web tool.\nRESULTS: Seizure recurrence occurred in 25.8% (n = 82) of patients (mean time: 4.70 ± 13.96 months). The Cox model demonstrated acceptable discrimination (C-index = 0.808, optimism-corrected C-index = 0.769). Independent predictors of recurrence were status epilepticus (SE; HR = 2.718, 95% CI: 1.193-6.194; p = 0.017), febrile seizures (FS; HR = 2.300, 95% CI: 1.214-4.356; p = 0.011), and active epilepsy duration (HR = 1.022 per month, 95% CI: 1.016-1.027; p < 0.001). Compared to ≤24 months, pre-withdrawal seizure freedom of 25-35 months (HR = 0.231, p = 0.001) and ≥36 months (HR = 0.232, p = 0.002) both conferred an approximate 77% risk reduction. Mandatory pre-withdrawal EEG normalization served as a controlled methodological feature isolating clinical predictors in EEG-normal children. Among 35 patients undergoing a second withdrawal attempt, 11 (31.4%) experienced recurrence.\nCONCLUSIONS: SE, FS, active epilepsy duration, and pre-withdrawal seizure-free duration independently predict recurrence in children with normal pre-withdrawal EEGs. Embedding this model into a web tool enables dynamic, evidence-based risk stratification in pediatric practice.",
+      "abstract_zh": "背景：确定儿童癫痫患者停用抗癫痫药物（ ASM ）后的癫痫复发率和独立危险因素，并将这些发现整合到基于网络的个性化临床决策支持系统（ CDSS ）中。\n方法：在这项前瞻性队列研究中，评估了318名儿童癫痫患者在ASM戒断期间的临床发作自由度≥ 24个月和完全正常的戒断前脑电图。\n使用多变量Cox比例风险模型识别独立的风险因素，并将其嵌入到动态网络工具中。\n结果： 25.8% （ n = 82 ）的患者发生癫痫复发（平均时间： 4.70 ± 13.96个月）。 Cox模型显示出可接受的歧视（ C-index = 0.808 ，乐观修正的C-index = 0.769 ）。 复发的独立预测因素是癫痫持续状态（ SE ； HR = 2.718 ， 95% CI ： 1.193-6.194 ； p = 0.017 ）。\n）、发热性癫痫发作（ FS ； HR = 2.300 ， 95% CI ： 1.214-4.356 ； p = 0.011 ）和活动性癫痫持续时间（ HR = 1.022/月， 95% CI ： 1.016-1.027 ； p < 0.001 ）。与≤ 24个月相比， 25-35个月（ HR = 0.231 ， p = 0.001 ）和≥ 36个月（ HR = 0.232 ， p = 0.002 ）的戒断前癫痫发作自由度均可使风险降低约77%。强制性退出前脑电图正常化作为一种受控的方法学特征，用于分离临床预处理\n脑电图正常儿童中的字典。 在接受第二次戒断尝试的35名患者中， 11名（ 31.4% ）出现复发。\n结论： SE、FS、活动性癫痫持续时间和戒断前无癫痫持续时间独立预测戒断前脑电图正常儿童的复发。 将此模型嵌入到网络工具中，可以在儿科实践中实现动态的、基于证据的风险分层。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 33,
+      "relevance_hits": [
+        "epilepsy",
+        "epileptic",
+        "seizure",
+        "seizures",
+        "status epilepticus",
+        "eeg",
+        "antiseizure"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 5,
+      "pmid": "42976516",
+      "title": "Full title: From neural excitability to volatile signatures: A mechanistic hypothesis for pre-ictal volatile organic compound signatures in epilepsy.",
+      "title_zh": "全称：从神经兴奋性到挥发性特征：癫痫发作前挥发性有机化合物特征的机械假说。",
+      "journal": "Epilepsy research",
+      "iso_journal": "Epilepsy Res",
+      "authors": [
+        "Bearden DJ",
+        "Galanti AM",
+        "Rehim E",
+        "Wheless JW",
+        "Haidekker M"
+      ],
+      "pubdate": "2026 Oct 28",
+      "doi": "10.1016/j.eplepsyres.2026.107948",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976516/",
+      "abstract": "OBJECTIVE: Seizure unpredictability remains a major contributor to morbidity in epilepsy, and biomarkers capable of identifying pre-ictal states are critically needed. Volatile organic compounds (VOCs) have emerged as potential noninvasive indicators of seizure susceptibility, yet the biological mechanisms linking pre-ictal neural states to peripheral volatile signatures remain poorly understood.\nMETHODS: We conducted a narrative review in accordance with the Scale for the Assessment of Narrative Review Articles (SANRA) criteria integrating evidence from epilepsy neurobiology, oxidative stress, autonomic physiology, volatilomics, and seizure-detection science to develop a mechanistic hypothesis linking pre-ictal physiological processes to seizure-associated volatile signatures.\nRESULTS: Evidence supports several components of the proposed mechanistic hypothesis, although the strength and directness of evidence vary across pathway components. Pre-ictal states have been associated with increased neuronal excitability, altered neurophysiology, and heightened metabolic demand, creating conditions favorable for oxidative stress. Lipid peroxidation generates volatile and semi-volatile metabolites that can enter systemic circulation and become detectable peripherally. Autonomic modulation may further influence their expression and detectability. Human olfactory and analytical studies provide preliminary evidence for seizure-associated and pre-ictal volatile signatures. Although the complete pathway has not been experimentally validated, available evidence is consistent with a biologically plausible hypothesis linking central physiological processes to peripheral volatile signals.\nSIGNIFICANCE: This review proposes a multilevel mechanistic hypothesis for seizure-associated volatile signature generation. Volatile signatures are conceptualized as downstream reflections of physiological states associated with seizure susceptibility. This framework provides a foundation for future investigation of VOC-based seizure forecasting approaches in epilepsy.",
+      "abstract_zh": "目的：癫痫发作的不可预测性仍然是癫痫发病的主要原因，因此迫切需要能够识别癫痫发作前状态的生物标志物。 挥发性有机化合物（ VOC ）已成为癫痫易感性的潜在非侵入性指标，但将发作前神经状态与外周挥发性特征联系起来的生物学机制仍然知之甚少。\n方法：我们进行了一次叙述性综述\n采用叙事评论文章评估量表（ SANRA ）标准，整合癫痫神经生物学、氧化应激、自主生理学、挥发物组学和癫痫发作检测科学的证据，以发展将癫痫发作前生理过程与癫痫发作相关的挥发性特征联系起来的机械假设。\n结果：证据支持所提出的机械假设的几个组成部分，尽管强度和\n证据的直接性因通路组成部分而异。发作前状态与神经元兴奋性增加、神经生理学改变和代谢需求增加有关，为氧化应激创造了有利条件。脂质过氧化产生挥发性和半挥发性代谢产物，这些代谢产物可以进入全身循环，并在外周可检测到。自主调节可能进一步影响它们的表达和检测\n可塑性。人类嗅觉和分析研究为癫痫发作相关和癫痫发作前挥发性特征提供了初步证据。 虽然完整的途径尚未通过实验验证，但现有证据与生物学上合理的假设一致，该假设将中心生理过程与外周挥发性信号联系起来。\n意义：本综述提出了癫痫发作相关VOLA的多级机制假设\n瓦片特征生成。挥发性特征被概念化为与癫痫易感性相关的生理状态的下游反射。该框架为基于VOC的癫痫发作预测方法的未来研究提供了基础。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 24,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "ictal",
+        "biomarker"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 6,
       "pmid": "42975879",
       "title": "Late electroencephalographic seizure-risk findings and restricted diffusion on magnetic resonance imaging as seizure-burden markers associated with neurological deficits after status epilepticus in a remote or chronic cohort.",
       "title_zh": "在远程或慢性队列中，脑电图晚期癫痫发作风险发现和磁共振成像作为与癫痫持续状态后神经系统缺陷相关的癫痫发作负担标志物的扩散受限。",
@@ -210,7 +321,7 @@
       "doi": "10.1002/epi.70565",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42975879/",
       "abstract": "OBJECTIVE: To evaluate whether time-dependent electroencephalographic (EEG) seizure risk findings and restricted diffusion on magnetic resonance imaging (MRI) are associated with neurological outcomes after status epilepticus (SE), beyond seizure duration.\nMETHODS: This two-center observational study included consecutive SE patients from 2017 to 2025. We examined three seizure-related markers: seizure duration ≥ 30 min, a 2HELPS2B score ≥ 2 on a late EEG (performed the following day or later after SE onset), and SE-related restricted diffusion on MRI (peri-ictal diffusion-weighted imaging hyperintensity with reduced apparent diffusion coefficient values). Outcomes were overall neurological worsening and SE-attributable focal neurological deficits at discharge. Multivariable models included the three markers and age> 65 years, with further adjustment for stupor or coma at admission and third-line therapy.\nRESULTS: Of 440 patients with suspected SE, 297 had confirmed SE; 221 with an identified seizure focus formed the overall cohort; 127 with remote symptomatic SE or preexisting chronic focal epilepsy formed the remote or chronic cohort. Overall neurological worsening occurred in 96 patients (43.4%) and SE-attributable focal neurological deficits in 68 (30.8%). In univariable analyses, seizure duration ≥ 30 min was associated with both outcomes in the overall cohort. A 2HELPS2B score ≥ 2 on late EEG was associated with both outcomes in both cohorts, whereas high-risk findings on early EEG were not. In multivariable models including seizure duration, restricted diffusion was independently associated with both outcomes in both cohorts, most strongly with focal neurological deficits in the remote or chronic cohort (adjusted odds ratio [OR] = 28.59, 95% confidence interval [CI] = 7.23-154.99). A 2HELPS2B score ≥ 2 on late EEG was independently associated with focal neurological deficits in the remote or chronic cohort (adjusted OR = 4.26, 95% CI = 1.35-14.24), whereas seizure duration ≥ 30 min was not independently associated with either outcome.\nSIGNIFICANCE: High-risk late-EEG findings and restricted diffusion were associated with neurological deficits. These markers may complement seizure duration in estimating cumulative seizure burden and focal brain injury.",
-      "abstract_zh": "目的：评估时间依赖性脑电图（ EEG ）癫痫发作风险发现和磁共振成像（ MRI ）的限制性扩散是否与癫痫持续状态（ SE ）后超过癫痫发作持续时间的神经系统结局相关。\n方法：这项双中心观察性研究包括2017年至2025年的连续SE患者。 我们检查了三个与癫痫发作相关的标志物：癫痫发作持续时间≥ 30分钟， 2HELPS2B评分≥ 2\n晚期脑电图（ SE发作后第二天或之后进行） ，以及MRI上SE相关的限制性弥散（表观弥散系数值降低的围发作弥散加权成像超强度）。结局为出院时整体神经系统恶化和SE引起的局灶性神经系统缺陷。多变量模型包括三个标志物和年龄> 65岁，入院时昏迷或昏迷进一步调整，\nird-line疗法。\n结果： 440例疑似SE患者中， 297例确诊为SE ； 221例癫痫发作灶形成整体队列； 127例远程症状性SE或预先存在慢性局灶性癫痫形成远程或慢性队列。 96名患者（ 43.4% ）发生整体神经系统恶化， 68名患者（ 30.8% ）出现SE归因的局灶性神经系统缺陷。 在不变量分析中，癫痫发作持续时间≥ 30分钟与\n这两个结果在整个队列中。在两个队列中，晚期脑电图的2HELPS2B评分≥ 2与两种结局相关，而早期脑电图的高风险发现则不相关。在包括癫痫发作持续时间的多变量模型中，限制性弥散与两个队列的两种结局独立相关，与远程或慢性队列的局灶性神经系统缺陷最为相关（调整后的比值比[OR] = 28.59 ， 95%置信区间[C\nI] = 7.23-154.99 ）。 晚期脑电图的2HELPS2B评分≥ 2与远程或慢性队列的局灶性神经系统缺陷独立相关（校正后OR = 4.26 ， 95% CI = 1.35-14.24 ） ，而癫痫发作持续时间≥ 30分钟与两种结果均无独立相关性。\n意义：高风险晚期EEG发现和弥散受限与神经系统缺陷相关。 这些标志物可以补充估计cu的癫痫发作持续时间\n癫痫发作负担和局灶性脑损伤。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -229,7 +340,7 @@
       "priority": "必读"
     },
     {
-      "index": 4,
+      "index": 7,
       "pmid": "42975788",
       "title": "The risk of seizure-affected pregnancy in Australian women with epilepsy.",
       "title_zh": "澳大利亚女性癫痫患者癫痫发作妊娠的风险。",
@@ -249,7 +360,7 @@
       "doi": "10.1002/epd2.70455",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42975788/",
       "abstract": "OBJECTIVE: We reported earlier that the occurrence of seizures in the pre-pregnancy year was the main determinant of the following pregnancy being seizure-affected. Additional risk factors were assessed in this study.\nMETHODS: The pregnancies involved first pregnancies of women with epilepsy. Two categories were compared. One category comprised 711 pregnancies in which seizures had occurred during the pre-pregnancy year and where seizures might reasonably be expected to continue to occur during the 9 months involved in any following pregnancy. The other category contained 634 pregnancies that were seizure-free in the pre-pregnancy year. Multivariate logistic regressions were fitted for 1345 subjects for seizure occurrence during pregnancy for co-variates listed to identify statistically seizure-related co-variates.\nRESULTS: Seizure-affected pregnancy rates in the 1345 pregnancies studied remained stable over the consecutive 5-year intervals from 1999 onwards, viz. 50.5%, 53.9%, 50.3%, 52.8% and 48.2%. Seizure-affected pregnancy was more likely in WWE, who had: (1) Shorter durations of pre-pregnancy freedom from seizures. (2) Focal epilepsy. (3) Not taken ASMs while pregnant. (4) Not used pre-pregnancy folate supplementation. (5) Longer durations of epilepsy. (6) Earlier age onset of epilepsy. The hazard of a seizure-affected next pregnancy was over threefold higher when the pre-pregnancy year was seizure-affected than when it had been seizure-free.\nSIGNIFICANCE: The finding that a year's pre-pregnancy seizure freedom was associated with a reduced risk of seizures in the next pregnancy was expected. The magnitude of the greater than threefold higher seizure risk in the next pregnancy if seizures had occurred in the pre-pregnancy year was not. It identifies a group of women with epilepsy whose medical management during pregnancy warrants particular care.",
-      "abstract_zh": "目的：我们早些时候报告说，妊娠前一年的癫痫发作是以下妊娠受癫痫影响的主要决定因素。 本研究评估了其他风险因素。\n方法：妊娠涉及癫痫妇女的首次妊娠。 比较了两个类别。 一类包括711次怀孕，其中在怀孕前一年发生癫痫发作，并且癫痫发作可能\n合理地预期在妊娠后的9个月内继续发生。 另一个类别包含634例在怀孕前一年无癫痫发作的妊娠。 对1345例妊娠期癫痫发作受试者进行多变量逻辑回归拟合，以识别统计学上癫痫发作相关的共变量。\n结果：所研究的1345例妊娠中受癫痫影响的妊娠率\n从1999年起连续5年保持稳定，即50.5%、53.9%、50.3%、52.8%和48.2%。受癫痫影响的妊娠在WWE中更可能发生， WWE患者： （ 1 ）孕前无癫痫发作的持续时间较短。（ 2 ）局灶性癫痫。（ 3 ）怀孕期间未服用ASM。（ 4 ）未使用孕前叶酸补充剂。（ 5 ）癫痫持续时间较长。（ 6 ）癫痫发作较早。癫痫发作影响的NEX的危险\n孕前癫痫发作时，妊娠率比无癫痫发作时高出三倍以上。\n意义：预期怀孕前一年的癫痫发作自由度与下次怀孕时癫痫发作的风险降低相关。 如果癫痫发作发生在妊娠前一年，则在下一次妊娠中癫痫发作风险增加三倍以上的幅度不是。 它标识了一群女性\n与怀孕期间的医疗管理需要特别关注的癫痫有关。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -264,7 +375,7 @@
       "priority": "必读"
     },
     {
-      "index": 5,
+      "index": 8,
       "pmid": "42975562",
       "title": "Do preclinical seizure models predict success or failure in anti-seizure drug development? A retrospective analysis of 89 compounds with divergent clinical outcomes for epilepsy.",
       "title_zh": "临床前癫痫模型是否预测抗癫痫药物开发的成功或失败？一项对89种具有不同临床结局的癫痫化合物的回顾性分析。",
@@ -278,7 +389,7 @@
       "doi": "10.1002/epi.70541",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42975562/",
       "abstract": "Anti-seizure medication (ASM) discovery remains a major challenge despite over 30 commercially available options. One persistent obstacle for any promising candidate compound to successfully move from preclinical study to clinical approval has been the ambiguity in preclinical model selection. Which models are most predictive of clinical response and failure? For decades, the maximal electroshock seizure (MES), subcutaneous pentylenetetrazole (s.c. PTZ) seizure, 6-Hz psychomotor seizure, and audiogenic seizure tests in rodents have served as foundational ASM screening models. These tests are generally regarded as suitable models of generalized tonic-clonic seizures (MES), non-convulsive (absence) seizures (PTZ), pharmacoresistant focal seizures (6-Hz test), and brain penetrance and generalized convulsive seizures (audiogenic seizures). Together, these assays have supported high-throughput ASM discovery for decades; however, they primarily measure acute anti-seizure response. Furthermore, they do not model the pathophysiology of epilepsy as a chronic human brain disorder. Critically, as shown here, these models do not accurately predict human treatment-resistant focal epilepsy success potential. The amygdala-kindled rat model (AKM) is a relevant human temporal lobe epilepsy model that is well suited to investigational ASM discovery and has been implemented for such use for decades. We hypothesized that AKM would be the most predictive of clinical success and failure among the widely implemented rodent screening models. Our present analysis of 89 ASMs and investigational new drugs (INDs) thus aimed to define which preclinical signals, if any, in the standard rodent seizure models would best predict clinical outcomes. The primary efficacy endpoint in AKM has traditionally been convulsive seizure suppression or electrographic outcomes (afterdischarge duration), with few groups reporting IND effects on focal seizures. In our retrospective analysis of 89 compounds, we find that the AKM focal seizure endpoint was the most predictive of clinical success. This structured retrospective comparative analysis of ASM and IND responses demonstrates the exceptional predictive validity of the AKM for early ASM discovery for treatment-resistant human focal epilepsy.",
-      "abstract_zh": "尽管有30多种商业上可用的选择，但抗癫痫药物（ ASM ）的发现仍然是一个重大挑战。任何有希望的候选化合物从临床前研究成功转向临床批准的一个持续障碍是临床前模型选择的模糊性。哪些模型最能预测临床缓解和失败？几十年来，最大电击癫痫发作（ MES ） ，皮下戊四氮（ s.\nc. PTZ ）癫痫发作、6-Hz精神运动癫痫发作和啮齿动物听觉癫痫发作测试已成为基础ASM筛查模型。这些测试通常被认为是全身强直阵挛性癫痫发作（ MES ）、非惊厥性（缺失）癫痫发作（ PTZ ）、耐药性局灶性癫痫发作（ 6-Hz测试）、脑穿透和全身惊厥性癫痫发作（听觉性癫痫发作）的适合模型。这些测定一起支持了高通量\n几十年来ASM的发现；然而，他们主要测量急性抗癫痫发作反应。此外，他们没有将癫痫的病理生理学建模为慢性人脑疾病。至关重要的是，如这里所示，这些模型不能准确预测人类治疗抵抗性局灶性癫痫的成功潜力。杏仁核点燃大鼠模型（ AKM ）是一种相关的人类颞叶癫痫模型，非常适合研究性ASM发现\n并已为此类用途实施了数十年。我们假设，在广泛实施的啮齿动物筛选模型中， AKM最能预测临床成功和失败。因此，我们目前对89种ASM和研究性新药（ IND ）的分析旨在确定标准啮齿动物癫痫发作模型中哪些临床前信号（如果有）最能预测临床结果。AKM的主要疗效终点传统上\n痉挛性癫痫发作抑制或电图结果（出院后持续时间） ，很少有组报告IND对局灶性癫痫发作的影响。在我们对89种化合物的回顾性分析中，我们发现AKM局灶性癫痫发作终点最能预测临床成功。这种对ASM和IND反应的结构化回顾性比较分析表明， AKM对TRE的早期ASM发现具有卓越的预测有效性。\n耐药的人类局灶性癫痫。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -297,7 +408,7 @@
       "priority": "必读"
     },
     {
-      "index": 6,
+      "index": 9,
       "pmid": "42970886",
       "title": "Development and validation of a multimodal data-based scale for predicting epilepsy surgery outcomes.",
       "title_zh": "开发和验证用于预测癫痫手术结局的基于多模态数据的量表。",
@@ -316,7 +427,7 @@
       "doi": "10.1016/j.eplepsyres.2026.107950",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42970886/",
       "abstract": "BACKGROUND: Seizure outcomes after drug-resistant epilepsy surgery are hard to predict, and existing models lack rigorous validation. We developed and internally validated a multimodal scale predicting seizure freedom.\nMETHODS: Retrospectively, 157 of 816 screened patients with complete data and ≥ 1 year follow-up were analyzed (116 seizure-free [SF], 41 non-seizure-free [NSF]). Predictors came from clinical variables, MRI, FDG-PET, video-EEG, and MEG. From 56 variables, eight predictors were fixed by screening, clinical judgment, four machine-learning algorithms, and minimum-AIC logistic regression, then re-estimated in all 157 patients by Firth's bias-corrected logistic regression without repeat selection. Internal validation used 2000 bootstrap resamples. A cutoff maximizing 0.4 ×sensitivity + 0.6 ×specificity was selected once in the full cohort and applied unchanged to the ≥ 24 months subgroup.\nRESULTS: The model retained disease duration, age at surgery, four EEG patterns, temporal MRI lesion, and unilateral unifocal PET hypometabolism. Development-phase AUCs (0.864 training, 0.810 test) were descriptive. Firth re-estimation gave an apparent AUC of 0.771 and an optimism-corrected AUC of 0.724 (Brier 0.156/0.176). At the 79.64-point cutoff, sensitivity was 61.2% and specificity 85.4%; all 95% confidence intervals included the null. Among 101 patients followed ≥ 24 months, the locked model gave AUC 0.770 (95% CI 0.664-0.865), Brier 0.158, sensitivity 53.9%, specificity 96.0%.\nCONCLUSIONS: Multimodal data integration yielded a fully specified, reproducible eight-variable scale with stable discrimination in longer-term follow-up, supporting exploratory use for preoperative risk stratification and counseling alongside presurgical evaluation. Prospective multicenter validation is the next step toward clinical implementation.",
-      "abstract_zh": "背景：耐药性癫痫手术后癫痫结局难以预测，现有模型缺乏严格的验证。 我们开发并内部验证了预测癫痫发作自由度的多模式量表。\n方法：回顾性分析816例筛查的完全数据和≥ 1年随访患者中的157例（ 116例无癫痫发作[SF] ， 41例无癫痫发作[NSF] ）。 预测指标来自临床变量、MRI、FDG-PET、视频EEG、\nd MEG.从56个变量中，通过筛选、临床判断、四种机器学习算法和最小-AIC逻辑回归确定了8个预测指标，然后通过Firth的偏差校正逻辑回归（无重复选择）对所有157名患者进行了重新估计。内部验证使用了2000个引导重采样。在整个队列中选择一次最大化0.4 ×灵敏度+ 0.6 ×特异性的截止值，并应用于≥ 24个月\nhs subgroup.\n结果：模型保留了疾病持续时间、手术年龄、4种脑电图模式、颞叶MRI病变和单侧单灶PET代谢低下。 发展阶段AUC （ 0.864训练， 0.810测试）是描述性的。 Firth重新估计的明显AUC为0.771 ，乐观修正的AUC为0.724 （ Brier 0.156/0 .176 ）。 在79.64点临界值时，敏感性为61.2% ，特异性为85.4% ；所有95%置信区间均包括\n无效，在随访≥ 24个月的101例患者中，锁定模型给出AUC 0.770 （ 95% CI 0.664-0.865 ） ， Brier 0.158 ，灵敏度53.9% ，特异性96.0%。\n结论：多模式数据集成产生了一个完全指定、可重复的八变量量表，在长期随访中具有稳定的判别，支持探索性地用于术前风险分层和术前评估的咨询。\niDATION是临床实施的下一步。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -332,7 +443,7 @@
       "priority": "必读"
     },
     {
-      "index": 7,
+      "index": 10,
       "pmid": "42969794",
       "title": "Diagnostic value of extending outpatient EEG to record sleep - A retrospective study.",
       "title_zh": "扩展门诊脑电图以记录睡眠的诊断价值-一项回顾性研究。",
@@ -372,10 +483,80 @@
       "priority": "必读"
     },
     {
-      "index": 8,
+      "index": 11,
+      "pmid": "42976384",
+      "title": "AIM-STAGE: a self-supervised framework via adaptive interval-aware multi-kernel calibration and spectro-temporal exploration for few-shot EEG staging.",
+      "title_zh": "AIM-STAGE ：通过自适应区间感知多核校准和频谱-时间探索的自我监督框架，用于少量脑电分期。",
+      "journal": "Journal of neural engineering",
+      "iso_journal": "J Neural Eng",
+      "authors": [
+        "Liu Y",
+        "Liu T",
+        "Yuan J",
+        "Li Y",
+        "Liu X",
+        "Wang X",
+        "Ma T",
+        "Bi L",
+        "Lin X",
+        "Moghadam Charkari N",
+        "Ganjidoust H",
+        "Msagati TAM",
+        "Guo Q"
+      ],
+      "pubdate": "2026 Nov 3",
+      "doi": "10.1088/1741-2552/aebd1c",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976384/",
+      "abstract": "OBJECTIVE: Learning discriminative and generalizable representations from&#xD;electroencephalography (EEG) signals with limited annotations remains a key challenge in&#xD;automatic sleep staging. Supervised deep models depend on large-scale expert labels, yet&#xD;sleep annotation is costly and time-consuming. Existing self-supervised methods often&#xD;underuse EEG spectral-temporal structure and adopt fixed negative-sample strategies,&#xD;which are poorly suited to the continuous transitions and ambiguous boundaries between&#xD;sleep stages. This study proposes AIM-STAGE, a self-supervised representation learning&#xD;framework for limited-label EEG sleep staging.\nAPPROACH: AIM-STAGE comprises three&#xD;modules. (1) Spectral-temporal exploration: maps EEG segments into the time-frequency&#xD;domain through the short-time Fourier transform (STFT), jointly extracting log-power&#xD;and cross-channel phase difference to characterize frequency-band activity and phase&#xD;dynamics. (2) Local-global hybrid encoding: uses a CNN-Transformer encoder, in which&#xD;convolutional residual modules capture local spectro-temporal patterns and a bottleneck&#xD;Transformer models long-range dependencies. (3) Adaptive interval-aware multi-kernel&#xD;calibration: employs multiple Gaussian kernels and dynamic weighting to synthesize&#xD;informative negative representations, improving view consistency and inter-sample&#xD;separability.\nMAIN RESULTS: AIM-STAGE was evaluated on SLEEP-2013, SLEEP-2018,&#xD;SHHS-D, and SHHS-H against ContraWR, DFformer, EEG2Rep, EEGPT, Superlet-MAE,&#xD;and a supervised baseline across 1% to 15% labels. Accuracy improved from 88.67% to&#xD;92.04% on SLEEP-2013, and AIM-STAGE outperformed all baselines on all four datasets&#xD;with higher kappa, macro-F1, and balanced accuracy, including on the pathological&#xD;SHHS-D cohort. Ablation confirmed the contributions of the bottleneck Transformer,positional embeddings, physiology-informed augmentation, and calibration loss. Per-stage&#xD;analysis showed that N1 is the most difficult stage, with F1 ranging from 0.003 to 0.046,&#xD;and adding EOG and EMG markedly improved its precision, recall, and F1.\nSIGNIFICANCE: &#xD;AIM-STAGE offers an interpretable and label-efficient self-supervised solution for EEG&#xD;sleep staging, improving robustness and stage discriminability under scarce-label&#xD;conditions while reducing dependence on manual annotation.&#xD.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 11,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg",
+        "adaptive"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 12,
+      "pmid": "42976382",
+      "title": "A comprehensive review of biosignal foundation models.",
+      "title_zh": "生物信号基础模型的全面综述。",
+      "journal": "Journal of neural engineering",
+      "iso_journal": "J Neural Eng",
+      "authors": [
+        "Lee NKK",
+        "Barmpas K",
+        "Koliousis A",
+        "Panagakis Y",
+        "Adamos DA",
+        "Laskaris N",
+        "Zafeiriou S"
+      ],
+      "pubdate": "2026 Nov 3",
+      "doi": "10.1088/1741-2552/aebd1d",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42976382/",
+      "abstract": "Foundation models are emerging as a promising approach to biosignal analysis, offering solutions to common challenges in learning from biosignal data, such as high variability, noise or limited annotations. This survey provides a comprehensive review of the state-of-the-art in this rapidly advancing field. We introduce commonly used biosignal modalities (including EEG, ECG, EMG, EOG and PPG) and discuss their defining characteristics with respect to training large models. We present a structured survey of existing work across unimodal and multimodal settings covering data processing, feature extraction, model architectures, pre-training paradigms and evaluation methods. We identify open challenges such as benchmarking, interpretability and data availability and highlight possible directions for future research. By consolidating our findings from the current literature and opportunities for progress, we aim to guide the development of robust and universal foundation models for biosignals.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 1,
+      "relevance_hits": [
+        "eeg"
+      ],
+      "priority": "浏览"
+    },
+    {
+      "index": 13,
       "pmid": "42971375",
       "title": "State-Dependent EEG Markers of Excitation/Inhibition and Hemodynamic State Are Associated with Random Noise Stimulation Effects.",
-      "title_zh": "",
+      "title_zh": "兴奋/抑制及血流动力学状态的状态依赖性脑电标志物与随机噪声刺激效应相关",
       "journal": "NeuroImage",
       "iso_journal": "Neuroimage",
       "authors": [
@@ -407,10 +588,74 @@
       "priority": "必读"
     },
     {
-      "index": 9,
+      "index": 14,
+      "pmid": "42978792",
+      "title": "A network-control approach to seizure intervention via adjoint optimal control: a computational study on a connectome-coupled Hopf oscillator model.",
+      "title_zh": "一种通过伴随最优控制进行癫痫发作干预的网络控制方法：对连接组耦合Hopf振荡器模型的计算研究。",
+      "journal": "Cognitive neurodynamics",
+      "iso_journal": "Cogn Neurodyn",
+      "authors": [
+        "Muralidhara S",
+        "Deosthale A",
+        "Anil Y"
+      ],
+      "pubdate": "2026 Dec",
+      "doi": "10.1007/s11571-026-10583-4",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42978792/",
+      "abstract": "Most existing open-loop Deep Brain Stimulation (DBS) systems for drug-resistant epilepsy do not take into account the temporal dynamics of seizures or the spread of seizure activity. In this paper, we propose a closed-loop control system that models seizure prevention as a constraint on the nonlinear dynamics of the brain's structural network, and we evaluate it entirely in simulation. The structural network of the brain is modeled using the HCP-1065 (Human Connectome Project) connectome, which divides the brain into 360 regions. A densely connected sub-network of 60 brain regions was used to develop and test the proposed control system. Each region is modeled as a nonlinear supercritical Hopf oscillator, and the seizures modeled are focal-onset events that spread from a hippocampal onset zone through the connectome. A detector continuously monitors critical-slowing-down features of the dynamics, such as variance and lag-1 autocorrelation, to identify the approach to seizure activity. Two levels of control are applied: a linear-quadratic regulator (Level 1) that maintains the Hopf oscillators' basal state, and a dormant network-wide optimal controller (Level 2) that employs an adjoint-based optimal-control method (Adjoint Optimal Control; AOC) to provide pre-emptive control. Within the model, the predictive detector identifies the approach to the seizure transition with an area under the receiver operating characteristic curve (AUC) of 0.889 (95% confidence interval (CI) [0.820, 0.950]) on an independent test fold containing 50 trajectories per class, with a mean lead time of 56.9 model-time seconds; at the recall-maximizing operating point its false-positive rate is high (0.90 per 120-s seizure-free record), which we identify as the principal limitation of the present design. The controller prevented the seizure-like transition in 93% of 100 Monte Carlo simulations (95% CI: 86.2--96.6%) on the 60-node sub-network, against 21% for a connectome-naive targeting baseline; in the same continuously seizure-prone benchmark, a continuous open-loop push at matched amplitude and a PI controller suppressed every trial at lower energy, so the closed loop's advantages lie in pre-emptive lead time, network-wide homeostasis and delivering no stimulation when no risk is detected, not in energy per event. All validation uses synthetic trajectories generated by the same model; no patient or EEG data are used, and the results constitute a methodological proof-of-concept rather than evidence of clinical efficacy.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 28,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "drug-resistant",
+        "eeg",
+        "focal",
+        "hippocampal",
+        "closed-loop"
+      ],
+      "priority": "必读"
+    },
+    {
+      "index": 15,
+      "pmid": "42977372",
+      "title": "The Road ahead: Precision and Personalized Sleep Medicine with Artificial Intelligence.",
+      "title_zh": "未来之路：利用人工智能实现精准和个性化的睡眠医学。",
+      "journal": "Sleep medicine clinics",
+      "iso_journal": "Sleep Med Clin",
+      "authors": [
+        "Abou Jaoude M",
+        "Ravi A",
+        "Sacca V"
+      ],
+      "pubdate": "2026 Dec",
+      "doi": "10.1016/j.jsmc.2026.08.022",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42977372/",
+      "abstract": "Sleep is foundational to cognitive and physiologic health, yet clinical management often relies on generalized approaches that do not fully account for individual sleep architecture. This article examines the integration of artificial intelligence (AI) into personalized sleep medicine. By ingesting multimodal data streams, AI automates the process of clinical data review and drives closed-loop systems beyond static protocols toward neuromodulation that is responsive to the individual's physiologic state. Consumer wearable devices and conversational AI further extend these approaches beyond the laboratory, enabling continuous at-home monitoring, personalized support, and a broader care framework linking patients, computational systems, and clinicians.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 4,
+      "relevance_hits": [
+        "generalized",
+        "closed-loop",
+        "responsive",
+        "neuromodulation"
+      ],
+      "priority": "推荐"
+    },
+    {
+      "index": 16,
       "pmid": "42975430",
       "title": "Pediatric Epilepsy Surgery: Global Survey of Surgical Approaches.",
-      "title_zh": "",
+      "title_zh": "儿童癫痫外科：手术方式的全球调查",
       "journal": "Neurosurgery",
       "iso_journal": "Neurosurgery",
       "authors": [
@@ -487,10 +732,10 @@
       "priority": "必读"
     },
     {
-      "index": 10,
+      "index": 17,
       "pmid": "42973902",
       "title": "Stimulation parameters of epidural spinal cord stimulation for functional recovery after spinal cord injury: a narrative review.",
-      "title_zh": "",
+      "title_zh": "用于脊髓损伤后功能恢复的硬膜外脊髓刺激参数：叙述性综述",
       "journal": "Frontiers in neurology",
       "iso_journal": "Front Neurol",
       "authors": [
@@ -520,10 +765,10 @@
       "priority": "必读"
     },
     {
-      "index": 11,
+      "index": 18,
       "pmid": "42971862",
       "title": "Focused Ultrasound in Parkinson's Disease: From Mechanisms to Precision Therapy.",
-      "title_zh": "",
+      "title_zh": "帕金森病的聚焦超声治疗：从机制到精准治疗",
       "journal": "Ultrasound in medicine & biology",
       "iso_journal": "Ultrasound Med Biol",
       "authors": [
@@ -554,10 +799,10 @@
       "priority": "必读"
     },
     {
-      "index": 12,
+      "index": 19,
       "pmid": "42971363",
       "title": "Individualized Transcranial Temporal Interference Stimulation (TIS): Research Advancements and Clinical Translation Pathways.",
-      "title_zh": "",
+      "title_zh": "个体化经颅时间干涉刺激（TIS）：研究进展与临床转化路径",
       "journal": "Journal of neuroscience methods",
       "iso_journal": "J Neurosci Methods",
       "authors": [
@@ -589,43 +834,6 @@
         "stimulation",
         "thalamic",
         "subthalamic"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 13,
-      "pmid": "42966748",
-      "title": "State-dependent effects of rTMS on cognitive function in bipolar II disorder: A randomized, double-blind, sham-controlled trial.",
-      "title_zh": "",
-      "journal": "Molecular psychiatry",
-      "iso_journal": "Mol Psychiatry",
-      "authors": [
-        "Wang M",
-        "Chen Q",
-        "Tang E",
-        "Qi S",
-        "Tang R",
-        "Zhang J",
-        "Zhou H",
-        "Du L",
-        "Chen H",
-        "Hu S"
-      ],
-      "pubdate": "2026 Oct 31",
-      "doi": "10.1038/s41380-026-03953-1",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42966748/",
-      "abstract": "BACKGROUND: Repetitive transcranial magnetic stimulation (rTMS) is a promising neuromodulatory approach for cognitive improvement in psychiatric disorders. However, whether concurrent cognitive engagement enhances rTMS-related effects remains unclear.\nMETHODS: In this exploratory, randomized, double-blind, sham-controlled 2 × 2 factorial trial, 96 euthymic patients with bipolar II disorder and subjective cognitive impairment were assigned to active or sham 10-Hz rTMS combined with either a complex or simple cognitive task. Stimulation targeted the left inferior parietal lobule (IPL) using robot-assisted neuronavigation and was delivered in 10 sessions over 5 consecutive days. The main outcomes included changes in working memory capacity and precision, subjective cognitive performance (Perceived Deficits Questionnaire, PDQ), and resting-state fMRI connectivity within hippocampal and IPL networks. Behavioral outcomes were analyzed using likelihood-based intention-to-treat linear mixed-effects models including time, stimulation, task condition, and their interactions. False-discovery-rate correction was applied across behavioral outcomes.\nRESULTS: Eighty-three participants completed the trial. In the intention-to-treat analysis including all 96 randomized participants, no stimulation-by-task interaction survived correction for multiple comparisons. Nominal interactions were observed for overall angular error and angular error at set size 2, but both fell short of the corrected significance threshold. The active rTMS and simple cognitive task group showed the most consistent model-estimated within-group improvements across several working-memory outcomes; however, these patterns did not establish superiority over the other factorial conditions. PDQ scores decreased across all four groups, without significant stimulation, task, or interaction effects. Exploratory neuroimaging analyses indicated divergent functional-connectivity changes across intervention conditions.\nCONCLUSIONS: This exploratory trial did not provide statistically robust evidence that concurrent complex cognitive engagement enhanced the acute working-memory effects of IPL-targeted 10-Hz rTMS in euthymic bipolar II disorder, suggesting that task type, cognitive load, and stimulation-task coupling warrant further systematic optimization in future neuromodulation studies.\nTRIAL REGISTRATION: ClinicalTrials.gov identifier: NCT06782763.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 9,
-      "relevance_hits": [
-        "hippocampal",
-        "neuromodulation",
-        "transcranial",
-        "stimulation"
       ],
       "priority": "必读"
     }

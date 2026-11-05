@@ -187,39 +187,105 @@
     "42975430": {
       "title": "Pediatric Epilepsy Surgery: Global Survey of Surgical Approaches.",
       "title_zh": "儿童癫痫外科：手术方式的全球调查"
+    },
+    "42970749": {
+      "title": "Germline Genetic Variants and Epilepsy Surgery Response: Individual Participant Pooled Analysis of 272 Patients.",
+      "title_zh": "种系遗传变异和癫痫手术反应： 272名患者的个体参与者汇总分析。"
+    },
+    "42970304": {
+      "title": "Global Epidemiology of Neonatal and Infantile-Onset Epilepsies and Epilepsy Syndromes (GENIE): A Systematic Review and Meta-Analysis.",
+      "title_zh": "新生儿和婴儿发病癫痫和癫痫综合征（ GENIE ）的全球流行病学：系统评价和荟萃分析。"
+    },
+    "42976532": {
+      "title": "Temporal trends in GBD idiopathic epilepsy burden across 43 European countries, 1990-2023.",
+      "title_zh": "1990-2023年43个欧洲国家GBD特发性癫痫负担的时间趋势。"
+    },
+    "42976531": {
+      "title": "Predicting the risk of seizure recurrence after antiseizure medication withdrawal in children with epilepsy: An individualized and web-based clinical decision support model.",
+      "title_zh": "预测癫痫儿童停用抗癫痫药物后癫痫复发的风险：一个个性化和基于网络的临床决策支持模型。"
+    },
+    "42976516": {
+      "title": "Full title: From neural excitability to volatile signatures: A mechanistic hypothesis for pre-ictal volatile organic compound signatures in epilepsy.",
+      "title_zh": "全称：从神经兴奋性到挥发性特征：癫痫发作前挥发性有机化合物特征的机械假说。"
+    },
+    "42975879": {
+      "title": "Late electroencephalographic seizure-risk findings and restricted diffusion on magnetic resonance imaging as seizure-burden markers associated with neurological deficits after status epilepticus in a remote or chronic cohort.",
+      "title_zh": "在远程或慢性队列中，脑电图晚期癫痫发作风险发现和磁共振成像作为与癫痫持续状态后神经系统缺陷相关的癫痫发作负担标志物的扩散受限。"
+    },
+    "42975788": {
+      "title": "The risk of seizure-affected pregnancy in Australian women with epilepsy.",
+      "title_zh": "澳大利亚女性癫痫患者癫痫发作妊娠的风险。"
+    },
+    "42975562": {
+      "title": "Do preclinical seizure models predict success or failure in anti-seizure drug development? A retrospective analysis of 89 compounds with divergent clinical outcomes for epilepsy.",
+      "title_zh": "临床前癫痫模型是否预测抗癫痫药物开发的成功或失败？一项对89种具有不同临床结局的癫痫化合物的回顾性分析。"
+    },
+    "42970886": {
+      "title": "Development and validation of a multimodal data-based scale for predicting epilepsy surgery outcomes.",
+      "title_zh": "开发和验证用于预测癫痫手术结局的基于多模态数据的量表。"
+    },
+    "42969794": {
+      "title": "Diagnostic value of extending outpatient EEG to record sleep - A retrospective study.",
+      "title_zh": "扩展门诊脑电图以记录睡眠的诊断价值-一项回顾性研究。"
+    },
+    "42976384": {
+      "title": "AIM-STAGE: a self-supervised framework via adaptive interval-aware multi-kernel calibration and spectro-temporal exploration for few-shot EEG staging.",
+      "title_zh": "AIM-STAGE ：通过自适应区间感知多核校准和频谱-时间探索的自我监督框架，用于少量脑电分期。"
+    },
+    "42976382": {
+      "title": "A comprehensive review of biosignal foundation models.",
+      "title_zh": "生物信号基础模型的全面综述。"
+    },
+    "42978792": {
+      "title": "A network-control approach to seizure intervention via adjoint optimal control: a computational study on a connectome-coupled Hopf oscillator model.",
+      "title_zh": "一种通过伴随最优控制进行癫痫发作干预的网络控制方法：对连接组耦合Hopf振荡器模型的计算研究。"
+    },
+    "42977372": {
+      "title": "The Road ahead: Precision and Personalized Sleep Medicine with Artificial Intelligence.",
+      "title_zh": "未来之路：利用人工智能实现精准和个性化的睡眠医学。"
+    },
+    "42867471": {
+      "title": "ECG in epilepsy - Insights on preemptive sudden death detection.",
+      "title_zh": "癫痫中的心电图-关于先发制人的猝死检测的见解。"
+    },
+    "42869197": {
+      "title": "Default mode network mechanisms of trait rumination in treatment-resistant depression and rTMS: evidence from source-localized EEG.",
+      "title_zh": "治疗抵抗性抑郁症和rTMS中性状反刍的默认模式网络机制：来自源局部脑电图的证据。"
+    },
+    "42873392": {
+      "title": "Resting-State EEG Microstate Dynamics and their Associations with Acclimatization Index and Serum Albumin in Healthy Adults with Chronic High-Altitude Exposure.",
+      "title_zh": "慢性高海拔暴露的健康成人静息状态脑电图微状态动力学及其与适应指数和血清白蛋白的关系。"
+    },
+    "42873989": {
+      "title": "Passive Language Mapping With High-Gamma Modulations.",
+      "title_zh": "使用高伽马调制的被动语言映射。"
+    },
+    "42875184": {
+      "title": "Machine Learning Framework for Integration of Video and EEG Reveals Distinct Seizure Phenotypes in Mouse Models of Epilepsy.",
+      "title_zh": "用于集成视频和脑电图的机器学习框架揭示了癫痫小鼠模型中不同的癫痫发作表型。"
+    },
+    "42878432": {
+      "title": "Change in clobazam pharmacokinetics after introduction of cenobamate.",
+      "title_zh": "引入氨甲环酸后氯巴扎姆药代动力学的变化。"
+    },
+    "42878718": {
+      "title": "Impact of sedation on the reliability of magnetoencephalographic language mapping in pediatric epilepsy.",
+      "title_zh": "镇静剂对小儿癫痫脑磁图语言定位的可靠性的影响。"
+    },
+    "42878728": {
+      "title": "Resective epilepsy surgery in an adult with ARID1B-related disorder and focal cortical dysplasia type IIb.",
+      "title_zh": "成人ARID1B相关疾病和IIB型局灶性皮质发育不良的切除性癫痫手术。"
+    },
+    "42880669": {
+      "title": "A GRAPH CONVOLUTION BASED DUAL-BRANCH NETWORK FOR DECODING OF UPPER-LIMB MOTOR IMAGERY EEG SIGNALS.",
+      "title_zh": "一种基于图卷积的双分支网络，用于解码UPPER-LIMB电机图像脑电信号。"
+    },
+    "42887654": {
+      "title": "An efficient convolutional neural network model for classifying positive affective states from EEG data considering sleep condition.",
+      "title_zh": "一种有效的卷积神经网络模型，用于考虑睡眠状况从脑电图数据中对正面情感状态进行分类。"
     }
   },
   "pending": {
-    "42867471": {
-      "title": "ECG in epilepsy - Insights on preemptive sudden death detection."
-    },
-    "42869197": {
-      "title": "Default mode network mechanisms of trait rumination in treatment-resistant depression and rTMS: evidence from source-localized EEG."
-    },
-    "42873392": {
-      "title": "Resting-State EEG Microstate Dynamics and their Associations with Acclimatization Index and Serum Albumin in Healthy Adults with Chronic High-Altitude Exposure."
-    },
-    "42873989": {
-      "title": "Passive Language Mapping With High-Gamma Modulations."
-    },
-    "42875184": {
-      "title": "Machine Learning Framework for Integration of Video and EEG Reveals Distinct Seizure Phenotypes in Mouse Models of Epilepsy."
-    },
-    "42878432": {
-      "title": "Change in clobazam pharmacokinetics after introduction of cenobamate."
-    },
-    "42878718": {
-      "title": "Impact of sedation on the reliability of magnetoencephalographic language mapping in pediatric epilepsy."
-    },
-    "42878728": {
-      "title": "Resective epilepsy surgery in an adult with ARID1B-related disorder and focal cortical dysplasia type IIb."
-    },
-    "42880669": {
-      "title": "A GRAPH CONVOLUTION BASED DUAL-BRANCH NETWORK FOR DECODING OF UPPER-LIMB MOTOR IMAGERY EEG SIGNALS."
-    },
-    "42887654": {
-      "title": "An efficient convolutional neural network model for classifying positive affective states from EEG data considering sleep condition."
-    },
     "42887838": {
       "title": "Neurovascular coupling in simultaneous EEG-fNIRS studies: A scoping review of analytical frameworks and clinical applications."
     },
