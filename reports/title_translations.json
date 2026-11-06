@@ -283,39 +283,105 @@
     "42887654": {
       "title": "An efficient convolutional neural network model for classifying positive affective states from EEG data considering sleep condition.",
       "title_zh": "一种有效的卷积神经网络模型，用于考虑睡眠状况从脑电图数据中对正面情感状态进行分类。"
+    },
+    "42984305": {
+      "title": "Impairment of ictal consciousness and psychosis in drug-resistant focal epilepsy: A retrospective clinical cohort study.",
+      "title_zh": "耐药性局灶性癫痫中发作性意识障碍和精神病：一项回顾性临床队列研究。"
+    },
+    "42984304": {
+      "title": "Longitudinal serum and CSF cytokine dynamics in NORSE: Associations with immunotherapy exposure.",
+      "title_zh": "挪威人的纵向血清和脑脊液细胞因子动力学：与免疫治疗暴露的关联。"
+    },
+    "42984287": {
+      "title": "Multiple ictal vocalizations as a novel semiology in generalized epilepsy.",
+      "title_zh": "多发性发作作为全身性癫痫的一种新型符号学。"
+    },
+    "42984270": {
+      "title": "Human induced pluripotent stem cell-derived cortical neurons from monozygotic twins with the Gα(o1) (K278del) mutation reveal disease mechanisms relevant to GNAO1-related encephalopathy.",
+      "title_zh": "来自具有Gα (o1) (K278del)突变的单卵双胞胎的人诱导多能干细胞衍生的皮质神经元揭示了与GNAO1相关脑病相关的疾病机制。"
+    },
+    "42984249": {
+      "title": "Treatment patterns, strategies, and preferences after first anti-seizure medication failure in focal epilepsy: Findings from the SANAD and SANAD II trial cohorts and a survey of UK epilepsy specialists.",
+      "title_zh": "局灶性癫痫首次抗癫痫药物治疗失败后的治疗模式、策略和偏好：来自SANAD和SANAD II试验队列的发现以及对英国癫痫专家的调查。"
+    },
+    "42984217": {
+      "title": "Integrating uncertainty and practice variability for epilepsy prognostication after intracranial EEG: A meta-analysis.",
+      "title_zh": "整合颅内脑电图后癫痫预后的不确定性和实践变异性：荟萃分析。"
+    },
+    "42981749": {
+      "title": "Racial and ethnic disparities in health status, health literacy, and access to care among adults with epilepsy: an exploratory mediation analysis.",
+      "title_zh": "成人癫痫患者在健康状况、健康素养和获得护理方面的种族和民族差异：探索性调解分析。"
+    },
+    "42986730": {
+      "title": "Mirror Neural System in Hands Motor Imagery with Pictures and Videos Guidance: An EEG-fNIRS Study.",
+      "title_zh": "手部运动图像中的镜像神经系统与图片和视频指导：脑电图-fNIRS研究。"
+    },
+    "42986729": {
+      "title": "Participant-Disjoint EEG Decoding of Instructed Respiratory Conditions Using a Deep Spatio-Respiratory Transformer.",
+      "title_zh": "使用深度空间呼吸变压器对指示呼吸状况进行参与者-分开的脑电图解码。"
+    },
+    "42983555": {
+      "title": "Systematic review on the association between brain-related measures and upper limb movement characteristics after stroke.",
+      "title_zh": "卒中后大脑相关指标与上肢运动特征相关性的系统综述。"
+    },
+    "42982009": {
+      "title": "Cortical evoked potentials from deep brain stimulation of the superolateral medial forebrain bundle: An exploratory study.",
+      "title_zh": "来自超外侧内侧前脑束深部脑刺激的皮质诱发电位：一项探索性研究。"
+    },
+    "42981608": {
+      "title": "Augmented reality paradigm and EA-DGCNN decoding algorithm for motor imagery in stroke patients.",
+      "title_zh": "中风患者运动图像的增强现实范式和EA-DGCNN解码算法。"
+    },
+    "42981600": {
+      "title": "Decoding sequence auditory expectations for clinical diagnostic and prognostic assessment of prolonged disorders of consciousness.",
+      "title_zh": "解码对长期意识障碍的临床诊断和预后评估的序列听觉期望。"
+    },
+    "42985312": {
+      "title": "Advancing Repetitive Transcranial Magnetic Stimulation for Depression: Novel Protocols, Precision Targeting, and Future Directions.",
+      "title_zh": "推进针对抑郁症的重复性经颅磁刺激：新方案、精确定位和未来方向。"
+    },
+    "42887838": {
+      "title": "Neurovascular coupling in simultaneous EEG-fNIRS studies: A scoping review of analytical frameworks and clinical applications.",
+      "title_zh": "同时进行的EEG-fNIRS研究中的神经血管耦合：分析框架和临床应用的范围审查。"
+    },
+    "42892501": {
+      "title": "Interplay of action-based prediction and top-down attention: EEG evidence for joint modulation of late perceptual processing.",
+      "title_zh": "基于行动的预测和自上而下的注意的相互作用：后期感知处理联合调节的脑电图证据。"
+    },
+    "42897757": {
+      "title": "Symptom-related damage patterns in mesial temporal lobe epilepsy with hippocampal sclerosis.",
+      "title_zh": "伴海马硬化的近侧颞叶癫痫的症状相关损伤模式。"
+    },
+    "42899673": {
+      "title": "Delineating neural contributions to electroencephalogram-based speech decoding.",
+      "title_zh": "描述神经对基于脑电图的语音解码的贡献。"
+    },
+    "42901375": {
+      "title": "Intrinsic and extrinsic connectivity of the seizure onset zone at rest and during stimulation.",
+      "title_zh": "静息和刺激期间癫痫发作区的内在和外在连接性。"
+    },
+    "42906340": {
+      "title": "ADHD symptom positivity and its association with medication adherence and psychiatric burden in adults with epilepsy.",
+      "title_zh": "ADHD症状阳性及其与成人癫痫患者的药物依从性和精神负担的关系。"
+    },
+    "42906341": {
+      "title": "Tribal ethnicity also identifies particularly vulnerable persons with epilepsy: A cross-sectional study from Central India.",
+      "title_zh": "部落种族也确定了特别脆弱的癫痫患者：印度中部的一项横断面研究。"
+    },
+    "42906342": {
+      "title": "Whole person health in epilepsy: prioritizing care-partner wellbeing.",
+      "title_zh": "癫痫患者的全人健康：优先考虑护理合作伙伴的健康。"
+    },
+    "42906584": {
+      "title": "ACF-Net: Design of an adaptive cross-modal fusion network for cross-subject wearable EEG-EMG gesture recognition.",
+      "title_zh": "ACF-Net ：用于跨主体可穿戴EEG-EMG手势识别的自适应跨模态融合网络的设计。"
+    },
+    "42906586": {
+      "title": "Towards semantic brain-computer interfacing: The graded inventory of semantic triggers (GIST) paradigm.",
+      "title_zh": "走向语义脑机接口：语义触发器（ GIST ）范式的分级清单。"
     }
   },
   "pending": {
-    "42887838": {
-      "title": "Neurovascular coupling in simultaneous EEG-fNIRS studies: A scoping review of analytical frameworks and clinical applications."
-    },
-    "42892501": {
-      "title": "Interplay of action-based prediction and top-down attention: EEG evidence for joint modulation of late perceptual processing."
-    },
-    "42897757": {
-      "title": "Symptom-related damage patterns in mesial temporal lobe epilepsy with hippocampal sclerosis."
-    },
-    "42899673": {
-      "title": "Delineating neural contributions to electroencephalogram-based speech decoding."
-    },
-    "42901375": {
-      "title": "Intrinsic and extrinsic connectivity of the seizure onset zone at rest and during stimulation."
-    },
-    "42906340": {
-      "title": "ADHD symptom positivity and its association with medication adherence and psychiatric burden in adults with epilepsy."
-    },
-    "42906341": {
-      "title": "Tribal ethnicity also identifies particularly vulnerable persons with epilepsy: A cross-sectional study from Central India."
-    },
-    "42906342": {
-      "title": "Whole person health in epilepsy: prioritizing care-partner wellbeing."
-    },
-    "42906584": {
-      "title": "ACF-Net: Design of an adaptive cross-modal fusion network for cross-subject wearable EEG-EMG gesture recognition."
-    },
-    "42906586": {
-      "title": "Towards semantic brain-computer interfacing: The graded inventory of semantic triggers (GIST) paradigm."
-    },
     "42910489": {
       "title": "Atmospheric pressure, temperature, and online search activity for epilepsy: A daily time-series study."
     },
