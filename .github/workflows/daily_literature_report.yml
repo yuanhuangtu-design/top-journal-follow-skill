@@ -4,6 +4,8 @@ on:
   schedule:
     # 北京时间05:00触发；GitHub实际启动可能延迟。
     - cron: "0 21 * * *"
+    # 周日北京时间05:30生成不限期刊候选清单，不自动写入飞书。
+    - cron: "30 21 * * 6"
   workflow_dispatch:
     inputs:
       report_date:
@@ -13,8 +15,20 @@ on:
       run_mode:
         description: "运行方式：正常日报、只读连接检查、仅补录已保存候选"
         type: choice
-        options: [daily, check_connection, sync_pending, repair_titles]
+        options: [daily, backfill, weekly_candidates, check_connection, sync_pending, repair_titles]
         default: daily
+      groups:
+        description: "补抓的检索组，例如 A（留空=全部组）"
+        required: false
+        default: ""
+      edat_start:
+        description: "补抓的 PubMed 入库起始日期 YYYY-MM-DD"
+        required: false
+        default: ""
+      edat_end:
+        description: "补抓的 PubMed 入库结束日期 YYYY-MM-DD"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -28,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      RUN_MODE: ${{ inputs.run_mode || 'daily' }}
+      RUN_MODE: ${{ inputs.run_mode || (github.event.schedule == '30 21 * * 6' && 'weekly_candidates') || 'daily' }}
       FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
       FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
       FEISHU_APP_TOKEN: ${{ secrets.FEISHU_APP_TOKEN }}
@@ -48,6 +62,10 @@ jobs:
       - name: Test Feishu synchronization
         run: python -m unittest discover -s tests -v
 
+      - name: Check representative paper coverage
+        if: env.RUN_MODE == 'daily' || env.RUN_MODE == 'backfill' || env.RUN_MODE == 'weekly_candidates'
+        run: python scripts/check_coverage_examples.py
+
       - name: Check imported Feishu table
         if: env.RUN_MODE == 'check_connection'
         run: python scripts/feishu_sync.py --check
@@ -61,13 +79,16 @@ jobs:
         run: python scripts/feishu_sync.py --fill-titles
 
       - name: Install dependencies
-        if: env.RUN_MODE == 'daily'
+        if: env.RUN_MODE == 'daily' || env.RUN_MODE == 'backfill'
         run: pip install --quiet requests deep-translator
 
       - name: Run daily literature pipeline
-        if: env.RUN_MODE == 'daily'
+        if: env.RUN_MODE == 'daily' || env.RUN_MODE == 'backfill'
         env:
           REPORT_DATE: ${{ inputs.report_date }}
+          SEARCH_GROUPS: ${{ inputs.groups }}
+          EDAT_START: ${{ inputs.edat_start }}
+          EDAT_END: ${{ inputs.edat_end }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_PARENT_PAGE_ID: ${{ secrets.NOTION_PARENT_PAGE_ID }}
           NOTION_PARENT_TYPE: ${{ vars.NOTION_PARENT_TYPE }}
@@ -76,7 +97,18 @@ jobs:
           if [ -n "$REPORT_DATE" ]; then
             args+=(--date "$REPORT_DATE")
           fi
+          if [ "$RUN_MODE" = "backfill" ]; then
+            test -n "$EDAT_START" && test -n "$EDAT_END"
+            args+=(--edat-start "$EDAT_START" --edat-end "$EDAT_END")
+            if [ -n "$SEARCH_GROUPS" ]; then
+              args+=(--groups "$SEARCH_GROUPS")
+            fi
+          fi
           python scripts/run_daily.py "${args[@]}"
+
+      - name: Build weekly candidate pool without Feishu writes
+        if: env.RUN_MODE == 'weekly_candidates'
+        run: python scripts/run_daily.py --candidate-pool
 
       - name: Upload daily report and pending records
         if: always()
@@ -89,6 +121,8 @@ jobs:
             output/feishu_*.json
             reports/feishu_pending.json
             reports/title_translations.json
+            reports/search_progress.json
+            reports/weekly_candidates.*
           retention-days: 30
 
       - name: Commit latest report and pending queue

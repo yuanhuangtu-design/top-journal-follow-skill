@@ -37,6 +37,7 @@ import urllib.request
 import urllib.error
 from datetime import datetime, timedelta
 from title_translations import prepare_titles
+from retrieval_policy import load_progress, save_progress, coverage_window, group_query, advance_progress, remember_attempt
 
 TRANSLATION_QUOTA_EXHAUSTED = False
 
@@ -57,13 +58,20 @@ def run_search(query, journals, outdir, max_results, retries=3):
     cmd = [sys.executable, os.path.join(BASE_DIR, "scripts", "literature_search.py"),
            "--query", query, "--journals", journals, "--max", str(max_results), "--output", outdir]
     for attempt in range(1, retries + 1):
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+        try:
+            proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+        except subprocess.TimeoutExpired:
+            print('[ERROR] PubMed group timed out', file=sys.stderr)
+            continue
         if proc.stdout: print(proc.stdout)
         api_warning = "WARNING" in (proc.stderr or "")
         if proc.returncode == 0 and not api_warning:
             latest = os.path.join(outdir, "search_results_latest.json")
             if os.path.exists(latest):
-                with open(latest, "r", encoding="utf-8") as f: return json.load(f)
+                with open(latest, "r", encoding="utf-8") as f:
+                    result = json.load(f)
+                if result.get('meta', {}).get('query_raw') == query:
+                    return result
         else:
             if api_warning: print("[WARN] PubMed API请求异常", file=sys.stderr)
             print(proc.stderr, file=sys.stderr)
@@ -76,7 +84,7 @@ def run_search(query, journals, outdir, max_results, retries=3):
 def refetch_missing_abstracts(papers):
     import xml.etree.ElementTree as ET
     for p in papers:
-        if p.get("abstract"): continue
+        if p.get("abstract") or p.get('abstract_status') == 'not_provided': continue
         for _ in range(2):
             url = f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id={p['pmid']}&retmode=xml&rettype=abstract"
             req = urllib.request.Request(url, headers={"User-Agent": "TopJournalSkill/2.0"})
@@ -121,7 +129,6 @@ def relevance_score(paper, boost_words):
 
 
 def grade_paper(score):
-    if score >= 8: return "必读"
     if score >= 3: return "推荐"
     return "浏览"
 
@@ -190,17 +197,22 @@ def translate_with_timeout(text, timeout=60):
         except concurrent.futures.TimeoutError: return ""  # 超时返回空，避免英文原文污染中文字段
 
 
-def build_report(groups, papers, config, report_date, edat_date):
+def build_report(groups, papers, config, report_date, edat_date, windows=None):
     meta = {"report_date": str(report_date), "target_edat": str(edat_date), "pipeline": "PubMed E-utilities",
-            "source": "NCBI PubMed（GitHub Actions 定时抓取）", "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+            "source": "NCBI PubMed（GitHub Actions 定时抓取）", "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "strategy_version": config.get('strategy_version', ''), "priority_note": "自动相关度仅作推荐；必读由读者判断"}
     group_records = []
     for gname, res in groups.items():
         label = config["group_labels"].get(gname, gname)
+        bounds = windows.get(gname) if windows else None
+        interval = {'edat_start': str(bounds[0]), 'edat_end': str(bounds[1])} if bounds else {}
         if not res:
-            group_records.append({"group": gname, "label": label, "count": 0, "pmids": [], "status": "failed"}); continue
+            group_records.append({"group": gname, "label": label, "count": 0, "pmids": [], "status": "failed", **interval}); continue
         pmids = [p.get("pmid") for p in res.get("papers", [])]
         group_records.append({"group": gname, "label": label, "count": res.get("retrieved", 0),
-                              "total": res.get("total_results", 0), "pmids": pmids, "status": "ok"})
+                              "total": res.get("total_results", 0), "pmids": pmids,
+                              "status": "ok" if res.get('complete') is True else "partial", **interval,
+                              "query": res.get('meta', {}).get('query_pubmed', '')})
     paper_list = []
     for idx, p in enumerate(papers, 1):
         score, hits = relevance_score(p, config["relevance_boost_words"])
@@ -209,7 +221,10 @@ def build_report(groups, papers, config, report_date, edat_date):
             "authors": p.get("authors", []), "pubdate": p.get("pubdate", ""), "doi": p.get("doi", ""),
             "url": p.get("url", ""), "abstract": p.get("abstract", ""), "abstract_zh": p.get("_abstract_zh", ""),
             "hit_groups": p.get("_hit_groups", []), "group_count": p.get("_group_count", 0),
-            "relevance_score": score, "relevance_hits": hits[:8], "priority": grade_paper(score)})
+            "relevance_score": score, "relevance_hits": hits[:8], "priority": grade_paper(score),
+            "publication_types": p.get('publication_types', []), "publication_label": p.get('publication_label', '待核对'),
+            "abstract_status": p.get('abstract_status', 'unknown'), "related_articles": p.get('related_articles', [])})
+    meta['search_complete'] = all(g['status'] == 'ok' for g in group_records)
     return {"meta": meta, "group_records": group_records, "dedup_total": len(papers), "papers": paper_list}
 
 HTML_TEMPLATE = """<!DOCTYPE html>
@@ -232,7 +247,9 @@ def render_html(report, groups):
         label = gr["label"]; status = "✓" if gr["status"] == "ok" else "✗"; count = gr.get("count", 0)
         pmid_str = ", ".join(str(x) for x in gr.get("pmids", [])[:15])
         if gr.get("total", 0) > len(gr.get("pmids", [])): pmid_str += " …"
-        group_rows.append(f"<tr><td>{status}</td><td>{esc(label)}</td><td>{'完成' if gr['status']=='ok' else '失败'}</td><td>{count}</td><td style='font-size:.75rem;'>{esc(pmid_str) or '无'}</td></tr>")
+        status_text = {'ok': '完成', 'partial': '未完整获取', 'failed': '失败'}[gr['status']]
+        interval = f"<br>{gr.get('edat_start', '')} 至 {gr.get('edat_end', '')}"
+        group_rows.append(f"<tr><td>{status}</td><td>{esc(label)}{interval}</td><td>{status_text}</td><td>{count} / {gr.get('total', count)}</td><td style='font-size:.75rem;'>{esc(pmid_str) or '无'}</td></tr>")
     sections = []
     for gr in report["group_records"]:
         label = gr["label"]; papers_in_group = [p for p in report["papers"] if gr["group"] in p["hit_groups"]]
@@ -243,6 +260,12 @@ def render_html(report, groups):
             links = f'<a href="{esc(p["url"])}" target="_blank">PubMed</a>' + (f' · <a href="https://doi.org/{esc(p["doi"])}" target="_blank">DOI</a>' if p["doi"] else "")
             meta_html = f"PMID {p['pmid']} · {esc(p['journal'])} · {esc(p['pubdate'])}<br>作者：{esc(authors)}<br>链接：{links}<br>命中检索：{', '.join(report['group_records'][i]['label'] for i, g in enumerate(report['group_records']) if g['group'] in p['hit_groups'])}"
             abs_html = f'<div class="p-abs"><strong>摘要：</strong>{esc(p["abstract"])}</div>' if p["abstract"] else ""
+            meta_html += '<br>发表形式：' + esc(p.get('publication_label', '待核对'))
+            if p.get('abstract_status') == 'not_provided':
+                abs_html = '<div class="p-abs">PubMed 未提供摘要，可查看期刊正文。发表形式不代表是否含原始数据。</div>'
+            for related in p.get('related_articles', []):
+                if str(related.get('pmid', '')).isdigit():
+                    meta_html += f'<br>关联文献（{esc(related.get("relation", ""))}）：<a href="https://pubmed.ncbi.nlm.nih.gov/{related["pmid"]}/">PMID {related["pmid"]}</a>'
             abs_zh_html = f'<div class="p-abs-zh"><strong>中文摘要：</strong>{esc(p["abstract_zh"])}</div>' if p.get("abstract_zh") else ""
             title_zh = f'<div class="p-title-zh">{esc(p["title_zh"])}</div>' if p.get("title_zh") else ""
             html_papers.append(f'<div class="paper"><div class="p-title">{esc(p["title"])}{badge}</div>{title_zh}<div class="p-meta">{meta_html}</div>{abs_html}{abs_zh_html}</div>')
@@ -284,7 +307,7 @@ def text_block(block_type, content):
 
 def build_notion_children(report):
     blocks = []; meta = report["meta"]
-    for line in (f"日报日期：{meta['report_date']}", f"目标 PubMed EDAT：{meta['target_edat']}", "检索口径：PubMed Entry Date [EDAT]", f"数据来源：{meta['source']}", "抓取状态：PubMed 官方接口检索完成"):
+    for line in (f"日报日期：{meta['report_date']}", f"目标 PubMed EDAT：{meta['target_edat']}", "检索口径：PubMed Entry Date [EDAT]", f"数据来源：{meta['source']}", '抓取状态：' + ('检索完整' if meta.get('search_complete') else '检索未完整，请检查各组状态')):
         b = text_block("paragraph", line)
         if b: blocks.append(b)
     blocks.append({"object": "block", "type": "heading_2", "heading_2": {"rich_text": [{"type": "text", "text": {"content": "PubMed 检索记录"}}]}})
@@ -343,23 +366,41 @@ def main():
     parser.add_argument("--date", default=None, help="指定日报日期 YYYY-MM-DD")
     parser.add_argument("--no-translate", action="store_true", help="跳过中文翻译")
     parser.add_argument("--config", default=CONFIG_PATH, help="配置文件路径")
+    parser.add_argument('--groups', default='', help='仅运行指定组，逗号分隔')
+    parser.add_argument('--edat-start', help='补抓的入库起始日期 YYYY-MM-DD')
+    parser.add_argument('--edat-end', help='补抓的入库结束日期 YYYY-MM-DD')
+    parser.add_argument('--candidate-pool', action='store_true', help='生成不限期刊周候选，不写入飞书')
     args = parser.parse_args()
     with open(args.config, "r", encoding="utf-8") as f: config = json.load(f)
     report_date = datetime.strptime(args.date, "%Y-%m-%d").date() if args.date else beijing_today()
     edat_date = report_date - timedelta(days=1)
     print(f"[INFO] 日报日期: {report_date}  目标 EDAT: {edat_date}")
-    # 检索口径：最近3天EDAT，避免PubMed某天断更导致漏文献
-    edat_start = edat_date - timedelta(days=2)
-    base_query = f'{config["query"]}[Title/Abstract] AND ("{edat_start}"[EDAT] : "{edat_date}"[EDAT])'
-    group_queries = config.get("group_queries", {})
-    print(f"[INFO] EDAT范围: {edat_start} ~ {edat_date}（最近3天）")
-    groups = {}
+    explicit_start = datetime.strptime(args.edat_start, '%Y-%m-%d').date() if args.edat_start else None
+    explicit_end = datetime.strptime(args.edat_end, '%Y-%m-%d').date() if args.edat_end else None
+    if args.candidate_pool:
+        if args.groups or explicit_start or explicit_end:
+            parser.error('周候选不能与分组或补抓日期一起使用')
+        config['journals'] = {'POOL': ''}
+        config['group_queries']['POOL'] = config['group_queries']['A']
+        config['group_labels']['POOL'] = '不限期刊主题候选（待筛选）'
+        explicit_start, explicit_end = edat_date-timedelta(days=6), edat_date
+        args.no_translate = True
+    if args.groups:
+        selected = args.groups.split(',')
+        if any(group not in config['journals'] for group in selected):
+            parser.error('未知检索组')
+        config['journals'] = {group: config['journals'][group] for group in selected}
+    state = load_progress()
+    groups, windows = {}, {}
     for gname, journals in config["journals"].items():
         print(f"\n[RUN] 组 {gname} 检索开始")
-        gq = group_queries.get(gname)
-        actual_query = f'({gq}) AND ("{edat_start}"[EDAT] : "{edat_date}"[EDAT])' if gq else base_query
-        if gq: print(f"[INFO] 组 {gname} 专用检索式")
-        groups[gname] = run_search(actual_query, journals, os.path.join(OUTPUT_DIR, f"group_{gname}"), config.get("max_results", 100))
+        begin, end = coverage_window(config, gname, edat_date, state, explicit_start, explicit_end)
+        windows[gname] = begin, end
+        if not args.candidate_pool:
+            save_progress(remember_attempt(state, config, gname, begin))
+        print(f'[INFO] EDAT范围: {begin} ~ {end}')
+        actual_query = f'({group_query(config, gname)}) AND ("{begin}"[EDAT] : "{end}"[EDAT])'
+        groups[gname] = run_search(actual_query, journals, os.path.join(OUTPUT_DIR, f"group_{gname}"), config.get("max_results", 500))
     papers = merge_dedupe(groups); papers = refetch_missing_abstracts(papers)
     print(f"\n[INFO] 合并去重后文献数: {len(papers)}")
     if config.get("translate", True) and not args.no_translate:
@@ -387,7 +428,19 @@ def main():
         else: print("[OK] 第一轮全部翻译成功")
     else:
         for p in papers: p["_title_zh"] = ""; p["_abstract_zh"] = ""
-    report = build_report(groups, papers, config, report_date, edat_date)
+    report = build_report(groups, papers, config, report_date, edat_date, windows)
+    if args.candidate_pool:
+        report['meta']['candidate_only'] = True
+        for extension, content in [('json', json.dumps(report, ensure_ascii=False, indent=2)),
+                                   ('html', render_html(report, groups))]:
+            path = os.path.join(BASE_DIR, 'reports', 'weekly_candidates.'+extension)
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            with open(path, 'w', encoding='utf-8') as handle:
+                handle.write(content)
+        print(f"[CANDIDATES] {report['dedup_total']} 篇，不写入飞书；检索完整: {report['meta']['search_complete']}")
+        if not report['meta']['search_complete']:
+            sys.exit(1)
+        return
     if config.get('translate', True) and not args.no_translate:
         report['meta']['title_translation_diag'] = title_diag
     html = render_html(report, groups); html_path = save_html(html, report_date); print(f"[SUCCESS] HTML: {html_path}")
@@ -396,10 +449,15 @@ def main():
     report["meta"]["feishu_diag"] = feishu_diag  # 诊断写入报告，随 latest.json 提交回仓库，免登录即可排查
     print(f"[FEISHU] 写入记录: {feishu_created} / 期望 {feishu_expected}（状态: {feishu_diag.get('status')}）")
     json_path = save_json(report, report_date); print(f"[SUCCESS] JSON: {json_path}")
+    save_progress(advance_progress(state, config, report,
+        feishu_diag.get('verified') is True and feishu_diag.get('pending', 0) == 0))
     print("\n" + "="*60 + "\n  日报摘要\n" + "="*60)
     print(f"  日期: {report_date} | EDAT: {edat_date} | 去重后: {report['dedup_total']} 篇")
     for gr in report["group_records"]: print(f"  {gr['label']}: {gr.get('count', 0)} 篇 ({gr['status']})")
     for p in report["papers"]: print(f"  · [{p['priority']}] PMID {p['pmid']} — {p['title'][:60]}")
+    if not report['meta']['search_complete']:
+        print('[SEARCH-INCOMPLETE] 有检索组失败或结果被截断，未推进该组进度。', file=sys.stderr)
+        sys.exit(1)
     # 飞书异常（获取token失败/字段失败/批次写入失败/部分失败）-> 非0退出，让 GitHub Actions 标红，
     # 避免"假成功"掩盖问题。未配置（skipped）或确无新文献（empty）不算失败。
     if feishu_diag.get("status") in ("failed", "partial"):
