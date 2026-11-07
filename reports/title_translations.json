@@ -297,8 +297,8 @@
       "title_zh": "多发性发作作为全身性癫痫的一种新型符号学。"
     },
     "42984270": {
-      "title": "Human induced pluripotent stem cell-derived cortical neurons from monozygotic twins with the Gα(o1) (K278del) mutation reveal disease mechanisms relevant to GNAO1-related encephalopathy.",
-      "title_zh": "来自具有Gα (o1) (K278del)突变的单卵双胞胎的人诱导多能干细胞衍生的皮质神经元揭示了与GNAO1相关脑病相关的疾病机制。"
+      "title": "Human induced pluripotent stem cell-derived cortical neurons from monozygotic twins with the Gαo1 K278del mutation reveal disease mechanisms relevant to GNAO1-related encephalopathy.",
+      "title_zh": "来自具有Gαo1 K278del突变的单卵双胞胎的人诱导多能干细胞衍生的皮质神经元揭示了与GNAO1相关脑病相关的疾病机制。"
     },
     "42984249": {
       "title": "Treatment patterns, strategies, and preferences after first anti-seizure medication failure in focal epilepsy: Findings from the SANAD and SANAD II trial cohorts and a survey of UK epilepsy specialists.",
@@ -591,26 +591,35 @@
     "42955756": {
       "title": "AEGS-HI: An adaptively Enhanced Filtering Algorithm for Removing FES Artifacts and M-waves in Surface EMG under Non-Integer Sampling Ratios.",
       "title_zh": "AEGS-HI ：一种自适应增强的滤波算法，用于在非整数采样率下去除表面肌电图中的FES伪影和M波。"
-    }
-  },
-  "pending": {
+    },
+    "42984267": {
+      "title": "Implementation of the seizure code in a tertiary hospital: Effects on emergency care times and clinical outcomes in severe seizures.",
+      "title_zh": "在三级医院实施癫痫发作代码：对严重癫痫发作中的紧急护理时间和临床结果的影响。"
+    },
     "42955757": {
-      "title": "Cross-Domain Slow Wave Sleep Detection from Single-Lead EEG in Pediatric Congenital Heart Disease Recovery."
+      "title": "Cross-Domain Slow Wave Sleep Detection from Single-Lead EEG in Pediatric Congenital Heart Disease Recovery.",
+      "title_zh": "儿童先天性心脏病康复中单导联脑电图的跨域慢波睡眠检测。"
     },
     "42956410": {
-      "title": "Motor cortex-based intracortical BCI performance is robust to changes in attentional load during dual-tasking."
+      "title": "Motor cortex-based intracortical BCI performance is robust to changes in attentional load during dual-tasking.",
+      "title_zh": "基于运动皮层的皮层内BCI性能对双重任务期间的注意力负荷变化具有鲁棒性。"
     },
     "42957065": {
-      "title": "Serum proteomic correlates of arts and cultural engagement and their associations with health outcomes: cross-sectional and longitudinal analyses in the UK Household Longitudinal Study."
+      "title": "Serum proteomic correlates of arts and cultural engagement and their associations with health outcomes: cross-sectional and longitudinal analyses in the UK Household Longitudinal Study.",
+      "title_zh": "艺术和文化参与的血清蛋白质组学相关性及其与健康结局的关联：英国家庭纵向研究中的横截面和纵向分析。"
     },
     "42961511": {
-      "title": "Outcome-Blind EEG Microstate Topography After Cardiac Arrest: Spatial Expression of a Lateralized Microstate and Association with Neurological Outcome."
+      "title": "Outcome-Blind EEG Microstate Topography After Cardiac Arrest: Spatial Expression of a Lateralized Microstate and Association with Neurological Outcome.",
+      "title_zh": "心脏骤停后的结局盲脑电图微状态地形图：侧微状态的空间表达及其与神经系统结局的关联"
     },
     "42962828": {
-      "title": "EEG Feature-level integration for robust command generation in SSVEP-based brain-computer interfaces."
+      "title": "EEG Feature-level integration for robust command generation in SSVEP-based brain-computer interfaces.",
+      "title_zh": "EEG功能级集成，用于在基于SSVEP的脑机接口中生成强大的命令。"
     },
     "42963370": {
-      "title": "Genotype and phenotype analyses of 689 individuals with PCDH19-clustering epilepsy."
+      "title": "Genotype and phenotype analyses of 689 individuals with PCDH19-clustering epilepsy.",
+      "title_zh": "689例PCDH19-聚集性癫痫患者的基因型和表型分析。"
     }
-  }
+  },
+  "pending": {}
 }
