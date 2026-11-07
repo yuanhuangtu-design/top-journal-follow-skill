@@ -379,39 +379,69 @@
     "42906586": {
       "title": "Towards semantic brain-computer interfacing: The graded inventory of semantic triggers (GIST) paradigm.",
       "title_zh": "走向语义脑机接口：语义触发器（ GIST ）范式的分级清单。"
+    },
+    "42988288": {
+      "title": "Temporal coupling shapes the effects of prolonged muscle-tendon vibration on sensorimotor EEG activity during motor imagery.",
+      "title_zh": "时间耦合塑造了运动成像过程中肌腱振动延长对感觉运动脑电活动的影响。"
+    },
+    "42987436": {
+      "title": "Comprehensive benchmarking of EEG biomarkers for Parkinson's disease: robustness, reliability, and clinical discriminability across multiple datasets.",
+      "title_zh": "帕金森病脑电图生物标志物的综合基准：多个数据集的鲁棒性、可靠性和临床可辨识性。"
+    },
+    "42987430": {
+      "title": "Coverage collapse and deceptive calibration in EEG fatigue monitoring: a cross-dataset audit under within-session and cross-subject shift.",
+      "title_zh": "脑电疲劳监测中的覆盖范围崩溃和欺骗性校准：会期内和跨受试者转移下的跨数据集审计。"
+    },
+    "42991793": {
+      "title": "Retraction: Open-Loop and Closed-Loop Neuromodulation Across Neurological Disorders Toward Personalized Brain Stimulation: A Narrative Review.",
+      "title_zh": "收回：跨越神经系统疾病的开环和闭环神经调节走向个性化脑刺激：叙事综述。"
+    },
+    "42990874": {
+      "title": "Recurrent latent dynamics in spinal circuits enable a digital twin of autonomic state transitions.",
+      "title_zh": "脊髓回路中的反复潜伏动力学使自主状态转换的数字孪生成为可能。"
+    },
+    "42910489": {
+      "title": "Atmospheric pressure, temperature, and online search activity for epilepsy: A daily time-series study.",
+      "title_zh": "癫痫的大气压力、温度和在线搜索活动：每日时间序列研究。"
+    },
+    "42910536": {
+      "title": "Migraine comorbidity in epilepsy subtypes: Association with focal versus generalized epilepsy and seizure control-A systematic review and meta-analysis.",
+      "title_zh": "癫痫亚型偏头痛合并症：局灶性癫痫与广泛性癫痫和癫痫发作控制的相关性-系统评价和荟萃分析。"
+    },
+    "42913687": {
+      "title": "Decoding attempted handwritten characters based on temporal endovascular neural features.",
+      "title_zh": "根据颞部血管内神经特征解码尝试的手写字符。"
+    },
+    "42913696": {
+      "title": "Transformer networks are robust learners of source localization for EEG measurements.",
+      "title_zh": "变压器网络是脑电测量源定位的强大学习者。"
+    },
+    "42914581": {
+      "title": "Addressing stigma in epilepsy care: a systematic review of personalized anti-stigma interventions.",
+      "title_zh": "解决癫痫护理中的耻辱感：个性化反耻辱感干预措施的系统综述。"
+    },
+    "42914761": {
+      "title": "Cannabidiol in pediatric drug-resistant epilepsies: A systematic review and meta-analysis of seizure responder rates and neurobehavioral outcome reporting.",
+      "title_zh": "小儿耐药性癫痫中的大麻二酚：癫痫反应率和神经行为结局报告的系统综述和荟萃分析。"
+    },
+    "42914762": {
+      "title": "Knowledge, self-management, and health-related quality of life among Omani adults with generalized epilepsy: A cross-sectional study.",
+      "title_zh": "阿曼全身性癫痫患者的知识、自我管理和健康相关生活质量：一项横断面研究。"
+    },
+    "42918434": {
+      "title": "Coarse motor-state structure across paired preoperative fMRI and intraoperative ECoG in patients with brain tumors.",
+      "title_zh": "脑肿瘤患者配对术前fMRI和术中ECoG的粗运动状态结构。"
+    },
+    "42918435": {
+      "title": "Do neuroimaging data have higher-order interactions?",
+      "title_zh": "神经影像数据是否具有高阶相互作用？"
+    },
+    "42919255": {
+      "title": "Neural mechanisms underlying loss of functional independence after stroke: EEG evidence of impaired motor-to-sensory directed connectivity on the affected side.",
+      "title_zh": "中风后功能独立性丧失的神经机制：受影响侧运动-感觉定向连接受损的脑电图证据。"
     }
   },
   "pending": {
-    "42910489": {
-      "title": "Atmospheric pressure, temperature, and online search activity for epilepsy: A daily time-series study."
-    },
-    "42910536": {
-      "title": "Migraine comorbidity in epilepsy subtypes: Association with focal versus generalized epilepsy and seizure control-A systematic review and meta-analysis."
-    },
-    "42913687": {
-      "title": "Decoding attempted handwritten characters based on temporal endovascular neural features."
-    },
-    "42913696": {
-      "title": "Transformer networks are robust learners of source localization for EEG measurements."
-    },
-    "42914581": {
-      "title": "Addressing stigma in epilepsy care: a systematic review of personalized anti-stigma interventions."
-    },
-    "42914761": {
-      "title": "Cannabidiol in pediatric drug-resistant epilepsies: A systematic review and meta-analysis of seizure responder rates and neurobehavioral outcome reporting."
-    },
-    "42914762": {
-      "title": "Knowledge, self-management, and health-related quality of life among Omani adults with generalized epilepsy: A cross-sectional study."
-    },
-    "42918434": {
-      "title": "Coarse motor-state structure across paired preoperative fMRI and intraoperative ECoG in patients with brain tumors."
-    },
-    "42918435": {
-      "title": "Do neuroimaging data have higher-order interactions?"
-    },
-    "42919255": {
-      "title": "Neural mechanisms underlying loss of functional independence after stroke: EEG evidence of impaired motor-to-sensory directed connectivity on the affected side."
-    },
     "42933029": {
       "title": "Accurate EEG-based linear state-space model of cortical dynamics during a passive motor task with exogenous input."
     },

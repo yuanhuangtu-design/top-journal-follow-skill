@@ -1,28 +1,28 @@
 {
   "meta": {
-    "report_date": "2026-11-06",
-    "target_edat": "2026-11-05",
+    "report_date": "2026-11-07",
+    "target_edat": "2026-11-06",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-11-06 01:21:40",
+    "generated_at": "2026-11-07 00:34:43",
     "title_translation_diag": {
       "status": "ok",
       "missing_title_pmids": [],
-      "pending_titles": 26,
-      "cached_titles": 95
+      "pending_titles": 16,
+      "cached_titles": 110
     },
     "feishu_diag": {
       "status": "ok",
       "stage": "complete",
-      "searched": 26,
-      "created": 14,
-      "expected": 14,
+      "searched": 20,
+      "created": 5,
+      "expected": 5,
       "verified": true,
-      "candidates": 26,
-      "dedup_skipped": 12,
+      "candidates": 20,
+      "dedup_skipped": 15,
       "titles_updated": 10,
-      "missing_titles": 26,
-      "closed_loop_papers": 50,
+      "missing_titles": 16,
+      "closed_loop_papers": 52,
       "closed_loop_missing_titles": 0,
       "pending": 0
     }
@@ -39,8 +39,8 @@
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 13,
-      "total": 13,
+      "count": 7,
+      "total": 7,
       "pmids": [
         "42984305",
         "42984304",
@@ -48,13 +48,7 @@
         "42984270",
         "42984249",
         "42984217",
-        "42981749",
-        "42976532",
-        "42976531",
-        "42976516",
-        "42975879",
-        "42975788",
-        "42975562"
+        "42981749"
       ],
       "status": "ok"
     },
@@ -69,36 +63,36 @@
     {
       "group": "C",
       "label": "脑电信号分析方法",
-      "count": 8,
-      "total": 8,
+      "count": 9,
+      "total": 9,
       "pmids": [
+        "42988288",
+        "42987436",
+        "42987430",
         "42986730",
         "42986729",
         "42983555",
         "42982009",
         "42981608",
-        "42981600",
-        "42976384",
-        "42976382"
+        "42981600"
       ],
       "status": "ok"
     },
     {
       "group": "D",
       "label": "闭环神经调控 · Closed-loop Neuromodulation",
-      "count": 5,
-      "total": 5,
+      "count": 4,
+      "total": 4,
       "pmids": [
+        "42991793",
+        "42990874",
         "42985312",
-        "42978792",
-        "42977372",
-        "42975430",
-        "42973902"
+        "42978792"
       ],
       "status": "ok"
     }
   ],
-  "dedup_total": 26,
+  "dedup_total": 20,
   "papers": [
     {
       "index": 1,
@@ -361,7 +355,7 @@
       "doi": "10.1016/j.yebeh.2026.111377",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42981749/",
       "abstract": "OBJECTIVE: Racial and ethnic disparities in epilepsy outcomes are well documented, but underlying mechanisms remain incompletely understood. We examined disparities in health status, health literacy, and healthcare access among adults with epilepsy and assessed the contribution of socioeconomic status (SES).\nMETHODS: Adults with epilepsy were identified from the All of Us Research Program Controlled Tier Curated Data Repository (v2024Q3R9) using SNOMED and OMOP concepts. Participants were categorized as non-Hispanic White (NHW), non-Hispanic Black (NHB), or Hispanic/Latino (HL). Multivariable logistic regression adjusted for age, sex, education, and income to estimate adjusted odds ratios (aORs) for health status, health literacy, and healthcare barriers. Counterfactual mediation analysis with 1,000 bootstrap simulations estimated the proportion of disparities attributable to SES.\nRESULTS: Among 10,095 adults with epilepsy (NHW, n = 5,690; NHB, n = 2,426; HL, n = 1,979), NHB and HL participants had greater socioeconomic disadvantage and higher unadjusted burdens of poor health, limited health literacy, and healthcare barriers. After adjustment, HL participants had higher odds of difficulty understanding health information (aOR, 1.55; 95% CI, 1.26-1.92), needing assistance with health materials (aOR, 1.50; 95% CI, 1.25-1.79), severe pain (aOR, 1.44; 95% CI, 1.24-1.67), and difficulty affording follow-up care (aOR, 1.62; 95% CI, 1.19-2.19). SES accounted for 50-72% of disparities in health literacy and 60-70% of disparities in severe pain.\nCONCLUSION: SES explains a substantial but incomplete proportion of racial and ethnic disparities among adults with epilepsy. Interventions addressing socioeconomic disadvantage, health literacy, language-concordant care, and structural barriers may help reduce persistent inequities. LOE: III.",
-      "abstract_zh": "",
+      "abstract_zh": "目标：癫痫结局中的种族和族裔差异有据可查，但对潜在机制的理解仍不完全。 我们检查了成人癫痫患者在健康状况、健康素养和医疗保健获取方面的差异，并评估了社会经济地位（ SES ）的贡献。\n方法：从All of Us Research Program Controlled Tier Curated Data Repository （ v2024Q3R9 ）中识别出患有癫痫的成年人，使用\nSNOMED和OMOP概念。 参与者被分为非西班牙裔白人（ NHW ）、非西班牙裔黑人（ NHB ）或西班牙裔/拉丁裔（ HL ）。 根据年龄、性别、教育程度和收入调整的多变量逻辑回归，以估计健康状况、健康素养和医疗保健障碍的调整后比值比（ aOR ）。 使用1,000个自举模拟的反事实调解分析估计了归因于SES的差异比例。\n结果\nS ：在10,095名癫痫患者（ NHW ， n = 5,690 ； NHB ， n = 2,426 ； HL ， n = 1,979 ）中， NHB和HL参与者的社会经济劣势更大，健康状况不佳、健康素养有限和医疗保健障碍的未调整负担更高。调整后， HL受试者理解健康信息困难的几率较高（ aOR ， 1.55 ； 95% CI ， 1.26-1.92 ） ，需要健康材料帮助的几率较高（ aOR ， 1.50 ； 95% CI ， 1.25-1.79 ） ， sev\n疼痛（ aOR ， 1.44 ； 95% CI ， 1.24-1.67 ） ，以及难以提供随访护理（ aOR ， 1.62 ； 95% CI ， 1.19-2.19 ）。 SES占健康素养差异的50-72% ，占严重疼痛差异的60-70%。\n结论： SES解释了成人癫痫患者中种族和民族差异的相当大但不完全的比例。 针对社会经济劣势、健康素养、语言一致性护理和结构性\n障碍可能有助于减少持续存在的不平等。LOE ： III.",
       "hit_groups": [
         "B1"
       ],
@@ -374,213 +368,100 @@
     },
     {
       "index": 8,
-      "pmid": "42976532",
-      "title": "Temporal trends in GBD idiopathic epilepsy burden across 43 European countries, 1990-2023.",
-      "title_zh": "1990-2023年43个欧洲国家GBD特发性癫痫负担的时间趋势。",
-      "journal": "Seizure",
-      "iso_journal": "Seizure",
+      "pmid": "42988288",
+      "title": "Temporal coupling shapes the effects of prolonged muscle-tendon vibration on sensorimotor EEG activity during motor imagery.",
+      "title_zh": "时间耦合塑造了运动成像过程中肌腱振动延长对感觉运动脑电活动的影响。",
+      "journal": "NeuroImage",
+      "iso_journal": "Neuroimage",
       "authors": [
-        "Brigo F",
-        "Brigiari G",
-        "Lattanzi S",
-        "Zelano J",
-        "Trinka E"
+        "Amiez N",
+        "Guillot A",
+        "Monjo F",
+        "Marchand F",
+        "Daligault S",
+        "Rienzo FD"
       ],
-      "pubdate": "2026 Oct 27",
-      "doi": "10.1016/j.seizure.2026.10.015",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42976532/",
-      "abstract": "AIM: To quantify long-term trends in Global Burden of Disease (GBD) idiopathic epilepsy (genetic/unknown-cause epilepsy) across European countries from 1990-2023, examining overall burden, disability, and burden from premature mortality.\nMETHODS: We analyzed age-standardized Disability-Adjusted Life Years (DALY), Years of Life Lost (YLL), and Years Lived with Disability (YLD) in 43 European countries using GBD 2023 data. Country-specific Estimated Annual Percentage Changes (EAPCs) summarized average long-term trends from 1990 to 2023, and longitudinal models estimated the average European trend. Additional analyses tested whether the main findings were sensitive to the shape of the time trend, correlation between nearby years, or the influence of individual and small countries.\nRESULTS: The burden declined on average across Europe, but national trajectories differed substantially. The estimated average annual changes were -0.59% for DALY (95% CI -0.89 to -0.28), -0.60% for YLL (-1.08 to -0.13), and -0.54% for YLD (-0.73 to -0.35). Some of the largest reductions occurred in selected Eastern European and former Soviet countries, particularly for YLL, but this pattern was not uniform across Eastern Europe. Declines were greater in males than females for all three burden measures. The overall European decline remained consistent across the additional analyses.\nCONCLUSIONS: Age-standardized DALY, YLL, and YLD rates for GBD idiopathic epilepsy declined on average across 43 European countries from 1990 to 2023. This overall improvement masked major national differences, particularly in burden from premature mortality. Country-specific monitoring remains important because the European average does not describe all national trajectories.",
+      "pubdate": "2026 Nov 5",
+      "doi": "10.1016/j.neuroimage.2026.122330",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42988288/",
+      "abstract": "Motor imagery (MI) recruits sensorimotor networks overlapping those engaged during physical execution and represents a promising rehabilitation tool. While concurrent afferent stimulation enhances MI-related cortical engagement, the effects of prolonged proprioceptive conditioning prior to MI remain unexplored. This study investigated whether prolonged muscle-tendon vibration (MTV) could modulate cortical activity during subsequent MI, indexed by electroencephalographic alpha- and beta-band event-related desynchronization (ERD). Twenty healthy adults performed imagined maximal isometric knee extensions before and after 20-minute suprapatellar MTV (100 Hz) or SHAM vibration (30 Hz with foam interface) in counterbalanced sessions. Cortical engagement was assessed via EEG burst detection over central electrodes (C3, Cz, C4). Maximal force capacity, submaximal force estimation performance, and cortical responses during combined MI and MTV were also evaluated. MTV induced stronger vibratory responses than SHAM, consistent with enhanced proprioceptive afferent activation. Following MTV, voluntary force outcomes showed near-threshold changes consistent with the expected direction, namely reduced maximal force capacity and altered submaximal force calibration, suggesting modified proprioceptive feedback. MI performed after MTV conditioning exhibited reduced alpha- and beta-band ERD compared to SHAM, with greater vibratory-induced responses being associated with a less pronounced post-vibration beta ERD. Conversely, when MI was performed concurrently with MTV following conditioning, alpha-band ERD increased selectively in the MTV session, with no modulation in the beta band. These findings suggest that prolonged proprioceptive conditioning modulates MI-related cortical engagement differently depending on the sensorimotor context in which imagery is performed. Such state-dependent effects may support distinct intervention strategies aimed either at recalibrating maladaptive sensorimotor patterns or at enhancing cortical recruitment in rehabilitation contexts.",
       "abstract_zh": "",
       "hit_groups": [
-        "B1"
+        "C"
       ],
       "group_count": 1,
-      "relevance_score": 9,
+      "relevance_score": 5,
       "relevance_hits": [
-        "epilepsy"
+        "electroencephalogr",
+        "eeg",
+        "adaptive",
+        "stimulation"
       ],
-      "priority": "必读"
+      "priority": "推荐"
     },
     {
       "index": 9,
-      "pmid": "42976531",
-      "title": "Predicting the risk of seizure recurrence after antiseizure medication withdrawal in children with epilepsy: An individualized and web-based clinical decision support model.",
-      "title_zh": "预测癫痫儿童停用抗癫痫药物后癫痫复发的风险：一个个性化和基于网络的临床决策支持模型。",
-      "journal": "Seizure",
-      "iso_journal": "Seizure",
+      "pmid": "42987436",
+      "title": "Comprehensive benchmarking of EEG biomarkers for Parkinson's disease: robustness, reliability, and clinical discriminability across multiple datasets.",
+      "title_zh": "帕金森病脑电图生物标志物的综合基准：多个数据集的鲁棒性、可靠性和临床可辨识性。",
+      "journal": "Journal of neural engineering",
+      "iso_journal": "J Neural Eng",
       "authors": [
-        "Yücel G",
-        "Arslan AK",
-        "Bıçakcıoğlu I",
-        "Özgör B"
+        "Hajipour Sardouie S",
+        "Naseri M",
+        "Babaei M",
+        "Kavian Z",
+        "Mehrtash S",
+        "Faramarzi MH",
+        "Mirian MS",
+        "McKeown MJ"
       ],
-      "pubdate": "2026 Nov 1",
-      "doi": "10.1016/j.seizure.2026.11.001",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42976531/",
-      "abstract": "BACKGROUND: To determine seizure recurrence rates and independent risk factors following antiseizure medication (ASM) withdrawal in pediatric epilepsy, and integrate these findings into a personalized web-based clinical decision support system (CDSS).\nMETHODS: In this prospective cohort study, 318 pediatric epilepsy patients with ≥24 months of clinical seizure freedom and completely normal pre-withdrawal EEGs were evaluated during ASM withdrawal. Independent risk factors were identified using a multivariable Cox proportional hazards model and embedded into a dynamic web tool.\nRESULTS: Seizure recurrence occurred in 25.8% (n = 82) of patients (mean time: 4.70 ± 13.96 months). The Cox model demonstrated acceptable discrimination (C-index = 0.808, optimism-corrected C-index = 0.769). Independent predictors of recurrence were status epilepticus (SE; HR = 2.718, 95% CI: 1.193-6.194; p = 0.017), febrile seizures (FS; HR = 2.300, 95% CI: 1.214-4.356; p = 0.011), and active epilepsy duration (HR = 1.022 per month, 95% CI: 1.016-1.027; p < 0.001). Compared to ≤24 months, pre-withdrawal seizure freedom of 25-35 months (HR = 0.231, p = 0.001) and ≥36 months (HR = 0.232, p = 0.002) both conferred an approximate 77% risk reduction. Mandatory pre-withdrawal EEG normalization served as a controlled methodological feature isolating clinical predictors in EEG-normal children. Among 35 patients undergoing a second withdrawal attempt, 11 (31.4%) experienced recurrence.\nCONCLUSIONS: SE, FS, active epilepsy duration, and pre-withdrawal seizure-free duration independently predict recurrence in children with normal pre-withdrawal EEGs. Embedding this model into a web tool enables dynamic, evidence-based risk stratification in pediatric practice.",
+      "pubdate": "2026 Nov 5",
+      "doi": "10.1088/1741-2552/aebe69",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42987436/",
+      "abstract": "Electroencephalography (EEG) provides a high-temporal-resolution, noninvasive window into some of the abnormalities underlying Parkinson's disease (PD), yet reported electrophysiological biomarkers vary widely across studies due to differences in preprocessing, feature extraction, and analytical pipelines. Here we provide the first comprehensive, multi-dataset benchmarking of 16 EEG-derived biomarkers, including phase-amplitude coupling, beta burst metrics, aperiodic components, complexity measures, and beta waveform features, to evaluate their robustness, reliability, and clinical discriminability. Using three independent resting-state EEG datasets, with two preprocessing conditions evaluated for one dataset, we assessed the effects of preprocessing, window length, within-session variability, channel aggregation strategies, and clinical group differences (healthy controls vs. PD OFF-medication, healthy controls vs. PD ON-medication, and PD OFF- vs. ON-medication). Cross-dataset reproducibility of group-level effects was additionally evaluated using effect-size pattern similarity, biomarker rank concordance, effect-direction consistency, and random-effects meta-analysis. &#xD;Aperiodic features, entropy and complexity measures, and fractal metrics demonstrated high methodological robustness across preprocessing methods, window lengths, and aggregation strategies, and several showed disease- and medication-related effects across datasets, although effect magnitude and statistical significance varied across datasets and analytical conditions. In contrast, oscillatory biomarkers, including beta-gamma phase-amplitude coupling, burst-derived metrics, and waveform-asymmetry features, showed substantial variability across methodological choices and lower within-session consistency. However, this methodological sensitivity should not necessarily be interpreted as lower biological relevance, as these measures may capture more transient or state-dependent physiological dynamics. Fully-denoised data improved group-level separability, for several biomarkers in Dataset 1. Together, these findings identify several biomarkers with comparatively strong methodological robustness for further biological and clinical validation and highlight methodological factors that contribute to inconsistencies in the PD literature. This benchmarking framework provides practical guidance for standardizing biomarker analysis while emphasizing that methodological robustness, biological sensitivity, and clinical utility represent distinct dimensions of biomarker performance.",
       "abstract_zh": "",
       "hit_groups": [
-        "B1"
+        "C"
       ],
       "group_count": 1,
-      "relevance_score": 33,
+      "relevance_score": 14,
       "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "seizure",
-        "seizures",
-        "status epilepticus",
+        "electroencephalogr",
         "eeg",
-        "antiseizure"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 10,
-      "pmid": "42976516",
-      "title": "Full title: From neural excitability to volatile signatures: A mechanistic hypothesis for pre-ictal volatile organic compound signatures in epilepsy.",
-      "title_zh": "全称：从神经兴奋性到挥发性特征：癫痫发作前挥发性有机化合物特征的机械假说。",
-      "journal": "Epilepsy research",
-      "iso_journal": "Epilepsy Res",
-      "authors": [
-        "Bearden DJ",
-        "Galanti AM",
-        "Rehim E",
-        "Wheless JW",
-        "Haidekker M"
-      ],
-      "pubdate": "2026 Oct 28",
-      "doi": "10.1016/j.eplepsyres.2026.107948",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42976516/",
-      "abstract": "OBJECTIVE: Seizure unpredictability remains a major contributor to morbidity in epilepsy, and biomarkers capable of identifying pre-ictal states are critically needed. Volatile organic compounds (VOCs) have emerged as potential noninvasive indicators of seizure susceptibility, yet the biological mechanisms linking pre-ictal neural states to peripheral volatile signatures remain poorly understood.\nMETHODS: We conducted a narrative review in accordance with the Scale for the Assessment of Narrative Review Articles (SANRA) criteria integrating evidence from epilepsy neurobiology, oxidative stress, autonomic physiology, volatilomics, and seizure-detection science to develop a mechanistic hypothesis linking pre-ictal physiological processes to seizure-associated volatile signatures.\nRESULTS: Evidence supports several components of the proposed mechanistic hypothesis, although the strength and directness of evidence vary across pathway components. Pre-ictal states have been associated with increased neuronal excitability, altered neurophysiology, and heightened metabolic demand, creating conditions favorable for oxidative stress. Lipid peroxidation generates volatile and semi-volatile metabolites that can enter systemic circulation and become detectable peripherally. Autonomic modulation may further influence their expression and detectability. Human olfactory and analytical studies provide preliminary evidence for seizure-associated and pre-ictal volatile signatures. Although the complete pathway has not been experimentally validated, available evidence is consistent with a biologically plausible hypothesis linking central physiological processes to peripheral volatile signals.\nSIGNIFICANCE: This review proposes a multilevel mechanistic hypothesis for seizure-associated volatile signature generation. Volatile signatures are conceptualized as downstream reflections of physiological states associated with seizure susceptibility. This framework provides a foundation for future investigation of VOC-based seizure forecasting approaches in epilepsy.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 24,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "ictal",
         "biomarker"
       ],
       "priority": "必读"
     },
     {
-      "index": 11,
-      "pmid": "42975879",
-      "title": "Late electroencephalographic seizure-risk findings and restricted diffusion on magnetic resonance imaging as seizure-burden markers associated with neurological deficits after status epilepticus in a remote or chronic cohort.",
-      "title_zh": "在远程或慢性队列中，脑电图晚期癫痫发作风险发现和磁共振成像作为与癫痫持续状态后神经系统缺陷相关的癫痫发作负担标志物的扩散受限。",
-      "journal": "Epilepsia",
-      "iso_journal": "Epilepsia",
+      "index": 10,
+      "pmid": "42987430",
+      "title": "Coverage collapse and deceptive calibration in EEG fatigue monitoring: a cross-dataset audit under within-session and cross-subject shift.",
+      "title_zh": "脑电疲劳监测中的覆盖范围崩溃和欺骗性校准：会期内和跨受试者转移下的跨数据集审计。",
+      "journal": "Journal of neural engineering",
+      "iso_journal": "J Neural Eng",
       "authors": [
-        "Ohno N",
-        "Neshige S",
-        "Okada R",
-        "Abe T",
-        "Ishihara K",
-        "Nonaka M",
-        "Ishibashi H",
-        "Toko M",
-        "Shishido T",
-        "Agari D",
-        "Yamazaki Y",
-        "Iida K",
-        "Maruyama H"
+        "Kumar S",
+        "Kumar Jha V"
       ],
-      "pubdate": "2026 Nov 3",
-      "doi": "10.1002/epi.70565",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42975879/",
-      "abstract": "OBJECTIVE: To evaluate whether time-dependent electroencephalographic (EEG) seizure risk findings and restricted diffusion on magnetic resonance imaging (MRI) are associated with neurological outcomes after status epilepticus (SE), beyond seizure duration.\nMETHODS: This two-center observational study included consecutive SE patients from 2017 to 2025. We examined three seizure-related markers: seizure duration ≥ 30 min, a 2HELPS2B score ≥ 2 on a late EEG (performed the following day or later after SE onset), and SE-related restricted diffusion on MRI (peri-ictal diffusion-weighted imaging hyperintensity with reduced apparent diffusion coefficient values). Outcomes were overall neurological worsening and SE-attributable focal neurological deficits at discharge. Multivariable models included the three markers and age> 65 years, with further adjustment for stupor or coma at admission and third-line therapy.\nRESULTS: Of 440 patients with suspected SE, 297 had confirmed SE; 221 with an identified seizure focus formed the overall cohort; 127 with remote symptomatic SE or preexisting chronic focal epilepsy formed the remote or chronic cohort. Overall neurological worsening occurred in 96 patients (43.4%) and SE-attributable focal neurological deficits in 68 (30.8%). In univariable analyses, seizure duration ≥ 30 min was associated with both outcomes in the overall cohort. A 2HELPS2B score ≥ 2 on late EEG was associated with both outcomes in both cohorts, whereas high-risk findings on early EEG were not. In multivariable models including seizure duration, restricted diffusion was independently associated with both outcomes in both cohorts, most strongly with focal neurological deficits in the remote or chronic cohort (adjusted odds ratio [OR] = 28.59, 95% confidence interval [CI] = 7.23-154.99). A 2HELPS2B score ≥ 2 on late EEG was independently associated with focal neurological deficits in the remote or chronic cohort (adjusted OR = 4.26, 95% CI = 1.35-14.24), whereas seizure duration ≥ 30 min was not independently associated with either outcome.\nSIGNIFICANCE: High-risk late-EEG findings and restricted diffusion were associated with neurological deficits. These markers may complement seizure duration in estimating cumulative seizure burden and focal brain injury.",
+      "pubdate": "2026 Nov 5",
+      "doi": "10.1088/1741-2552/aebe6a",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42987430/",
+      "abstract": "Electroencephalography-based driver fatigue monitors are judged almost entirely on accuracy, yet a safety monitor is useful only if its stated confidence can be trusted when it is wrong. We audit whether it survives drift within a recording and transfer to a new person.&#xD;Approach. Five model families, from a dense network to a gradient-boosted tree ensemble, run on three public corpora differing in channels, label instrument and elicitation. Calibration is measured pooled, per recording and per class, beside proper scoring rules. Seven conformal recalibration strategies are compared under one protocol, and we derive a ceiling on the coverage attainable by any rule thresholding a fixed calibration set.&#xD;Main results. Pooled calibration error falls as accuracy falls, so the headline reliability metric improves as the model degrades. Aggregated per recording, the same predictions reverse it, exceeding the pooled estimate in all fifteen session-time bins of both continuously annotated corpora (sign test, p = 3.1 × 10⁻⁵); on the fatigued class the concealed error reaches 4.9 times the pooled value. Under transfer, class-balanced calibration error rises by 0.107 to 0.254 in all fifteen model-corpus cells, where coverage falls below its 0.90 target, to 0.533 at worst, with empty prediction sets in four. The ceiling held on all 32 subject streams and bound 20 below target, separating recoverable methods in advance. Rolling re-estimation under a finite-sample correction cleared it on 19 of those 20, held 0.886 to 0.909 in every cell, and cut between-subject coverage variability from 0.205 to 0.026 at constant update cost.&#xD;Significance. Pooled calibration error and marginal coverage can both look healthy while a monitor is least reliable in the states that should raise an alarm. Three cheap diagnostics separate a calibrated monitor from one averaging failures of opposite sign, and one that covers from one that abstains.",
       "abstract_zh": "",
       "hit_groups": [
-        "B1"
+        "C"
       ],
       "group_count": 1,
-      "relevance_score": 42,
+      "relevance_score": 2,
       "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "seizure",
-        "status epilepticus",
-        "ictal",
         "electroencephalogr",
-        "eeg",
-        "focal"
+        "eeg"
       ],
-      "priority": "必读"
+      "priority": "浏览"
     },
     {
-      "index": 12,
-      "pmid": "42975788",
-      "title": "The risk of seizure-affected pregnancy in Australian women with epilepsy.",
-      "title_zh": "澳大利亚女性癫痫患者癫痫发作妊娠的风险。",
-      "journal": "Epileptic disorders : international epilepsy journal with videotape",
-      "iso_journal": "Epileptic Disord",
-      "authors": [
-        "Vajda FJE",
-        "O'Brien TJ",
-        "Graham JE",
-        "Hitchcock AE",
-        "Perucca P",
-        "Lander CM",
-        "Vajda SRL",
-        "Eadie MJ"
-      ],
-      "pubdate": "2026 Nov 3",
-      "doi": "10.1002/epd2.70455",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42975788/",
-      "abstract": "OBJECTIVE: We reported earlier that the occurrence of seizures in the pre-pregnancy year was the main determinant of the following pregnancy being seizure-affected. Additional risk factors were assessed in this study.\nMETHODS: The pregnancies involved first pregnancies of women with epilepsy. Two categories were compared. One category comprised 711 pregnancies in which seizures had occurred during the pre-pregnancy year and where seizures might reasonably be expected to continue to occur during the 9 months involved in any following pregnancy. The other category contained 634 pregnancies that were seizure-free in the pre-pregnancy year. Multivariate logistic regressions were fitted for 1345 subjects for seizure occurrence during pregnancy for co-variates listed to identify statistically seizure-related co-variates.\nRESULTS: Seizure-affected pregnancy rates in the 1345 pregnancies studied remained stable over the consecutive 5-year intervals from 1999 onwards, viz. 50.5%, 53.9%, 50.3%, 52.8% and 48.2%. Seizure-affected pregnancy was more likely in WWE, who had: (1) Shorter durations of pre-pregnancy freedom from seizures. (2) Focal epilepsy. (3) Not taken ASMs while pregnant. (4) Not used pre-pregnancy folate supplementation. (5) Longer durations of epilepsy. (6) Earlier age onset of epilepsy. The hazard of a seizure-affected next pregnancy was over threefold higher when the pre-pregnancy year was seizure-affected than when it had been seizure-free.\nSIGNIFICANCE: The finding that a year's pre-pregnancy seizure freedom was associated with a reduced risk of seizures in the next pregnancy was expected. The magnitude of the greater than threefold higher seizure risk in the next pregnancy if seizures had occurred in the pre-pregnancy year was not. It identifies a group of women with epilepsy whose medical management during pregnancy warrants particular care.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 41,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures",
-        "focal"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 13,
-      "pmid": "42975562",
-      "title": "Do preclinical seizure models predict success or failure in anti-seizure drug development? A retrospective analysis of 89 compounds with divergent clinical outcomes for epilepsy.",
-      "title_zh": "临床前癫痫模型是否预测抗癫痫药物开发的成功或失败？一项对89种具有不同临床结局的癫痫化合物的回顾性分析。",
-      "journal": "Epilepsia",
-      "iso_journal": "Epilepsia",
-      "authors": [
-        "Löscher W",
-        "Barker-Haliski M"
-      ],
-      "pubdate": "2026 Nov 3",
-      "doi": "10.1002/epi.70541",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42975562/",
-      "abstract": "Anti-seizure medication (ASM) discovery remains a major challenge despite over 30 commercially available options. One persistent obstacle for any promising candidate compound to successfully move from preclinical study to clinical approval has been the ambiguity in preclinical model selection. Which models are most predictive of clinical response and failure? For decades, the maximal electroshock seizure (MES), subcutaneous pentylenetetrazole (s.c. PTZ) seizure, 6-Hz psychomotor seizure, and audiogenic seizure tests in rodents have served as foundational ASM screening models. These tests are generally regarded as suitable models of generalized tonic-clonic seizures (MES), non-convulsive (absence) seizures (PTZ), pharmacoresistant focal seizures (6-Hz test), and brain penetrance and generalized convulsive seizures (audiogenic seizures). Together, these assays have supported high-throughput ASM discovery for decades; however, they primarily measure acute anti-seizure response. Furthermore, they do not model the pathophysiology of epilepsy as a chronic human brain disorder. Critically, as shown here, these models do not accurately predict human treatment-resistant focal epilepsy success potential. The amygdala-kindled rat model (AKM) is a relevant human temporal lobe epilepsy model that is well suited to investigational ASM discovery and has been implemented for such use for decades. We hypothesized that AKM would be the most predictive of clinical success and failure among the widely implemented rodent screening models. Our present analysis of 89 ASMs and investigational new drugs (INDs) thus aimed to define which preclinical signals, if any, in the standard rodent seizure models would best predict clinical outcomes. The primary efficacy endpoint in AKM has traditionally been convulsive seizure suppression or electrographic outcomes (afterdischarge duration), with few groups reporting IND effects on focal seizures. In our retrospective analysis of 89 compounds, we find that the AKM focal seizure endpoint was the most predictive of clinical success. This structured retrospective comparative analysis of ASM and IND responses demonstrates the exceptional predictive validity of the AKM for early ASM discovery for treatment-resistant human focal epilepsy.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 51,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure",
-        "seizures",
-        "convulsive",
-        "temporal lobe",
-        "focal",
-        "generalized",
-        "tonic-clonic"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 14,
+      "index": 11,
       "pmid": "42986730",
       "title": "Mirror Neural System in Hands Motor Imagery with Pictures and Videos Guidance: An EEG-fNIRS Study.",
       "title_zh": "手部运动图像中的镜像神经系统与图片和视频指导：脑电图-fNIRS研究。",
@@ -610,7 +491,7 @@
       "priority": "推荐"
     },
     {
-      "index": 15,
+      "index": 12,
       "pmid": "42986729",
       "title": "Participant-Disjoint EEG Decoding of Instructed Respiratory Conditions Using a Deep Spatio-Respiratory Transformer.",
       "title_zh": "使用深度空间呼吸变压器对指示呼吸状况进行参与者-分开的脑电图解码。",
@@ -639,7 +520,7 @@
       "priority": "必读"
     },
     {
-      "index": 16,
+      "index": 13,
       "pmid": "42983555",
       "title": "Systematic review on the association between brain-related measures and upper limb movement characteristics after stroke.",
       "title_zh": "卒中后大脑相关指标与上肢运动特征相关性的系统综述。",
@@ -675,7 +556,7 @@
       "priority": "推荐"
     },
     {
-      "index": 17,
+      "index": 14,
       "pmid": "42982009",
       "title": "Cortical evoked potentials from deep brain stimulation of the superolateral medial forebrain bundle: An exploratory study.",
       "title_zh": "来自超外侧内侧前脑束深部脑刺激的皮质诱发电位：一项探索性研究。",
@@ -717,7 +598,7 @@
       "priority": "必读"
     },
     {
-      "index": 18,
+      "index": 15,
       "pmid": "42981608",
       "title": "Augmented reality paradigm and EA-DGCNN decoding algorithm for motor imagery in stroke patients.",
       "title_zh": "中风患者运动图像的增强现实范式和EA-DGCNN解码算法。",
@@ -755,7 +636,7 @@
       "priority": "推荐"
     },
     {
-      "index": 19,
+      "index": 16,
       "pmid": "42981600",
       "title": "Decoding sequence auditory expectations for clinical diagnostic and prognostic assessment of prolonged disorders of consciousness.",
       "title_zh": "解码对长期意识障碍的临床诊断和预后评估的序列听觉期望。",
@@ -791,77 +672,79 @@
       "priority": "推荐"
     },
     {
-      "index": 20,
-      "pmid": "42976384",
-      "title": "AIM-STAGE: a self-supervised framework via adaptive interval-aware multi-kernel calibration and spectro-temporal exploration for few-shot EEG staging.",
-      "title_zh": "AIM-STAGE ：通过自适应区间感知多核校准和频谱-时间探索的自我监督框架，用于少量脑电分期。",
-      "journal": "Journal of neural engineering",
-      "iso_journal": "J Neural Eng",
+      "index": 17,
+      "pmid": "42991793",
+      "title": "Retraction: Open-Loop and Closed-Loop Neuromodulation Across Neurological Disorders Toward Personalized Brain Stimulation: A Narrative Review.",
+      "title_zh": "收回：跨越神经系统疾病的开环和闭环神经调节走向个性化脑刺激：叙事综述。",
+      "journal": "Cureus",
+      "iso_journal": "Cureus",
       "authors": [
-        "Liu Y",
-        "Liu T",
-        "Yuan J",
-        "Li Y",
-        "Liu X",
-        "Wang X",
-        "Ma T",
-        "Bi L",
-        "Lin X",
-        "Moghadam Charkari N",
-        "Ganjidoust H",
-        "Msagati TAM",
-        "Guo Q"
+        "Kachhadia MP",
+        "Sibhai I",
+        "Vaghela R",
+        "Topiwala U",
+        "Shaikh JD",
+        "Tsai M",
+        "Borad N",
+        "Simon M",
+        "Ilyas H",
+        "Zahra T"
       ],
-      "pubdate": "2026 Nov 3",
-      "doi": "10.1088/1741-2552/aebd1c",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42976384/",
-      "abstract": "OBJECTIVE: Learning discriminative and generalizable representations from&#xD;electroencephalography (EEG) signals with limited annotations remains a key challenge in&#xD;automatic sleep staging. Supervised deep models depend on large-scale expert labels, yet&#xD;sleep annotation is costly and time-consuming. Existing self-supervised methods often&#xD;underuse EEG spectral-temporal structure and adopt fixed negative-sample strategies,&#xD;which are poorly suited to the continuous transitions and ambiguous boundaries between&#xD;sleep stages. This study proposes AIM-STAGE, a self-supervised representation learning&#xD;framework for limited-label EEG sleep staging.\nAPPROACH: AIM-STAGE comprises three&#xD;modules. (1) Spectral-temporal exploration: maps EEG segments into the time-frequency&#xD;domain through the short-time Fourier transform (STFT), jointly extracting log-power&#xD;and cross-channel phase difference to characterize frequency-band activity and phase&#xD;dynamics. (2) Local-global hybrid encoding: uses a CNN-Transformer encoder, in which&#xD;convolutional residual modules capture local spectro-temporal patterns and a bottleneck&#xD;Transformer models long-range dependencies. (3) Adaptive interval-aware multi-kernel&#xD;calibration: employs multiple Gaussian kernels and dynamic weighting to synthesize&#xD;informative negative representations, improving view consistency and inter-sample&#xD;separability.\nMAIN RESULTS: AIM-STAGE was evaluated on SLEEP-2013, SLEEP-2018,&#xD;SHHS-D, and SHHS-H against ContraWR, DFformer, EEG2Rep, EEGPT, Superlet-MAE,&#xD;and a supervised baseline across 1% to 15% labels. Accuracy improved from 88.67% to&#xD;92.04% on SLEEP-2013, and AIM-STAGE outperformed all baselines on all four datasets&#xD;with higher kappa, macro-F1, and balanced accuracy, including on the pathological&#xD;SHHS-D cohort. Ablation confirmed the contributions of the bottleneck Transformer,positional embeddings, physiology-informed augmentation, and calibration loss. Per-stage&#xD;analysis showed that N1 is the most difficult stage, with F1 ranging from 0.003 to 0.046,&#xD;and adding EOG and EMG markedly improved its precision, recall, and F1.\nSIGNIFICANCE: &#xD;AIM-STAGE offers an interpretable and label-efficient self-supervised solution for EEG&#xD;sleep staging, improving robustness and stage discriminability under scarce-label&#xD;conditions while reducing dependence on manual annotation.&#xD.",
+      "pubdate": "2026 Nov",
+      "doi": "10.7759/cureus.r263",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42991793/",
+      "abstract": "[This retracts the article DOI: 10.7759/cureus.98624.].",
       "abstract_zh": "",
       "hit_groups": [
-        "C"
+        "D"
       ],
       "group_count": 1,
-      "relevance_score": 11,
+      "relevance_score": 4,
       "relevance_hits": [
-        "electroencephalogr",
-        "eeg",
-        "adaptive"
+        "closed-loop",
+        "neuromodulation",
+        "brain stimulation",
+        "stimulation"
       ],
-      "priority": "必读"
+      "priority": "推荐"
     },
     {
-      "index": 21,
-      "pmid": "42976382",
-      "title": "A comprehensive review of biosignal foundation models.",
-      "title_zh": "生物信号基础模型的全面综述。",
-      "journal": "Journal of neural engineering",
-      "iso_journal": "J Neural Eng",
+      "index": 18,
+      "pmid": "42990874",
+      "title": "Recurrent latent dynamics in spinal circuits enable a digital twin of autonomic state transitions.",
+      "title_zh": "脊髓回路中的反复潜伏动力学使自主状态转换的数字孪生成为可能。",
+      "journal": "iScience",
+      "iso_journal": "iScience",
       "authors": [
-        "Lee NKK",
-        "Barmpas K",
-        "Koliousis A",
-        "Panagakis Y",
-        "Adamos DA",
-        "Laskaris N",
-        "Zafeiriou S"
+        "Choo M",
+        "Cho M",
+        "Lee J",
+        "Oh C",
+        "Hong S",
+        "Heo C",
+        "Shon YM",
+        "Park S"
       ],
-      "pubdate": "2026 Nov 3",
-      "doi": "10.1088/1741-2552/aebd1d",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42976382/",
-      "abstract": "Foundation models are emerging as a promising approach to biosignal analysis, offering solutions to common challenges in learning from biosignal data, such as high variability, noise or limited annotations. This survey provides a comprehensive review of the state-of-the-art in this rapidly advancing field. We introduce commonly used biosignal modalities (including EEG, ECG, EMG, EOG and PPG) and discuss their defining characteristics with respect to training large models. We present a structured survey of existing work across unimodal and multimodal settings covering data processing, feature extraction, model architectures, pre-training paradigms and evaluation methods. We identify open challenges such as benchmarking, interpretability and data availability and highlight possible directions for future research. By consolidating our findings from the current literature and opportunities for progress, we aim to guide the development of robust and universal foundation models for biosignals.",
+      "pubdate": "2026 Nov 20",
+      "doi": "10.1016/j.isci.2026.117971",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42990874/",
+      "abstract": "Physiological signals underlying homeostasis, such as blood pressure, are dynamic and nonlinear, shaped by interactions among diverse neurons. In the spinal intermediolateral nucleus (IML), neurons show heterogeneous, monotonic firing changes during blood pressure transitions, intrinsic to control yet difficult to decode. We introduce a manifold-based model reconstructing internal state dynamics from IML activity, beyond prior descriptive frameworks. Brief spinal stimulation lowering blood pressure showed that single-neuron responses could not explain the nonlinear trajectory, so we derived a low-dimensional circular manifold capturing its cyclical evolution. Embedding the manifold as a dynamic reservoir in a recurrent neural network reconstructed trial-to-trial variability and nonlinear blood pressure dynamics generated by the manifold, without a readout. Our results establish the neural manifold as a generative computational substrate for autonomic physiology, a capability that remains largely unexplored in spinal circuits, and a step toward closed-loop spinal neuromodulation.",
       "abstract_zh": "",
       "hit_groups": [
-        "C"
+        "D"
       ],
       "group_count": 1,
-      "relevance_score": 1,
+      "relevance_score": 4,
       "relevance_hits": [
-        "eeg"
+        "neural network",
+        "closed-loop",
+        "neuromodulation",
+        "stimulation"
       ],
-      "priority": "浏览"
+      "priority": "推荐"
     },
     {
-      "index": 22,
+      "index": 19,
       "pmid": "42985312",
       "title": "Advancing Repetitive Transcranial Magnetic Stimulation for Depression: Novel Protocols, Precision Targeting, and Future Directions.",
       "title_zh": "推进针对抑郁症的重复性经颅磁刺激：新方案、精确定位和未来方向。",
@@ -898,7 +781,7 @@
       "priority": "必读"
     },
     {
-      "index": 23,
+      "index": 20,
       "pmid": "42978792",
       "title": "A network-control approach to seizure intervention via adjoint optimal control: a computational study on a connectome-coupled Hopf oscillator model.",
       "title_zh": "一种通过伴随最优控制进行癫痫发作干预的网络控制方法：对连接组耦合Hopf振荡器模型的计算研究。",
@@ -928,149 +811,6 @@
         "focal",
         "hippocampal",
         "closed-loop"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 24,
-      "pmid": "42977372",
-      "title": "The Road ahead: Precision and Personalized Sleep Medicine with Artificial Intelligence.",
-      "title_zh": "未来之路：利用人工智能实现精准和个性化的睡眠医学。",
-      "journal": "Sleep medicine clinics",
-      "iso_journal": "Sleep Med Clin",
-      "authors": [
-        "Abou Jaoude M",
-        "Ravi A",
-        "Sacca V"
-      ],
-      "pubdate": "2026 Dec",
-      "doi": "10.1016/j.jsmc.2026.08.022",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42977372/",
-      "abstract": "Sleep is foundational to cognitive and physiologic health, yet clinical management often relies on generalized approaches that do not fully account for individual sleep architecture. This article examines the integration of artificial intelligence (AI) into personalized sleep medicine. By ingesting multimodal data streams, AI automates the process of clinical data review and drives closed-loop systems beyond static protocols toward neuromodulation that is responsive to the individual's physiologic state. Consumer wearable devices and conversational AI further extend these approaches beyond the laboratory, enabling continuous at-home monitoring, personalized support, and a broader care framework linking patients, computational systems, and clinicians.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 4,
-      "relevance_hits": [
-        "generalized",
-        "closed-loop",
-        "responsive",
-        "neuromodulation"
-      ],
-      "priority": "推荐"
-    },
-    {
-      "index": 25,
-      "pmid": "42975430",
-      "title": "Pediatric Epilepsy Surgery: Global Survey of Surgical Approaches.",
-      "title_zh": "儿童癫痫外科：手术方式的全球调查",
-      "journal": "Neurosurgery",
-      "iso_journal": "Neurosurgery",
-      "authors": [
-        "Ramantani G",
-        "Englot D",
-        "Cserpan D",
-        "Aparicio J",
-        "Arzimanoglou A",
-        "Bingaman W",
-        "Braun K",
-        "Burman RJ",
-        "Cai L",
-        "Cao D",
-        "Caraballo R",
-        "Cross JH",
-        "Cukiert CM",
-        "Curry D",
-        "De Palma L",
-        "Dorfmüller G",
-        "Enslin JMN",
-        "Fallah A",
-        "Ferrand Sorbets S",
-        "Feucht M",
-        "Gill D",
-        "Hallbook T",
-        "Harvey AS",
-        "Holthausen H",
-        "Iwasaki M",
-        "Jiang Y",
-        "Kalbhenn T",
-        "Kannan L",
-        "Kawai K",
-        "Kikuchi T",
-        "Krayenbühl N",
-        "Kunihiro N",
-        "Lallas M",
-        "Munoz Castro C",
-        "Patil SB",
-        "Pieper T",
-        "Roth J",
-        "Smith ML",
-        "Tahir MZ",
-        "Tisdall M",
-        "Tripathi M",
-        "Uda T",
-        "Usui N",
-        "Naduvil Valappil AM",
-        "Wirrell E",
-        "Zorro Guio O",
-        "Cukiert A",
-        "Weiner HL",
-        "ILAE Pediatric Epilepsy Surgery Taskforce and Study Group"
-      ],
-      "pubdate": "2026 Nov 3",
-      "doi": "10.1227/neu.0000000000004282",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42975430/",
-      "abstract": "BACKGROUND AND OBJECTIVES: Pediatric epilepsy surgery is an established treatment, but current global data on surgical practices are limited. This study, conducted by the International League Against Epilepsy Pediatric Epilepsy Surgery Taskforce, provides an updated international overview of surgical approaches and their regional variation.\nMETHODS: Group-level data were collected from 61 epilepsy surgery programs (49 pediatric-only) across 29 countries on 6 continents. All children and adolescents who underwent epilepsy surgery in 2023 were included. The study was designed to enable direct comparison with the similar survey conducted by the International League Against Epilepsy in 2004.\nRESULTS: The cohort comprised 2427 patients. Resections accounted for 50.6% and disconnections for 23.0% of procedures. Resection rates were highest in Oceania (87.3%) and lowest in North America (40.3%). Resections were 43.0% unilobar-most commonly temporal (39.6%) and frontal (32.7%)-and 9.7% multilobar, with 61.9% involving the posterior quadrant. Hemispheric surgeries comprised 12.9% of all cases (highest in South America: 18.1%). Subcortical procedures (eg, for hypothalamic hamartomas or deep-seated lesions) represented 2.7% (highest in South America: 12.1%). Intraoperative electrocorticography was used in 38.3% of cases, most commonly in Oceania (84.1%) and Asia (85.5%). Minimally invasive techniques were used in 7.7% of cases, with the highest rate in North America (16.9%). Laser interstitial thermal therapy was most common (4.9%), followed by radiofrequency ablation (2.1%), endoscopic surgery (0.7%), and radiosurgery (0.1%). Corpus callosotomy was performed in 5.9% of all cases, and no multiple subpial transections were reported. Neurostimulation was used in 14.7% of patients, highest in North America (35.6%), and included vagal nerve stimulation (11.8%), deep brain stimulation (1.5%), and responsive neurostimulation (1.4%).\nCONCLUSION: Resections and disconnections, including extensive multilobar and hemispheric procedures, remain the core procedures of pediatric epilepsy surgery. Although minimally invasive and neuromodulatory techniques are increasingly used in selected regions-particularly North America-their global adoption remains limited.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 26,
-      "relevance_hits": [
-        "epilepsy",
-        "electrocorticography",
-        "responsive",
-        "neurostimulation",
-        "brain stimulation",
-        "deep brain stimulation",
-        "responsive neurostimulation",
-        "vagal"
-      ],
-      "priority": "必读"
-    },
-    {
-      "index": 26,
-      "pmid": "42973902",
-      "title": "Stimulation parameters of epidural spinal cord stimulation for functional recovery after spinal cord injury: a narrative review.",
-      "title_zh": "用于脊髓损伤后功能恢复的硬膜外脊髓刺激参数：叙述性综述",
-      "journal": "Frontiers in neurology",
-      "iso_journal": "Front Neurol",
-      "authors": [
-        "Wang J",
-        "Bieshanbieke Y",
-        "Wang H",
-        "Yang J",
-        "Ji S",
-        "Li Y",
-        "Gu H",
-        "Lou Y"
-      ],
-      "pubdate": "2026",
-      "doi": "10.3389/fneur.2026.1952514",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42973902/",
-      "abstract": "Spinal cord injury (SCI) causes persistent motor, sensory, and autonomic deficits that conventional rehabilitation only partly mitigates. Epidural spinal cord stimulation (EES) can re-enable standing, walking, upper-limb control, and autonomic regulation, yet clinical translation is constrained by pronounced heterogeneity in stimulation parameters and by a weakly controlled evidence base. This narrative review maps stimulation parameters-electrode placement, frequency, intensity, pulse width, waveform, and stimulation mode-onto functional targets after SCI, critically appraises the supporting evidence, and maps scenario-specific parameter considerations onto a descriptive evidence hierarchy. Evidence was identified through targeted, non-systematic searches of PubMed/MEDLINE and citation tracking of key primary studies and reviews through 30 June 2026; human epidural-stimulation studies in SCI reporting parameters or functional outcomes were prioritized, with preclinical studies retained for mechanistic synthesis, transcutaneous trials used only as contextual evidence, and preprints labeled as such. Because no systematic search was performed, the review is presented as a narrative review: evidence is appraised using a design-based hierarchy, human, animal, and preprint findings are explicitly distinguished, and all parameter-level considerations are offered as preliminary observations rather than graded recommendations. Two reproducible motor parameter philosophies emerge-tonic, individually titrated lumbosacral stimulation embedded in intensive activity-based training, and programmed biomimetic (spatiotemporal, dual-mode, closed-loop) approaches-whereas hemodynamic management now has the most standardized parameter set. Evidence for upper-limb, bladder, spasticity, and pain indications remains case-level, and for neuropathic pain no SCI-specific parameter evidence exists. Mechanistic evidence derives predominantly from animal models, and clinical reports are dominated by small uncontrolled series in which stimulation is delivered as one component of a combined stimulation-plus-training intervention. Parameter-level conclusions are therefore preliminary and hypothesis-generating rather than practice-defining; standardized parameter reporting, physiology-based stratification, and adequately powered controlled trials are the priorities for converting EES from individualized experimentation into evidence-based neurorehabilitation.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 11,
-      "relevance_hits": [
-        "closed-loop",
-        "stimulation"
       ],
       "priority": "必读"
     }
