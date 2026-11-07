@@ -475,39 +475,125 @@
     "42850277": {
       "title": "A freestanding submicron electrocorticography electrode array.",
       "title_zh": "一种自支撑的亚微米皮层电图电极阵列"
+    },
+    "42957703": {
+      "title": "Amygdala beta bursts modulate hippocampal neuronal dynamics during human emotional processing.",
+      "title_zh": "杏仁核β爆发在人类情绪处理过程中调节海马神经元动态。"
+    },
+    "42957696": {
+      "title": "Clock neurons modulate seizure timing through a diurnal switch.",
+      "title_zh": "时钟神经元通过昼夜开关调节癫痫发作时间。"
+    },
+    "42957689": {
+      "title": "Zona incerta somatostatin+ neurons modulate seizure progression through hypothalamic circuits.",
+      "title_zh": "生长抑素带+神经元通过下丘脑回路调节癫痫发作进展。"
+    },
+    "42956387": {
+      "title": "Cenobamate in Focal-Onset Refractory and Super-Refractory Status Epilepticus: A Multicenter Cohort Study With Matched Analysis.",
+      "title_zh": "Cenobamate治疗局灶性难治性和超难治性癫痫发作：一项多中心队列研究与匹配分析。"
+    },
+    "42945963": {
+      "title": "Glioma regulates GABAergic signaling to drive hyperactivity and tumor progression.",
+      "title_zh": "胶质瘤调节GABA能信号传导以驱动多动症和肿瘤进展。"
+    },
+    "42945476": {
+      "title": "KCNH1 variants associated with neurodevelopmental disorders exhibit prominent gain of function.",
+      "title_zh": "与神经发育障碍相关的KCNH1变异体表现出显著的功能增益。"
+    },
+    "42932853": {
+      "title": "Groundbreaking Study Identifies Excess Epilepsy Burden and Inequity in Māori Children: Confirms WHO-IGAP Targets.",
+      "title_zh": "开创性研究识别毛利儿童的过度癫痫负担和不平等：确认WHO-IGAP目标。"
+    },
+    "42932852": {
+      "title": "Differences in Epilepsy Etiology, Type, Syndrome, and Severity Between Māori and Non-Māori-Non-Pasifika Children With Epilepsy in New Zealand.",
+      "title_zh": "新西兰癫痫儿童中毛利人和非毛利人的癫痫病因、类型、综合征和严重程度的差异。"
+    },
+    "42931745": {
+      "title": "Internet Intervention for Functional Seizures: A Randomized Clinical Trial.",
+      "title_zh": "功能性癫痫发作的互联网干预：一项随机临床试验。"
+    },
+    "42897303": {
+      "title": "An amygdala-mediated simulation-to-decision cascade aligns interbrain dynamics to solve social dilemmas.",
+      "title_zh": "杏仁核介导的模拟决策级联使大脑间动力学保持一致，以解决社会困境。"
+    },
+    "42895730": {
+      "title": "Vascular Risk Factors and Late-Onset Epilepsy.",
+      "title_zh": "血管危险因素和晚发性癫痫。"
+    },
+    "42888250": {
+      "title": "Conversational brain AI for adaptive epilepsy care.",
+      "title_zh": "用于适应性癫痫护理的对话式大脑人工智能。"
+    },
+    "42886870": {
+      "title": "More Than a Daughter: Margaret A. Lennox-Buchthal (1913-2001), Epileptologist.",
+      "title_zh": "不仅仅是一个女儿： Margaret A. Lennox-Buchthal （ 1913-2001 ） ，癫痫学家。"
+    },
+    "42874606": {
+      "title": "Antibody-mediated encephalitides: distinct diseases with transdisciplinary implications.",
+      "title_zh": "抗体介导的脑炎：具有跨学科意义的不同疾病。"
+    },
+    "42874605": {
+      "title": "Reframing traumatic brain injury and spinal cord injury as chronic multisystem disorders: toward integrated, long-term care.",
+      "title_zh": "将创伤性脑损伤和脊髓损伤重新定义为慢性多系统疾病：面向综合性长期护理。"
+    },
+    "42874008": {
+      "title": "Association Between Epilepsy and Young-Onset Dementia: Nationwide Data From France and Sweden.",
+      "title_zh": "癫痫和年轻型痴呆之间的关联：来自法国和瑞典的全国数据。"
+    },
+    "42869994": {
+      "title": "Human-artificial intelligence collaboration for comanaging epilepsy in real time.",
+      "title_zh": "实时管理癫痫的人工智能协作。"
+    },
+    "42848964": {
+      "title": "Emergency Department Visits for Falls and First-Time Seizure.",
+      "title_zh": "急诊科摔倒和首次癫痫发作就诊。"
+    },
+    "42842852": {
+      "title": "Contraceptive and Enzyme-Inducing Antiseizure Medication Coprescription Among US Medicaid Beneficiaries With Epilepsy.",
+      "title_zh": "美国医疗补助癫痫受益人的避孕和酶诱导抗癫痫药物处方。"
+    },
+    "42933029": {
+      "title": "Accurate EEG-based linear state-space model of cortical dynamics during a passive motor task with exogenous input.",
+      "title_zh": "具有外源输入的被动运动任务期间皮质动力学的精确基于脑电图的线性状态空间模型。"
+    },
+    "42933128": {
+      "title": "REFS: Robust EEG feature selection with incomplete labels for multi-dimensional emotion recognition.",
+      "title_zh": "参考：强大的脑电图特征选择，带有不完整的标签，用于多维情感识别。"
+    },
+    "42933317": {
+      "title": "Cognitive effects of deep brain stimulation across targets in epilepsy: a systematic review and meta-analysis.",
+      "title_zh": "深部脑刺激对癫痫靶点的认知影响：系统评价和荟萃分析。"
+    },
+    "42933318": {
+      "title": "Assessment of caregiver knowledge and attitudes toward pediatric epilepsy during an epilepsy monitoring unit admission.",
+      "title_zh": "在癫痫监测单元入院期间评估护理人员对儿科癫痫的知识和态度。"
+    },
+    "42945750": {
+      "title": "Caution with self-reported ADHD symptoms in adults with epilepsy: discrepancy between subjective perception and objective cognitive performance.",
+      "title_zh": "成人癫痫患者自我报告的注意ADHD症状：主观感知和客观认知表现之间的差异。"
+    },
+    "42946273": {
+      "title": "Visuospatial attention modulates audiovisual temporal perception: Context-dependent associations between prestimulus alpha lateralization and perceptual reports.",
+      "title_zh": "视觉空间注意力调节视听时间感知：刺激前α侧化和感知报告之间的上下文相关关联。"
+    },
+    "42949433": {
+      "title": "Neonatal-onset developmental and epileptic encephalopathy: High genetic yield and long-term outcomes in a multicenter southern European cohort.",
+      "title_zh": "新生儿发育和癫痫性脑病：多中心南欧队列的高遗传产量和长期结局。"
+    },
+    "42949443": {
+      "title": "Reply to: Considerations for tracking cognitive trajectories after epilepsy surgery using the international classification of cognitive disorders in epilepsy (IC-CoDE).",
+      "title_zh": "回复：使用国际癫痫认知障碍分类（ IC-CoDE ）跟踪癫痫手术后认知轨迹的考虑因素。"
+    },
+    "42951224": {
+      "title": "Impact of hearing loss on visual selective attention: Evidence from N2pc and resting-state networks.",
+      "title_zh": "听力损失对视觉选择性注意力的影响：来自N2pc和静息状态网络的证据。"
+    },
+    "42955756": {
+      "title": "AEGS-HI: An adaptively Enhanced Filtering Algorithm for Removing FES Artifacts and M-waves in Surface EMG under Non-Integer Sampling Ratios.",
+      "title_zh": "AEGS-HI ：一种自适应增强的滤波算法，用于在非整数采样率下去除表面肌电图中的FES伪影和M波。"
     }
   },
   "pending": {
-    "42933029": {
-      "title": "Accurate EEG-based linear state-space model of cortical dynamics during a passive motor task with exogenous input."
-    },
-    "42933128": {
-      "title": "REFS: Robust EEG feature selection with incomplete labels for multi-dimensional emotion recognition."
-    },
-    "42933317": {
-      "title": "Cognitive effects of deep brain stimulation across targets in epilepsy: a systematic review and meta-analysis."
-    },
-    "42933318": {
-      "title": "Assessment of caregiver knowledge and attitudes toward pediatric epilepsy during an epilepsy monitoring unit admission."
-    },
-    "42945750": {
-      "title": "Caution with self-reported ADHD symptoms in adults with epilepsy: discrepancy between subjective perception and objective cognitive performance."
-    },
-    "42946273": {
-      "title": "Visuospatial attention modulates audiovisual temporal perception: Context-dependent associations between prestimulus alpha lateralization and perceptual reports."
-    },
-    "42949433": {
-      "title": "Neonatal-onset developmental and epileptic encephalopathy: High genetic yield and long-term outcomes in a multicenter southern European cohort."
-    },
-    "42949443": {
-      "title": "Reply to: Considerations for tracking cognitive trajectories after epilepsy surgery using the international classification of cognitive disorders in epilepsy (IC-CoDE)."
-    },
-    "42951224": {
-      "title": "Impact of hearing loss on visual selective attention: Evidence from N2pc and resting-state networks."
-    },
-    "42955756": {
-      "title": "AEGS-HI: An adaptively Enhanced Filtering Algorithm for Removing FES Artifacts and M-waves in Surface EMG under Non-Integer Sampling Ratios."
-    },
     "42955757": {
       "title": "Cross-Domain Slow Wave Sleep Detection from Single-Lead EEG in Pediatric Congenital Heart Disease Recovery."
     },
