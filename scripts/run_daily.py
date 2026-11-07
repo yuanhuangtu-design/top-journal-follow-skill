@@ -361,6 +361,18 @@ def write_feishu(report):
     return sync(report)
 
 
+def candidate_markdown(report):
+    group = report['group_records'][0]
+    lines = ['# 每周文献候选', '', f"检索范围：{group['edat_start']} 至 {group['edat_end']}（PubMed入库日，不限期刊）。",
+             '', f"共 {report['dedup_total']} 条；状态：" + ('完整' if report['meta']['search_complete'] else '未完整，请检查任务'),
+             '', '这些是待筛选候选，包含近期更新的章节；尚未自动加入飞书待读。', '']
+    for index, paper in enumerate(report['papers'], 1):
+        title = paper['title'].replace('\n',' ').replace('[', r'\[').replace(']', r'\]')
+        lines += [f"{index}. [{title}]({paper['url']})",
+                  f"   {paper['journal']} · {paper['pubdate']} · {paper.get('publication_label','待核对')}", '']
+    return '\n'.join(lines)
+
+
 def main():
     parser = argparse.ArgumentParser(description="顶刊文献日报生成器")
     parser.add_argument("--date", default=None, help="指定日报日期 YYYY-MM-DD")
@@ -432,7 +444,7 @@ def main():
     if args.candidate_pool:
         report['meta']['candidate_only'] = True
         for extension, content in [('json', json.dumps(report, ensure_ascii=False, indent=2)),
-                                   ('html', render_html(report, groups))]:
+                                   ('html', render_html(report, groups)), ('md', candidate_markdown(report))]:
             path = os.path.join(BASE_DIR, 'reports', 'weekly_candidates.'+extension)
             os.makedirs(os.path.dirname(path), exist_ok=True)
             with open(path, 'w', encoding='utf-8') as handle:

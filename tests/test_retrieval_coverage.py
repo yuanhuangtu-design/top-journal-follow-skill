@@ -25,6 +25,21 @@ ARTICLE = '''<PubmedArticle><MedlineCitation><PMID>42</PMID><Article>
 
 
 class PubMedCoverageTests(unittest.TestCase):
+    def test_mixed_article_and_updated_book_batch_is_complete(self):
+        book='''<PubmedBookArticle><BookDocument><PMID>43</PMID>
+          <Book><BookTitle>GeneReviews<sup>R</sup></BookTitle></Book><ArticleTitle>Genetic epilepsy</ArticleTitle>
+          <AuthorList><Author><LastName>Jones</LastName><Initials>B</Initials></Author></AuthorList>
+          <ContributionDate><Year>2013</Year><Month>4</Month><Day>4</Day></ContributionDate>
+          <DateRevised><Year>2026</Year><Month>11</Month><Day>5</Day></DateRevised>
+          <Abstract><AbstractText>Updated <i>review</i>.</AbstractText></Abstract>
+          </BookDocument></PubmedBookArticle>'''
+        with patch.object(search,'call_pubmed_xml',return_value='<PubmedArticleSet>'+ARTICLE+book+'</PubmedArticleSet>'),patch.object(search.time,'sleep'):
+            papers=search.fetch_summaries(['42','43'])
+        self.assertEqual([p['pmid'] for p in papers],['42','43'])
+        self.assertEqual(papers[1]['publication_label'],'图书章节/更新')
+        self.assertEqual(papers[1]['abstract'],'Updated review.')
+        self.assertEqual(papers[1]['pubdate'],'2013-4-4（更新 2026-11-5）')
+
     def test_zero_results_is_complete_search_not_request_failure(self):
         with patch.object(search, 'call_pubmed_api', return_value={'esearchresult': {'count':'0','idlist':[]}}):
             self.assertEqual(search.search_pubmed('test', 500), ([], 0))
@@ -135,6 +150,7 @@ class ProgressTests(unittest.TestCase):
                 run_daily.main()
             feishu.assert_not_called(); notion.assert_not_called(); progress.assert_not_called()
             self.assertTrue(json.loads((Path(directory)/'reports/weekly_candidates.json').read_text(encoding='utf-8'))['meta']['candidate_only'])
+            self.assertIn('每周文献候选',(Path(directory)/'reports/weekly_candidates.md').read_text(encoding='utf-8'))
 
     def test_keyword_score_cannot_assign_must_read(self):
         self.assertEqual(run_daily.grade_paper(100),'推荐')
