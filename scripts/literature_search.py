@@ -294,6 +294,35 @@ def parse_article(article):
             'related_articles': related, 'url': f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/'}
 
 
+def parse_book_article(article):
+    document = article.find('./BookDocument')
+    pmid = document.findtext('PMID', '').strip()
+    title = document.find('ArticleTitle')
+    if not pmid or title is None:
+        raise SearchError('Book chapter metadata is incomplete')
+    book_title = document.find('./Book/BookTitle')
+    journal = ''.join(book_title.itertext()) if book_title is not None else 'NCBI Bookshelf'
+    own_ids = {x.get('IdType'): x.text for x in document.findall('./ArticleIdList/ArticleId')}
+    def date_text(name):
+        node = document.find(name)
+        return '-'.join(node.findtext(key, '') for key in ['Year','Month','Day']).strip('-') if node is not None else ''
+    published, revised = date_text('ContributionDate'), date_text('DateRevised')
+    parts = []
+    for node in document.findall('./Abstract/AbstractText'):
+        value = ''.join(node.itertext()).strip()
+        if value:
+            parts.append((node.get('Label')+': ' if node.get('Label') else '')+value)
+    return {'pmid': pmid, 'title': ''.join(title.itertext()),
+            'authors': [n.findtext('CollectiveName') or ' '.join(filter(None,[n.findtext('LastName'),n.findtext('Initials')]))
+                        for n in document.findall('./AuthorList/Author')],
+            'journal': journal, 'iso_journal': journal, 'doi': own_ids.get('doi',''),
+            'pubdate': published + ('（更新 '+revised+'）' if revised else ''),
+            'publication_types': ['Book Chapter']+[n.text for n in document.findall('./PublicationType') if n.text],
+            'publication_label': '图书章节/更新', 'abstract': '\n'.join(parts),
+            'abstract_status': 'available' if parts else 'not_provided',
+            'related_articles': [], 'url': f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/'}
+
+
 def fetch_summaries(pmids):
     """Fetch verified metadata and abstracts in batches, including publication types."""
     records = {}
@@ -305,7 +334,8 @@ def fetch_summaries(pmids):
             raise SearchError("PubMed detail request failed")
         try:
             root = ET.fromstring(xml)
-            articles = [parse_article(node) for node in root.findall("./PubmedArticle")]
+            articles = [parse_book_article(node) if node.tag == 'PubmedBookArticle' else parse_article(node)
+                        for node in root if node.tag in ('PubmedArticle', 'PubmedBookArticle')]
         except (ET.ParseError, AttributeError) as exc:
             raise SearchError("Invalid PubMed article response") from exc
         found = {p["pmid"]:p for p in articles}
