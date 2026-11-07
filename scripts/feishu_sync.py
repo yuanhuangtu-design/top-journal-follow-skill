@@ -132,7 +132,8 @@ def paper_fields(paper, fields):
         '作者': '；'.join(paper.get('authors', [])[:8]), 'DOI': paper.get('doi', ''),
         '英文摘要': paper.get('abstract', ''), '命中检索': '、'.join(paper.get('hit_group_labels') or paper.get('hit_groups', [])),
         '优先级': paper.get('priority', '浏览'), '相关度得分': paper.get('relevance_score', 0),
-        '日报日期': stamp, '首次发现日期': stamp, '已读': False}
+        '日报日期': stamp, '首次发现日期': stamp, '已读': False,
+        '发表形式（自动）': paper.get('publication_label', '')}
     for source, target in [('title_zh', '中文标题'), ('abstract_zh', '中文摘要')]:
         translated = paper.get(source, '')
         if translated and len(re.findall(r'[\u4e00-\u9fff]', translated)) / len(translated) >= .15:

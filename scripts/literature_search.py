@@ -55,6 +55,10 @@ JOURNAL_MAP = {
 }
 
 
+class SearchError(RuntimeError):
+    """The requested PubMed coverage could not be verified."""
+
+
 def parse_natural_query(raw_query):
     """
     解析自然语言检索式。
@@ -221,77 +225,95 @@ def extract_abstract(pmid):
 # ============ 搜索功能 ============
 
 def search_pubmed(query, retmax=20):
-    params = {
-        "db": "pubmed",
-        "term": query,
-        "retmax": min(retmax, 100),
-        "retmode": "json",
-        "sort": "date",
-    }
-    url = f"{BASE_ESEARCH}?{urllib.parse.urlencode(params)}"
-    print(f"[INFO] 搜索 URL: {url}", file=sys.stderr)
+    if not 1 <= retmax <= 10000:
+        raise SearchError('retmax must be between 1 and PubMed\'s 10000-ID limit')
+    ids, total = [], None
+    while total is None or len(ids) < min(total, retmax):
+        params = {"db": "pubmed", "term": query, "retmax": min(100, retmax-len(ids)),
+                  "retstart": len(ids), "retmode": "json", "sort": "date"}
+        data = call_pubmed_api(f"{BASE_ESEARCH}?{urllib.parse.urlencode(params)}")
+        if not data or "esearchresult" not in data:
+            raise SearchError('PubMed search request failed')
+        result = data['esearchresult']
+        if result.get('errorlist') or result.get('ERROR'):
+            raise SearchError('PubMed rejected the search expression')
+        count = int(result['count'])
+        if total is not None and total != count:
+            raise SearchError('PubMed count changed during pagination; retry the window')
+        total = count
+        batch = result.get('idlist', [])
+        if len(batch) != len(set(batch)) or set(ids).intersection(batch):
+            raise SearchError('Repeated PubMed IDs during pagination')
+        if not batch and len(ids) < min(total, retmax):
+            raise SearchError('PubMed pagination ended before the declared count')
+        ids.extend(batch)
+        if len(ids) >= min(total, retmax):
+            break
+        time.sleep(REQUEST_INTERVAL)
+    return ids, total
 
-    data = call_pubmed_api(url)
-    if not data or "esearchresult" not in data:
-        return [], 0
 
-    result = data["esearchresult"]
-    id_list = result.get("idlist", [])
-    total = int(result.get("count", 0))
-    return id_list, total
+def publication_label(types):
+    for code, label in [('Editorial', '述评/社论'), ('Letter', '来信'),
+                        ('Meta-Analysis', 'Meta分析'), ('Systematic Review', '系统综述'),
+                        ('Review', '综述'), ('Case Reports', '病例报告')]:
+        if code in types:
+            return label
+    return '期刊论文（研究设计待核对）'
+
+
+def parse_article(article):
+    citation = article.find('./MedlineCitation')
+    content = citation.find('./Article')
+    pmid = citation.findtext('./PMID', '').strip()
+    if not pmid or content.find('ArticleTitle') is None:
+        raise SearchError('Article metadata is incomplete')
+    own_ids = {x.get('IdType'): x.text for x in article.findall('./PubmedData/ArticleIdList/ArticleId')}
+    abstracts = []
+    for node in content.findall('./Abstract/AbstractText'):
+        value = ''.join(node.itertext()).strip()
+        if value:
+            abstracts.append((node.get('Label')+': ' if node.get('Label') else '')+value)
+    types = [n.text for n in content.findall('./PublicationTypeList/PublicationType') if n.text]
+    date_node = content.find('./ArticleDate')
+    if date_node is None:
+        date_node = content.find('./Journal/JournalIssue/PubDate')
+    pubdate = ' '.join(date_node.findtext(k, '') for k in ['Year','Month','Day']).strip() if date_node is not None else ''
+    if not pubdate and date_node is not None:
+        pubdate = date_node.findtext('MedlineDate', '')
+    related = [{'relation': n.get('RefType'), 'pmid': n.findtext('PMID'), 'source': n.findtext('RefSource')}
+               for n in citation.findall('./CommentsCorrectionsList/CommentsCorrections')]
+    return {'pmid': pmid, 'title': ''.join(content.find('ArticleTitle').itertext()),
+            'authors': [n.findtext('CollectiveName') or ' '.join(filter(None, [n.findtext('LastName'), n.findtext('Initials')]))
+                        for n in content.findall('./AuthorList/Author')],
+            'journal': content.findtext('./Journal/Title', ''),
+            'iso_journal': content.findtext('./Journal/ISOAbbreviation', ''),
+            'pubdate': pubdate, 'doi': own_ids.get('doi', ''),
+            'abstract': '\n'.join(abstracts), 'abstract_status': 'available' if abstracts else 'not_provided',
+            'publication_types': types, 'publication_label': publication_label(types),
+            'related_articles': related, 'url': f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/'}
 
 
 def fetch_summaries(pmids):
-    if not pmids:
-        return []
-
-    # 分批获取summary，每批最多20个，避免URL过长和限流
-    results = []
-    batch_size = 20
-    for batch_start in range(0, len(pmids), batch_size):
-        batch_pmids = pmids[batch_start:batch_start + batch_size]
-        params = {"db": "pubmed", "id": ",".join(batch_pmids), "retmode": "json"}
-        url = f"{BASE_ESUMMARY}?{urllib.parse.urlencode(params)}"
-        data = call_pubmed_api(url)
-        if not data or "result" not in data:
-            print(f"[WARNING] 第{batch_start//batch_size+1}批summary获取失败，跳过", file=sys.stderr)
-            time.sleep(REQUEST_INTERVAL)
-            continue
-
-        result_data = data["result"]
-        for pmid in batch_pmids:
-            if pmid not in result_data:
-                continue
-            item = result_data[pmid]
-            authors = []
-            for author in item.get("authors", []):
-                name = author.get("name", "")
-                if name:
-                    authors.append(name)
-            doi = ""
-            for aid in item.get("articleids", []):
-                if aid.get("idtype") == "doi":
-                    doi = aid.get("value", "")
-                    break
-            results.append({
-                "pmid": pmid,
-                "title": item.get("title", "").replace("&quot;", '"').replace("&amp;", "&"),
-                "authors": authors,
-                "journal": item.get("fulljournalname", ""),
-                "iso_journal": item.get("source", ""),
-                "pubdate": item.get("pubdate", ""),
-                "doi": doi,
-                "abstract": "",
-                "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
-            })
+    """Fetch verified metadata and abstracts in batches, including publication types."""
+    records = {}
+    for offset in range(0, len(pmids), 20):
+        batch = pmids[offset:offset+20]
+        url = BASE_EFETCH + "?" + urllib.parse.urlencode({"db":"pubmed", "id":",".join(batch), "retmode":"xml"})
+        xml = call_pubmed_xml(url)
+        if not xml:
+            raise SearchError("PubMed detail request failed")
+        try:
+            root = ET.fromstring(xml)
+            articles = [parse_article(node) for node in root.findall("./PubmedArticle")]
+        except (ET.ParseError, AttributeError) as exc:
+            raise SearchError("Invalid PubMed article response") from exc
+        found = {p["pmid"]:p for p in articles}
+        if set(found) != set(batch) or len(articles) != len(batch):
+            raise SearchError("PubMed detail response omitted or repeated requested articles")
+        records.update(found)
         time.sleep(REQUEST_INTERVAL)
-
-    # 逐篇获取摘要，每篇之间间隔避免限流
-    for r in results:
-        r["abstract"] = extract_abstract(r["pmid"])
-        time.sleep(REQUEST_INTERVAL)
-
-    return results
+    return [records[pmid] for pmid in pmids]
 
 
 def search(query_text, journals=None, years=None, max_results=20):
@@ -317,6 +339,7 @@ def search(query_text, journals=None, years=None, max_results=20):
             "query_pubmed": pubmed_query,
             "search_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         },
+        "complete": len(pmids) == total and len(papers) == total,
         "total_results": total,
         "retrieved": len(papers),
         "journals_searched": [j.strip() for j in journals.split(",")] if journals else [],
