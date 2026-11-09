@@ -1,27 +1,27 @@
 {
   "groups": {
     "A": {
-      "through": "2026-11-07",
+      "through": "2026-11-08",
       "fingerprint": "5f6afaad1431757878279bd0b1816c985f89ad4ee53c72f253a4ecb4cd4e41ec"
     },
     "B1": {
-      "through": "2026-11-07",
+      "through": "2026-11-08",
       "fingerprint": "25fdf4f69899491783cc0b6c5b02db8e68667c802cbea436fea7d2c860556a32"
     },
     "B2": {
-      "through": "2026-11-07",
+      "through": "2026-11-08",
       "fingerprint": "a25b82cea7a113be2457917b66e8b1785dd172f8c25beeede157f52c4611da81"
     },
     "C": {
-      "through": "2026-11-07",
+      "through": "2026-11-08",
       "fingerprint": "6d1bdd8734d51336ba2d2df6484a041c398474e0847a2b197d47de92e2b4eef6"
     },
     "D": {
-      "through": "2026-11-07",
+      "through": "2026-11-08",
       "fingerprint": "1d5d7e7eca8baa1ca10b4e692c8ab0dcaaf66f0b2c00da641b033435d72340f6"
     },
     "E": {
-      "through": "2026-11-07",
+      "through": "2026-11-08",
       "fingerprint": "523b45c64b33b9482778311879cc69e0ee8d391abeebb0684dad6ed6b025dcae"
     }
   }
