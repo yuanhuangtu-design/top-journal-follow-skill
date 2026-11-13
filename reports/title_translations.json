@@ -805,8 +805,8 @@
       "title_zh": "不同的处理流程，不同的EEG微状态结果：来自失智症样本的证据。"
     },
     "43008878": {
-      "title": "Electroencephalography Neurophysiology Alterations in Association with Aβ and Tau Pathology Across the Symptomatic Stages of Alzheimer's Disease Continuum: A Cross-Sectional Study.",
-      "title_zh": "在阿尔茨海默病连续性疾病的症状阶段，与Aβ和Tau病理相关的脑电图神经生理学变化：一项横断面研究。"
+      "title": "Electroencephalography neurophysiology alterations in association with Aβ and tau pathology across the symptomatic stages of Alzheimer's disease continuum: a cross-sectional study.",
+      "title_zh": "在阿尔茨海默病连续性疾病的症状阶段，与Aβ和tau蛋白病理相关的脑电图神经生理学变化：一项横断面研究。"
     },
     "43008527": {
       "title": "Interictal Electroencephalographic Characteristics of the Human Centromedian Thalamic Nucleus Recorded in Focal Epilepsy.",
@@ -831,6 +831,70 @@
     "43009497": {
       "title": "Closed-loop transcranial electrical brain stimulation with fMRI: A proof-of-concept randomized trial of real-time fMRI-guided tACS optimization.",
       "title_zh": "结合fMRI的闭环经颅电刺激：一项实时fMRI引导的tACS优化概念验证随机试验。"
+    },
+    "43019411": {
+      "title": "Novel gene therapy lets drug dampen brain cell activity, reducing seizures.",
+      "title_zh": "新型基因疗法使药物抑制脑细胞活动，从而减少癫痫发作。"
+    },
+    "43017772": {
+      "title": "Efficacy of Repetitive Transcranial Magnetic Stimulation in Preventing Poststroke Spasticity: A Sham-Controlled Trial.",
+      "title_zh": "重复经颅磁刺激预防卒中后痉挛的疗效：一项安慰剂对照试验。"
+    },
+    "43017845": {
+      "title": "Drug-sensitive or not (yet) resistant: What defines early pediatric epilepsy surgery?",
+      "title_zh": "药物敏感性或（尚）未耐药：什么因素决定了早期小儿癫痫手术？"
+    },
+    "43017829": {
+      "title": "Reading-induced seizures: Trigger specificity and cortical localization.",
+      "title_zh": "阅读诱发的癫痫发作：诱因特异性和皮层定位。"
+    },
+    "43015214": {
+      "title": "Corrigendum to \"Time over drug in pediatric status epilepticus: A prospective observational study\" [Epilepsy Behav. 184 (2026) 111234].",
+      "title_zh": "“儿童癫痫持续状态中的药物作用时间：一项前瞻性观察性研究”的勘误表[Epilepsy Behav. 184 (2026) 111234]。"
+    },
+    "43014131": {
+      "title": "Is it possible to vaccinate AI against bias? An exploratory study in epilepsy.",
+      "title_zh": "能否为人工智能“接种疫苗”，使其免受偏见影响？一项关于癫痫的探索性研究。"
+    },
+    "43014130": {
+      "title": "EXPAND-ing evidence-based epilepsy self-management into clinical settings.",
+      "title_zh": "将循证癫痫自我管理扩展到临床环境。"
+    },
+    "43014129": {
+      "title": "Effect of Campi the Seahorse video interventions on improving knowledge about epilepsy and reducing stigmatizing beliefs in primary school pupils.",
+      "title_zh": "Campi the Seahorse视频干预措施对提高小学生癫痫相关知识和减少污名化观念的影响。"
+    },
+    "43013924": {
+      "title": "Drug-resistant epilepsy in non-NF1 RASopathies: a two-centre retrospective paediatric cohort and scoping review.",
+      "title_zh": "非NF1 RAS病中的耐药性癫痫：一项双中心回顾性儿科队列研究和范围综述。"
+    },
+    "43019278": {
+      "title": "Characteristics of EEG Microstate Analysis of Power Grip and Precision Grip Hand Movements from Motor Planning to Execution.",
+      "title_zh": "从运动计划到执行的握力和精细握力手部运动的脑电微状态分析特征。"
+    },
+    "43013895": {
+      "title": "Recovering Resting-State EEG During AM-tACS Using Dynamic Adaptive Stimulation Artifact Source Separation.",
+      "title_zh": "使用动态自适应刺激伪影源分离来恢复AM-tACS期间的静息态脑电图。"
+    },
+    "43016548": {
+      "title": "Acute central metabolic effects of otolithic vestibular stimulation in a non-human primate model of Parkinsonism: proof-of-concept neuroimaging and functional study.",
+      "title_zh": "在帕金森病非人灵长类动物模型中，耳石前庭刺激的急性中枢代谢效应：概念验证性神经影像学和功能学研究。"
+    },
+    "43014756": {
+      "title": "Continuous Recording of Local Field Potentials via Deep Brain Stimulation Electrodes in Parkinson's Disease:A Technical and Conceptual Review.",
+      "title_zh": "通过深部脑刺激电极对帕金森病患者进行局部场电位连续记录：技术和概念综述。"
+    },
+    "43013900": {
+      "title": "Spinal cord-computer interfaces for neurorehabilitation: Technical challenges and clinical perspectives.",
+      "title_zh": "用于神经康复的脊髓-计算机接口：技术挑战和临床展望。"
+    },
+    "43015086": {
+      "title": "Thalamic Reticular Nucleus Excitability and Cholinergic Signaling are Disrupted in a Mouse Model of Alzheimer's Disease Neuropathology.",
+      "title_zh": "在阿尔茨海默病神经病理学小鼠模型中，丘脑网状核兴奋性和胆碱能信号传导受到干扰。"
+    },
+    "43014310": {
+      "title": "Antisense oligonucleotide silencing rescues neurodevelopmental deficits in AMPA receptor gain-of-function mice.",
+      "title_zh": "反义寡核苷酸沉默可挽救AMPA受体功能增强小鼠的神经发育缺陷。"
     }
   },
   "pending": {}
