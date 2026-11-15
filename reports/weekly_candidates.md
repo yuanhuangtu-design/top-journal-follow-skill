@@ -210,10 +210,10 @@
 68. [Delayed-onset seizure after dantrolene-treated malignant hyperthermia in a patient with traumatic brain injury and a pathogenic RYR1 variant: a multiple-hit model.](https://pubmed.ncbi.nlm.nih.gov/43021088/)
    BMC anesthesiology · 2026 08 18 · 病例报告
 
-69. [Optimization and Characterization of a Guinea Pig Model of Diisopropylfluorophosphate-Induced Status Epilepticus, Nitrooxidative Stress, and Neuroinflammation for Therapeutic Evaluation.](https://pubmed.ncbi.nlm.nih.gov/43020338/)
+69. [Optimization and characterization of a Guinea Pig model of diisopropylfluorophosphate-induced status epilepticus, nitrooxidative stress, and neuroinflammation for therapeutic evaluation.](https://pubmed.ncbi.nlm.nih.gov/43020338/)
    Neurotoxicology · 2026 11 13 · 期刊论文（研究设计待核对）
 
-70. [Targeting Seizures and Neurobehavioral Alterations: Efficacy of Brivaracetam-Sertraline Combination in PTZ-Induced Kindling Model.](https://pubmed.ncbi.nlm.nih.gov/43020307/)
+70. [Targeting seizures and neurobehavioral alterations: Efficacy of brivaracetam-sertraline combination in PTZ-induced kindling model.](https://pubmed.ncbi.nlm.nih.gov/43020307/)
    European journal of pharmacology · 2026 11 12 · 期刊论文（研究设计待核对）
 
 71. [Acute Neurotoxicity Syndromes from Immunotherapy: Emergency and ICU Management.](https://pubmed.ncbi.nlm.nih.gov/43020124/)
