@@ -20,6 +20,8 @@
 
 每周日北京时间05:30另行检索过去7天不限期刊的主题候选，生成可在GitHub直接阅读的 [候选清单](../reports/weekly_candidates.md)、HTML和JSON。包含近期更新的图书章节时单独标明章节和更新日期。该模式不翻译、不调用飞书/Notion写入、不推进每日进度；候选供进一步筛选。它仍是 PubMed 范围内的提醒，不能替代多数据库系统综述。
 
+同一任务另生成[神经科学周候选](../reports/weekly_neuroscience.md)。范围为 Neuron、Brain 和 Nature Neuroscience 的近七天 PubMed 题录，涵盖各主题，包括脑机接口研究。该清单可独立执行 `python scripts/run_daily.py --neuroscience-pool`，用于按期刊扫读和挑选精读文章。
+
 ## 完整性与恢复
 
 - 搜索ID分页获取，每页最多100，配置上限500。超出上限、请求失败、重复页、计数变化或详情缺失都会显示未完整，任务失败，不推进对应组进度。

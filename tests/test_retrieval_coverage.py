@@ -155,5 +155,34 @@ class ProgressTests(unittest.TestCase):
     def test_keyword_score_cannot_assign_must_read(self):
         self.assertEqual(run_daily.grade_paper(100),'推荐')
 
+    def test_neuroscience_pool_is_broad_and_only_writes_its_own_report(self):
+        with tempfile.TemporaryDirectory() as directory:
+            config = copy.deepcopy(self.config)
+            config['group_queries']['A'] = 'epilep*[Title/Abstract]'
+            config['weekly_neuroscience'] = {
+                'journals': ['Neuron', 'Brain', 'Nat Neurosci'],
+            }
+            config_path = Path(directory) / 'config.json'
+            config_path.write_text(json.dumps(config), encoding='utf-8')
+            search_result = {'complete': True, 'retrieved': 0, 'total_results': 0, 'papers': []}
+            with patch.object(sys, 'argv', ['run_daily.py', '--neuroscience-pool', '--config', str(config_path)]), \
+                 patch.object(run_daily, 'BASE_DIR', directory), \
+                 patch.object(run_daily, 'load_progress', return_value={'groups': {}}), \
+                 patch.object(run_daily, 'run_search', return_value=search_result) as search_call, \
+                 patch.object(run_daily, 'write_feishu') as feishu, \
+                 patch.object(run_daily, 'write_notion') as notion, \
+                 patch.object(run_daily, 'save_progress') as progress:
+                run_daily.main()
+            query, journals, *_ = search_call.call_args.args
+            self.assertIn('"Neuron"[Journal] OR "Brain"[Journal] OR "Nat Neurosci"[Journal]', query)
+            self.assertEqual(query.split(' AND ', 1)[0],
+                             '("Neuron"[Journal] OR "Brain"[Journal] OR "Nat Neurosci"[Journal])')
+            self.assertEqual(journals, '')
+            for writer in (feishu, notion, progress):
+                writer.assert_not_called()
+            reports = Path(directory) / 'reports'
+            self.assertTrue(json.loads((reports / 'weekly_neuroscience.json').read_text(encoding='utf-8'))['meta']['candidate_only'])
+            self.assertFalse((reports / 'weekly_candidates.json').exists())
+
 
 if __name__=='__main__': unittest.main()
