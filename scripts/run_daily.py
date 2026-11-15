@@ -361,9 +361,9 @@ def write_feishu(report):
     return sync(report)
 
 
-def candidate_markdown(report):
+def candidate_markdown(report, heading='每周文献候选', scope='不限期刊'):
     group = report['group_records'][0]
-    lines = ['# 每周文献候选', '', f"检索范围：{group['edat_start']} 至 {group['edat_end']}（PubMed入库日，不限期刊）。",
+    lines = [f'# {heading}', '', f"检索范围：{group['edat_start']} 至 {group['edat_end']}（PubMed入库日，{scope}）。",
              '', f"共 {report['dedup_total']} 条；状态：" + ('完整' if report['meta']['search_complete'] else '未完整，请检查任务'),
              '', '这些是待筛选候选，包含近期更新的章节；尚未自动加入飞书待读。', '']
     for index, paper in enumerate(report['papers'], 1):
@@ -381,7 +381,9 @@ def main():
     parser.add_argument('--groups', default='', help='仅运行指定组，逗号分隔')
     parser.add_argument('--edat-start', help='补抓的入库起始日期 YYYY-MM-DD')
     parser.add_argument('--edat-end', help='补抓的入库结束日期 YYYY-MM-DD')
-    parser.add_argument('--candidate-pool', action='store_true', help='生成不限期刊周候选，不写入飞书')
+    candidate_modes = parser.add_mutually_exclusive_group()
+    candidate_modes.add_argument('--candidate-pool', action='store_true', help='生成不限期刊的癫痫周候选')
+    candidate_modes.add_argument('--neuroscience-pool', action='store_true', help='生成重点期刊的神经科学周候选')
     args = parser.parse_args()
     with open(args.config, "r", encoding="utf-8") as f: config = json.load(f)
     report_date = datetime.strptime(args.date, "%Y-%m-%d").date() if args.date else beijing_today()
@@ -389,12 +391,19 @@ def main():
     print(f"[INFO] 日报日期: {report_date}  目标 EDAT: {edat_date}")
     explicit_start = datetime.strptime(args.edat_start, '%Y-%m-%d').date() if args.edat_start else None
     explicit_end = datetime.strptime(args.edat_end, '%Y-%m-%d').date() if args.edat_end else None
-    if args.candidate_pool:
+    candidate_only = args.candidate_pool or args.neuroscience_pool
+    if candidate_only:
         if args.groups or explicit_start or explicit_end:
             parser.error('周候选不能与分组或补抓日期一起使用')
         config['journals'] = {'POOL': ''}
-        config['group_queries']['POOL'] = config['group_queries']['A']
-        config['group_labels']['POOL'] = '不限期刊主题候选（待筛选）'
+        if args.neuroscience_pool:
+            neuroscience = config['weekly_neuroscience']
+            journal_query = ' OR '.join(f'"{journal}"[Journal]' for journal in neuroscience['journals'])
+            config['group_queries']['POOL'] = journal_query
+            config['group_labels']['POOL'] = '神经科学期刊周候选'
+        else:
+            config['group_queries']['POOL'] = config['group_queries']['A']
+            config['group_labels']['POOL'] = '不限期刊主题候选（待筛选）'
         explicit_start, explicit_end = edat_date-timedelta(days=6), edat_date
         args.no_translate = True
     if args.groups:
@@ -408,7 +417,7 @@ def main():
         print(f"\n[RUN] 组 {gname} 检索开始")
         begin, end = coverage_window(config, gname, edat_date, state, explicit_start, explicit_end)
         windows[gname] = begin, end
-        if not args.candidate_pool:
+        if not candidate_only:
             save_progress(remember_attempt(state, config, gname, begin))
         print(f'[INFO] EDAT范围: {begin} ~ {end}')
         actual_query = f'({group_query(config, gname)}) AND ("{begin}"[EDAT] : "{end}"[EDAT])'
@@ -441,11 +450,20 @@ def main():
     else:
         for p in papers: p["_title_zh"] = ""; p["_abstract_zh"] = ""
     report = build_report(groups, papers, config, report_date, edat_date, windows)
-    if args.candidate_pool:
+    if candidate_only:
         report['meta']['candidate_only'] = True
+        if args.neuroscience_pool:
+            name = 'weekly_neuroscience'
+            heading = '每周神经科学候选'
+            scope = '、'.join(config['weekly_neuroscience']['journals']).replace('Nat Neurosci', 'Nature Neuroscience')
+            report['meta']['source'] = f'NCBI PubMed · {scope}'
+        else:
+            name = 'weekly_candidates'
+            heading = '每周文献候选'
+            scope = '不限期刊'
         for extension, content in [('json', json.dumps(report, ensure_ascii=False, indent=2)),
-                                   ('html', render_html(report, groups)), ('md', candidate_markdown(report))]:
-            path = os.path.join(BASE_DIR, 'reports', 'weekly_candidates.'+extension)
+                                   ('html', render_html(report, groups)), ('md', candidate_markdown(report, heading, scope))]:
+            path = os.path.join(BASE_DIR, 'reports', f'{name}.{extension}')
             os.makedirs(os.path.dirname(path), exist_ok=True)
             with open(path, 'w', encoding='utf-8') as handle:
                 handle.write(content)

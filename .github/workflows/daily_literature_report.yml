@@ -110,6 +110,10 @@ jobs:
         if: env.RUN_MODE == 'weekly_candidates'
         run: python scripts/run_daily.py --candidate-pool
 
+      - name: Build weekly neuroscience journal list
+        if: ${{ !cancelled() && env.RUN_MODE == 'weekly_candidates' }}
+        run: python scripts/run_daily.py --neuroscience-pool
+
       - name: Upload daily report and pending records
         if: always()
         uses: actions/upload-artifact@v4
@@ -123,6 +127,7 @@ jobs:
             reports/title_translations.json
             reports/search_progress.json
             reports/weekly_candidates.*
+            reports/weekly_neuroscience.*
           retention-days: 30
 
       - name: Commit latest report and pending queue

@@ -92,6 +92,9 @@
     "subthalamic",
     "aDBS"
   ],
+  "weekly_neuroscience": {
+    "journals": ["Neuron", "Brain", "Nat Neurosci"]
+  },
   "strategy_version": "2026-11-07-coverage-v1",
   "overlap_days": 3,
   "max_catchup_days": 7
