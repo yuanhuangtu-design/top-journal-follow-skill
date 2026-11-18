@@ -1,10 +1,10 @@
 {
   "meta": {
-    "report_date": "2026-11-17",
-    "target_edat": "2026-11-16",
+    "report_date": "2026-11-18",
+    "target_edat": "2026-11-17",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed（GitHub Actions 定时抓取）",
-    "generated_at": "2026-11-17 03:22:16",
+    "generated_at": "2026-11-18 02:43:22",
     "strategy_version": "2026-11-07-coverage-v1",
     "priority_note": "自动相关度仅作推荐；必读由读者判断",
     "search_complete": true,
@@ -12,20 +12,20 @@
       "status": "ok",
       "missing_title_pmids": [],
       "pending_titles": 0,
-      "cached_titles": 264
+      "cached_titles": 273
     },
     "feishu_diag": {
       "status": "ok",
       "stage": "complete",
-      "searched": 30,
-      "created": 10,
-      "expected": 10,
+      "searched": 32,
+      "created": 9,
+      "expected": 9,
       "verified": true,
-      "candidates": 30,
-      "dedup_skipped": 20,
+      "candidates": 32,
+      "dedup_skipped": 23,
       "titles_updated": 0,
       "missing_titles": 0,
-      "closed_loop_papers": 75,
+      "closed_loop_papers": 77,
       "closed_loop_missing_titles": 0,
       "pending": 0
     }
@@ -34,23 +34,28 @@
     {
       "group": "A",
       "label": "高影响力期刊 × Epilepsy",
-      "count": 2,
-      "total": 2,
+      "count": 4,
+      "total": 4,
       "pmids": [
-        "43038493",
-        "43025427"
+        "43044080",
+        "43044079",
+        "43042931",
+        "43038493"
       ],
       "status": "ok",
-      "edat_start": "2026-11-14",
-      "edat_end": "2026-11-16",
-      "query": "(((epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])) AND (\"2026-11-14\"[EDAT] : \"2026-11-16\"[EDAT])) AND (\"Nature\"[Journal] OR \"Science\"[Journal] OR \"Cell\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Neurosci\"[Journal] OR \"Neuron\"[Journal] OR \"Brain\"[Journal] OR \"Lancet Neurol\"[Journal] OR \"JAMA Neurol\"[Journal] OR \"Ann Neurol\"[Journal] OR \"Neurology\"[Journal] OR \"J Neurol Neurosurg Psychiatry\"[Journal] OR \"Stroke\"[Journal] OR \"Mol Neurodegener\"[Journal] OR \"Acta Neuropathol\"[Journal] OR \"Nat Commun\"[Journal] OR \"Sci Adv\"[Journal] OR \"Cell Rep Med\"[Journal] OR \"Transl Neurodegener\"[Journal] OR \"eLife\"[Journal] OR \"N Engl J Med\"[Journal] OR \"Lancet\"[Journal] OR \"JAMA\"[Journal] OR \"BMJ\"[Journal])"
+      "edat_start": "2026-11-15",
+      "edat_end": "2026-11-17",
+      "query": "(((epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])) AND (\"2026-11-15\"[EDAT] : \"2026-11-17\"[EDAT])) AND (\"Nature\"[Journal] OR \"Science\"[Journal] OR \"Cell\"[Journal] OR \"Nat Med\"[Journal] OR \"Nat Neurosci\"[Journal] OR \"Neuron\"[Journal] OR \"Brain\"[Journal] OR \"Lancet Neurol\"[Journal] OR \"JAMA Neurol\"[Journal] OR \"Ann Neurol\"[Journal] OR \"Neurology\"[Journal] OR \"J Neurol Neurosurg Psychiatry\"[Journal] OR \"Stroke\"[Journal] OR \"Mol Neurodegener\"[Journal] OR \"Acta Neuropathol\"[Journal] OR \"Nat Commun\"[Journal] OR \"Sci Adv\"[Journal] OR \"Cell Rep Med\"[Journal] OR \"Transl Neurodegener\"[Journal] OR \"eLife\"[Journal] OR \"N Engl J Med\"[Journal] OR \"Lancet\"[Journal] OR \"JAMA\"[Journal] OR \"BMJ\"[Journal])"
     },
     {
       "group": "B1",
       "label": "癫痫专科刊 × Epilepsy",
-      "count": 20,
-      "total": 20,
+      "count": 19,
+      "total": 19,
       "pmids": [
+        "43042732",
+        "43038919",
+        "43038918",
         "43037638",
         "43037621",
         "43037523",
@@ -66,16 +71,12 @@
         "43032925",
         "43032905",
         "43032900",
-        "43032888",
-        "43031326",
-        "43025183",
-        "43025182",
-        "43025181"
+        "43032888"
       ],
       "status": "ok",
-      "edat_start": "2026-11-14",
-      "edat_end": "2026-11-16",
-      "query": "(((epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])) AND (\"2026-11-14\"[EDAT] : \"2026-11-16\"[EDAT])) AND (\"Epilepsia\"[Journal] OR \"Epilepsy Behav\"[Journal] OR \"Seizure\"[Journal] OR \"Epilepsy Res\"[Journal] OR \"Epileptic Disord\"[Journal] OR \"Epilepsia Open\"[Journal])"
+      "edat_start": "2026-11-15",
+      "edat_end": "2026-11-17",
+      "query": "(((epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])) AND (\"2026-11-15\"[EDAT] : \"2026-11-17\"[EDAT])) AND (\"Epilepsia\"[Journal] OR \"Epilepsy Behav\"[Journal] OR \"Seizure\"[Journal] OR \"Epilepsy Res\"[Journal] OR \"Epileptic Disord\"[Journal] OR \"Epilepsia Open\"[Journal])"
     },
     {
       "group": "B2",
@@ -86,9 +87,9 @@
         "43033946"
       ],
       "status": "ok",
-      "edat_start": "2026-11-14",
-      "edat_end": "2026-11-16",
-      "query": "(((epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])) AND (\"2026-11-14\"[EDAT] : \"2026-11-16\"[EDAT])) AND (\"Brain Stimul\"[Journal] OR \"J Neurosci\"[Journal] OR \"Mol Psychiatry\"[Journal] OR \"Brain Behav Immun\"[Journal] OR \"J Neuroinflamm\"[Journal])"
+      "edat_start": "2026-11-15",
+      "edat_end": "2026-11-17",
+      "query": "(((epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])) AND (\"2026-11-15\"[EDAT] : \"2026-11-17\"[EDAT])) AND (\"Brain Stimul\"[Journal] OR \"J Neurosci\"[Journal] OR \"Mol Psychiatry\"[Journal] OR \"Brain Behav Immun\"[Journal] OR \"J Neuroinflamm\"[Journal])"
     },
     {
       "group": "C",
@@ -96,30 +97,31 @@
       "count": 3,
       "total": 3,
       "pmids": [
+        "43039061",
         "43033973",
-        "43033174",
-        "43025559"
+        "43033174"
       ],
       "status": "ok",
-      "edat_start": "2026-11-14",
-      "edat_end": "2026-11-16",
-      "query": "(((electroencephalograph*[Title/Abstract] OR intracranial EEG[Title/Abstract] OR intracranial eeg[Title/Abstract] OR SEEG[Title/Abstract] OR \"local field potential\"[Title/Abstract] OR LFP[Title/Abstract] OR electrocorticograph*[Title/Abstract] OR ECoG[Title/Abstract] OR \"high-frequency oscillation\"[Title/Abstract] OR \"high frequency oscillation\"[Title/Abstract] OR HFO[Title/Abstract] OR \"multi-unit activity\"[Title/Abstract] OR MUA[Title/Abstract] OR \"neural signal\"[Title/Abstract] OR \"signal processing\"[Title/Abstract] OR (\"deep learning\"[Title/Abstract] AND EEG[Title/Abstract]))) AND (\"2026-11-14\"[EDAT] : \"2026-11-16\"[EDAT])) AND (\"Clin Neurophysiol\"[Journal] OR \"J Neurophysiol\"[Journal] OR \"J Neural Eng\"[Journal] OR \"NeuroImage\"[Journal] OR \"Brain Topogr\"[Journal] OR \"J Clin Neurophysiol\"[Journal] OR \"Neuromodulation\"[Journal] OR \"J Neurosci Methods\"[Journal] OR \"J Neuroeng Rehabil\"[Journal] OR \"IEEE Trans Neural Syst Rehabil Eng\"[Journal])"
+      "edat_start": "2026-11-15",
+      "edat_end": "2026-11-17",
+      "query": "(((electroencephalograph*[Title/Abstract] OR intracranial EEG[Title/Abstract] OR intracranial eeg[Title/Abstract] OR SEEG[Title/Abstract] OR \"local field potential\"[Title/Abstract] OR LFP[Title/Abstract] OR electrocorticograph*[Title/Abstract] OR ECoG[Title/Abstract] OR \"high-frequency oscillation\"[Title/Abstract] OR \"high frequency oscillation\"[Title/Abstract] OR HFO[Title/Abstract] OR \"multi-unit activity\"[Title/Abstract] OR MUA[Title/Abstract] OR \"neural signal\"[Title/Abstract] OR \"signal processing\"[Title/Abstract] OR (\"deep learning\"[Title/Abstract] AND EEG[Title/Abstract]))) AND (\"2026-11-15\"[EDAT] : \"2026-11-17\"[EDAT])) AND (\"Clin Neurophysiol\"[Journal] OR \"J Neurophysiol\"[Journal] OR \"J Neural Eng\"[Journal] OR \"NeuroImage\"[Journal] OR \"Brain Topogr\"[Journal] OR \"J Clin Neurophysiol\"[Journal] OR \"Neuromodulation\"[Journal] OR \"J Neurosci Methods\"[Journal] OR \"J Neuroeng Rehabil\"[Journal] OR \"IEEE Trans Neural Syst Rehabil Eng\"[Journal])"
     },
     {
       "group": "D",
       "label": "闭环神经调控 · Closed-loop Neuromodulation",
-      "count": 4,
-      "total": 4,
+      "count": 5,
+      "total": 5,
       "pmids": [
+        "43042848",
+        "43038561",
         "43036403",
         "43033150",
-        "43032200",
-        "43028131"
+        "43032200"
       ],
       "status": "ok",
-      "edat_start": "2026-11-14",
-      "edat_end": "2026-11-16",
-      "query": "(((\"closed-loop\"[Title/Abstract] OR \"closed loop\"[Title/Abstract] OR \"close-loop\"[Title/Abstract] OR \"responsive neurostimulation\"[Title/Abstract] OR \"adaptive deep brain stimulation\"[Title/Abstract] OR \"adaptive neurostimulation\"[Title/Abstract] OR \"adaptive stimulation\"[Title/Abstract] OR \"feedback-controlled\"[Title/Abstract] OR \"feedback controlled\"[Title/Abstract] OR \"EEG-triggered\"[Title/Abstract] OR \"biomarker-driven\"[Title/Abstract] OR \"seizure-triggered\"[Title/Abstract] OR \"ictal-triggered\"[Title/Abstract] OR \"state-dependent\"[Title/Abstract]) AND (\"neuromodulation\"[Title/Abstract] OR \"neurostimulation\"[Title/Abstract] OR \"brain stimulation\"[Title/Abstract] OR \"deep brain stimulation\"[Title/Abstract] OR \"vagus nerve stimulation\"[Title/Abstract] OR \"vagal nerve stimulation\"[Title/Abstract] OR \"responsive neurostimulation\"[Title/Abstract] OR \"transcranial magnetic stimulation\"[Title/Abstract] OR \"transcranial electrical stimulation\"[Title/Abstract] OR \"transcranial direct current stimulation\"[Title/Abstract] OR \"focused ultrasound stimulation\"[Title/Abstract] OR \"ultrasound neuromodulation\"[Title/Abstract] OR \"low-intensity focused ultrasound\"[Title/Abstract] OR \"low intensity focused ultrasound\"[Title/Abstract] OR \"transcranial ultrasound\"[Title/Abstract] OR \"cortical stimulation\"[Title/Abstract] OR \"thalamic stimulation\"[Title/Abstract] OR \"hippocampal stimulation\"[Title/Abstract])) AND (\"2026-11-14\"[EDAT] : \"2026-11-16\"[EDAT]))"
+      "edat_start": "2026-11-15",
+      "edat_end": "2026-11-17",
+      "query": "(((\"closed-loop\"[Title/Abstract] OR \"closed loop\"[Title/Abstract] OR \"close-loop\"[Title/Abstract] OR \"responsive neurostimulation\"[Title/Abstract] OR \"adaptive deep brain stimulation\"[Title/Abstract] OR \"adaptive neurostimulation\"[Title/Abstract] OR \"adaptive stimulation\"[Title/Abstract] OR \"feedback-controlled\"[Title/Abstract] OR \"feedback controlled\"[Title/Abstract] OR \"EEG-triggered\"[Title/Abstract] OR \"biomarker-driven\"[Title/Abstract] OR \"seizure-triggered\"[Title/Abstract] OR \"ictal-triggered\"[Title/Abstract] OR \"state-dependent\"[Title/Abstract]) AND (\"neuromodulation\"[Title/Abstract] OR \"neurostimulation\"[Title/Abstract] OR \"brain stimulation\"[Title/Abstract] OR \"deep brain stimulation\"[Title/Abstract] OR \"vagus nerve stimulation\"[Title/Abstract] OR \"vagal nerve stimulation\"[Title/Abstract] OR \"responsive neurostimulation\"[Title/Abstract] OR \"transcranial magnetic stimulation\"[Title/Abstract] OR \"transcranial electrical stimulation\"[Title/Abstract] OR \"transcranial direct current stimulation\"[Title/Abstract] OR \"focused ultrasound stimulation\"[Title/Abstract] OR \"ultrasound neuromodulation\"[Title/Abstract] OR \"low-intensity focused ultrasound\"[Title/Abstract] OR \"low intensity focused ultrasound\"[Title/Abstract] OR \"transcranial ultrasound\"[Title/Abstract] OR \"cortical stimulation\"[Title/Abstract] OR \"thalamic stimulation\"[Title/Abstract] OR \"hippocampal stimulation\"[Title/Abstract])) AND (\"2026-11-15\"[EDAT] : \"2026-11-17\"[EDAT]))"
     },
     {
       "group": "E",
@@ -128,15 +130,139 @@
       "total": 0,
       "pmids": [],
       "status": "ok",
-      "edat_start": "2026-11-14",
-      "edat_end": "2026-11-16",
-      "query": "(((hyperexcitab*[Title/Abstract] OR \"excitation-inhibition\"[Title/Abstract] OR \"excitation inhibition\"[Title/Abstract] OR \"excitatory-inhibitory\"[Title/Abstract]) AND (neuron*[Title/Abstract] OR \"spiking network\"[Title/Abstract]) AND (model*[Title/Abstract] OR simulat*[Title/Abstract] OR inferen*[Title/Abstract] OR compensat*[Title/Abstract] OR homeosta*[Title/Abstract])) AND (\"2026-11-14\"[EDAT] : \"2026-11-16\"[EDAT])) AND (\"Nature\"[Journal] OR \"Science\"[Journal] OR \"Nat Neurosci\"[Journal] OR \"Neuron\"[Journal] OR \"Brain\"[Journal] OR \"Nat Commun\"[Journal] OR \"eLife\"[Journal] OR \"J Neurosci\"[Journal] OR \"J Neural Eng\"[Journal] OR \"PLoS Comput Biol\"[Journal] OR \"Neural Comput\"[Journal])"
+      "edat_start": "2026-11-15",
+      "edat_end": "2026-11-17",
+      "query": "(((hyperexcitab*[Title/Abstract] OR \"excitation-inhibition\"[Title/Abstract] OR \"excitation inhibition\"[Title/Abstract] OR \"excitatory-inhibitory\"[Title/Abstract]) AND (neuron*[Title/Abstract] OR \"spiking network\"[Title/Abstract]) AND (model*[Title/Abstract] OR simulat*[Title/Abstract] OR inferen*[Title/Abstract] OR compensat*[Title/Abstract] OR homeosta*[Title/Abstract])) AND (\"2026-11-15\"[EDAT] : \"2026-11-17\"[EDAT])) AND (\"Nature\"[Journal] OR \"Science\"[Journal] OR \"Nat Neurosci\"[Journal] OR \"Neuron\"[Journal] OR \"Brain\"[Journal] OR \"Nat Commun\"[Journal] OR \"eLife\"[Journal] OR \"J Neurosci\"[Journal] OR \"J Neural Eng\"[Journal] OR \"PLoS Comput Biol\"[Journal] OR \"Neural Comput\"[Journal])"
     }
   ],
-  "dedup_total": 30,
+  "dedup_total": 32,
   "papers": [
     {
       "index": 1,
+      "pmid": "43044080",
+      "title": "Predicting Epilepsy Trajectory After Infantile Epileptic Spasms Syndrome: The BASED Score and Beyond.",
+      "title_zh": "婴儿癫痫痉挛综合征后的癫痫发展轨迹预测：BASED评分及其他。",
+      "journal": "Neurology",
+      "iso_journal": "Neurology",
+      "authors": [
+        "Hussain SA"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1212/WNL.0000000000218871",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43044080/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 12,
+      "relevance_hits": [
+        "epilepsy",
+        "epileptic"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Editorial"
+      ],
+      "publication_label": "述评/社论",
+      "abstract_status": "not_provided",
+      "related_articles": []
+    },
+    {
+      "index": 2,
+      "pmid": "43044079",
+      "title": "Validation of the BASED Score as a Prognostic Biomarker for Refractory Epilepsy Following Treatment of Infantile Epileptic Spasms Syndrome.",
+      "title_zh": "基于婴儿癫痫性痉挛综合征治疗后，验证BASED评分作为难治性癫痫预后生物标志物的有效性。",
+      "journal": "Neurology",
+      "iso_journal": "Neurology",
+      "authors": [
+        "Mytinger JR",
+        "Lo WD",
+        "Weber AB",
+        "Vidaurre J",
+        "Patel AD",
+        "McCabe C",
+        "Fredwall MM",
+        "Choudhari PR",
+        "Beatty CW",
+        "Aylward S",
+        "Albert DVF",
+        "Rust SW"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1212/WNL.0000000000218751",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43044079/",
+      "abstract": "BACKGROUND AND OBJECTIVES: Refractory epilepsy is common among children with a history of infantile epileptic spasms syndrome (IESS), yet no validated prognostic biomarkers exist to guide early risk stratification. The Burden of Amplitudes and Epileptiform Discharges (BASED) score is an interictal EEG rating scale for children with IESS, with scores of 4 or 5 suggesting epileptic encephalopathy. The objective of this study was to determine whether a post-treatment BASED score of 4/5 is a prognostic biomarker for refractory epilepsy after IESS treatment.\nMETHODS: This retrospective validation study of children with IESS was conducted at a Level 4 pediatric epilepsy center. Children with tuberous sclerosis complex (TSC) were excluded. Three blinded reviewers assigned 2021 BASED scores to full-length post-treatment EEGs. Refractory epilepsy was defined as persistent seizures despite treatment with at least 2 antiseizure medications or completion of epilepsy surgery. Prespecified performance benchmarks for BASED 4/5 as a rule-in test required ≥80% specificity and a positive likelihood ratio of ≥4.\nRESULTS: The cohort included 123 children (42.3% female), with a median first treatment age of 8.0 months (IQR 5.9-10.3) and follow-up duration after first treatment of 58.8 months (IQR 42.2-80.7). Only 11.4% had a favorable etiology. EEGs (median 19 hours) were completed at a median of 47 days (32-72) after starting treatment. The inter-rater agreement for epileptic encephalopathy was excellent (κfree = 0.78). Half (52%) of the children had refractory epilepsy. BASED 4/5 demonstrated high specificity (88.1%, 95% CI 77.1-95.1) for refractory epilepsy, with a positive likelihood ratio of 4.4 (2.1-9.1). The sensitivity, positive predictive value, and negative predictive value were 51.6% (38.7-64.3), 82.5% (69.3-90.8), and 62.7% (56.1-68.7), respectively. An exploratory composite indicator comprising BASED 4/5, persistent epileptic spasms, and/or epileptic spasms relapse demonstrated higher sensitivity (79.7%, 67.8-88.7) with modestly reduced specificity (81.4%, 69.1-90.3).\nDISCUSSION: Study limitations include the single-center design, exclusion of children with TSC, variable EEG timing, and shorter follow-up in some children. Nevertheless, in this independent validation cohort, a post-treatment BASED 4/5 demonstrated favorable prognostic performance consistent with its proposed use as a rule-in test for refractory epilepsy. These findings support a post-treatment BASED score of 4/5 as a prognostic biomarker for refractory epilepsy after IESS treatment.",
+      "abstract_zh": "背景和目的：难治性癫痫在有婴儿癫痫性惊厥综合征（IESS）病史的儿童中很常见，但尚无经过验证的预后生物标志物来指导早期风险分层。振幅和癫痫样放电负担（BASED）评分是一种用于评估IESS患儿的间歇期脑电图评分量表，评分为4或5提示癫痫性脑病。本研究的目的是确定是否\n治疗后BASED评分为4/5是IESS治疗后难治性癫痫的预后生物标志物。\n方法：这项针对IESS患儿的回顾性验证研究在一家4级儿科癫痫中心开展。患有结节性硬化症综合征（TSC）的儿童被排除在外。三名盲态审阅者为治疗后全长脑电图（EEG）分配了2021年BASED评分。难治性癫痫被定义为尽管接受治疗但仍持续发作。\n至少使用过2种抗癫痫药物或已完成癫痫手术。作为确诊性检查的 BASED 4/5 的预先设定性能基准要求特异性 ≥80%，阳性似然比 ≥4。\n结果：该队列包括123名儿童（42.3%为女性），首次治疗的中位年龄为8.0个月（四分位距为5.9-10.3个月），首次治疗后的随访期为58.8个月（四分位距为42.2-80.7个月）。仅有11.4%的患者具有良性病因。脑电图\n（中位数为19小时）在开始治疗后中位数47天（32-72天）完成。癫痫性脑病的评分者间一致性极佳（κfree = 0.78）。半数（52%）的儿童患有难治性癫痫。BASED 4/5 显示出对难治性癫痫的高特异性（88.1%，95% CI 77.1-95.1），阳性似然比为 4.4 (2.1-9.1)。敏感性、阳性预测值和阴性预测值分别为5\n分别为1.6%（38.7-64.3）、82.5%（69.3-90.8）和62.7%（56.1-68.7）。一项包括BASED 4/5、持续性癫痫性痉挛和/或癫痫性痉挛复发的探索性复合指标显示出更高的敏感性（79.7%，67.8-88.7），而特异性略有降低（81.4%，69.1-90.3）。\n讨论：本研究的局限性包括单中心设计、排除患有结节性硬化症（TSC）的儿童、脑电图（EEG）时间不一致以及部分儿童的随访时间较短。\nen. 然而，在这个独立验证队列中，治疗后BASED 4/5显示出良好的预后性能，这与将其作为难治性癫痫的确诊性检测的拟议用途相一致。这些结果支持将治疗后BASED评分为4/5作为IESS治疗后难治性癫痫的预后生物标志物。",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 49,
+      "relevance_hits": [
+        "epilepsy",
+        "epileptic",
+        "epileptiform",
+        "seizure",
+        "seizures",
+        "refractory",
+        "ictal",
+        "interictal"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Journal Article",
+        "Validation Study"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": []
+    },
+    {
+      "index": 3,
+      "pmid": "43042931",
+      "title": "WNK-SPAK/OSR1 signaling pathway facilitates ictal activity via reduced neuronal chloride extrusion rate.",
+      "title_zh": "WNK-SPAK/OSR1信号通路通过降低神经元氯离子外排速率来促进癫痫发作活动。",
+      "journal": "eLife",
+      "iso_journal": "Elife",
+      "authors": [
+        "Dzhala VI",
+        "Shiu FH",
+        "Rahmati N",
+        "Carroll A",
+        "Bae R",
+        "Kahle KT",
+        "Staley K"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.7554/eLife.112181",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43042931/",
+      "abstract": "Seizures upregulate Na+-K+-2Cl- (NKCC1)-mediated Cl- influx and downregulate K+-Cl- (KCC2)-mediated Cl- efflux via the WNK-SPAK/OSR1 kinases, leading to cytoplasmic chloride ([Cl-]i) accumulation, reduced GABAergic inhibition, and anticonvulsant failure. Early studies found that inhibiting WNK-kinase reduced baseline [Cl-]i (ECl) and seizures via increased KCC2 activity. However, increased KCC2 activity alone should not affect ECl, whose determinants are more complex. We determined the net effects of the WNK-SPAK/OSR1 pathway inhibitor WNK463 on ECl and [Cl-]i transients during spontaneous ictal-like discharges (ILDs) in organotypic hippocampal slice cultures from mice. We found that WNK463 reduced interictal [Cl-]i, but did not change baseline [Cl-]i measured in the presence of TTX. WNK463 enhanced neuronal Cl- extrusion during and after ILDs before abolishing ILDs. Pharmacological inhibition and targeted siRNA silencing demonstrated that the anti-ictal effects of WNK463 involved both NKCC1 and KCC2. Our data support a mechanism whereby mutual NKCC1 inhibition and KCC2 activation via the WNK-SPAK/OSR1 pathway exert powerful anti-ictal effects by facilitating [Cl-]i extrusion during ILDs.",
+      "abstract_zh": "癫痫发作通过WNK-SPAK/OSR1激酶上调Na+-K+-2Cl- (NKCC1)介导的Cl-内流，并下调K+-Cl- (KCC2)介导的Cl-外流，导致胞浆氯离子（[Cl-]i）积累、GABA能抑制作用减弱和抗癫痫药物失效。早期研究发现，抑制WNK激酶可通过增加KCC2活性来降低基线[Cl-]i (ECl)和癫痫发作。然而，仅KCC2活性增加不应影响ECl，其决定因素\n蚂蚁的情况更为复杂。我们测定了WNK-SPAK/OSR1通路抑制剂WNK463对小鼠器官型海马切片培养物中自发性癫痫样放电（ILD）期间ECl和[Cl-]i瞬变的净效应。我们发现，WNK463降低了发作间期[Cl-]i，但没有改变在TTX存在下测量的基线[Cl-]i。WNK463在ILDs期间和之后增强了神经元Cl-外排，然后消除了ILDs。药理学抑制\n抑制和靶向siRNA沉默表明，WNK463的抗癫痫发作作用涉及NKCC1和KCC2。我们的数据支持一种机制，即通过WNK-SPAK/OSR1通路实现的NKCC1抑制和KCC2激活的相互作用，通过促进ILD期间的[Cl-]i外排，发挥强大的抗癫痫发作作用。",
+      "hit_groups": [
+        "A"
+      ],
+      "group_count": 1,
+      "relevance_score": 12,
+      "relevance_hits": [
+        "seizure",
+        "seizures",
+        "anticonvulsant",
+        "ictal",
+        "interictal",
+        "hippocampal"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": []
+    },
+    {
+      "index": 4,
       "pmid": "43038493",
       "title": "Frequency-Specific Thalamocortical Network Dynamics During Focal Seizures in Humans.",
       "title_zh": "人类局灶性癫痫发作期间的频率特异性丘脑皮质网络动力学。",
@@ -162,7 +288,7 @@
       "doi": "10.1212/WNL.0000000000218737",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43038493/",
       "abstract": "BACKGROUND AND OBJECTIVES: The thalamus is an emerging neuromodulation target in drug-resistant focal epilepsy because of its frequent ictal involvement. However, frequency-specific and directional thalamocortical dynamics remain poorly understood. We sought to characterize thalamocortical network dynamics across seizure evolution using stereoelectroencephalography (SEEG).\nMETHODS: We retrospectively analyzed SEEG recordings from patients with pediatric-onset drug-resistant focal epilepsy with simultaneous cortical and thalamic sampling focusing on the anterior nucleus (AN) and centromedian nucleus (CM). We applied visual analysis with quantitative measures of spectral power, imaginary coherence, and spectral Granger causality across slow (1-12 Hz), β (13-30 Hz), and γ (30-70 Hz) bands to quantify thalamocortical and cortico-cortical interactions from seizure onset to termination. Random forest models were trained to classify seizure state using thalamic EEG features as an exploratory analysis.\nRESULTS: The final cohort comprised 19 patients (median age, 16.9 years; 31.6% female), with 66 focal seizures analyzed. Thalamic ictal activity was present at seizure onset in 81% of sampled thalamic contacts and became nearly universal by seizure termination. Both the thalamus and seizure onset zone showed increased spectral power during seizures, with prominent slow-band augmentation at seizure termination in the thalamus. Similarly, thalamocortical imaginary coherence increased during seizures, with the largest changes near seizure termination in the slow band (AN-SOZ: 11% [IQR, 2 to 20], rank-biserial correlations (rrb) = 0.84; CM-SOZ: 12% [IQR, 3 to 23], rrb = 0.84) and β band (AN-SOZ: 5% [IQR, 0 to 12], rrb = 0.74; CM-SOZ: 8% [IQR, 2 to 15], rrb = 0.86). Directed connectivity analyses demonstrated bidirectional thalamocortical interactions, with large slow-frequency thalamus-to-SOZ outflow near seizure termination from both AN and CM, exceeding propagation-zone-to-SOZ cortico-cortical flow (both p < 0.01). Seizure state was classified using thalamic EEG features, with area under the receiver operating characteristic curve values of 0.825 for AN and 0.839 for CM.\nDISCUSSION: Human focal seizures engage frequency-specific and bidirectional thalamocortical interactions that evolve from onset to termination. These findings support the thalamus as a source of clinically relevant seizure-state information and may inform thalamic biomarker development for neuromodulation in drug-resistant epilepsy.",
-      "abstract_zh": "背景和目的：由于丘脑在癫痫发作时的频繁受累，它已成为难治性局灶性癫痫中一个新兴的神经调节靶点。然而，人们对频率特异性和方向性的丘脑-皮质动力学仍知之甚少。我们试图使用立体脑电图（SEEG）来描述癫痫发作演变过程中的丘脑-皮质网络动力学。\n方法：我们对患有PE的患者的SEEG记录进行了回顾性分析。\n儿童期发作的耐药性局灶性癫痫，同时进行皮层和丘脑采样，重点关注前核（AN）和中线核（CM）。我们对慢波（1-12 Hz）、β波（13-30 Hz）和γ波（30-70 Hz）频带的频谱功率、虚相干和频谱格兰杰因果关系进行了定量测量，并应用了目视分析，以量化从癫痫发作开始到结束的丘脑-皮层和皮层-皮层相互作用。随机\n对随机森林模型进行了训练，以使用丘脑脑电图特征对癫痫发作状态进行分类，作为一项探索性分析。\n结果：最终队列包括19名患者（中位年龄16.9岁；31.6%为女性），分析了66次局灶性癫痫发作。在81%的丘脑电极采样点，丘脑癫痫发作活动在癫痫发作发作时存在，到癫痫发作终止时几乎普遍存在。丘脑和癫痫发作起始区在癫痫发作期间均显示出频谱功率增加。\ng癫痫发作，在丘脑癫痫发作终止时慢波段显著增强。同样，丘脑-皮层虚相干在癫痫发作期间增加，在慢波段（AN-SOZ：11% [IQR，2至20]，秩双列相关系数（rrb）= 0.84；CM-SOZ：12% [IQR，3至23]，rrb = 0.84）和β波段（AN-SOZ：5% [IQR，0至12]，rrb = 0.74；CM-SOZ：8% [IQR，2至15]，rrb = 0.86）中，最大变化发生在癫痫发作即将终止时。有向连通性\n连通性分析显示存在双向丘脑-皮质相互作用，在AN和CM的癫痫发作即将终止时，存在大量低频丘脑-SOZ流出，超过了传播区-SOZ皮质-皮质的流量（两者均p < 0.01）。使用丘脑脑电图特征对癫痫发作状态进行分类，AN的受试者工作特征曲线下面积值为0.825，CM的受试者工作特征曲线下面积值为0.839。\n讨论：人类局灶性癫痫发作涉及频率-空间\n从发作到终止演变的特异性双向丘脑-皮层相互作用。这些发现支持丘脑是临床相关癫痫发作状态信息的来源，并可能为难治性癫痫神经调节的丘脑生物标志物开发提供依据。",
+      "abstract_zh": "背景和目的：由于丘脑在癫痫发作时的频繁受累，它已成为难治性局灶性癫痫中一个新兴的神经调节靶点。然而，人们对频率特异性和方向性的丘脑-皮质动力学仍知之甚少。我们试图使用立体脑电图（SEEG）来描述癫痫发作演变过程中的丘脑-皮质网络动力学。\n方法：我们对患有PE的患者的SEEG记录进行了回顾性分析。\n儿童期发作的难治性局灶性癫痫，同时进行皮层和丘脑采样，重点关注前核（AN）和中线核（CM）。我们对慢波（1-12 Hz）、β波（13-30 Hz）和γ波（30-70 Hz）频段的频谱功率、虚部相干性和频谱格兰杰因果关系进行了定量测量，并应用了目视分析，以量化从癫痫发作开始到结束的丘脑-皮层和皮层-皮层相互作用。随机\n对随机森林模型进行了训练，以使用丘脑脑电图特征对癫痫发作状态进行分类，作为一项探索性分析。\n结果：最终队列包括19名患者（中位年龄16.9岁；31.6%为女性），分析了66次局灶性癫痫发作。在81%的丘脑电极采样点，丘脑癫痫发作活动在癫痫发作发作时存在，到癫痫发作终止时几乎普遍存在。在癫痫发作期间，丘脑和癫痫发作起始区均显示出频谱功率增加。\ng癫痫发作，在丘脑癫痫发作终止时有明显的慢波增强。同样，丘脑-皮质虚相干在癫痫发作期间增加，在慢波段（AN-SOZ：11% [IQR，2至20]，秩双列相关系数（rrb）= 0.84；CM-SOZ：12% [IQR，3至23]，rrb = 0.84）和β波段（AN-SOZ：5% [IQR，0至12]，rrb = 0.74；CM-SOZ：8% [IQR，2至15]，rrb = 0.86）中，癫痫发作终止附近的变化最大。有向连通性\n连通性分析显示了双向丘脑-皮质相互作用，在癫痫发作即将终止时，AN和CM均存在大量低频丘脑-SOZ流出，超过了传播区-SOZ皮质-皮质的流量（两者p < 0.01）。使用丘脑EEG特征对癫痫发作状态进行分类，AN的受试者工作特征曲线下面积值为0.825，CM的受试者工作特征曲线下面积值为0.839。\n讨论：人类局灶性癫痫发作涉及频率特异性\n从发作到终止演变的特异性双向丘脑-皮层相互作用。这些发现支持丘脑是临床相关癫痫发作状态信息的来源，并可能为难治性癫痫神经调节的丘脑生物标志物开发提供依据。",
       "hit_groups": [
         "A"
       ],
@@ -187,46 +313,37 @@
       "related_articles": []
     },
     {
-      "index": 2,
-      "pmid": "43025427",
-      "title": "Expanded repeat RNAs drive aberrant cortical network activity in benign adult familial myoclonus epilepsy.",
-      "title_zh": "扩增重复RNA驱动良性成人家族性肌阵挛癫痫中的异常皮层网络活动。",
-      "journal": "Cell reports. Medicine",
-      "iso_journal": "Cell Rep Med",
+      "index": 5,
+      "pmid": "43042732",
+      "title": "Real-world safety profiles of newer antiseizure medications: A pharmacovigilance study based on FDA Adverse Event Reporting System database.",
+      "title_zh": "新型抗癫痫药物的真实世界安全性特征：一项基于FDA不良事件报告系统数据库的药物警戒研究。",
+      "journal": "Epileptic disorders : international epilepsy journal with videotape",
+      "iso_journal": "Epileptic Disord",
       "authors": [
-        "Suga M",
-        "Kondo T",
-        "Imamura K",
-        "Nagafuku N",
-        "Ishibashi Y",
-        "Kabata M",
-        "Shibukawa R",
-        "Taketsuna Y",
-        "Tsukita K",
-        "Kobayashi K",
-        "Ayaki T",
-        "Hitomi T",
-        "Suzuki I",
-        "Tsujimura T",
-        "Yamamoto T",
-        "Takahashi R",
-        "Matsumoto R",
-        "Ikeda A",
-        "Inoue H"
+        "He Z",
+        "Li T",
+        "Chang Y",
+        "Liu Y",
+        "Song M",
+        "Zou Y",
+        "Xu C",
+        "Yang X",
+        "Li B",
+        "Fang F"
       ],
-      "pubdate": "2026 11 13",
-      "doi": "10.1016/j.xcrm.2026.103168",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43025427/",
-      "abstract": "Expansions of short nucleotide repeats cause diverse neurological disorders, yet how they perturb neuronal function remains unclear. Benign adult familial myoclonus epilepsy (BAFME) is caused by intronic pentanucleotide repeat expansions in genes including SAMD12. Here, we establish patient-derived cortical organoids and a microelectrode array platform, coupled with a frequency-decomposition-based analytical framework, to characterize BAFME-associated neuronal hyperexcitability and compare organoid electrophysiological features with those observed in patient electroencephalographic recordings. Single-cell RNA sequencing reveals altered expression of genes related to calcium regulation and α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) receptor function in BAFME cortical neurons. Consistent with these changes, BAFME organoids show an increased density of AMPA-receptor-positive synaptic puncta. Pharmacological AMPA receptor antagonism suppresses hyperexcitability. Antisense oligonucleotides targeting the expanded repeat RNA-which reduce pathogenic RNA foci without significantly affecting SAMD12 mRNA levels-also attenuate hyperexcitability. These findings indicate that targeting expanded repeat RNA mitigates aberrant cortical network activity in BAFME organoids.",
-      "abstract_zh": "短核苷酸重复序列的扩增会导致多种神经系统疾病，但其如何扰乱神经元功能仍不清楚。良性成人家族性肌阵挛癫痫（BAFME）是由包括SAMD12在内的基因中内含子五核苷酸重复序列的扩增所致。在此，我们建立了患者来源的皮层类器官和微电极阵列平台，并结合基于频率分解的分析框架，以表征BAFME相关……\n神经元过度兴奋，并将类器官的电生理特征与患者脑电图记录中观察到的特征进行比较。单细胞RNA测序揭示了BAFME皮层神经元中与钙调节和α-氨基-3-羟基-5-甲基-4-异噁唑丙酸（AMPA）受体功能相关的基因表达发生改变。与这些变化一致的是，BAFME类器官显示出AMPA受体阳性细胞的密度增加。\ne突触斑点。AMPA受体的药理学拮抗作用可抑制过度兴奋性。靶向扩增重复RNA的反义寡核苷酸（在不显著影响SAMD12 mRNA水平的情况下减少致病性RNA灶）也能减轻过度兴奋性。这些发现表明，靶向扩增重复RNA可减轻BAFME类器官中异常的皮层网络活动。",
+      "pubdate": "2026 11 17",
+      "doi": "10.1002/epd2.70479",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43042732/",
+      "abstract": "OBJECTIVE: This study aimed to systematically evaluate and compare the post-marketing safety of four newer antiseizure medications (ASMs)-brivaracetam (BRV), cannabidiol (CBD), cenobamate (CNB), and fenfluramine (FFA).\nMETHODS: A pharmacovigilance study was conducted using data from the FAERS database (Q1 2016-Q4 2024). Disproportionality analyses were performed to detect adverse event (AE) signals using three algorithms. Subgroup analyses were stratified by age, sex, reporter, and treatment strategy. We employed multivariable logistic regression, adjusted for covariates including age, sex, weight, dose, and concomitant medications, to validate associations between ASMs and specific AEs and to identify potential influencing factors. Bayesian network analysis was conducted to explore conditional dependencies among variables. Hospitalization risk was evaluated based on system organ classes.\nRESULTS: After data cleaning, 13 763 reports were included. We identified 308 positive preferred term (PT) signals. Seizure-related AEs were frequently reported. All four ASMs had the PT of seizure cluster, with each exhibiting distinct AE profiles: BRV with psychiatric disorders, CBD with gastrointestinal events, CNB with visual dysfunction, and FFA with valvular heart disease (VHD). Children had higher reporting odds of seizure with BRV and CBD, while reporting odds of FFA-related VHD were lower in children; polytherapy was associated with higher reporting odds of somnolence, and AE reporting patterns varied by reporter source. Both CBD-related gastrointestinal events and FFA-related cardiac events exhibited dose-dependent effects. Infection-related AEs were associated with higher odds of hospitalization for multiple ASMs.\nSIGNIFICANCE: This study comprehensively characterizes the safety profiles of newer ASMs and highlights the importance of tailored AE monitoring based on specific ASM and patient characteristics.",
+      "abstract_zh": "目的：本研究旨在系统性评估和比较四种较新型抗癫痫药物（ASM）——比非尼酯（BRV）、大麻二酚（CBD）、西诺巴酯（CNB）和芬氟拉明（FFA）的上市后安全性。\n方法：使用FAERS数据库（2016年第一季度至2024年第四季度）的数据开展了一项药物警戒研究。使用三种算法进行了不成比例分析，以检测不良事件（AE）信号。进行了亚组分析\n按年龄、性别、报告者和治疗策略分层。我们采用了多变量Logistic回归分析，并对年龄、性别、体重、剂量和伴随用药等协变量进行了校正，以验证ASMs与特定AE之间的关联，并识别潜在的影响因素。进行了贝叶斯网络分析，以探索变量之间的条件依赖关系。根据系统器官分类评估住院风险，\n.\n结果：数据清洗后，纳入了13 763份报告。我们识别出308个阳性首选术语（PT）信号。与癫痫发作相关的不良事件经常被报告。所有四种ASM均有癫痫发作簇的PT，每种ASM均表现出不同的AE特征：BRV伴有精神障碍，CBD伴有胃肠道事件，CNB伴有视功能障碍，FFA伴有心脏瓣膜病（VHD）。儿童使用BRV和C时报告癫痫发作的几率较高\nBD，虽然报告显示儿童中FFA相关VHD的比值比较低；多药联合治疗与嗜睡报告比值比较高相关，且AE报告模式因报告者来源而异。CBD相关胃肠道事件和FFA相关心脏事件均表现出剂量依赖性效应。与感染相关的AE与多种ASM的住院几率较高相关。\n意义：本研究全面阐明了\n新一代 ASM 的安全性特征，并强调了根据具体 ASM 和患者特征进行个性化 AE 监测的重要性。",
       "hit_groups": [
-        "A"
+        "B1"
       ],
       "group_count": 1,
-      "relevance_score": 8,
+      "relevance_score": 12,
       "relevance_hits": [
-        "epilepsy",
-        "electroencephalogr"
+        "seizure",
+        "antiseizure"
       ],
       "priority": "推荐",
       "publication_types": [
@@ -237,7 +354,78 @@
       "related_articles": []
     },
     {
-      "index": 3,
+      "index": 6,
+      "pmid": "43038919",
+      "title": "DNA methylation profiling of the RELN gene using MSP in Iraqi pediatric patients with epilepsy: A case-control study.",
+      "title_zh": "使用MSP对伊拉克癫痫儿科患者的RELN基因进行DNA甲基化谱分析：一项病例对照研究。",
+      "journal": "Epilepsy research",
+      "iso_journal": "Epilepsy Res",
+      "authors": [
+        "Jumaah SS",
+        "Khalaf AF",
+        "Naeem NT",
+        "Hassan MJ",
+        "Sahan KA"
+      ],
+      "pubdate": "2026 11 13",
+      "doi": "10.1016/j.eplepsyres.2026.107957",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43038919/",
+      "abstract": "BACKGROUND: Epilepsy is one of the most common neurological disorders in children and is influenced by both genetic and epigenetic mechanisms. Altered DNA methylation may contribute to disease susceptibility through changes in gene regulation. The RELN gene is involved in neuronal migration, synaptic plasticity, and brain development, making it a potential target for epigenetic investigation.\nOBJECTIVE: This study aimed to evaluate the association between RELN methylation levels and pediatric epilepsy and to investigate its potential diagnostic value.\nMETHODS: A case-control study was conducted involving 47 pediatric epilepsy patients and 39 healthy controls. Genomic DNA was extracted and validated prior to methylation analysis. Quantitative real-time PCR using methylation-specific primers was performed to determine RELN methylation percentage. Statistical analyses included Mann-Whitney testing, logistic regression analysis, receiver operating characteristic (ROC) curve analysis, and Spearman correlation analysis.\nRESULTS: RELN methylation percentage was significantly higher in patients compared with controls (11.60% [8.88-14.61] vs. 7.77% [6.87-10.73], P < 0.0001). ROC analysis demonstrated good discriminatory performance with an AUC of 0.811 (95% CI: 0.712-0.887), sensitivity of 80.85%, and specificity of 74.36% at a cutoff value > 8.545%. Logistic regression analysis identified RELN methylation as an independent predictor of epilepsy (adjusted OR=1.537, 95% CI: 1.240-1.906, P < 0.001). No significant correlations were observed between RELN methylation and age, age at first seizure, or days since the last seizure.\nCONCLUSION: Increased RELN methylation was significantly associated with pediatric epilepsy and independently predicted disease status, suggesting a potential role for RELN methylation as an epigenetic biomarker in epilepsy.",
+      "abstract_zh": "背景：癫痫是儿童中最常见的神经系统疾病之一，受遗传和表观遗传机制的双重影响。DNA甲基化改变可能通过基因调控的变化导致疾病易感性。RELN基因参与神经元迁移、突触可塑性和大脑发育，因此是表观遗传学研究的潜在靶点。\n目的：本研究旨在评估……的关联性。\nRELN甲基化水平与儿童癫痫之间的关系，并研究其潜在的诊断价值。\n方法：进行了一项病例对照研究，涉及47名儿童癫痫患者和39名健康对照者。在甲基化分析之前，提取并验证了基因组DNA。使用甲基化特异性引物进行定量实时PCR，以确定RELN甲基化百分比。统计学分析包括Mann-Whitney\n检验、Logistic回归分析、受试者工作特征（ROC）曲线分析和Spearman相关性分析。\n结果：与对照组相比，患者的RELN甲基化百分比显著更高（11.60% [8.88-14.61] vs. 7.77% [6.87-10.73]，P < 0.0001）。ROC分析显示出良好的区分性能，在临界值下，AUC为0.811（95% CI：0.712-0.887），灵敏度为80.85%，特异性为74.36%。\nlue > 8.545%。Logistic回归分析确定RELN甲基化是癫痫的独立预测因素（调整后OR=1.537，95% CI：1.240-1.906，P < 0.001）。RELN甲基化与年龄、首次癫痫发作的年龄或自上次癫痫发作以来的天数之间未观察到显著相关性。\n结论：RELN甲基化增加与儿童癫痫显著相关，并可独立预测疾病状态，表明其具有潜在的\nRELN甲基化作为癫痫表观遗传生物标志物的潜在作用。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 15,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "biomarker"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": []
+    },
+    {
+      "index": 7,
+      "pmid": "43038918",
+      "title": "Advancing neuropsychological and neurodevelopmental outcome measurement in pediatric epilepsy surgery.",
+      "title_zh": "推进小儿癫痫手术中的神经心理和神经发育结局测量。",
+      "journal": "Epilepsy research",
+      "iso_journal": "Epilepsy Res",
+      "authors": [
+        "Davalan W"
+      ],
+      "pubdate": "2026 11 14",
+      "doi": "10.1016/j.eplepsyres.2026.107958",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43038918/",
+      "abstract": "Epilepsy surgery is the most effective treatment for appropriately selected children with drug-resistant epilepsy, however, surgical success continues to be defined primarily by seizure outcomes. Neuropsychological and neurodevelopmental outcomes are inconsistently assessed, and children with substantial developmental or neurological impairment may be systematically underrepresented in postoperative outcome data. We conducted an overview of systematic reviews published from 2015 to 2025 that reported outcomes after pediatric epilepsy surgery, with particular emphasis on cognitive, developmental, adaptive, behavioral, and quality-of-life domains. Among 50 eligible systematic reviews, only 22 (44%) reported neuropsychological or cognitive outcomes. Global cognitive measures predominated, whereas language, memory, executive function, attention, and processing speed were substantially less frequently assessed. Only nine reviews quantitatively synthesized neurocognitive or developmental outcomes, and substantial heterogeneity in assessment instruments, baseline testing, and postoperative follow-up limited cross-study comparability. These findings highlight the need to move beyond whether neuropsychological testing is performed toward standardized measurement of meaningful longitudinal change. We propose a framework incorporating common core outcome domains, prespecified assessment intervals, developmentally appropriate and floor-sensitive measures, and inclusion of children unable to complete conventional norm-referenced testing. Prospective integration of harmonized neuropsychological trajectories with structural and functional connectomic measures may further clarify how seizure control, surgical network disruption, and neuroplasticity shape postoperative development. Pediatric epilepsy surgery outcomes should therefore encompass both seizure control and preservation or improvement of cognitive, developmental, adaptive, and functional trajectories.",
+      "abstract_zh": "癫痫手术是针对经过适当筛选的药物难治性癫痫患儿的最有效治疗方法，但手术成功与否仍然主要以癫痫发作的结局来界定。神经心理和神经发育结局的评估并不一致，在术后结局数据中，存在显著发育或神经功能障碍的儿童可能系统性地被低估。我们对系统进行了概述\n2015年至2025年发表的系统性综述，报告了儿童癫痫手术后的结局，特别强调认知、发育、适应、行为和生活质量等领域。在50篇符合条件的系统综述中，只有22篇（44%）报告了神经心理学或认知结局。总体认知指标占主导地位，而语言、记忆、执行功能、注意力以及处理速度的报道则少得多。\n仅有九篇综述对神经认知或发育结局进行了定量综合，而评估工具、基线测试和术后随访方面存在显著异质性，限制了跨研究的可比性。这些发现凸显了需要超越是否进行神经心理学测试，转向对有意义的纵向变化的标准化测量。我们提出一个纳入共同要素的框架。\n核心结局领域、预先指定的评估间隔、适合发育阶段且对最低分敏感的测量方法，以及纳入无法完成传统常模参照性测试的儿童。将统一的神经心理学轨迹与结构和功能连接组学测量结果进行前瞻性整合，可能进一步阐明癫痫发作控制、手术网络中断和神经可塑性如何影响术后发育。Pedi\n因此，小儿癫痫手术的结局应包括癫痫发作的控制以及认知、发育、适应和功能轨迹的保持或改善。",
+      "hit_groups": [
+        "B1"
+      ],
+      "group_count": 1,
+      "relevance_score": 16,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "drug-resistant",
+        "adaptive"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": []
+    },
+    {
+      "index": 8,
       "pmid": "43037638",
       "title": "Knockdown of KCNQ2 in CA1 reshapes epilepsy-related limbic network rhythms and reduces spontaneous exploratory behavior in mice.",
       "title_zh": "在CA1中敲低KCNQ2可重塑与癫痫相关的边缘系统网络节律，并减少小鼠的自发探索行为。",
@@ -268,7 +456,7 @@
       "doi": "10.1002/epi.70535",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43037638/",
       "abstract": "OBJECTIVE: Circuit-level effects of localized cornu ammonis 1 (CA1) potassium voltage-gated channel subfamily Q member 2 (KCNQ2) loss-of-function on epileptogenesis remain poorly understood, despite the well-established association of KCNQ2 deficiency with epilepsy and neuropsychiatric comorbidities.\nMETHODS: To examine how CA1-specific KCNQ2 deficiency modulates neural network activity during acquired epileptogenesis, we selectively knocked down KCNQ2 in mouse CA1 via adeno-associated virus (AAV)-short hairpin RNA (shRNA) and explored limbic network alterations. Calcium activity of glutamatergic neurons, gamma-aminobutyric acid (GABA) ergic neurons, somatostatin-positive (SST+) interneurons, and parvalbumin-positive (PV+) interneurons was recorded using cell type-specific GCaMP expression with simultaneous CA1 electroencephalography (EEG). Multi-site EEG recordings from CA1, cornu ammonis 3 (CA3), retrosplenial agranular cortex (RSA), infralimbic cortex (IL), cingulate cortex area 1 (CG1), primary motor cortex (M1), and basolateral amygdala (BLA) were analyzed for spectral power, functional connectivity (FC), and phase-amplitude coupling (PAC). We observed spontaneous activity, novel object recognition, and social behaviors of the model mice.\nRESULTS: CA1 KCNQ2 knockdown increased calcium activity in all neuronal populations during the latency, with greater activation of SST+ than PV+ interneurons. Excitatory-inhibitory imbalance correlated with seizure severity. EEG analyses revealed a biphasic pattern: reduced low-frequency power, phase synchrony, and FC during the latency, followed by widespread hypersynchronization of power spectral density, mutual information, and phase synchrony during severe seizures. In the non-epileptic state, PAC analysis revealed that knockdown group developed a biased network configuration characterized by enhanced PAC directed toward the BLA and weakened CA3-M1 and M1-related coupling. This pattern was consistent with their behavioral phenotypes, including reduced central exploration, fewer open-arm entries, impaired novel object exploration, and decreased social preference. During generalized seizures, PAC underwent extensive reorganization, with strengthened coupling between the BLA and multiple brain regions and reduced M1-directed coupling. Intraperitoneally administered retigabine (RTG), a pan-KCNQ channel opener, partially alleviated these behavioral deficits and attenuated the abnormally potentiated long-range network activity.\nSIGNIFICANCE: CA1 KCNQ2 knockdown not only disrupts the local excitatory/inhibitory balance but also promotes epileptogenesis by reshaping limbic-cortical network coupling patterns.",
-      "abstract_zh": "目的：尽管KCNQ2缺陷与癫痫和神经精神性合并症的关联已得到充分证实，但局部海马CA1区钾电压门控通道Q亚家族成员2（KCNQ2）功能丧失对癫痫发生机制的环路水平影响仍不甚明了。\n方法：为了研究CA1特异性KCNQ2缺陷如何在后天性癫痫发生过程中调节神经环路活动，我们选择性地敲低了\n通过腺相关病毒（AAV）-短发夹RNA（shRNA）敲低小鼠CA1中的KCNQ2，并探索边缘系统网络的改变。使用细胞类型特异性GCaMP表达，同时进行CA1脑电图（EEG）记录，记录了谷氨酸能神经元、γ-氨基丁酸（GABA）能神经元、生长抑素阳性（SST+）中间神经元和小白蛋白阳性（PV+）中间神经元的钙活动。来自CA1、海马角的多位点EEG记录\n对CA3、后楔无颗粒皮层（RSA）、眶下皮层（IL）、扣带皮层1区（CG1）、初级运动皮层（M1）和基底外侧杏仁核（BLA）进行了谱功率、功能连接（FC）和相位-振幅耦合（PAC）分析。我们观察了模型小鼠的自发活动、新物体识别和社会行为。\n结果：CA1 KCNQ2敲低增加了所有神经元群体的钙活性。\n在潜伏期，SST+中间神经元的激活程度高于PV+中间神经元。兴奋-抑制失衡与癫痫发作的严重程度相关。EEG分析显示出一种双相模式：在潜伏期，低频功率、相位同步和FC降低，随后在重度癫痫发作期间，功率谱密度、互信息和相位同步出现广泛的超同步。在非癫痫状态下，PAC分析显示，knockd\n自身组形成了偏向性网络配置，其特征是朝向BLA的PAC增强，而CA3-M1和M1相关耦合减弱。这种模式与它们的行为表型一致，包括中央探索减少、开放臂进入次数减少、新物体探索受损以及社交偏好降低。在全身性癫痫发作期间，PAC发生了广泛的重组，\nBLA和多个脑区以及M1导向性耦合的降低。腹腔内注射雷替加滨（RTG）（一种泛KCNQ通道开放剂）部分缓解了这些行为缺陷，并减弱了异常增强的远距离网络活动。\n意义：CA1 KCNQ2敲低不仅破坏了局部的兴奋/抑制平衡，而且通过重塑边缘-皮层网络耦合模式促进了癫痫发生。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -293,7 +481,7 @@
       "related_articles": []
     },
     {
-      "index": 4,
+      "index": 9,
       "pmid": "43037621",
       "title": "Antiseizure medication use in self-limited epilepsies of childhood: A scoping review by the ILAE Pediatric Medical Therapies Task Force.",
       "title_zh": "抗癫痫药物在儿童自限性癫痫中的应用：ILAE儿科药物治疗工作组的范围综述。",
@@ -317,7 +505,7 @@
       "doi": "10.1002/epi.70559",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43037621/",
       "abstract": "OBJECTIVE: Self-limited focal epilepsies (SeLFEs) of childhood, including self-limited epilepsy with centrotemporal spikes (SeLECTS), self-limited epilepsy with autonomic seizures (SeLEAS), childhood occipital visual epilepsy (COVE), and photosensitive occipital lobe epilepsy (POLE), are common pediatric epilepsy syndromes with heterogeneous clinical management. We performed a scoping review to synthesize evidence regarding the use, effectiveness, safety, and discontinuation of antiseizure medications (ASMs) in children with SeLFEs.\nMETHODS: Nine databases were searched from inception to January 2026. Eligible studies included original research reporting ASM-related outcomes in children with SeLFEs. PRISMA-ScR (Preferred Reporting Items of Systematic Reviews and Meta-Analyses, extension for scoping reviews) guidance was followed.\nRESULTS: Sixty-two studies met eligibility criteria, including 11 randomized controlled trials (RCTs). Most studies evaluated SeLECTS (6171 participants), whereas substantially fewer investigated SeLEAS (n = 348), COVE (n = 91), or POLE (n = 26). Evidence was highly heterogeneous and consisted predominantly of retrospective observational studies. In SeLECTS, reported 12-month seizure freedom rates after ASM treatment were approximately 72% across studies, although estimates varied considerably. Evidence for SeLEAS, COVE, and POLE was limited and derived mainly from small retrospective cohorts with heterogeneous methodologies and outcome definitions. Failure of first-line ASM therapy occurred in approximately 30% of patients. Adverse events were reported in approximately 22% of treated children and infrequently led to treatment discontinuation. RCTs generally reported similar seizure outcomes across multiple ASMs, although many trials were limited by small sample sizes and open-label designs.\nSIGNIFICANCE: Current evidence suggests that children with SeLFEs often achieve seizure control with ASM treatment and that adverse effects are generally manageable. However, the overall certainty of evidence remains limited because of methodological heterogeneity, predominance of retrospective studies, and limited randomized data. Important evidence gaps remain regarding the need for ASM treatment, optimal treatment duration, and timing of medication withdrawal.",
-      "abstract_zh": "目的：儿童期自限性局灶性癫痫（SeLFEs），包括自限性中央颞尖波癫痫（SeLECTS）、自限性自主神经发作癫痫（SeLEAS）、儿童枕叶视觉癫痫（COVE）和光敏性枕叶癫痫（POLE），是常见的儿童癫痫综合征，其临床管理存在异质性。我们进行了一项范围综述，以综合有关使用、有效性\nSeLFE患儿抗癫痫药物（ASM）的疗效、安全性和停药。\n方法：检索了九个数据库，检索范围为数据库建立之初至2026年1月。符合条件的研究包括报告SeLFE患儿ASM相关结局的原始研究。遵循了PRISMA-ScR（系统综述和荟萃分析的优先报告项目，范围综述的扩展）指南。\n结果：62项研究符合纳入标准，包括\n包括11项随机对照试验（RCT）。大多数研究评估了SeLECTS（6171名参与者），而研究SeLEAS（n = 348）、COVE（n = 91）或POLE（n = 26）的研究则少得多。证据高度异质性，主要由回顾性观察性研究组成。在SeLECTS中，各研究报告的ASM治疗后12个月无癫痫发作率约为72%，但估计值差异很大。证据\nSeLEAS、COVE 和 POLE 的证据有限，主要来自方法和结局定义各不相同的小型回顾性队列。约30%的患者在一线抗癫痫药物治疗中出现失败。约有22%的接受治疗的儿童报告了不良事件，且很少导致停药。RCTs通常报告多种ASM的癫痫发作结局相似，但许多试验存在局限性。\n样本量小和开放标签设计。\n意义：当前证据表明，患有SeLFE的儿童通常可以通过ASM治疗实现癫痫发作控制，并且不良反应通常是可以控制的。然而，由于方法学异质性、回顾性研究占主导地位以及随机化数据有限，证据的总体确定性仍然有限。在ASM治疗的必要性方面，仍存在重要的证据缺口。\n、最佳治疗持续时间和停药时机。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -339,7 +527,7 @@
       "related_articles": []
     },
     {
-      "index": 5,
+      "index": 10,
       "pmid": "43037523",
       "title": "Cenobamate in brain tumor-related epilepsy: A multicenter real-world experience.",
       "title_zh": "塞诺巴酯用于治疗脑瘤相关癫痫：一项多中心真实世界经验研究。",
@@ -366,7 +554,7 @@
       "doi": "10.1002/epi4.70365",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43037523/",
       "abstract": "OBJECTIVE: Cenobamate (CNB) is a novel antiseizure medication with a dual mechanism of action that has demonstrated high efficacy in drug-resistant focal epilepsy; however, evidence in brain tumor-related epilepsy (BTRE) remains limited. The study aimed to evaluate the effectiveness, safety, and tolerability of CNB as add-on therapy in a multicenter cohort of patients with BTRE.\nMETHODS: We conducted a multicenter, retrospective observational study across tertiary epilepsy centers in the Lazio region, Italy. Adult patients with drug-resistant BTRE treated with CNB as adjunctive therapy were included. Seizure frequency was assessed at baseline and during follow-up. Primary outcomes were changes in monthly seizure frequency and responder rates. Effectiveness was analyzed in both the overall population and in a homogeneous cohort of patients with 6-month follow-up.\nRESULTS: Twenty patients (10 females, median age 48 years) were included. Tumor histology included meningioma (n = 7, 35%), astrocytoma (n = 4, 20%), glioblastoma (n = 3, 15%), ganglioglioma (n = 3, 15%), oligodendroglioma (n = 2, 10%), and dysembryoplastic neuroepithelial tumor (n = 1, 5%). In the overall analysis population (n = 20), after a median 12-month follow-up, median seizure frequency significantly decreased from 6 to 1 per month (p < 0.001), with a median reduction of 85.8% (IQR 51.4-96.7). Responder rates were 80% (≥50% seizure reduction), 60% (≥75%), and 20% achieved seizure freedom. Adverse events occurred in 12 patients (60%), including sedation (n = 8, 40%), postural instability (n = 3, 15%), diarrhea, and mild cutaneous rash (n = 1, 5% each). CNB was discontinued in one patient (5%).\nSIGNIFICANCE: In this multicenter real-world cohort of patients with drug-resistant BTRE and heterogeneous tumor histology, CNB was associated with a reduction in seizure frequency and was well tolerated.\nPLAIN LANGUAGE SUMMARY: Seizures caused by brain tumors can be difficult to control. We reviewed records from 20 adults who received cenobamate alongside their existing seizure medicines. At their last follow-up, 16 had at least half as many seizures, and four were seizure-free. Twelve patients experienced side effects, most commonly sleepiness; one stopped cenobamate because of a rash. These findings suggest that cenobamate may help some people with brain tumor-related epilepsy. However, the study was small, had no comparison group, and included patients with different tumors and follow-up durations. Larger studies are needed.",
-      "abstract_zh": "目的：西诺巴酯（CNB）是一种具有双重作用机制的新型抗癫痫药物，已在难治性局灶性癫痫中显示出较高的疗效；然而，在脑肿瘤相关性癫痫（BTRE）方面的证据仍然有限。本研究旨在评估CNB作为附加治疗药物在多中心BTRE患者队列中的有效性、安全性和耐受性。\n方法：我们开展了一项多中心、回顾性观察性研究。\n意大利拉齐奥大区多家三级癫痫中心开展的一项多中心研究。纳入了接受CNB作为辅助治疗的难治性BTRE成年患者。在基线和随访期间评估癫痫发作频率。主要结局是每月癫痫发作频率和缓解率的变化。在总体人群和接受6个月随访的同质患者队列中均对有效性进行了分析。\n结果：20名患者\n（10名女性，中位年龄48岁）。肿瘤组织学类型包括脑膜瘤（n = 7，35%）、星形细胞瘤（n = 4，20%）、胶质母细胞瘤（n = 3，15%）、神经节胶质瘤（n = 3，15%）、少突胶质细胞瘤（n = 2，10%）和胚胎发育不良性神经上皮瘤（n = 1，5%）。在总体分析人群（n = 20）中，经过中位数为12个月的随访后，癫痫发作的中位数频率显著降低，从每月6次降至1次（p < 0.001），中位数减少\n85.8%（IQR 51.4-96.7）。缓解率为80%（癫痫发作减少≥50%）、60%（≥75%），20%的患者实现癫痫发作完全缓解。12例患者（60%）发生不良事件，包括镇静（n = 8，40%）、姿势不稳（n = 3，15%）、腹泻和轻度皮肤皮疹（n = 1，各5%）。1名患者（5%）停用CNB。\n意义：在这项多中心真实世界研究中，纳入了患有耐药性BTRE和异质性肿瘤的患者队列，\n组织学检查，CNB与癫痫发作频率的降低相关，且耐受性良好。\n浅显易懂的摘要：由脑肿瘤引起的癫痫发作可能难以控制。我们回顾了20名成人患者的病历，这些患者在原有癫痫药物的基础上加用了塞诺巴酯。在最后一次随访时，16名患者的癫痫发作次数至少减少了一半，4名患者没有癫痫发作。12名患者出现副作用，最常见的是嗜睡；1名患者停用药物。\nd 因皮疹而停用 cenobamate。这些研究结果表明，cenobamate可能对一些患有脑瘤相关癫痫的患者有帮助。然而，该研究规模较小，没有对照组，且纳入了患有不同肿瘤和随访期不同的患者。需要开展更大规模的研究。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -389,7 +577,7 @@
       "related_articles": []
     },
     {
-      "index": 6,
+      "index": 11,
       "pmid": "43037480",
       "title": "Invasive monitoring and mapping in epilepsy surgery: Acute and chronic intracranial recording from surface to depth.",
       "title_zh": "癫痫手术中的侵入性监测和定位：从表面到深度的急性和慢性颅内记录。",
@@ -410,7 +598,7 @@
       "doi": "10.1002/epd2.70448",
       "url": "https://pubmed.ncbi.nlm.nih.gov/43037480/",
       "abstract": "Invasive intracranial recording remains central to the surgical evaluation of drug-resistant focal epilepsy when noninvasive data are insufficient to define the epileptogenic zone or its relationship to eloquent cortex. This review, part of an International League Against Epilepsy (ILAE) Surgical Therapies Commission education series aligned with the epilepsy surgery curriculum, reviews invasive monitoring and mapping for the practicing and trainee epilepsy surgeon. Consistent with the competency-based ILAE epilepsy surgery curriculum, in which the surgeon is expected to understand and actively contribute to electrode selection, safe implantation, and the interpretation of invasive recordings within the multidisciplinary team, we give particular emphasis to the surgical execution of these methods alongside their electrophysiological rationale. We outline the historical development of the field from intraoperative electrocorticography and subdural recording to stereoelectroencephalography (SEEG), describe acute and chronic recording strategies using both surface and depth approaches, including the operative techniques of implantation and post-implantation electrode localization, and summarize the techniques of functional mapping. We compare subdural and stereotactic methods with respect to coverage, mapping capability, diagnostic yield, seizure outcome, and morbidity, and we review the complication profiles of each. Finally, we discuss future directions, including high-density and chronically implantable probes that combine macro-contacts with microelectrode recording throughout the electrode shaft. We emphasize that the choice of method should follow a clearly stated anatomo-electro-clinical hypothesis, balancing the completeness of sampling against procedural risk.",
-      "abstract_zh": "当无创数据不足以确定致痫区或其与功能区皮层的关系时，侵入性颅内记录仍然是药物难治性局灶性癫痫手术评估的核心。本综述是国际抗癫痫联盟（ILAE）外科治疗委员会教育系列的一部分，与癫痫手术课程相一致，旨在为执业和培训人员综述侵入性监测和定位。\n癫痫外科医生。根据基于胜任力的ILAE癫痫手术课程，该课程要求外科医生在多学科团队中了解并积极参与电极选择、安全植入和侵入性记录的解读，我们特别强调这些方法的Surgical Execution（外科实施）及其电生理学原理。我们概述了\n从术中脑电图和硬脑膜下记录到立体脑电图（SEEG）的领域，描述使用表面和深度方法进行的急性和慢性记录策略，包括植入和植入后电极定位的手术技术，并总结功能定位的技术。我们比较了硬脑膜下和立体定向方法在覆盖范围、成像能力、诊断价值、\n获益、癫痫发作结局和发病率，并回顾了每种方法的并发症情况。最后，我们讨论了未来的发展方向，包括高密度和长期植入式探头，它们将宏观电极与整个电极轴上的微电极记录相结合。我们强调，方法的选择应遵循明确阐述的解剖-电-临床假设，在取样完整性与手术风险之间取得平衡。",
+      "abstract_zh": "",
       "hit_groups": [
         "B1"
       ],
@@ -436,7 +624,7 @@
       "related_articles": []
     },
     {
-      "index": 7,
+      "index": 12,
       "pmid": "43037477",
       "title": "Individualized antisense oligonucleotide therapy for SCN2A-related developmental epileptic encephalopathy beyond seizure control: A word of caution regarding the development of precision medicine neuropharmaceuticals.",
       "title_zh": "针对SCN2A相关发育性癫痫性脑病的个体化反义寡核苷酸治疗，超越癫痫发作控制：关于精准医学神经药物开发的注意事项。",
@@ -469,7 +657,7 @@
       "related_articles": []
     },
     {
-      "index": 8,
+      "index": 13,
       "pmid": "43037453",
       "title": "Status epilepticus: Different diseases, one treatment?",
       "title_zh": "癫痫持续状态：不同的疾病，同一种治疗方法？",
@@ -501,7 +689,7 @@
       "related_articles": []
     },
     {
-      "index": 9,
+      "index": 14,
       "pmid": "43037447",
       "title": "Laser interstitial thermal therapy in older patients with drug-resistant mesial temporal lobe epilepsy.",
       "title_zh": "激光间质热疗用于治疗药物难治性颞叶内侧癫痫的老年患者。",
@@ -545,7 +733,7 @@
       "related_articles": []
     },
     {
-      "index": 10,
+      "index": 15,
       "pmid": "43037442",
       "title": "Preoperative hippocampal volume, resection extent, and 5-year stability of seizure freedom after temporal lobe epilepsy surgery.",
       "title_zh": "颞叶癫痫手术后的术前海马体积、切除范围和5年无癫痫发作的稳定性。",
@@ -584,7 +772,7 @@
       "related_articles": []
     },
     {
-      "index": 11,
+      "index": 16,
       "pmid": "43033003",
       "title": "Real-world antiseizure medication prescribing and treatment pathways in a pediatric health care system.",
       "title_zh": "儿科医疗保健系统中抗癫痫药物的真实世界处方和治疗途径。",
@@ -622,7 +810,7 @@
       "related_articles": []
     },
     {
-      "index": 12,
+      "index": 17,
       "pmid": "43032991",
       "title": "Etiology and geographic variation in acute symptomatic seizure management: An international vignette-based survey.",
       "title_zh": "急性症状性癫痫发作管理的病因和地域差异：一项基于案例的国际调查。",
@@ -664,7 +852,7 @@
       "related_articles": []
     },
     {
-      "index": 13,
+      "index": 18,
       "pmid": "43032937",
       "title": "Deep whole genome sequencing of epileptogenic brain lesions: Comment.",
       "title_zh": "癫痫性脑病灶的深度全基因组测序：评论。",
@@ -694,7 +882,7 @@
       "related_articles": []
     },
     {
-      "index": 14,
+      "index": 19,
       "pmid": "43032929",
       "title": "Ketogenic diet therapy in adolescents and adults with epilepsy: A scoping review of cognitive outcomes.",
       "title_zh": "癫痫青少年和成年患者的生酮饮食疗法：对认知结局的范围综述。",
@@ -730,7 +918,7 @@
       "related_articles": []
     },
     {
-      "index": 15,
+      "index": 20,
       "pmid": "43032925",
       "title": "Scalp high-frequency oscillations differentiate neonates with hypoxic-ischemic encephalopathy with and without electroencephalographically confirmed seizures.",
       "title_zh": "头皮高频振荡可区分患有缺氧缺血性脑病的新生儿，无论其是否经脑电图证实存在癫痫发作。",
@@ -775,7 +963,7 @@
       "related_articles": []
     },
     {
-      "index": 16,
+      "index": 21,
       "pmid": "43032905",
       "title": "Sunflower syndrome associated with a SYNGAP1 variant: A clinical vignette.",
       "title_zh": "与SYNGAP1变异相关的向日葵综合征：临床案例简介。",
@@ -807,7 +995,7 @@
       "related_articles": []
     },
     {
-      "index": 17,
+      "index": 22,
       "pmid": "43032900",
       "title": "Strengths and weaknesses in epilepsy training across residency programs in Italy: A multicenter survey by the Italian chapter of the Young Epilepsy Section (YES-I).",
       "title_zh": "意大利住院医师培训项目癫痫培训的优势和不足：意大利青年癫痫分会（YES-I）的多中心调查。",
@@ -849,7 +1037,7 @@
       "related_articles": []
     },
     {
-      "index": 18,
+      "index": 23,
       "pmid": "43032888",
       "title": "Response to: An intermediate childhood-onset myoclonic-seizure phenotype within the genetic generalized epilepsy-juvenile myoclonic epilepsy spectrum.",
       "title_zh": "回复：遗传性全身性癫痫-青少年肌阵挛癫痫谱系中一种儿童期发病的中间型肌阵挛性癫痫表型。",
@@ -885,168 +1073,7 @@
       "related_articles": []
     },
     {
-      "index": 19,
-      "pmid": "43031326",
-      "title": "Calcitonin gene-related peptide (CGRP) in epilepsy: Mechanistic insights from preclinical models.",
-      "title_zh": "癫痫中的降钙素基因相关肽（CGRP）：来自临床前模型的机制见解。",
-      "journal": "Epilepsia open",
-      "iso_journal": "Epilepsia Open",
-      "authors": [
-        "Romozzi M",
-        "Pani L",
-        "Benatti C",
-        "Vollono C",
-        "Canonichesi J",
-        "Servidei S",
-        "Calabresi P",
-        "Tascedda F",
-        "Iannone LF"
-      ],
-      "pubdate": "2026 11 13",
-      "doi": "10.1002/epi4.70363",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43031326/",
-      "abstract": "Calcitonin gene-related peptide (CGRP) is a pleiotropic neuropeptide widely expressed in the central and peripheral nervous systems, with established roles in neurovascular regulation, synaptic transmission, and neuroinflammation. While CGRP has been extensively characterized in migraine pathophysiology, its role in epilepsy remains incompletely defined and is primarily supported by experimental evidence. Preclinical studies consistently demonstrate CGRP upregulation following prolonged seizures, particularly in models of status epilepticus, and suggest that CGRP signaling may contribute to key processes implicated in epileptogenesis. These include modulation of neuronal excitability, blood-brain barrier permeability, and neuroimmune responses, such as microglial activation. At the same time, CGRP has been shown to engage neuroprotective pathways, including anti-apoptotic and anti-oxidative mechanisms, as well as barrier-stabilizing effects, supporting a complex and context-dependent role. Shared pathophysiological features between migraine and epilepsy, such as cortical hyperexcitability, neuroinflammation, and cortical spreading depolarization, provide a conceptual framework in which CGRP may act as a convergent mechanistic mediator. However, direct evidence in human epilepsy remains limited, and the translational relevance of these findings requires careful interpretation. This review provides a focused synthesis of mechanistic insights from experimental models, highlighting the dual role of CGRP in seizure-related processes and delineating current gaps in knowledge. Potential clinical implications, including the effects of CGRP-targeting therapies, are discussed in a hypothesis-generating context, with emphasis on the need for rigorous studies to clarify their relevance in epilepsy. PLAIN LANGUAGE SUMMARY: Migraine and epilepsy sometimes occur together and share changes in brain activity. This review examines CGRP, a signaling molecule involved in migraine, and its possible role in seizures. Animal studies suggest that CGRP can either increase abnormal brain activity and inflammation or protect nerve cells, depending on the conditions. Early observations in people raise the possibility that migraine medicines blocking CGRP could also affect seizures, but they do not prove a benefit. Further research is needed to determine whether these medicines can safely reduce seizures or prevent epilepsy.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 23,
-      "relevance_hits": [
-        "epilepsy",
-        "epileptic",
-        "seizure",
-        "seizures",
-        "status epilepticus"
-      ],
-      "priority": "推荐",
-      "publication_types": [
-        "Journal Article",
-        "Review"
-      ],
-      "publication_label": "综述",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 20,
-      "pmid": "43025183",
-      "title": "Subjective memory complaints and depressive mood in patients with epilepsy at the time of first seizure and one year later.",
-      "title_zh": "癫痫患者在首次发作时和一年后的主观记忆障碍和抑郁情绪。",
-      "journal": "Epilepsy & behavior : E&B",
-      "iso_journal": "Epilepsy Behav",
-      "authors": [
-        "Mueller CJ",
-        "Strehlau S",
-        "Weil J",
-        "Menzler K",
-        "Möller L",
-        "Krause K",
-        "Schoenfeldt R",
-        "Gorny I",
-        "Knake S",
-        "Habermehl L"
-      ],
-      "pubdate": "2026 11 13",
-      "doi": "10.1016/j.yebeh.2026.111380",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43025183/",
-      "abstract": "Patients with epilepsy (PWE) often report subjective memory complaints (SMC) that reportedly do not thoroughly relate to 'objective' memory measures, but to depressive symptoms. While depressive symptoms appear to be involved very early in the disease, it is relatively unclear when SMC develop over the course of the illness. We examined two patient groups, namely PWE and patients, who had a first seizure (seizure patients, SP), but did not subsequently get the diagnosis epilepsy regarding factors influencing SMC scores at the time of the first seizure as well as one year later using regression analyses. These factors include a depressive symptom score, demographic and clinical variables. Additionally, we investigate the development of SMC and depressive symptoms over the time span of the first year after first seizure in both patient groups using analyses of variance (ANOVA). Regression analyses results revealed that depressive symptoms predicted subjective memory complaints at both time points. Group, based on diagnosed illness, did not predict an additional significant amount of variance. ANOVA results regarding SMC scores revealed that there were no systematic differences between patient groups and no significant development throughout the first year after first seizure. Results on depressive symptoms showed that PWE reported overall more depressive symptoms than SP. These findings hint towards the importance of monitoring depressive symptoms in epilepsy not only in patients who have had epilepsy for a long time, but also in newly diagnosed patients. Future studies are needed to investigate the beginning of SMC in epilepsy.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 22,
-      "relevance_hits": [
-        "epilepsy",
-        "seizure"
-      ],
-      "priority": "推荐",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 21,
-      "pmid": "43025182",
-      "title": "From potential to practice: An International survey on technology adoption and needs in epilepsy neuropsychology.",
-      "title_zh": "从潜力到实践：一项关于癫痫神经心理学技术采用和需求的国际调查。",
-      "journal": "Epilepsy & behavior : E&B",
-      "iso_journal": "Epilepsy Behav",
-      "authors": [
-        "Rayner G",
-        "Busch RM",
-        "Dollman A",
-        "Eyres J",
-        "Hewitt KC",
-        "Meltzer EP",
-        "Rzezak P",
-        "Sharma S",
-        "Smith ML"
-      ],
-      "pubdate": "2026 11 13",
-      "doi": "10.1016/j.yebeh.2026.111369",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43025182/",
-      "abstract": "BACKGROUND: Technological integration offers opportunities to improve neuropsychological practice in epilepsy care. Compared to other healthcare fields, neuropsychology has been relatively slow to incorporate these advancements into clinical practice.\nOBJECTIVES: To describe the use of technology in epilepsy neuropsychology and identify priorities for technological development.\nMETHODS: An online survey of multiple choice and open-ended questions was developed in English and translated into Spanish, then sent to practicing neuropsychologists working in epilepsy care across all six International League Against Epilepsy world regions. The survey collected data on the settings in which neuropsychological services are provided to people with epilepsy, the technologies currently in use, the barriers to technological adoption, and desired future developments.\nRESULTS: 179 neuropsychologists from 39 countries participated in the survey. The majority of respondents were women (69 %), aged 30-49 (60 %), and held a PhD (60 %). Key barriers to technological adoption included concerns around tool validation, financial limitations to purchase existing tools, and a lack of culturally and linguistically relevant normative data. Priorities for future development included predictive algorithms, automating psychometric aspects of clinical practice, and better leveraging of functional neuroimaging technologies.\nCONCLUSIONS: This international survey highlights that while epilepsy neuropsychologists are open to adopting new technologies in their clinical practice, there are several barriers hampering uptake across the field. Survey responses highlighted that technological developments that are practical, accessible, evidence-based, and suitable for culturally and linguistically diverse populations are required to meet the needs of the epilepsy neuropsychology workforce.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 13,
-      "relevance_hits": [
-        "epilepsy"
-      ],
-      "priority": "推荐",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 22,
-      "pmid": "43025181",
-      "title": "Psychological interventions for functional/dissociative seizures: A systematic review.",
-      "title_zh": "功能性/分离性癫痫发作的心理干预：一项系统综述。",
-      "journal": "Epilepsy & behavior : E&B",
-      "iso_journal": "Epilepsy Behav",
-      "authors": [
-        "Hawkes S",
-        "Koychev I",
-        "Gallacher J",
-        "Edwards M"
-      ],
-      "pubdate": "2026 11 13",
-      "doi": "10.1016/j.yebeh.2026.111345",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43025181/",
-      "abstract": "OBJECTIVE: Functional/dissociative seizures (FDS) have limited treatment options despite the major societal and personal impact of this condition. The efficacy of psychological interventions varies considerably and is influenced by social, economic, and personal factors. To guide future research on the condition, a systematic review of the published literature on the psychological treatments available for FDS was conducted. Current psychological interventions including diagnosis communication, psychoeducation, psychotherapy, hypnosis, and behavioural therapies have yet to show sufficient evidence of long-lasting successful treatment for FDS. The frequency and impact of FDS requires continued treatment development beyond the limited options currently available. Such treatments have been systematically reviewed for this purpose.\nMETHODS: A comprehensive literature search was carried out using the keywords: dissociative seizures, functional seizures, NEA, non-epileptic, pseudoseizures, psychogenic seizures, psychological treatment, hysterical seizures, and pseudoepileptic. Studies evaluating psychological treatments for FDS were included. Studies including patients with comorbid seizure disorders were also included.\nRESULTS: A total of 55 studies (58 publications) met the inclusion criteria. A wide variety of psychological interventions for FDS have been investigated. Existing evidence suggests that several psychological interventions may be effective, with cognitive behavioural therapy demonstrating the strongest evidence base. Promising findings were also reported for diagnosis communication, psychoeducation, psychodynamic therapy, mindfulness-based therapy, behavioural therapy, and combined treatment approaches.\nCONCLUSION: While a range of psychological treatments may be beneficial, cognitive behavioural therapy currently possesses the strongest evidence supporting its efficacy. However, no clear evidence suggests whether a particular intervention is most appropriate for specific patient subgroups. Structured diagnosis communication and psychoeducation appear to be valuable early interventions but may require additional psychological therapy to maintain treatment gains. Large studies of high methodological quality with longer follow-up periods are required to establish the most effective forms of treatment.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "B1"
-      ],
-      "group_count": 1,
-      "relevance_score": 27,
-      "relevance_hits": [
-        "epileptic",
-        "seizure",
-        "seizures"
-      ],
-      "priority": "推荐",
-      "publication_types": [
-        "Journal Article",
-        "Review"
-      ],
-      "publication_label": "综述",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 23,
+      "index": 24,
       "pmid": "43033946",
       "title": "Dopamine D2 receptor signaling alleviates seizure-related neuronal ferroptosis via MARCH8-mediated P2RX7 ubiquitination.",
       "title_zh": "多巴胺D2受体信号传导通过MARCH8介导的P2RX7泛素化减轻癫痫相关的神经元铁死亡。",
@@ -1088,7 +1115,49 @@
       "related_articles": []
     },
     {
-      "index": 24,
+      "index": 25,
+      "pmid": "43039061",
+      "title": "From Variability to Synchrony: Non-linear Development of Auditory Neural Responses During the First Year of Life.",
+      "title_zh": "从变异性到同步性：生命第一年听觉神经反应的非线性发育。",
+      "journal": "NeuroImage",
+      "iso_journal": "Neuroimage",
+      "authors": [
+        "Reisenberger E",
+        "Schabus M",
+        "Florea C",
+        "Angerer M",
+        "Reimann-Ayiköz M",
+        "Preiß J",
+        "Roehm D",
+        "Heib DPJ",
+        "Fazelnia C",
+        "Ameen MS"
+      ],
+      "pubdate": "2026 11 16",
+      "doi": "10.1016/j.neuroimage.2026.122357",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43039061/",
+      "abstract": "In humans, the first year of life is characterized by rapid developmental changes, including substantial brain maturation. As a result, neural responses to auditory stimuli undergo marked changes during this period. In this study, we followed 69 infants across their first year of life and recorded high-density electroencephalography (hdEEG) at 2 weeks, 6 months, and 12 months postpartum. Infants were presented with pure beep tones to examine the development of neural responses to auditory stimulation. We analyzed event-related potentials (ERPs), inter-trial phase coherence (ITPC), and event-related spectral perturbation (ERSP) responses to the beep tones and controlled for arousal state during stimulus presentation. We found that with increasing age, neural responses became more pronounced and showed reduced trial-to-trial variability. Phase synchronization increased from 2 weeks to later developmental stages in a broad low-frequency range (0.5 Hz to 13.6 Hz), indicating improved temporal alignment of brain responses over time. However, phase synchronization decreased from 6 to 12 months, suggesting a developmental transition towards more differentiated brain activity. Taken together, these findings demonstrate that auditory maturation during the first year of life follows a non-linear trajectory driven by dynamic changes in neural synchronization, reflecting the progressive refinement of functional neural circuits. Our results thus provide a critical benchmark for understanding the neural dynamics underlying sensory development during this period.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "C"
+      ],
+      "group_count": 1,
+      "relevance_score": 3,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg",
+        "stimulation"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": []
+    },
+    {
+      "index": 26,
       "pmid": "43033973",
       "title": "From features to digital biomarkers: EEG-fNIRS classification pipelines for brain monitoring.",
       "title_zh": "从特征到数字生物标志物：用于脑监测的EEG-fNIRS分类流程。",
@@ -1128,7 +1197,7 @@
       "related_articles": []
     },
     {
-      "index": 25,
+      "index": 27,
       "pmid": "43033174",
       "title": "Globus Pallidus Externus α-Band Activity Decreases After Deep Brain Stimulation in Clinically Responsive Obsessive-Compulsive Disorder Patients.",
       "title_zh": "在临床上对强迫症患者进行深部脑刺激后，苍白球外侧部的α波段活动降低。",
@@ -1179,39 +1248,41 @@
       ]
     },
     {
-      "index": 26,
-      "pmid": "43025559",
-      "title": "EEG-based Deep Learning Reveals Cortical Sensitivity to Small Changes in Deep Brain Stimulation Parameters.",
-      "title_zh": "基于脑电图的深度学习揭示了大脑皮层对深部脑刺激参数微小变化的敏感性。",
-      "journal": "NeuroImage",
-      "iso_journal": "Neuroimage",
+      "index": 28,
+      "pmid": "43042848",
+      "title": "An Implantable In-Tube System for Quantitative Precision Vagus Neuromodulation and Feedback of Intestinal Motility.",
+      "title_zh": "一种用于定量精准迷走神经神经调节和肠蠕动反馈的可植入管内系统。",
+      "journal": "Advanced materials (Deerfield Beach, Fla.)",
+      "iso_journal": "Adv Mater",
       "authors": [
-        "Peiro NC",
-        "Haugland MR",
-        "Kutuzova A",
-        "Graef C",
-        "Bocum A",
-        "Tai YF",
-        "Borovykh A",
-        "Haar S"
+        "Wu H",
+        "Du Z",
+        "Li L",
+        "Chen Z",
+        "Liu W",
+        "Duan Z",
+        "Liu H",
+        "Wu L",
+        "Sheng X",
+        "Zhou L",
+        "Yang K",
+        "Chen D",
+        "Shen G",
+        "Jiang K"
       ],
-      "pubdate": "2026 11 13",
-      "doi": "10.1016/j.neuroimage.2026.122354",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43025559/",
-      "abstract": "Deep Brain Stimulation (DBS) is an invasive procedure used to alleviate motor symptoms in Parkinson's Disease (PD) patients. Despite its effectiveness, the impact of DBS on brain activity and the way to optimise stimulation parameters remains unclear. In this study, we aimed to map the sensitivity of cortical neural response to changes in DBS parameters in real-world clinical settings. We recorded in-clinic EEG data from PD patients during their clinical DBS programming sessions, both at rest and during arm movement. A siamese variant of the EEGNet deep learning architecture was trained independently for each patient and parameter combination to determine whether two 1-sec-long EEG segments were recorded under the same or different DBS parameters, yielding 30 independently trained models. Our models achieved an average accuracy of 74% in classifying whether two 1-second EEG segments corresponded to the same or different DBS parameters. Explainability methods were then applied to extract the neural oscillations learned by the models. Ablation studies identified mid-gamma oscillations (55-90Hz) as the key band for classifying these changes. Importantly, that was not driven by 1:2 gamma entrainment. In a sub-group of patients, the theta-alpha oscillations (4-12Hz) also contributed to detecting changes in DBS parameters. We demonstrate that small DBS parameter changes modify cortical activity in a consistent manner that can be detected using shallow convolutional networks on low-density EEG. Our findings suggest that cortical mid-gamma oscillations (55-90Hz) are highly sensitive to small changes in DBS settings. Our approach and findings could be leveraged towards identifying and defining novel digital biomarkers to guide DBS programming and adaptive DBS systems.",
+      "pubdate": "2026 11 17",
+      "doi": "10.1002/adma.75738",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43042848/",
+      "abstract": "Electrical vagus neuromodulation of intestinal motility has demonstrated significant clinical utility in the field, where targeting the brain-gut axis can serve as an adjunct in treating intestinal diseases. However, quantitatively understanding vagus-intestine interoceptive information about real-time and in situ feedback on intestinal motility under the influence of electrical stimulation parameters is one of the most urgent challenges. Here we propose an implantable closed-loop system that combines a scalable catheter-type ionic piezoelectric (in-tube) sensor as diverse as the gut, a microelectronic chip, an electrical vagus stimulation electrode, and a display interface to realize point-of-care precision vagus neuromodulation and feedback of intestinal motility. Owing to the radial gradient hydrogel structure design and stress concentration effect, the in-tube sensor can simultaneously quantitatively detect and display four key parameters of intestinal motility, including intensity, frequency, duration, and local compression rate, with a high sensitivity of 7.0 mV mmHg-1 and unique pressure-time integral behavior with a time sensitivity of 24.1 mV s-1, making up for the deficiency of traditional sensors that cannot obtain pressure duration. After implanting the in-tube sensor in the anatomically challenging intestinal lumen of rabbits, we intuitively show how electrical vagus stimulation affects intestinal motility, which guides the optimal frequency window of 5 ∼ 10 Hz.",
       "abstract_zh": "",
       "hit_groups": [
-        "C"
+        "D"
       ],
       "group_count": 1,
-      "relevance_score": 17,
+      "relevance_score": 7,
       "relevance_hits": [
-        "eeg",
-        "deep learning",
-        "adaptive",
-        "brain stimulation",
-        "deep brain stimulation",
-        "biomarker",
+        "closed-loop",
+        "neuromodulation",
         "stimulation"
       ],
       "priority": "推荐",
@@ -1223,7 +1294,62 @@
       "related_articles": []
     },
     {
-      "index": 27,
+      "index": 29,
+      "pmid": "43038561",
+      "title": "Toward Closed-Loop Cognitive Modulation in Alzheimer's Disease: BCI-Relevant Evidence and a Translational Roadmap.",
+      "title_zh": "迈向阿尔茨海默病闭环认知调节：与脑机接口相关的证据和转化路线图。",
+      "journal": "Aging and disease",
+      "iso_journal": "Aging Dis",
+      "authors": [
+        "Zhang W",
+        "Hu Q",
+        "Ding M",
+        "Qi J",
+        "Wang X",
+        "Chang X",
+        "Li C",
+        "Wang H",
+        "Zhang L",
+        "Gao S",
+        "Guo S",
+        "Geng Y",
+        "Wei Y",
+        "Zhang S",
+        "Qing W",
+        "Wang J",
+        "Cheng Y"
+      ],
+      "pubdate": "2026 11 05",
+      "doi": "10.14336/AD.2026.11026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43038561/",
+      "abstract": "Alzheimer's disease (AD) has entered a biomarker-defined era, yet most cognitive and neuromodulatory interventions continue to use fixed targets, timing, and doses. This targeted narrative review maps brain-computer interface (BCI) and closed-loop-relevant evidence in AD and mild cognitive impairment (MCI) by examining how sensing, control, and intervention modules are used prospectively. Read modules include electroencephalography (EEG), functional near-infrared spectroscopy (fNIRS), real-time functional magnetic resonance imaging (fMRI), functional ultrasound (fUS) and transcranial ultrasound localization microscopy (t-ULM), and digital measures. Control functions include feature extraction, within-person state decoding, uncertainty-aware decision rules, target-engagement assessment, and safety oversight. Write modules include neurofeedback, sensory gamma and sleep-phase acoustic stimulation, transcranial alternating-current stimulation (tACS), transcranial direct-current stimulation (tDCS), repetitive transcranial magnetic stimulation (rTMS), transcranial pulse stimulation (TPS), transcranial ultrasound stimulation (TUS), transcranial photobiomodulation (tPBM), and focused ultrasound-mediated blood-brain barrier (FUS-BBB) opening. Human studies have separately demonstrated signal-contingent feedback, individualized targeting, physiological target engagement, home delivery, and emerging sensing, while preclinical studies provide mechanistic support for gamma, optical, and ultrasound approaches. Sleep-phase acoustic stimulation additionally demonstrates early automated signal-to-stimulus control. Passive sensing provides observations, personalization sets baseline parameters, state-informed control uses current signals to alter delivery, and target engagement verifies the proximal response without establishing clinical efficacy. Reliable decoding of waking cognitive states, broader controller utility, and durable clinical benefit remain unvalidated. We therefore organize the field around disease context, state sensing, feature extraction, state decoding, bounded decision/intervention, response verification, and safety oversight. The decisive early design compares assignments to an adaptive policy with otherwise matched fixed delivery; a sham arm can additionally test intervention efficacy. Such trials must prespecify decoder calibration, uncertainty, abstention, safety limits, and mechanistic and clinical endpoints. Closed-loop cognitive modulation therefore defines a translational research agenda for AD.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "D"
+      ],
+      "group_count": 1,
+      "relevance_score": 22,
+      "relevance_hits": [
+        "electroencephalogr",
+        "eeg",
+        "closed-loop",
+        "adaptive",
+        "transcranial",
+        "focused ultrasound",
+        "biomarker",
+        "stimulation"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "publication_label": "综述",
+      "abstract_status": "available",
+      "related_articles": []
+    },
+    {
+      "index": 30,
       "pmid": "43036403",
       "title": "Bridging the autonomic divide: Closed-loop spinal cord stimulation as a dynamic therapy for parkinsonian orthostatic hypotension.",
       "title_zh": "弥合自主神经系统分歧：闭环脊髓刺激作为帕金森氏病性体位性低血压的动态疗法。",
@@ -1273,7 +1399,7 @@
       "related_articles": []
     },
     {
-      "index": 28,
+      "index": 31,
       "pmid": "43033150",
       "title": "Medicare Claims-Identified Functional Neurosurgery Workforce in the United States: National Trends, Geographic Distribution, and Access.",
       "title_zh": "美国医疗保险索赔中确定的功能神经外科从业人员：全国趋势、地域分布和可及性。",
@@ -1319,7 +1445,7 @@
       "related_articles": []
     },
     {
-      "index": 29,
+      "index": 32,
       "pmid": "43032200",
       "title": "The mammalian regulatory architecture: biobehavioral portals and the organization of physiological state.",
       "title_zh": "哺乳动物的调节结构：生物行为门户和生理状态的组织。",
@@ -1347,45 +1473,6 @@
         "Journal Article"
       ],
       "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 30,
-      "pmid": "43028131",
-      "title": "Conductive Hydrogels for Invasive Neural Interfaces: From Materials Engineering to Neural Signal Interfacing and Neurorehabilitation.",
-      "title_zh": "用于侵入式神经接口的导电水凝胶：从材料工程到神经信号接口和神经康复。",
-      "journal": "International journal of molecular sciences",
-      "iso_journal": "Int J Mol Sci",
-      "authors": [
-        "Chen W",
-        "Chen X",
-        "Shen L",
-        "Deng J",
-        "Wang Y",
-        "Ran Y",
-        "Wang Y",
-        "Xie Y"
-      ],
-      "pubdate": "2026 11 04",
-      "doi": "10.3390/ijms27219885",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43028131/",
-      "abstract": "In invasive neural interfaces, mechanical mismatch between traditional rigid electrodes and brain tissue often leads to inflammation and signal attenuation. Conductive hydrogels have emerged as ideal alternative materials due to their tissue-matching modulus, hybrid conductive networks, and wet adhesion properties. In this paper, we provide a narrative review of research progress on conductive hydrogels in invasive neural interfaces: we elucidate electronic, ionic, and hybrid conduction mechanisms; critically compare strategies for modulus matching and interfacial adhesion (such as catechol chemistry and covalent anchoring); and summarize their applications in neural signal recording, electrical/optical modulation, and rehabilitation for spinal cord injury and stroke. Finally, we discuss current challenges regarding long-term stability, wireless integration, and intelligent closed-loop systems and outline future directions involving AI-driven design combined with 3D biomanufacturing.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "D"
-      ],
-      "group_count": 1,
-      "relevance_score": 1,
-      "relevance_hits": [
-        "closed-loop"
-      ],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article",
-        "Review"
-      ],
-      "publication_label": "综述",
       "abstract_status": "available",
       "related_articles": []
     }
