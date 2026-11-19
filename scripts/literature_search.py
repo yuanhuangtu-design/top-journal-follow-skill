@@ -288,6 +288,8 @@ def parse_article(article):
                         for n in content.findall('./AuthorList/Author')],
             'journal': content.findtext('./Journal/Title', ''),
             'iso_journal': content.findtext('./Journal/ISOAbbreviation', ''),
+            'issns': sorted({node.text.strip() for node in content.findall('./Journal/ISSN')
+                             + citation.findall('./MedlineJournalInfo/ISSNLinking') if node.text}),
             'pubdate': pubdate, 'doi': own_ids.get('doi', ''),
             'abstract': '\n'.join(abstracts), 'abstract_status': 'available' if abstracts else 'not_provided',
             'publication_types': types, 'publication_label': publication_label(types),

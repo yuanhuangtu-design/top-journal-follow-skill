@@ -37,6 +37,7 @@ import urllib.request
 import urllib.error
 from datetime import datetime, timedelta
 from title_translations import prepare_titles
+from journal_rankings import enrich_report, load_catalog
 from retrieval_policy import load_progress, save_progress, coverage_window, group_query, advance_progress, remember_attempt
 
 TRANSLATION_QUOTA_EXHAUSTED = False
@@ -219,13 +220,14 @@ def build_report(groups, papers, config, report_date, edat_date, windows=None):
         paper_list.append({"index": idx, "pmid": p.get("pmid", ""), "title": p.get("title", ""),
             "title_zh": p.get("_title_zh", ""), "journal": p.get("journal", ""), "iso_journal": p.get("iso_journal", ""),
             "authors": p.get("authors", []), "pubdate": p.get("pubdate", ""), "doi": p.get("doi", ""),
+            "issns": p.get('issns', []),
             "url": p.get("url", ""), "abstract": p.get("abstract", ""), "abstract_zh": p.get("_abstract_zh", ""),
             "hit_groups": p.get("_hit_groups", []), "group_count": p.get("_group_count", 0),
             "relevance_score": score, "relevance_hits": hits[:8], "priority": grade_paper(score),
             "publication_types": p.get('publication_types', []), "publication_label": p.get('publication_label', '待核对'),
             "abstract_status": p.get('abstract_status', 'unknown'), "related_articles": p.get('related_articles', [])})
     meta['search_complete'] = all(g['status'] == 'ok' for g in group_records)
-    return {"meta": meta, "group_records": group_records, "dedup_total": len(papers), "papers": paper_list}
+    return enrich_report({"meta": meta, "group_records": group_records, "dedup_total": len(papers), "papers": paper_list})
 
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -261,6 +263,8 @@ def render_html(report, groups):
             meta_html = f"PMID {p['pmid']} · {esc(p['journal'])} · {esc(p['pubdate'])}<br>作者：{esc(authors)}<br>链接：{links}<br>命中检索：{', '.join(report['group_records'][i]['label'] for i, g in enumerate(report['group_records']) if g['group'] in p['hit_groups'])}"
             abs_html = f'<div class="p-abs"><strong>摘要：</strong>{esc(p["abstract"])}</div>' if p["abstract"] else ""
             meta_html += '<br>发表形式：' + esc(p.get('publication_label', '待核对'))
+            meta_html += '<br>中科院分区：' + esc(p.get('cas_partition', '待核验'))
+            meta_html += '<br>JCR分区：' + esc(p.get('jcr_quartile', '待核验'))
             if p.get('abstract_status') == 'not_provided':
                 abs_html = '<div class="p-abs">PubMed 未提供摘要，可查看期刊正文。发表形式不代表是否含原始数据。</div>'
             for related in p.get('related_articles', []):
@@ -332,6 +336,9 @@ def build_notion_children(report):
                 if line:
                     b = text_block("bulleted_list_item", line)
                     if b: blocks.append(b)
+            for label, key in [('中科院分区', 'cas_partition'), ('JCR分区', 'jcr_quartile')]:
+                if p.get(key):
+                    blocks.append(text_block('bulleted_list_item', label + '：' + p[key]))
             if p.get("abstract"):
                 b = text_block("paragraph", "英文摘要：" + p["abstract"])
                 if b: blocks.append(b)
@@ -369,7 +376,9 @@ def candidate_markdown(report, heading='每周文献候选', scope='不限期刊
     for index, paper in enumerate(report['papers'], 1):
         title = paper['title'].replace('\n',' ').replace('[', r'\[').replace(']', r'\]')
         lines += [f"{index}. [{title}]({paper['url']})",
-                  f"   {paper['journal']} · {paper['pubdate']} · {paper.get('publication_label','待核对')}", '']
+                  f"   {paper['journal']} · {paper['pubdate']} · {paper.get('publication_label','待核对')}",
+                  f"   中科院分区：{paper.get('cas_partition', '待核验')}",
+                  f"   JCR分区：{paper.get('jcr_quartile', '待核验')}", '']
     return '\n'.join(lines)
 
 
@@ -385,6 +394,7 @@ def main():
     candidate_modes.add_argument('--candidate-pool', action='store_true', help='生成不限期刊的癫痫周候选')
     candidate_modes.add_argument('--neuroscience-pool', action='store_true', help='生成重点期刊的神经科学周候选')
     args = parser.parse_args()
+    load_catalog()
     with open(args.config, "r", encoding="utf-8") as f: config = json.load(f)
     report_date = datetime.strptime(args.date, "%Y-%m-%d").date() if args.date else beijing_today()
     edat_date = report_date - timedelta(days=1)
