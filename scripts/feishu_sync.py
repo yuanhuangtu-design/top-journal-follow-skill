@@ -1,4 +1,4 @@
-"""Create-only Feishu sync with complete PMID checks and a durable retry queue."""
+"""Create missing papers and fill missing titles/rankings with verified readback."""
 import argparse
 import json
 import os
@@ -10,6 +10,7 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from title_translations import is_chinese, load_state
+from journal_rankings import paper_rankings
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_KEYS = ('FEISHU_APP_ID', 'FEISHU_APP_SECRET', 'FEISHU_APP_TOKEN', 'FEISHU_TABLE_ID')
@@ -126,6 +127,7 @@ class Feishu:
 
 
 def paper_fields(paper, fields):
+    rankings = paper_rankings(paper)
     stamp = int(datetime.strptime(paper['first_seen'], '%Y-%m-%d').replace(
         tzinfo=timezone(timedelta(hours=8))).timestamp() * 1000)
     values = {'PMID': paper['pmid'], '标题': paper.get('title', ''), '期刊': paper.get('journal', ''),
@@ -133,7 +135,8 @@ def paper_fields(paper, fields):
         '英文摘要': paper.get('abstract', ''), '命中检索': '、'.join(paper.get('hit_group_labels') or paper.get('hit_groups', [])),
         '优先级': paper.get('priority', '浏览'), '相关度得分': paper.get('relevance_score', 0),
         '日报日期': stamp, '首次发现日期': stamp, '已读': False,
-        '发表形式（自动）': paper.get('publication_label', '')}
+        '发表形式（自动）': paper.get('publication_label', ''),
+        '中科院分区': rankings['cas_partition'], 'JCR分区': rankings['jcr_quartile']}
     for source, target in [('title_zh', '中文标题'), ('abstract_zh', '中文摘要')]:
         translated = paper.get(source, '')
         if translated and len(re.findall(r'[\u4e00-\u9fff]', translated)) / len(translated) >= .15:
@@ -208,6 +211,34 @@ def title_health(records):
         'closed_loop_missing_titles': sum(pmid in missing for pmid in closed)}
 
 
+def fill_blank_rankings(client, fields, records):
+    """Fill empty rankings and upgrade generated pending markers, checking current values first."""
+    columns = {'中科院分区': 'cas_partition', 'JCR分区': 'jcr_quartile'}
+    columns = {name: key for name, key in columns.items() if fields.get(name) == 1}
+    updated = {}
+    for pmid, record in records.items():
+        original = record['fields']
+        journal = text(original.get('期刊'))
+        if not journal or not any(not text(original.get(name)).strip()
+                or '待核验（期刊资料未覆盖）' in text(original.get(name)) for name in columns):
+            continue
+        publication_types = ['Book Chapter'] if text(original.get('发表形式（自动）')) == '图书章节/更新' else []
+        rankings = paper_rankings({'journal': journal, 'publication_types': publication_types})
+        fresh = client.request('GET', client.base + '/records/' + record['record_id'])['data']['record']
+        current = fresh['fields']
+        if text(current.get('PMID')) != pmid or text(current.get('期刊')) != journal:
+            continue
+        changes = {}
+        for name, key in columns.items():
+            value = text(current.get(name)).strip()
+            if not value or ('待核验（期刊资料未覆盖）' in value and value != rankings[key]):
+                changes[name] = rankings[key]
+        if changes:
+            client.request('PUT', client.base + '/records/' + record['record_id'], {'fields': changes})
+            updated[pmid] = changes
+    return updated
+
+
 def sync(report, pending_path=None, client_factory=Feishu):
     path = Path(pending_path or os.environ.get('FEISHU_PENDING_PATH', ROOT / 'reports' / 'feishu_pending.json'))
     diag = {'status': 'unknown', 'stage': 'queue', 'searched': len(report.get('papers', [])),
@@ -225,6 +256,9 @@ def sync(report, pending_path=None, client_factory=Feishu):
         client = client_factory()
         diag['stage'] = 'lookup'
         fields, existing = client.snapshot()
+        if os.environ.get('JOURNAL_RANKINGS_REQUIRED', '').lower() == 'true':
+            if fields.get('中科院分区') != 1 or fields.get('JCR分区') != 1:
+                raise SyncError('ranking_text_fields_missing')
         needed = [paper for pmid, paper in pending.items() if pmid not in existing]
         diag.update(expected=len(needed), dedup_skipped=len(pending) - len(needed))
         save(path, {'papers': needed})
@@ -236,6 +270,15 @@ def sync(report, pending_path=None, client_factory=Feishu):
                 {'records': [{'fields': paper_fields(paper, fields)} for paper in batch]})
         diag['stage'] = 'verify'
         _, after = client.snapshot() if needed else (fields, existing)
+        if os.environ.get('FEISHU_FILL_MISSING_RANKINGS', '').lower() == 'true':
+            diag['stage'] = 'fill_rankings'
+            rank_updates = fill_blank_rankings(client, fields, after)
+            diag['rankings_updated'] = len(rank_updates)
+            if rank_updates:
+                _, after = client.snapshot()
+                if any(text(after[pmid]['fields'].get(name)) != value
+                       for pmid, changes in rank_updates.items() for name, value in changes.items()):
+                    raise SyncError('ranking_readback_mismatch')
         if os.environ.get('FEISHU_FILL_MISSING_TITLES', '').lower() == 'true':
             diag['stage'] = 'fill_titles'
             translations = load_state()['translations']
@@ -267,7 +310,25 @@ def main():
     modes.add_argument('--check', action='store_true')
     modes.add_argument('--flush-pending', action='store_true')
     modes.add_argument('--fill-titles', action='store_true')
+    modes.add_argument('--fill-rankings', action='store_true')
     args = parser.parse_args()
+    if args.fill_rankings:
+        result = {'status': 'failed', 'rankings_updated': 0}
+        try:
+            client = Feishu()
+            fields, before = client.snapshot()
+            updates = fill_blank_rankings(client, fields, before)
+            result['rankings_updated'] = len(updates)
+            _, after = client.snapshot()
+            if any(text(after[pmid]['fields'].get(name)) != value
+                   for pmid, changes in updates.items() for name, value in changes.items()):
+                raise SyncError('ranking_readback_mismatch')
+            result.update(status='ok', verified=True)
+        except (SyncError, ValueError, OSError) as exc:
+            result['code'] = getattr(exc, 'code', 'invalid_ranking_catalog')
+        save(ROOT / 'output' / 'feishu_rankings.json', result)
+        print(json.dumps(result, ensure_ascii=False))
+        return 0 if result['status'] == 'ok' else 1
     if args.fill_titles:
         result = {'status': 'failed', 'titles_updated': 0}
         updates = {}
