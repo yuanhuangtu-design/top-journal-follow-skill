@@ -28,6 +28,12 @@
       "closed_loop_papers": 83,
       "closed_loop_missing_titles": 0,
       "pending": 0
+    },
+    "journal_rankings": {
+      "cas_version": "2025大类",
+      "jcr_release": "2026",
+      "jcr_data_year": "2025",
+      "unverified_pmids": []
     }
   },
   "group_records": [
@@ -167,7 +173,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 2,
@@ -199,7 +208,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "not_provided",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 3,
@@ -231,7 +243,10 @@
       ],
       "publication_label": "述评/社论",
       "abstract_status": "not_provided",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 4,
@@ -281,7 +296,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 5,
@@ -339,7 +357,10 @@
           "pmid": null,
           "source": "doi: 10.7554/eLife.112181.2"
         }
-      ]
+      ],
+      "cas_partition": "2025版｜生物学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜无JIF分区",
+      "ranking_status": "matched"
     },
     {
       "index": 6,
@@ -390,7 +411,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 7,
@@ -432,7 +456,10 @@
       ],
       "publication_label": "综述",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 8,
@@ -475,7 +502,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜4区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q3",
+      "ranking_status": "matched"
     },
     {
       "index": 9,
@@ -554,7 +584,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 10,
@@ -595,7 +628,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜4区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q3",
+      "ranking_status": "matched"
     },
     {
       "index": 11,
@@ -632,7 +668,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜4区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q3",
+      "ranking_status": "matched"
     },
     {
       "index": 12,
@@ -666,7 +705,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜4区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q3",
+      "ranking_status": "matched"
     },
     {
       "index": 13,
@@ -722,7 +764,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 14,
@@ -768,7 +813,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 15,
@@ -818,7 +866,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜3区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q2；NEUROSCIENCES：Q2",
+      "ranking_status": "matched"
     },
     {
       "index": 16,
@@ -865,7 +916,10 @@
       ],
       "publication_label": "综述",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜4区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q3",
+      "ranking_status": "matched"
     },
     {
       "index": 17,
@@ -898,7 +952,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "not_provided",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 18,
@@ -930,7 +987,10 @@
       ],
       "publication_label": "来信",
       "abstract_status": "not_provided",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜3区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q2；NEUROSCIENCES：Q2",
+      "ranking_status": "matched"
     },
     {
       "index": 19,
@@ -974,7 +1034,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜4区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q3",
+      "ranking_status": "matched"
     },
     {
       "index": 20,
@@ -1013,7 +1076,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜4区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q3",
+      "ranking_status": "matched"
     },
     {
       "index": 21,
@@ -1055,7 +1121,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜2区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROIMAGING：Q1；NEUROSCIENCES：Q1；RADIOLOGY, NUCLEAR MEDICINE & MEDICAL IMAGING：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 22,
@@ -1093,7 +1162,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜4区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q2",
+      "ranking_status": "matched"
     },
     {
       "index": 23,
@@ -1132,7 +1204,10 @@
       ],
       "publication_label": "综述",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "不适用（图书系列章节）",
+      "jcr_quartile": "不适用（图书系列章节）",
+      "ranking_status": "not_applicable"
     },
     {
       "index": 24,
@@ -1168,7 +1243,10 @@
       ],
       "publication_label": "综述",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "不适用（图书系列章节）",
+      "jcr_quartile": "不适用（图书系列章节）",
+      "ranking_status": "not_applicable"
     },
     {
       "index": 25,
@@ -1203,7 +1281,10 @@
       ],
       "publication_label": "综述",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "不适用（图书系列章节）",
+      "jcr_quartile": "不适用（图书系列章节）",
+      "ranking_status": "not_applicable"
     },
     {
       "index": 26,
@@ -1238,7 +1319,10 @@
       ],
       "publication_label": "综述",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "不适用（图书系列章节）",
+      "jcr_quartile": "不适用（图书系列章节）",
+      "ranking_status": "not_applicable"
     },
     {
       "index": 27,
@@ -1276,7 +1360,10 @@
       ],
       "publication_label": "综述",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜BEHAVIORAL SCIENCES：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 28,
@@ -1322,7 +1409,10 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜材料科学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CHEMISTRY, MULTIDISCIPLINARY：Q1；CHEMISTRY, PHYSICAL：Q1；MATERIALS SCIENCE, MULTIDISCIPLINARY：Q1；NANOSCIENCE & NANOTECHNOLOGY：Q1；PHYSICS, APPLIED：Q1；PHYSICS, CONDENSED MATTER：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 29,
@@ -1377,7 +1467,10 @@
       ],
       "publication_label": "综述",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜3区",
+      "jcr_quartile": "2026发布版（2025数据）｜GERIATRICS & GERONTOLOGY：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 30,
@@ -1427,7 +1520,10 @@
       ],
       "publication_label": "综述",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜2区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1",
+      "ranking_status": "matched"
     }
   ]
 }
