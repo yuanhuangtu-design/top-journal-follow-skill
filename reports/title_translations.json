@@ -1135,6 +1135,46 @@
     "43044298": {
       "title": "Systematic review of rodent studies on deep brain stimulation targeting the striatum.",
       "title_zh": "针对纹状体的深部脑刺激啮齿类动物研究的系统综述。"
+    },
+    "43051189": {
+      "title": "Dravet syndrome: clinical features across the lifespan, molecular findings, and therapeutic approaches.",
+      "title_zh": "Dravet综合征：整个生命周期的临床特征、分子学发现和治疗方法。"
+    },
+    "43051057": {
+      "title": "Beyond sensitivity: Performance, methodological heterogeneity, and real-time translation of wrist-worn convulsive seizure detection devices - A systematic review and meta-analysis.",
+      "title_zh": "超越敏感性：腕部佩戴型癫痫发作检测设备的性能、方法异质性和实时翻译——系统综述和荟萃分析。"
+    },
+    "43051056": {
+      "title": "Intranasal dexmedetomidine sedation in pediatric electroencephalography: dose optimization, safety, and EEG characteristics.",
+      "title_zh": "小儿脑电图检查中鼻内使用地塞米asone进行镇静：剂量优化、安全性及脑电图特征。"
+    },
+    "43050887": {
+      "title": "Perceived stigma, social support, and associated factors among adults with epilepsy: A cross-sectional study.",
+      "title_zh": "癫痫成年患者的感知污名、社会支持及相关因素：一项横断面研究。"
+    },
+    "43050960": {
+      "title": "The insular cortex and arousal: insights from a human focal lesion-based model.",
+      "title_zh": "脑岛皮层与唤醒：基于人类局灶性病灶模型的见解。"
+    },
+    "43050706": {
+      "title": "Rest-to-task transfer of sparse-to-full EEG reconstruction for cognitive-load decoding.",
+      "title_zh": "用于认知负荷解码的稀疏到完整EEG重建的静息到任务转换。"
+    },
+    "43055733": {
+      "title": "Epistemic Challenges in the Interpretation of Brain Data: A Roadmap for Aligning Divergent Inferences.",
+      "title_zh": "脑数据解释中的认识论挑战：协调不同推论的路线图。"
+    },
+    "43054618": {
+      "title": "The somato-cognitive action network in parkinsonian gait dysfunction and closed-loop neuromodulation.",
+      "title_zh": "帕金森步态障碍和闭环神经调控中的躯体-认知动作网络。"
+    },
+    "43054180": {
+      "title": "A reproducible event-driven analytical framework for ECG-derived skin sympathetic nerve activity analysis: towards afferent signal processing for closed-loop neuromodulation.",
+      "title_zh": "用于心电图衍生皮肤交感神经活动分析的可重复事件驱动分析框架：迈向闭环神经调节的传入信号处理。"
+    },
+    "43052470": {
+      "title": "A glucose-powered artificial neuroimmune axis for metabolic control.",
+      "title_zh": "一种用于代谢控制的葡萄糖驱动型人工神经免疫轴。"
     }
   },
   "pending": {}
