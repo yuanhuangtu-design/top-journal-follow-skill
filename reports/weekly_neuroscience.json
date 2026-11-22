@@ -1,86 +1,81 @@
 {
   "meta": {
-    "report_date": "2026-11-15",
-    "target_edat": "2026-11-14",
+    "report_date": "2026-11-22",
+    "target_edat": "2026-11-21",
     "pipeline": "PubMed E-utilities",
     "source": "NCBI PubMed · Neuron、Brain、Nature Neuroscience",
-    "generated_at": "2026-11-15 08:44:16",
+    "generated_at": "2026-11-22 01:29:37",
     "strategy_version": "2026-11-07-coverage-v1",
     "priority_note": "自动相关度仅作推荐；必读由读者判断",
     "search_complete": true,
+    "journal_rankings": {
+      "cas_version": "2025大类",
+      "jcr_release": "2026",
+      "jcr_data_year": "2025",
+      "unverified_pmids": []
+    },
     "candidate_only": true
   },
   "group_records": [
     {
       "group": "POOL",
       "label": "神经科学期刊周候选",
-      "count": 30,
-      "total": 30,
+      "count": 18,
+      "total": 18,
       "pmids": [
-        "43026327",
-        "43025440",
-        "43021468",
-        "43021447",
-        "43021437",
-        "43021436",
-        "43021435",
-        "43021431",
-        "43021430",
-        "43021427",
-        "43021426",
-        "43020908",
-        "43020051",
-        "43020050",
-        "43017815",
-        "43017809",
-        "43014311",
-        "43014310",
-        "43014309",
-        "43014308",
-        "43014286",
-        "43014285",
-        "43014284",
-        "43014283",
-        "43014282",
-        "43014281",
-        "43014280",
-        "43009618",
-        "43003089",
-        "42995216"
+        "43063940",
+        "43062366",
+        "43061830",
+        "43057232",
+        "43053524",
+        "43052404",
+        "43052403",
+        "43049192",
+        "43045847",
+        "43045846",
+        "43044584",
+        "43043870",
+        "43043867",
+        "43040885",
+        "43040875",
+        "43040038",
+        "43039018",
+        "43038986"
       ],
       "status": "ok",
-      "edat_start": "2026-11-08",
-      "edat_end": "2026-11-14",
-      "query": "((\"Neuron\"[Journal] OR \"Brain\"[Journal] OR \"Nat Neurosci\"[Journal]) AND (\"2026-11-08\"[EDAT] : \"2026-11-14\"[EDAT]))"
+      "edat_start": "2026-11-15",
+      "edat_end": "2026-11-21",
+      "query": "((\"Neuron\"[Journal] OR \"Brain\"[Journal] OR \"Nat Neurosci\"[Journal]) AND (\"2026-11-15\"[EDAT] : \"2026-11-21\"[EDAT]))"
     }
   ],
-  "dedup_total": 30,
+  "dedup_total": 18,
   "papers": [
     {
       "index": 1,
-      "pmid": "43026327",
-      "title": "Enhancer-targeted CRISPR-A rescues haploinsufficiency and mutant phenotypes in organoid models of autism.",
+      "pmid": "43063940",
+      "title": "Spectral envelopes of facial movements predict intention, cortical representations, and neural prosthetic control.",
       "title_zh": "",
-      "journal": "Nature neuroscience",
-      "iso_journal": "Nat Neurosci",
+      "journal": "Neuron",
+      "iso_journal": "Neuron",
       "authors": [
-        "Chen GT",
-        "Nair G",
-        "Osorio AJ",
-        "Holley SM",
-        "Ghassemzadeh K",
-        "Zhou Y",
-        "Gonzalez J",
-        "Martin JM",
-        "Lu C",
-        "Sanjana NE",
-        "Cepeda C",
-        "Geschwind DH"
+        "Hakim R",
+        "Jaggi A",
+        "Heo G",
+        "Matsumoto H",
+        "Uchida N",
+        "Watabe-Uchida M",
+        "Datta SR",
+        "Musall S",
+        "Sabatini BL"
       ],
-      "pubdate": "2026 11 13",
-      "doi": "10.1038/s41593-026-02504-9",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43026327/",
-      "abstract": "Autism spectrum disorder (ASD) is a highly heritable condition with diverse clinical presentations. Approximately 15% of the genetic susceptibility of ASD is imparted by de novo haploinsufficient mutations of major effect. We mapped enhancers of two high-confidence autism genes, CHD8 and SCN2A, and used CRISPR-based gene activation targeting enhancers (eCRISPR-A) in human pluripotent stem cell (hPSC)-derived excitatory neurons and cerebral forebrain organoids to correct the effects of haploinsufficiency, taking advantage of the presence of a wild-type allele of each gene and endogenous gene regulation. Here we show that eCRISPR-A induced a sustained increase in CHD8 and SCN2A expression specifically in mutant neurons and cortical organoids, with rescue of gene expression levels and mutation-associated phenotypes, including gene expression and physiology. These data support gene activation via targeting enhancers of haploinsufficient genes as a therapeutic intervention in ASD and other neurodevelopmental disorders.",
+      "pubdate": "2026 11 16",
+      "doi": "10.1016/j.neuron.2026.10.016",
+      "issns": [
+        "0896-6273",
+        "1097-4199"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43063940/",
+      "abstract": "Animals use coordinated facial movements to sample the environment, ingest nutrients, and communicate. Rodents produce rhythmic facial movements during spontaneous behavior and cognitive tasks. Measuring these movements precisely and linking them to neural activity remains challenging. We introduce face-rhythm, an unsupervised pipeline that combines markerless point-tracking, spectral analysis, and non-negative tensor decomposition to reduce facial video to a small set of interpretable components. Applied to videos of mice performing Pavlovian conditioning, a brain-machine interface task, and free behavior, face-rhythm recovers whisking, sniffing, licking, and subtler motifs. The resulting components are consistent across animals, decode task variables and internal states, and explain cortical activity with a low-rank representation. Facial motor cortex neurons are predicted well by a phase-invariant spectral transformation of movements above roughly 0.5 Hz, whereas slower movements retain a phase-variant representation. Face-rhythm compares favorably with deep-learning tracking and embedding methods while yielding an interpretable description of facial behavior.",
       "abstract_zh": "",
       "hit_groups": [
         "POOL"
@@ -94,1117 +89,26 @@
       ],
       "publication_label": "期刊论文（研究设计待核对）",
       "abstract_status": "available",
-      "related_articles": []
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
     },
     {
       "index": 2,
-      "pmid": "43025440",
-      "title": "Guam disease features chronic traumatic encephalopathy-like tau seeds in brain and spinal cord.",
+      "pmid": "43062366",
+      "title": "Correction to: Treatment evolution in spinal muscular atrophy: insights from the SMArtCARE registry.",
       "title_zh": "",
       "journal": "Brain : a journal of neurology",
       "iso_journal": "Brain",
-      "authors": [
-        "Saez-Calveras N",
-        "Verheijen BM",
-        "Morgan N",
-        "Hill E",
-        "Chabria P",
-        "Taylor S",
-        "Tak Y",
-        "Oyanagi K",
-        "Kakita A",
-        "Song Y",
-        "Joachimiak LA",
-        "Vaquer-Alicea J",
-        "Diamond MI",
-        "Lu Y"
-      ],
-      "pubdate": "2026 11 14",
-      "doi": "10.1093/brain/awag405",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43025440/",
-      "abstract": "Amyotrophic lateral sclerosis/parkinsonism-dementia complex (ALS/PDC) is a fatal neurodegenerative disorder that was once hyperendemic in the island of Guam (Mariana Islands, US) and a few other Pacific locales. Despite extensive investigations into its origins, the etiology of ALS/PDC remains unclear. ALS/PDC is, at the neuropathology level, characterized by tau-dominant multiple proteinopathy in brain and spinal cord. It was recently reported that Guam ALS/PDC brain extracts exhibit tau seeding activity in fluorescence resonance energy transfer (FRET)-based biosensor cells. To build upon those findings and explore the nature of tau seeds in ALS/PDC in more detail, we used an alanine mutational scanning (Ala scan) approach to determine the seeding profile of tau in nervous tissues of Guam ALS/PDC cases. First, we confirmed the detection of tau seeding activity in ALS/PDC brain samples in tau biosensor cells. Notably, we could also detect potent tau seeding activity in spinal cord. Subsequent Ala scan assays demonstrated that ALS/PDC tau displays an aggregate incorporation pattern that resembles that of chronic traumatic encephalopathy (CTE)-type tau. This result is consistent with recent electron cryo-microscopy studies of tau, which revealed that ALS/PDC tau filaments are predominantly of the CTE-type. The structural characteristics and seeding behaviour of ALS/PDC tau, as well as the regional distribution of tau pathology at post-mortem, suggest that ALS/PDC is a CTE-like tauopathy.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 3,
-      "pmid": "43021468",
-      "title": "Hypersensitivity to adrenomedullin in post-traumatic headache: a randomized crossover study.",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Al-Khazali HM",
-        "Hakimzadeh Z",
-        "Melchior AG",
-        "Alpay B",
-        "Cucanić K",
-        "Fuchs AM",
-        "Ashina M",
-        "Ashina H"
-      ],
-      "pubdate": "2026 11 13",
-      "doi": "10.1093/brain/awag401",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43021468/",
-      "abstract": "Adrenomedullin (ADM), a vasoactive member of the calcitonin peptide family with receptor-signalling overlap with calcitonin gene-related peptide (CGRP), has emerged as a candidate therapeutic target in migraine. Given the striking clinical parallels between migraine and persistent post-traumatic headache (PTH), we investigated whether ADM-responsive signalling contributes to migraine-like headache in adults with persistent PTH attributed to mild traumatic brain injury. We conducted a single-centre, randomised, double-blind, placebo-controlled, two-way crossover study in adults with persistent PTH and no pre-trauma history of migraine. On two experimental days separated by at least 7 days, participants received 20-minute intravenous infusions of ADM (19.9 pmol kg⁻¹ min⁻¹) and isotonic saline as the matched inactive comparator (placebo) in randomised sequence. Headache outcomes were recorded for 12 hours. The primary outcome was the within-participant incidence of experimentally induced migraine-like headache. The secondary outcome was the within-participant difference in baseline-corrected area under the curve (AUC) for headache intensity from 0 to 12 hours. Of 158 individuals assessed for eligibility, 21 were randomised, completed both periods and were analysed. Participants had a mean age of 34.3 years, 19 (90%) were female, and 18 (86%) reported a migraine-like phenotype. Migraine-like headache occurred in 17 of 21 participants (81%) after ADM and four of 21 (19%) following placebo. Fourteen participants developed migraine-like only after ADM and one only following placebo, yielding a paired absolute risk difference of 61.9 percentage points (95% CI 29.7-80.6; one-sided P < 0.001; two-sided P = 0.001). Baseline-corrected headache-intensity AUC was higher after ADM than placebo (median 1,110 [IQR 315-2205] versus 420 [-160 to 565]; P = 0.006). Median time to onset of migraine-like headache was 30 minutes after ADM and 390 minutes following placebo. Fifteen participants reported that the ADM-induced headache resembled their usual migraine-like headache episodes, and rescue medication was used by 10 participants after ADM and two after placebo. These findings identify pronounced responsiveness to ADM-linked signalling in persistent PTH and support the ADM pathway as a candidate target for mechanism-based therapeutic development, pending confirmation in independent cohorts and complementary preclinical studies.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 2,
-      "relevance_hits": [
-        "responsive"
-      ],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 4,
-      "pmid": "43021447",
-      "title": "The forgotten fornix in retrosplenial amnesia.",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Mugikura S",
-        "Mori N"
-      ],
-      "pubdate": "2026 11 13",
-      "doi": "10.1093/brain/awag404",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43021447/",
-      "abstract": "",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "not_provided",
-      "related_articles": []
-    },
-    {
-      "index": 5,
-      "pmid": "43021437",
-      "title": "Mosaic CDKL5 deficiency drives progressive inhibitory circuit remodelling.",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Mottolese N",
-        "Trazzi S",
-        "Medici G",
-        "Iannibelli F",
-        "Diquigiovanni C",
-        "Candini G",
-        "Loi M",
-        "Trebbi F",
-        "Bove AM",
-        "Comai D",
-        "Tassinari M",
-        "Bonora E",
-        "Giustetto M",
-        "Mainardi M",
-        "Ciani E"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1093/brain/awag392",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43021437/",
-      "abstract": "CDKL5 deficiency disorder predominantly affects heterozygous females, in whom random X-chromosome inactivation generates cellular CDKL5 mosaicism. Although mosaicism is a defining feature of the disease, whether it actively drives disease progression or simply reflects the genetic mode of inheritance remains unknown. Here, we combined age-comparative electrophysiology, quantitative synaptic imaging, transcriptomic profiling and postmortem human brain analyses to determine how mosaic CDKL5 deficiency shapes inhibitory circuit remodeling during disease progression. Heterozygous Cdkl5 female mice exhibited striking age- and region-specific remodeling of inhibitory neurotransmission. Hippocampal inhibition was initially enhanced but progressively declined with age, whereas cortical inhibitory transmission remained preserved at 3 months and increased in middle-aged animals. These functional changes were accompanied by dynamic remodeling of inhibitory presynaptic terminals, persistent disruption of inhibitory synapse organization and reduced hippocampal gephyrin-positive puncta despite preservation of the major inhibitory interneuron populations. At 12 months, heterozygous females also exhibited a higher density of IBA1/CD68 double-positive microglia in both regions compared with age-matched wild-type controls. Importantly, complete Cdkl5 deficiency failed to reproduce the progressive loss of inhibitory presynaptic terminals observed in heterozygous females, indicating that this phenotype is specific to the mosaic condition rather than a simple consequence of complete Cdkl5 loss. Transcriptomic profiling revealed a temporal transition from alterations detected at 3 months in immune-synaptic regulatory pathways to activity-dependent transcriptional programs associated with reduced structural and homeostatic support, consistent with progressive hippocampal circuit reorganization. Exploratory analyses of postmortem cortical tissue from individuals with CDD revealed differences in inhibitory presynaptic labeling between the available young and adult cases, suggesting that inhibitory alterations may also vary with age in human CDD. Together, these findings identify mosaic CDKL5 deficiency as a biologically distinct circuit state characterized by progressive, region-specific inhibitory circuit remodeling and provide a mechanistic framework for disease progression in CDKL5 deficiency disorder.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 3,
-      "relevance_hits": [
-        "hippocampal"
-      ],
-      "priority": "推荐",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 6,
-      "pmid": "43021436",
-      "title": "Neuronal cell-cycle re-entry stratifies clinical trajectories in amyotrophic lateral sclerosis.",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Plessis-Belair J",
-        "Sher RB"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1093/brain/awag391",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43021436/",
-      "abstract": "The clinical heterogeneity of Amyotrophic Lateral Sclerosis (ALS) remains a fundamental barrier to effective therapy. While cell cycle re-entry in post-mitotic neurons is a known precursor to neurodegeneration, its role in defining patient-specific outcomes has never been established. Here, we integrate large-scale transcriptomic profiling from the AnswerALS cohort with mechanistic studies in human iPSC-derived spinal motor neurons to define how cell-cycle re-entry shapes disease heterogeneity in ALS. We identify a transcriptionally distinct patient subgroup with the highest expression of G1 or G2-phase cyclins that exhibit significantly slower functional decline (ALSFRS-R), whereas the engagement of S-phase markers correlates with accelerated disease progression. Nucleocytoplasmic transport dysfunction, a hallmark of ALS and related disorders, disrupts the spatial distribution of key regulatory proteins and may contribute to maladaptive cell-cycle activation. Our recent evidence suggests that impaired nuclear import may initiate, rather than merely accompany, neuronal cell-cycle re-entry. Using iPSC-derived motor neurons, we show that impaired nuclear import initiates TDP-43 pathology and global nuclear/cytoplasmic mis-localization of key ALS-related proteins. This nucleocytoplasmic transport dysfunction triggers a transient wave of cell-cycle activity immediately preceding neuronal cell death. Crucially, we show that DNA-replication initiation is a pathological inflection point of no return, as neurons entering S-phase accumulate replication-associated DNA damage and undergo cell death. Selective inhibition of CDK4/6 prevents S-phase entry and confers potent neuroprotection. Our findings demonstrate that impaired nuclear import drives maladaptive cell-cycle reactivation in ALS and that the depth of cell-cycle engagement stratifies neuronal fate and patient trajectories.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 2,
-      "relevance_hits": [
-        "adaptive"
-      ],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 7,
-      "pmid": "43021435",
-      "title": "Expanding the genetic landscape of moyamoya angiopathy: insights from 74 trios.",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Aloui C",
-        "Kossorotoff M",
-        "Hervé D",
-        "Kraemer M",
-        "Riant F",
-        "Guey S",
-        "Ko J",
-        "Kim J",
-        "Jan LY",
-        "Corpechot M",
-        "Coste T",
-        "Benichi S",
-        "Bellesme C",
-        "Khadra E",
-        "Bergametti F",
-        "Tournier-Lasserve E"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1093/brain/awag393",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43021435/",
-      "abstract": "Moyamoya angiopathy (MMA) is a rare cerebrovascular disorder characterized by progressive stenosis of intracranial arteries and the development of abnormal collateral vessels. While RNF213 is a major susceptibility gene in East Asian populations, the genetic architecture of MMA beyond RNF213, particularly in Europeans, remains largely undefined beyond a few known syndromic causes. We performed whole-exome sequencing on 74 sporadic MMA trios (proband and unaffected parents) of predominantly European ancestry. An additional cohort of 200 probands was screened for gene recurrence. We applied a stringent filtering strategy to identify de novo and rare inherited variants, followed by gene prioritization based on structural modeling, expression data, and biological plausibility. Gene-based burden tests were conducted against large control databases (gnomAD). We identified causative variants in 20 of the 74 probands (27%). Six probands with severe syndromic infant-onset phenotypes harbored de novo variants in the E3 ligase domain of RNF213. Fourteen probands carried a causative copy number variant (n = 3) or a short variant (n = 11) in a known MMA-associated gene (CBL, NF1, PTPN11, DIAPH1, ANO1, JAG1, NOS3, HBB). Beyond these established genes, we identified strong candidate variants in 11 probands from the discovery cohort, involving 11 novel candidate genes. Screening the additional cohort of 200 unrelated MMA probands identified recurrence of the gain-of-function SMAD4 p.Arg496Cys variant, which was de novo in the discovery-cohort proband, linking MMA to dysregulated TGF-β signaling. Other candidate findings included de novo loss-of-function variants in genes regulating epigenetic modulation and RNA splicing (SETD2, HNRNPL, UBAP2L, TOP2B, PRPF40A) and variants affecting vascular stress response (EPAS1, SVEP1, PDCD4). RNF213 was the only gene reaching exome-wide significance in burden testing (P = 2.11 × 10⁻11). This study establishes that MMA in non-East Asian populations is characterized by a strong genetic heterogeneity. These findings expand the molecular landscape of MMA and highlight the utility of trio-based sequencing for uncovering very rare molecular players in this disease. Additional analyses will now be needed to investigate the convergence of MMA pathways.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 1,
-      "relevance_hits": [
-        "intracranial"
-      ],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 8,
-      "pmid": "43021431",
-      "title": "Reply: Reading between the blinks: how much can prepulse inhibition tell us about fibromyalgia?",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Nováková L",
-        "Sojka P",
-        "Voženílek D",
-        "Sieger T",
-        "Hasíková L",
-        "Šenolt L",
-        "Závada J",
-        "Edwards MJ",
-        "Serranová T"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1093/brain/awag390",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43021431/",
-      "abstract": "",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "not_provided",
-      "related_articles": []
-    },
-    {
-      "index": 9,
-      "pmid": "43021430",
-      "title": "Love in the time of Alzheimer: Gabriel García Márquez's pact with solitude.",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Lees AJ"
-      ],
-      "pubdate": "2026 11 12",
-      "doi": "10.1093/brain/awag402",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43021430/",
-      "abstract": "",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "not_provided",
-      "related_articles": []
-    },
-    {
-      "index": 10,
-      "pmid": "43021427",
-      "title": "Reading between the blinks: how much can prepulse inhibition tell us about fibromyalgia?",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Alonge P",
-        "Meli A",
-        "Portera V",
-        "Brighina F"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1093/brain/awag388",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43021427/",
-      "abstract": "",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "not_provided",
-      "related_articles": []
-    },
-    {
-      "index": 11,
-      "pmid": "43021426",
-      "title": "Reconciling cryptic relatedness to drive gene discovery in amyotrophic lateral sclerosis/frontotemporal dementia.",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Karra RD",
-        "Kaivola K"
-      ],
-      "pubdate": "2026 11 12",
-      "doi": "10.1093/brain/awag400",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43021426/",
-      "abstract": "",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "not_provided",
-      "related_articles": []
-    },
-    {
-      "index": 12,
-      "pmid": "43020908",
-      "title": "Gene discovery and pleiotropic architecture of multidimensional pain in a genome-wide association study of >1.2 million individuals.",
-      "title_zh": "",
-      "journal": "Nature neuroscience",
-      "iso_journal": "Nat Neurosci",
-      "authors": [
-        "Toikumo S",
-        "Davis C",
-        "Jinwala Z",
-        "Khan Y",
-        "Jennings M",
-        "Davis L",
-        "Sanchez-Roige S",
-        "Kember RL",
-        "Kranzler HR"
-      ],
-      "pubdate": "2026 11 12",
-      "doi": "10.1038/s41593-026-02455-1",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43020908/",
-      "abstract": "Chronic pain is highly prevalent worldwide, yet its genetic architecture remains to be fully elucidated. Here we leveraged data from 1,235,695 European-ancestry individuals across three biobanks. In a meta-analytic genome-wide association study of multidimensional pain (MP), we identified 343 independent loci, 92 of which were new pain associations. Sex-specific meta-analyses revealed 115 independent loci (12 of which were new) among males (n = 583,066) and 12 loci (2 of which were new) among females (n = 241,266). Multi-omic gene prioritization analyses highlighted 490 genes associated with MP through their effects on brain-specific and blood-specific regulation. Mendelian randomization analyses showed causal associations between MP and psychiatric disorders, substance use disorders and C-reactive protein levels. MP variants also showed pleiotropic associations with several brain imaging-derived phenotypes. This study expands our knowledge of the genetics of pain and its pathogenesis, highlighting the importance of its pleiotropy with multiple disorders and elucidating its multi-omic pathophysiology.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 13,
-      "pmid": "43020051",
-      "title": "A coronavirus protease activates sensory neurons via TRPA1 to drive sneeze, cough, and pain.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Mali SS",
-        "Gong Z",
-        "Silva R",
-        "Flamm AN",
-        "Cook CP",
-        "Shallow L",
-        "Souza J",
-        "Cronce M",
-        "Arp CJ",
-        "Mousa AAK",
-        "Vo U",
-        "Vuong C",
-        "Keasling J",
-        "Moayedi Y",
-        "Cox JS",
-        "Ramachandran R",
-        "Stanley SA",
-        "Bautista DM"
-      ],
-      "pubdate": "2026 11 12",
-      "doi": "10.1016/j.neuron.2026.10.017",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43020051/",
-      "abstract": "Sneezing, coughing, and pain are common symptoms of respiratory viral infection. These responses are initiated by airway-innervating nociceptors that detect noxious stimuli, but how SARS-CoV-2 activates these neurons remains unclear. Here, we show that the coronavirus papain-like protease (PLpro) directly activates airway-innervating nociceptors in mice and human induced pluripotent stem cell (iPSC)-derived nociceptors. PLpro triggers sneezing, coughing, acute pain, and calcitonin gene-related peptide (CGRP) release in the airways. Both the proteolytic activity of PLpro and the host ion channel transient receptor potential ankyrin 1 (TRPA1) are required for neuronal activation and sneezing. Infection with the mouse-adapted SARS-CoV-2 or the murine coronavirus MHV-A59 also induces sneezing in mice, and MHV-A59-evoked sneezing is TRPA1-dependent. SARS-CoV-2 infection of the trigeminal ganglia altered transcriptional programs associated with nociception, including upregulation of the TRPA1-CGRP signaling pathway activated by PLpro. Together, these findings reveal a direct mechanism by which SARS-CoV-2 triggers pain and airway reflexes and identify PLpro and TRPA1 as potential therapeutic targets for COVID-19.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 14,
-      "pmid": "43020050",
-      "title": "A consensus spinal cord cell-type atlas across mouse, macaque, and human.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Schmitz MT",
-        "Johansen NJ",
-        "Kempynck N",
-        "Kapen I",
-        "Fu Y",
-        "Hewitt M",
-        "Seeman SC",
-        "Kussick E",
-        "Gautier O",
-        "Leone MJ",
-        "Ding SL",
-        "Gao Y",
-        "Bhandiwad A",
-        "Ariza J",
-        "Ayala A",
-        "Barta S",
-        "Blum JA",
-        "Cano-Gomez L",
-        "Cardenas T",
-        "Chakka AB",
-        "Cuevas NV",
-        "Donadio N",
-        "Fancher KA",
-        "Thomas ED",
-        "Ferrer R",
-        "Goldy J",
-        "Hastings SD",
-        "Hirschstein D",
-        "Ho W",
-        "Huang C",
-        "Juneau ZC",
-        "Kim SR",
-        "Lewis ZR",
-        "Liang E",
-        "Martin NX",
-        "Nagra J",
-        "Newman D",
-        "Noh MC",
-        "Olsen P",
-        "Oyama A",
-        "Pena N",
-        "Poldsam H",
-        "Ray PL",
-        "Reding M",
-        "Rimorin C",
-        "Ruiz A",
-        "Shapovalova NV",
-        "Shulga L",
-        "Sobieski C",
-        "Torkelson A",
-        "Wirthlin M",
-        "Yao S",
-        "Lai HC",
-        "Pfenning A",
-        "Pool AH",
-        "Seal R",
-        "Tasic B",
-        "Ting JT",
-        "Waters J",
-        "Yao Z",
-        "Gitler AD",
-        "Aerts S",
-        "McMillen D",
-        "Ng L",
-        "Zeng H",
-        "van Velthoven CTJ",
-        "Daigle TL",
-        "Smith KA",
-        "Hodge RD",
-        "Lein ES",
-        "Bakken TE"
-      ],
-      "pubdate": "2026 11 12",
-      "doi": "10.1016/j.neuron.2026.10.006",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43020050/",
-      "abstract": "The spinal cord contains cell types critical for motor, sensory, and autonomic function, many of which are implicated in neurological disease and injury. Yet no shared molecular framework links human spinal cord cell types to the animal models used to study them. Here, we present a cross-species atlas integrating single-nucleus gene expression, chromatin accessibility, and spatial transcriptomics from over one million nuclei spanning cervical to sacral segments in human, macaque, and mouse. Consensus clustering resolves 111 cell type groups replicable across all three species, whose spatial distributions map spinal laminae and nuclei, including Clarke's column. Identity and laminar organization are highly conserved, yet abundance and expression are allometrically scaled, with the dorsal horn being the principal site of divergence, concentrated in neurotransmitter receptor genes and including a primate-specific glycine receptor subunit switch. Sequence models uncover a conserved transcription factor grammar and nominate motifs underlying enhancer-adeno-associated virus (AAV) access to a divergent dorsal horn population.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 15,
-      "pmid": "43017815",
-      "title": "Understanding apolipoprotein E as a predominant cause of Alzheimer's disease.",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Williams DM",
-        "Mukadam N",
-        "Davies NM",
-        "Anderson EL"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1093/brain/awag395",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43017815/",
-      "abstract": "The full contribution of apolipoprotein E (APOE) to Alzheimer's disease burden in populations may have been overlooked. This is due, in large part, to a lack of recognition that the most common allele of the APOE gene, ε3, increases risk of Alzheimer's disease relative to the ε2 allele. When the impact of both ε3 and ε4 alleles of APOE are considered, the majority of late-onset Alzheimer's disease appears to be attributable to differences in APOE function or expression in populations of European ancestry and in other ethnic groups for which we have reliable data. Moreover, most sporadic early-onset Alzheimer's disease might not occur without the contributions of APOE ε3 and ε4, and the two alleles may be component causes of most forms of Alzheimer's disease arising from highly penetrant genetic mutations and trisomy 21. Taken together, these lines of epidemiological evidence suggest that APOE is a predominant cause of Alzheimer's disease, spanning the aetiologies of many forms of the disease. Consequently, almost all prospective cases of Alzheimer's disease might benefit from the development of therapies to modulate APOE's role in the disease's pathophysiology.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 1,
-      "relevance_hits": [
-        "ecog"
-      ],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 16,
-      "pmid": "43017809",
-      "title": "Insight discordance differentiates behavioural variant frontotemporal dementia from false positives.",
-      "title_zh": "",
-      "journal": "Brain : a journal of neurology",
-      "iso_journal": "Brain",
-      "authors": [
-        "Flavell J",
-        "Lee S",
-        "McElligott CAT",
-        "Coleman FM",
-        "Fazlollahi A",
-        "Nestor PJ"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1093/brain/awag394",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43017809/",
-      "abstract": "Behavioural variant frontotemporal dementia (bvFTD) can present with behavioural symptoms similar to psychiatric mimics of the disease (sometimes termed 'phenocopies'). Despite this overlap, loss of insight is a cardinal feature of bvFTD unlike most psychiatric disorders. This study tested whether insight could be quantified to improve diagnostic accuracy in distinguishing these conditions, and examined neuroimaging correlates of impaired insight. In this prospective cohort study, 27 patients with frontotemporal lobar degeneration (FTLD) presenting as the bvFTD phenotype and 25 false-positives of bvFTD who ultimately had a psychiatric disorder underwent patient, informant, and clinician symptom ratings on a modified Frontal Behavioural Inventory (FBI). Discrepancy scores were calculated, diagnostic discrimination was evaluated by area under the curve (AUC) with leave-one-out cross-validation, alongside a neuroimaging analysis of network-level associations of insight in bvFTD. Patients with bvFTD endorsed fewer symptoms than false-positives (FBI 6.62 ± 8.80 vs 15.36 ± 8.42, P < 0.001), whereas clinician observations were markedly greater in bvFTD (27.67 ± 8.35 vs 5.64 ± 3.85, P < 0.001). Informant ratings did not differ between groups (25.15 ± 11.11 vs 21.32 ± 12.61, P = 0.14), even though bvFTD informants had more knowledge of the disease (FTD Knowledge Scale 16.20 ± 6.68 vs 9.41 ± 8.19, P = 0.003). A model incorporating patient-clinician and informant-clinician discrepancy showed excellent cross-validated discrimination (AUC 0.99, 95% confidence interval (CI) 0.97-1.00). A model independent of expert clinician ratings, the patient-informant discrepancy, showed fair cross-validated discrimination across the full cohort (AUC 0.71, 95% CI 0.56-0.85) and good discrimination in those who did not develop another FTLD syndrome on follow-up ('pure bvFTD'; AUC 0.78, 95% CI 0.63-0.94). In bvFTD, reduced insight was associated with salience and semantic appraisal network degeneration but not control frontotemporal regions. BvFTD, false-positives, and their informants demonstrated opposing patterns of symptom endorsement. Symptom under-endorsement (lack of insight) by patients relative to clinician and informant observation supports neurodegeneration, whereas informant and patient over-endorsement without clinician-observed disturbance suggests a false-positive. Unfamiliarity with bvFTD may contribute to over-reporting. Though the clinician-dependent findings may not translate to non-expert settings, the patient-informant model retained good discrimination. Formal quantification of discrepancy patterns in behaviour may reduce misdiagnosis in bvFTD. The neuroimaging findings support salience and semantic appraisal networks as the neuroanatomical basis for insight in bvFTD. Future studies should validate the FBI clinician version and examine factors underlying over-reporting by false-positives and their informants.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 17,
-      "pmid": "43014311",
-      "title": "Glial progenitor-like state is preferentially co-opted in glioblastoma and sustained by POU3F3.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Ramos SI",
-        "Khan MIK",
-        "Cheng WS",
-        "Pai B",
-        "Silva-Hurtado TJ",
-        "Samanamud J",
-        "Chen X",
-        "Beaumont KG",
-        "Sebra RP",
-        "Yong RL",
-        "Richardson TE",
-        "Krausert A",
-        "Mahadevan LSK",
-        "Zaslavsky E",
-        "Tsankova NM"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1016/j.neuron.2026.10.012",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014311/",
-      "abstract": "Oncofetal reprogramming in glioblastoma (GBM) relies on the co-option of still poorly defined pathways that are transiently active during brain development, thereby exposing therapeutically actionable vulnerabilities. To better characterize GBM biology in the context of neurodevelopment, we create an expanded human spatiotemporal multi-omic dataset that resolves both gliogenic and neurogenic lineage fate and assess oncofetal reprogramming at the tumor core and infiltrative margin in both primary and recurrent disease. Analyses reveal the preferential enrichment of a glial intermediate progenitor cell (gIPC)-like state, which is most reminiscent of third-trimester germinal matrix gIPCs, across tumor regions and in recurrence. We uncover EGFR and the long non-coding RNA (lncRNA) NRXN1-DT as co-opted gIPC-specific markers, demonstrate NRXN1-DT's clinical utility in GBM diagnostics, and prioritize POU3F3 as a gIPC-like oncofetal driver, confirming its regulatory role in NRXN1-DT enhancer activity, EGFR expression, and maintenance of GBM stem/progenitor-like properties. This study lays the groundwork for future investigations into targeting POU3F3 and other co-opted gliogenic drivers as GBM therapeutics.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 18,
-      "pmid": "43014310",
-      "title": "Antisense oligonucleotide silencing rescues neurodevelopmental deficits in AMPA receptor gain-of-function mice.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Chen CM",
-        "Huang YM",
-        "Chung CC",
-        "Johnson RC",
-        "Tsai CY",
-        "Chen YH",
-        "Tan HL",
-        "Hsiao FY",
-        "Huganir RL",
-        "Chiu SL"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1016/j.neuron.2026.10.013",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014310/",
-      "abstract": "AMPA receptors (AMPARs) mediate fast excitatory synaptic transmission and are essential for neuronal development and brain function. We investigated the role of a recurrent AMPAR GluA1 variant (GRIA1 p.A636T) identified in individuals with autism spectrum disorder (ASD) and intellectual disability (ID). Using a Gria1-A636T knock-in mouse model, we show that this variant is sufficient to produce core ASD/ID-like behaviors and cause selective hippocampal vulnerability characterized by progressive dendritic atrophy and neuronal loss. Despite a reduction in GluA1-containing complexes, synaptic AMPARs exhibit hyperexcitability and fail to transition from calcium-permeable to calcium-impermeable AMPARs during development, resulting in persistent excitotoxicity. To explore potential therapeutic interventions, we developed an allele-specific antisense oligonucleotide (ASO) to selectively silence the mutant transcript. A single neonatal ASO dose prevents hippocampal pathology and rescues behavioral deficits. These findings define a mechanism of developmental excitotoxicity driven by a GRIA1 gain-of-function channelopathy and support RNA-targeted precision therapy for AMPAR-related neurodevelopmental disorders.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 2,
-      "relevance_hits": [
-        "hippocampal"
-      ],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 19,
-      "pmid": "43014309",
-      "title": "Slow-timescale regulation of dopamine release governs recovery of a motivational drive over days.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Sunkavalli PS",
-        "Madara JC",
-        "Singh Alvarado J",
-        "Ventura BF",
-        "Baker JG",
-        "Zhu PK",
-        "Christenson LF",
-        "Diaz A",
-        "Chen J",
-        "Lazen E",
-        "Ravotto L",
-        "Patriarchi T",
-        "Andermann ML",
-        "Zhang SX"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1016/j.neuron.2026.10.022",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014309/",
-      "abstract": "The rise and fall of a motivational state can unfold over many days. We used mouse mating behavior to model how the brain orchestrates such slow-timescale changes in motivation. Male mice become sexually satiated after successful matings, and their motivation to mate recovers over a week. Using deep-brain fluorescence-lifetime imaging in the medial preoptic area (MPOA), we found that tonic dopamine transmission-which regulates mating drive-also declined after mating and gradually re-emerged across several days. Two mechanisms regulated dopamine transmission. First, successful mating transiently reduced the tonic firing of hypothalamic dopamine-releasing neurons, thereby inhibiting dopamine release and mating behavior for 1 to 2 days. Second, these neurons' ability to produce and release dopamine dropped after mating and recovered over the following week, paralleling the recovery of mating drive. Therefore, changes in neuronal firing rate and neurotransmitter composition cooperate to control the early and late phases of motivational dynamics, respectively.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 1,
-      "relevance_hits": [
-        "thalamic"
-      ],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 20,
-      "pmid": "43014308",
-      "title": "Dissociable cerebellar pathways for reach correction and learning.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Dobrott CI",
-        "Nashef A",
-        "Becker MI",
-        "Person AL"
-      ],
-      "pubdate": "2026 11 11",
-      "doi": "10.1016/j.neuron.2026.10.010",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014308/",
-      "abstract": "Sensory feedback can trigger rapid motor corrections, but how self-generated movement errors are corrected and influence subsequent behavior remains less clear. Here, we found that corrective submovements (CSMs), structured, feedback-driven adjustments, occurred either spontaneously or in response to neural perturbations during mouse reaching. Corrections were modestly encoded in the cerebellar anterior interposed nucleus (IntA) along with non-corrective reach kinematic correlates. Closed-loop perturbations directed to red nucleus-projecting neurons were readily compensated for with corrective movements and led to learned shifts in the timing of future submovements, while perturbations to IntA more broadly were not compensated for and produced no learning. Thus, subsets of IntA outputs differentially permit or corrupt accurate corrections and subsequent learning, respectively.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 1,
-      "relevance_hits": [
-        "closed-loop"
-      ],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 21,
-      "pmid": "43014286",
-      "title": "Advancing brain organoids from disease phenotypes to mechanisms and translation across developmental, infectious, and neurodegenerative diseases.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Knoblich JA",
-        "Ming GL",
-        "Temple S"
-      ],
-      "pubdate": "2026 Nov 11",
-      "doi": "10.1016/j.neuron.2026.10.014",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014286/",
-      "abstract": "Diseases of the central nervous system remain among the greatest unmet medical challenges. Human brain organoids provide 3D multicellular systems for investigating neurodevelopmental, infectious, and neurodegenerative diseases in a human cellular context. Considering these distinct disease areas together highlights how organoid studies are moving beyond recapitulating disease phenotypes to define molecular and cellular mechanisms and trajectories: when pathogenic changes emerge, how they evolve, which cell types and states drive or resist disease, and how multicellular interactions shape progression. Integrating human genetics with longitudinal, single-cell, multi-omic, and functional analyses provides access to human-specific processes that are difficult to capture in animal models and enables identification of mechanisms and therapeutic targets anchored in human disease biology. Increasingly, well-characterized organoids offer human new approach methodologies (NAMs) for preclinical therapeutic evaluation. Advances in reproducibility, benchmarking, and appropriate validation will be critical to establishing their predictive value and supporting their use in drug development and regulatory applications.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article",
-        "Review"
-      ],
-      "publication_label": "综述",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 22,
-      "pmid": "43014285",
-      "title": "Neural organoid models of human brain evolution.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Day CF",
-        "Pollen AA",
-        "Lancaster MA"
-      ],
-      "pubdate": "2026 Nov 11",
-      "doi": "10.1016/j.neuron.2026.10.020",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014285/",
-      "abstract": "The human brain has structural and functional differences to our closest living relatives, the other great apes. It is thought that these differences give rise to many of the traits we associate with being human, such as our prodigious capacity to learn and be creative. However, the molecular mechanisms that underpin these differences are mostly unknown. In this review, we describe how neural organoids, an in vitro model of brain development, enable questions of human brain evolution to be functionally investigated in evolutionarily relevant developmental contexts. We discuss new insights at the genetic, cellular, and developmental scales and highlight current challenges in organoid generation, in long-term culture, and in establishing multimodal phenotypic measurements. We anticipate expanding the application of organoid models across Mammalia to help us better define species- and lineage-specific traits and improve our understanding of how complex traits emerge and evolve across developmental and evolutionary timescales.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article",
-        "Review"
-      ],
-      "publication_label": "综述",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 23,
-      "pmid": "43014284",
-      "title": "Brain organoids: Experimental access to human-specific brain development.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Kastli R",
-        "Andersen RE",
-        "Walsh CA",
-        "Arlotta P"
-      ],
-      "pubdate": "2026 Nov 11",
-      "doi": "10.1016/j.neuron.2026.10.004",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014284/",
-      "abstract": "Human cerebral cortical development includes species-divergent cellular programs and unusually prolonged trajectories that remain difficult to investigate experimentally. These processes support human-specific cognitive abilities and are thought to be associated with vulnerability to neurodevelopmental and neuropsychiatric disorders. Human brain organoids provide a tractable system for studying these processes across developmental time and under controlled perturbation. Here, we review how cortical organoids model human-specific features of progenitor biology and cell diversification, as well as progressive cellular maturation and circuit formation. We consider the limitations that constrain later-stage maturation and how approaches including the addition of missing cell types, the use of assembloids, and transplantation can extend the developmental processes accessible to study. Finally, we examine how patient-derived, isogenic, chimeric, and perturbation-based organoid systems are being used to investigate neurodevelopmental disorders and, in turn, reveal mechanisms of typical human development.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article",
-        "Review"
-      ],
-      "publication_label": "综述",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 24,
-      "pmid": "43014283",
-      "title": "Toward functional oversight of neural organoid research: A report from the 2025 Asilomar Conference.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Linkenhoker B"
-      ],
-      "pubdate": "2026 Nov 11",
-      "doi": "10.1016/j.neuron.2026.09.024",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014283/",
-      "abstract": "In November 2025, an international multistakeholder group convened at Asilomar, California, to address oversight of rapidly advancing neural organoid and assembloid research. This process report documents the convening's design, outcomes, and lessons, and it asks what it will take to turn this momentum into ongoing monitoring and practical guidelines that ensure responsible research without constraining scientific progress.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 25,
-      "pmid": "43014282",
-      "title": "Cognitive evaluation of brain organoids and assembloids.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Melloni L",
-        "Dehaene S"
-      ],
-      "pubdate": "2026 Nov 11",
-      "doi": "10.1016/j.neuron.2026.10.009",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014282/",
-      "abstract": "The computational abilities of brain organoids and assembloids remain largely unexplored. We propose a hierarchy of assays grounded in cognitive neuroscience and probing representations, memory, and predictive processing, thus enabling causal tests of how architecture and maturation shape emerging computations while providing empirical constraints on debates about organoid consciousness.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article",
-        "Review"
-      ],
-      "publication_label": "综述",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 26,
-      "pmid": "43014281",
-      "title": "Unbundling the ethical and social issues in human neural organoid research.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Greely HT",
-        "Farahany N"
-      ],
-      "pubdate": "2026 Nov 11",
-      "doi": "10.1016/j.neuron.2026.10.005",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014281/",
-      "abstract": "As human neural organoid research advances, some key concepts in its ethical analysis need to be unbundled to keep pace with scientific developments. These include interests involved in informed consent, distinct dimensions of consciousness and their implications for welfare, approaches to engaging public concerns, and governance and oversight of both organoids themselves and their uses.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article",
-        "Review"
-      ],
-      "publication_label": "综述",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 27,
-      "pmid": "43014280",
-      "title": "Human stem cell neuroscience.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Pașca SP"
-      ],
-      "pubdate": "2026 Nov 11",
-      "doi": "10.1016/j.neuron.2026.09.004",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43014280/",
-      "abstract": "In neuroscience, the most relevant human biology has often been the least accessible. Stem-cell-based models, such as organoids and assembloids, are opening ways to generate, assemble, probe, and perturb neural cells and circuits, helping define \"stem cell neuroscience.\" In this issue of Neuron, this and other reviews and commentaries discuss the current state of this emerging field.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Introductory Journal Article",
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 28,
-      "pmid": "43009618",
-      "title": "Information formatting in neuronal populations predicts differential functional contributions to behavior.",
-      "title_zh": "",
-      "journal": "Nature neuroscience",
-      "iso_journal": "Nat Neurosci",
-      "authors": [
-        "Ruff DA",
-        "Markman SK",
-        "Kim JZ",
-        "Cohen MR"
-      ],
-      "pubdate": "2026 11 10",
-      "doi": "10.1038/s41593-026-02514-7",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43009618/",
-      "abstract": "Neurons throughout the brain encode essentially everything, so why have distinct areas? We proposed that areas format different information sources differently, implying their computational role. Here we compared the middle temporal (MT) area, involved in visual motion perception, and the dorsolateral prefrontal cortex (dlPFC), implicated in decision-making and reward. In a task that required monkeys to combine motion and reward information, both regions encoded both motion and reward, but formatted differently. Area MT represented them separably, whereas the dlPFC combined them in a decision-related format. A recurrent network model trained to reproduce that formatting predicted a distinct effect of stimulating those areas. Consistent with predictions, MT stimulation biased choices whereas dlPFC stimulation produced 'winner-take-all' outcomes. Our findings suggest that a modular structure flexibly reformats information to enable complex behaviors.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 2,
-      "relevance_hits": [
-        "stimulation"
-      ],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 29,
-      "pmid": "43003089",
-      "title": "An astrocyte-microglia MFG-E8 axis promotes synapse engulfment in early amyloid pathology.",
-      "title_zh": "",
-      "journal": "Neuron",
-      "iso_journal": "Neuron",
-      "authors": [
-        "Sokolova D",
-        "Puletti F",
-        "Addington Ghansah S",
-        "Georgiades T",
-        "Zheng Y",
-        "Wu L",
-        "De Schepper S",
-        "Lange J",
-        "Ferreira LSS",
-        "Sierksma A",
-        "Rebejac J",
-        "Crowley G",
-        "Rueda-Carrasco J",
-        "Geary B",
-        "Nirujogi R",
-        "Koutsiouroumpa A",
-        "Muckett P",
-        "Kittler J",
-        "Gentry M",
-        "Bourdenx M",
-        "Freeman OJ",
-        "Burden JJ",
-        "Khakh BS",
-        "Hong S"
-      ],
-      "pubdate": "2026 11 09",
-      "doi": "10.1016/j.neuron.2026.10.011",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43003089/",
-      "abstract": "Region-specific synapse loss is an early hallmark of Alzheimer's disease, yet the upstream signals that render synapses vulnerable remain unclear. In a mouse model of amyloidosis, we identify an early astrocyte state that emerges in vulnerable brain regions before widespread plaque deposition and overt gliosis. These astrocytes exhibit bulbous-looking perisynaptic processes enriched in p62 and glycogen, impaired autophagic flux and calcium signaling, and diminished astrocyte-synapse coverage. Rather than exhibiting increased synapse engulfment, bulbous astrocytes show elevated milk fat globule-epidermal growth factor 8 (MFG-E8) and are associated with increased local microglial synapse engulfment. Astrocyte-specific gain- and loss-of-function experiments demonstrate that astrocyte-derived MFG-E8 is required for microglial synapse engulfment and acts through microglial β3 integrin signaling. Astrocytic Mfge8 deletion reduces microglial engulfment and synapse loss across amyloidosis models and is associated with reduced amyloid pathology, gliosis, and cognitive impairment. Together, these findings define an astrocyte-microglia MFG-E8 signaling axis that contributes to region-specific synaptic vulnerability during early amyloid pathology.",
-      "abstract_zh": "",
-      "hit_groups": [
-        "POOL"
-      ],
-      "group_count": 1,
-      "relevance_score": 0,
-      "relevance_hits": [],
-      "priority": "浏览",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "publication_label": "期刊论文（研究设计待核对）",
-      "abstract_status": "available",
-      "related_articles": []
-    },
-    {
-      "index": 30,
-      "pmid": "42995216",
-      "title": "Author Correction: A genome-wide analysis of the shared genetic risk architecture of complex neurological and psychiatric disorders.",
-      "title_zh": "",
-      "journal": "Nature neuroscience",
-      "iso_journal": "Nat Neurosci",
-      "authors": [
-        "Smeland OB",
-        "Kutrolli G",
-        "Bahrami S",
-        "Fominykh V",
-        "Parker N",
-        "Fuhrer J",
-        "Hindley GFL",
-        "Rødevand L",
-        "Jaholkowski P",
-        "Tesfaye M",
-        "Parekh P",
-        "Elvsåshagen T",
-        "Grotzinger AD",
-        "Steen NE",
-        "van der Meer D",
-        "O'Connell KS",
-        "Djurovic S",
-        "Dale AM",
-        "Shadrin AA",
-        "Frei O",
-        "Andreassen OA"
-      ],
-      "pubdate": "2026 11 06",
-      "doi": "10.1038/s41593-026-02536-1",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42995216/",
+      "authors": [],
+      "pubdate": "2026 11 20",
+      "doi": "10.1093/brain/awag397",
+      "issns": [
+        "0006-8950",
+        "1460-2156"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43062366/",
       "abstract": "",
       "abstract_zh": "",
       "hit_groups": [
@@ -1222,10 +126,811 @@
       "related_articles": [
         {
           "relation": "ErratumFor",
-          "pmid": "41219506",
-          "source": "Nat Neurosci. 2025 Dec;28(12):2439-2450. doi: 10.1038/s41593-025-02090-2."
+          "pmid": "41431300",
+          "source": "Brain. 2026 Mar 5;149(3):818-827. doi: 10.1093/brain/awaf472."
         }
-      ]
+      ],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 3,
+      "pmid": "43061830",
+      "title": "Cortical and meningeal neuroimmune interactions contribute to the generation of migraine headaches.",
+      "title_zh": "",
+      "journal": "Brain : a journal of neurology",
+      "iso_journal": "Brain",
+      "authors": [
+        "Erdener ŞE",
+        "Kaya Z",
+        "Dalkara T"
+      ],
+      "pubdate": "2026 11 20",
+      "doi": "10.1093/brain/awag413",
+      "issns": [
+        "0006-8950",
+        "1460-2156"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43061830/",
+      "abstract": "Migraine is a prevalent disorder that ranks as the second leading cause of disability among all diseases. Recent advancements have significantly enhanced our comprehension of its underlying pathophysiology. Growing evidence highlights complex neuroimmune signaling networks-particularly interactions between meningeal nociceptors and resident immune cells-as key contributors to headache generation. The clinical success of anti-calcitonin gene-related peptide (CGRP) antibodies underscores the importance of intercellular communication between the dural nociceptive nerves and adjacent resident immune cells such as macrophages in migraine headache. Notably, the intercellular inflammatory interplay is not confined to the meninges. Disturbances within the brain parenchyma potentially act as initiating triggers, as suggested by the presence of aura and premonitory symptoms preceding the headache. Recent experimental discoveries indicate that neuronal stress triggers an inflammatory signaling cascade that, through interactions with astrocytes and microglia, propagates to the meninges, ultimately inducing meningeal neurogenic inflammation and headache. This model is supported by converging experimental evidence and human imaging studies employing PET and quantitative MRI, which document the presence of changes compatible with inflammatory activity within the brain parenchyma and overlying meninges of patients with migraine with aura. Genetic studies identifying several inflammation-related genes and pathways as risk factors for migraine further corroborate this concept. Furthermore, cell-specific transcriptomic analyses of mouse brains have revealed astrocyte-selective activation of nuclear factor kappa B -regulated inflammatory transcriptional pathways after cortical spreading depolarization, the neurophysiological correlate of migraine aura. Owing to their extensive interface with the cerebrospinal fluid, astrocytes are uniquely positioned to release inflammatory mediators to activate meningeal nociceptors and immune cells. Insights from pain research suggest that neuroimmune interactions may be responsible for the widespread parenchymal increases in 18 kDa translocator protein (TSPO) PET signals observed in migraine with aura patients. This discovery also identifies TSPO as a potential player in migraine pathophysiology and novel drug target. In this review, by integrating cellular and molecular findings from peripheral pain and inflammation research, we examine the dynamic interactions between neurons and glia, as well as between meningeal nociceptors and immune cells in the context of migraine headache. This perspective provides a conceptual framework for understanding how nociceptors and glial cells coordinate to signal non-homeostatic brain states-initiating protective, tightly regulated responses without progressing to overt neuroinflammatory disease and provides novel insight into the findings of PET studies involving TSPO.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 4,
+      "pmid": "43057232",
+      "title": "The neural mechanisms of fast versus slow decision-making.",
+      "title_zh": "",
+      "journal": "Neuron",
+      "iso_journal": "Neuron",
+      "authors": [
+        "Nashaat M",
+        "Oraby H",
+        "Krasniqi F",
+        "Goh-Sauerbier ST",
+        "Bosc M",
+        "Koerner S",
+        "Lobova A",
+        "Karayel S",
+        "Kepecs A",
+        "Larkum ME"
+      ],
+      "pubdate": "2026 11 19",
+      "doi": "10.1016/j.neuron.2026.10.024",
+      "issns": [
+        "0896-6273",
+        "1097-4199"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43057232/",
+      "abstract": "One hallmark of intelligent behavior is the ability to optimize how much time is devoted to decisions. Yet the principles governing decision timing remain unclear. Here, we developed a novel paradigm for directly comparing decision-making between mice and humans. This approach allowed us to combine widefield and 2-photon imaging in the mouse frontal cortex with optogenetic inhibition to examine the underlying mechanisms. We found that history-dependent refinement of sequences in the medial frontal cortex (MFC), versus a thresholding mechanism in the lateral frontal cortex (LFC), provides a unified logic for decision strategy on a trial-by-trial basis. Notably, behavioral performance and strategy were profoundly disrupted by optogenetic inhibition of the MFC compared with that of the LFC, revealing a dominant cognitive role for MFC in decision selection and timing. These dynamics reflect reinforcement-learning updates that explain timing variability better than sensory evidence. Our findings provide a computational framework that unifies voluntary decision-making across species.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 2,
+      "relevance_hits": [
+        "optogenetic"
+      ],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 5,
+      "pmid": "43053524",
+      "title": "ERN EURO-NMD expert opinion on management of new biologic therapies in myasthenia gravis.",
+      "title_zh": "",
+      "journal": "Brain : a journal of neurology",
+      "iso_journal": "Brain",
+      "authors": [
+        "Cheli M",
+        "Vissing J",
+        "Ramdas S",
+        "Stanislav V",
+        "Uccheddu MB",
+        "Lutgarde A",
+        "Behin A",
+        "Cortés-Vicente E",
+        "Kostera-Pruszczyk A",
+        "Punga AR",
+        "Gilhus NE",
+        "Meisel A",
+        "Maggi L"
+      ],
+      "pubdate": "2026 11 19",
+      "doi": "10.1093/brain/awag407",
+      "issns": [
+        "0006-8950",
+        "1460-2156"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43053524/",
+      "abstract": "Myasthenia Gravis is a potentially life-threatening autoimmune disease of the neuromuscular junction with fluctuating muscle weakness and fatigability. In recent years, the therapeutic landscape has been notably reshaped by the introduction of new therapies. These agents, primarily acting through complement inhibition or neonatal Fc-receptor blockade, have demonstrated significant efficacy and favorable safety profiles in randomized clinical trials and real-world settings. Their advent has refined clinical management, particularly in refractory patients, leading to meaningful improvements in patients' quality of life and future expectations. Meanwhile, in this evolving therapeutic landscape, new challenges and uncertainties in clinical decision-making have been raised, as new therapies are now part of the standard care in Myasthenia Gravis. Differences in regulatory agency approvals and reimbursement policies across Europe result in heterogeneous access to therapies, complicating treatment decisions and limiting shared real-world experiences. Consequently, clinicians face complex dilemmas regarding optimal patient selection, treatment choice, and long-term management strategies. To address these issues, a panel of experts, including adult and pediatric neurologists and patient representatives, within the framework of the European Reference Network for Neuromuscular Diseases convened to develop consensus-based positions. The aim of this work was to identify, explore, and discuss key challenges associated with the use of new therapies and to propose a practical approach to support clinicians in this rapidly evolving field. Given the variability in clinical approach, treatment availability and reimbursement policies across European healthcare systems, this position paper seeks to provide guidance that are adaptable across diverse settings. A literature review was conducted, focusing on pivotal clinical trials and real-world evidence. Eleven key topics were identified and discussed, and for each, consensus statements were developed and refined through a modified Delphi process: patient assessment from both clinician and patient perspectives; the role of autoantibodies and optimization of serological testing; selection of immunotherapies; definitions of treatment response and failure in the context of new therapies; strategies for switching between therapies; predictors of treatment response; management of concomitant therapies, including corticosteroids and conventional immunosuppressant; discontinuation strategies; their potential role as early-line therapies; their applicability in ocular MG; and future therapeutic perspectives, including ongoing clinical trials. In conclusion, new therapies represent a major advance in Myasthenia Gravis care but also introduce significant complexity. This expert position paper provides a framework to support clinicians in decision-making and highlights the need for harmonized guidelines and further research to optimize their use in routine practice.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 1,
+      "relevance_hits": [
+        "refractory"
+      ],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 6,
+      "pmid": "43052404",
+      "title": "Author Correction: An aging-sensitive secreted phospholipase confers neuroprotection and cognitive resilience.",
+      "title_zh": "",
+      "journal": "Nature neuroscience",
+      "iso_journal": "Nat Neurosci",
+      "authors": [
+        "Vicidomini C",
+        "Goode TD",
+        "Yu R",
+        "Mehta I",
+        "McAvoy KM",
+        "Beveridge CH",
+        "Randolph CE",
+        "Iyer SN",
+        "Victor MB",
+        "Leary N",
+        "Evans L",
+        "Steinbaugh MJ",
+        "Lai ZW",
+        "Lyon MC",
+        "San Silvestre MRF",
+        "Tosoni G",
+        "Ayyildiz D",
+        "Ho Sui S",
+        "Yamamoto K",
+        "Murakami M",
+        "Salta E",
+        "Tsai LH",
+        "Chopra G",
+        "Sahay A"
+      ],
+      "pubdate": "2026 11 18",
+      "doi": "10.1038/s41593-026-02554-z",
+      "issns": [
+        "1097-6256",
+        "1546-1726"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43052404/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Published Erratum"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "not_provided",
+      "related_articles": [
+        {
+          "relation": "ErratumFor",
+          "pmid": "42881225",
+          "source": "Nat Neurosci. 2026 Oct 15. doi: 10.1038/s41593-026-02465-z."
+        }
+      ],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 7,
+      "pmid": "43052403",
+      "title": "Neotenic expansion of adult-born dentate granule cells reconfigures GABAergic inhibition to enhance social memory consolidation.",
+      "title_zh": "",
+      "journal": "Nature neuroscience",
+      "iso_journal": "Nat Neurosci",
+      "authors": [
+        "Chung A",
+        "Alipio JB",
+        "Ghosh M",
+        "Evans L",
+        "Miller SM",
+        "Goode TD",
+        "Mehta I",
+        "Ahmed OJ",
+        "Sahay A"
+      ],
+      "pubdate": "2026 11 18",
+      "doi": "10.1038/s41593-026-02503-w",
+      "issns": [
+        "1097-6256",
+        "1546-1726"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43052403/",
+      "abstract": "Immature adult-born dentate granule cells (abDGCs) show heightened synaptic and structural plasticity and preferentially contribute to hippocampal-dependent memory. Protracted maturation (neoteny) of abDGCs in higher mammals is posited to offset the decline in adult hippocampal neurogenesis by supporting increased plasticity. Here we found that selective, synchronous expansion of 4-week-old immature, but not 8-week-old mature, mouse abDGCs promotes recruitment of fast-spiking parvalbumin-expressing inhibitory interneurons (INs) in hippocampal CA3 and CA2, increases feed-forward inhibition, decreases social memory interference and enhances social memory consolidation. In vivo local field potential recordings in dorsal CA1 and CA2 revealed increased baseline power, amplitude and duration of sharp-wave ripples, as well as enhanced rate modulation by social experience. Inhibitory neuron-targeted chemogenetic manipulations implicate dorsal CA3 and CA2 INs, including parvalbumin-expressing INs, as necessary and sufficient for social memory consolidation following and sans neotenic expansion of abDGCs, respectively. Our findings suggest that neoteny of abDGCs supports cognition by increasing feed-forward inhibition in DG-CA3 and DG-CA2 and promoting network oscillations that underlie memory consolidation.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 3,
+      "relevance_hits": [
+        "hippocampal"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 8,
+      "pmid": "43049192",
+      "title": "The hippocampus as a latent diffusion engine for memory, perception and cognitive dysfunction.",
+      "title_zh": "",
+      "journal": "Brain : a journal of neurology",
+      "iso_journal": "Brain",
+      "authors": [
+        "Jones DT",
+        "Breakspear M"
+      ],
+      "pubdate": "2026 11 18",
+      "doi": "10.1093/brain/awag325",
+      "issns": [
+        "0006-8950",
+        "1460-2156"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43049192/",
+      "abstract": "The hippocampus is a central cognitive hub whose dysfunction contributes to most neurodegenerative dementias. Despite extensive knowledge of its anatomy, physiology and circuitry, a unifying account that links hippocampal dynamics to cognition and clinical syndromes remains lacking. Drawing on systems neuroscience and recent advances in generative artificial intelligence, we conceptualize the hippocampus as a latent diffusion engine that compresses sensory, interoceptive and cognitive inputs into low-dimensional representations and regenerates percepts, episodic memories and imagined scenes for cortical integration. Travelling waves of cortico-hippocampal oscillations, aligned with large-scale functional gradients, schedule and structure this generative process and organize distributed neural activity into coherent, semantically grounded constructs. We formalize this proposal as stochastic latent oscillatory diffusion (SLOD), a biologically grounded framework that maps hippocampal-cortical computations onto specific anatomical substrates and dynamical processes. While we do not suggest that the hippocampus implements diffusion algorithms per se, we show that its computations can be decomposed into homologous operations including compression, stochastic exploration, conditioning and reconstruction, whose formal structure closely parallels that of latent diffusion models. Finally, we demonstrate how major neurodegenerative dementias, including the Alzheimer's disease spectrum, dementia with Lewy bodies and frontotemporal dementia, can be understood as selective breakdowns of distinct components of this generative architecture.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 3,
+      "relevance_hits": [
+        "hippocampal"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 9,
+      "pmid": "43045847",
+      "title": "Author Correction: Trans-ancestry genome-wide analyses of bipolar disorder in East Asian and European populations improve genetic discovery.",
+      "title_zh": "",
+      "journal": "Nature neuroscience",
+      "iso_journal": "Nat Neurosci",
+      "authors": [
+        "Zhang CY",
+        "Li M",
+        "Sun P",
+        "Hui L",
+        "Gao Y",
+        "Yang JZ",
+        "Zhang N",
+        "Feng X",
+        "Wu Y",
+        "Guo L",
+        "Yuan J",
+        "Jiang HY",
+        "Cheng YQ",
+        "Ma S",
+        "Gong Q",
+        "Sun Y",
+        "Li Y",
+        "Qu N",
+        "Yin XY",
+        "Wang L",
+        "Yang Y",
+        "Wang C",
+        "Lv L",
+        "Zhou D",
+        "Li X",
+        "Chen X",
+        "Zhang C",
+        "Chen J",
+        "Song X",
+        "Tang J",
+        "Cai J",
+        "Fan W",
+        "Tang W",
+        "Tang W",
+        "Li W",
+        "Tang X",
+        "Zhang X",
+        "Lu Y",
+        "Yao YG",
+        "Wang C",
+        "So HC",
+        "Iwata N",
+        "Ikeda M",
+        "Saito T",
+        "Liu Z",
+        "Xu S",
+        "Yue W",
+        "GeseDNA Research Team",
+        "Fang Y",
+        "Zhu F",
+        "Xiao X",
+        "Li M"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1038/s41593-026-02547-y",
+      "issns": [
+        "1097-6256",
+        "1546-1726"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43045847/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Published Erratum"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "not_provided",
+      "related_articles": [
+        {
+          "relation": "ErratumFor",
+          "pmid": "41291230",
+          "source": "Nat Neurosci. 2026 Feb;29(2):293-305. doi: 10.1038/s41593-025-02147-2."
+        }
+      ],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 10,
+      "pmid": "43045846",
+      "title": "Microglia mediate motor memory decay through activity-dependent phagocytosis of myelin sheaths.",
+      "title_zh": "",
+      "journal": "Nature neuroscience",
+      "iso_journal": "Nat Neurosci",
+      "authors": [
+        "Hu Z",
+        "Luo Y",
+        "Zhou T",
+        "Wu X",
+        "Ma J",
+        "Wang C",
+        "Wang L",
+        "Wang XD",
+        "Shen Y",
+        "Gu Y",
+        "Wang L"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1038/s41593-026-02505-8",
+      "issns": [
+        "1097-6256",
+        "1546-1726"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43045846/",
+      "abstract": "Experience-dependent changes in myelination are important for motor learning, with newly generated oligodendrocytes contributing to the formation of new myelin. However, motor memories decay over time and the underlying mechanisms remain largely unexplored. Here we show that motor memory decay is linked to changes in memory-associated myelin sheaths resulting from microglial phagocytosis in mouse brain. Mechanistically, reduced activity of motor memory engram cells lowers oligodendrocyte expression of the 'don't eat me' signal from Cluster of differentiation 47 (CD47), facilitating microglial phagocytosis and driving myelin loss. Knockout of CD47 from motor memory-associated oligodendrocytes increased microglial phagocytosis of myelin sheaths and accelerated the decay of motor memory, whereas overexpression of CD47 showed opposite results. Moreover, microglia phagocytose myelin sheaths and synapses independently. Our findings reveal that microglial phagocytosis of motor memory-associated myelin sheaths leads to the decay of motor memory. Since various types of memory require myelination in the brain, this mechanism may contribute to the decay of other memory types.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 11,
+      "pmid": "43044584",
+      "title": "A cell-type-resolved proteomic atlas reveals intra- and intercellular signaling in Alzheimer's disease.",
+      "title_zh": "",
+      "journal": "Neuron",
+      "iso_journal": "Neuron",
+      "authors": [
+        "Zhang X",
+        "Yang J",
+        "Yu K",
+        "Shrestha HK",
+        "Zhou Y",
+        "Jiao Y",
+        "Wang J",
+        "Chen PC",
+        "Wang Z",
+        "Ren X",
+        "Sun H",
+        "Liu D",
+        "Yarbro JM",
+        "Wu Z",
+        "Harper K",
+        "He L",
+        "Yuan ZF",
+        "Xu J",
+        "Wang X",
+        "High AA",
+        "Yu G",
+        "Yu J",
+        "Wen Z",
+        "Peng J"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1016/j.neuron.2026.10.019",
+      "issns": [
+        "0896-6273",
+        "1097-4199"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43044584/",
+      "abstract": "Alzheimer's disease (AD) arises from pathological interactions among diverse brain cell types, but cell-type-specific proteomic changes remain underexplored. Here, we present deep proteomic profiling of sorted or proximity-labeled brain cells from AD mouse models (5xFAD and AppNL-G-F) at multiple ages, quantifying 13,411 proteins in microglia, astrocytes, oligodendrocyte precursor cells, and neurons, with additional spatial information. We identified 3,028 differentially abundant proteins, most of which were absent in a bulk proteomic dataset, and constructed cell-type-specific networks to define functional modules and hub proteins. Comparison with transcriptomic data revealed that ∼30% of proteomic changes are RNA discordant. Further analyses uncovered cross-cell-type signaling proteins conserved in human AD brains, such as pleiotrophin (Ptn), which is transcriptionally enriched in astrocytes but accumulates in microglia. Importantly, recombinant PTN activates human induced microglia (iMG) cells. Thus, these findings provide a comprehensive cell-type-resolved proteomic atlas of AD models, highlighting novel intra- and intercellular signaling events.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 12,
+      "pmid": "43043870",
+      "title": "TMEM106B analysis in diverse cohorts suggests no association with Parkinson's disease risk.",
+      "title_zh": "",
+      "journal": "Brain : a journal of neurology",
+      "iso_journal": "Brain",
+      "authors": [
+        "Chaparro-Solano HM",
+        "Kanagasingam S",
+        "Gan-Or Z",
+        "Senkevich K",
+        "Global Parkinson’s Genetic Program (GP2)"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1093/brain/awag411",
+      "issns": [
+        "0006-8950",
+        "1460-2156"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43043870/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "not_provided",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 13,
+      "pmid": "43043867",
+      "title": "Context matters: serum neurofilament light chain, a diagnostic aid in amyotrophic lateral sclerosis.",
+      "title_zh": "",
+      "journal": "Brain : a journal of neurology",
+      "iso_journal": "Brain",
+      "authors": [
+        "Smith SE",
+        "Miller TM",
+        "Bucelli RC"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1093/brain/awag409",
+      "issns": [
+        "0006-8950",
+        "1460-2156"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43043867/",
+      "abstract": "",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "not_provided",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 14,
+      "pmid": "43040885",
+      "title": "Chronic and subacute phenylalanine effects on brain metabolism in adults with phenylketonuria.",
+      "title_zh": "",
+      "journal": "Brain : a journal of neurology",
+      "iso_journal": "Brain",
+      "authors": [
+        "Muri R",
+        "Hoefemann M",
+        "Vallesi V",
+        "Winiger L",
+        "Zwygart K",
+        "Hochuli M",
+        "Trepp R",
+        "Everts R",
+        "Kreis R"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1093/brain/awag362",
+      "issns": [
+        "0006-8950",
+        "1460-2156"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43040885/",
+      "abstract": "Phenylketonuria (PKU) leads to chronic cerebral exposure to elevated phenylalanine (Phe) despite lifelong dietary treatment, yet the neurometabolic consequences in adulthood remain incompletely understood. We investigated whether adults with early-treated PKU exhibit persistent alterations in brain metabolism and whether these metabolites respond dynamically to subacute Phe fluctuations. Adults with early-treated PKU (n=30) and healthy controls (n=59) underwent proton magnetic resonance spectroscopy (1H-MRS), structural and functional brain MRI to evaluate white matter lesion load (T2-weighted images) and cerebral blood flow (arterial spin labeling), as well as cognitive assessments. Patients additionally participated in a randomized, placebo-controlled crossover intervention with four weeks of oral Phe loading to evaluate subacute metabolic responsiveness. Absolute metabolite concentrations were quantified in predominantly white matter tissue, and associations between blood and brain Phe, white matter lesion load, cerebral blood flow, and cognitive performance were examined. At baseline, patients exhibited higher brain Phe and N-acetylaspartate (NAA) levels, alongside reduced myo-inositol, N-acetylaspartylglutamate (NAAG), and total creatine/phosphocreatine compared with controls. Patients with white matter lesions did not differ in blood and brain metabolites from those without. Four weeks of oral Phe loading increased brain Phe and produced a reversible decrease in myo-inositol, whereas NAA, NAAG, and creatine compounds remained unchanged. Blood and brain Phe concentrations were strongly correlated (r=0.83, p<0.001), and their ratio was subject-dependent. No significant associations were observed between metabolite concentrations and regional cerebral blood flow or cognitive performance after correction for multiple comparisons. Adults with early-treated PKU exhibit persistent neurometabolic alterations involving neuronal-glial metabolism, energy buffering, and astrocytic osmolyte regulation. The findings support a trait-state framework, with stable alterations in NAA, NAAG, and creatine compounds reflecting long-standing metabolic changes, superimposed on a dynamically Phe-sensitive astrocytic response indexed by myo-inositol. The absence of strong associations with cerebral perfusion or cognition suggests that these alterations represent upstream biological processes not captured by macroscopic imaging or behavioral measures.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 2,
+      "relevance_hits": [
+        "absence",
+        "responsive"
+      ],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 15,
+      "pmid": "43040875",
+      "title": "Motor system inefficiency as an activity-dependent amplifier of fatigue in multiple sclerosis.",
+      "title_zh": "",
+      "journal": "Brain : a journal of neurology",
+      "iso_journal": "Brain",
+      "authors": [
+        "Kavanagh JJ",
+        "Goodlich BI",
+        "Trajano GS",
+        "Thorstensen JR",
+        "Broadley SA"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1093/brain/awag408",
+      "issns": [
+        "0006-8950",
+        "1460-2156"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43040875/",
+      "abstract": "Multiple sclerosis (MS) fatigue is clinically obvious but mechanistically elusive. It can dominate daily life despite modest disability, stable structural MRI findings, or preserved strength on examination. This Update reviews evidence that an important component of MS fatigue may arise from increased motor-control cost and incomplete recovery after activity. Voluntary muscle activation studies show that some people with MS have incomplete central access to available force, particularly after exertion. Functional imaging studies indicate that apparently preserved movement often depends on expanded recruitment of premotor, cerebellar, striatal, prefrontal, and cingulo-insular systems involved in motor compensation, effort allocation, and body-state monitoring. Metabolic and pathological studies further indicate energetic vulnerability in demyelinated and chronically injured networks, providing biological plausibility for impaired restoration after repeated signalling demands. These findings support a systems framework in which expanded motor-control recruitment may be compensatory when it preserves performance and remains flexible and recoverable, but may amplify MS fatigue when ordinary activity begins from incompletely restored physiological reserve. We outline testable predictions for identifying a motor-cost fatigue phenotype and for designing repeated-measures studies of activity-related fatigue in MS.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 16,
+      "pmid": "43040038",
+      "title": "Distinct prelimbic microcircuits control sensory and affective dimensions of neuropathic pain.",
+      "title_zh": "",
+      "journal": "Nature neuroscience",
+      "iso_journal": "Nat Neurosci",
+      "authors": [
+        "Gan Z",
+        "Oswald MJ",
+        "Dou Y",
+        "Naser PV",
+        "Wang L",
+        "Tan LL",
+        "Beretta CA",
+        "Chen Y",
+        "Kaushalya S",
+        "Sonntag I",
+        "Zheng H",
+        "Kuner T",
+        "Kuner R"
+      ],
+      "pubdate": "2026 11 16",
+      "doi": "10.1038/s41593-026-02498-4",
+      "issns": [
+        "1097-6256",
+        "1546-1726"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43040038/",
+      "abstract": "The microcircuit mechanisms underlying deactivation and altered output of the medial prefrontal cortex (mPFC), a common feature of several chronic pain conditions, are poorly understood. Here, using unbiased in vivo longitudinal multiphoton imaging in the mouse prelimbic cortex (PrL), we show that nerve injury induces sensitization of all classes of GABAergic interneurons and a phenotypic switch from unimodal to polymodal responses. Through circuit interrogation, we identified functions for caudal geminal eminence-derived Prox1+ interneurons and revealed that distinct classes of inhibitory and excitatory neurons in the PrL have different functions in promoting neuropathic pain. In addition, we show that the sensory and affective dimensions of neuropathic pain engaged two distinct microcircuits, PV+-Rbp4+ neurons and Prox1+-Cux2+/Ntsr1+ neurons, respectively, to control distinct projection outputs. These findings provide a mechanistic basis for how mPFC guides actions to avoid or overcome pain and how prefrontal deactivation exacerbates neuropathic pain.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 17,
+      "pmid": "43039018",
+      "title": "D4Z4 methylation and genetic modifiers influence severity in a facioscapulohumeral muscular dystrophy kindred.",
+      "title_zh": "",
+      "journal": "Brain : a journal of neurology",
+      "iso_journal": "Brain",
+      "authors": [
+        "Butterfield RJ",
+        "Dunn DM",
+        "Duval B",
+        "Moldt S",
+        "Wong K",
+        "Flanigan KM",
+        "Leppert MF",
+        "Weiss RB"
+      ],
+      "pubdate": "2026 11 17",
+      "doi": "10.1093/brain/awag124",
+      "issns": [
+        "0006-8950",
+        "1460-2156"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43039018/",
+      "abstract": "One of the earliest systematic descriptions of facioscapulohumeral muscular dystrophy (FSHD) involved a six-generation kindred tracing back to a single ancestor born in 1775 in Lancashire, England, who later emigrated to Utah in the 1850s. First published in 1950, members of this kindred (K1462) have been followed clinically for decades, with DNA samples archived since the 1980s. Despite sharing the same 5-repeat unit (5RU) D4Z4 contraction on a permissive 4qA haplotype, affected individuals show marked variability in age at onset, clinical severity and disease progression, including within sibships. With long-term follow-up and a shared founder mutation, K1462 is a unique resource for identifying modifiers of disease expression in FSHD. We reintroduce K1462, with enrolment extending into the ninth generation, and perform genomic analysis using modern approaches. Inheritance of the 5RU founder allele was confirmed in 139 individuals, and nanopore Cas9-targeted sequencing determined CpG methylation across the contracted D4Z4 array at base-pair resolution. The 5RU allele showed complete penetrance; however, clinical severity and progression varied widely among affected individuals. Longitudinal analysis of blood-derived genomic DNA demonstrated high stability of D4Z4 CpG methylation within individuals, including samples collected up to 38 years apart, indicating long-term maintenance of the epigenetic state. In contrast, D4Z4 methylation levels differed substantially between individuals and showed a strong inverse correlation with clinical severity. Differences in D4Z4 methylation were observed both within and between families, with a modest but consistent parent-of-origin effect. Whole-genome sequencing analysis found no evidence that rare variants in known FSHD2 genes explained this variability. To assess the contribution of common genetic variation, we performed a pedigree-based genome-wide association analysis of D4Z4 methylation levels, identifying a single genome-wide significant locus on chromosome 15. Variants spanning the promoter and 5' region of HDGFL3, which encodes a PWWP domain chromatin-interacting protein, were associated with increased D4Z4 methylation after accounting for parental transmission, supporting a role for common-variant modulation of methylation in FSHD. These results support a model in which D4Z4 methylation is established through transmission-associated epigenetic resetting, stably maintained within individuals, and quantitatively modified by inherited genetic variation. Together, these findings demonstrate that D4Z4 methylation is a stable, individual-level epigenetic feature that varies across a multigenerational pedigree in a manner that correlates with clinical severity, confirming D4Z4 methylation as a quantitative biomarker and genetically modifiable contributor to disease severity in FSHD.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 1,
+      "relevance_hits": [
+        "biomarker"
+      ],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜CLINICAL NEUROLOGY：Q1；NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
+    },
+    {
+      "index": 18,
+      "pmid": "43038986",
+      "title": "Noncoding functions of FMR1 transcript in riboregulation of human neurodevelopment.",
+      "title_zh": "",
+      "journal": "Neuron",
+      "iso_journal": "Neuron",
+      "authors": [
+        "Sandoval SO",
+        "Méndez-Albelo NM",
+        "Chiang HY",
+        "Peters LA",
+        "Kaur H",
+        "Raveendran N",
+        "Knaack S",
+        "Gao Y",
+        "Sirois CL",
+        "Guo Y",
+        "Dayley EE",
+        "Trygstad DN",
+        "Widicus AB",
+        "Lee J",
+        "Yang P",
+        "Ajit R",
+        "Tan J",
+        "Smith RV",
+        "Eckholm MT",
+        "Li L",
+        "Skala MC",
+        "Zhao X"
+      ],
+      "pubdate": "2026 11 16",
+      "doi": "10.1016/j.neuron.2026.10.015",
+      "issns": [
+        "0896-6273",
+        "1097-4199"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43038986/",
+      "abstract": "The noncoding functions of protein-coding messenger RNAs (mRNAs) are largely ignored. Here, we demonstrate an unexpected noncoding role of FMR1 mRNA in human neurodevelopment. A loss of FMR1 and its protein product, fragile X messenger ribonucleoprotein (FMRP), leads to the neurodevelopmental disorder fragile X syndrome (FXS). Neurons derived from FXS patients display hyperexcitability and immature morphology, whereas FMRP knockout (FMRP-KO) neurons that retain FMR1 transcript expression do not. Multi-omics analyses reveal key metabolic differences between FXS and FMRP-KO neurons. Although both FXS and FMRP-KO neurons exhibit reduced mitochondrial respiration, only FXS neurons exhibit elevated glycolysis. We further discover that the FMR1 transcript riboregulates the levels of the glycolytic enzyme lactate dehydrogenase A (LDHA) by inhibiting the binding of LDHA mRNA to insulin-like growth factor 2 mRNA-binding protein 2 (IGF2BP2). Finally, the FMR1 transcript, independent of FMRP, rescues glycolytic and cellular deficits of FXS neurons. Together, these results suggest that FMR1 is a dual-function RNA in human neurodevelopment.",
+      "abstract_zh": "",
+      "hit_groups": [
+        "POOL"
+      ],
+      "group_count": 1,
+      "relevance_score": 0,
+      "relevance_hits": [],
+      "priority": "浏览",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "publication_label": "期刊论文（研究设计待核对）",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜NEUROSCIENCES：Q1",
+      "ranking_status": "matched"
     }
   ]
 }
