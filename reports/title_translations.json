@@ -1307,6 +1307,34 @@
     "43069850": {
       "title": "Feedback as automatic dose selection in a basal ganglia-thalamocortical model of adaptive deep brain stimulation.",
       "title_zh": "在适应性深部脑刺激的基底神经节-丘脑皮质模型中，反馈作为自动剂量选择。"
+    },
+    "43072082": {
+      "title": "Mesial temporal function during language fMRI in pre-surgical epilepsy patients.",
+      "title_zh": "癫痫患者术前语言功能性磁共振成像（fMRI）期间的内侧颞叶功能。"
+    },
+    "43072081": {
+      "title": "Analysis of factors associated with bone loss induced by long-term antiseizure medication use and exploration of potential monitoring markers.",
+      "title_zh": "长期使用抗癫痫药物所致骨质流失相关因素分析及潜在监测标志物探索。"
+    },
+    "43071996": {
+      "title": "Calibration-Free Cross-Subject SSVEP Recognition by Fusing Template-Based Transfer Learning With Transformer-Based Deep Learning.",
+      "title_zh": "通过融合基于模板的迁移学习与基于Transformer的深度学习实现无校准跨受试者SSVEP识别。"
+    },
+    "43071990": {
+      "title": "BCI-FIT: Feasibility of a customization protocol for communication brain-computer interface systems.",
+      "title_zh": "BCI-FIT：用于通信脑机接口系统的定制协议可行性。"
+    },
+    "43071989": {
+      "title": "Capacity-controlled EEG denoising: diminishing reconstruction returns on semi-synthetic benchmarks and task-dependent downstream utility.",
+      "title_zh": "容量受控的EEG去噪：在半合成基准和任务相关的下游效用方面，重建收益有所降低。"
+    },
+    "43071988": {
+      "title": "Feasibility of Cortical Visual Neuroprostheses for Mobility in Blind Individuals.",
+      "title_zh": "皮层视觉神经假体对盲人行动能力的可行性。"
+    },
+    "43072958": {
+      "title": "Neuroscience-informed psychoeducation for multiple sclerosis: A clinical framework for high-impact symptoms and family-centered care.",
+      "title_zh": "基于神经科学的多发性硬化症心理教育：针对高影响症状和以家庭为中心的护理的临床框架。"
     }
   },
   "pending": {}
