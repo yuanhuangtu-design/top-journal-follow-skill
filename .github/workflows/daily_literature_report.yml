@@ -2,8 +2,10 @@ name: Daily Literature Report
 
 on:
   schedule:
-    # 北京时间05:00触发；GitHub实际启动可能延迟。
-    - cron: "0 21 * * *"
+    # 北京时间05:17主触发，07:23和09:41检查补跑；GitHub实际启动可能延迟。
+    - cron: "17 21 * * *"
+    - cron: "23 23 * * *"
+    - cron: "41 1 * * *"
     # 周日北京时间05:30生成不限期刊候选清单，不自动写入飞书。
     - cron: "30 21 * * 6"
   workflow_dispatch:
@@ -56,17 +58,24 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Queued scheduled retries must see the most recently committed report.
+          ref: ${{ github.event_name == 'schedule' && github.event.repository.default_branch || github.ref }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
+      - name: Check whether today's daily report is complete
+        id: daily_guard
+        run: python scripts/daily_schedule_guard.py
+
       - name: Test Feishu synchronization
         run: python -m unittest discover -s tests -v
 
       - name: Check representative paper coverage
-        if: env.RUN_MODE == 'daily' || env.RUN_MODE == 'backfill' || env.RUN_MODE == 'weekly_candidates'
+        if: steps.daily_guard.outputs.should_run == 'true' && (env.RUN_MODE == 'daily' || env.RUN_MODE == 'backfill' || env.RUN_MODE == 'weekly_candidates')
         run: python scripts/check_coverage_examples.py
 
       - name: Check imported Feishu table
@@ -90,11 +99,11 @@ jobs:
         run: python scripts/refresh_report_rankings.py
 
       - name: Install dependencies
-        if: env.RUN_MODE == 'daily' || env.RUN_MODE == 'backfill'
+        if: steps.daily_guard.outputs.should_run == 'true' && (env.RUN_MODE == 'daily' || env.RUN_MODE == 'backfill')
         run: pip install --quiet requests deep-translator
 
       - name: Run daily literature pipeline
-        if: env.RUN_MODE == 'daily' || env.RUN_MODE == 'backfill'
+        if: steps.daily_guard.outputs.should_run == 'true' && (env.RUN_MODE == 'daily' || env.RUN_MODE == 'backfill')
         env:
           REPORT_DATE: ${{ inputs.report_date }}
           SEARCH_GROUPS: ${{ inputs.groups }}
@@ -142,7 +151,7 @@ jobs:
           retention-days: 30
 
       - name: Commit latest report and pending queue
-        if: ${{ always() && env.RUN_MODE != 'check_connection' }}
+        if: ${{ always() && env.RUN_MODE != 'check_connection' && steps.daily_guard.outputs.should_run == 'true' }}
         run: |
           mkdir -p reports
           cp -f output/daily_report_latest.html reports/latest.html 2>/dev/null || true
