@@ -23,6 +23,10 @@
     "E": {
       "through": "2026-11-24",
       "fingerprint": "523b45c64b33b9482778311879cc69e0ee8d391abeebb0684dad6ed6b025dcae"
+    },
+    "R": {
+      "through": "2026-11-24",
+      "fingerprint": "207e0e6580d0acd2262ebaddf7eda047bfc6557b53e4aa21f8fdd21f5f45fe91"
     }
   }
 }
