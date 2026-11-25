@@ -5,10 +5,11 @@
   "journals": {
     "A": "Nature,Science,Cell,Nat Med,Nat Neurosci,Neuron,Brain,Lancet Neurol,JAMA Neurol,Ann Neurol,Neurology,J Neurol Neurosurg Psychiatry,Stroke,Mol Neurodegener,Acta Neuropathol,Nat Commun,Sci Adv,Cell Rep Med,Transl Neurodegener,eLife,N Engl J Med,Lancet,JAMA,BMJ",
     "B1": "Epilepsia,Epilepsy Behav,Seizure,Epilepsy Res,Epileptic Disord,Epilepsia Open",
-    "B2": "Brain Stimul,J Neurosci,Mol Psychiatry,Brain Behav Immun,J Neuroinflamm",
+    "B2": "Brain Stimul,J Neurosci,Mol Psychiatry,Brain Behav Immun,J Neuroinflammation",
     "C": "Clin Neurophysiol,J Neurophysiol,J Neural Eng,NeuroImage,Brain Topogr,J Clin Neurophysiol,Neuromodulation,J Neurosci Methods,J Neuroeng Rehabil,IEEE Trans Neural Syst Rehabil Eng",
     "D": "",
-    "E": "Nature,Science,Nat Neurosci,Neuron,Brain,Nat Commun,eLife,J Neurosci,J Neural Eng,PLoS Comput Biol,Neural Comput"
+    "E": "Nature,Science,Nat Neurosci,Neuron,Brain,Nat Commun,eLife,J Neurosci,J Neural Eng,PLoS Comput Biol,Neural Comput",
+    "R": "Nat Rev Neurosci"
   },
   "group_queries": {
     "C": "(electroencephalograph*[Title/Abstract] OR intracranial EEG[Title/Abstract] OR intracranial eeg[Title/Abstract] OR SEEG[Title/Abstract] OR \"local field potential\"[Title/Abstract] OR LFP[Title/Abstract] OR electrocorticograph*[Title/Abstract] OR ECoG[Title/Abstract] OR \"high-frequency oscillation\"[Title/Abstract] OR \"high frequency oscillation\"[Title/Abstract] OR HFO[Title/Abstract] OR \"multi-unit activity\"[Title/Abstract] OR MUA[Title/Abstract] OR \"neural signal\"[Title/Abstract] OR \"signal processing\"[Title/Abstract] OR (\"deep learning\"[Title/Abstract] AND EEG[Title/Abstract]))",
@@ -16,7 +17,8 @@
     "A": "(epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])",
     "B1": "(epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])",
     "B2": "(epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])",
-    "E": "(hyperexcitab*[Title/Abstract] OR \"excitation-inhibition\"[Title/Abstract] OR \"excitation inhibition\"[Title/Abstract] OR \"excitatory-inhibitory\"[Title/Abstract]) AND (neuron*[Title/Abstract] OR \"spiking network\"[Title/Abstract]) AND (model*[Title/Abstract] OR simulat*[Title/Abstract] OR inferen*[Title/Abstract] OR compensat*[Title/Abstract] OR homeosta*[Title/Abstract])"
+    "E": "(hyperexcitab*[Title/Abstract] OR \"excitation-inhibition\"[Title/Abstract] OR \"excitation inhibition\"[Title/Abstract] OR \"excitatory-inhibitory\"[Title/Abstract]) AND (neuron*[Title/Abstract] OR \"spiking network\"[Title/Abstract]) AND (model*[Title/Abstract] OR simulat*[Title/Abstract] OR inferen*[Title/Abstract] OR compensat*[Title/Abstract] OR homeosta*[Title/Abstract])",
+    "R": "(\"Review\"[Publication Type] OR \"Systematic Review\"[Publication Type])"
   },
   "group_labels": {
     "A": "高影响力期刊 × Epilepsy",
@@ -24,7 +26,8 @@
     "B2": "神经科学刊 × Epilepsy",
     "C": "脑电信号分析方法",
     "D": "闭环神经调控 · Closed-loop Neuromodulation",
-    "E": "神经兴奋性机制与建模（拓展）"
+    "E": "神经兴奋性机制与建模（拓展）",
+    "R": "神经科学综述（Nature Reviews Neuroscience）"
   },
   "relevance_boost_words": [
     "epilepsy",
@@ -95,7 +98,7 @@
   "weekly_neuroscience": {
     "journals": ["Neuron", "Brain", "Nat Neurosci"]
   },
-  "strategy_version": "2026-11-07-coverage-v1",
+  "strategy_version": "2026-11-25-reviews-v1",
   "overlap_days": 3,
   "max_catchup_days": 7
 }
