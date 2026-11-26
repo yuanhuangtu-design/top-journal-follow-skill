@@ -6,6 +6,8 @@ on:
     - cron: "17 21 * * *"
     - cron: "23 23 * * *"
     - cron: "41 1 * * *"
+    # 临时只读自动触发验证：2026-11-26 北京时间11:18，验证后移除。
+    - cron: "18 3 26 11 *"
     # 周日北京时间05:30生成不限期刊候选清单，不自动写入飞书。
     - cron: "30 21 * * 6"
   workflow_dispatch:
@@ -44,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      RUN_MODE: ${{ inputs.run_mode || (github.event.schedule == '30 21 * * 6' && 'weekly_candidates') || 'daily' }}
+      RUN_MODE: ${{ inputs.run_mode || (github.event.schedule == '18 3 26 11 *' && 'check_connection') || (github.event.schedule == '30 21 * * 6' && 'weekly_candidates') || 'daily' }}
       FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
       FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
       FEISHU_APP_TOKEN: ${{ secrets.FEISHU_APP_TOKEN }}
@@ -66,6 +68,31 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      - name: Record trigger details
+        env:
+          TRIGGER_EVENT: ${{ github.event_name }}
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+          TRIGGER_SHA: ${{ github.sha }}
+        run: |
+          python - <<'PY'
+          from datetime import datetime, timezone
+          import json
+          import os
+          from pathlib import Path
+          result = {
+              'event': os.environ['TRIGGER_EVENT'],
+              'schedule': os.environ['TRIGGER_SCHEDULE'],
+              'sha': os.environ['TRIGGER_SHA'],
+              'mode': os.environ['RUN_MODE'],
+              'started_utc': datetime.now(timezone.utc).isoformat(),
+          }
+          Path('output').mkdir(exist_ok=True)
+          Path('output/trigger_details.json').write_text(json.dumps(result, indent=2), encoding='utf-8')
+          print(json.dumps(result))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as handle:
+              handle.write('### Trigger details\n\n```json\n' + json.dumps(result, indent=2) + '\n```\n')
+          PY
 
       - name: Check whether today's daily report is complete
         id: daily_guard
@@ -143,6 +170,7 @@ jobs:
             output/daily_report_*.html
             output/daily_report_*.json
             output/feishu_*.json
+            output/trigger_details.json
             reports/feishu_pending.json
             reports/title_translations.json
             reports/search_progress.json
