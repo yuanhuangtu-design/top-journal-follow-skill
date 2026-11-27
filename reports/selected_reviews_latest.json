@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "report_date": "2026-11-27",
+    "target_edat": "2026-11-26",
+    "pipeline": "PubMed E-utilities",
+    "source": "PubMed 指定 PMID 补录（不限入库日期）",
+    "generated_at": "2026-11-27 09:45:55",
+    "strategy_version": "2026-11-27-cas1-reviews-v1",
+    "priority_note": "自动相关度仅作推荐；必读由读者判断",
+    "search_complete": true,
+    "journal_rankings": {
+      "cas_version": "2025大类",
+      "jcr_release": "2026",
+      "jcr_data_year": "2025",
+      "unverified_pmids": []
+    },
+    "selected_pmids": [
+      "42977736"
+    ],
+    "selected_only": true,
+    "title_translation_diag": {
+      "status": "ok",
+      "missing_title_pmids": [],
+      "pending_titles": 0,
+      "cached_titles": 376
+    },
+    "feishu_diag": {
+      "status": "ok",
+      "stage": "complete",
+      "searched": 1,
+      "created": 1,
+      "expected": 1,
+      "verified": true,
+      "candidates": 1,
+      "dedup_skipped": 0,
+      "rankings_updated": 0,
+      "titles_updated": 0,
+      "missing_titles": 0,
+      "closed_loop_papers": 104,
+      "closed_loop_missing_titles": 0,
+      "pending": 0
+    }
+  },
+  "group_records": [
+    {
+      "group": "ER",
+      "label": "癫痫综述（不限期刊 · 中科院2025大类一区）",
+      "count": 1,
+      "total": 1,
+      "pmids": [
+        "42977736"
+      ],
+      "status": "ok",
+      "query": "(((epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms]) AND (\"Review\"[Publication Type] OR \"Systematic Review\"[Publication Type])) AND (42977736[PMID]))",
+      "ranking_selection": {
+        "policy": {
+          "cas_version": "2025",
+          "cas_major_partition": 1
+        },
+        "source_retrieved": 1,
+        "source_total": 1,
+        "qualified_current": 1,
+        "promoted_candidates": 0,
+        "cas_not_1": 0,
+        "cas_unverified": 0
+      }
+    }
+  ],
+  "dedup_total": 1,
+  "papers": [
+    {
+      "index": 1,
+      "pmid": "42977736",
+      "title": "Epilepsy: epidemiology, risk factors, classification, pathophysiology, clinical features, diagnosis and management.",
+      "title_zh": "癫痫：流行病学、危险因素、分类、病理生理学、临床特征、诊断和管理。",
+      "journal": "Signal transduction and targeted therapy",
+      "iso_journal": "Signal Transduct Target Ther",
+      "authors": [
+        "Sha L",
+        "Fu Y",
+        "Basang S",
+        "Jin L",
+        "Huang S",
+        "Chen T",
+        "Zhang J",
+        "He M",
+        "Zhang J",
+        "Chen L"
+      ],
+      "pubdate": "2026 11 04",
+      "doi": "10.1038/s41392-026-03104-6",
+      "issns": [
+        "2059-3635"
+      ],
+      "first_seen": "2026-11-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42977736/",
+      "abstract": "Epilepsy is one of the most prevalent and disabling neurological disorders, affecting >50 million people worldwide. Beyond recurrent seizures, it is strongly associated with cognitive impairment, psychiatric comorbidities, reduced social participation, and a markedly increased risk of premature death. Although considerable advances in neuroimaging, pharmacology, and surgical techniques have expanded therapeutic possibilities, nearly one-third of patients remain refractory to current treatments, a challenge that highlights the pressing need for deeper mechanistic insights and innovative therapeutic strategies. This review provides an integrated overview of recent progress in epilepsy research and treatment. At the molecular level, we examine how ion channel dysfunction, receptor abnormalities, and disrupted signaling pathways drive hyperexcitability. We highlight insights from genetics and acquired etiologies that illuminate disease heterogeneity. We address prevailing hypotheses of drug resistance and potential biomarkers. We also emphasize the growing recognition of epilepsy's close association with diverse comorbidities, where shared molecular pathways not only deepen our understanding of disease mechanisms but also highlight new therapeutic targets. Finally, we evaluate emerging therapeutic directions, including precision pharmacology, neuromodulation, gene and cell therapies, and metabolic approaches such as the ketogenic diet. By bridging epidemiological perspectives with mechanistic discoveries and innovative therapies, this review underscores how advances in epilepsy research are reshaping the path toward precision medicine and improved patient outcomes.",
+      "abstract_zh": "癫痫是最常见且致残性最强的神经系统疾病之一，影响着全球超过5000万人。除了反复发作的癫痫发作外，它还与认知障碍、精神疾病合并症、社交参与减少以及过早死亡风险显著增加密切相关。尽管神经影像学、药理学和外科技术的显著进步拓宽了治疗的可能性，但近三分之一的\n患者对当前治疗方法仍无应答，这一挑战凸显了对更深入的机制性见解和创新治疗策略的迫切需求。本综述全面概述了癫痫研究和治疗领域的最新进展。在分子水平上，我们探讨了离子通道功能障碍、受体异常和信号通路紊乱如何导致神经元过度兴奋。我们重点介绍了遗传学方面的见解，以及\nd 揭示疾病异质性的后天性病因。我们探讨了关于耐药性的主流假说和潜在的生物标志物。我们还强调，人们日益认识到癫痫与多种合并症的密切关联，其中共同的分子通路不仅加深了我们对疾病机制的理解，也突显了新的治疗靶点。最后，我们评估了新兴的治疗方向，包括精准药物治疗。\n药理学、神经调节、基因和细胞疗法以及生酮饮食等代谢方法。本综述将流行病学视角与机制性发现和创新疗法相结合，强调了癫痫研究的进展如何重塑通往精准医学和改善患者预后的道路。",
+      "hit_groups": [
+        "ER"
+      ],
+      "group_count": 1,
+      "relevance_score": 16,
+      "relevance_hits": [
+        "epilepsy",
+        "seizure",
+        "seizures",
+        "refractory",
+        "ecog",
+        "neuromodulation",
+        "biomarker"
+      ],
+      "priority": "推荐",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "publication_label": "综述",
+      "abstract_status": "available",
+      "related_articles": [],
+      "cas_partition": "2025版｜医学｜1区",
+      "jcr_quartile": "2026发布版（2025数据）｜BIOCHEMISTRY & MOLECULAR BIOLOGY：Q1；CELL BIOLOGY：Q1",
+      "ranking_status": "matched"
+    }
+  ]
+}

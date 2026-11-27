@@ -1,0 +1,44 @@
+{
+  "papers": {
+    "42977736": {
+      "group": "ER",
+      "paper": {
+        "pmid": "42977736",
+        "title": "Epilepsy: epidemiology, risk factors, classification, pathophysiology, clinical features, diagnosis and management.",
+        "authors": [
+          "Sha L",
+          "Fu Y",
+          "Basang S",
+          "Jin L",
+          "Huang S",
+          "Chen T",
+          "Zhang J",
+          "He M",
+          "Zhang J",
+          "Chen L"
+        ],
+        "journal": "Signal transduction and targeted therapy",
+        "iso_journal": "Signal Transduct Target Ther",
+        "issns": [
+          "2059-3635"
+        ],
+        "pubdate": "2026 11 04",
+        "doi": "10.1038/s41392-026-03104-6",
+        "abstract": "Epilepsy is one of the most prevalent and disabling neurological disorders, affecting >50 million people worldwide. Beyond recurrent seizures, it is strongly associated with cognitive impairment, psychiatric comorbidities, reduced social participation, and a markedly increased risk of premature death. Although considerable advances in neuroimaging, pharmacology, and surgical techniques have expanded therapeutic possibilities, nearly one-third of patients remain refractory to current treatments, a challenge that highlights the pressing need for deeper mechanistic insights and innovative therapeutic strategies. This review provides an integrated overview of recent progress in epilepsy research and treatment. At the molecular level, we examine how ion channel dysfunction, receptor abnormalities, and disrupted signaling pathways drive hyperexcitability. We highlight insights from genetics and acquired etiologies that illuminate disease heterogeneity. We address prevailing hypotheses of drug resistance and potential biomarkers. We also emphasize the growing recognition of epilepsy's close association with diverse comorbidities, where shared molecular pathways not only deepen our understanding of disease mechanisms but also highlight new therapeutic targets. Finally, we evaluate emerging therapeutic directions, including precision pharmacology, neuromodulation, gene and cell therapies, and metabolic approaches such as the ketogenic diet. By bridging epidemiological perspectives with mechanistic discoveries and innovative therapies, this review underscores how advances in epilepsy research are reshaping the path toward precision medicine and improved patient outcomes.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42977736/",
+        "first_seen": "2026-11-27"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "admitted",
+      "admitted_on": "2026-11-27"
+    }
+  }
+}
