@@ -1423,6 +1423,82 @@
     "43078909": {
       "title": "Rewiring cancer: peripheral nerves control tumours.",
       "title_zh": "重塑癌症：外周神经控制肿瘤。"
+    },
+    "43097403": {
+      "title": "Seizure freedom after temporal resection in KRAS-associated nevus sebaceous syndrome.",
+      "title_zh": "KRAS相关皮脂痣综合征患者颞叶切除术后癫痫发作的消失。"
+    },
+    "43097398": {
+      "title": "Artificial intelligence in epilepsy fellowship training: Aligning emerging technologies with ACGME competency-based education.",
+      "title_zh": "癫痫专科医师培训中的人工智能：将新兴技术与 ACGME 能力导向型教育相结合。"
+    },
+    "43097395": {
+      "title": "Penetrance of pathogenic epilepsy variants: Lower, not low.",
+      "title_zh": "致病性癫痫变异的外显率：较低，而非低。"
+    },
+    "43097103": {
+      "title": "Understanding psychosis in patients with epilepsy: Insights into demographic, clinical, and treatment-related factors.",
+      "title_zh": "了解癫痫患者的精神病：对人口统计学、临床和治疗相关因素的洞察。"
+    },
+    "43096994": {
+      "title": "EEG morphology and peri-ictal MRI abnormalities in status epilepticus and ictal-interictal continuum.",
+      "title_zh": "癫痫持续状态和发作间期连续谱中的脑电图形态和发作期MRI异常。"
+    },
+    "43096886": {
+      "title": "Analysis of flurothyl-induced seizures and epileptogenesis in mice with targeted deletions of exons 3 and 4 in Dock7.",
+      "title_zh": "对Dock7外显子3和4靶向缺失小鼠氟乙基诱导的癫痫发作和癫痫发生机制的分析。"
+    },
+    "43095916": {
+      "title": "Seizure burden and continuity of care among children with epilepsy during Sudan's armed conflict: A multicenter cross-sectional study.",
+      "title_zh": "苏丹武装冲突期间癫痫患儿的癫痫发作负担和持续护理：一项多中心横断面研究。"
+    },
+    "43085042": {
+      "title": "Reclassification of deaths reveals underrecognized epilepsy-related mortality in registry data - a retrospective cohort study from a tertiary epilepsy center.",
+      "title_zh": "死亡病例的重新分类揭示了登记数据中未被充分认识的癫痫相关死亡率——一项来自三级癫痫中心的病例对照研究。"
+    },
+    "43085041": {
+      "title": "Clinical scores for predicting functional and neurological outcomes in paediatric status epilepticus: A focused review.",
+      "title_zh": "用于预测儿童癫痫持续状态的功能和神经系统结局的临床评分：重点综述。"
+    },
+    "43085040": {
+      "title": "Clinical cohort study on the prognosis of drug treatment for malformations of cortical development with epilepsy.",
+      "title_zh": "癫痫性皮质发育畸形药物治疗预后的临床队列研究。"
+    },
+    "43085725": {
+      "title": "Clinical Observational Study on Individualized Targeted Repetitive Transcranial Magnetic Stimulation for Drug-Resistant Epilepsy.",
+      "title_zh": "个体化靶向重复经颅磁刺激治疗难治性癫痫的临床观察性研究。"
+    },
+    "43085474": {
+      "title": "Unraveling the interplay between sensory information and semantic architecture in brain concept representation: the role of abstraction.",
+      "title_zh": "揭示感官信息与语义结构在大脑概念表征中的相互作用：抽象的作用。"
+    },
+    "43084852": {
+      "title": "Task-aware conditional diffusion model for EMG artifact removal in single-channel EEG.",
+      "title_zh": "用于单通道脑电图EMG伪影去除的任务感知条件扩散模型。"
+    },
+    "43084850": {
+      "title": "REALM: Retrospective encoder alignment for LFP modeling.",
+      "title_zh": "REALM：用于LFP建模的回溯编码器对齐。"
+    },
+    "43097289": {
+      "title": "Device - Based Autonomic Modulation in Arrhythmia and Beyond.",
+      "title_zh": "在心律失常及其他疾病中基于设备的自主神经调节。"
+    },
+    "43092674": {
+      "title": "AI-Driven Non-Invasive Scalp EEG Biosensing for Real-Time Seizure Prediction Using Lightweight Gradient Boosting Ensembles.",
+      "title_zh": "使用轻量级梯度提升集成算法，通过人工智能驱动的无创头皮脑电生物传感实现实时癫痫发作预测。"
+    },
+    "43088379": {
+      "title": "Proprioception and Sensorimotor Control After Stroke: A Systematic Review of Non-Invasive Peripheral Neuromodulation and Neurorehabilitation Technologies.",
+      "title_zh": "中风后的本体感觉和感觉运动控制：对非侵入性外周神经调节和神经康复技术的系统综述。"
+    },
+    "43088000": {
+      "title": "Neural State Geometry: Unifying Amplitude Landscapes, Coherency Geometry and Information Geometry for EEG State Estimation.",
+      "title_zh": "神经状态几何：统一振幅景观、相干性几何和信息几何，用于脑电图状态估计。"
+    },
+    "43086462": {
+      "title": "The what, how and where of statistical learning: a neurocognitive synthesis.",
+      "title_zh": "统计学习的“什么”、“如何”和“在哪里”：神经认知综合。"
     }
   },
   "pending": {}
