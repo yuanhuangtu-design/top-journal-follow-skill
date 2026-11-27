@@ -39,6 +39,1389 @@
       "last_checked": "2026-11-27",
       "status": "admitted",
       "admitted_on": "2026-11-27"
+    },
+    "43098622": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43098622",
+        "title": "Arginase deficiency and other inherited urea cycle disorders.",
+        "authors": [
+          "Soria LR",
+          "Lipshutz GS",
+          "Brunetti-Pierri N"
+        ],
+        "journal": "Methods in enzymology",
+        "iso_journal": "Methods Enzymol",
+        "issns": [
+          "0076-6879",
+          "1557-7988"
+        ],
+        "pubdate": "2026 10 14",
+        "doi": "10.1016/bs.mie.2026.09.068",
+        "abstract": "Urea cycle disorders are inherited diseases due to deficiency in enzymes or transporters required for ammonia detoxification. Although hyperammonemia is the hallmark of urea cycle disorders, argininemia due to deficiency of arginase 1 in the last step of the urea cycle is less frequently complicated by hyperammonemia. Furthermore, argininemia exhibits a distinctive and progressive neurological phenotype characterized by intellectual disability, seizures, and spasticity, often occurring in the absence of severe or recurrent hyperammonemia crises. Current management of urea cycle disorders relies on dietary protein restriction, essential amino acid supplementation, and nitrogen-scavenging therapies. However, a recent therapeutic advance is transforming the current treatment landscape in argininemia and ongoing clinical trials might further change management in argininemia and in other urea cycle disorders as well. Pegzilarginase, a recombinant pegylated human arginase enzyme, effectively lowers plasma arginine concentrations and has demonstrated clinical benefit in individuals with argininemia. In parallel, preclinical studies of liver-directed gene replacement, genome editing, and mRNA therapies have shown biochemical correction and prevention of neurological abnormalities in various animal models of urea cycle disorders including argininemia. In this review, we summarize the features of arginase deficiency and other urea cycle disorders, discussing emerging insights into disease mechanisms, and new therapies under development that are shifting treatment from metabolic control towards correction of the underlying genetic or biochemical defect.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43098622/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43098097": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43098097",
+        "title": "Structural deficits, not surgical ones: organizational barriers and a five-stage implementation framework for multidisciplinary epilepsy committees in intermediate-resource centers.",
+        "authors": [
+          "Leñero-Navarrete J",
+          "Alvarado-Livacic C"
+        ],
+        "journal": "Seizure",
+        "iso_journal": "Seizure",
+        "issns": [
+          "1059-1311",
+          "1532-2688"
+        ],
+        "pubdate": "2026 11 05",
+        "doi": "10.1016/j.seizure.2026.11.003",
+        "abstract": "Drug-resistant epilepsy (DRE), defined by the International League Against Epilepsy as failure of two adequately chosen and tolerated antiseizure medications, affects roughly one-third of people with epilepsy. Epilepsy surgery is the highest-impact therapeutic option for well-selected candidates, yet access depends less on the surgical act itself than on an institutional presurgical pathway and a multidisciplinary team able to identify, study and prioritise candidates in a timely manner. An estimated 10.1 million people with epilepsy are potential surgical candidates, prevalence being highest in Latin America and Africa. In Latin America the mean diagnostic-to-surgery delay is 17.1 years, and in some cohorts only 3.8% of eligible patients reach surgery. This review asks which organisational barriers impede the establishment of a multidisciplinary epilepsy committee in an intermediate-resource public hospital. A structured MEDLINE/PubMed search (2001-2026) combining epilepsy-surgery terms with a mandatory organisational block retrieved 852 records (822 after language limits); screening these plus reference lists yielded 16 included studies, with nine retained purposively as context. Evidence was graded with the Scottish Intercollegiate Guidelines Network scheme, barriers categorised with the Consolidated Framework for Implementation Research, and strategies mapped to the Expert Recommendations for Implementing Change. Six barrier domains emerged - referral, workforce, diagnostic infrastructure, technological resources, clinical governance and geographic inequity - operationalised as a five-stage model with paired process and outcome indicators. No included organisational study reached SIGN 1++ or 1+, whereas the surgery being organised rests on randomised evidence: the deficit is structural on both the clinical and evidential axis.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43098097/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_not_1"
+    },
+    "43097799": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43097799",
+        "title": "Somatic mosaicism in mTORopathies: recent advances.",
+        "authors": [
+          "Mishra S",
+          "Edward M",
+          "Louvi A",
+          "Bordey A"
+        ],
+        "journal": "Current opinion in genetics & development",
+        "iso_journal": "Curr Opin Genet Dev",
+        "issns": [
+          "0959-437X",
+          "1879-0380"
+        ],
+        "pubdate": "2026 11 26",
+        "doi": "10.1016/j.gde.2026.102556",
+        "abstract": "Somatic mosaicism is a major driver of epileptogenic cortical malformations, arising from post-zygotic mutations present in only a subset of brain cells. Many malformations of cortical development are caused by mutations in genes regulating the mechanistic target of rapamycin (mTOR) pathway, leading to hyperactivation of mTOR complex 1. These disorders, such as tuberous sclerosis complex (TSC), focal cortical dysplasia type II (FCDII), and hemimegalencephaly (HME), are collectively referred to as mTORopathies. Somatic mutations arising in proliferating cortical progenitors can be transmitted to descendant cells. The numbers and spatial distribution of cells carrying the mutation are influenced by the developmental timing of mutation acquisition, the progenitor type in which it occurred, and the biological consequences of the variant. Advances in single-cell, spatial, and multi-omic profiling have linked transcriptional states in dysplastic human tissue to cellular phenotypes, revealing that mTOR-activated cells influence neighboring neuronal, glial, and vascular cells through non-cell-autonomous mechanisms. Beyond these local cell-to-cell interactions, we propose that mosaic mTORopathies may also involve 'community effects,' defined here as emergent tissue-level properties arising from reciprocal interactions among multiple somatic variant-containing and non-variant-containing cell types within FCDII lesions and TSC cortical tubers. These interactions may help explain how rare somatic mutations contribute to broader cortical disorganization and epileptogenic network activation. Still, detection of somatic mutations remains challenging owning to spatial heterogeneity and low variant allele frequency, leading to diagnostic gaps while the potentially widespread effects of rare mutation-bearing cells highlight the need to examine both cell-autonomous and community effects.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43097799/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43095748": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43095748",
+        "title": "Pharmacological treatment of attention-deficit/hyperactivity disorder in children with autism spectrum disorder and epilepsy: Current evidence and safety considerations.",
+        "authors": [
+          "Ye Z",
+          "Yazhen Y",
+          "Yanyang G"
+        ],
+        "journal": "Pakistan journal of pharmaceutical sciences",
+        "iso_journal": "Pak J Pharm Sci",
+        "issns": [
+          "1011-601X",
+          "3105-9686"
+        ],
+        "pubdate": "2027 Feb 01",
+        "doi": "10.36721/PJPS/2026.40.17027.1",
+        "abstract": "Attention-deficit/hyperactivity disorder (ADHD) symptoms frequently coexist with autism spectrum disorder (ASD) and epilepsy; however, seizure manifestations, antiseizure medication (ASM) effects, sleep disturbances and sensory or emotional factors can complicate diagnosis and treatment. Current evidence on ADHD pharmacotherapy in children with these overlapping conditions was synthesized in a narrative review of English-language clinical studies, reviews and professional guidance published mainly between 2020 and 2025, together with the 2018 International League Against Epilepsy consensus. Interpretation focused on diagnostic differentiation, seizure-related safety, tolerability and functional outcomes. Evidence specifically involving all three conditions remains limited. Methylphenidate has the strongest published support for core ADHD symptoms in children with epilepsy, particularly when seizures are stable and standard therapeutic doses are used. Atomoxetine is an alternative when stimulant treatment is unsuitable or poorly tolerated; alpha-2 adrenergic agonists may address selected symptoms of hyperactivity, impulsivity, or hyperarousal. Antipsychotics can be used for defined ASD-related behavioral indications but should not be regarded as primary ADHD treatments. A proposed clinical pathway links multisource diagnostic confirmation, seizure and ASM baseline assessment, individualized medication selection, gradual titration, seizure diaries, monitoring of sleep, appetite, growth, vital signs and mood and functional feedback from caregivers and schools. The suggested pathway provides an organizational aid rather than a validated risk prediction instrument. Medication decisions should prioritize demonstrable improvements in participation, learning and safety while maintaining neurological follow-up.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43095748/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43094767": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43094767",
+        "title": "Interleukin-6 receptor blockade with tocilizumab and long-term neurological outcomes in pediatric febrile infection-related epilepsy syndrome: a systematic review and meta-analysis.",
+        "authors": [
+          "Chen Z",
+          "Lee MT",
+          "Chew YL",
+          "Dong M",
+          "Liu W",
+          "Zhang J"
+        ],
+        "journal": "Frontiers in immunology",
+        "iso_journal": "Front Immunol",
+        "issns": [
+          "1664-3224"
+        ],
+        "pubdate": "2026 11 11",
+        "doi": "10.3389/fimmu.2026.2013091",
+        "abstract": "BACKGROUND: Febrile infection-related epilepsy syndrome (FIRES) is a rare subtype of new-onset refractory status epilepticus, and dysregulated neuroinflammation, including interleukin-6 (IL-6) signaling, is thought to contribute to its pathogenesis. Tocilizumab is given to selected patients as cytokine-targeted immunotherapy, but whether its use is associated with long-term neurological recovery is unclear.\nMETHODS: Following PRISMA guidance, we searched PubMed, Embase, Web of Science, WanFang, CNKI, and VIP from inception through September 22, 2026 (PROSPERO CRD420261362781). The primary outcome was favorable long-term neurological function, defined as modified Rankin Scale (mRS) <=3 at the last eligible follow-up at least 3 months after seizure onset. Outcome proportions were pooled separately for each exposure group with random-effects models. Between-group comparisons used study-clustered mixed-effects meta-regression, and studies with concurrent tocilizumab and control groups were also pooled directly.\nRESULTS: Twenty studies comprising 232 patients contributed to the primary analysis; 51 received acute-phase tocilizumab and 181 did not. The pooled favorable outcome proportion was 68.7% (95% CI 53.6%-80.6%) in the tocilizumab group and 46.8% (37.4%-56.4%) in the control group. Study-clustered meta-regression showed an arm-level association between tocilizumab exposure and favorable outcome (OR 2.81, 95% CI 1.34-5.90; P = 0.0062). In three studies with concurrent comparator groups, the direct pooled RR was 1.23 (95% CI 0.50-3.00; P = 0.6528). A sensitivity analysis excluding study arms containing outcomes that required narrative mRS reconstruction yielded a similar arm-level association (OR 2.91, 95% CI 1.32-6.41; P = 0.0079). In the primary clustered models, cognitive impairment was less frequent in tocilizumab arms, whereas epilepsy, movement disorder, ICU stay, and mechanical ventilation duration did not differ significantly.\nCONCLUSIONS: Acute-phase tocilizumab exposure was associated with more favorable long-term neurological outcomes in pediatric FIRES, with similar findings after excluding study arms requiring narrative mRS reconstruction. However, direct comparative evidence remained limited; these findings should therefore be considered hypothesis-generating rather than evidence of treatment efficacy. Prospective multicenter studies are needed to clarify the role of IL-6-directed therapy in FIRES.\nSYSTEMATIC REVIEW REGISTRATION: https://www.crd.york.ac.uk/PROSPERO/view/CRD420261362781, identifier CRD420261362781.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "publication_label": "Meta分析",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43094767/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43094339": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43094339",
+        "title": "Genotype and Phenotype Correlations in PDCD10 (CCM3) Related Cerebral Cavernous Malformations: A Systematic Review of Clinical, Radiological, and Molecular Evidence.",
+        "authors": [
+          "Güney B",
+          "Alomari O",
+          "Mahamat Hİ",
+          "Allahaweh A",
+          "Salameh LB",
+          "Benamara TS",
+          "Sager SG"
+        ],
+        "journal": "American journal of medical genetics. Part A",
+        "iso_journal": "Am J Med Genet A",
+        "issns": [
+          "1552-4825",
+          "1552-4833"
+        ],
+        "pubdate": "2026 11 26",
+        "doi": "10.1002/ajmg.a.70367",
+        "abstract": "Introduction Cerebral cavernous malformations (CCMs) are angiographically occult vascular anomalies. Familial CCM is caused by loss-of-function variants in KRIT1, CCM2, or PDCD10 (CCM3), with PDCD10 deficiency associated with an early and aggressive multisystem phenotype. We synthesized evidence comparing CCM3 with CCM1 and CCM2 and assessed its implications for genotype-informed management. Methods Following PRISMA 2020 and a PROSPERO-registered protocol (CRD420261475958), we searched MEDLINE, Scopus, and Web of Science through January 2026 for clinical and experimental studies of PDCD10/CCM3. Study quality was appraised using JBI checklists, NIH tools, and SYRCLE RoB. Results Forty-six studies were included. Compared with CCM1 and CCM2, CCM3 was associated with earlier symptom onset, greater lesion burden, seizures, and intracerebral hemorrhage. Reported extra-CNS manifestations included multiple meningiomas and hematologic cytopenias. Mechanistic studies linked PDCD10 deficiency to disrupted STRIPAK signaling, impaired endothelial-barrier integrity, and altered gut-brain signaling. Conclusions PDCD10-related disease has a severe multisystem phenotype distinct from other familial CCM genotypes. Recognition of its genotype-specific features may inform surveillance, genetic counseling, and therapeutic strategies.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43094339/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43094278": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43094278",
+        "title": "Current and emerging pharmacotherapy in infantile epileptic spasms syndrome.",
+        "authors": [
+          "Samanta D"
+        ],
+        "journal": "Expert review of neurotherapeutics",
+        "iso_journal": "Expert Rev Neurother",
+        "issns": [
+          "1473-7175",
+          "1744-8360"
+        ],
+        "pubdate": "2026 11 25",
+        "doi": "10.1080/14737175.2026.2769192",
+        "abstract": "INTRODUCTION: Infantile epileptic spasms syndrome (IESS) is a devastating, age-dependent epileptic encephalopathy characterized by clusters of epileptic spasms, a markedly abnormal interictal electroencephalogram, and, in most cases, developmental stagnation or regression. Despite more than six decades of clinical experience, treatment relies predominantly on hormonal therapy and vigabatrin, and long-term outcomes remain unsatisfactory for many infants.\nAREAS COVERED: This review synthesizes evidence, identified through a literature search of PubMed/MEDLINE, Embase, the Cochrane Library, and ClinicalTrials.gov, for adrenocorticotropic hormone, prednisolone/prednisone, vigabatrin, and combination hormonal-vigabatrin therapy, together with adjunctive agents such as pyridoxine and other antiseizure medications. It then examines emerging pharmacotherapy, spanning preclinical discoveries (insulin-like growth factor-1 analogues, corticotropin-releasing hormone receptor-1 antagonists, immune-modulatory agents) and precision, mechanism-based approaches for monogenic etiologies including tuberous sclerosis complex and CDKL5-, STXBP1-, KCNQ2-, and SCN2A-related disorders.\nEXPERT OPINION: First-line therapy should be individualized by etiology, treatment availability, and informed family preference, without avoidable treatment delay - vigabatrin for tuberous sclerosis complex, hormonal therapy alone or combined with vigabatrin otherwise. The ketogenic diet and epilepsy surgery warrant earlier consideration rather than reservation as last resorts. The convergence of genomic diagnostics and precision therapeutics promises a shift toward rational, etiology-targeted treatment, contingent on sustained translational research.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43094278/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_not_1"
+    },
+    "43093845": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43093845",
+        "title": "How Did the Clinical Presentation of COVID-19 in Children Change Across SARS-CoV-2 Variants? A Systematic Review.",
+        "authors": [
+          "Lică IMO",
+          "Ţincu IF",
+          "Dinulescu A",
+          "Drăgănescu AC",
+          "Pleșca DA"
+        ],
+        "journal": "Viruses",
+        "iso_journal": "Viruses",
+        "issns": [
+          "1999-4915"
+        ],
+        "pubdate": "2026 11 04",
+        "doi": "10.3390/v18111227",
+        "abstract": "(1) Background: SARS-CoV-2 variants clinical presentation and severity may differ in children. This systematic review evaluated changes that occurred in pediatric COVID-19 across successive viral variants. (2) Methods: PubMed/MEDLINE, Embase, and Web of Science were searched through 26 September 2026 for comparative studies of SARS-CoV-2 variants in patients aged 18 years or younger. We assessed their methodological quality with the Newcastle-Ottawa Scale (NOS) and their clinical manifestations and severity outcomes were synthesized narratively. (3) Results: Twenty-nine studies were included. Delta was generally associated with a greater symptomatic burden than Alpha, even though the differences in severe outcomes were inconsistent. Omicron was associated with a distinct clinical phenotype, more frequent croup and seizures, some of which were reported as febrile seizure, while gastrointestinal findings varied across studies. Population-based studies generally indicated lower risks of hospitalization or severe disease with Omicron than Delta, but findings among hospitalized children were less consistent. Studies of Omicron subvariants identified differences in individual symptoms without a consistent trend in disease severity. (4) Conclusions: The clinical phenotype of pediatric COVID-19 evolved across SARS-CoV-2 variants. Omicron was particularly associated with increased upper-airway, particularly croup, while several studies also reported increased seizure frequency, including febrile seizures. Population-based studies generally suggesting less severe disease than Delta infections. Differences in age, study setting, variant ascertainment, and outcome definitions should be considered when interpreting these findings.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Review"
+        ],
+        "publication_label": "系统综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43093845/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43093353": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43093353",
+        "title": "Plant-Derived Compounds in Monogenic Epilepsies: Mechanistic Evidence, Genotype-Relevant Models, and Translational Considerations.",
+        "authors": [
+          "Zhapar K",
+          "Gabdulkayum A",
+          "Satvaldina N",
+          "Mirmanova Z",
+          "Akilzhanova A",
+          "Yerezhepov D"
+        ],
+        "journal": "Pharmaceuticals (Basel, Switzerland)",
+        "iso_journal": "Pharmaceuticals (Basel)",
+        "issns": [
+          "1424-8247"
+        ],
+        "pubdate": "2026 11 07",
+        "doi": "10.3390/ph19111768",
+        "abstract": "Monogenic epilepsies and developmental and epileptic encephalopathies are biologically heterogeneous, and evidence for plant-derived interventions ranges from ethnopharmacology to randomized clinical trials. This review critically maps that evidence using a four-level genotype-relevance framework while separating antiseizure, neuroprotective, mechanistic, and clinical endpoints. Highly purified cannabidiol (CBD) has the strongest evidence chain: antiseizure activity in Scn1a-based Dravet models is complemented by randomized clinical efficacy at the syndrome level. However, current trial evidence does not establish an SCN1A-genotype-specific treatment response. β-Caryophyllene has direct preclinical evidence in a genetically relevant Dravet model. Luteolin has direct CDKL5-model evidence for reducing microglial overactivation and improving neuronal and neurodevelopmental outcomes, but seizure-frequency or video-EEG efficacy in CDKL5 deficiency disorder has not been demonstrated. Curcumin, resveratrol, epigallocatechin-3-gallate (EGCG), quercetin, and sulforaphane are supported mainly by non-genetic seizure models and therefore remain mechanistically plausible candidates rather than validated treatments for monogenic epilepsy. Medicinal plants, crude extracts, standardized preparations, and isolated compounds are considered separately. Translational prioritization should require a reproducible genotype-associated secondary phenotype, clinically meaningful functional outcomes, achievable systemic and brain exposure, acceptable safety and drug-interaction profiles, and reproducible formulation. Plant-derived compounds should therefore be viewed as potential adjuncts to established antiseizure, syndrome-specific, and gene-directed therapies rather than substitutes.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43093353/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43093329": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43093329",
+        "title": "Brivaracetam in Off-Label Use and Special Populations: A Narrative Review of Current Evidence.",
+        "authors": [
+          "Keramida A",
+          "Poprelka K",
+          "Mousdi M",
+          "Kotsali-Peteinelli V",
+          "Stefanou MI",
+          "Bonakis A",
+          "Tsivgoulis G",
+          "Kyrozis A",
+          "Tsalouchidou PE"
+        ],
+        "journal": "Pharmaceuticals (Basel, Switzerland)",
+        "iso_journal": "Pharmaceuticals (Basel)",
+        "issns": [
+          "1424-8247"
+        ],
+        "pubdate": "2026 11 03",
+        "doi": "10.3390/ph19111744",
+        "abstract": "Background: Brivaracetam (BRV) is a synaptic vesicle protein 2A (SV2A) ligand approved for the treatment of focal-onset seizures. Its clinical use has increasingly expanded beyond approved indications and into understudied populations. Objective: We aim to review BRV use beyond approved indications and in special populations. Methods: MEDLINE, Embase, and Scopus were searched from inception to 30 April 2026. Eligible clinical studies were selected using prespecified criteria and synthesized narratively. Off-label status was determined separately under FDA and EMA labelling. Results: The evidence consisted predominantly of observational studies, real-world cohorts, case series, and subgroup analyses of randomised trials. In genetic generalized epilepsies (GGE), BRV was associated with seizure reduction in several cohorts, whereas findings in developmental and epileptic encephalopathies (DEEs) were more heterogeneous. Real-world studies demonstrated the feasibility of BRV monotherapy, particularly following transition from levetiracetam. In status epilepticus (SE), intravenous BRV has been associated with SE cessation, although its independent contribution, optimal dose and timing, and role in treatment algorithms remain uncertain. Pregnancy and breastfeeding reports identified no clear safety signal, although exposure and long-term outcome data were scarce. Neonatal evidence was restricted largely to pharmacokinetic and short-term tolerability findings. Observational data indicated that psychiatric or behavioural adverse effects did not recur in some patients switched from levetiracetam; evidence in psychotic disorders remained particularly limited. Conclusions: BRV may be useful in selected off-label settings and special populations. However, evidence remains limited and largely observational, so treatment decisions should be individualized. Prospective controlled studies and dedicated registries are needed.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43093329/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43093314": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43093314",
+        "title": "From Drug Levels to Precision Pharmacotherapy: Integrating Pharmacokinetics, Pharmacodynamics and Biomarkers for Individualized Antiseizure Medication Optimization.",
+        "authors": [
+          "Ruga S"
+        ],
+        "journal": "Pharmaceuticals (Basel, Switzerland)",
+        "iso_journal": "Pharmaceuticals (Basel)",
+        "issns": [
+          "1424-8247"
+        ],
+        "pubdate": "2026 11 01",
+        "doi": "10.3390/ph19111729",
+        "abstract": "Epilepsy management has significantly evolved with the introduction of numerous antiseizure medications (ASMs), yet treatment selection and dose optimization remain challenging due to substantial interindividual variability in efficacy, tolerability, pharmacokinetics, and treatment response. Conventional therapeutic drug monitoring (TDM), based on plasma drug concentrations, provides limited information regarding clinical efficacy, toxicity risk, and the optimal therapeutic strategy for individual patients. This review critically discusses the transition from concentration-based monitoring toward integrated precision pharmacotherapy, the emerging role of pharmacokinetic/pharmacodynamic (PK/PD) integration population pharmacokinetic models, Bayesian forecasting, pharmacodynamic biomarkers, pharmacogenomic information, and artificial intelligence-based prediction models. Particular attention is given to the limitations of conventional TDM and to novel approaches that may improve the prediction of treatment outcomes and guide rational dose adjustments. The review addresses the potential clinical applications of these approaches in challenging scenarios, including drug-resistant epilepsy, polytherapy, pediatric and elderly populations, pregnancy, and patients with altered drug metabolism. Current barriers to implementation are discussed, including the lack of validated biomarkers, heterogeneous clinical phenotypes, limited prospective evidence, and the need for clinically applicable predictive models. By integrating pharmacological, biological, and computational perspectives, this review provides a framework for the future development of individualized ASM therapy, moving beyond traditional TDM toward precision pharmacotherapy in epilepsy.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43093314/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43092986": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43092986",
+        "title": "Leucovorin for Seizures in Folate-Related and Folinic Acid-Responsive Epilepsies: A Patient-Level Systematic Review and Meta-Analysis by Etiology.",
+        "authors": [
+          "Frye RE",
+          "Mishan D",
+          "Rossignol DA"
+        ],
+        "journal": "Nutrients",
+        "iso_journal": "Nutrients",
+        "issns": [
+          "2072-6643"
+        ],
+        "pubdate": "2026 11 20",
+        "doi": "10.3390/nu18223868",
+        "abstract": "BACKGROUND/OBJECTIVES: Leucovorin (folinic acid) is used off-label for seizures across the cerebral folate deficiency (CFD) spectrum and is approved by the US Food and Drug Administration (FDA) for FOLR1-related cerebral folate transport deficiency. We synthesized patient-level seizure outcomes by etiology.\nMETHODS: PRISMA 2020 patient-level systematic review and Bayesian meta-analysis (PROSPERO CRD420261422063). PubMed/MEDLINE, Embase, CENTRAL and Web of Science were searched up to 15 August 2026. Two authors screened records independently; one author extracted patient-level outcomes and the second verified them against the source publications, and both appraised risk of bias (Cochrane RoB 2, JBI, Murad). A Bayesian hierarchical logistic model with publication-level random effects estimated cluster-conditional response probabilities per stratum.\nRESULTS: The analytic pool comprised 38 publications and 79 patients across eight etiologic strata. The model-estimated, publication-cluster-conditional probability of any seizure reduction was highest in pyridoxine-dependent epilepsy/folinic acid-responsive seizures (0.94, 95% HDI 0.79-1.00) and FOLR1-related CFD (0.91, 0.80-1.00) and lowest in Rett syndrome and PNPO deficiency (both 0.31; 95% HDIs 0.00-0.78 and 0.00-0.88), with wide uncertainty in the smallest strata. No adverse event or death was attributed to leucovorin by the source authors, but safety reporting was incomplete, and the absence of reported attribution does not establish the absence of events. GRADE certainty was very low throughout.\nCONCLUSIONS: Seizure reduction was most consistent in FOLR1-related and PDE/FARS epilepsies and least in Rett syndrome and PNPO deficiency; evidence was insufficient in strata with ≤3 evaluable patients (mitochondrial, PCDH19, secondary/genetic). Prospective controlled trials are needed.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Systematic Review",
+          "Journal Article",
+          "Meta-Analysis",
+          "Review"
+        ],
+        "publication_label": "Meta分析",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43092986/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43091707": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43091707",
+        "title": "LRRC8/VRAC Channels Beyond Volume Regulation: Molecular Mechanisms, Physiological Functions, and Therapeutic Perspectives.",
+        "authors": [
+          "Abd El-Aziz TM",
+          "Sah R"
+        ],
+        "journal": "International journal of molecular sciences",
+        "iso_journal": "Int J Mol Sci",
+        "issns": [
+          "1422-0067"
+        ],
+        "pubdate": "2026 11 10",
+        "doi": "10.3390/ijms272210076",
+        "abstract": "Volume-regulated anion channels (VRACs) drive regulatory volume decrease and maintain cellular homeostasis in nearly all vertebrate cells. The identification of leucine-rich repeat-containing 8 (LRRC8) proteins as the molecular components of VRAC transformed the field by showing that these channels are heteromers composed of the essential LRRC8A subunit together with one or more LRRC8B-E subunits. Advances in structural biology, electrophysiology, and molecular studies have since improved our understanding of LRRC8 channel assembly, regulation, and function. LRRC8 complexes operate through two distinct functional modalities. The first is substrate permeation through the channel pore: beyond chloride transport, LRRC8 channels mediate the movement of organic osmolytes, amino acids, ATP, glutamate, cyclic dinucleotides, and platinum-based anticancer drugs, with permeability determined by subunit composition. The second is pore-independent signal transduction, in which LRRC8A also acts as a signaling scaffold through its cytoplasmic leucine-rich repeat domain (LRRD), which binds partners such as GRB2 and caveolin-1. Because deleting the protein removes both modalities at once and many reported phenotypes cannot yet be attributed to either alone. Altered LRRC8 channel activity has been linked to cancer, ischemic brain injury, epilepsy, diabetes, inflammatory diseases, and inherited disorders caused by both loss and gain of LRRC8 function. This review discusses recent advances in the molecular architecture, regulatory mechanisms, transport properties, and pore-independent signaling functions of LRRC8 channels. It also examines their physiological and pathophysiological roles across the nervous, cardiovascular, immune, metabolic, renal, epidermal, and reproductive systems, highlighting the strength of the supporting evidence. Finally, the review addresses recent progress in pharmacological targeting, with particular emphasis on the off-target effects of current inhibitors and the lack of subunit-selective modulators. Understanding how LRRC8 channels sense cell volume, assemble into native channel complexes, act through the pore or through the LRRD, and can be selectively targeted will be critical for translating recent discoveries into future therapeutic strategies.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43091707/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_not_1"
+    },
+    "43091004": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43091004",
+        "title": "Transcranial Magnetic Stimulation for Depression During Pregnancy: A Narrative Review of Efficacy, Safety, and Practical Considerations.",
+        "authors": [
+          "Ferraris Kandel D",
+          "Cristancho P",
+          "Marino B",
+          "Koo MB"
+        ],
+        "journal": "Journal of clinical medicine",
+        "iso_journal": "J Clin Med",
+        "issns": [
+          "2077-0383"
+        ],
+        "pubdate": "2026 11 16",
+        "doi": "10.3390/jcm15228972",
+        "abstract": "Depression during pregnancy can require treatment decisions that balance illness severity, patient preferences, and concern about fetal medication exposure. This structured narrative review examined the efficacy of transcranial magnetic stimulation (TMS) during pregnancy, its maternal, obstetric, neonatal, and offspring outcomes, and its practical administration. PubMed, ProQuest Medical Library, JAMA Network, Google Scholar, Embase, and PsycINFO were searched. Thirty reports described at least 98 pregnancies with confirmed antenatal TMS exposure: one sham-controlled trial, three open-label series, one embedded pregnant subgroup, and 25 case reports or series. In the trial, depression scores decreased more with active than sham TMS (treatment-by-time p = 0.003), but response and remission differences were not statistically significant. Uncontrolled reports often described symptom improvement or maintenance without recurrence. Maternal adverse events were generally mild when reported; no maternal seizure was described during antenatal treatment, although ascertainment was uneven. The trial reported three late-preterm births among 11 active-arm participants and none among 11 sham participants. Longer-term comparative developmental follow-up was limited to one cohort. TMS appears feasible and may provide symptomatic benefit, but the literature does not establish comparative efficacy, definitive pregnancy safety, or a preferred protocol. Current evidence supports individualized consideration with coordinated obstetric and psychiatric care, alongside controlled studies and prospective surveillance.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43091004/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43090395": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43090395",
+        "title": "Beyond Lipid-Lowering and Stroke Prevention: Unraveling the Role of Statins in Neurological Diseases.",
+        "authors": [
+          "Karamanolis NN",
+          "Vallianou NG",
+          "Dalamaga M",
+          "Evangelopoulos A",
+          "Ronioti M",
+          "Kounatidis DC"
+        ],
+        "journal": "Metabolites",
+        "iso_journal": "Metabolites",
+        "issns": [
+          "2218-1989"
+        ],
+        "pubdate": "2026 11 05",
+        "doi": "10.3390/metabo16110858",
+        "abstract": "Background: Statins are established therapies for reducing cardiovascular and cerebrovascular risk. Beyond their lipid-lowering effects, they exert pleiotropic actions, including anti-inflammatory, immunomodulatory, antioxidant, anti-apoptotic, and vascular effects. Methods: This narrative review explores the effects of statins in a range of characteristic neurological disorders beyond stroke prevention, encompassing migraine, neurodegenerative and neuroinflammatory diseases, myasthenia gravis (MG), traumatic brain injury (TBI), brain tumors, epilepsy, and peripheral neuropathy (PN). A literature search was conducted in PubMed, Embase, and Scopus, focusing on proposed mechanisms of action, clinical outcomes, and potential neurological adverse effects. Results: Research suggests potential benefits of statins in migraine, TBI and its complications, brain tumors, and epilepsy. Favorable findings have also been reported in neurodegenerative and neuroinflammatory conditions, including Parkinson's disease, Huntington's disease, and multiple sclerosis. Despite earlier concerns regarding a possible association between statin use and an increased risk of dementia, subsequent studies have challenged this association, with some suggesting even a protective effect. Potential neurological adverse effects also warrant attention, particularly the reported association between statin exposure and new-onset or worsening MG. In contrast, data linking statin use to amyotrophic lateral sclerosis and PN are controversial and do not support causality. Interpretation of the available findings is complicated by heterogeneity in statin type and lipophilicity, dosage, treatment duration, disease stage, and study design. Clinical evidence is derived predominantly from observational studies, which are susceptible to confounding and other methodological limitations. Randomized controlled trials remain relatively few, with some further limited by small sample sizes. Conclusions: The pleiotropic properties of statins provide a rationale for investigating their potential therapeutic role across a broad spectrum of neurological disorders. Nevertheless, the available evidence remains heterogeneous and, in several conditions, conflicting. Further adequately powered randomized controlled trials are needed to establish whether statins translate their proposed pleiotropic effects into clinically meaningful benefits in specific neurological disorders and to better characterize their potential neurological risks.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43090395/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43089745": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43089745",
+        "title": "Pediatric Epilepsy Characteristics and Long-Term Neurological and Mortality Outcomes: A Systematic Review.",
+        "authors": [
+          "Tecar C",
+          "Vamanu A",
+          "Stancu A",
+          "Bonea M",
+          "Livinț-Popa L"
+        ],
+        "journal": "Children (Basel, Switzerland)",
+        "iso_journal": "Children (Basel)",
+        "issns": [
+          "2227-9067"
+        ],
+        "pubdate": "2026 11 20",
+        "doi": "10.3390/children13111613",
+        "abstract": "BACKGROUND/OBJECTIVES: Childhood-onset epilepsies that do not remit are the patients adult neurologists inherit at transition, yet no framework predicts adult neurological status or mortality from pediatric features. We reviewed the longitudinal evidence.\nMETHODS: PubMed/MEDLINE, Embase, Scopus and the Cochrane Library were searched from 1980 to 5 November 2026 for cohort or population-based studies of epilepsy with onset before 18 years; studies contributing to the synthesis of long-term outcomes required five or more years of follow-up. Risk of bias was rated with the Quality In Prognosis Studies (QUIPS) tool. The cohorts differed in the definition of remission, in the age at outcome ascertainment and in the quantities reported, and several publications describe the same underlying cohorts, so the evidence is presented as a structured narrative synthesis without pooled estimates, following PRISMA 2020.\nRESULTS: Fourteen studies were included. They report on 4326 participants with epilepsy, which is the sum of the sample sizes of the individual publications and not a count of distinct individuals, because three groups of publications report on the same underlying cohorts; follow-up ranged from 2 to 50 years. Reported seizure freedom ranged from 90% of 195 patients with no seizures at final follow-up to 93% of 47 children with absence epilepsy, each cohort using its own definition, and 62% of the 421 patients in the Nova Scotia cohort reached terminal remission. A Danish tertiary cohort reported 8 SUDEP cases per 10,000 patient-years, and more than 95% of the patients who died there had drug-resistant epilepsy. In the Dutch cohort the standardized mortality ratio was 22.9 (95% CI 7.9 to 37.9) for symptomatic epilepsy, with no deaths among 328 children with non-symptomatic epilepsy. Drug resistance was associated with a full-scale IQ 11.4 points lower in the Connecticut cohort, measured eight to nine years after onset.\nCONCLUSIONS: Drug resistance, symptomatic etiology and early seizure onset recur across cohorts as markers of less favorable adult outcome and support prognostic risk stratification at the transition to adult care rather than individual prediction. The evidence is observational, heterogeneous in definition and ascertainment, and describes groups rather than individuals.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43089745/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43089457": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43089457",
+        "title": "Craniosynostosis in Mowat-Wilson Syndrome: A Novel De Novo ZEB2 Frameshift Variant and Systematic Review of Individual-Level Case Data.",
+        "authors": [
+          "Wnuk-Kłosińska A",
+          "Sowińska-Seidler A",
+          "Gębicka K",
+          "Dinwiddie A",
+          "Pepler A",
+          "Larysz D",
+          "Jamsheer A"
+        ],
+        "journal": "Genes",
+        "iso_journal": "Genes (Basel)",
+        "issns": [
+          "2073-4425"
+        ],
+        "pubdate": "2026 11 18",
+        "doi": "10.3390/genes17111461",
+        "abstract": "Background: Mowat-Wilson syndrome (MWS) is a rare neurodevelopmental disorder caused by heterozygous pathogenic variants or deletions involving ZEB2. Its core clinical features include distinctive craniofacial dysmorphism, severe developmental delay or intellectual disability, absent or markedly impaired speech, epilepsy, growth deficiency, and multiple congenital anomalies. Craniosynostosis has been reported only rarely and is not considered a typical manifestation of the syndrome. This study aimed to characterize the clinical and molecular findings of MWS-associated craniosynostosis through a systematic review of individual-level data. Additionally, we present two patients with pathogenic ZEB2 variants, including one with a novel de novo frameshift variant and complex craniosynostosis. Methods: A systematic literature review was conducted in accordance with the PRISMA-IPD statement. PubMed and Scopus were systematically searched from database inception to 4 September 2026 for reports of molecularly confirmed MWS associated with craniosynostosis. Eligible reports providing individual-level clinical and molecular data were selected, and relevant data were independently extracted by two reviewers and summarized descriptively. Results: The systematic review identified three studies reporting four molecularly confirmed patients with MWS and craniosynostosis. Isolated right unicoronal craniosynostosis was reported in three patients (3/4), while one patient (1/4) had combined right coronal and metopic synostosis. The reported molecular alterations included ZEB2 frameshift variants and a multigene deletion involving ZEB2, with no apparent association between variant type or location and the pattern of craniosynostosis, although the number of cases was limited. In addition, we describe a patient with a novel de novo ZEB2 frameshift variant, c.2730_2802del, p.(Met910IlefsTer43), and complex left coronal and sagittal craniosynostosis, representing the first reported case of MWS with sagittal suture involvement. A second patient carried a pathogenic de novo ZEB2 missense variant, p.(His1073Arg), and exhibited a classical MWS phenotype without craniosynostosis. Conclusions: This systematic review, together with the newly reported case expands the molecular spectrum of ZEB2-related Mowat-Wilson syndrome and supports craniosynostosis as an uncommon but clinically relevant manifestation. The findings in Patient 2 further indicate that pathogenic missense ZEB2 variants may also be associated with a classical multisystem MWS phenotype. Although the available evidence does not support classifying ZEB2 as a classical craniosynostosis gene, careful assessment of cranial shape and signs of premature suture fusion appears warranted in affected individuals.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Case Reports"
+        ],
+        "publication_label": "系统综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43089457/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43089445": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43089445",
+        "title": "Neurodevelopmental Disorders Associated with Biallelic EIF3F Variants: A Review.",
+        "authors": [
+          "Czepiel M",
+          "Dziedzic R",
+          "Preizner-Rzucidło E",
+          "Łukasiewicz K",
+          "Karnas J",
+          "Siedlar M",
+          "Kosałka-Węgiel J"
+        ],
+        "journal": "Genes",
+        "iso_journal": "Genes (Basel)",
+        "issns": [
+          "2073-4425"
+        ],
+        "pubdate": "2026 11 17",
+        "doi": "10.3390/genes17111449",
+        "abstract": "Background: Biallelic EIF3F variants cause a rare autosomal recessive neurodevelopmental disorder characterized by developmental delay, intellectual disability, speech impairment, and variable neurological manifestations. This review summarizes the clinical and molecular evidence to clarify genotype-phenotype relationships and identify unresolved disease mechanisms. Methods: We conducted a focused narrative review of clinical reports, variant-specific functional studies, and relevant mechanistic literature identified through targeted searches and reference screening. Results: Most clinical evidence concerns the recurrent p.(Phe232Val) variant, with only one reported compound-heterozygous individual. Developmental delay, intellectual disability, and speech impairment are prominent clinical features, whereas autism spectrum disorder (ASD), hearing loss, epilepsy, and other manifestations are variably reported. Functional studies in engineered induced pluripotent stem cells demonstrate reduced eIF3f abundance and altered translation, but the consequences for neuronal development remain unclear. Evidence from other experimental systems suggests context-dependent eIF3f functions, although their relevance to the human disorder remains unconfirmed. Conclusions: Biallelic EIF3F variants are associated with a clinically heterogeneous neurodevelopmental disorder. Integrating the available clinical and molecular evidence highlights important gaps in our understanding of genotype-phenotype relationships and disease mechanisms, underscoring the need for larger, systematically characterized patient cohorts and allele-specific neuronal models to inform future therapeutic research.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43089445/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43089317": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43089317",
+        "title": "Precision Gene Therapy for Monogenic Neurological Disorders: Emerging Technologies, Safety, and Mechanism-Modality Matching.",
+        "authors": [
+          "Du J",
+          "Meng X",
+          "Fan P",
+          "Si N"
+        ],
+        "journal": "Genes",
+        "iso_journal": "Genes (Basel)",
+        "issns": [
+          "2073-4425"
+        ],
+        "pubdate": "2026 10 22",
+        "doi": "10.3390/genes17111321",
+        "abstract": "Monogenic neurological disorders remain challenging to treat because of the restricted permeability of the blood-brain barrier (BBB), the limited regenerative capacity of the central nervous system (CNS), and the difficulty of achieving therapeutically meaningful correction in disease-relevant cell populations. Rapid advances in gene-based therapies are expanding the range of genetic defects that may be amenable to therapeutic intervention, shifting the field from symptomatic management toward mechanism-based intervention. In this Review, we examine emerging gene- and RNA-based therapeutic strategies across representative disorders, including spinal muscular atrophy (SMN1/SMN2), SOD1-associated amyotrophic lateral sclerosis, and SCN1A-related Dravet syndrome, with particular emphasis on vector engineering, RNA modulation, genome editing, and large-cargo delivery approaches. We further discuss patient-derived organoids and organ-on-a-chip systems as human-relevant platforms for preclinical validation, as well as emerging therapeutic contexts such as in utero intervention. Rather than treating these technologies as interchangeable, we propose a mechanism-modality matching framework in which therapeutic selection is guided by disease mechanism, cargo requirements, target-cell distribution, durability, reversibility, immune risk, and therapeutic timing. Particular attention is given to modality-specific safety, including AAV-associated hepatotoxicity and immunogenicity, as well as unintended genomic alterations and long-term genome integrity associated with genome editing. Precision gene therapy should therefore be defined not by the use of the most advanced technology, but by selection of an intervention that achieves sufficient molecular correction with an appropriate balance of efficacy, durability, reversibility, delivery feasibility, and long-term safety.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43089317/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43088463": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43088463",
+        "title": "Neurobiological Mechanisms of Mental Disorders in Relation to Epilepsy: A Narrative Review.",
+        "authors": [
+          "Que BJ",
+          "Lekatompessy JC",
+          "Idrus CL"
+        ],
+        "journal": "Current issues in molecular biology",
+        "iso_journal": "Curr Issues Mol Biol",
+        "issns": [
+          "1467-3037",
+          "1467-3045"
+        ],
+        "pubdate": "2026 11 04",
+        "doi": "10.3390/cimb48111162",
+        "abstract": "Depression, anxiety and psychosis occur in people with epilepsy far more often than in the general population, and each can precede the first unprovoked seizure, which suggests shared neurobiology in addition to psychosocial reaction. This narrative review examined original human research published between 2016 and 2026, identified by keyword searching and selected purposively. Of eighteen included studies, thirteen provided direct mechanistic evidence, two provided prognostic clinical evidence and three were retained as adjacent evidence. Imaging findings differed by phenotype, with reduced network connectivity in depression and parietal grey matter and white matter changes in psychosis, but each phenotype was studied with different methods in small, separate cohorts. Peripheral brain-derived neurotrophic factor did not distinguish patients with and without comorbid depression and was strongly influenced by anti-seizure medication, which limits its biomarker value without excluding a central neurotrophic role. Serotonergic and hippocampal glutamatergic measures were associated with depression in single studies, and circulating cytokine findings were inconsistent in direction. Genome-wide analyses identified shared loci including SCN1A, Mendelian randomisation was consistent with major depressive disorder liability increasing epilepsy risk, and suicidality at diagnosis predicted treatment resistance. These findings generate hypotheses rather than establish mechanisms.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43088463/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43088354": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43088354",
+        "title": "Postictal Brain Network Dynamics and Their Clinical Applications.",
+        "authors": [
+          "Bratu IF",
+          "Bartolomei F"
+        ],
+        "journal": "Brain sciences",
+        "iso_journal": "Brain Sci",
+        "issns": [
+          "2076-3425"
+        ],
+        "pubdate": "2026 11 12",
+        "doi": "10.3390/brainsci16111238",
+        "abstract": "Background/Objectives: The postictal state encompasses complex changes in brain-network organisation, involving multiple pathophysiological processes whose interactions remain incompletely understood. An integrative approach across recording modalities and spatial and temporal scales may help elucidate the relationships underlying these changes. This review provides a network-centred synthesis of postictal dynamics, examining the ictal-postictal transition, operational definitions of recovery, and the potential clinical relevance of postictal network changes. Methods: We reviewed electrophysiological, metabolic, neurovascular, imaging and modelling findings across experimental seizure models, seizures in human epilepsy and electroconvulsive therapy-induced seizures, with particular emphasis on the temporal evolution of postictal brain activity and quantitative approaches to defining recovery. Results: Across modalities, seizure offset does not consistently mark immediate restoration of the preictal state. Postictal activity evolves over seconds to hours through changes in suppression and slowing, signal complexity, functional connectivity, information flow, perfusion and metabolism. These patterns are influenced by seizure propagation, severity, localisation and clinical context. Quantitative approaches further indicate that electrophysiological recovery may outlast visually apparent abnormalities and may dissociate from behavioural recovery. Postictal dynamics may provide clinically exploitable information for epileptogenic-network localisation and surgical prognosis, objective assessment of recovery, investigation of autonomic dysfunction and sudden unexpected death in epilepsy, automated seizure-state classification and therapeutic targeting. Conclusions: The postictal period encompasses heterogeneous network dynamics organised across multiple spatial and temporal scales, which may interact with pathophysiological processes underlying recovery. Its systematic characterisation may improve understanding of seizure termination and recovery while expanding the clinical utility of peri-ictal signal analysis.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43088354/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43088333": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43088333",
+        "title": "Clinical Translation of Optically Pumped Magnetometer-Based Magnetoencephalography: Current Evidence, Implementation Challenges, and Future Pathways.",
+        "authors": [
+          "Peng Y",
+          "Ding M"
+        ],
+        "journal": "Brain sciences",
+        "iso_journal": "Brain Sci",
+        "issns": [
+          "2076-3425"
+        ],
+        "pubdate": "2026 11 05",
+        "doi": "10.3390/brainsci16111217",
+        "abstract": "Optically pumped magnetometer-based magnetoencephalography (OPM-MEG) enables cryogen-free, on-scalp recordings with wearable, individually configurable sensor arrays. These features may expand access to MEG for patients poorly accommodated by fixed-helmet superconducting quantum interference device (SQUID) systems. This review evaluates current clinical evidence, implementation barriers, and priorities for clinical translation. This narrative review synthesizes OPM-MEG studies in presurgical epilepsy evaluation and functional mapping, alongside exploratory applications in other neurological and psychiatric conditions. Evidence is considered in relation to clinical performance, validation endpoints, and requirements for acquisition, analysis, and implementation across different clinical settings. Patient-based evidence includes comparative and prospective studies of presurgical evaluation in drug-resistant focal epilepsy. Studies support interictal epileptiform discharge detection and localization, with broad concordance with SQUID-MEG and intracranial electrophysiology; early reports also demonstrate ictal recordings. Pediatric and motion-tolerant recordings represent promising applications. Motor mapping has progressed to small patient cohorts with limited intraoperative validation, while language mapping is supported mainly by small studies and case reports. Applications in neurodegenerative, headache, psychiatric, and developmental disorders remain exploratory and currently lack established clinical indications for MEG. Common translational priorities include standardized performance benchmarks, acquisition quality control, motion management, co-registration, analysis, reporting, and personnel training. OPM-MEG shows promise for extending clinical MEG, supported by patient-based feasibility and comparative studies in presurgical epilepsy evaluation. Multicenter prospective studies should establish performance and reproducibility for defined indications. New applications and claims of additional benefit require evaluation of their effects on clinical management and patient outcomes, supported by standardized workflows across systems and centers.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43088333/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43087916": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43087916",
+        "title": "From Presumed Post-Stroke Seizures to Probable Ventricular Tachycardia: Antiseizure Therapy, Diagnostic Misattribution and Human Oversight of Smartwatch ECGs-A Narrative Review.",
+        "authors": [
+          "Vrachatis DA",
+          "Maros G",
+          "Papathanasiou KA",
+          "Piperis C",
+          "Argyris AA",
+          "Nikolakakis I",
+          "Papaioannou TG"
+        ],
+        "journal": "Biomedicines",
+        "iso_journal": "Biomedicines",
+        "issns": [
+          "2227-9059"
+        ],
+        "pubdate": "2026 11 17",
+        "doi": "10.3390/biomedicines14112661",
+        "abstract": "Transient arrhythmias can produce episodes that resemble seizures, and an incorrect attribution can lead to treatment that does not address the underlying mechanism. This narrative review is informed by the case of a patient with haemorrhagic stroke and severe left ventricular dysfunction whose recurrent episodes were considered compatible with epileptic seizures and treated with levetiracetam. Episodes recurred despite treatment. Smartwatch electrocardiograms (ECGs) obtained by relatives had been labelled inadequate and were understood to show no abnormality. On cardiologist review, one showed a regular wide-complex tachycardia interpreted as probable ventricular tachycardia; a single lead could not exclude supraventricular tachycardia with aberrant conduction, and urgent tertiary assessment was advised. We discuss three connected issues. First, the clinical features and cardiac substrate that should prompt reconsideration of the diagnosis when episodes persist despite antiseizure therapy. Second, evidence, largely from atrial fibrillation studies, that unclassified wearable recordings often remain interpretable by clinicians, and the more limited evidence for ventricular arrhythmias. Third, the conditions under which such recordings reach clinical review, including digital health literacy, communication of uncertainty, and services that receive recordings and communicate the plan. We propose assigning these responsibilities explicitly, including when artificial intelligence informs interpretation or triage. These arrangements require evaluation.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43087916/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43087868": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43087868",
+        "title": "Anticonvulsant Effects of Terpenes in Animal Models: A Systematic Review with Meta-Analysis.",
+        "authors": [
+          "Silva VDS",
+          "Ferreira DJS",
+          "do Nascimento MAM",
+          "Costa JGDS",
+          "Silva MHSX",
+          "Monte APO",
+          "de Santana TI",
+          "Santos BL",
+          "de Almeida CLF",
+          "Delmondes GA",
+          "Menezes-Rodrigues FS",
+          "Moraes PIM",
+          "Podanosque AG",
+          "Tallo FS",
+          "de Menezes IRA"
+        ],
+        "journal": "Biomedicines",
+        "iso_journal": "Biomedicines",
+        "issns": [
+          "2227-9059"
+        ],
+        "pubdate": "2026 11 12",
+        "doi": "10.3390/biomedicines14112612",
+        "abstract": "Background/Objectives: Epilepsy affects more than 50 million people worldwide, and approximately one-third of patients exhibit drug resistance to conventional treatments. In this context, terpene compounds have emerged as promising alternatives due to their neuroprotective and anticonvulsant properties. This study aimed to analyze the preclinical evidence regarding the anticonvulsant effects of compounds belonging to the terpene class in animal models of epilepsy and seizures. Methods: A systematic review and meta-analysis (PROSPERO CRD420261449697) were conducted according to the PRISMA guidelines. Searches were performed in the PubMed, Web of Science, Embase and Scopus databases. The risk of bias was assessed using the SYRCLE Risk of Bias tool. For quantitative synthesis, only studies involving rats and mice were included. Random-effects meta-analyses were performed to assess latency to the first seizure (LFS) and latency to death (LD), with subgroup analyses according to the seizure-induction model. Leave-one-out sensitivity analyses were also conducted to assess the influence of individual studies on the pooled estimates. Results: Terpene treatment significantly increased LFS in the overall analysis (standardized mean difference-SMD = 3.08; 95% confidence interval-95% CI: 2.41-3.75; p < 0.00001), although substantial heterogeneity was observed (I2 = 81%). Significant effects were also observed in the pilocarpine (PILO; SMD = 3.45; 95% CI: 2.12-4.78; p < 0.00001) and pentylenetetrazole (PTZ; SMD = 3.00; 95% CI: 2.19-3.81; p < 0.00001) models. In contrast, the pooled effect in the picrotoxin-induced model was not statistically significant (SMD = 4.02; 95% CI: 1.19 to 6.85; Z = 2.79; p = 0.005). The isoniazid-induced model also showed a significant increase in LFS, based on a single study (SMD = 10.45; 95% CI: 4.44-16.47; p = 0.0007). Substantial heterogeneity persisted in the PILO (I2 = 82%), PTZ (I2 = 77%), and picrotoxin (I2 = 90%) subgroups. In contrast, the overall analysis of LD showed no statistically significant effect (SMD = 2.76; 95% CI: -0.24 to 5.77; p = 0.07; I2 = 86%). Subgroup analysis revealed a significant increase in LD in the PTZ model (SMD = 3.25; 95% CI: 2.06-4.45; p < 0.00001; I2 = 0%), whereas no significant effect was observed in the PILO model, which showed substantial heterogeneity (I2 = 95%) and considerable instability in sensitivity analyses. Methodological assessment identified unclear risk of bias in several domains, particularly those related to allocation procedures and randomization, while funnel plot asymmetry suggested possible small-study effects; however, the limited number of studies and substantial heterogeneity precluded firm conclusions regarding publication bias. Conclusions: Terpene compounds may exert preclinical anticonvulsant effects, with the most consistent evidence observed for increased LFS, particularly in the PILO and PTZ models. However, effects on LD were not statistically significant in the overall analysis, and model-specific findings remain preliminary. Substantial heterogeneity and methodological limitations warrant cautious interpretation. Further well-designed preclinical studies are needed to clarify the compound- and model-specific consistency, safety, and mechanisms of these effects before clinical translation can be considered.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43087868/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43087782": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43087782",
+        "title": "Dexmedetomidine and the Developing Brain: Current Evidence on Neuroprotection and Neurodevelopmental Safety in Neonatal and Pediatric Patients: A Structured Literature Review.",
+        "authors": [
+          "Petrov W",
+          "Uścinowicz K",
+          "Puźniak G",
+          "Kukla K",
+          "Ślebioda D",
+          "Skowron I",
+          "Chłopaś-Konowałek A"
+        ],
+        "journal": "Biomedicines",
+        "iso_journal": "Biomedicines",
+        "issns": [
+          "2227-9059"
+        ],
+        "pubdate": "2026 11 03",
+        "doi": "10.3390/biomedicines14112526",
+        "abstract": "Background: Dexmedetomidine is a highly selective α2-adrenergic receptor agonist increasingly used in neonatal and pediatric intensive care and anesthesia. Its central mechanism of action and experimental evidence suggesting anti-inflammatory, anti-apoptotic, antioxidant, and antiexcitotoxic effects have raised interest in its influence on the developing central nervous system. At the same time, uncertainty remains regarding its long-term neurodevelopmental consequences and the clinical relevance of reported neurological safety signals. Objective: This review aimed to critically evaluate the neurological and neurodevelopmental effects of dexmedetomidine in neonatal and pediatric populations, with particular emphasis on potential neuroprotective effects, acute neurological safety signals, and long-term neurodevelopmental outcomes. Methods: A structured literature review of publications from 1989 to 2026 was conducted. Evidence included primary clinical studies, prospective and retrospective cohorts, randomized controlled trials, follow-up studies, case reports, and secondary evidence syntheses, including systematic reviews and meta-analyses. Long-term neurodevelopmental and cognitive outcomes were analyzed separately from acute neurological effects and neurological safety signals. Secondary evidence was evaluated independently from primary studies to avoid double counting of participants. Preclinical and surrogate evidence of neuroprotection was distinguished from direct evidence of long-term human neurodevelopmental benefit. Results: Dexmedetomidine was associated with measurable effects on the developing central nervous system, although their clinical significance varied across populations and study designs. In neonates with hypoxic-ischemic encephalopathy undergoing therapeutic hypothermia, secondary evidence suggested a lower pooled seizure risk with dexmedetomidine compared with conventional sedatives, although substantial heterogeneity and observational study designs limited causal interpretation. In pediatric anesthesia, dexmedetomidine reduced sevoflurane-related emergence agitation, but this short-term behavioral endpoint does not constitute evidence of long-term neuroprotection. Preclinical studies demonstrated attenuation of sevoflurane-associated neuronal migration delay, restoration of dendritic spine density, and improvement of transient somatosensory dysfunction, supporting a potential synaptic and developmental neuroprotective effect. However, clinical studies did not consistently demonstrate improvements in cognition, behavior, or long-term neurodevelopment. Reported neurological safety signals included altered cerebral activity, seizure-related events, abnormal movements, and posterior reversible encephalopathy syndrome following abrupt dexmedetomidine withdrawal with rebound hypertension. Conclusions: Dexmedetomidine exerts measurable effects on the developing central nervous system, but current evidence is insufficient to classify it as either a clinically proven neuroprotective agent or as directly neurotoxic to the developing human brain. Available data support short-term neurological effects and preclinical neuroprotective potential, whereas long-term human neurodevelopmental consequences remain uncertain. Further prospective studies using validated longitudinal neurodevelopmental outcomes are required to determine its long-term neurological safety and potential neuroprotective benefit. Anesthetic agents and method of discontinuation. Further prospective, adequately powered studies with standardized dosing and long-term neurodevelopmental follow-up are required.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43087782/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43087751": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43087751",
+        "title": "Hypoxic-Ischaemic Encephalopathy in Maternal Diabetes: Mirror of a Chronic Antepartum Process or an Acute Intrapartum Event? A Systematic Review.",
+        "authors": [
+          "Colacurci D",
+          "Sarno L",
+          "Iannantuoni S",
+          "Motta M",
+          "Sirico A",
+          "Mappa I",
+          "Rizzo G",
+          "Guida M",
+          "Di Carlo C",
+          "Bifulco G",
+          "Maruotti GM"
+        ],
+        "journal": "Biomedicines",
+        "iso_journal": "Biomedicines",
+        "issns": [
+          "2227-9059"
+        ],
+        "pubdate": "2026 10 30",
+        "doi": "10.3390/biomedicines14112493",
+        "abstract": "Background: Maternal diabetes is associated with several adverse perinatal outcomes, but its relationship with hypoxic-ischaemic perinatal injury remains poorly defined. Fetal compromise may reflect an acute intrapartum event, a chronic antepartum process, or both. Objective: To systematically review the evidence linking gestational diabetes mellitus (GDM) and pregestational diabetes to hypoxic-ischaemic perinatal injury, assessing diagnosed or coded neonatal brain injury, acid-base status at birth, and chronic antepartum markers separately. Methods: PubMed, Embase, and Scopus were searched from inception to 16 October 2026. Observational studies comparing pregnancies with and without diabetes and reporting diagnosed or coded hypoxic-ischaemic encephalopathy, neonatal encephalopathy or neonatal seizures, umbilical acid-base status, or a chronic marker of fetal hypoxia were eligible; studies reporting only Apgar-based or other non-specific outcomes were excluded. Risk of bias was assessed with the Newcastle-Ottawa Scale together with a separate judgement of outcome-definition adequacy, certainty of evidence was rated with GRADE, and synthesis followed the SWiM guideline, with vote counting by direction of effect. The protocol was registered in PROSPERO (CRD420261435362). Results: Seventy-four studies were included (30 GDM only, 12 pregestational diabetes only, 32 both or unspecified). Pregestational diabetes was associated with hypoxic-ischaemic encephalopathy, neonatal encephalopathy, or neonatal seizures in all five studies with sufficient events (adjusted odds or risk ratios 1.5-5.1; very low certainty). In GDM, estimates pointed in an adverse direction in six of seven informative comparisons but were mostly small and imprecise; statistically significant associations came only from a large registry (adjusted relative risk 1.24-1.25) and a study restricted to small-for-gestational-age infants (very low certainty). Umbilical acid-base status was less favourable in pregestational diabetes in 9 of 10 studies. In GDM, differences were small (less favourable in 13 of 17 comparisons; pooled mean difference in umbilical arterial pH -0.025, 95% CI -0.041 to -0.010, prediction interval -0.10 to 0.05, three studies; very low certainty for clinically relevant acidaemia). Chronic markers pointed in an adverse direction in 33 of 37 independent evidence sources, most consistently erythropoietin, nucleated red cells, and polycythaemia, but certainty was very low for every marker. No study documented a chronic marker, an identified acute event, and diagnosed or coded brain injury in the same fetus. Conclusions: Pregestational diabetes is associated with diagnosed or coded hypoxic-ischaemic encephalopathy, neonatal encephalopathy, or seizures and with markers of chronic fetal hypoxic stress, but the certainty of this evidence is very low. In GDM, estimates for these outcomes mostly point in an adverse direction but are small and imprecise (very low certainty), and acid-base differences at birth are small. Whether a chronic process and an acute event combine to cause injury in an individual fetus has not been studied.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43087751/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43087392": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43087392",
+        "title": "Societal Acceptability of People with Epilepsy: A Mixed-Methods Systematic Review with Targeted Meta-Analyses.",
+        "authors": [
+          "Ngobeni H",
+          "Makhado TG",
+          "Makhado L"
+        ],
+        "journal": "Behavioral sciences (Basel, Switzerland)",
+        "iso_journal": "Behav Sci (Basel)",
+        "issns": [
+          "2076-328X"
+        ],
+        "pubdate": "2026 11 03",
+        "doi": "10.3390/bs16112094",
+        "abstract": "This mixed-methods review examined how societal acceptability of people with epilepsy is conceptualised, measured, and shaped across contexts. Reported sources included MEDLINE, PubMed, EBSCOhost, CINAHL, Europe PMC, Web of Science, and Google Scholar. Empirical reports published during 2016-2026 were appraised using the Mixed Methods Appraisal Tool 2018. Quantitative narrative and thematic findings were integrated, with post hoc random-effects meta-analyses of comparable willingness outcomes. The synthesis included 248 reports; 31 contributed to the targeted quantitative dataset. Public/community-favourable responses were estimated at 37.0% for marriage (95% CI, 26.3-49.1), 63.5% for workplace contact (37.5-83.5), and 66.2% for child contact (56.1-75.0). Educator estimates were 35.9% for marriage (28.7-43.7) and 75.1% for child contact (60.1-85.8). Heterogeneity was substantial (I2 = 72.7-99.5%), with wide prediction intervals. Integrated findings highlighted relationship-specific acceptance, institutional decisions, disclosure, and support that could enable participation or constrain autonomy. Intervention findings were mixed, with uncertain sustained behavioural benefits. Search provenance, sampling and measurement limitations, possible cohort overlap, and undocumented independent verification procedures constrained interpretation. Societal acceptability is multidimensional and context-dependent; no overall acceptance estimate or worldwide prevalence can be inferred. Inclusion initiatives require stakeholder involvement, culturally appropriate measurement, and evaluation of participation, autonomy, and treatment by others.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43087392/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43086198": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43086198",
+        "title": "Modified Atkins diet versus classic ketogenic diet for paediatric epilepsy: A systematic review and meta-analyses of efficacy, side effects, and attrition rates.",
+        "authors": [
+          "Sepehrar S",
+          "Sadeghi T",
+          "Schoeler NE",
+          "Nikoonia M",
+          "Zarei M",
+          "Toosi MB",
+          "Talebi S"
+        ],
+        "journal": "Developmental medicine and child neurology",
+        "iso_journal": "Dev Med Child Neurol",
+        "issns": [
+          "0012-1622",
+          "1469-8749"
+        ],
+        "pubdate": "2026 11 25",
+        "doi": "10.1111/dmcn.70608",
+        "abstract": "AIM: To assess the short-term and long-term efficacy, side effects, attrition rates, and dropout reasons for the modified Atkins (MAD) and classic ketogenic (CKD) diets in children with medication-resistant epilepsy (MRE), and to compare outcomes between the two diets using a meta-analysis where appropriate.\nMETHOD: We reported this systematic review according to Preferred Reporting Items for Systematic Reviews and Meta-Analyses 2020 and searched PubMed, Scopus, and Web of Science for controlled clinical trials comparing MAD and CKD in children with MRE. Data on seizure freedom, more than 90% and more than 50% seizure frequency reduction (SFR) outcomes, side effects, attrition, and dropout reasons were extracted. Pooled relative risks (RRs) and 95% confidence intervals (CIs) were computed through the meta-analysis.\nRESULTS: Eight clinical trials (394 participants) were included. No significant differences were observed between MAD and CKD in seizure-related outcomes at both the short-term and long-term follow-ups. At 3 months, the RR for seizure freedom, more than 90% SFR, and more than 50% SFR with MAD compared with CKD was 0.72 (95% CI = 0.46-1.12), 0.92 (95% CI = 0.61-1.37), and 0.96 (95% CI = 0.77-1.20) respectively. At 6 months, the corresponding RRs were 0.86 (95% CI = 0.56-1.31), 0.91 (95% CI = 0.63-1.31), and 0.90 (95% CI = 0.76-1.06) respectively. The meta-regression was exploratory and showed no clear temporal pattern for more than 50% SFR over time (coefficient = 0.9, p = 0.509). Attrition was slightly higher in CKD at 3 months and comparable between groups at 6 months. Side effects were slightly more favourable with MAD.\nINTERPRETATION: No statistically significant differences in efficacy, attrition, or adverse events were observed between MAD and CKD. However, the evidence remains limited by the small number of studies and participants, although MAD was less restrictive.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43086198/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43085041": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43085041",
+        "title": "Clinical scores for predicting functional and neurological outcomes in paediatric status epilepticus: A focused review.",
+        "authors": [
+          "Kordcal SR",
+          "Somashekhar A",
+          "Kumar S"
+        ],
+        "journal": "Seizure",
+        "iso_journal": "Seizure",
+        "issns": [
+          "1059-1311",
+          "1532-2688"
+        ],
+        "pubdate": "2026 11 22",
+        "doi": "10.1016/j.seizure.2026.11.013",
+        "abstract": "Status epilepticus (SE) is a paediatric neurological emergency with outcomes that depend strongly on aetiology and premorbid function. We conducted a focused narrative review of clinical scores evaluated for mortality, refractoriness, or functional outcome in children with SE. Ten primary paediatric reports representing nine distinct cohorts were included in the score-focused synthesis; STEPSS and END-IT reports from India reused the same 140 children. STEPSS performance varied widely across settings, from favourable derivation results to near-chance discrimination in larger retrospective cohorts. PEDSS showed high apparent discrimination in its small derivation cohort, but a later cohort reported poor discrimination for one-year functional decline. END-IT had higher AUCs than STEPSS and mSTEPSS in the only head-to-head comparison; however, it incorporated events occurring during the first 24 h, whereas the other scores used admission variables, and only six deaths occurred. END-IT also performed near chance in an independent PICU cohort. Heterogeneous outcomes, variable score-assessment times, few adverse events and incomplete calibration reporting limit the clinical use of all scores. They may assist exploratory research stratification, but none is validated to determine an individual child's treatment intensity or limitation of care.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43085041/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_not_1"
+    },
+    "43084901": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43084901",
+        "title": "The aging brain and epilepsy: Current knowledge and novel therapeutic targets.",
+        "authors": [
+          "Löscher W",
+          "Forcelli PA"
+        ],
+        "journal": "Pharmacological reviews",
+        "iso_journal": "Pharmacol Rev",
+        "issns": [
+          "0031-6997",
+          "1521-0081"
+        ],
+        "pubdate": "2026 10 30",
+        "doi": "10.1016/j.pharmr.2026.100168",
+        "abstract": "The prevalence and incidence of unprovoked seizures and epilepsy markedly increase in older populations, most commonly secondary to cerebrovascular disease or neurodegenerative processes such as Alzheimer disease. This late-onset epilepsy (LOE) carries unique clinical challenges, including altered drug metabolism and drug efficacy. Despite this, animal models of aging are rarely included in the preclinical development of novel antiseizure medications (ASMs). Here, we provide a comprehensive perspective on the basic and cellular physiology and pharmacology underlying LOE pathogenesis and treatment. Aged rodents exhibit profoundly altered seizure susceptibility, including an increased vulnerability to focal seizures and epileptogenesis caused by physiological changes in the aging brain. Despite this, both aged rodents and older patients demonstrate an increased sensitivity to the anticonvulsant effects of several established ASMs. We highlight how this enhanced efficacy is driven not only by pharmacokinetic alterations but also by complex pharmacodynamic shifts, including altered GABAA and glutamate receptor subunit composition, ion channel modifications, and compensatory network adaptations. These occur on the background of neuroinflammation, oxidative stress, and the accumulation of senescent cells, all emerging therapeutic targets in the epilepsy. Finally, this review explores the intersection of Alzheimer disease and epilepsy, and evaluates the potential of newer experimental therapeutic pathways, including mechanistic target of rapamycin inhibition, senolytics, sirtuin activators, and blood-brain barrier protection. By integrating basic cellular mechanisms with preclinical in vivo data, this review emphasizes the urgent need to incorporate aged animal models in ASM discovery pipelines to successfully identify novel therapies for the treatment of LOE and tailor treatments for the aging brain. SIGNIFICANCE STATEMENT: Late-onset epilepsy (LOE) is the third most common neurological disorder in older people after stroke and dementia and is often associated with high cognitive, psychological, and psychosocial comorbidity burden and frailty, however, has received comparatively little attention. This review evaluates animal models for LOE, assesses the neurobiological mechanisms of the aged brain's increased sensitivity to seizures and epilepsy, and discusses current and potential novel therapeutic targets, providing a vital resource for advancing LOE research and improving therapeutic approaches.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43084901/",
+        "first_seen": "2026-11-27"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "admitted",
+      "admitted_on": "2026-11-27"
+    },
+    "43084225": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43084225",
+        "title": "ILAE genetic literacy series: Variant interpretation in epilepsy.",
+        "authors": [
+          "Lachgar-Ruiz M",
+          "Ahring PK",
+          "Liao VWY",
+          "Scotchman E",
+          "Pritchard AJ",
+          "Perez Caballero A",
+          "Absalom NL",
+          "Kaliakatsos M",
+          "Menzies L",
+          "Cross JH",
+          "Møller RS",
+          "Chandler N",
+          "McTague A",
+          "ILAE Genetics Commission",
+          "ILAE Genetic Literacy Task Force"
+        ],
+        "journal": "Epileptic disorders : international epilepsy journal with videotape",
+        "iso_journal": "Epileptic Disord",
+        "issns": [
+          "1294-9361",
+          "1950-6945"
+        ],
+        "pubdate": "2026 11 25",
+        "doi": "10.1002/epd2.70456",
+        "abstract": "This article is the first in a two-part primer on variant interpretation in epilepsies, as part of the Genetic Literacy Series by the Genetics Commission of the International League Against Epilepsy. Advances in genetics have significantly improved our understanding of epilepsy, but challenges remain in interpreting the clinical relevance of identified variants. As diagnostic approaches shift from targeted gene panels to broader methods like exome and genome sequencing (ES/GS), the volume of detected variants continues to grow. This primer provides a practical guide to help clinicians navigate variant interpretation, focusing on key aspects such as variant frequency, inheritance, and genotype-phenotype correlations. By equipping clinicians with this knowledge, we aim to improve the integration of genomic testing into routine epilepsy care and enhance patient outcomes. This primer introduces genetic testing strategies, explores the evidence framework for variant interpretation, and concludes by examining common challenges and a case resolution.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43084225/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_not_1"
+    },
+    "43084179": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43084179",
+        "title": "ILAE Genetics Literacy Series: Epilepsy-associated ion channel disorders.",
+        "authors": [
+          "Lauerer-Braun R",
+          "Lerche H",
+          "Boßelmann CM",
+          "ILAE Genetics Commission",
+          "ILAE Genetic Literacy Task Force"
+        ],
+        "journal": "Epileptic disorders : international epilepsy journal with videotape",
+        "iso_journal": "Epileptic Disord",
+        "issns": [
+          "1294-9361",
+          "1950-6945"
+        ],
+        "pubdate": "2026 11 25",
+        "doi": "10.1002/epd2.70180",
+        "abstract": "Ion channel disorders, often referred to as channelopathies, are common among rare disorders, representing the majority of genetic findings in people with monogenic epilepsy syndromes. In total, more than 60 genes encoding ion channels associated with epilepsy have been identified. Establishing the diagnosis of an ion channel disorder has the potential to inform clinical management including candidate precision therapies, thus improving the care of these often severely affected individuals. This review is part of the ILAE Genetics Literacy series and will provide a clinically focused introduction to epilepsy-associated ion channel disorders. We include educational case examples to demonstrate the clinical characteristics, genetic testing, and treatment strategies in these disorders.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43084179/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_not_1"
+    },
+    "43083423": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43083423",
+        "title": "Cognitive Changes in Epilepsy: A Narrative Review.",
+        "authors": [
+          "Hadhiah K",
+          "Almohammed H",
+          "Alhajri LA",
+          "Aldawsari WA",
+          "Kushara KF",
+          "Alsultan F",
+          "Alali HA",
+          "Alsubaie ME"
+        ],
+        "journal": "Neurology international",
+        "iso_journal": "Neurol Int",
+        "issns": [
+          "2035-8385"
+        ],
+        "pubdate": "2026 11 19",
+        "doi": "10.3390/neurolint18110221",
+        "abstract": "Cognitive alterations are a common but under-recognized aspect of epilepsy that can significantly alter patients' quality of life. Although several reviews have addressed this topic, few have explicitly weighed the strength of the underlying evidence or translated it into a practical approach to assessment. This narrative review therefore aimed to critically synthesize the epidemiological and clinical evidence on cognitive impairment in epilepsy, to grade the evidence supporting key associations and treatment effects, and to propose a practical framework for assessment and management. A structured literature search was performed in PubMed, Web of Science, and the Cochrane Library (including the Cochrane Central Register of Controlled Trials) using a search strategy that is tailored toward epilepsy/seizure disorders, cognitive impairment/cognition, and cognitive domains. Studies that evaluated cognitive changes in patients with epilepsy were included, whereas studies that were not written in English or did not directly address the main objectives were excluded. Cognitive impairment is common in both adults and children with epilepsy, although prevalence estimates depend strongly on how cognition is defined and measured (administrative diagnoses of intellectual disability, domain-specific test deficits, subjective complaints, or longitudinal decline), and the burden is greatest in drug-resistant epilepsy. Evidence, mainly from temporal lobe epilepsy, suggests that impairment across domains reflects disruption of distributed networks rather than damage to one specific region. Longer disease duration, frequent or uncontrolled seizures and drug resistance are consistently associated with poorer cognition, whereas the effect of earlier age at onset appears to depend on clinical context, being most evident in children whose epilepsy becomes pharmacoresistant. Different epilepsy syndromes may present with different patterns of cognitive impairment; for example, memory is predominantly affected in temporal lobe epilepsy, whereas executive dysfunction is particularly prominent in juvenile myoclonic epilepsy. Among antiseizure medications, the most consistent evidence of cognitive harm concerns topiramate and a high total drug load and, largely on the basis of trials in populations without epilepsy, phenobarbital, whereas evidence for most newer agents is limited and predominantly observational and does not establish either cognitive safety or benefit; cognitive outcomes after epilepsy surgery and neuromodulation derive largely from observational cohorts and should not be interpreted causally. Cognitive impairment is a significant and multifactorial aspect of epilepsy that should be considered alongside seizure control, with early recognition, targeted cognitive screening and individualized management potentially helping to preserve cognitive function and improve patients' quality of life, although evidence that routine screening improves long-term outcomes is still lacking.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43083423/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43083406": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43083406",
+        "title": "Primary Intra-Axial Benign Brain Schwannoma: A Systematic Review with Pooled Individual Patient-Level Analysis.",
+        "authors": [
+          "Hulliel AF",
+          "Almomani AA",
+          "Alshaykh R",
+          "Abdallah AM",
+          "Maraqa B",
+          "Obeidat M"
+        ],
+        "journal": "Neurology international",
+        "iso_journal": "Neurol Int",
+        "issns": [
+          "2035-8385"
+        ],
+        "pubdate": "2026 10 26",
+        "doi": "10.3390/neurolint18110204",
+        "abstract": "Background: Intra-axial brain schwannomas are exceptionally rare, accounting for less than 1% of all intracranial schwannomas. Their rarity and non-specific radiological features make diagnosis and management challenging. This study provides a systematic review of the existing literature to summarize the clinical, radiological, histopathological, surgical, and outcome characteristics of reported cases. Methods: A systematic review was conducted following PRISMA guidelines. A comprehensive search of PubMed and Scopus was performed using predefined keywords. Studies reporting intra-axial brain schwannomas were included. Data were extracted on patient demographics, clinical presentation, radiological features, tumor location, surgical management, histopathological findings, and outcomes. In total, 80 studies comprising 131 patients were included. Results: The pooled analysis showed that intra-axial schwannomas most commonly occur in young adults, with a median age of 23 years. The most frequent presenting symptoms were seizures, headache, and focal neurological deficits. Radiologically, lesions typically demonstrated heterogeneous contrast enhancement with frequent cystic degeneration. The frontal and temporal lobes were the most commonly affected sites. Surgical resection, most often via craniotomy with gross total resection, was the predominant management strategy. Overall, most reported cases demonstrated favorable postoperative outcomes. Conclusions: Intra-axial brain schwannomas are rare entities that should be considered in the differential diagnosis of intra-axial brain tumors. Surgical resection remains the mainstay of treatment and is generally associated with excellent outcomes.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43083406/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43081470": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43081470",
+        "title": "Antibiotic-Associated Encephalopathy in Geriatric Patients: A Neglected Challenge.",
+        "authors": [
+          "Djukic M",
+          "Seele J",
+          "Bodilsen J",
+          "Nau R"
+        ],
+        "journal": "Geriatrics (Basel, Switzerland)",
+        "iso_journal": "Geriatrics (Basel)",
+        "issns": [
+          "2308-3417"
+        ],
+        "pubdate": "2026 10 28",
+        "doi": "10.3390/geriatrics11060155",
+        "abstract": "Background: The aging brain is more vulnerable to many medical drugs, including antibiotics. In geriatrics, the differentiation between symptoms of the infection and adverse effects of the antibiotic therapy can be difficult. Whereas most other drugs are prescribed as lifelong or very long treatments, antibiotics are the drug class most frequently initiated by the largest number of different medical specialties. Since the geriatric rule \"start low, go slow\" does not apply for antibiotics, the risk of immediate side effects as a consequence of exposure of a geriatric patient to the full drug dose is relatively high. Method: For this narrative review we searched PUBMED using defined search terms. Results: Age, impaired renal function, and a reduced cognitive reserve are the strongest individual predictors of central nervous toxicity of antibiotics. Antibiotic-associated encephalopathy can be divided into three different forms, which partly overlap: (1) hallucinations and delusions starting within hours to days after the first dose (predominantly associated with fluoroquinolones and macrolides, rarely with sulfamethoxazole/trimethoprim or other antibiotics); (2) myoclonus and epileptic seizures starting within hours to days after the first dose (mainly caused by cephalosporines, penicillins, and carbapenems); (3) vertigo, nystagmus and ataxia caused by metronidazole and optical neuropathy, vertigo, mental obtundation and epileptic seizures as a consequence of the functional antagonism of isoniazid and vitamin B6. Conclusions: The contribution of antibiotics to the development of delirium, myoclonus and epileptic seizures is likely underestimated. Renal failure and neurological or psychiatric abnormalities prior to infection are the main predisposing factors for antibiotic-associated encephalopathy in old age.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43081470/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43080303": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43080303",
+        "title": "Prevalence and associated factors of seizures and epilepsy in children with congenital heart disease: a systematic review and meta-analysis.",
+        "authors": [
+          "Li H",
+          "Lei Y"
+        ],
+        "journal": "Frontiers in public health",
+        "iso_journal": "Front Public Health",
+        "issns": [
+          "2296-2565"
+        ],
+        "pubdate": "2026 11 10",
+        "doi": "10.3389/fpubh.2026.1955892",
+        "abstract": "BACKGROUND: Children with congenital heart disease (CHD) are vulnerable to acute symptomatic seizures and long-term epilepsy, but reported estimates vary across settings and outcome definitions.\nMETHODS: PubMed/MEDLINE, Embase, Cochrane CENTRAL, and Web of Science were searched from inception until 3 June 2026. Observational studies reporting seizures or epilepsy in children with CHD were eligible. Random-effects models separately pooled logit-transformed prevalence estimates for long-term epilepsy and acute or early/in-hospital seizures. Odds ratios (ORs), mean differences (MDs), and standardized mean differences (SMDs) were pooled for associated factors. Risk of bias was appraised utilizing the Newcastle-Ottawa Scale (NOS).\nRESULTS: Ten studies were included, of which nine contributed binary prevalence data. Six studies comprising 50,563 participants and 1,228 cases were included in the primary analysis of long-term epilepsy. The pooled prevalence was 3.1% (95% CI, 2.2%-4.2%; I 2 = 75.3%). Three studies comprising 418,193 participants and 7,465 cases yielded a descriptive pooled estimate of 7.5% for acute or early/in-hospital seizures (95% CI, 1.4%-31.2%; I 2 = 99.4%), with limited generalizability across CHD populations. Factors associated with higher odds of seizures or epilepsy included neurological complications, extracorporeal membrane oxygenation (ECMO) use, single-ventricle physiology, delayed sternal closure, repeated cardiac surgery, and prematurity.\nCONCLUSIONS: The available evidence suggests that children with CHD may experience clinically important burdens of acute seizures and long-term epilepsy. The observed associations may inform future studies of targeted neurological surveillance, but do not establish causal effects or surveillance benefits.\nSYSTEMATIC REVIEW REGISTRATION: https://www.crd.york.ac.uk/PROSPERO/view/CRD420261397297, identifier: CRD420261397297.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Systematic Review",
+          "Meta-Analysis"
+        ],
+        "publication_label": "Meta分析",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43080303/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43078368": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43078368",
+        "title": "Acorus tatarinowii and its bioactive constituents: Ethnopharmacology, chemical variability, preclinical pharmacology, safety, and translational challenges.",
+        "authors": [
+          "Zhang Q",
+          "Wei M",
+          "Zhao Z",
+          "Wu L",
+          "Tan R"
+        ],
+        "journal": "Journal of ethnopharmacology",
+        "iso_journal": "J Ethnopharmacol",
+        "issns": [
+          "0378-8741",
+          "1872-7573"
+        ],
+        "pubdate": "2026 11 24",
+        "doi": "10.1016/j.jep.2026.122676",
+        "abstract": "ETHNOPHARMACOLOGICAL RELEVANCE: Acorus tatarinowii Schott. has long been used in traditional Chinese medicine for disorders associated with impaired consciousness, cognitive dysfunction, epilepsy, and gastrointestinal disturbance. Modern studies have explored related pharmacological activities, but marked preparation-dependent chemical variability and safety concerns surrounding α-asarone and β-asarone complicate interpretation and translation.\nAIM OF THE STUDY: This narrative review critically integrates the ethnopharmacological uses, phytochemistry, preclinical pharmacology, pharmacokinetics, toxicology, and regulatory evidence of Acorus tatarinowii and its bioactive constituents.\nMATERIALS AND METHODS: PubMed and Web of Science Core Collection were searched for relevant literature published from January 1, 2010 to May 1, 2026. Earlier foundational studies and regulatory documents were additionally considered when relevant to traditional use, pharmacokinetics, toxicology, carcinogenicity, or regulatory assessment.\nRESULTS: More than 160 constituents have been identified, with α-asarone and β-asarone being the most extensively studied. Volatile oils, aqueous and alcoholic extracts, purified fractions, and isolated compounds differ substantially in composition and should not be regarded as interchangeable. Preclinical studies report neurological, cardiovascular, gastrointestinal, anti-inflammatory, and other activities associated with neuronal excitability, oxidative stress, inflammation, autophagy, mitochondrial function, and barrier integrity. However, most mechanistic evidence remains associative, direct causal validation is limited, and constituent interactions are poorly defined. Pharmacokinetic studies indicate rapid absorption and brain distribution of asarone isomers, whereas toxicological evidence raises concerns regarding dose-dependent central effects, genotoxicity, carcinogenicity, and reproductive and developmental toxicity.\nCONCLUSION: Acorus tatarinowii exhibits diverse preclinical pharmacological activities, but clinical efficacy, a validated therapeutic window, and long-term safety remain unestablished. Future translation requires authenticated and chemically standardized preparations, quantitative control of asarone isomers, integrated exposure-response assessment, direct mechanistic validation, and rigorous long-term safety evaluation.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43078368/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43078282": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43078282",
+        "title": "Toward optimised magnetic seizure therapy for depression: A systematic review and meta-analysis of stimulation parameters and clinical outcomes.",
+        "authors": [
+          "Kayser S",
+          "Fallgatter AJ",
+          "Plewnia C"
+        ],
+        "journal": "Journal of affective disorders",
+        "iso_journal": "J Affect Disord",
+        "issns": [
+          "0165-0327",
+          "1573-2517"
+        ],
+        "pubdate": "2026 11 24",
+        "doi": "10.1016/j.jad.2026.122780",
+        "abstract": "BACKGROUND: Magnetic seizure therapy (MST) is a seizure-based neuromodulation treatment for treatment-resistant depression (TRD) that aims to combine antidepressant efficacy with better cognitive tolerability than electroconvulsive therapy (ECT). However, associations between stimulation parameters and clinical outcomes remain unclear.\nMETHODS: We systematically reviewed clinical MST studies identified through PubMed, Embase, PsycINFO, and CENTRAL. Study characteristics, stimulation parameters, antidepressant and cognitive outcomes, suicidality, and safety data were extracted. Descriptive synthesis, exploratory descriptive comparisons, and random-effects meta-analyses of response and remission rates were performed where possible.\nRESULTS: Twenty-three reports representing 19 independent cohorts met inclusion criteria. The pooled proportions of antidepressant response and remission following MST were 52.4% and 30.6%, respectively, reflecting outcomes in MST-treated groups rather than comparative efficacy estimates. Across studies, cognitive tolerability was generally favourable, with an acceptable safety profile. Early studies varied substantially in stimulation frequency, pulse number, stimulation duration, dosing strategy, and treatment course. Contemporary protocols increasingly converged on high-frequency stimulation (predominantly 100 Hz), approximately 1000 pulses per train, stimulation durations of about 10 s, and seizure-threshold-guided dosing. Nevertheless, response and remission rates remained variable. Both vertex and frontal stimulation were associated with positive outcomes, but the independent contribution of coil placement could not be determined because stimulation parameters substantially co-varied.\nCONCLUSIONS: Current evidence indicates clinically relevant antidepressant outcomes following MST, while a large randomised trial in major depressive disorder demonstrated non-inferior antidepressant efficacy compared with ECT and reported more favourable cognitive tolerability. Contemporary protocols increasingly converge across several stimulation parameters, while uncertainty remains regarding characteristics that still vary across studies. Coil placement remains an important unresolved methodological factor. Future controlled studies should compare stimulation targets under otherwise standardised treatment conditions to optimise MST protocols.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43078282/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43077132": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43077132",
+        "title": "Intraoperative electrocorticography in epilepsy surgery: background, technological advances, clinical impact, and current recommendations - a literature review.",
+        "authors": [
+          "Ocampo L",
+          "Alonso Vanegas MA",
+          "de Jesús Quintero López E"
+        ],
+        "journal": "Neurosurgical review",
+        "iso_journal": "Neurosurg Rev",
+        "issns": [
+          "0344-5607",
+          "1437-2320"
+        ],
+        "pubdate": "2026 11 24",
+        "doi": "10.1007/s10143-026-04598-y",
+        "abstract": "Epilepsy surgery has evolved through technological innovation and refined therapeutic strategies, aiming to achieve accurate resection of the epileptogenic cortex while minimizing neurological morbidity. Intraoperative electrocorticography (ioECoG) remains an important adjunct for intraoperative electrophysiological assessment and real-time cortical monitoring. Advances such as high-density electrode arrays and extended recording protocols have significantly improved spatial and temporal resolution, enhancing surgical precision and decision-making. A narrative literature review was conducted using PubMed, ScienceDirect, Scopus, SciELO, and LILACS to identify clinically relevant publications addressing the role of intraoperative electrocorticography in epilepsy surgery. Representative studies published between 2000 and 2025 were selected according to their relevance to surgical decision-making, anesthetic considerations, electrophysiological biomarkers, and postoperative seizure outcomes in adult and pediatric populations. ioECoG has progressed from conventional subdural recordings to high-resolution multichannel systems integrated with neuroimaging and computational analysis. This evolution allows precise delineation of epileptogenic and irritative zones, improved electroclinical correlation, and individualized surgical strategies. Electrophysiological biomarkers, particularly high-frequency oscillations (HFOs) and fast ripples (FRs), have strengthened its predictive capacity. Several studies have reported improved seizure freedom rates associated with ioECoG-guided resections, particularly when complete elimination of epileptiform activity is achieved. High-density systems and HFO/FR analysis enable safer, more targeted resections. Integration with advanced neuroimaging and standardized multimodal protocols has consolidated ioECoG as an important adjunctive tool of contemporary epilepsy surgery.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43077132/"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "cas_unverified"
+    },
+    "43076605": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43076605",
+        "title": "Rodent studies of hypoxic-ischemic encephalopathy-induced neonatal seizures: A systematic review on model variations and reporting standards.",
+        "authors": [
+          "Schelhaas M",
+          "Keijer BL",
+          "Wever KE",
+          "Hoebeek FE"
+        ],
+        "journal": "Epilepsia",
+        "iso_journal": "Epilepsia",
+        "issns": [
+          "0013-9580",
+          "1528-1167"
+        ],
+        "pubdate": "2026 11 24",
+        "doi": "10.1002/epi.70607",
+        "abstract": "Neonatal seizures resulting from hypoxic-ischemic encephalopathy (HIE) are common and associated with long-term neurological impairment and developmental delays. This clinical burden necessitates better understanding of underlying mechanisms to improve treatment strategies. Rodent models are essential to this field and extensively investigated. However, translating these findings to human patients remains challenging. This review evaluates all preclinical research on rodent models of HIE-induced neonatal seizures to date, assessing model variations, methodological quality, and translational potential. We conducted a systematic search in PubMed and Embase up to March 10, 2025, identifying 134 publications describing 186 HIE induction protocols. Studies exposing rodents to hypoxia at or before postnatal day 21 and presenting unique data on seizure occurrence were included. Results were synthesized narratively. Identified induction protocols comprised three model types: (1) ambient hypoxia, (2) surgically induced ischemia, and (3) ambient hypoxia combined with ischemia. Rat models were most frequently used (67%), and the most common method of HIE induction was ambient hypoxia (63%). Seizures were reported in 88% of model variations, but detection methods, definitions, and monitoring timing varied widely, limiting comparability of seizure outcome data. Potential links between lower age at induction and increased seizure susceptibility and between the combined use of hypoxic/hypercapnic conditions and increased seizure occurrence were observed. Antiseizure medications were inconsistently investigated; phenobarbital showed variable, age-dependent efficacy. Risk of bias, assessed using SYRCLE's risk of bias tool, was generally high. Altogether, this systematic review provides a comprehensive overview of rodent models of HIE-induced neonatal seizures. Although these models have advanced understanding in this field, variability in model design and incomplete reporting limit objective identification of a gold standard model with optimal translatability. Standardization of model parameters, detailed monitoring of behavioral and electrophysiological seizure characteristics, and rigorous reporting practices will enhance reproducibility, optimize laboratory animal use, and strengthen clinical relevance of preclinical findings.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43076605/",
+        "first_seen": "2026-11-27"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "admitted",
+      "admitted_on": "2026-11-27"
+    },
+    "43073533": {
+      "group": "ER",
+      "paper": {
+        "pmid": "43073533",
+        "title": "Gene therapy for developmental and epileptic encephalopathies: a mechanism-driven framework for therapeutic design.",
+        "authors": [
+          "Obeid M",
+          "Ben-Zeev B",
+          "Weiss Y",
+          "Aqeilan RI"
+        ],
+        "journal": "EMBO molecular medicine",
+        "iso_journal": "EMBO Mol Med",
+        "issns": [
+          "1757-4676",
+          "1757-4684"
+        ],
+        "pubdate": "2026 11 23",
+        "doi": "10.1038/s44321-026-00558-7",
+        "abstract": "Developmental and epileptic encephalopathies (DEEs) are a group of severe neurodevelopmental disorders characterized by early-onset seizures, developmental delay or regression, and cognitive impairment. Many DEEs arise from genetic variants that disrupt neuronal excitability, synaptic function, metabolism, cell signaling, or epigenetic regulation. As the genetic architecture of DEEs has expanded, genetic therapy has emerged as a promising strategy to address their underlying molecular causes. Preclinical studies using adeno-associated viral vectors, antisense oligonucleotides, RNA-based therapies, and CRISPR-derived approaches have shown that early intervention can reduce seizure burden, improve neurological phenotypes, and extend survival in selected models. These advances also highlight the importance of therapeutic timing, cell-type specificity, and appropriate vector design. In this Review, we adopt a mechanism-centered framework that links major biological classes of DEEs to gene therapy design parameters, including modality, vector, promoter, and developmental timing, while also considering translational challenges and future directions for precision medicine in this field.",
+        "abstract_status": "available",
+        "publication_types": [
+          "Journal Article",
+          "Review"
+        ],
+        "publication_label": "综述",
+        "related_articles": [],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43073533/",
+        "first_seen": "2026-11-27"
+      },
+      "first_seen": "2026-11-27",
+      "last_checked": "2026-11-27",
+      "status": "admitted",
+      "admitted_on": "2026-11-27"
     }
   }
 }
