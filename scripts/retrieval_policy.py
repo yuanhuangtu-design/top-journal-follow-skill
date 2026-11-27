@@ -33,7 +33,8 @@ def group_query(config, group):
 
 def fingerprint(config, group):
     return hashlib.sha256(json.dumps({'query': group_query(config, group),
-        'journals': config['journals'][group], 'strategy_version': config.get('strategy_version', '')},
+        'journals': config['journals'][group], 'strategy_version': config.get('strategy_version', ''),
+        'ranking_filter': config.get('group_ranking_filters', {}).get(group)},
         sort_keys=True).encode()).hexdigest()
 
 

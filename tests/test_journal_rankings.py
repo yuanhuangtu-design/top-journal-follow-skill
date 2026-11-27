@@ -12,7 +12,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import journal_rankings as rankings
-from feishu_sync import fill_blank_rankings, paper_fields
+from feishu_sync import fill_blank_rankings, paper_fields, generated_pending_ranking
 import run_daily
 
 
@@ -100,6 +100,11 @@ class JournalRankingTests(unittest.TestCase):
                 return {'data': {'record': {'fields': {'PMID': '42', '期刊': 'Different journal'}}}}
         records = {'42': {'record_id': 'record', 'fields': {'PMID': '42', '期刊': 'Seizure'}}}
         self.assertEqual(fill_blank_rankings(Client(), {'中科院分区': 1, 'JCR分区': 1}, records), {})
+
+
+    def test_only_exact_generated_markers_can_be_upgraded(self):
+        self.assertTrue(generated_pending_ranking('2026发布版（2025数据）｜待核验（JCR资料未匹配）'))
+        self.assertFalse(generated_pending_ranking('人工备注：待核验（期刊资料未覆盖）'))
 
 
 if __name__ == '__main__':

@@ -1,8 +1,9 @@
 """Check representative published records against queries without date limits."""
 import json
 from pathlib import Path
-from literature_search import build_query_from_parsed, parse_natural_query, search_pubmed
+from literature_search import build_query_from_parsed, parse_natural_query, search_pubmed, fetch_summaries
 from retrieval_policy import group_query
+from review_selection import decision
 
 
 def main():
@@ -15,6 +16,9 @@ def main():
         found,_=search_pubmed(query,500)
         if set(found)!=set(pmids):
             raise RuntimeError(f'Known-item coverage failed in {group}: {sorted(set(pmids)-set(found))}')
+        policy=config.get('group_ranking_filters',{}).get(group)
+        if policy and any(decision(paper,policy)!='eligible' for paper in fetch_summaries(found)):
+            raise RuntimeError(f'Known-item ranking gate failed in {group}')
         print(f'[COVERAGE] {group}: {len(found)}/{len(pmids)} examples found')
 
 

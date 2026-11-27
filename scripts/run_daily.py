@@ -38,6 +38,7 @@ import urllib.error
 from datetime import datetime, timedelta
 from title_translations import prepare_titles
 from journal_rankings import enrich_report, load_catalog
+from review_selection import select_group, mark_synced
 from retrieval_policy import load_progress, save_progress, coverage_window, group_query, advance_progress, remember_attempt
 
 TRANSLATION_QUOTA_EXHAUSTED = False
@@ -214,13 +215,15 @@ def build_report(groups, papers, config, report_date, edat_date, windows=None):
                               "total": res.get("total_results", 0), "pmids": pmids,
                               "status": "ok" if res.get('complete') is True else "partial", **interval,
                               "query": res.get('meta', {}).get('query_pubmed', '')})
+        if res.get('ranking_selection'):
+            group_records[-1]['ranking_selection'] = res['ranking_selection']
     paper_list = []
     for idx, p in enumerate(papers, 1):
         score, hits = relevance_score(p, config["relevance_boost_words"])
         paper_list.append({"index": idx, "pmid": p.get("pmid", ""), "title": p.get("title", ""),
             "title_zh": p.get("_title_zh", ""), "journal": p.get("journal", ""), "iso_journal": p.get("iso_journal", ""),
             "authors": p.get("authors", []), "pubdate": p.get("pubdate", ""), "doi": p.get("doi", ""),
-            "issns": p.get('issns', []),
+            "issns": p.get('issns', []), "first_seen": p.get('first_seen', str(report_date)),
             "url": p.get("url", ""), "abstract": p.get("abstract", ""), "abstract_zh": p.get("_abstract_zh", ""),
             "hit_groups": p.get("_hit_groups", []), "group_count": p.get("_group_count", 0),
             "relevance_score": score, "relevance_hits": hits[:8], "priority": grade_paper(score),
@@ -248,10 +251,16 @@ def render_html(report, groups):
     for gr in report["group_records"]:
         label = gr["label"]; status = "✓" if gr["status"] == "ok" else "✗"; count = gr.get("count", 0)
         pmid_str = ", ".join(str(x) for x in gr.get("pmids", [])[:15])
-        if gr.get("total", 0) > len(gr.get("pmids", [])): pmid_str += " …"
+        if gr.get("total", 0) > len(gr.get("pmids", [])) and not gr.get('ranking_selection'): pmid_str += " …"
         status_text = {'ok': '完成', 'partial': '未完整获取', 'failed': '失败'}[gr['status']]
         interval = f"<br>{gr.get('edat_start', '')} 至 {gr.get('edat_end', '')}"
-        group_rows.append(f"<tr><td>{status}</td><td>{esc(label)}{interval}</td><td>{status_text}</td><td>{count} / {gr.get('total', count)}</td><td style='font-size:.75rem;'>{esc(pmid_str) or '无'}</td></tr>")
+        count_text = f"{count} / {gr.get('total', count)}"
+        selection = gr.get('ranking_selection')
+        if selection:
+            count_text = (f"一区 {count} / 检索 {selection['source_total']}<br>"
+                          f"非一区 {selection['cas_not_1']}，待核验 {selection['cas_unverified']}"
+                          f"，候选补入 {selection['promoted_candidates']}")
+        group_rows.append(f"<tr><td>{status}</td><td>{esc(label)}{interval}</td><td>{status_text}</td><td>{count_text}</td><td style='font-size:.75rem;'>{esc(pmid_str) or '无'}</td></tr>")
     sections = []
     for gr in report["group_records"]:
         label = gr["label"]; papers_in_group = [p for p in report["papers"] if gr["group"] in p["hit_groups"]]
@@ -432,6 +441,9 @@ def main():
         print(f'[INFO] EDAT范围: {begin} ~ {end}')
         actual_query = f'({group_query(config, gname)}) AND ("{begin}"[EDAT] : "{end}"[EDAT])'
         groups[gname] = run_search(actual_query, journals, os.path.join(OUTPUT_DIR, f"group_{gname}"), config.get("max_results", 500))
+        policy = config.get('group_ranking_filters', {}).get(gname)
+        if policy:
+            groups[gname] = select_group(groups[gname], gname, policy, str(report_date))
     papers = merge_dedupe(groups); papers = refetch_missing_abstracts(papers)
     print(f"\n[INFO] 合并去重后文献数: {len(papers)}")
     if config.get("translate", True) and not args.no_translate:
@@ -487,6 +499,7 @@ def main():
     page_url = write_notion(report); print(f"[NOTION] 页面: {page_url or '未写入'}")
     feishu_created, feishu_expected, feishu_diag = write_feishu(report)
     report["meta"]["feishu_diag"] = feishu_diag  # 诊断写入报告，随 latest.json 提交回仓库，免登录即可排查
+    mark_synced(report)
     print(f"[FEISHU] 写入记录: {feishu_created} / 期望 {feishu_expected}（状态: {feishu_diag.get('status')}）")
     json_path = save_json(report, report_date); print(f"[SUCCESS] JSON: {json_path}")
     save_progress(advance_progress(state, config, report,

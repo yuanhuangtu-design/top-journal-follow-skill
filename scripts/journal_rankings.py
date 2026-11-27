@@ -18,7 +18,11 @@ def journal_key(value):
 
 @lru_cache(maxsize=1)
 def load_catalog():
-    encoded = os.environ.get('JOURNAL_RANKINGS_B64', '').strip()
+    parts = [os.environ.get('JOURNAL_RANKINGS_CAS1_B64_PART1', '').strip(),
+             os.environ.get('JOURNAL_RANKINGS_CAS1_B64_PART2', '').strip()]
+    if any(parts) and not all(parts):
+        raise ValueError('Expanded journal ranking catalog is incomplete')
+    encoded = ''.join(parts) if all(parts) else os.environ.get('JOURNAL_RANKINGS_B64', '').strip()
     file_path = os.environ.get('JOURNAL_RANKINGS_FILE', '').strip()
     if encoded:
         catalog = json.loads(gzip.decompress(base64.b64decode(encoded, validate=True)))
@@ -64,6 +68,8 @@ def paper_rankings(paper):
             status = 'not_applicable'
         elif '未查到' in row['cas'] or '未查到' in row['jcr']:
             status = 'not_found'
+        elif '待核验' in row['jcr']:
+            status = 'cas_verified_jcr_unverified'
         return {'cas_partition': row['cas'], 'jcr_quartile': row['jcr'], 'ranking_status': status}
     types = paper.get('publication_types', [])
     if 'Preprint' in types:
@@ -83,5 +89,5 @@ def enrich_report(report):
     report['meta']['journal_rankings'] = {
         'cas_version': '2025大类', 'jcr_release': '2026', 'jcr_data_year': '2025',
         'unverified_pmids': [paper['pmid'] for paper in report['papers']
-                             if paper['ranking_status'] == 'unverified']}
+                             if paper['ranking_status'] in ('unverified', 'cas_verified_jcr_unverified')]}
     return report
