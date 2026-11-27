@@ -9,7 +9,8 @@
     "C": "Clin Neurophysiol,J Neurophysiol,J Neural Eng,NeuroImage,Brain Topogr,J Clin Neurophysiol,Neuromodulation,J Neurosci Methods,J Neuroeng Rehabil,IEEE Trans Neural Syst Rehabil Eng",
     "D": "",
     "E": "Nature,Science,Nat Neurosci,Neuron,Brain,Nat Commun,eLife,J Neurosci,J Neural Eng,PLoS Comput Biol,Neural Comput",
-    "R": "Nat Rev Neurosci"
+    "R": "Nat Rev Neurosci",
+    "ER": ""
   },
   "group_queries": {
     "C": "(electroencephalograph*[Title/Abstract] OR intracranial EEG[Title/Abstract] OR intracranial eeg[Title/Abstract] OR SEEG[Title/Abstract] OR \"local field potential\"[Title/Abstract] OR LFP[Title/Abstract] OR electrocorticograph*[Title/Abstract] OR ECoG[Title/Abstract] OR \"high-frequency oscillation\"[Title/Abstract] OR \"high frequency oscillation\"[Title/Abstract] OR HFO[Title/Abstract] OR \"multi-unit activity\"[Title/Abstract] OR MUA[Title/Abstract] OR \"neural signal\"[Title/Abstract] OR \"signal processing\"[Title/Abstract] OR (\"deep learning\"[Title/Abstract] AND EEG[Title/Abstract]))",
@@ -18,7 +19,8 @@
     "B1": "(epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])",
     "B2": "(epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms])",
     "E": "(hyperexcitab*[Title/Abstract] OR \"excitation-inhibition\"[Title/Abstract] OR \"excitation inhibition\"[Title/Abstract] OR \"excitatory-inhibitory\"[Title/Abstract]) AND (neuron*[Title/Abstract] OR \"spiking network\"[Title/Abstract]) AND (model*[Title/Abstract] OR simulat*[Title/Abstract] OR inferen*[Title/Abstract] OR compensat*[Title/Abstract] OR homeosta*[Title/Abstract])",
-    "R": "(\"Review\"[Publication Type] OR \"Systematic Review\"[Publication Type])"
+    "R": "(\"Review\"[Publication Type] OR \"Systematic Review\"[Publication Type])",
+    "ER": "(epilep*[Title/Abstract] OR seizure*[Title/Abstract] OR \"Epilepsy\"[MeSH Terms] OR \"Seizures\"[MeSH Terms] OR \"Status Epilepticus\"[MeSH Terms]) AND (\"Review\"[Publication Type] OR \"Systematic Review\"[Publication Type])"
   },
   "group_labels": {
     "A": "高影响力期刊 × Epilepsy",
@@ -27,7 +29,8 @@
     "C": "脑电信号分析方法",
     "D": "闭环神经调控 · Closed-loop Neuromodulation",
     "E": "神经兴奋性机制与建模（拓展）",
-    "R": "神经科学综述（Nature Reviews Neuroscience）"
+    "R": "神经科学综述（Nature Reviews Neuroscience）",
+    "ER": "癫痫综述（不限期刊 · 中科院2025大类一区）"
   },
   "relevance_boost_words": [
     "epilepsy",
@@ -98,7 +101,10 @@
   "weekly_neuroscience": {
     "journals": ["Neuron", "Brain", "Nat Neurosci"]
   },
-  "strategy_version": "2026-11-25-reviews-v1",
+  "group_ranking_filters": {
+    "ER": {"cas_version": "2025", "cas_major_partition": 1}
+  },
+  "strategy_version": "2026-11-27-cas1-reviews-v1",
   "overlap_days": 3,
   "max_catchup_days": 7
 }

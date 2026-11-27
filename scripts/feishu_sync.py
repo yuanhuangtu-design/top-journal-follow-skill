@@ -10,7 +10,7 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from title_translations import is_chinese, load_state
-from journal_rankings import paper_rankings
+from journal_rankings import paper_rankings, CAS_PREFIX, JCR_PREFIX
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_KEYS = ('FEISHU_APP_ID', 'FEISHU_APP_SECRET', 'FEISHU_APP_TOKEN', 'FEISHU_TABLE_ID')
@@ -211,6 +211,12 @@ def title_health(records):
         'closed_loop_missing_titles': sum(pmid in missing for pmid in closed)}
 
 
+def generated_pending_ranking(value):
+    return value in {CAS_PREFIX+'待核验（期刊资料未覆盖）',
+                    JCR_PREFIX+'待核验（期刊资料未覆盖）',
+                    JCR_PREFIX+'待核验（JCR资料未匹配）'}
+
+
 def fill_blank_rankings(client, fields, records):
     """Fill empty rankings and upgrade generated pending markers, checking current values first."""
     columns = {'中科院分区': 'cas_partition', 'JCR分区': 'jcr_quartile'}
@@ -220,7 +226,7 @@ def fill_blank_rankings(client, fields, records):
         original = record['fields']
         journal = text(original.get('期刊'))
         if not journal or not any(not text(original.get(name)).strip()
-                or '待核验（期刊资料未覆盖）' in text(original.get(name)) for name in columns):
+                or generated_pending_ranking(text(original.get(name))) for name in columns):
             continue
         publication_types = ['Book Chapter'] if text(original.get('发表形式（自动）')) == '图书章节/更新' else []
         rankings = paper_rankings({'journal': journal, 'publication_types': publication_types})
@@ -231,7 +237,7 @@ def fill_blank_rankings(client, fields, records):
         changes = {}
         for name, key in columns.items():
             value = text(current.get(name)).strip()
-            if not value or ('待核验（期刊资料未覆盖）' in value and value != rankings[key]):
+            if not value or (generated_pending_ranking(value) and value != rankings[key]):
                 changes[name] = rankings[key]
         if changes:
             client.request('PUT', client.base + '/records/' + record['record_id'], {'fields': changes})
