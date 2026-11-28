@@ -1,35 +1,35 @@
 {
   "groups": {
     "A": {
-      "through": "2026-11-26",
+      "through": "2026-11-27",
       "fingerprint": "5941c6036341f0407802d74d824bebbfd9e0ba82e88a0e9d7dc5ac9f27e19dbc"
     },
     "B1": {
-      "through": "2026-11-26",
+      "through": "2026-11-27",
       "fingerprint": "9f1a1a2ce3026f5ceae6c045e5ad7f9ab8bb45c878e90a43eea5d415f78b437d"
     },
     "B2": {
-      "through": "2026-11-26",
+      "through": "2026-11-27",
       "fingerprint": "8a288ea41dc81190038cbb860f414b0f4852a02b95ba2586f6555426ea88e8ce"
     },
     "C": {
-      "through": "2026-11-26",
+      "through": "2026-11-27",
       "fingerprint": "d01f121e6d4214d83793ccc94b84a8933f4e1a6b0a0498aa9fef12f762dfa3f0"
     },
     "D": {
-      "through": "2026-11-26",
+      "through": "2026-11-27",
       "fingerprint": "be0b2a6eb8eb10e476f6c3dcbef482e40e0daf31c402fd4362c9a394313baefe"
     },
     "E": {
-      "through": "2026-11-26",
+      "through": "2026-11-27",
       "fingerprint": "6da826a54b91a2be276987310c2150a37ed8afa3608da8bc1499b903f0305f63"
     },
     "R": {
-      "through": "2026-11-26",
+      "through": "2026-11-27",
       "fingerprint": "b7a3bfcd4e8cab27c4d04b4de39d6d07a9763c735fb737b22737069ee0e0dd0e"
     },
     "ER": {
-      "through": "2026-11-26",
+      "through": "2026-11-27",
       "fingerprint": "61648fae4f47236179f4b9bfccc5cebac467a5a8890ed3613babb101cacf7012"
     }
   }
